@@ -1,3 +1,7 @@
+---
+title: Journal
+---
+
 # Future of Coding Research Journal
 
 ### July 13, 2017 2:13pm
