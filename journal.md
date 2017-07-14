@@ -4,6 +4,19 @@ title: Journal
 
 # Future of Coding Research Journal
 
+### July 14, 2017 5:09pm
+
+So that was fun! I talked for almost an hour about my past research and thought-out-loud about the directions to take things in the future. I was suprised about how cogent my thougths about where to take my research were. It felt like I was alomst as logical as I can be here in text. I wanted to include the thoughts that I came to on the podcast here about what my next steps are in this research project...
+
+1. Organize and prioritize the list of links, with Lambdu and Luna at the top. This should take a few days.
+2. Research each of the links, putting what I think about them and any demos I make here in these notes. This should take no longer than a month.
+3. Resume building prototypes. Directions this could take include:
+  - Cycle v2 from the ground up, with a custom block-interface and virtual-dom or snabdom instead of VueJS
+  - Reactive WoofJS or Elm game engine
+  - Rose v1 with text as the UI
+  - working with Paul on Unison (or on any of the other projects I'm researching)
+  - none of the above, I come up with another wacky idea that steals my attention, which after all is the point of all this research
+
 ### July 14, 2017 2:58pm
 
 I'm back! So a few things on my mind.
