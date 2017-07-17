@@ -16,6 +16,12 @@ I think I should make the different styles of research here more clear:
 
 Today, I'm just working on organizing (1). I currently have it in a google doc: https://docs.google.com/document/d/1TtfMqBBRGnwisCx42nuXa4Y5VF3EizpZxFQBivJWhhE/edit
 
+I am going to create a place on this website, in this github repo, for these links. One idea is to just talk about them here in this journal but that doesn't feel very structured. Why don't I create `products.md` where I have a few sections:
+
+1. Products to look into (prioritized)
+2. Products reviewed
+3. Places to find more products to review
+
 ### July 14, 2017 5:09pm
 
 So that was fun! I talked for almost an hour about my past research and thought-out-loud about the directions to take things in the future. I was suprised about how cogent my thougths about where to take my research were. It felt like I was alomst as logical as I can be here in text. I wanted to include the thoughts that I came to on the podcast here about what my next steps are in this research project...
