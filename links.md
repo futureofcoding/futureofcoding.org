@@ -6,12 +6,8 @@ title: Link Research
 
 ## To Research
 
-* [Alan Kay - how to invent the future pdf](https://www.dropbox.com/s/l4qnf40gksapsrl/Alan%20Kay%20-%20How%20to%20Invent%20the%20Future.pdf?dl=0)
-* [Alan Kay - Power of Context](https://www.dropbox.com/s/knngq11tzdi0tdh/Alan%20Kay%20-%20The%20Power%20of%20the%20Context.pdf?dl=0)
-* [Computer as Communications Device](https://www.dropbox.com/s/4td8aj5gglf4qfj/The%20Computer%20As%20A%20Communications%20Device.pdf?dl=0)
 * [Additional Notes on "Drawing Dynamic Visualizations"](http://worrydream.com/DrawingDynamicVisualizationsTalkAddendum/)
 * https://en.wikipedia.org/wiki/Deutsch_limit
-* [Always bet on text](http://graydon.livejournal.com/196162.html)
 * [Intentional Programming](https://en.wikipedia.org/wiki/Intentional_programming)
 * [A brief history of "type"](http://arcanesentiment.blogspot.com/2015/01/a-brief-history-of-type.html?m=1)
 * [Seymour Papert On Logo](http://el.media.mit.edu/logo-foundation/resources/onlogo/index.html)
@@ -46,9 +42,17 @@ title: Link Research
 * http://harc.ycr.org/project/gp/
 * [Tulip](https://www.youtube.com/watch?v=lvclTCDeIsY)
 * https://www.pipes.digital/
+* https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/
+* http://www.memex.org/licklider.pdf
+* http://web.media.mit.edu/~minsky/papers/TuringLecture/TuringLecture.html
+* [Computer as Communications Device](https://www.dropbox.com/s/4td8aj5gglf4qfj/The%20Computer%20As%20A%20Communications%20Device.pdf?dl=0)
 
 ## Researched
 
+* [Alan Kay - how to invent the future pdf](https://www.dropbox.com/s/l4qnf40gksapsrl/Alan%20Kay%20-%20How%20to%20Invent%20the%20Future.pdf?dl=0)
+* [Alan Kay - Power of Context](https://www.dropbox.com/s/knngq11tzdi0tdh/Alan%20Kay%20-%20The%20Power%20of%20the%20Context.pdf?dl=0)
+* [Always bet on text](http://graydon.livejournal.com/196162.html)
+  * text is great for many reasons. I think less so for communicating with comptuers
 * [How to Invent the Future I - Alan Kay](https://www.startupschool.org/videos/11) 
   * email him - he loves email!
   * read "the dream machine" about xerox parc / arpa
