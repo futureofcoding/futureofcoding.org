@@ -6,17 +6,19 @@ title: Link Research
 
 ## To Research
 
-1. [How to Invent the Future I - Alan Kay](https://www.startupschool.org/videos/11)
-2. [Additional Notes on "Drawing Dynamic Visualizations"](http://worrydream.com/DrawingDynamicVisualizationsTalkAddendum/)
-3. https://en.wikipedia.org/wiki/Deutsch_limit
-4. [Always bet on text](http://graydon.livejournal.com/196162.html)
-5. [Intentional Programming](https://en.wikipedia.org/wiki/Intentional_programming)
-6. [A brief history of "type"](http://arcanesentiment.blogspot.com/2015/01/a-brief-history-of-type.html?m=1)
-7. [Seymour Papert On Logo](http://el.media.mit.edu/logo-foundation/resources/onlogo/index.html)
-8. https://github.com/lamdu/lamdu/
-9. https://github.com/jamii/imp
-10. http://witheve.com/
-11. http://www.luna-lang.org/
+* [Alan Kay - how to invent the future pdf](https://www.dropbox.com/s/l4qnf40gksapsrl/Alan%20Kay%20-%20How%20to%20Invent%20the%20Future.pdf?dl=0)
+* [Alan Kay - Power of Context](https://www.dropbox.com/s/knngq11tzdi0tdh/Alan%20Kay%20-%20The%20Power%20of%20the%20Context.pdf?dl=0)
+* [Computer as Communications Device](https://www.dropbox.com/s/4td8aj5gglf4qfj/The%20Computer%20As%20A%20Communications%20Device.pdf?dl=0)
+* [Additional Notes on "Drawing Dynamic Visualizations"](http://worrydream.com/DrawingDynamicVisualizationsTalkAddendum/)
+* https://en.wikipedia.org/wiki/Deutsch_limit
+* [Always bet on text](http://graydon.livejournal.com/196162.html)
+* [Intentional Programming](https://en.wikipedia.org/wiki/Intentional_programming)
+* [A brief history of "type"](http://arcanesentiment.blogspot.com/2015/01/a-brief-history-of-type.html?m=1)
+* [Seymour Papert On Logo](http://el.media.mit.edu/logo-foundation/resources/onlogo/index.html)
+* https://github.com/lamdu/lamdu/
+* https://github.com/jamii/imp
+* http://witheve.com/
+* http://www.luna-lang.org/
 
 ### Unordered
 
@@ -47,6 +49,24 @@ title: Link Research
 
 ## Researched
 
+[How to Invent the Future I - Alan Kay](https://www.startupschool.org/videos/11) 
+  * email him - he loves email!
+  * read "the dream machine" about xerox parc / arpa
+  * sketchpad is interesting. does object-oriented programming well: master vs instances
+    * read ivan sutherland 1962 thesis - man machine communication thesis
+  * really great advise on running research community
+    * vision, not goals
+    * fund people, not projects
+    * research community, not research project
+    * fund problem finding, not just problem solving
+    * milestones, not deadlines
+    * be ok with high failure rate
+    * just two years for the person running the group
+    * solve the problem, don't think about what you can do with the tools you have. make the tools if you need to
+    * argue for clarity, not to win
+    * keep tabs on people in the "minor leagues"
+  * send alan kay about email about learning to communicate with Aliens from integalactic email memo from "Lick"
+  * 
 * Elm
 * Hopscotch
 * App Lab
