@@ -4,6 +4,18 @@ title: Journal
 
 # Future of Coding Research Journal
 
+### July 17, 2017 12:38pm
+
+I don't have much time for research today (only about 90 minutes), but I want to get into the habit of writing notes here every weekday even if it's just to say that I didn't do any research that day. My main task for today will be organizing the list of links to research, prioritizing them, etc.
+
+I think I should make the different styles of research here more clear:
+
+1. Researching other products (reading documentation, writing notes, building toy apps)
+2. Building prototypes (Cycle 1, Cycle 2, Rose 1, Elm game engine)
+3. Writing about various future of coding topics ([Types as Shapes](https://medium.com/@stevekrouse/types-are-shapes-d6af1e83192f), [Resources for creating front-end programming languages and frameworks in 2017](https://medium.com/@stevekrouse/resources-for-creating-front-end-programming-languages-and-frameworks-in-2017-a0c097625f9d))
+
+Today, I'm just working on organizing (1). I currently have it in a google doc: https://docs.google.com/document/d/1TtfMqBBRGnwisCx42nuXa4Y5VF3EizpZxFQBivJWhhE/edit
+
 ### July 14, 2017 5:09pm
 
 So that was fun! I talked for almost an hour about my past research and thought-out-loud about the directions to take things in the future. I was suprised about how cogent my thougths about where to take my research were. It felt like I was alomst as logical as I can be here in text. I wanted to include the thoughts that I came to on the podcast here about what my next steps are in this research project...
