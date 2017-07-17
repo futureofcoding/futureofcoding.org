@@ -49,7 +49,7 @@ title: Link Research
 
 ## Researched
 
-[How to Invent the Future I - Alan Kay](https://www.startupschool.org/videos/11) 
+* [How to Invent the Future I - Alan Kay](https://www.startupschool.org/videos/11) 
   * email him - he loves email!
   * read "the dream machine" about xerox parc / arpa
   * sketchpad is interesting. does object-oriented programming well: master vs instances
@@ -66,7 +66,6 @@ title: Link Research
     * argue for clarity, not to win
     * keep tabs on people in the "minor leagues"
   * send alan kay about email about learning to communicate with Aliens from integalactic email memo from "Lick"
-  * 
 * Elm
 * Hopscotch
 * App Lab
