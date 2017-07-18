@@ -96,4 +96,4 @@ title: Link Research
 * http://pgbovine.net/human-centered-programming-tools.htm
 * http://blog.interfacevision.com/design/design-visual-progarmming-languages-snapshots/
 * http://www.squeakland.org/resources/books/readingList.jsp
-* worrydream.com
+* http://worrydream.com
