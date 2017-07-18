@@ -6,11 +6,6 @@ title: Link Research
 
 ## To Research
 
-* [Additional Notes on "Drawing Dynamic Visualizations"](http://worrydream.com/DrawingDynamicVisualizationsTalkAddendum/)
-* https://en.wikipedia.org/wiki/Deutsch_limit
-* [Intentional Programming](https://en.wikipedia.org/wiki/Intentional_programming)
-* [A brief history of "type"](http://arcanesentiment.blogspot.com/2015/01/a-brief-history-of-type.html?m=1)
-* [Seymour Papert On Logo](http://el.media.mit.edu/logo-foundation/resources/onlogo/index.html)
 * https://github.com/lamdu/lamdu/
 * https://github.com/jamii/imp
 * http://witheve.com/
@@ -18,6 +13,7 @@ title: Link Research
 
 ### Unordered
 
+* http://worrydream.com/substroke/
 * PureScript
 * http://www.eff-lang.org/
 * https://personal.cis.strath.ac.uk/conor.mcbride/pub/Frank/TFM.pdf
@@ -48,9 +44,24 @@ title: Link Research
 * [Computer as Communications Device](https://www.dropbox.com/s/4td8aj5gglf4qfj/The%20Computer%20As%20A%20Communications%20Device.pdf?dl=0)
 * http://www.red-lang.org/p/about.html
 * https://cospaces.io/edu/
+* Lively Kernal
+* [Seymour Papert On Logo](http://el.media.mit.edu/logo-foundation/resources/onlogo/index.html)
 
 ## Researched
 
+* [A brief history of "type"](http://arcanesentiment.blogspot.com/2015/01/a-brief-history-of-type.html?m=1)
+* [Intentional Programming](https://en.wikipedia.org/wiki/Intentional_programming)
+  * I think this stuff is really interesting. If done right, it's similar to how google wants all of their code to be self-documenting. It's probably the exact opposite of Eve's literate programming approach where the code and explaination are two seperate things that humans need to keep in sync.
+  * Personally, I find functional programming hard to read / parse meaning from. TODO think about ways we could make FP more readable
+  * TODO think about what it would be like to define an entire program in a high-level language and then have to specific the macros to intepret each expression, potentially with Woof. Think about how to zoom in and out on various lines.
+* https://en.wikipedia.org/wiki/Deutsch_limit
+  * not to be taken seriously. at a worst case, we can put text into visual programming to add density, but density isn't that important after all because we have encapsulation.
+* [Additional Notes on "Drawing Dynamic Visualizations"](http://worrydream.com/DrawingDynamicVisualizationsTalkAddendum/)
+  * really amazing, inspirational demos! Makes me wonder how Scratch could be more like this and less about the code
+    * TODO brainstorm what would be a intuative interface for a student to program gravity from scratch
+  * Seems similar to aprt.us, which makes sense because Bret steals from Toby's Recursive Drawing project
+  * TODO think about ways to tackle the context problem, helping programmers point to what they want
+  * 
 * [How to Invent the Future II - Alan Kay](https://www.startupschool.org/videos/12)  
 * [Alan Kay - how to invent the future pdf](https://www.dropbox.com/s/l4qnf40gksapsrl/Alan%20Kay%20-%20How%20to%20Invent%20the%20Future.pdf?dl=0)
 * [Alan Kay - Power of Context](https://www.dropbox.com/s/knngq11tzdi0tdh/Alan%20Kay%20-%20The%20Power%20of%20the%20Context.pdf?dl=0)
