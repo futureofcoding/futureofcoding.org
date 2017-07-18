@@ -4,6 +4,15 @@ title: Journal
 
 # Future of Coding Research Journal
 
+### July 18, 2017 1:35pm
+
+So I ended up creating futureofcoding.org/links yesterday (instead of /products) and it seems to be a good way to organize things, at least for now. I think it was a good idea to start by watching some Alan Kay video for framing and context. He really challenges listeners to write him with interesting emails, so I'm going to work on putting something together soon. Wouldn't that be a coup -- befriending Alan Kay and getting him on this podcast?!
+
+I'd say one of the bigger ideas I got from Alan is that we should be problem-focused and not solution-focused, to the point of ignoring the tools we currently have entirely and building them from scratch if need be. I definitely fall into the trap of "what can I make with these tools" all the time. The solutionism trap. I feel myself caught up in a related problem a lot where I am optimizing for integrating with existing tech, which will definitly hold you back in the long term but seems neccesary for adoption in the short term...
+
+Ok, so I have from now (2pm) to 4:30 to do some research. I hope to quickly get through the papers and talks that I have on my list and make it to Lamdu today. 
+
+
 ### July 17, 2017 12:38pm
 
 I don't have much time for research today (only about 90 minutes), but I want to get into the habit of writing notes here every weekday even if it's just to say that I didn't do any research that day. My main task for today will be organizing the list of links to research, prioritizing them, etc.
