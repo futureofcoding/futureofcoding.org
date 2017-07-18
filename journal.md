@@ -4,6 +4,10 @@ title: Journal
 
 # Future of Coding Research Journal
 
+### July 18, 2017 4:00pm
+
+I was able to get through the links -- in particular I really loved Bret's notes on dynamic diagrams and am really excited to get to his Substroke project sometime soon -- however, I am excited to get to Lamdu tomorrow, in particular getting it to run on my chromebook through some magics.
+
 ### July 18, 2017 1:35pm
 
 So I ended up creating futureofcoding.org/links yesterday (instead of /products) and it seems to be a good way to organize things, at least for now. I think it was a good idea to start by watching some Alan Kay video for framing and context. He really challenges listeners to write him with interesting emails, so I'm going to work on putting something together soon. Wouldn't that be a coup -- befriending Alan Kay and getting him on this podcast?!
