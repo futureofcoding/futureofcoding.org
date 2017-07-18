@@ -46,9 +46,12 @@ title: Link Research
 * http://www.memex.org/licklider.pdf
 * http://web.media.mit.edu/~minsky/papers/TuringLecture/TuringLecture.html
 * [Computer as Communications Device](https://www.dropbox.com/s/4td8aj5gglf4qfj/The%20Computer%20As%20A%20Communications%20Device.pdf?dl=0)
+* http://www.red-lang.org/p/about.html
+* https://cospaces.io/edu/
 
 ## Researched
 
+* [How to Invent the Future II - Alan Kay](https://www.startupschool.org/videos/12)  
 * [Alan Kay - how to invent the future pdf](https://www.dropbox.com/s/l4qnf40gksapsrl/Alan%20Kay%20-%20How%20to%20Invent%20the%20Future.pdf?dl=0)
 * [Alan Kay - Power of Context](https://www.dropbox.com/s/knngq11tzdi0tdh/Alan%20Kay%20-%20The%20Power%20of%20the%20Context.pdf?dl=0)
 * [Always bet on text](http://graydon.livejournal.com/196162.html)
