@@ -4,7 +4,7 @@ title: Journal
 
 # Future of Coding Research Journal
 
-### July 20, 2017 4:00pm
+### July 20, 2017 9:41am
 
 Yesterday ended up being a particularly productive research session, but I didn't have time to recap it. Here's a pretty solid picture of my progress: https://github.com/stevekrouse/futureofcoding.org/commit/4670a33f503a621f606de0338df1c21d161967fe#diff-424069113a08a4256349764ee38dbbbf
 
