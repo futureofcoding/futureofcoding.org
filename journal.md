@@ -4,6 +4,17 @@ title: Journal
 
 # Future of Coding Research Journal
 
+### July 20, 2017 4:00pm
+
+Yesterday ended up being a particularly productive research session, but I didn't have time to recap it. Here's a pretty solid picture of my progress: https://github.com/stevekrouse/futureofcoding.org/commit/4670a33f503a621f606de0338df1c21d161967fe#diff-424069113a08a4256349764ee38dbbbf
+
+The most exciting part was falling in love with Lamdu, even while I failed to get it to install or run. I have a sinking feeling that it's not going to be compatible with cloud9 so I need to talk to them about that.
+
+TODOS:
+
+- reach out to Lamdu people about installing, contributing and being on the podcast
+- add http://2016.ecoop.org/track/LIVE-2016#program to my research links and also consider going / applying
+
 ### July 18, 2017 4:00pm
 
 I was able to get through the links -- in particular I really loved Bret's notes on dynamic diagrams and am really excited to get to his Substroke project sometime soon -- however, I am excited to get to Lamdu tomorrow, in particular getting it to run on my chromebook through some magics.
