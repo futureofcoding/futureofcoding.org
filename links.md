@@ -17,6 +17,7 @@ title: Link Research
 * [Pacific Northwest Scala 2013 We're Doing It All Wrong by Paul Phillips](https://www.youtube.com/watch?v=TS1lpKBMkgg)
 *http://www.subtext-lang.org/
 * Furure of Programming Workshop - http://www.future-programming.org/
+* http://www.kenperlin.com/
 * http://harc.ycr.org/flex/
 * http://alpha.trycarbide.com/
 * [Chorus](http://www.chorus-home.org/)
@@ -55,6 +56,10 @@ title: Link Research
 
 ## Researched
 
+* [Ken Perlin on Chalktalk](https://www.youtube.com/watch?v=xuzrF_82z7U)
+  * professor at NYU
+  * making magic real with AR/VR. A combo of harold with a crayon and harry potter
+  * he has a really interesting medium like Ivan Sutherland's Sketchpad that allows you to create and link together dynamic diagrams. It feels too good to be true, like it was over optimized for this one presentation. I want to see the code on github 
 * [Jonathan Edwards: Two-way Dataflow](https://vimeo.com/97684085)
   * looks like this turned into [Chorus](http://www.chorus-home.org/)
   * his todomvc example isn't half bad, although I think the react, one-way databinding way that Cycle v2 uses is more in style these days
