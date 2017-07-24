@@ -4,6 +4,30 @@ title: Journal
 
 # Future of Coding Research Journal
 
+### July 24 2017 2:04pm
+
+Apologies for skipping an entry on Friday. I spent most of the day installing Ubuntu on my chromebook so that I could try Lamdu out. And then I spent a while installing Lamdu. Finally I got it to work! You can see the conversation I had with one of the creators of Lamdu on its Gitter channel:
+
+![screenshot 2017-07-24 at 2 06 22 pm](https://user-images.githubusercontent.com/2288939/28537577-60c5db1c-7079-11e7-8de1-c1817a35d910.png)
+
+Overall, it's a really fun prototype that shows a lot of promise! As you can see, even I was confused about how to use it. It's also feels pretty janky. It's not a smooth experiece at this point but I can imagine how it could be one day.
+
+However, I do have one BIG reservation with a language like this (or Unison or Elm or Haskell): reading the syntax is difficult, even for me, and especially for a beginner. I wonder if the solution could be as simple as more verbose syntax "if this is true then X otherwise Y" or "transform each element in list X by Y" as opposed to the minimalist style they have now with almost no words. Maybe shapes would be helpful. Maybe higher level macros.
+
+I want to spend more time working with it, getting a better sense of what it can do. The next steps are:
+
+1. build a few toy programs in it, maybe solve some project euler problems.
+2. get a sense of how its code works, in particular how the editor's type-a-head suggestions work
+
+Other tasks I want to work on today:
+
+1. Edit my podcast interview with Jonathan Leung I recorded on Friday.
+2. Design the podcast logo.
+3. Put my "thesis" for the future of coding on the website. Add topics that I find interesting, like pull request without leaving the main page, types as shapes, etc. Pull from:
+  * https://github.com/stevekrouse/cycle/blob/d6094179c97ec815198cf24cbab9248968a2f157/README.md#principles
+  * https://docs.google.com/document/d/1oSbI5z7BZVkHxf0gOabjz393HiLAys1WJeHnaVMg4dg/edit?usp=drive_web
+
+
 ### July 20, 2017 9:41am
 
 Yesterday ended up being a particularly productive research session, but I didn't have time to recap it. Here's a pretty solid picture of my progress: https://github.com/stevekrouse/futureofcoding.org/commit/4670a33f503a621f606de0338df1c21d161967fe#diff-424069113a08a4256349764ee38dbbbf
