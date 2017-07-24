@@ -4,6 +4,10 @@ title: Journal
 
 # Future of Coding Research Journal
 
+### July 24 2017 4:26pm
+
+I'm recognizing that I won't have time to get to what I hoped to today as I'm still just trying to get through my inbox and other tasks. To be clear, no research happened today but I have a solid plan for what to work on tomorrow!
+
 ### July 24 2017 2:04pm
 
 Apologies for skipping an entry on Friday. I spent most of the day installing Ubuntu on my chromebook so that I could try Lamdu out. And then I spent a while installing Lamdu. Finally I got it to work! You can see the conversation I had with one of the creators of Lamdu on its Gitter channel:
