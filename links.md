@@ -54,6 +54,10 @@ title: Link Research
 * https://cospaces.io/edu/
 * Lively Kernal
 * [Seymour Papert On Logo](http://el.media.mit.edu/logo-foundation/resources/onlogo/index.html)
+* [Type Systems for Beginners](https://gilbert.ghost.io/type-systems-for-beginners-an-introduction/)
+* [Types, Logic, Semantics, and Verification](https://www.cs.uoregon.edu/research/summerschool/summer15/curriculum.html)
+* [Framer 3](https://www.producthunt.com/posts/framer-3)
+* 
 
 ## Researched
 
