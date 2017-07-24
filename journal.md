@@ -26,7 +26,7 @@ Other tasks I want to work on today:
 3. Put my "thesis" for the future of coding on the website. Add topics that I find interesting, like pull request without leaving the main page, types as shapes, etc. Pull from:
   * https://github.com/stevekrouse/cycle/blob/d6094179c97ec815198cf24cbab9248968a2f157/README.md#principles
   * https://docs.google.com/document/d/1oSbI5z7BZVkHxf0gOabjz393HiLAys1WJeHnaVMg4dg/edit?usp=drive_web
-
+  * TODOs from futureofcoding.org/links
 
 ### July 20, 2017 9:41am
 
