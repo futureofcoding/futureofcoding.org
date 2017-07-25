@@ -98,6 +98,7 @@ title: Link Research
   * I found this wonderful video showing it in action https://vimeo.com/97713439. This video is like Paul's early demo's of Unison but more extensive! I'm blown away. I can't believe I didn't find this sooner. I want to submit a pull request to get them to put this video on their main page. Ok, just did... https://github.com/lamdu/lamdu.github.io/pull/5
   * it's been hours and things still aren't done installing... just updated my c9 instance to have the max RAM and memory
   * More research in my journal here http://futureofcoding.org/journal#july-24-2017-204pm
+  * My final notes on Lamdu in my journal here: http://futureofcoding.org/journal#july-25-2017-226pm
   
 * [A brief history of "type"](http://arcanesentiment.blogspot.com/2015/01/a-brief-history-of-type.html?m=1)
 
