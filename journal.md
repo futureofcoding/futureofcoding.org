@@ -4,6 +4,62 @@ title: Journal
 
 # Future of Coding Research Journal
 
+### July 25 2017 2:26pm
+
+Again, I'm finally getting to research late in the day. I spent the morning reveiewing Woof pull requests and doing emails. But I'm finally here on the Ubuntu side of my chromebook, playing with Unison...
+
+I got the factorial code to work by following the advice of the founder of Unison in the conversation I pasted below:
+
+![](http://imgur.com/N2cPWPUl.png)
+
+So I tried to accomplish https://projecteuler.net/problem=7. First I tried the dumb way by checking each prime against all numbers lower than it. Then I tried the smarter way by only checking against the primes lower than it. However in the course of constructing a helper function I must've messed something up badly because I caused a Lamdu to crash:
+
+![](http://imgur.com/oqFatIul.png)
+
+What I love about Lamdu:
+
+* immediate evaluation 
+
+* evaluation of recursive function that you can scroll through
+
+* named parameters that are auto-typed for you
+
+* searching for terms by type
+
+* allowing you to put a incorrectly typed term somewhere but have it highlighted as red
+
+* quick declaration of structural types
+
+So what I don't like about Lamdu:
+
+* It's not obvious if you have selected a term or if it's still a "hole". I don't think they should put the top search result in a hole because it looks like it's been filled. I think holes should be reserved for no data or data of the wrong type in which case they would be red colored which is clear.
+
+* It's impossible (or I don't know how) to move code around easily. For example, turning an expression in the body of a function into a variable in a let expression. Another thing I wanted to do was "lift" an if-expression outside of its subexpression and make it the parent expression.  
+
+    Instead of: `prime' (if blah then x else y) (if blah then p else q)`
+
+    I wanted: `if blah then (prime x p) else (prime y q)`
+
+    The only way to accomplish this that I knew of was to basically start the expression from scratch. Clearly, text is superiror if this is was structured editing is like. I wonder if we can overcome this issue of moving code around. My gut tells me that the more consistent/uniform the syntax of the code is, the easier it will be to move things around. However, a simple way to solve this particular problem would be to have a copy-and-paste feature. Then I could copy the whole expression, delete the parent expression from within the child expression, and then paste the entire old expression into the former-child-now-parent expression and delete the former-parent-now-child expression's child expression. Not too terrible.
+
+* As I've said before, the syntax is too sparse. They could make the method names longer and more understandable. Also for if-expressions, there's really no syntax at all which makes it impossible to search for if-expressions via the keyboard. You have to type out a boolean expression and hit space and then select the if-expression.
+
+* The type errors aren't very helpful. Now they just show me the expected type and the actual type. It'd be nice if they suggested a way to convert, which isn't hard for streams and arrays. Or even just explained the error in text, as in "The `length` function expects an Array. You have given it a Stream. Please either give the `length` function an Array or use a function that inputs a Stream." This might seem obvious to most Haskell programmers but it isn't to most programmers, especially beginners.
+
+* I wish there were more "command prompts" for me to evaluate random expressions. I don't like having to delete old ones to try out new ones. I wish it were more like IPython notebook in this way.
+
+* I wish I could declare the type of something myself as opposed to having to wait for Lamdu to infer it.
+
+* Why don't Streams have a built-in `length` method? Given that there is a `sum` method that operates on Streams, I don't see any reason why there can't be one.
+
+* Ultimately the biggest issue I have with Lamdu is really more an issue with Haskell-like languages (Elm, Unison) in general. They are really, really hard to parse. I find it incredibly difficult to follow what's going on. Possibly this would get better the more time I spend with these langauges but I've already spent hundreds of hours so I don't think a langauge that requires thousands of hours to get proficient at reading it is what we're going for here. 
+
+  The benefits gained from functional programming (no runtime errors, more declarative/abstract code) are invaluable. The question for me is: how to we take these benefits and make them less costly? One idea that I think about a lot is [types as shapes](https://medium.com/@stevekrouse/types-are-shapes-d6af1e83192f), but I am doubtful of how well this idea scales. It requires more research. More generally, visual metaphors could be helpful here somehow, because functional/reactive programming is super easy for people in the context of spreadsheets, which is part of the idea behind [aprt.us](http://aprt.us/).
+  
+* Ok, to be honest, my biggest issue with Lamdu is that it's a desktop application that I have to install from source to get to play with it. I have to plan my whole day around switching to the Ubuntu side of my comptuer to play with it. Unison also has a non-web backend, partly Haskell and partly Scala I think, although inital demos were done on the front end in Elm. I think Luna-lang is also a native app, but I'm not sure of that. What langauge to build something like this in isn't a clear one for me. Watching Unison and Eve both start with Elm and then move off it has been interesting to see. I think Eve moved to vanilla JS for speed reasons, which probably will be where I end up too.
+
+* I found the Lamdu code really hard to parse through and find anything interesting or even understandable. Haskell is tough. Maybe if I get these guys on my podcast, I'll have them walk us through their code.
+
 ### July 24 2017 4:26pm
 
 I'm recognizing that I won't have time to get to what I hoped to today as I'm still just trying to get through my inbox and other tasks. To be clear, no research happened today but I have a solid plan for what to work on tomorrow!
