@@ -4,6 +4,14 @@ title: Journal
 
 # Future of Coding Research Journal
 
+### July 25 2017 4:52pm
+
+While I didn't spend as much time playing with Lamdu as I wanted to nor did I get a good sense of how its code works, I feel satisfied with my learnings from the day and content to move on to other research. I started a list of project ideas at futureofcoding.org/ideas that I'm going to add to as I come up with them. Some of them are as simple as an essay, others are mockups, and yet others are prototype ideas.
+
+So what will my plan be for tomorrow? I probably don't have time for any heavy-duty research because of meetings and other responsibilities. Maybe I'll work on my github issues or other things that need happening for the podcast, like desigining the logo. That means I won't have time for research until Friday (as Thursday is stock full of meetings).
+
+On Friday... while there are many other interesting links to review, I am feeling myself being pull towards my project ideas and protoyping. However, given that it's the last day before my bi-weekly research recap, I might decide to stick with researching other people's product and spend the day with Eve, which is browser-based, thank goodness! Remains to be seen... see y'all back here in a few days.
+
 ### July 25 2017 2:26pm
 
 Again, I'm finally getting to research late in the day. I spent the morning reveiewing Woof pull requests and doing emails. But I'm finally here on the Ubuntu side of my chromebook, playing with Unison...
