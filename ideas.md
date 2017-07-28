@@ -14,11 +14,11 @@ title: Research Ideas
 
 ## Ideas to solve them
 
-* essay about why we should stop teaching for loops in favor of forEach loops and while loops (is this how python works already?)
+* streams as spreadsheets
+  * http://futureofcoding.org/journal#streams-as-spreadsheets
 
 * mock up what it would look like to have **layers** as the core computational abstraction, allowing users to peak under the hood of their apps, change things, and submit pull requests without leaving the app. 
-
-* can we combine strong types + macros to get natural language coding or less stack overflow?
+  * http://futureofcoding.org/journal#layers-as-functional-abstraction
 
 * continue researching types-as-shapes, potentially even building a prototype
 
@@ -28,6 +28,10 @@ title: Research Ideas
   * make a reactive WoofJS
   * make a game engine with an aprt.us interface
   * make an Elm game engine
+
+* can we combine strong types + macros to get natural language coding or less stack overflow?
+
+* essay about why we should stop teaching for loops in favor of forEach loops and while loops (is this how python works already?)
 
 * continue working on Cycle v2 w/o VueJS (and maybe without Blockly)
 
