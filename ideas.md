@@ -18,7 +18,7 @@ title: Research Ideas
 
 * streams as spreadsheets
   * http://futureofcoding.org/journal#streams-as-spreadsheets
-  * http://futureofcoding.org/journal#streams-as-spreadsheets-#2
+  * http://futureofcoding.org/journal#streams-as-spreadsheets-2
 
 * mock up what it would look like to have **layers** as the core computational abstraction, allowing users to peak under the hood of their apps, change things, and submit pull requests without leaving the app. 
   * http://futureofcoding.org/journal#layers-as-functional-abstraction
@@ -30,11 +30,11 @@ title: Research Ideas
 
 * reactive game engines
   * make a reactive WoofJS
-    * http://futureofcoding.org/journal#Reactive-WoofJS
+    * http://futureofcoding.org/journal#reactive-woofjs
   * make a game engine with an aprt.us interface
-    * http://futureofcoding.org/journal#Aprt.us-like-interface-as-Game-Builder
+    * http://futureofcoding.org/journal#aprtus-like-interface-as-game-builder
   * make an Elm game engine
-    * http://futureofcoding.org/journal#Elm-game-engine
+    * http://futureofcoding.org/journal#elm-game-engine
 
 * can we combine strong types + macros to get natural language coding or less stack overflow?
 
