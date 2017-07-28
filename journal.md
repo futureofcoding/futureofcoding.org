@@ -14,11 +14,12 @@ So far today I spent a few hours prototyping the "Layers as functional abstracti
 
 ![image](https://user-images.githubusercontent.com/2288939/28730166-f6b76174-739c-11e7-8898-7c0ba56d7fc9.png)
 ![image](https://user-images.githubusercontent.com/2288939/28730170-f95a15d4-739c-11e7-8ea7-102c598d5bde.png)
-![image](https://user-images.githubusercontent.com/2288939/28730175-fbfafe0c-739c-11e7-9797-150a0326a1ef.png)
 
-While I still LOVE the ultimate goal of enabling end-users of a product to pop into an edit or customize layer, I'm not sure how important the visual metaphor of peeling back layers of absraction is to this end. And even if it is, it's something we can layer on (pun intended) on a later date. I think a left to right scroll bar type abstraction (as in the last journal page) with arrows is extremely reasonable now for prototyping.
+While I still LOVE the ultimate goal of enabling end-users of a product to pop into an edit or customize layer, I'm not sure how important the visual metaphor of peeling back layers of absraction is to this end. And even if it is, it's something we can layer on (pun intended) on a later date. I think a left to right scroll bar type abstraction (as in streams as spreadsheets page below) with arrows is extremely reasonable now for prototyping.
 
 #### Streams as Spreadsheets
+
+![image](https://user-images.githubusercontent.com/2288939/28730175-fbfafe0c-739c-11e7-9797-150a0326a1ef.png)
 
 I came up with a few interesting insights:
 
