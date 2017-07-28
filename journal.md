@@ -4,6 +4,60 @@ title: Journal
 
 # Future of Coding Research Journal
 
+### July 28 2017 1:45pm
+
+So I've done a solid job so far today of only working on my research here -- no emails have distracted me yet! I did a good job last night of snoozing all todos that can wait until next tuesday and leaving the remaining ones in my inbox to be dealt with at some point today. Focus. Easier said than done.
+
+#### Layers as functional abstraction
+
+So far today I spent a few hours prototyping the "Layers as functional abstraction" idea with pen and paper.
+
+![image](https://user-images.githubusercontent.com/2288939/28730166-f6b76174-739c-11e7-8898-7c0ba56d7fc9.png)
+![image](https://user-images.githubusercontent.com/2288939/28730170-f95a15d4-739c-11e7-8ea7-102c598d5bde.png)
+![image](https://user-images.githubusercontent.com/2288939/28730175-fbfafe0c-739c-11e7-9797-150a0326a1ef.png)
+
+While I still LOVE the ultimate goal of enabling end-users of a product to pop into an edit or customize layer, I'm not sure how important the visual metaphor of peeling back layers of absraction is to this end. And even if it is, it's something we can layer on (pun intended) on a later date. I think a left to right scroll bar type abstraction (as in the last journal page) with arrows is extremely reasonable now for prototyping.
+
+#### Streams as Spreadsheets
+
+I came up with a few interesting insights:
+
+1. Creating streams by example - events populate the spreadsheet as you interact with the page. You can select different fields to create your query.
+2. SQL ideas are relevant here. Filtering is like "where". Picking columns is "select". Aggregation is like "group by". 
+3. Map is just adding a column! That's a fucking coup. I freaked out when I realized this idea.
+4. We can start with text as the formula programming language, even ending in HTML or JSX at the end, to start here. Because while syntax and type error and runtime errors suck, Excel programmers to them all the time.
+5. The ability to put a sheet inside the cell/column of another sheet (streams of streams) is very powerful computationally, for example it'd make it easy to "clear all completed todos". However, this may be too complicated in the way my CycleJS mario game was. 
+
+From a protoyping on the computer perspective...
+
+1. Firstly, create a div that has all of the event handlers on to be the "page"
+2. Pop all events into a spreadsheet
+3. The ability to fold over the spreadsheet to a number
+4. The ability to customize the HTML of the div in such a way that the number updates automatically
+5. The ability to add a column for map
+6. The ability to create new sheets by filtering
+7. The ability to reference other sheets
+
+I found some really interesting links after googling "streams as spreadsheets", including this one women who's obessed with giving talks about implementing algorithms in spreadsheets. TODO add these to /links. TODO move Imp to the top of the reaserch list.
+
+While this idea is probably too wacky (simple but not easy), there are lots of amazing benefits here by combinging a few powerfully simple abstractions: spreadsheets, SQL, reactivity, functional programming, unidirectional dataflow, immutability, state as a reducer of all events, programming by example. 
+
+While it seems less "simple", probably the next direction to take this idea is to make it more like the "correct" way to do CycleJS with less cleverness and more of an Elm-like approach. (My mario vs the correct mario.)
+
+#### Rest of today
+
+I'm enjoying pen and paper prototyping so I think I'm going to continue that with the rest of today...
+
+*  Workflowy-like work planning and branching tool (potentially for woofjs.com)
+* reactive game engines
+  * make a reactive WoofJS
+  * make a game engine with an aprt.us interface
+* types-as-shapes
+
+#### Problem first thinking
+
+I am excited about where problem first thinking (which Alan Kay reminded me of) has taken me so far with this Streams as Spreadsheets idea. Let's keep it up. Keep an eye out for problems that don't have immediately obvious solutions.
+
 ### July 25 2017 4:52pm
 
 While I didn't spend as much time playing with Lamdu as I wanted to nor did I get a good sense of how its code works, I feel satisfied with my learnings from the day and content to move on to other research. I started a list of project ideas at futureofcoding.org/ideas that I'm going to add to as I come up with them. Some of them are as simple as an essay, others are mockups, and yet others are prototype ideas.
