@@ -12,10 +12,13 @@ title: Research Ideas
 
 * it's difficult to keep track of the specific problem we're working on and how it pertains to the larger goal
 
+* version control of firebase, for development, rollbacks
+
 ## Ideas to solve them
 
 * streams as spreadsheets
   * http://futureofcoding.org/journal#streams-as-spreadsheets
+  * http://futureofcoding.org/journal#streams-as-spreadsheets-#2
 
 * mock up what it would look like to have **layers** as the core computational abstraction, allowing users to peak under the hood of their apps, change things, and submit pull requests without leaving the app. 
   * http://futureofcoding.org/journal#layers-as-functional-abstraction
@@ -23,11 +26,15 @@ title: Research Ideas
 * continue researching types-as-shapes, potentially even building a prototype
 
 * build a Workflowy-like work planning and branching tool (potentially for woofjs.com)
+  * http://futureofcoding.org/journal#workflowy-git
 
 * reactive game engines
   * make a reactive WoofJS
+    * http://futureofcoding.org/journal#Reactive-WoofJS
   * make a game engine with an aprt.us interface
+    * http://futureofcoding.org/journal#Aprt.us-like-interface-as-Game-Builder
   * make an Elm game engine
+    * http://futureofcoding.org/journal#Elm-game-engine
 
 * can we combine strong types + macros to get natural language coding or less stack overflow?
 

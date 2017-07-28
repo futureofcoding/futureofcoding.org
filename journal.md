@@ -4,6 +4,78 @@ title: Journal
 
 # Future of Coding Research Journal
 
+### July 28 2017 5:25pm
+
+#### Shower thoughts
+
+I had a tough time focusing on other ideas this afternoon, so I took a shower to be disconnected from distracting technology and could focus and brainstorm. The cornerstone of this technique is [a waterproof notepad](https://www.amazon.com/Aqua-Notes-Water-Proof-Note/dp/B01AS5I0ZS). Worth its weight in gold. 
+
+![image](https://user-images.githubusercontent.com/2288939/28737030-b88c46b2-73ba-11e7-86fb-ed5deb70943c.png)
+
+### Workflowy Git 
+
+One of the hardest things about programming is keeping track of what you're trying to accomplish. This is harder in programming than most disciples because programming has problems with subproblems that have subproblems that have subproblems. Fortunately programming also has a slew of mental techniques for dealing with this challenge.
+
+The core techinque is top-down programming, whereby a programmer breaks down bigger tasks into smaller tasks into a nested todo list. This is why at our afterschool program, [The Coding Space](http://thecodingspace.com), we encourage our students to always have a list of steps for each problem they are working on. If they're working on of the guided projects, which we call "untutorials", in our [curriculum](http://coding.space), we create this list of steps for them. Whenever we go to Socratically help a student who gets stuck, we start by asking, "What are you trying to accomplish?" and if they don't know, we are easily able to get them to focus on the problem at hand by asking, "What step are you on?"
+
+We encourage our students to create a similar list of steps to keep themselves organized when they being working on projects that they design themselves. This works well. However, students don't always take us up on this piece of advice, so it would be nice if there was a way to integrate this workflow more deeply into the code-screen-workflow as opposed to on a piece of paper.
+
+Even more importantly, when a student works on particularly complex projects or work with difficult APIs, a simple flat list of steps begins to not be enough. What you need then is top-down programming, the ability to break problems down, and down, and down, so you can track where you're working when you're stuck 6 levels deep in a debugging session.
+
+Here are my thoughts on a "top down programming interface" could look like, potentially on [woofjs.com](http://woofjs.com).
+
+1. It integrates into the code IDE, so that each sub-problem is its own branch of the code. Each sub-problem branch will be like a Github issue where you can have discussions, reference other #branches and @people, comment directly on lines of code, get your code reviewed, and merge into parent branches.
+2. It also sets a default amount of time for each subproblem that you can customize and it will notify you when it thinks you're spending too much time on a problem, which will help you realize that you need to create another subproblem or maybe that you're stuck in the [X Y Problem](http://xyproblem.info/).
+3. Combines version control and code development into a single website to make it even easier to begin hacking. You can easily help another programmer with their sub problems without getting in their way because everything is its own branch. It could allow master programmers to mentor younger ones by creating the tree for them and letting the younger programmers tackle it.
+4. One open question is how permsissioning works. Who is allowed to edit what files on which branches. Can you clone someone's entire tree? Or just create more branches on the same tree?
+5. Sometime I should think about how [Paul Graham's Bottom-Up programming](http://www.paulgraham.com/progbot.html) could relate here.
+6. This would leave a wonderful breadcrumb trail of how the code was built. In fact it could entirely replace comments with the name of the task that this code was created under. It's like git blame but much, much more powerful because 1) it's more fine grain and 2) it's a tree structure.
+7. I love branches in git but they are such a pain to create and switch between. Life should just be this easy. Creating and switching them should be as easy as navigating workflowy.
+
+#### Streams as Spreadsheets #2
+
+I had a few more thoughts here!
+
+1. HTML elements could be represented as rows in a spreadsheet, where the columns are attributes. It might be difficult to visualize elements that have different sets of columns than each other, like how input's have placeholders, but div's don't, but I don't think that's insurmountable. Another potentially tricky issue might be how to deal with if-branches in HTML code. For example, inside a todo element how if it's being edited, it's a input, but otherwise it's a span.
+2. There are a few different types of operations you can do in this system to construct your programs: adding a new column expression, creating a new sheet with a filter, folding up a sheet into one value (which I'm realizing now can be aggregates at the bottom of the sheet). While I normally don't like text, I think in the short-term we can do text in the Excel or Google Spreadsheets style with type-a-head and good colors when you type recognized functions or other sheets/columns. This will probably takes weeks to build but it's worth it I think -- problem first thinking!
+3. It's neat how much this system has in common with SQL, often the best example of a declarative programming language. I wonder if there are ways to capitalize on that. Relatedly, how would this system's backend work? Given that everything is a fucking SQL sheet, I think that story could be gorgeous, but I don't have a clear idea of it yet.
+4. How would you do version control in a system like this? Clearly, we need a middle layer of abstraction. A "spreadsheet calculus" if you will that describes the shape of the data and actions you can take on it, which will then allow us to keep track of edits and then the collaboration and VC story will make sense I think.
+
+#### Aprt.us-like interface as Game Builder
+
+1. In Aprt.us right now, can I animate something by setting it to one more than it was before?
+2. Can we do gravity?
+
+#### Elm game engine
+
+1. build 3 woof/scratch games
+2. abstract
+3. look at mcmaster's engines
+
+
+#### Reactive WoofJS
+
+```javascript
+var sprite1 = new Image({
+  url: "..."
+  acceleration: () => -1,
+  speed: () => this.speed() + this.acceleration(),
+  x: () => this.x() + this.speed()
+})
+```
+
+1. We need to make sure that the `this` keyword within Sprite's properties refer to the prior value of that number and not to the function which would cause an infinite loop. How do we specify the first value here?
+2. Should all get calls be functions with parens for consistency?
+
+#### Github page markdown as CMS
+
+I'm loving it! I often use Github.com directly as my CMS which is normally great. On this particular commit, I have a lot to say and refer to so I'm doing it on cloud9. In particular I love how easy it is to link to headings in markdown, include images, deployment happens automatically, and github issues integrated.
+
+#### Research Recap #2
+
+The plan for Monday is to organize my thoughts, record and edit Research Recap #2. I think a good plan would be to re-read this journal, review my links and ideas, do a little more research to tie up loose ends, and then go for it. Might not take the whole day.
+
+
 ### July 28 2017 1:45pm
 
 So I've done a solid job so far today of only working on my research here -- no emails have distracted me yet! I did a good job last night of snoozing all todos that can wait until next tuesday and leaving the remaining ones in my inbox to be dealt with at some point today. Focus. Easier said than done.
