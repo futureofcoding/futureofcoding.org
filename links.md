@@ -24,6 +24,7 @@ title: Link Research
 * [Chorus](http://www.chorus-home.org/)
 * Kite.com
 * PureScript
+* https://elixir-lang.org/
 * http://www.eff-lang.org/
 * https://personal.cis.strath.ac.uk/conor.mcbride/pub/Frank/TFM.pdf
 * Idris
