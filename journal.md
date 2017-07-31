@@ -4,7 +4,45 @@ title: Journal
 
 # Future of Coding Research Journal
 
-### July 31 2017 10:52pm
+### July 31 2017 2:02pm
+
+#### Thinking about my schedule
+
+So I read through my notes over the past two weeks and was struck by the fact of how little work I did, but how much I got done. On the one hand, I'm proud of being efficient but on the other hand, I think I am not yet at capacity. I can get even more done with focus.
+
+I want to make my schedule clear on this research recap:
+
+* Two days full research every week. 
+* One day Coding Space. 
+* One day Woof. 
+* One day Research / Podcast tasks. 
+
+On my calendar, this week it looks like:
+
+* Monday Research Recap
+* Tuesday Coding Space, Woof, Podcast tasks
+* Wednesday Research (with some time for tasks I don't get done on Tuesday)
+* Thursday Coding Space, Woof, Podcast tasks
+* Friday Research
+
+So there's not much time for real research. Potentially I will scale back on some of these non-research tasks so I can eek out more time for this project, but I'm not yet ready to do that with Woof or The Coding Space. I'm also thinking about waking up earlier, watching less TV, and having 1 less plans with friends and family per week so I have an extra few hours for research.
+
+#### Purpose of this project
+
+The purpose of this project as I see it now is bringing the future of programming nearer. Things don't happen by themselves. People need to make them happen and that's what I'm trying to do here. I used to think this meant building it myself but I have a much broader perspective now. I can nurture the community, introduce people, inspire people, help people with their projects, etc. I do hope that this research project results in a product that I can dedicate a portion of my life towards building. But I'd be thrilled if someone else figured it out first. I'd try to help them, and if they don't need my help, I can go work on other projects. 
+
+#### Research was much more tangible helpful than I would've thought
+
+In looking over the research I did over the past two weeks, I'm realizing how I was actually more influenced by the ideas than I thought I was. In particular, Mark Mahoney's prototype about version control for learning which inspired my thoughts on the workflowy git idea. And Bill Burdick's Leisure which inspired my thoughts around bluring the line between viewing and editing apps. Working with Lamdu made me realize how much I dislike the Unix terminal, installing stuff, files and folders abstractions, etc, among other things. Lambu, which is so much better than Haskell, is still so so far away from what the world needs -- the syntax is just really hard to read, even after spending years and years with it, which inspired me to think past my idea of getting rid of type and syntax errors. We also need better abstractions and metaphors.
+
+#### Research Recap #2 Notes
+
+I think I have a good collection of things to talk about. Now let's just order them in a way that makes sense...
+
+* http://futureofcoding.org/journal#reflections-on-my-emotions-during-this-first-week
+* Really loving github markdown as CMS so far.
+
+### July 31 2017 10:52am
 
 Today is a Research Recap Day (tm)! Just kidding about the (tm). I don't believe in [intellectual property](http://levine.sscnet.ucla.edu/general/intellectual/against.htm). But I am seriously excited to spend today reviewing my reserach for the past two weeks into a podcast/blog post synthesis that will allow me to tell others what I'm working on and also provide more focus, direction and reflection for myself.
 
