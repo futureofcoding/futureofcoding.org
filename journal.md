@@ -458,7 +458,7 @@ Clearly, I should start with (8) because it will help me come up with other thin
   ga('send', 'pageview');
 
   function urlify(text) {
-       var urlRegex = /(https?:\/\/[^\s]+)/g;
+       var urlRegex = /[^"](https?:\/\/[^\s]+)/g;
        return text.replace(urlRegex, function(url) {
            return '<a href="' + url + '">' + url + '</a>';
        })
