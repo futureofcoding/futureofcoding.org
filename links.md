@@ -14,6 +14,7 @@ title: Link Research
 
 ### Unordered
 
+* [Maude](https://www.youtube.com/watch?v=mZE_Xv9qym4), which comes highly reccomended by Ezekiel Smithburg from the Future Programming Slack.
 * http://worrydream.com/substroke/
 * [ICFP 2012. Roly Perera: Functional Programs that Explain their Work.](https://www.youtube.com/watch?v=pqtqaL_ojpk&feature=plcp)
 * [Pacific Northwest Scala 2013 We're Doing It All Wrong by Paul Phillips](https://www.youtube.com/watch?v=TS1lpKBMkgg)
