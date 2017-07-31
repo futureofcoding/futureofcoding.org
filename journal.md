@@ -4,6 +4,43 @@ title: Journal
 
 # Future of Coding Research Journal
 
+### July 31 2017 10:52pm
+
+Today is a Research Recap Day (tm)! Just kidding about the (tm). I don't believe in [intellectual property](http://levine.sscnet.ucla.edu/general/intellectual/against.htm). But I am seriously excited to spend today reviewing my reserach for the past two weeks into a podcast/blog post synthesis that will allow me to tell others what I'm working on and also provide more focus, direction and reflection for myself.
+
+#### Reflections on my emotions during this first week
+
+First things first, I have to say how much I'm loving this system I've set up for myself. Even though this is only the first iteration through it -- and nothing yet has been publicly launched -- I feel like that last two weeks are the most productive I've had all year. In particular, I feel a positive sense of "gotta get focused so I have good stuff to talk and write about for my research recap." It makes me wonder if I should do this every week! (However, given my current schedule of 1 day Coding Space, 1 day Woof, and 3 days Future of Coding, I don't know if I want to spend 1/3rd of my time reviewing, leaving only two days per week for forward progress.) Anways, I'm excited and also wondering how long this productivity kick will continue.
+
+Part of why I've been so productive is that this structure helps me focus. Focus is notoriously difficult but also [very important according to successful people](https://www.linkedin.com/pulse/20140707144749-8353952-the-one-word-answer-to-why-bill-gates-and-warren-buffett-have-been-so-successful). Because I have research to do and recap, I realized that much of what was in my inbox on Friday needed to be snoozed until Tuesday. However, because I pride myself on my responsiveness, this was hard. It was also hard because those were fun and productive tasks that I know I'd get an emotional high from doing them. However, this is what focus looks like: procrastinating the things that are less important. Even more important is quitting the things that aren't important. I think part of the reason focus is so hard is that we are taught that those things (taking a long time to respond, procrastinating, quitting) are bad as children. Richard Feynman has this great line where he tells people that he's "irresponsible" so they don't give him any admin jobs so he can focus on his research. I love that.
+
+#### Alan Kay's relentless problem-focus
+
+Whilw I intellectually know that you should build a product to solve a problem, in the moment I often lose sight of that. I am a technologist. I like building things for their own sakes, similar to how an artist makes art for its own sake. 
+
+However, when I'm trying to build towards the future of programming, there is no place for "solutionism". I think of solutionism as looking around at the tools in your toolbelt and the lego pieces on the floor and asking, "what can I do with these?" This methodology becomes quite dangerous when you then convince yourself that somebody would find that thing useful. That's the perfect recipe to build a product that solves a problem that nobody has, or "acheiving failure", as Eric Reis says.
+
+In his YC Startup School talks, Alan Kay did a great job disabusing me of these tendencies (for now, it's a constant struggle for someone like me). The way he put it was that you should build towards the problem, inventing whatever you need to in order to make a good solution. Need to build a custom programmign language? Need to build an operating system from scratch? Go for it. This was a great kick in the butt for me because I've shyed away from most ambitious prototype ideas that would require more than a few weeks to hack together. While this is a decent technique to avoid getting bogged down in the technical details of a bad prototype, it also precludes me from stumbling into a truly breakthrough idea, whose sub components don't even exsist yet, because that's how breakthrough it is. If the answer to this question is just recombining pieces that are already out there, someone would've solve it by now. 
+
+One key sub-skill that I need to get better at here is recording problems that I don't see immediate solutions to. As an innovator, I often willfully ignore ideas whose solutions seem too far out, which is probably a good practice for people to have to work to make a buck every day. However, given that I'm in my own personal R&D department, it's my job to think about those big problems so I need to retrain myself to write down all big problems, *especially* the ones I have no clue about how to solve.
+
+#### Excited about "Streams as Spreadsheets" 
+
+On Friday I fleshed out an idea that I'm really excited about: streams as spreadsheets. Here's how I got there. As I was trying to understand the Lamdu codebase, I realized how even with my decades of programming and Haskell experience, I was unable after hours of trying to even get the bareset glipse about how it all works together. I think it would take another dozen painful hours to get to a good place with it. (Of course if someone on the team walked me through it a bit or they had more documentation explaining how the code worked, that'd help.) To be clear, the Lamdu guys seem brilliant and I'm sure their code is really clean and easy to understand. That's the point: even in the best case, representing a software program as a series of folders containing plaintext does not lend itself well to comprehendablility.
+
+So I thought about how neat would it be if without leaving Lamdu, I could immediately pull up the code relevant to the UI piece I'm touching, be able to monkey with it, and submit a pull request if neccesary, all without leaving the tool. (I'm realizing as I'm writing this that Eve has a pretty good story for this use-case. In fact, I'm realizing that this prototype might have a lot in common with Eve. Will need to look into this more!)
+
+So my initial idea / metaphor for this was being able to "peel back" the UI layer of an app, and see the layer below it, and potentially be able to peel back that layer too to see the layer below that. However, while prototyping I began to realize that what I really want is for every layer in the UI to be a spreadsheet. In particular, this solved the problem of how to mutate data by side-stepping it by making everything an immutable stream.
+
+I have other thoughts below about how this could work so I won't repeat them here:
+
+* http://futureofcoding.org/journal#streams-as-spreadsheets
+* http://futureofcoding.org/journal#streams-as-spreadsheets-2
+ 
+I will say, however, that I want to resist the strong pull towards beginning to build this in code. I have noticed in the past, in myself and others, that when I'm working on building a thing, I get a bit of tunnel vision and actively avoid researching other products. I feel a sense of dread when I hear about another, similar product, as I see all of my hard work and beautiful code going to waste. So I want to make it through at least another 2-week research cycle before jumping into a prototype, but I'm thinking that I might need another two or three of these research cycles before I feel like I have a good sense of what's out there and confident that spending the next few weeks or months working on a speficif protoype is the best use of that time.
+
+Ok, so that's a quick review of what's on my mind now. After lunch, I'll continue to review my research from the last two weeks here, and then record it all in podcast form :)
+
 ### July 28 2017 5:25pm
 
 #### Shower thoughts
