@@ -39,8 +39,16 @@ In looking over the research I did over the past two weeks, I'm realizing how I 
 
 I think I have a good collection of things to talk about. Now let's just order them in a way that makes sense...
 
+* http://futureofcoding.org/journal#purpose-of-this-project
 * http://futureofcoding.org/journal#reflections-on-my-emotions-during-this-first-week
-* Really loving github markdown as CMS so far.
+* http://futureofcoding.org/journal#github-page-markdown-as-cms
+* http://futureofcoding.org/journal#thinking-about-my-schedule
+* http://futureofcoding.org/journal#research-was-much-more-tangible-helpful-than-i-wouldve-thought
+* http://futureofcoding.org/journal#alan-kays-relentless-problem-focus
+* http://futureofcoding.org/journal#excited-about-streams-as-spreadsheets
+* http://futureofcoding.org/journal#workflowy-git
+* http://futureofcoding.org/journal#aprtus-like-interface-as-game-builder
+* http://futureofcoding.org/journal#reactive-woofjs
 
 ### July 31 2017 10:52am
 
