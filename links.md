@@ -9,6 +9,7 @@ title: Link Research
 * http://www.expressionsofchange.org/
 * https://github.com/jamii/imp
 * http://witheve.com/
+* google "streams as spreadsheet" and collect links here
 * http://www.luna-lang.org/
 
 ### Unordered
