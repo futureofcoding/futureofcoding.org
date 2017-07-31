@@ -457,4 +457,17 @@ Clearly, I should start with (8) because it will help me come up with other thin
   ga('create', 'UA-103157758-1', 'auto');
   ga('send', 'pageview');
 
+  function urlify(text) {
+       var urlRegex = /(https?:\/\/[^\s]+)/g;
+       return text.replace(urlRegex, function(url) {
+           return '<a href="' + url + '">' + url + '</a>';
+       })
+
+   }
+
+   var all = document.getElementsByTagName("li");
+   for (var i=0, max=all.length; i < max; i++) {
+        var element = all[i]; element.innerHTML = urlify(element.innerHTML);
+   }
+  
   </script>
