@@ -4,6 +4,83 @@ title: Journal
 
 # Future of Coding Research Journal
 
+### August 2 2017 6:34pm
+
+#### Invited to "Writers Workshop" in Boston
+
+Yesterday, Paul Chiusano called and invited me to a "writer's workshop" for independent future of programming languages researchers organized by Jonathan Edwards and Richard Gabriel. Very exciting! It's going to happen on Monday in Boston so I've got to get to work on my presentation. After some deliberation I've decided to build and present the WoofJS Workflow (formerly called "Workflowy Git").
+
+To prepare for the event, I want TODO some research on the other participants tomorrow...
+
+* https://en.wikipedia.org/wiki/Richard_P._Gabriel
+* http://dreamsongs.com/
+* http://web.mit.edu/barryam3/www/blog/
+* https://people.csail.mit.edu/sperezde/oopsla16.pdf
+* https://people.csail.mit.edu/sperezde/onward13.pdf
+* http://neverworkintheory.org/2016/09/30/rethinking-git.html
+* http://alarmingdevelopment.org
+
+#### WoofJS Workflow
+
+![image](https://user-images.githubusercontent.com/2288939/28898123-2c574060-77b2-11e7-86fc-892261294caf.png)
+
+Like last Friday, I spent a while (maybe 45 minutes this time) in the shower taking notes. This upcomming Friday I want to build a rough prototype of this. I may have to spend time this weekend on it too...
+
+##### Creating branches
+
+* replacing the WoofJS logo with the text, "What's one thing you want to accomplish?"
+* For each branch, you can see the linked breadcrumbs > of > how > you > got > there
+* It prompts you to create sub-branches with, "Could you break this problem down into a sub-problem?"
+
+##### Staging
+
+* not a seperate step
+* eventually, will be able to select chunks of code to merge
+* for now, create two sub branches, delete the changes in one and merge it, then you're left with a branch with the remaining changes
+
+##### Mergning
+
+* basic git merge with conflicts (eventually move to a github like interface)
+* will warn you about conflicts before you merge like github
+* I don't think fixing merge conflicts needs to be a seperate branch but that could make sense
+
+##### Editing branches
+
+* once you've editing a child, you can no longer edit the parent (unless you get rid of child changes)
+* re-ordering children is allowed
+* unindenting is not allowed (needs to be merged)
+* indenting is allowed
+* multi-homing is not allowed (for now)
+* (Eventually) each branch could have github style issue/branch discussions
+
+##### Permissioning
+
+* Anyone can create sub-branches. 
+* Up to the owner of the parent branch whether or not to merge.
+* Can hide all non-owner branches
+* Need to be formally added as a collaborater for real time editing
+
+##### History
+
+* could just be linear like git
+* would be neat if we could take advantage of the nested structure though...
+
+##### Other benefits
+
+* foster collaboration infinite levels deep, instead of just one level deep like with pull requests
+* allows mentors to help mentees by created nested structure that the mentee can attack
+
+##### Potential issues
+
+* doesn't solve top down programming with functional abstraction, which I've had a difficult time getting students to intuit on their own
+* easier with single file, but I don't see any clear blocker for many files
+* could work on any IDE, but maybe not as a terminal thing
+* internet connected, not as distributed
+
+##### Worried about timing
+
+I'll have to make sure to write out my presentation and time it so I can make sure I take no longer than 20 min. It's fun to gloat over all of my wonderful features but many of them will be obvious and I won't need to mention them. Also will need to figure out how much context I should give about myself, my other research, The Coding Space, and WoofJS. 
+
 ### July 31 2017 2:02pm
 
 #### Thinking about my schedule
