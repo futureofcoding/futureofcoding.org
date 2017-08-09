@@ -25,6 +25,8 @@ title: Research Ideas
 
 * continue researching types-as-shapes, potentially even building a prototype
 
+* build a generic expression building widget/library (google sheets formulas but without syntax errors)
+
 * build a Workflowy-like work planning and branching tool (potentially for woofjs.com)
   * http://futureofcoding.org/journal#workflowy-git
 
