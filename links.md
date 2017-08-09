@@ -12,6 +12,7 @@ title: Link Research
 * http://witheve.com/
 * google "streams as spreadsheet" and collect links here
 * http://www.luna-lang.org/
+* https://github.com/viskell/viskell
 
 ### Unordered
 
@@ -67,6 +68,9 @@ title: Link Research
 * https://github.com/reflex-frp/reflex
 
 ## Researched
+
+* [Flowsheets](http://tinyletter.com/Flowsheets/letters/flowsheets-visualizations)
+  * neat spreadsheet like interface for python computations
 
 * [Ken Perlin on Chalktalk](https://www.youtube.com/watch?v=xuzrF_82z7U)
   * professor at NYU
