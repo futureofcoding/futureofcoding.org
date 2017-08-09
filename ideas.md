@@ -40,6 +40,8 @@ title: Research Ideas
 
 * essay about why we should stop teaching for loops in favor of forEach loops and while loops (is this how python works already?)
 
+* essay about the flexbox block in cycle v2
+
 * continue working on Cycle v2 w/o VueJS (and maybe without Blockly)
 
 * continue working on Rose v1 with text as UI
