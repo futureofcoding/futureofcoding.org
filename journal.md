@@ -4,6 +4,26 @@ title: Journal
 
 # Future of Coding Research Journal
 
+### August 9 2017 5:19pm
+
+#### Boston Future Programming Writers' Workshop Recap
+
+The last few days have been a whirlwind! Although it might not seem that I spent much time working on Future of Programming research in the past few days, I've been doing almost nothing else besides this research -- so much so that I've been having trouble finding time to journal about it. Finally I have just 5 minutes now to jot down some notes.
+
+First of all, my presentation on the WoofJS Workflow went great! [Here's the Google Doc to the finished paper](https://docs.google.com/document/d/1gt4SDLgCSeKa_h1seWtriPFsve8aYHzdhuADWas2j0c/edit) that I talked through and then submitted to Splash PX!, the conference in Vancover, yesterday. Second of all, it was really amazing to get to meet Jonathan Edwards, Richard Gabriel, Mel Conway, and more! What a fun group of people working on these same issues I think about all day.
+
+I ended up spending most of Friday, Saturday and Sunday working on getting the protoype working, which you can now play with at woofjs.com/workflow. It's not super pretty or bug free yet but you can play with it.
+
+One of the most precient pieces of feedback I got on it was: why are you talking to us about this? Just try it out with your students. I think this is a really great point. I'm not a theoretical researcher. I'm a inventor/product person and our crucible is the user-test, not the paper review.
+
+#### Other updates from the last few days
+
+I spend many hours trying to find the right setup to do light editing on my podcasts. I tried my chromebook, a PC, a desktop iMac, a faster desktop iMac, an iPad Pro, and finally settled on... editing the episodes right on my iPhone 7 Plus! I am a fan of the free Hokusai 2 app. Seems to work great and it's all free.
+
+Given that I spent most of this two-week research cycle on prototyping, I'm not sure what I'll be talking about on the research recap episode on Monday... Probably go into some implementation details and more feedback I got at the workshop. I can also go into the other participants and their research, in particular, Paul Chiusano and Jonathan Edwards, both of whom I hope to have on the podcast soon!
+
+I don't plan to have time to do much research tomorrow but I plan on spending Friday morning here, probably sifting through links and working out various ideas. No more prototyping for a little while, I hope.
+
 ### August 4 2017 6:12pm
 
 I spent 3ish hours yesterday and 3ish hours this morning building out the WoofJS Workflow. It still has a long way to go but it was enough for me to get a sense of how it works and take a decent screenshot for the summary I sent to the other participants in the workshop on Monday. 
