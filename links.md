@@ -6,6 +6,7 @@ title: Link Research
 
 ## To Research
 
+* http://alarmingdevelopment.org/
 * http://www.expressionsofchange.org/
 * https://github.com/jamii/imp
 * http://witheve.com/
@@ -14,6 +15,7 @@ title: Link Research
 
 ### Unordered
 
+* Vi Hart
 * [Maude](https://www.youtube.com/watch?v=mZE_Xv9qym4), which comes highly reccomended by Ezekiel Smithburg from the Future Programming Slack.
 * http://worrydream.com/substroke/
 * [ICFP 2012. Roly Perera: Functional Programs that Explain their Work.](https://www.youtube.com/watch?v=pqtqaL_ojpk&feature=plcp)
@@ -62,6 +64,7 @@ title: Link Research
 * [Framer 3](https://www.producthunt.com/posts/framer-3)
 * https://en.wikipedia.org/wiki/Prograph
 * http://www.andescotia.com/products/marten/
+* https://github.com/reflex-frp/reflex
 
 ## Researched
 
