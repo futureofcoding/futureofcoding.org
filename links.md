@@ -6,6 +6,11 @@ title: Link Research
 
 ## To Research
 
+* [Tangible Functional Programming](https://www.youtube.com/watch?v=faJ8N0giqzw)
+* [Semantic Design](https://lukepalmer.wordpress.com/2008/07/18/semantic-design/)
+* [Denotational Design](http://conal.net/papers/type-class-morphisms/)
+* [Loper OS](http://www.loper-os.org/?p=861)
+* [The purpose of code is to be abstracted over](https://lukepalmer.wordpress.com/2010/01/24/haskell-antipattern-existential-typeclass/#comment-1017)
 * http://alarmingdevelopment.org/
 * http://www.expressionsofchange.org/
 * https://github.com/jamii/imp
