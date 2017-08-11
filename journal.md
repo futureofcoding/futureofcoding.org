@@ -4,6 +4,12 @@ title: Journal
 
 # Future of Coding Research Journal
 
+### August 11 2017 11:09am
+
+Sadly, because I allowed today to get filled with various other tasks and meetings, I don't have time for research today. For example, I have four interviews for part-time teachers at The Coding Space this afternoon. 
+
+However, I will say that I've been spending a ton of my time thinking about my "streams as spreadsheets" idea and really think there's some potential here. In particular, I love how concrete it makes everything. You never have to imagine how the streams flow into streams which flow into data which flow into HTML elements. Everything is always inspectable and concrete, even asynchronous things, in their own streams. My next steps are to outline how I'd build TodoMVC in it, and then to think about how I'd build something with a backend it in. 
+
 ### August 9 2017 5:19pm
 
 #### Boston Future Programming Writers' Workshop Recap
