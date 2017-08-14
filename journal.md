@@ -4,6 +4,12 @@ title: Journal
 
 # Future of Coding Research Journal
 
+### August 14 2017 6:00pm
+
+I made [a decent amount of progress](https://github.com/stevekrouse/futureofcoding.org/commit/52a0d72bc49f2d56eebcfcdaae440467008f1cd2) but also got pulled into a research hole, looking into Conal Elliot's work. It's interesting to see how he differs from Jonathan Edwards, who is the other hole I tried to explore today but failed. I saved his remaining 50 blog posts in a bookmark folder for easy access on Wednesday. Then I'll take a look at Imp and Eve.
+
+I'm feeling like this research is doing great things from my brain, and I'm excited to model out my StreamSheets idea according to Conal Elliot's denotational design paradigm, and pair it with the requirements I know I need about metaprogramming and undo-ability and composability from Jonathan Edwards, Expressions of Change, etc.
+
 ### August 14 2017 11:15am
 
 And it's time for another research recap!!! Before I get to that, I have a few housekeeping thoughts to get out of the way:
