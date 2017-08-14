@@ -6,21 +6,14 @@ title: Link Research
 
 ## To Research
 
-* [Tangible Functional Programming](https://www.youtube.com/watch?v=faJ8N0giqzw)
-* [Semantic Design](https://lukepalmer.wordpress.com/2008/07/18/semantic-design/)
-* [Denotational Design](http://conal.net/papers/type-class-morphisms/)
-* [Loper OS](http://www.loper-os.org/?p=861)
-* [The purpose of code is to be abstracted over](https://lukepalmer.wordpress.com/2010/01/24/haskell-antipattern-existential-typeclass/#comment-1017)
-* http://alarmingdevelopment.org/
-* http://www.expressionsofchange.org/
 * https://github.com/jamii/imp
 * http://witheve.com/
 * google "streams as spreadsheet" and collect links here
 * http://www.luna-lang.org/
-* https://github.com/viskell/viskell
 
 ### Unordered
 
+* http://wagn.org/
 * Vi Hart
 * [Maude](https://www.youtube.com/watch?v=mZE_Xv9qym4), which comes highly reccomended by Ezekiel Smithburg from the Future Programming Slack.
 * http://worrydream.com/substroke/
@@ -72,8 +65,65 @@ title: Link Research
 * http://www.andescotia.com/products/marten/
 * https://github.com/reflex-frp/reflex
 * reasonML
+* http://conal.net/blog/posts/reimagining-matrices
 
 ## Researched
+
+
+* http://alarmingdevelopment.org/
+  * It's pretty insane reading his "manifesto" how similar his ideas about the future programming are to mine a decade later http://alarmingdevelopment.org/?p=5 and http://alarmingdevelopment.org/?p=6
+  * Lol, he referes to a Java Query library called JQuery in 2005, before JQuery is created the following year http://alarmingdevelopment.org/?p=16
+  * I really like "no assembly required" as a tagline (instead of no installation necccesary)
+  * It's interesting to see how much time he spends talking about the hot new company in this space, Dynamic Aspects, (like I do with Eve), especially because I live in the future and know they amounted to nothing
+  * Turns out the idea of state as a reduction of history is an old one: "TeaTime radically unifies data and computation by reducing state to the history of communication. Objects interact solely be sending messages to each other. Objects do not have internal state. Instead, they record the history of all messages they have received. State is an illusion derived from the history of message receipts. Messages sends are a determinstic function of the history of received messages. This is an elegant purification of the original model of Object-Oriented programming, reducing it to the sequenced exchange of messages."
+  * he has some interesting but over my head and not super intuative thoughts on branches (if-else) http://www.subtext-lang.org/OOPSLA07.pdf
+  * Seems like Jonathan spent a lot of time writing papers and worrying about being accepted. 
+  * I really like Alan Kay's idea to rewrite all of programming from the ground up, but I acknowledge that it's probably a bad idea because it's like when developers want to throw out their old code and re-write it but on a massive scale and that's a known bad practice (although, I think it usually works great when going from a bad framework to a good one).  http://alarmingdevelopment.org/?p=229
+  * It's amazing and hilarious to see how he jumps around from ideas to ideas, from Subtext to syntax, to no syntax, to front-end, to backend web, etc. Really interesting to see what pulls him in different directions, the conferences he applies to, the trends at the time, the competition, his commentors, etc. It's really impressive and humbling to see how honest and vulnerable he is in these posts. http://alarmingdevelopment.org/?p=319
+  * it's funny that he backs his way into a typed version of subtext to avoid things like incompleteness http://alarmingdevelopment.org/?p=351 (http://alarmingdevelopment.org/?p=358) as opposed to liking it for its own advantages like I and other Haskell people do. It feels similar to me when people add types to lamda calculus or set theory to avoid certain paradoxes.
+  * Another 48 links to go... saved them in my bookmarks bar
+  
+
+* http://www.expressionsofchange.org/
+  * Undo could definitely be made more powerful http://www.expressionsofchange.org/the-power-of-undo/
+  * Software changes over time are more complex than I thought. For example, database schema migrations, software packages and dependencies, build tools and containers
+  * In order to truly have the expressiveness we want (and other expressiveness we don't even know we want yet), we need to have really composable abstractions about code changes. They must be a first class datatype. (If the code is really just a reduction of all changes, we have a ton of flexibility here.)
+  * The ability to "copy and paste" a set of changes to your code is paramount. This is one of the main successes of the command line and failures of GUIs. Point and click is so damn imperative and full of side effects. We really have to get meta fast if we want our GUI to be as powerful as the command line.
+
+* https://github.com/viskell/viskell
+  * haskell programming as a graph
+  * I don't usually find graphs compelling. I prefer blocks/structured editor approaches which leave the text closer to prose sentences for better reading. I'm not a computer so I don't like reading trees.
+
+* [Conal Elliot - Tangible Functional Programming](https://www.youtube.com/watch?v=faJ8N0giqzw)
+  * the dream: combine usability and composability (so like IFFT but at the right level of abstraction)
+  * UNIX pipes with input and output text makes it easy to compose
+  * I've already seen this video, I'm now realizing, he shows how to drag outputs into inputs in a GUI
+
+* [Conal Elliot - Fran - Composing Reactive Animations](http://conal.net/fran/tutorial.htm)
+  * Holy shit! This is like Reactive WoofJS (or the Elm game engine) but was made in 1998 in Haskell! He makes quick work of my "inital value problem": simply give a function all the arugments it needs, starting value, and rate of increase
+  * Let me send this over to my friends at McMaster University to see if they've thought about making an Elm version...
+
+* [Conal Elliott - The Essence and Origins of Functional Reactive Programming](https://www.youtube.com/watch?v=j3Q32brCUAI)
+  * seperate design spec from implementation
+  * FRP is about continuous time in the same way vector graphics are about continuous space
+  
+* [Conal Elliot - Denotational Design](http://conal.net/papers/type-class-morphisms/)
+  * "The purpose of abstraction is not to be vauge but to create a new semantic level in which one can be absolutely precise." - Dijkstra
+  * Peter Landin reccomends that "denotive" to replace ill-defined "functional" and "declarative". A langauge is only "denotive" if each expression only depends on sub-expressions
+  * before you think about implementation... what are the main types, main operations, what do the types mean?
+  * for example, an image is an assignment of colors to 2D locations
+  * Turns out Images and Colors are Monads... I should probably understand Applicative, Functor, Monoids, and Monads more
+  * I can't get one of his quotes out of my mind. He says that if we do it right, our abstractions will constrain us and disable us from getting certain kinds of information or doing certain things, such as counting how many computation took place on a given image. Part of me likes this non-leaky abstraction but part of me worries that it would be too constraining, and it makes me wonder if there's a middle ground somehow. I feel emotionally that if we had enough self-resembalance and designed our programming language in itself, we might be able to do it.
+  
+* [Luke Palmer - Semantic Design](https://lukepalmer.wordpress.com/2008/07/18/semantic-design/)
+  * references Conal Elliott's work a lot
+  * talks about picking the right abstraction and encoding it into types (similar to my idea to kill booleans)
+
+* [Luke Palmer - The purpose of code is to be abstracted over](https://lukepalmer.wordpress.com/2010/01/24/haskell-antipattern-existential-typeclass/#comment-1017)
+
+
+* [Loper OS](http://www.loper-os.org/?p=861)
+  * I disagree. I think emacs represents the wrong model: spend a few hundred hours learning this system and we'll improve your brain-computer interface. Instead, why don't we 1) get better abstractions so we have less work (like Paul Chiusano says) and 2) build a more intuiative interface for everyone? 
 
 * [Flowsheets](http://tinyletter.com/Flowsheets/letters/flowsheets-visualizations)
   * neat spreadsheet like interface for python computations
