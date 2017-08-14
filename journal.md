@@ -4,6 +4,45 @@ title: Journal
 
 # Future of Coding Research Journal
 
+### August 14 2017 11:15am
+
+And it's time for another research recap!!! Before I get to that, I have a few housekeeping thoughts to get out of the way:
+
+1. I've been noticiting that I've been procrastinating starting this recap, sleeping later, distracting myself with other tasks. I guess I'm a little worried about it, but I'm feeling better already now that I've started.
+
+2. I used to keep track of my to-do list for this website and podcast in a seperate google doc, but I have layed it to rest (RIP) and will now use Github Issues on this repository to track my todos.
+
+#### Research Recap #3
+
+* While I was planning to do more research into other peoples' work, everything changed when I got a call from Paul Chiusano from Unison about a "writers' workshop" in Boston with my kinda people. 
+
+* WoofJS Workflow https://docs.google.com/document/d/1gt4SDLgCSeKa_h1seWtriPFsve8aYHzdhuADWas2j0c/edit
+  * Kids lose the forest for the trees
+  * Forget what they're working on
+  * Don't make outlines for creative projects
+  * Integrated top-down programming assitant
+  * Also code branches, version control
+  * Buggy demo at woofjs.com/workflow
+  * Cool proof of concept, but would require many more hours to get production ready (need better merging up and down, less bugs, permissioning), and I'm doubtful kids would even use it in its current form. It's confusing and not clear what they'd get out of it. So I'm not going to continue with it for now.
+
+* Workshop recap http://futureofcoding.org/journal#boston-future-programming-writers-workshop-recap
+  * Paul gave a really interesting talk, making the case that building better mathmatical abstractions is more powerful than building better interfaces to the abstractions we have
+  * Having a deadline was neat, but conferences probably don't make sense for me (applied to PX! but wont' go)
+  * But I will start making videos (about WoofJS workflow, and also older prototypes)
+
+* This week I really do hope to review other peoples' research
+  * a number of links from Paul Chiusano
+  * Jonathan Edward's 50ish blogs
+  * Expressions of Change
+  * Imp
+  * Eve
+  
+* Also, I'm obsessed with my spreadsheets+streams idea: StreamSheets
+
+* Other notes
+  * Editing audio on my phone now, after buying all of the other tech
+  * Entering a busy time for The Coding Space, my after school program. I try to schedule all of my work, which is mostly interviews for part time teachers, for Tues and Thurs, but it might overflow to research days, sadly.
+
 ### August 11 2017 11:09am
 
 Sadly, because I allowed today to get filled with various other tasks and meetings, I don't have time for research today. For example, I have four interviews for part-time teachers at The Coding Space this afternoon. 
