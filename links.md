@@ -6,10 +6,12 @@ title: Link Research
 
 ## To Research
 
-* https://github.com/jamii/imp
 * http://witheve.com/
+* [CycleJS Component Difficulties](https://www.youtube.com/watch?v=CU8jtb6UBGg&feature=youtu.be&t=46m15s)
+* https://noflojs.org/
 * google "streams as spreadsheet" and collect links here
 * [Joe Edelman - citizen logisitics](http://nxhx.org/) and [Chatterbase](http://alpha.trycarbide.com/@jxe/6d5e19369ddb9cc4728510e11a3f7586)
+* Look into Codd's relational calulus and relational algebra
 
 ### Unordered
 
@@ -73,6 +75,17 @@ title: Link Research
 ## Researched
 
 
+* https://github.com/jamii/imp
+  * Re-watched [Felienne Hermans "Spreadsheets are code lady" video](https://www.youtube.com/watch?v=TMIBfzSqguQ). Really amazing talk. One insight I had is that if you really want to make spreadsheets more like coding, you need to remove cell references. You can reference columns by their names and rows only by performing operations (filters, finds) on a range of rows. Cell references are the pointers of spreadsheets.
+  * [Out of the Tarpit](https://github.com/papers-we-love/papers-we-love/blob/master/design/out-of-the-tar-pit.pdf)
+    * the reason "closing and reopening" an app or computer is an effective way to fix things is because the software is mishandling state
+    * They made a strong argument in 5.2.4 State and Modularity for no hidden state in components, because it's easy but not simple. (My only worry here is that we're losing abstractive power here because abstraction is all about hiding inner details.)
+    * In 7.1 Ideal World... "It is interesting to note that effectively what we have just described is in fact the very essence of declarative programming - i.e. that you need only specify what you require and not how it must be achieved."
+    * In 7.1.2 Control in the real world, "Clearly if the progrma is to every run, some control will be needed somewhere because things will have to happen in some order - but this should be nor more our concern than the fact that the changes are elecricity will be needed somewhere." Also: The synchrony hypothesis assumes that all finite and stateless computatinos take zero time so its immaterial whether they happen in sequence or in parallel.
+    * 7.2.2 Ease of expression, "One possible sittuation of this kind is for derived data which is dependent upon both a series of user inputs over time, and its own previous values."
+  * [The Declarative Imperative](http://db.cs.berkeley.edu/papers/sigrec10-declimperative.pdf)
+  * [Imp Journal](http://scattered-thoughts.net/journal/)
+  
 * http://alarmingdevelopment.org/
   * It's pretty insane reading his "manifesto" how similar his ideas about the future programming are to mine a decade later http://alarmingdevelopment.org/?p=5 and http://alarmingdevelopment.org/?p=6
   * Lol, he referes to a Java Query library called JQuery in 2005, before JQuery is created the following year http://alarmingdevelopment.org/?p=16
