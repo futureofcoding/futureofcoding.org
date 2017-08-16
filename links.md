@@ -9,10 +9,13 @@ title: Link Research
 * https://github.com/jamii/imp
 * http://witheve.com/
 * google "streams as spreadsheet" and collect links here
-* http://www.luna-lang.org/
+* [Joe Edelman - citizen logisitics](http://nxhx.org/) and [Chatterbase](http://alpha.trycarbide.com/@jxe/6d5e19369ddb9cc4728510e11a3f7586)
 
 ### Unordered
 
+* http://www.luna-lang.org/
+* https://www.touchdevelop.com
+* http://nxhx.org/
 * http://wagn.org/
 * Vi Hart
 * [Maude](https://www.youtube.com/watch?v=mZE_Xv9qym4), which comes highly reccomended by Ezekiel Smithburg from the Future Programming Slack.
@@ -81,8 +84,13 @@ title: Link Research
   * I really like Alan Kay's idea to rewrite all of programming from the ground up, but I acknowledge that it's probably a bad idea because it's like when developers want to throw out their old code and re-write it but on a massive scale and that's a known bad practice (although, I think it usually works great when going from a bad framework to a good one).  http://alarmingdevelopment.org/?p=229
   * It's amazing and hilarious to see how he jumps around from ideas to ideas, from Subtext to syntax, to no syntax, to front-end, to backend web, etc. Really interesting to see what pulls him in different directions, the conferences he applies to, the trends at the time, the competition, his commentors, etc. It's really impressive and humbling to see how honest and vulnerable he is in these posts. http://alarmingdevelopment.org/?p=319
   * it's funny that he backs his way into a typed version of subtext to avoid things like incompleteness http://alarmingdevelopment.org/?p=351 (http://alarmingdevelopment.org/?p=358) as opposed to liking it for its own advantages like I and other Haskell people do. It feels similar to me when people add types to lamda calculus or set theory to avoid certain paradoxes.
-  * Another 48 links to go... saved them in my bookmarks bar
-  
+  * A really fun post railing against people who think their langauge (LISP in this case) are annoying http://alarmingdevelopment.org/?p=422
+  * "The Apes can’t prove their software is correct, and they seem puzzled by the very idea, as if they were being asked to prove correct a chair." http://alarmingdevelopment.org/?p=440
+  * A good argument for 1-indexed arrays http://alarmingdevelopment.org/?p=470
+  * References https://www.touchdevelop.com. Neat!
+  * What a great quote: "The process of constructing instruction tables should be very fascinating. There need be no real danger of it ever becoming a drudge, for any processes that are quite mechanical may be turned over to the machine itself." – Turing, A. M., 1946, Proposed electronic calculator, report for National Physical Laboratory, Teddington
+  * Wow, he also spends a lot of time switching languages and frameworks, from Java, to Scala, and back, to JavaScript, to Dart, etc, etc.
+  * Good video discussion the pros/cons of static types and way to overcome them and still get the benefits of static typing while also getting metaprogramming https://vimeo.com/74314050
 
 * http://www.expressionsofchange.org/
   * Undo could definitely be made more powerful http://www.expressionsofchange.org/the-power-of-undo/
