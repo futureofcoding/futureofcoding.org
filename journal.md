@@ -4,6 +4,18 @@ title: Journal
 
 # Future of Coding Research Journal
 
+### August 16 2017 12:38pm
+
+I stayed up too late last night goofing off on my phone in bed so I got a super late start to today, which effectively cuts my research day in half today. Not good. Let me try a new system... I just set my Apple Bedtime app on to go to sleep at 11:30pm and wake up at 8:30am. Let's see how that goes.
+
+What do I want to accomplish today?
+
+* 1pm-2pm   get through Jonthan Edward's remaining blogs
+* 2-3:30pm  go on a run
+* 3:30-5:30 imp
+
+Great! This might be a little ambitious, but I can do any overflow on Friday. The rest of the time on Friday will be spent doing a super deep dive on Eve.
+
 ### August 14 2017 6:00pm
 
 I made [a decent amount of progress](https://github.com/stevekrouse/futureofcoding.org/commit/52a0d72bc49f2d56eebcfcdaae440467008f1cd2) but also got pulled into a research hole, looking into Conal Elliot's work. It's interesting to see how he differs from Jonathan Edwards, who is the other hole I tried to explore today but failed. I saved his remaining 50 blog posts in a bookmark folder for easy access on Wednesday. Then I'll take a look at Imp and Eve.
