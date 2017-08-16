@@ -4,6 +4,12 @@ title: Journal
 
 # Future of Coding Research Journal
 
+### August 16 2017 5:25pm
+
+While I had no trouble finishing up Jonathan Edward's blogs, which were fascinating and full of insights, I barely even started getting through Imp, watching 1 video and 1 paper deeply and that's it. However, I *really* loved both the video and the paper. Many of these are quite simliar to my StreamSheets ideas and are informing them greatly. (To be honest, they're mostly affirmation bias-ing them greatly.) I'm also noticing that I'm interpreting all of these ideas through the lens of Streamsheets, which makes me think that I'm going to have to move to disconfirming my assumptions (which could involve prototyping) about it sooner rather than later so I can put it to bed and begin thinking about other ideas.
+
+Tomorrow is full of interviews. Friday will be split between Imp and Eve. I hope to get twice (or more) time on Friday by going to bed earlier Thursday night. Let's see.
+
 ### August 16 2017 12:38pm
 
 I stayed up too late last night goofing off on my phone in bed so I got a super late start to today, which effectively cuts my research day in half today. Not good. Let me try a new system... I just set my Apple Bedtime app on to go to sleep at 11:30pm and wake up at 8:30am. Let's see how that goes.
