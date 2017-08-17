@@ -4,6 +4,10 @@ title: Journal
 
 # Future of Coding Research Journal
 
+### August 17 2017 3:24pm
+
+Unfortunately, I'm realizing that realisitically I don't have time tomorrow to do research. My time has been stolen away by various meetings and urgent emails, so I'll pick up where I left off on Monday. Have a great weekend everyone!
+
 ### August 16 2017 5:25pm
 
 While I had no trouble finishing up Jonathan Edward's blogs, which were fascinating and full of insights, I barely even started getting through Imp, watching 1 video and 1 paper deeply and that's it. However, I *really* loved both the video and the paper. Many of these are quite simliar to my StreamSheets ideas and are informing them greatly. (To be honest, they're mostly affirmation bias-ing them greatly.) I'm also noticing that I'm interpreting all of these ideas through the lens of Streamsheets, which makes me think that I'm going to have to move to disconfirming my assumptions (which could involve prototyping) about it sooner rather than later so I can put it to bed and begin thinking about other ideas.
