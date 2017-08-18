@@ -15,6 +15,8 @@ title: Link Research
 
 ### Unordered
 
+* [http://digitalfreepen.com/2017/08/16/elixir-in-depth-notes.html](http://digitalfreepen.com/2017/08/16/elixir-in-depth-notes.html)
+* [John Carmack's keynote at Quakecon 2013 part 4](https://www.youtube.com/watch?v=1PhArSujR_A)
 * http://www.luna-lang.org/
 * https://www.touchdevelop.com
 * http://nxhx.org/
