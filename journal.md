@@ -4,6 +4,12 @@ title: Journal
 
 # Future of Coding Research Journal
 
+### August 21, 2017 6:15pm
+
+So as my closest friends and family know, I am not so great at mental math. The math that worked was: 1 day Coding Space + 1 day WoofJS + 3 days research and podcast = 5 days. However, when I decided to spend two days per week interviewing over the past 2ish weeks, I didn't take into accounts that it would now leave barely 1 day left for research. Luckily, my teammate Sophie will be taking over interviews from me starting next week so I can return to a normal research schedule next week. However, that means that I didn't get to do research today like I'd hoped. I hope to get a few hours of research done on Wednesday and Friday of this week.
+
+I'm also pushing back my launch date of the podcast from today to next Monday, barring any other glitches. As far as next week's research recap goes, it just might be a particularly short one :/
+
 ### August 17 2017 3:24pm
 
 Unfortunately, I'm realizing that realisitically I don't have time tomorrow to do research. My time has been stolen away by various meetings and urgent emails, so I'll pick up where I left off on Monday. Have a great weekend everyone!
