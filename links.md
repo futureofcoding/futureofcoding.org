@@ -9,7 +9,9 @@ title: Link Research
 * http://witheve.com/
 * [CycleJS Component Difficulties](https://www.youtube.com/watch?v=CU8jtb6UBGg&feature=youtu.be&t=46m15s)
 * https://noflojs.org/
-* google "streams as spreadsheet" and collect links here
+* [Stream Processing with a Spreadsheet](https://link.springer.com/chapter/10.1007/978-3-662-44202-9_15)
+* [A Spreadsheet Model for Handling Streaming Data](https://www.cs.cmu.edu/~shihpinc/pdf/Gneiss-CHI15.pdf)
+* http://strlen.com/treesheets/
 * [Joe Edelman - citizen logisitics](http://nxhx.org/) and [Chatterbase](http://alpha.trycarbide.com/@jxe/6d5e19369ddb9cc4728510e11a3f7586)
 * Look into Codd's relational calulus and relational algebra
 
