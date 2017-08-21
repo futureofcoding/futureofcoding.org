@@ -6,6 +6,8 @@ title: Link Research
 
 ## To Research
 
+* [General Principles for a Generalized Idea Garden](https://www.researchgate.net/publication/313369217_General_Principles_for_a_Generalized_Idea_Garden)
+  * get back to Jonathan Edwards after reading this one!
 * http://witheve.com/
 * [CycleJS Component Difficulties](https://www.youtube.com/watch?v=CU8jtb6UBGg&feature=youtu.be&t=46m15s)
 * https://noflojs.org/
@@ -14,6 +16,7 @@ title: Link Research
 * http://strlen.com/treesheets/
 * [Joe Edelman - citizen logisitics](http://nxhx.org/) and [Chatterbase](http://alpha.trycarbide.com/@jxe/6d5e19369ddb9cc4728510e11a3f7586)
 * Look into Codd's relational calulus and relational algebra
+* [Usability Analysis of Visual Programming Environments](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.35.815&rep=rep1&type=pdf)
 
 ### Unordered
 
