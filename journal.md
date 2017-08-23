@@ -4,6 +4,54 @@ title: Journal
 
 # Future of Coding Research Journal
 
+### August 23, 2017 6:12pm
+
+#### My first full day with Eve
+
+The Eve Quickstart Tutorial is super buggy! I find that I have to really mess with different blocks of code (by editing them by adding random whitespace) to get things to run properly. It's unclear when things aren't working becuase I'm doing it wrong and when things are just broken are their end. 
+
+Looks like you can only use Eve version 0.2 on their play.witheve.com site. This is a bummer because it's pretty buggy and their documentation for 0.2 is pretty weak. However, as I learned with Lamdu (and Elm and Haskell and others), it can take a day (or more) to get a non-web-based tool up and running. So for now at least I will stick to v0.2 online. Potentially I'll come back when they release v0.4 [which it sounds like they're skipping to](http://incidentalcomplexity.com/2017/08/14/July/).
+
+For example, I tried to create a simple button that counts its clicks. You can read my laughable attempt here: https://gist.github.com/anonymous/458ea8ff7f968faa719f6e52d46848b9
+
+You can load it up into eve by going to [play.witheve.com](http://play.witheve.com) and hitting the cloud button with the down arrow in the top-right of the screen.
+
+I spent approximately 4 hours on this single attempt at getting a counter button to work! That's pretty crazy! Obvious things that slowed me down that aren't their "fault":
+
+1. Lack of documentation. It was super sparse and unfinished.
+2. Lack of stack overflow answers to my questions
+
+The things that slowed me down that *are* their "fault":
+
+1. Implicit databases in search is very confusing. Where is it searching when you don't specify?! 
+2. It's also annoying that it doesn't automatically pull in all the joins I ask for even if I don't search in that database. Seems like something their engine could infer.
+3. Not having any error messages is insane! The only way to survive this is to do constant sanity checks every change I make. Even then, it's really slow going and easy to miss things.
+4. Their interface is super buggy! I had to constantly save and refresh the page to get things to work. If it were any buggier, it'd be unusable. 
+5. Not having the version of Eve that I'm using in the URL (or somewhere on the page) was very fustrating. Took me a while to figure that out which prevented me from using the appropriate docs.
+6. It's unclear how control flow works between blocks. For example, for every search term do I need a new block of code?
+7. The difference between bind and commit was not clear. I spent much of my time trying to use commit to add things to the page but it wouldn't add more than of the same kind, which seems like how I'd expect bind to behave.
+8. I found it confusing to think in the "prolog" or "datomic" style, thinking about which records would satisy my queries. I was usually wrong when trying to guess what records my queries would match. Given that there's no UI for this, I was forced to constantly add silly divs to the screen as sanity checks for each query.
+
+On the positive side, things that I liked:
+
+1. I liked that (almost) everything has uniform record syntax. The syntax was relatively easy for me to pick up. However, I don't know if that will be the case for everyone. Why not just use a lisp syntax? (Turns out there's a clojure library that's similar: https://groups.google.com/forum/#!topic/eve-talk/b-IN4pLF45A)
+2. I liked that the core data structure is a record 
+3. I liked how the API simplifies everything to either searching or adding (commiting or binding) to a database, and anything, including the page, is just a database. (Personally, I wouldn't have two seperate ways to add to a database but just one, "add". If you want a "bind" sort of behavior, you should have to somehow specify that manually. I should think more on this, but it might be tricky given that I don't really understand the difference between the two.)
+
+I found this quote while reading the Eve Google Group:
+
+> In Excel, they show the data and hide the formulas. In programming, they show the formulas and hide the data. In Eve, we show both.
+
+I really love that quote and vision for a programming language that's as concrete as a spreadsheets but has the powerful abstractions of programming langauges. Unfortunately, Eve does not live up to this vision in its current implementation. I think my vision for Streams as Spreadsheets could fufill this vision. To that end, I think there's a lot about the Eve architecture that I could mimic or at least learn from for when I think through how to design this prototype.
+
+#### Plan for Friday, August 25th
+
+I don't plan on having time to do more research tomorrow, so I'll pick up my research on Friday with Imp and potentially doing some denotational design on Streams as Spreadsheets:
+
+* the interface of streams? what are the core things you can do to them that lets you build out all the other stream combinators?
+* can the structure can be dynamic? can a row dynatically create a sheet which creates a sheet, etc?
+* metaprogramming
+
 ### August 23, 2017 9:51am
 
 I was able to carve out today entirely for research! My thought is that given that I have a whole day to work, I might as well use it to build something, or multiple somthings, in Eve, and save Imp for a day where I have less continuous time.
