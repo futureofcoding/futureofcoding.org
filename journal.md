@@ -14,12 +14,12 @@ Looks like you can only use Eve version 0.2 on their play.witheve.com site. This
 
 For example, I tried to create a simple button that counts its clicks. You can read my laughable attempt here: https://gist.github.com/anonymous/458ea8ff7f968faa719f6e52d46848b9
 
-You can load it up into eve by going to [play.witheve.com](http://play.witheve.com) and hitting the cloud button with the down arrow in the top-right of the screen.
+You can load it up into eve by going to [play.witheve.com](http://play.witheve.com) and hitting the cloud button with the down arrow in the top-left of the screen.
 
 I spent approximately 4 hours on this single attempt at getting a counter button to work! That's pretty crazy! Obvious things that slowed me down that aren't their "fault":
 
-1. Lack of documentation. It was super sparse and unfinished.
-2. Lack of stack overflow answers to my questions
+1. Lack of stack overflow answers to my questions
+2. Lack of documentation. It was super sparse and unfinished. (This isn't their fault because I understand that it's beta software that changes quickly so it's hard to have good documentation for an older version.)
 
 The things that slowed me down that *are* their "fault":
 
@@ -29,7 +29,7 @@ The things that slowed me down that *are* their "fault":
 4. Their interface is super buggy! I had to constantly save and refresh the page to get things to work. If it were any buggier, it'd be unusable. 
 5. Not having the version of Eve that I'm using in the URL (or somewhere on the page) was very fustrating. Took me a while to figure that out which prevented me from using the appropriate docs.
 6. It's unclear how control flow works between blocks. For example, for every search term do I need a new block of code?
-7. The difference between bind and commit was not clear. I spent much of my time trying to use commit to add things to the page but it wouldn't add more than of the same kind, which seems like how I'd expect bind to behave.
+7. The difference between bind and commit was not clear. I spent much of my time trying to use commit to add things to the page but it wouldn't add more than 1 of the same kind, which seems like how I'd expect bind to behave.
 8. I found it confusing to think in the "prolog" or "datomic" style, thinking about which records would satisy my queries. I was usually wrong when trying to guess what records my queries would match. Given that there's no UI for this, I was forced to constantly add silly divs to the screen as sanity checks for each query.
 
 On the positive side, things that I liked:
@@ -42,13 +42,15 @@ I found this quote while reading the Eve Google Group:
 
 > In Excel, they show the data and hide the formulas. In programming, they show the formulas and hide the data. In Eve, we show both.
 
-I really love that quote and vision for a programming language that's as concrete as a spreadsheets but has the powerful abstractions of programming langauges. Unfortunately, Eve does not live up to this vision in its current implementation. I think my vision for Streams as Spreadsheets could fufill this vision. To that end, I think there's a lot about the Eve architecture that I could mimic or at least learn from for when I think through how to design this prototype.
+I really love that quote and vision for a programming language that's as concrete as a spreadsheets but has the powerful abstractions of programming langauges. Unfortunately, Eve does not live up to this vision in its current implementation. It's much closer to Python than Excel. 
+
+I think my vision for Streams as Spreadsheets could fufill this vision. To that end, I think there's a lot about the Eve architecture that I could mimic or at least learn from for when I think through how to design this prototype.
 
 #### Plan for Friday, August 25th
 
 I don't plan on having time to do more research tomorrow, so I'll pick up my research on Friday with Imp and potentially doing some denotational design on Streams as Spreadsheets:
 
-* the interface of streams? what are the core things you can do to them that lets you build out all the other stream combinators?
+* scope out the interface of streams. what are the core things you can do to them that lets you build out all the other stream combinators? give it a callback that recieves the next item?
 * can the structure can be dynamic? can a row dynatically create a sheet which creates a sheet, etc?
 * metaprogramming
 
