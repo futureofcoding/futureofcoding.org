@@ -12,7 +12,7 @@ The Eve Quickstart Tutorial is super buggy! I find that I have to really mess wi
 
 Looks like you can only use Eve version 0.2 on their play.witheve.com site. This is a bummer because it's pretty buggy and their documentation for 0.2 is pretty weak. However, as I learned with Lamdu (and Elm and Haskell and others), it can take a day (or more) to get a non-web-based tool up and running. So for now at least I will stick to v0.2 online. Potentially I'll come back when they release v0.4 [which it sounds like they're skipping to](http://incidentalcomplexity.com/2017/08/14/July/).
 
-For example, I tried to create a simple button that counts its clicks. You can read my laughable attempt here: https://gist.github.com/anonymous/458ea8ff7f968faa719f6e52d46848b9
+For example, I tried to create a simple button that counts its clicks. You can read my laughable attempt here: [https://gist.github.com/anonymous/458ea8ff7f968faa719f6e52d46848b9](https://gist.github.com/anonymous/458ea8ff7f968faa719f6e52d46848b9)
 
 You can load it up into eve by going to [play.witheve.com](http://play.witheve.com) and hitting the cloud button with the down arrow in the top-left of the screen.
 
