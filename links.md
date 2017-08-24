@@ -8,7 +8,6 @@ title: Link Research
 
 * [General Principles for a Generalized Idea Garden](https://www.researchgate.net/publication/313369217_General_Principles_for_a_Generalized_Idea_Garden)
   * get back to Jonathan Edwards after reading this one!
-* http://witheve.com/
 * [CycleJS Component Difficulties](https://www.youtube.com/watch?v=CU8jtb6UBGg&feature=youtu.be&t=46m15s)
 * https://noflojs.org/
 * [Stream Processing with a Spreadsheet](https://link.springer.com/chapter/10.1007/978-3-662-44202-9_15)
@@ -20,6 +19,7 @@ title: Link Research
 
 ### Unordered
 
+* [Stencil – A reusable web component generator](https://news.ycombinator.com/item?id=15080174)
 * [http://digitalfreepen.com/2017/08/16/elixir-in-depth-notes.html](http://digitalfreepen.com/2017/08/16/elixir-in-depth-notes.html)
 * [John Carmack's keynote at Quakecon 2013 part 4](https://www.youtube.com/watch?v=1PhArSujR_A)
 * http://www.luna-lang.org/
@@ -81,6 +81,8 @@ title: Link Research
 
 ## Researched
 
+* http://witheve.com/
+  * http://futureofcoding.org/journal#my-first-full-day-with-eve
 
 * https://github.com/jamii/imp
   * Re-watched [Felienne Hermans "Spreadsheets are code lady" video](https://www.youtube.com/watch?v=TMIBfzSqguQ). Really amazing talk. One insight I had is that if you really want to make spreadsheets more like coding, you need to remove cell references. You can reference columns by their names and rows only by performing operations (filters, finds) on a range of rows. Cell references are the pointers of spreadsheets.
