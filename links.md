@@ -8,17 +8,22 @@ title: Link Research
 
 * [General Principles for a Generalized Idea Garden](https://www.researchgate.net/publication/313369217_General_Principles_for_a_Generalized_Idea_Garden)
   * get back to Jonathan Edwards after reading this one!
-* [CycleJS Component Difficulties](https://www.youtube.com/watch?v=CU8jtb6UBGg&feature=youtu.be&t=46m15s)
-* https://noflojs.org/
 * [Stream Processing with a Spreadsheet](https://link.springer.com/chapter/10.1007/978-3-662-44202-9_15)
 * [A Spreadsheet Model for Handling Streaming Data](https://www.cs.cmu.edu/~shihpinc/pdf/Gneiss-CHI15.pdf)
 * http://strlen.com/treesheets/
-* [Joe Edelman - citizen logisitics](http://nxhx.org/) and [Chatterbase](http://alpha.trycarbide.com/@jxe/6d5e19369ddb9cc4728510e11a3f7586)
 * Look into Codd's relational calulus and relational algebra
+* [SIEUFERD Project (database query tool)](http://people.csail.mit.edu/ebakke/sieuferd/index.html)
 * [Usability Analysis of Visual Programming Environments](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.35.815&rep=rep1&type=pdf)
+* [Viewpoints Espressive Programming Systems](http://www.vpri.org/pdf/tr2011004_steps11.pdf)
+* [CycleJS Component Difficulties](https://www.youtube.com/watch?v=CU8jtb6UBGg&feature=youtu.be&t=46m15s)
+* https://noflojs.org/
+* [Joe Edelman - citizen logisitics](http://nxhx.org/) and [Chatterbase](http://alpha.trycarbide.com/@jxe/6d5e19369ddb9cc4728510e11a3f7586)
+
 
 ### Unordered
 
+
+* [Data-Oriented Design by Richard Fabian](http://www.dataorienteddesign.com/dodmain/)
 * [Stencil – A reusable web component generator](https://news.ycombinator.com/item?id=15080174)
 * [http://digitalfreepen.com/2017/08/16/elixir-in-depth-notes.html](http://digitalfreepen.com/2017/08/16/elixir-in-depth-notes.html)
 * [John Carmack's keynote at Quakecon 2013 part 4](https://www.youtube.com/watch?v=1PhArSujR_A)
@@ -84,6 +89,22 @@ title: Link Research
 * http://witheve.com/
   * http://futureofcoding.org/journal#my-first-full-day-with-eve
 
+* http://scattered-thoughts.net
+  * http://scattered-thoughts.net/blog/2015/06/04/three-months-of-rust/
+    * Interesting to note that JavaScript might not provide the memory control I need
+  * Just bought a dozen books based on his reccomendations
+  * http://scattered-thoughts.net/blog/2017/03/16/monolog/
+    * Looks like he built a tool to track todos with similar goals to the WoofJS Worflow 
+  * http://scattered-thoughts.net/blog/2016/10/11/a-practical-relational-query-compiler-in-500-lines/
+    * Seems like building a relational database from scratch is hard and over my head
+    * In my gut, I feel like I could just implement all of these things in a super dumb way to start in StreamSheets and if that's too slow I can optimize all this later. 
+    * Definitely doesn't feel like something I should figure out now. I should wait until its a more urgent and immediate problem.
+    * And it feels like I could just use a JS library or something to hack it for now. These things already exsit.
+  * [TodoMVC in Imp](https://github.com/jamii/imp/commit/ea4889010e33a5a522ad2015aff42041c3538139)
+    * Reminds me a lot of Eve, which is not a suprise because he worked there
+    * Not super intuative to read through on first blush.
+    * More of his thoughts on the UI library here: http://scattered-thoughts.net/blog/2017/07/28/relational-ui/ 
+
 * https://github.com/jamii/imp
   * Re-watched [Felienne Hermans "Spreadsheets are code lady" video](https://www.youtube.com/watch?v=TMIBfzSqguQ). Really amazing talk. One insight I had is that if you really want to make spreadsheets more like coding, you need to remove cell references. You can reference columns by their names and rows only by performing operations (filters, finds) on a range of rows. Cell references are the pointers of spreadsheets.
   * [Out of the Tarpit](https://github.com/papers-we-love/papers-we-love/blob/master/design/out-of-the-tar-pit.pdf)
@@ -93,6 +114,7 @@ title: Link Research
     * In 7.1.2 Control in the real world, "Clearly if the progrma is to every run, some control will be needed somewhere because things will have to happen in some order - but this should be nor more our concern than the fact that the changes are elecricity will be needed somewhere." Also: The synchrony hypothesis assumes that all finite and stateless computatinos take zero time so its immaterial whether they happen in sequence or in parallel.
     * 7.2.2 Ease of expression, "One possible sittuation of this kind is for derived data which is dependent upon both a series of user inputs over time, and its own previous values."
   * [The Declarative Imperative](http://db.cs.berkeley.edu/papers/sigrec10-declimperative.pdf)
+    * seems really similar in goals to Unison. I wonder if Paul Chiusano has seen http://boom.cs.berkeley.edu/
   * [Imp Journal](http://scattered-thoughts.net/journal/)
   
 * http://alarmingdevelopment.org/
