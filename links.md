@@ -8,11 +8,6 @@ title: Link Research
 
 * [General Principles for a Generalized Idea Garden](https://www.researchgate.net/publication/313369217_General_Principles_for_a_Generalized_Idea_Garden)
   * get back to Jonathan Edwards after reading this one!
-* [Stream Processing with a Spreadsheet](https://link.springer.com/chapter/10.1007/978-3-662-44202-9_15)
-* [A Spreadsheet Model for Handling Streaming Data](https://www.cs.cmu.edu/~shihpinc/pdf/Gneiss-CHI15.pdf)
-* http://strlen.com/treesheets/
-* Look into Codd's relational calulus and relational algebra
-* [SIEUFERD Project (database query tool)](http://people.csail.mit.edu/ebakke/sieuferd/index.html)
 * [Usability Analysis of Visual Programming Environments](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.35.815&rep=rep1&type=pdf)
 * [Viewpoints Espressive Programming Systems](http://www.vpri.org/pdf/tr2011004_steps11.pdf)
 * [CycleJS Component Difficulties](https://www.youtube.com/watch?v=CU8jtb6UBGg&feature=youtu.be&t=46m15s)
@@ -85,6 +80,22 @@ title: Link Research
 * http://conal.net/blog/posts/reimagining-matrices
 
 ## Researched
+
+* [Stream Processing with a Spreadsheet](https://link.springer.com/chapter/10.1007/978-3-662-44202-9_15)
+  * skimmed. the calculus went right over my head
+
+* [A Spreadsheet Model for Handling Streaming Data](https://www.cs.cmu.edu/~shihpinc/pdf/Gneiss-CHI15.pdf)
+  * really similar in goals to StreamSheets
+  * related work by the author: http://dl.acm.org/citation.cfm?id=2647371
+
+* [SIEUFERD Project (database query tool)](http://people.csail.mit.edu/ebakke/sieuferd/index.html)
+  * it's like Looker!
+
+* http://strlen.com/treesheets/
+  * watched the intro video with one eye. didn't seem relevant to me now
+
+* Look into Codd's relational calulus and relational algebra
+  * seems a little too abstract for me now
 
 * http://witheve.com/
   * http://futureofcoding.org/journal#my-first-full-day-with-eve

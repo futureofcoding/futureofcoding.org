@@ -4,6 +4,45 @@ title: Journal
 
 # Future of Coding Research Journal
 
+This jornal is stream-of-consciousness style so apologies in advance if it's difficult to read. You should know that I don't have spellcheck and I'm a terrible speller. Most importantly, you should know that I add new entries at the top of the page, so you'll have to scroll to the bottom if you want to start from the beginning.
+
+### August 25, 2017 7:57pm
+
+So for some reason, probably having to due with all of the rice in the burrito bowl I had for lunch, I was super tired after I got back at 3:30 so I took a nap until 6pm.
+
+Despite going off-plan, I was still able to skim my way through the resources I listed below and begin thinking through what StreamSheets would look like. I think I'm ready to start implementing it. It's a fun idea that I keep thinking about and I think the only way to stop thinking about it is to do it and fail. So my goal is to fail fast. Build the minimum features I need so that I get see why it won't work as soon as possible, hopefully in just a week or two.
+
+![image](https://user-images.githubusercontent.com/2288939/29736554-432542da-89d0-11e7-91fd-3036fc8472ad.png)
+
+![image](https://user-images.githubusercontent.com/2288939/29736558-4d95913e-89d0-11e7-9540-f81b8211927e.png)
+
+
+In terms of next week, I have a bi-weekly research recap on Monday. Given that I missed a few days of research because of my other job over the past two weeks, I would like to sneak in as much time as possible doing productive work before then, so I'll try to get started on developing StreamSheets in the morning and then do my recap writeup and recordning in the afternoon.
+
+On Tuesday morning at 10am, I plan to publish this podcast and website broadly via all the social channels I have available to me ([#25](https://github.com/stevekrouse/futureofcoding.org/issues/25)). Tuesday afternoon is set aside for emails and other random tasks but if I have time, I'll continue working on StreamSheets.
+
+Wednesday is totally reserved for research so that's probably StreamSheets.
+
+Thursday I will set aside for work on refactoring the WoofJS database ([#352](https://github.com/stevekrouse/WoofJS/issues/352), [#390](https://github.com/stevekrouse/WoofJS/issues/390)). However, if I don't get it done (or screw things up badly) I may have to continue working on this on Friday. 
+
+If all goes well on Thursday, Friday is back on StreamSheets.
+
+### August 25, 2017 12:16pm
+
+I did a [deep dive into Imp](https://github.com/stevekrouse/futureofcoding.org/commit/c1b7e0677a6a2ccbd456e3b260b54a07eda3df0a) this morning which took about 2 hours. He has a great collection of relevant papers, of which I've read a few and plan to read about a dozen in total. I also shot him an email so hopefully we can become friends.
+
+Let's think about the rest of the day. I'm about to go on a 2-hour run-lunch-grocceries break, so I'll be back at the computer around 3pm, which gives me another 3ish hours of work.
+
+I really want to spend some time on StreamSheets denotational design but I have a few other relevant papers that it might make sense to read first:
+
+* [Stream Processing with a Spreadsheet](https://link.springer.com/chapter/10.1007/978-3-662-44202-9_15)
+* [A Spreadsheet Model for Handling Streaming Data](https://www.cs.cmu.edu/~shihpinc/pdf/Gneiss-CHI15.pdf)
+* http://strlen.com/treesheets/
+* Look into Codd's relational calulus and relational algebra
+* [SIEUFERD Project (database query tool)](http://people.csail.mit.edu/ebakke/sieuferd/index.html)
+
+All this shouldn't take more than an hour-ish, which leaves me plenty of time to start thinking about StreamSheets!
+
 ### August 23, 2017 6:12pm
 
 #### My first full day with Eve
