@@ -6,6 +6,33 @@ title: Journal
 
 This jornal is stream-of-consciousness style so apologies in advance if it's difficult to read. You should know that I don't have spellcheck and I'm a terrible speller. Most importantly, you should know that I add new entries at the top of the page, so you'll have to scroll to the bottom if you want to start from the beginning.
 
+### August 28, 2017 3:27pm
+
+Andre replied already! He is busy preparing for a bunch of conferences so might not have time to chat until 9/8/17. I asked him if he could help point me in the right direction over email, but I may just have to wait two weeks :( No worries, there are plenty of other things to research in the meanwhile.
+
+#### Research Recap #4
+
+* I followed through on my plan to review links from Paul, Jonathan Edwards' blog, Imp, Eve, and other links.
+* I did lose a day or two of research, which given that I only get 5ish days for research each week, is a lot. I still made great progress. Thanks to Sophie at the coding space for taking over for me so I could get back to research.
+* Jonathan Edwards
+  * https://github.com/stevekrouse/futureofcoding.org/commit/52a0d72bc49f2d56eebcfcdaae440467008f1cd2
+  * https://github.com/stevekrouse/futureofcoding.org/commit/cd83671ac0a4d68818c40815c9f5202ec078aafc
+* Conal Elliot
+  * https://github.com/stevekrouse/futureofcoding.org/commit/52a0d72bc49f2d56eebcfcdaae440467008f1cd2 
+* Eve
+  * http://futureofcoding.org/journal#my-first-full-day-with-eve
+* Imp + Jamie
+  * http://futureofcoding.org/journal#august-25-2017-1216pm
+* StreamSheets
+  * http://futureofcoding.org/journal#august-28-2017-228pm
+  * Waiting on Andre 
+* Plan for next two weeks
+  * tomorrow morning I'm sharing the pocast and website widely
+  * I have 6 days in the next cycle (Weds, Fri, Mon, Weds, Fri, Mon) unless something comes up. If Andre gets back to me, I might spend more time on StreamSheets. If not, I'll work on other research and pick up Streamsheets after we chat in two weeks.
+  * Two really fun interviews 
+    * Paul Chiusano from Unison
+    * Pete Hunt from ReactJS and now Smyte
+
 ### August 28, 2017 2:28pm
 
 I made [some decent progress on StreamSheets this morning](https://cdn.rawgit.com/stevekrouse/futureofcoding.org/d44e9b61d5b044c3daa3ae8b4b0690a09e1fa55d/prototypes/streamsheets/index.html). It's now simply a table that populates with event information when you do things with your mouse over the "preview div" on the left of the page.
