@@ -6,6 +6,28 @@ title: Journal
 
 This jornal is stream-of-consciousness style so apologies in advance if it's difficult to read. You should know that I don't have spellcheck and I'm a terrible speller. Most importantly, you should know that I add new entries at the top of the page, so you'll have to scroll to the bottom if you want to start from the beginning.
 
+### August 28, 2017 2:28pm
+
+I made [some decent progress on StreamSheets this morning](https://cdn.rawgit.com/stevekrouse/futureofcoding.org/d44e9b61d5b044c3daa3ae8b4b0690a09e1fa55d/prototypes/streamsheets/index.html). It's now simply a table that populates with event information when you do things with your mouse over the "preview div" on the left of the page.
+
+I'm feeling a little daunted by all of the things that need to happen to build this prototype from a UI perspective. Given that so much of what I'm doing is conjectural, I worry that committing to a design and building it might take too long. I'm looking for a hack of some sort that will allow me to get a sense of what a working version of this *could* look like. 
+
+From one perspective, that's what CycleJS is. A working version of this with no UI. All text. When I realized this, I went and watched [See the data flowing through your app](https://www.youtube.com/watch?v=R-GzJgEccEQ) which was a really impressive demo of the CycleJS devtools to get a sense of how your code works from a understanding and debugging perspective. However, it's not from an creation perspective, which is what I'm trying to do. But it seems like Andre might have this idea as well, given [this slide The Past, Present, and Future of CycleJS talk at CycleConf in 2017](https://staltz.com/cycleconf17/#/step-56) which says:
+
+##### Dataflow tools scenario 
+* Cycle.js DevTool as an IDE
+* Push-pull FRP
+* What would be a better host language?
+* What would a CycleLang look like?
+
+Sounds like my next step is talking to Andre, potentially through Codementor. I wonder if he'd let me record the conversation for my podcast. What questions do I have?
+
+1. Pitch StreamSheets and see what he says.
+2. Ask him to help run me through how the CycleJS chrome extension builds its graph so I can use CycleJS as my compile target. Could it be a one-to-one mapping?
+3. Hear his ideas for "Cycle.js DevTool as an IDE"
+
+Great. I'll shoot him an email now. 
+
 ### August 25, 2017 7:57pm
 
 So for some reason, probably having to due with all of the rice in the burrito bowl I had for lunch, I was super tired after I got back at 3:30 so I took a nap until 6pm.
