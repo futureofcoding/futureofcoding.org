@@ -1,8 +1,11 @@
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-
 ---
 title: Research Ideas
 ---
+
+
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+</head>
 
 # Research Ideas
 
