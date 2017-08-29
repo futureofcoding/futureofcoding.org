@@ -19,6 +19,8 @@ title: Research Ideas
 * streams as spreadsheets
   * http://futureofcoding.org/journal#streams-as-spreadsheets
   * http://futureofcoding.org/journal#streams-as-spreadsheets-2
+  * http://futureofcoding.org/journal#august-25-2017-757pm
+  * http://futureofcoding.org/journal#august-28-2017-228pm
 
 * mock up what it would look like to have **layers** as the core computational abstraction, allowing users to peak under the hood of their apps, change things, and submit pull requests without leaving the app. 
   * http://futureofcoding.org/journal#layers-as-functional-abstraction
@@ -43,6 +45,7 @@ title: Research Ideas
 * essay about why we should stop teaching for loops in favor of forEach loops and while loops (is this how python works already?)
 
 * essay about the flexbox block in cycle v2
+  * what would a "Turing-complete" layout engine look like? (in the sense that SQL is a Turing-complete query langauge)
 
 * continue working on Cycle v2 w/o VueJS (and maybe without Blockly)
 
