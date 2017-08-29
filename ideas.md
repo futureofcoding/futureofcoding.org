@@ -2,9 +2,6 @@
 title: Research Ideas
 ---
 
-
-<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
-
 # Research Ideas
 
 ## Problems to solve
