@@ -23,6 +23,7 @@ Andre replied already! He is busy preparing for a bunch of conferences so might 
   * http://futureofcoding.org/journal#my-first-full-day-with-eve
 * Imp + Jamie
   * http://futureofcoding.org/journal#august-25-2017-1216pm
+  * Finding a time to chat soon. Think I may have found a kindred spirit and friend.
 * StreamSheets
   * http://futureofcoding.org/journal#august-28-2017-228pm
   * Waiting on Andre 
@@ -815,8 +816,9 @@ Clearly, I should start with (8) because it will help me come up with other thin
    }
 
    var all = document.getElementsByTagName("li");
-   for (var i=0, max=all.length; i < max; i++) {
-        var element = all[i]; element.innerHTML = urlify(element.innerHTML);
+   for (var i=0, i < all.length; i++) {
+        var element = all[i];
+        element.innerHTML = urlify(element.innerHTML);
    }
   
   </script>
