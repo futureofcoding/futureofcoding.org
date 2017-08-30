@@ -17,7 +17,8 @@ title: Link Research
 
 ### Unordered
 
-
+* look into heap analytics for its similarity to streamsheets (from Joe West)
+* research moon script and the indie game community as it pertains to influencing WoofJS (joe west reccomended this)
 * [Data-Oriented Design by Richard Fabian](http://www.dataorienteddesign.com/dodmain/)
 * [Stencil – A reusable web component generator](https://news.ycombinator.com/item?id=15080174)
 * [http://digitalfreepen.com/2017/08/16/elixir-in-depth-notes.html](http://digitalfreepen.com/2017/08/16/elixir-in-depth-notes.html)
