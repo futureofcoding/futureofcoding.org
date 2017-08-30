@@ -6,6 +6,31 @@ title: Journal
 
 This jornal is stream-of-consciousness style so apologies in advance if it's difficult to read. You should know that I don't have spellcheck and I'm a terrible speller. Most importantly, you should know that I add new entries at the top of the page, so you'll have to scroll to the bottom if you want to start from the beginning.
 
+### August 30, 2017 10:51am
+
+Ok... So realisitically I'm not able to do research today. Other things I need to do:
+
+1. Prepare questions for my interview today with Pete Hunt.
+2. Prepare questions for my interview tomorrow with Paul Chiusano.
+3. Publish two podcast episodes I have in the queue.
+4. Other random emails and tasks.
+5. I'm currently at my office running a day-long hackathon for my teammates so they can learn to code, so I will spending some time today mentoring them.
+6. Prepare for the WoofJS database migration. Ok, realisitically I'm not going to get super far on this either but I will try!
+
+So sadly this means no research today. I really want to do research on Friday. My goal is to do a deep dive into Alan Kay and then send him an email. However, being realisitc I might sacrafice Friday to WoofJS and then be able to focus more next week on research without distraction. Regardless, I want to acknolwedge that all of this time-pressure is 100% artifical and that it really makes no difference if I do a deep dive into Alan Kay today, Friday, next week, the week after, etc. However, I LOVE that I feel so much pressure and excitement to fit it all in soon. It makes me feel like this structure is working!
+
+#### Analytics after yesterday's launch
+
+I shared this website and podcast on all the places (facebook, hackernews, reddit, etc), and here are the results:
+
+I had 62 episode downloads yesterday! I have almost 100 downloads in total!
+
+Looks like I have 51 total podcast subscribers which is neat!
+
+I had ~150 people on my website yesterday. About 62 make it onto my journal. 
+
+This is fun.
+
 ### August 28, 2017 3:27pm
 
 Andre replied already! He is busy preparing for a bunch of conferences so might not have time to chat until 9/8/17. I asked him if he could help point me in the right direction over email, but I may just have to wait two weeks :( No worries, there are plenty of other things to research in the meanwhile.
