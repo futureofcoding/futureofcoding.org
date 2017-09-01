@@ -6,6 +6,41 @@ title: Journal
 
 This jornal is stream-of-consciousness style so apologies in advance if it's difficult to read. You should know that I don't have spellcheck and I'm a terrible speller. Most importantly, you should know that I add new entries at the top of the page, so you'll have to scroll to the bottom if you want to start from the beginning.
 
+### Sepetember 1, 2017 4:06pm
+
+#### Thoughts about lack of time spent Wednesday and Friday (today)
+
+Yes, I know. I've been delinquient here. Breaking my word about when and how much time I will spend here. On Wednesday I was busy with other work things. However, many of those things could've waited until next week. I just would've felt less "on top of things" but I need to become more comfortable pushing off urgent and unimportant things for less-urgent but more important things. Again, this morning I was feeling "behind" on reviewing WoofJS pull requests so I spent 4 hours this morning catching up. I was only planning to spend an hour or two but I figured that I might as well finish up while I was on it. However, now with the clarity of a few hours I can see that that's an illusion because the more work I do on pull requests (and email) the more work that boomerangs back to me. If I just left it, it would've waited a few days until I got to it next week. I will try to do this more in the future. It's a constant struggle of mindfulness and fighting the "staying on top of my shit" urge that I've built into my workflow and which has allowed me to accomplish so much up till now. As a researcher, this skill is working against me. I don't have any plans tomorrow so I hope to do an hour or two of research tomorrow to make up for the lost time. \
+
+Yes, I acknolwedge that this is all articifical scarcity and urgency around my research, but as I'm just starting as a researcher in earnest I think it's important to establish good habits. Potentially, I will find over time that in order to build a regular research practice that I need to have a more established schedule where I do research at the same time each week, possible before the sun comes up, and before I check email, etc. 
+
+One final thing to note is that I'm still working on optimizing my sleep schedule so I go to bed earlier which would allow me to wake up earlier. I have a lot of work to do here because I waste a lot of time watching TV and reading and other stuff and night because I'm not able to fall asleep without it. One thing that I suspect might be contributing to this is that whenever I plan to wake up early and get to work, I get so excited about what I'm going to do the next day that I can't fall asleep. It's only when I convince myself that I won't be up until 9 or 10am that I am finally less excited enough to actually fall alseep.
+
+#### Thoughts on Peak
+
+Through reading [Jaime Brandon's blog](http://scattered-thoughts.net/blog/2016/09/25/notes-on-peak/), I found and listened to the Peak audiobook over the last few days. It was AMAZING. It's got me super jazzed about applying the principles of deliberate practice to my research practice (alone with other ideas of applying it to my teaching practice at The Coding Space):
+
+1) Get a teacher. As I've said before, my role model in life is Bret Victor. So much of who I am, what I've accomplished, and what I want to become is wrapped up in him. Other role models are Seymour Papert, Mitch Resnick, and Alan Kay, as well as my new friends Paul Chiusano, Jonathan Edwards, Jaime Brandon, Paul Biggar, Kent Beck, Jonathan Edwards, etc. I wonder if one of these people, particular Bret, would be interested in mentoring me here, giving me regular (monthly or so) feedback on my progress as a researcher. My plan is to send Bret, Mitch and Alan emails at the end of today (or tomorrow if I feel like I need more time).
+
+2) Be more systematic about debugging the ways in which I could improve my practice. You can begin to see how I'm starting to optimize my research time in the way I'm thinking about my procrastination and sleep above.
+
+3) Develop more specific goals for myself and track my progress at achieving them. Otherwise you're operateing blind, not knowing if you're getting better or not. Given that its difficult to have concrete goals for research the way I'm doing it, I think my best proxy of this is having a target number of hours engaged in real reaching (including this journal, prototyping, reading papers, but not scheduling or editing podcasts, or working on WoofJS). More on this later.
+
+#### Plan for today 9/1/02017
+
+So it's 4:26pm right now. I have no more than 3 hours of good work in me today, but realisitcally it's closer to 2 hours. My plan is to do a deep dive into Alan Kay and then send him an email. I have a few papers of his in mind, but let's compile them here:
+
+* [Computer Software - 1984](http://www.vpri.org/pdf/tr1984001_comp_soft.pdf)
+* [The Power Of The Context - 2004](http://www.vpri.org/pdf/m2004001_power.pdf)
+* [The Center of “Why?” - 2004](http://www.vpri.org/pdf/m2004002_center.pdf)
+* [Proposal to NSF Granted on August 31, 2006](http://www.vpri.org/pdf/rn2006002_nsfprop.pdf)
+* [The Real Computer Revolution Hasn’t Happened Yet - 2007](http://www.vpri.org/pdf/m2007007a_revolution.pdf)
+* [STEPS Toward The Reinvention of Programming - 2007](http://www.vpri.org/pdf/tr2007008_steps.pdf)
+* [Programming and Programming Languages - 2010](http://www.vpri.org/pdf/rn2010001_programm.pdf)
+* [STEPS Toward Espressive Programming Systems, 2011 Progress Report Submitted to the National Science Foundation (NSF) October 2011](http://www.vpri.org/pdf/tr2011004_steps11.pdf)
+* [Worlds: Controlling the Scope of Side Effects - 2011](http://www.vpri.org/pdf/tr2011001_final_worlds.pdf)
+* [The Future of Reading Depends on the Future of Learning Difficult to Learn Things - 2013](http://www.vpri.org/pdf/future_of_reading.pdf)
+
 ### August 30, 2017 10:51am
 
 Ok... So realisitically I'm not able to do research today. Other things I need to do:
