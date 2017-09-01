@@ -10,7 +10,6 @@ title: Link Research
 * [General Principles for a Generalized Idea Garden](https://www.researchgate.net/publication/313369217_General_Principles_for_a_Generalized_Idea_Garden)
   * get back to Jonathan Edwards after reading this one!
 * [Usability Analysis of Visual Programming Environments](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.35.815&rep=rep1&type=pdf)
-* [Viewpoints Espressive Programming Systems](http://www.vpri.org/pdf/tr2011004_steps11.pdf)
 * [CycleJS Component Difficulties](https://www.youtube.com/watch?v=CU8jtb6UBGg&feature=youtu.be&t=46m15s)
 * https://noflojs.org/
 * [Joe Edelman - citizen logisitics](http://nxhx.org/) and [Chatterbase](http://alpha.trycarbide.com/@jxe/6d5e19369ddb9cc4728510e11a3f7586)
@@ -18,6 +17,7 @@ title: Link Research
 
 ### Unordered
 
+* [SKETCHPAD A MAN-MACHINE GRAPHICAL COMMUNICATION SYSTEM - Sutherland](https://www.cs.purdue.edu/homes/hosking/197/canon/sutherland.pdf)
 * look into heap analytics for its similarity to streamsheets (from Joe West)
 * research moon script and the indie game community as it pertains to influencing WoofJS (joe west reccomended this)
 * [Data-Oriented Design by Richard Fabian](http://www.dataorienteddesign.com/dodmain/)
@@ -82,6 +82,45 @@ title: Link Research
 * http://conal.net/blog/posts/reimagining-matrices
 
 ## Researched
+
+* [Computer Software - 1984](http://www.vpri.org/pdf/tr1984001_comp_soft.pdf)
+  * "A powerful genre can serve as wings or chians. The most treacherous metaphors are the ones that seem to work for a time, because they can keep more powerful insights from bubbling up."
+    * TODO think about these, particularly about progrmming, but also other fields
+  * "The computer field has not yet had its Galileo or Newton or Bach or Beethoven, Shakespeare or Moliere. What is needs first is a William of Occam... Just how many concepts are there really [in computer software]? And how can metaphor, the magical proccess of finding similarity and even identiy in diverse structures, be put to work to reduce complexity?"
+  * "In algebra, the concept of the variable, which allows an infinity of instances to be represented and dealt with as one idea, was a staggering advance."
+  * ![screenshot 2017-09-01 at 5 17 22 pm](https://user-images.githubusercontent.com/2288939/29988090-7c39ce56-8f39-11e7-87d3-0e52541d1978.png)
+    * "Dynamic spreadsheets were invented by Daniel Bricklin and Robert Frankston..."
+    * It's crazy how much this picture reminds me of StreamSheets, which was largely inspired by an Alan Kay talk
+  * "Users must be able to tailor a system to their waints. Anything less would be as absurd as requiring essays to be formed out of paragraphs that have already been written."
+  * ![screenshot 2017-09-01 at 5 34 25 pm](https://user-images.githubusercontent.com/2288939/29988517-e81e1ad0-8f3b-11e7-8331-ea5f84985819.png)
+    * A really wonderful discourse on "computer literacy" that reminds me a lot of Chris Granger's "Coding is not the new literacy"
+
+* [The Power Of The Context - 2004](http://www.vpri.org/pdf/m2004001_power.pdf)
+  * "About 10 years ago I wrote a history paper about our group's research (available online: see references below) and found, even in 60 pages, I could not come close to mentioning all the relevant influences. This is because I've long been an enthusiastic appreciator of great ideas in many genres—ranging from the graphic, musical and theatrical arts to math, science and engineering."
+    * TODO read this history 
+  * "My interest in children's education came from a talk by Marvin Minsky, then a visit to Seymour Papert's early classroom experiments with LOGO. Adding in McLuhan led to an analogy to the history of printed books, and the idea of a Dynabook metamedium: a notebook-sized wireless-networked "personal computer for children of all ages". The real printing revolution was a qualitative change in thought and argument that lagged the hardware inventions by almost two centuries. The special quality of computers is their ability to rapidly simulate arbitrary descriptions, and the real computer revolution won't happen until children can learn to read, write, argue and think in this powerful new way. We should all try to make this happen much sooner than 200 or even 20 more years! This got me started designing computer languages and authoring environments for children, and I've been at it ever since. "
+  * "The Smalltalk system that I designed, and Dan Ingalls implemented, used an important meta-idea from LISP that allowed its DNA to be completely described on one sheet of paper, implemented in a month, and then grown in the presence of experience and new ideas into the powerful system it became. "
+  * Before this article, I thought Seymour Papert and Alan Kay had a baby and it was Mitch Resnick and Scratch. Now I see that it is much more linearly Papert -> Kay -> Resnick.
+  * 'it is amazing to me that most of Doug Engelbart's big ideas about "augmenting the collective intelligence of groups working together" have still not taken hold in commercial systems.'
+    * TODO look this up
+  * TODO organize and pull many of the resources in the notes from this paper into this list of links.
+
+* [The Early History Of Smalltalk](http://worrydream.com/EarlyHistoryOfSmalltalk/)
+  * "Small minds try to form religions, the great ones just want better routes up the mountain. Where Newton said he saw further by standing on the shoulders of giants, computer scientists all too often stand on each other's toes. Myopia is still a problem where there are giants' shoulders to stand on—"outsight" is better than insight—but it can be minimized by using glasses whose lenses are highly sensitive to esthetics and criticism."
+  * "Programming languages can be categorized in a number of ways: imperative, applicative, logic-based, problem-oriented, etc. But they all seem to be either an "agglutination of features" or a "crystallization of style." COBOL, PL/1, Ada, etc., belong to the first kind; LISP, APL— and Smalltalk—are the second kind. It is probably not an accident that the agglutinative languages all seem to have been instigated by committees, and the crystallization languages by a single person."
+  * "Smalltalk's design—and existence—is due to the insight that everything we can describe can be represented by the recursive composition of a single kind of behavioral building block that hides its combination of state and process inside itself and can be dealt with only through the exchange of messages. Philosophically, Smalltalk's objects have much in common with the monads of Leibniz and the notions of 20th century physics and biology. Its way of making objects is quite Platonic in that some of them act as idealizations of concepts—Ideas—from which manifestations can be created. That the Ideas are themselves manifestations (of the Idea-Idea) and that the Idea-Idea is a-kind-of Manifestation-Idea—which is a-kind-of itself, so that the system is completely self-describing— would have been appreciated by Plato as an extremely practical joke."
+  * Though OOP came from many motivations, two were central. The large scale one was to find a better module scheme for complex systems involving hiding of details, and the small scale one was to find a more flexible version of assignment, and then to try to eliminate it altogether. As with most new ideas, it originally happened in isolated fits and starts.
+    * TODO think more on "hiding details", local variables, abstractions and leaks, etc.  
+  * TODO the apendicies aren't there
+
+* [The Center of “Why?” - 2004](http://www.vpri.org/pdf/m2004002_center.pdf)
+* [Proposal to NSF Granted on August 31, 2006](http://www.vpri.org/pdf/rn2006002_nsfprop.pdf)
+* [The Real Computer Revolution Hasn’t Happened Yet - 2007](http://www.vpri.org/pdf/m2007007a_revolution.pdf)
+* [STEPS Toward The Reinvention of Programming - 2007](http://www.vpri.org/pdf/tr2007008_steps.pdf)
+* [Programming and Programming Languages - 2010](http://www.vpri.org/pdf/rn2010001_programm.pdf)
+* [STEPS Toward Espressive Programming Systems, 2011 Progress Report Submitted to the National Science Foundation (NSF) October 2011](http://www.vpri.org/pdf/tr2011004_steps11.pdf)
+* [Worlds: Controlling the Scope of Side Effects - 2011](http://www.vpri.org/pdf/tr2011001_final_worlds.pdf)
+* [The Future of Reading Depends on the Future of Learning Difficult to Learn Things - 2013](http://www.vpri.org/pdf/future_of_reading.pdf)
 
 * [Stream Processing with a Spreadsheet](https://link.springer.com/chapter/10.1007/978-3-662-44202-9_15)
   * skimmed. the calculus went right over my head
