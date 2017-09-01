@@ -6,7 +6,22 @@ title: Journal
 
 This jornal is stream-of-consciousness style so apologies in advance if it's difficult to read. You should know that I don't have spellcheck and I'm a terrible speller. Most importantly, you should know that I add new entries at the top of the page, so you'll have to scroll to the bottom if you want to start from the beginning.
 
-### Sepetember 1, 2017 4:06pm
+
+### September 1, 2017 7:06pm
+
+#### Alan Kay Deep Dive #1
+
+Here are my notes from this first session: https://github.com/stevekrouse/futureofcoding.org/commit/3851f3f22bb2fe32c849a91a6f369c3f0e19c456
+
+I ended up working for about 3 hours of solid reading and notes which I'm proud of. I took a three 10-15 minute breaks to stretch in between. I had fun the entire time. I feel like a fool for not doing this earlier. This stuff is exactly what I need to be reading right now. It's blowing my mind how much Alan Kay represents what I'm trying to become, almost more than Bret or Mitch because he invented Smalltalk which is probably the closest to my dream that's ever been attempted, both in the spirit of its design and the shift in software paradigm that it represents. I am really excited to continue in the Alan Kay deep dive tomorrow and maybe into next week. And then proceed with the Bret Victor deep dive.
+
+As you could've guessed, I didn't come close to finishing my goals of the links below. In fact, my goal has receeded into the distance because I neeed to add a key (pun not intended) link that I didn't have before, which I'm still in the middle of now: [The Early History Of Smalltalk](http://worrydream.com/EarlyHistoryOfSmalltalk/), which I'm reading in HTML on Bret Victor's website which speaks volumes, because Bret must think it's such an important paper that he converted it to a more readable format. This makes me wonder how Bret and Alan first developed their relationship. I bet that's an interesting story!
+
+Estimating that each link will take me about 1 hour, I have 10 or so hours of Alan Kay to go. Thus I probably won't finish tomorrow even if I spent the whole day, which I do not plan to do. Thus a more realistic plan is to finish by the end of the week, picking up with Bret Victor whenever I finish and taking however long I need, probably another week to make it through his material, much of which I've already seen but I now feel inspired to revisit with new eyes.
+
+On the downside, this means that I won't email Alan today or tomorrow, which I worry is just me procrastinating, but I don't think so. I will email him at the end of this week at the latest when my brain is full of his ideas and thus I have the best shot of enrolling him to be a mentor to me, and possible more. The more I read his stuff, the more I feel like moving myself out to wherever in the world he is so I can have his direct guidance as I work.
+
+### September 1, 2017 4:06pm
 
 #### Thoughts about lack of time spent Wednesday and Friday (today)
 
