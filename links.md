@@ -6,6 +6,9 @@ title: Link Research
 
 ## To Research
 
+* [isomorf.io](http://isomorf.io/)
+  * [live tour](https://isomorf.io/#!/tour)
+  * [blog](https://medium.com/isomorf-blog)
 * [Whats Functional Programming All About](http://www.lihaoyi.com/post/WhatsFunctionalProgrammingAllAbout.html#what-functional-programming-is-not)
 * [General Principles for a Generalized Idea Garden](https://www.researchgate.net/publication/313369217_General_Principles_for_a_Generalized_Idea_Garden)
   * get back to Jonathan Edwards after reading this one!
