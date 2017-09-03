@@ -7,6 +7,22 @@ title: Journal
 This jornal is stream-of-consciousness style so apologies in advance if it's difficult to read. You should know that I don't have spellcheck and I'm a terrible speller. Most importantly, you should know that I add new entries at the top of the page, so you'll have to scroll to the bottom if you want to start from the beginning.
 
 
+### September 3, 2017 4:07pm
+
+So I haven't spent any time on research this weekend like I vaugley hoped I would, but that's no problem. I definitely don't want to burn myself out, and I have done that in the past by pressuring myself to work on the weekend. I only want to work on the weekend when it feels natural, not forced.
+
+#### Reflections on my schedule 9/3/17
+
+As you can tell if you read prior entries on this journal, I've been thinking about better ways to structure *how I spend time* doing research for this project. Up until today, I set aside *three full days each week* for research. However, in practice I've found it hard to devote whole days to research, so I'm considering changing the way I divide up my time, slicing it horiztonally instead of vertically: doing my research every day in the morning, as opposed to on specific days.
+
+I also am trying to wake up earlier (as discussed in previous posts) so my inital thought was to do research from 7:30-10:30 Monday through Friday, which is 3 hours per day for 5 days per week, so a total of 15 hours per week. Assuming that I spent another 5 hours per week preparing for interviews and other logistical tasks for the podcast/research project, that's 20 hours per week on this project, half of my working week (because I want to have long-term sustainability and work-life balance I target 40 hours per week). Given that I have two other projects, each of which I want to devote 10 hours per week to, The Coding Space and WoofJS, this seems like a reasonable place to start. Let's give it a shot for a week and revisit next week. I'm most worried about being able to go to sleep on time. However, now that I've decided to start a coffee habit (which I come to reluctantly but am only doing because Scott Adams convinced me to in his book), I think I have a real shot at sticking to this schedule!
+
+![screenshot 2017-09-03 at 4 21 33 pm](https://user-images.githubusercontent.com/2288939/30006334-42f8ea5a-90c4-11e7-80ab-2c9e4880f29b.png)
+
+Given that I can only work until 9am on Tuesday, I added some research time to my schedule on Thursday morning.
+
+I wonder what Alan Kay, Bret Victor, et al will think of this schedule, and what tips they will have for improving it. My plan is still to email Alan at the end of this week and Bret soon thereafter.
+
 ### September 1, 2017 7:06pm
 
 #### Alan Kay Deep Dive #1
