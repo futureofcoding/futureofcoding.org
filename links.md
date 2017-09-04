@@ -21,6 +21,7 @@ title: Link Research
 
 ### Unordered
 
+* [Alan Kay Videos](http://www.vpri.org/html/words_links/links_ifnct.htm) 
 * spend time with Lively Kernal
 * learn about HyperCard!
 * [code.world](https://code.world/#PgOPqtxOVsfDQJe7-GkGdnQ)
@@ -118,7 +119,7 @@ title: Link Research
   * "Smalltalk's design—and existence—is due to the insight that everything we can describe can be represented by the recursive composition of a single kind of behavioral building block that hides its combination of state and process inside itself and can be dealt with only through the exchange of messages. Philosophically, Smalltalk's objects have much in common with the monads of Leibniz and the notions of 20th century physics and biology. Its way of making objects is quite Platonic in that some of them act as idealizations of concepts—Ideas—from which manifestations can be created. That the Ideas are themselves manifestations (of the Idea-Idea) and that the Idea-Idea is a-kind-of Manifestation-Idea—which is a-kind-of itself, so that the system is completely self-describing— would have been appreciated by Plato as an extremely practical joke."
   * "Though OOP came from many motivations, two were central. The large scale one was to find a better module scheme for complex systems involving hiding of details, and the small scale one was to find a more flexible version of assignment, and then to try to eliminate it altogether. As with most new ideas, it originally happened in isolated fits and starts.""
     * TODO think more on "hiding details", local variables, abstractions and leaks, etc.  
-  * "Putting all this together, we want an apparently free environment in which exploration causes desired sequences to happen (Montessori); one that allows kinesthetic, iconic, and symbolic learning—"doing with images makes symbols" (Piaget & Bruner); the user is never trapped in a mode (GRAIL); the magic is embedded in the familiar (Negroponte); and which acts as a magnifying mirror for the user's own intelligence (Coleridge)."
+  * "we want an apparently free environment in which exploration causes desired sequences to happen (Montessori); one that allows kinesthetic, iconic, and symbolic learning—"doing with images makes symbols" (Piaget & Bruner); the user is never trapped in a mode (GRAIL); the magic is embedded in the familiar (Negroponte); and which acts as a magnifying mirror for the user's own intelligence (Coleridge)."
   * "One way to think about progress in software is that a lot of it has been about finding ways to late-bind, then waging campaigns to convince manufacturers to build the ideas into hardware. Early hardware had wired programs and parameters; random access memory was a scheme to late-bind them. Looping and indexing used to be done by address modification in storage; index registers were a way to late-bind. Over the years software designers have found ways to late-bind the locations of computations—this led to base/bounds registers, segment relocation, page MMUs, migratory processes, and so forth. Time-sharing was held back for years because it was "inefficient"— but the manufacturers wouldn't put MMUs on the machines, universities had to do it themselves! Recursion late-binds parameters to procedures, but it took years to get even rudimentary stack mechanisms into CPUs. Most machines still have no support for dynamic allocation and garbage collection and so forth. In short, most hardware designs today are just re-optimizations of moribund architectures."
 
 * [The Center of "Why?" - 2004](http://www.vpri.org/pdf/m2004002_center.pdf)
@@ -129,15 +130,19 @@ title: Link Research
   *  A newer idea that is moving towards the mainstream is that specifications should be executable and debuggable. We want to go even further to "ship the specifications" – that is, the specifications should not just be a model of the meanings in a system, but should simply be the actual meanings of the systems. This leads to a corollary idea: that we should have an absolute separation of meanings from optimizations" 
 
 * [Inventing Fundamental New Computing Technologies](http://www.vpri.org/html/work/ifnct.htm)
+  * "Code is too: large, complex, costly, buggy, insecure, segregated, and inexpressive."
+  * Using the ideas of better abstractions from math to better expression software ideas to compress the amount of code it takes to build a complete software system. This idea feels both beautiful and unneccesary from the perspective of my beautiful $250 chromebook. At the same time, I probably don't even see the ways in which not being able to inspect the chrome code (which I could in theory inspect but in practice is too complex) holds me back. Given my repulsion to low level software, I don't really mind shooting for the web as my compile target. The only caveat here is Pete Hunt and my discussion about creating a new HTML/CSS layout and style engine on the canvas to replace HTML and CSS.
+  * Interesting how the focus here is not on reinventing computing but on reinventing the fundamentals to *enable* that revloution to happen. It's almost like Alan Kay is going back to do things right this time, after he wasn't able to build SmallTalk/Dynabook the way he wanted to the first time.
+
+* [Alan Kay - Education 22nd Century](https://www.youtube.com/watch?v=R1R2jH4PQEo&feature=youtu.be)
+  * The fact that we teach sorting in comptuer science classes is a joke! These problems have all been solved! It's a total lack of imagination. TODO make a list of all these silly things in standard college CS education.
+  * You don't want a computer system that just gives kids the answer because that's like having a servent that does everything for you. I think this is a super fine line. What about the sorting example from above? I think the answer to this question is precision and expressivity and customizability. If a system can do whatever the student wants, then make it as easy as you can. Where you get into trouble is when the system is to set in its ways to do anything interesting, such as "click this 1 button to make flappy bird." This is why adding more police stations in Sim City as the only way to reduce the crime rate is ridiculous.
+  * He has an idea for "a list of powerful ideas for children to become fluent in". He wants to collect a list of these ideas and then map backwards, thinking about the sorts of tool and programming languages we need in order to make this possible. Let me give it a try: top-down programming, debugging, iteration, version control, thinking about definitions, rules of inference, systematic human biases, deliberate practice, writing (journaling), universiality of computation, criticism, non-violent communitcation, modeling, variables, derivates, limits, emailing... Ok, some of those are not like the others... but you get the idea.
+
+* [Alan Kay - Computers, Networks and Education](http://www.vpri.org/pdf/sci_amer_article.pdf)
 
 
-* [Alan Kay Videos](http://www.vpri.org/html/words_links/links_ifnct.htm) 
-
-
-* [Computers, Networks and Education](http://www.vpri.org/pdf/sci_amer_article.pdf)
-
-
-* [The Real Computer Revolution Hasn’t Happened Yet - 2007](http://www.vpri.org/pdf/m2007007a_revolution.pdf)
+* [Alan Kay - The Real Computer Revolution Hasn’t Happened Yet - 2007](http://www.vpri.org/pdf/m2007007a_revolution.pdf)
 
 
 * [STEPS Toward The Reinvention of Programming - 2007](http://www.vpri.org/pdf/tr2007008_steps.pdf)
