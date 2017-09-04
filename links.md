@@ -89,6 +89,7 @@ title: Link Research
 * https://github.com/reflex-frp/reflex
 * reasonML
 * http://conal.net/blog/posts/reimagining-matrices
+* https://www.linkedin.com/pulse/programming-languages-future-coding-chris-grimes
 
 ## Researched
 
