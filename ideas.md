@@ -14,6 +14,9 @@ title: Research Ideas
 
 * version control of firebase, for development, rollbacks
 
+* it's difficult to be precise, especially when you don't yet know the words of the system 
+
+
 ## Ideas to solve them
 
 * streams as spreadsheets

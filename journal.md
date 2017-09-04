@@ -7,6 +7,18 @@ title: Journal
 This jornal is stream-of-consciousness style so apologies in advance if it's difficult to read. You should know that I don't have spellcheck and I'm a terrible speller. Most importantly, you should know that I add new entries at the top of the page, so you'll have to scroll to the bottom if you want to start from the beginning.
 
 
+### September 4, 2017 10:41am
+
+I'm very proud to report that on day #1 of my new schedule, I mostly stayed on point. Despite staying up a few hours later than my target 11pm bedtime, I was able to wake up feeling pretty good, which then got better after some cold brew coffee that my brother taught me to make yesterday.
+
+I worked from 7:30am-10am at which point a friend called and we caught up for 30ish minutes, which leaves me with another 30 minutes of research to do.
+
+As far as the research today goes, I had a lot less fun with Alan's work than I did last time. I wonder if that has more to do with my mood than the content of his writing. My guess as to why I'm less excited about his work is 1) he talks a lot about the implementation details of Smalltalk which feel less relevant today, 2) he spends a lot of time talking about ideas in object oriented programming which don't hit home for me. 
+
+Anyways, here's what I accomplished this morning: https://github.com/stevekrouse/futureofcoding.org/commit/d391cf4dd862a0e26c7133a580fd5dc911134296 & https://github.com/stevekrouse/futureofcoding.org/commit/9976e7c46d85a09c1c5c4776e3673b8aac44152a
+
+I'm feeling a little overwhelemed so I may start skimming his work if I continue to have low interest. I'm going to continue for another 30 minutes and then stop for the day, picking up where I leave off tomorrow.
+
 ### September 3, 2017 4:07pm
 
 So I haven't spent any time on research this weekend like I vaugley hoped I would, but that's no problem. I definitely don't want to burn myself out, and I have done that in the past by pressuring myself to work on the weekend. I only want to work on the weekend when it feels natural, not forced.
