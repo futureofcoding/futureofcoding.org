@@ -56,6 +56,8 @@ title: Research Ideas
 
 * work on a Lamdu- or Unison- like structured editor for the web
 
+* "click this one button to make flappy bird" 
+
 <script>
 
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
