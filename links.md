@@ -21,6 +21,8 @@ title: Link Research
 
 ### Unordered
 
+* spend time with Lively Kernal
+* learn about HyperCard!
 * [code.world](https://code.world/#PgOPqtxOVsfDQJe7-GkGdnQ)
 * [SKETCHPAD A MAN-MACHINE GRAPHICAL COMMUNICATION SYSTEM - Sutherland](https://www.cs.purdue.edu/homes/hosking/197/canon/sutherland.pdf)
 * look into heap analytics for its similarity to streamsheets (from Joe West)
@@ -114,17 +116,31 @@ title: Link Research
   * "Small minds try to form religions, the great ones just want better routes up the mountain. Where Newton said he saw further by standing on the shoulders of giants, computer scientists all too often stand on each other's toes. Myopia is still a problem where there are giants' shoulders to stand on—"outsight" is better than insight—but it can be minimized by using glasses whose lenses are highly sensitive to esthetics and criticism."
   * "Programming languages can be categorized in a number of ways: imperative, applicative, logic-based, problem-oriented, etc. But they all seem to be either an "agglutination of features" or a "crystallization of style." COBOL, PL/1, Ada, etc., belong to the first kind; LISP, APL— and Smalltalk—are the second kind. It is probably not an accident that the agglutinative languages all seem to have been instigated by committees, and the crystallization languages by a single person."
   * "Smalltalk's design—and existence—is due to the insight that everything we can describe can be represented by the recursive composition of a single kind of behavioral building block that hides its combination of state and process inside itself and can be dealt with only through the exchange of messages. Philosophically, Smalltalk's objects have much in common with the monads of Leibniz and the notions of 20th century physics and biology. Its way of making objects is quite Platonic in that some of them act as idealizations of concepts—Ideas—from which manifestations can be created. That the Ideas are themselves manifestations (of the Idea-Idea) and that the Idea-Idea is a-kind-of Manifestation-Idea—which is a-kind-of itself, so that the system is completely self-describing— would have been appreciated by Plato as an extremely practical joke."
-  * Though OOP came from many motivations, two were central. The large scale one was to find a better module scheme for complex systems involving hiding of details, and the small scale one was to find a more flexible version of assignment, and then to try to eliminate it altogether. As with most new ideas, it originally happened in isolated fits and starts.
+  * "Though OOP came from many motivations, two were central. The large scale one was to find a better module scheme for complex systems involving hiding of details, and the small scale one was to find a more flexible version of assignment, and then to try to eliminate it altogether. As with most new ideas, it originally happened in isolated fits and starts.""
     * TODO think more on "hiding details", local variables, abstractions and leaks, etc.  
-  * TODO the apendicies aren't there
+  * "Putting all this together, we want an apparently free environment in which exploration causes desired sequences to happen (Montessori); one that allows kinesthetic, iconic, and symbolic learning—"doing with images makes symbols" (Piaget & Bruner); the user is never trapped in a mode (GRAIL); the magic is embedded in the familiar (Negroponte); and which acts as a magnifying mirror for the user's own intelligence (Coleridge)."
+  * "One way to think about progress in software is that a lot of it has been about finding ways to late-bind, then waging campaigns to convince manufacturers to build the ideas into hardware. Early hardware had wired programs and parameters; random access memory was a scheme to late-bind them. Looping and indexing used to be done by address modification in storage; index registers were a way to late-bind. Over the years software designers have found ways to late-bind the locations of computations—this led to base/bounds registers, segment relocation, page MMUs, migratory processes, and so forth. Time-sharing was held back for years because it was "inefficient"— but the manufacturers wouldn't put MMUs on the machines, universities had to do it themselves! Recursion late-binds parameters to procedures, but it took years to get even rudimentary stack mechanisms into CPUs. Most machines still have no support for dynamic allocation and garbage collection and so forth. In short, most hardware designs today are just re-optimizations of moribund architectures."
 
 * [The Center of “Why?” - 2004](http://www.vpri.org/pdf/m2004002_center.pdf)
-* [Proposal to NSF Granted on August 31, 2006](http://www.vpri.org/pdf/rn2006002_nsfprop.pdf)
+  * "Still later when I lucked into a terrific grad school at the University of Utah, my first thought was that this was just like 4th grade! And then I realized that Mary Quirk had made 4th grade just like a great graduate school! This is a critical insight. Children are in the same state of not knowing as research scientists. They need to go through many of the same processes of discovery in order to make new ideas their own. Because discovery is really difficult and has taken hundreds of years, the difference is that children have to be scaffolded carefully (but not using the Socratic method, it “leads the witness” too much). Instead the scaffolding has to be set up as close encounters and careful but invisible sequencing to allow the children to make the final leaps themselves. This was the genius of Mary Quirk. It was interesting that we never found out what she knew. She was focused on what we knew and could find out."
+  
+* [“End-User to the Metal” Personal Computing - Proposal to NSF Granted on August 31, 2006](http://www.vpri.org/pdf/rn2006002_nsfprop.pdf)
+  * "We want to be able to do what applications do (and more), but, as with “operating systems”, we think there are better paths than the traditional annoying stovepipes that give rise to a few proprietary objects in a way that makes it difficult to combine. Something more like a desktop publishing system that could allow any and all objects to be freely combined visually and behaviorly would be much better. Just as a DTP system allows many different visual elements to be formatted in a wide variety of ways (and master templates made to capture the most useful forms) to cover the entire space of user documents, we would like to go farther in this direction to cover all of the end-user’s needs with a single notion of objects, graphics, user interface, publishing and search. One metaphor that might help (and was an inspiration for many of these ideas) is "HyperCard on Steroids." To do this one would extend HyperCard to have any number of useful objects, allow all to be scripted, and allow the hyperCards to be both full-fledged media pages for docs, web, and presentations, etc., and to recursively be its own embedded media objects."
+  * 
+
+
+* [Computers, Networks and Education](http://www.vpri.org/pdf/sci_amer_article.pdf)
+
 * [The Real Computer Revolution Hasn’t Happened Yet - 2007](http://www.vpri.org/pdf/m2007007a_revolution.pdf)
+
 * [STEPS Toward The Reinvention of Programming - 2007](http://www.vpri.org/pdf/tr2007008_steps.pdf)
+
 * [Programming and Programming Languages - 2010](http://www.vpri.org/pdf/rn2010001_programm.pdf)
+
 * [STEPS Toward Espressive Programming Systems, 2011 Progress Report Submitted to the National Science Foundation (NSF) October 2011](http://www.vpri.org/pdf/tr2011004_steps11.pdf)
+
 * [Worlds: Controlling the Scope of Side Effects - 2011](http://www.vpri.org/pdf/tr2011001_final_worlds.pdf)
+
 * [The Future of Reading Depends on the Future of Learning Difficult to Learn Things - 2013](http://www.vpri.org/pdf/future_of_reading.pdf)
 
 * [Stream Processing with a Spreadsheet](https://link.springer.com/chapter/10.1007/978-3-662-44202-9_15)
