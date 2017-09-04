@@ -121,27 +121,42 @@ title: Link Research
   * "Putting all this together, we want an apparently free environment in which exploration causes desired sequences to happen (Montessori); one that allows kinesthetic, iconic, and symbolic learning—"doing with images makes symbols" (Piaget & Bruner); the user is never trapped in a mode (GRAIL); the magic is embedded in the familiar (Negroponte); and which acts as a magnifying mirror for the user's own intelligence (Coleridge)."
   * "One way to think about progress in software is that a lot of it has been about finding ways to late-bind, then waging campaigns to convince manufacturers to build the ideas into hardware. Early hardware had wired programs and parameters; random access memory was a scheme to late-bind them. Looping and indexing used to be done by address modification in storage; index registers were a way to late-bind. Over the years software designers have found ways to late-bind the locations of computations—this led to base/bounds registers, segment relocation, page MMUs, migratory processes, and so forth. Time-sharing was held back for years because it was "inefficient"— but the manufacturers wouldn't put MMUs on the machines, universities had to do it themselves! Recursion late-binds parameters to procedures, but it took years to get even rudimentary stack mechanisms into CPUs. Most machines still have no support for dynamic allocation and garbage collection and so forth. In short, most hardware designs today are just re-optimizations of moribund architectures."
 
-* [The Center of “Why?” - 2004](http://www.vpri.org/pdf/m2004002_center.pdf)
-  * "Still later when I lucked into a terrific grad school at the University of Utah, my first thought was that this was just like 4th grade! And then I realized that Mary Quirk had made 4th grade just like a great graduate school! This is a critical insight. Children are in the same state of not knowing as research scientists. They need to go through many of the same processes of discovery in order to make new ideas their own. Because discovery is really difficult and has taken hundreds of years, the difference is that children have to be scaffolded carefully (but not using the Socratic method, it “leads the witness” too much). Instead the scaffolding has to be set up as close encounters and careful but invisible sequencing to allow the children to make the final leaps themselves. This was the genius of Mary Quirk. It was interesting that we never found out what she knew. She was focused on what we knew and could find out."
+* [The Center of "Why?" - 2004](http://www.vpri.org/pdf/m2004002_center.pdf)
+  * "Still later when I lucked into a terrific grad school at the University of Utah, my first thought was that this was just like 4th grade! And then I realized that Mary Quirk had made 4th grade just like a great graduate school! This is a critical insight. Children are in the same state of not knowing as research scientists. They need to go through many of the same processes of discovery in order to make new ideas their own. Because discovery is really difficult and has taken hundreds of years, the difference is that children have to be scaffolded carefully (but not using the Socratic method, it "leads the witness" too much). Instead the scaffolding has to be set up as close encounters and careful but invisible sequencing to allow the children to make the final leaps themselves. This was the genius of Mary Quirk. It was interesting that we never found out what she knew. She was focused on what we knew and could find out."
   
-* [“End-User to the Metal” Personal Computing - Proposal to NSF Granted on August 31, 2006](http://www.vpri.org/pdf/rn2006002_nsfprop.pdf)
-  * "We want to be able to do what applications do (and more), but, as with “operating systems”, we think there are better paths than the traditional annoying stovepipes that give rise to a few proprietary objects in a way that makes it difficult to combine. Something more like a desktop publishing system that could allow any and all objects to be freely combined visually and behaviorly would be much better. Just as a DTP system allows many different visual elements to be formatted in a wide variety of ways (and master templates made to capture the most useful forms) to cover the entire space of user documents, we would like to go farther in this direction to cover all of the end-user’s needs with a single notion of objects, graphics, user interface, publishing and search. One metaphor that might help (and was an inspiration for many of these ideas) is "HyperCard on Steroids." To do this one would extend HyperCard to have any number of useful objects, allow all to be scripted, and allow the hyperCards to be both full-fledged media pages for docs, web, and presentations, etc., and to recursively be its own embedded media objects."
-  * 
+* ["End-User to the Metal" Personal Computing - Proposal to NSF Granted on August 31, 2006](http://www.vpri.org/pdf/rn2006002_nsfprop.pdf)
+  * "We want to be able to do what applications do (and more), but, as with "operating systems", we think there are better paths than the traditional annoying stovepipes that give rise to a few proprietary objects in a way that makes it difficult to combine. Something more like a desktop publishing system that could allow any and all objects to be freely combined visually and behaviorly would be much better. Just as a DTP system allows many different visual elements to be formatted in a wide variety of ways (and master templates made to capture the most useful forms) to cover the entire space of user documents, we would like to go farther in this direction to cover all of the end-user’s needs with a single notion of objects, graphics, user interface, publishing and search. One metaphor that might help (and was an inspiration for many of these ideas) is "HyperCard on Steroids." To do this one would extend HyperCard to have any number of useful objects, allow all to be scripted, and allow the hyperCards to be both full-fledged media pages for docs, web, and presentations, etc., and to recursively be its own embedded media objects."
+  *  A newer idea that is moving towards the mainstream is that specifications should be executable and debuggable. We want to go even further to "ship the specifications" – that is, the specifications should not just be a model of the meanings in a system, but should simply be the actual meanings of the systems. This leads to a corollary idea: that we should have an absolute separation of meanings from optimizations" 
+
+* [Inventing Fundamental New Computing Technologies](http://www.vpri.org/html/work/ifnct.htm)
+
+
+* [Alan Kay Videos](http://www.vpri.org/html/words_links/links_ifnct.htm) 
 
 
 * [Computers, Networks and Education](http://www.vpri.org/pdf/sci_amer_article.pdf)
 
+
 * [The Real Computer Revolution Hasn’t Happened Yet - 2007](http://www.vpri.org/pdf/m2007007a_revolution.pdf)
+
 
 * [STEPS Toward The Reinvention of Programming - 2007](http://www.vpri.org/pdf/tr2007008_steps.pdf)
 
+
 * [Programming and Programming Languages - 2010](http://www.vpri.org/pdf/rn2010001_programm.pdf)
+
 
 * [STEPS Toward Espressive Programming Systems, 2011 Progress Report Submitted to the National Science Foundation (NSF) October 2011](http://www.vpri.org/pdf/tr2011004_steps11.pdf)
 
+
 * [Worlds: Controlling the Scope of Side Effects - 2011](http://www.vpri.org/pdf/tr2011001_final_worlds.pdf)
 
+
+* [New Etoys](http://www.vpri.org/fonc_wiki/index.php?title=New_Etoys)
+
+
 * [The Future of Reading Depends on the Future of Learning Difficult to Learn Things - 2013](http://www.vpri.org/pdf/future_of_reading.pdf)
+ 
 
 * [Stream Processing with a Spreadsheet](https://link.springer.com/chapter/10.1007/978-3-662-44202-9_15)
   * skimmed. the calculus went right over my head
