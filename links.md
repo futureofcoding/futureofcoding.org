@@ -142,9 +142,17 @@ title: Link Research
   * He has an idea for "a list of powerful ideas for children to become fluent in". He wants to collect a list of these ideas and then map backwards, thinking about the sorts of tool and programming languages we need in order to make this possible. Let me give it a try: top-down programming, debugging, iteration, version control, thinking about definitions, rules of inference, systematic human biases, deliberate practice, writing (journaling), universiality of computation, criticism, non-violent communitcation, modeling, variables, derivates, limits, emailing... Ok, some of those are not like the others... but you get the idea.
 
 * [Alan Kay - Computers, Networks and Education](http://www.vpri.org/pdf/sci_amer_article.pdf)
-
+  * students are "fed the menu", because "the representation of ideas have replaced the ideas themselves"
+  * List of misconceptions about learning: "empty vessel", "bitter pill to sugarcoat", "innate intelligence", "cohesive self", not understanding how the more mental models you have, the easier it is to assimilate new models, not understanding "the medium is the message", the belif that "some skills are more fundamental to others", the belief in a "minimum set of knowledge that make up a discipline", the belief in "being behind or ahead or on track", the goal of "getting into college / getting a job", "pre-loaded learning vs just-in-time learning", "learning as resume building instead of for instrinsic learning", not recognizing the "importance of context (and emotions) in learning"... TODO write more about this
+  * "One could even argue that the educational approach in the classroom is not nearly as importnat as the set of values about learning found in the home." That's why we need to work on communicating the misconceptions found above to parents! 
+  * He quotes John Holt! "Math and science would probably be learned better if they were made illegal"
+  * A great quote by Philip Morrison that explains why LogicHub is needed: "This is why is is the eveidence, the experience itself and the argument that gives it order, that we need to share with one another, and not just the unsupported final claim."
 
 * [Alan Kay - The Real Computer Revolution Hasn’t Happened Yet - 2007](http://www.vpri.org/pdf/m2007007a_revolution.pdf)
+  * It takes so long to produce the right kind of teacher. I guess the way to go about it is take someone with a lot of the right stuff and then have lots of on-the-job training over lots of time (similar to what we do at TCS).
+  * "the most important process in helping anyone learn how to do mathematical thinking is to put them in many situations in which they can use how they think right now in a more careful way"
+  * Much of the philosophical gold in science is to be found in this noticing activity." TODO write about the key "powerful ideas" in science, as well as math, and the anti-lessons in the way we teach them now. One such idea is "measurement/tolerance"
+  * Jefferson quote: " if we think them [the people] not enlightened enough to exercise their control with a wholesome discretion, the remedy is not to take it from them, but to increase their discretion by education"
 
 
 * [STEPS Toward The Reinvention of Programming - 2007](http://www.vpri.org/pdf/tr2007008_steps.pdf)
