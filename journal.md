@@ -7,6 +7,16 @@ title: Journal
 This jornal is stream-of-consciousness style so apologies in advance if it's difficult to read. You should know that I don't have spellcheck and I'm a terrible speller. Most importantly, you should know that I add new entries at the top of the page, so you'll have to scroll to the bottom if you want to start from the beginning.
 
 
+### September 5, 2017 9:11am
+
+I got much more sleep last night, which makes sense given that I barley made it through the day even with TWO glasses of cold-brew, so I feel much better this morning and, no suprise, [feel much better about the reading I did today](https://github.com/stevekrouse/futureofcoding.org/commit/c43a1fe747c5608eb5da91c0d629a7a86a20244c).
+
+Given that I only did 60ish minutes of research this morning, when I planned to do 90, I added 30 minutes to my research block tomorrow morning.
+
+#### LogicHub #1
+
+The more I read Alan Kay, the more I feel like an idea I had, which I call "LogicHub" is relevant to this project. In short, LogicHub is the repository for all of human argumentation and evidence. The goal is to create the right structure that humanity can bring its logical prowess to bear in the least biased way possible. As Karl Popper says, criticism is the root of all progress, and my dream is for a system like LogicHub to transcend the printing press's limitation that neccesitates the my criticism be a entirely seperate from the content that it's criticizing. More specifically, I want to unify and cannonicalize logic and argumentation, so that we can have incredibly logical nested discussions about everything. I can even imagine a world where scientific papers are written directly in this tool, and so are court cases, and even bills in Congress, because then we'd truly be able to fufill Philip Morrison's vision (that I found earlier today in Kay's writings), that "the eveidence, the experience itself and the argument that gives it order, [is what] we need to share with one another, and not just the unsupported final claim." Imagine a world in which we don't call each other names, like "global warming denier" or "environmentalist hippie", because we can truly see the arguments, evidence, assumptions, and perspective of another.
+
 ### September 4, 2017 10:41am
 
 I'm very proud to report that on day #1 of my new schedule, I mostly stayed on point. Despite staying up a few hours later than my target 11pm bedtime, I was able to wake up feeling pretty good, which then got better after some cold brew coffee that my brother taught me to make yesterday.
