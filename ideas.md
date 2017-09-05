@@ -47,6 +47,8 @@ title: Research Ideas
 
 * essay about why we should stop teaching for loops in favor of forEach loops and while loops (is this how python works already?)
 
+* essay about stop teaching sorting algorithms
+
 * essay about the flexbox block in cycle v2
   * what would a "Turing-complete" layout engine look like? (in the sense that SQL is a Turing-complete query langauge)
 
