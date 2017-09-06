@@ -16,6 +16,9 @@ title: Link Research
   * get back to Jonathan Edwards after reading this one!
 * [Usability Analysis of Visual Programming Environments](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.35.815&rep=rep1&type=pdf)
 * [A Module System for a General-Purpose Blocks Language](http://www.vpri.org/pdf/tr2015003_modsys.pdf)
+* [Dedalus](https://pdfs.semanticscholar.org/03dc/b87fb0e0d8cd9fa85b09035a98ba5f2c779e.pdf)
+* [Lucid](http://worrydream.com/refs/Wadge%20-%20Lucid,%20the%20Dataflow%20Programming%20Language.pdf)  
+* [Forms/3](http://web.engr.oregonstate.edu/~burnett/Forms3/forms3.html)
 * [CycleJS Component Difficulties](https://www.youtube.com/watch?v=CU8jtb6UBGg&feature=youtu.be&t=46m15s)
 * https://noflojs.org/
 * [Joe Edelman - citizen logisitics](http://nxhx.org/) and [Chatterbase](http://alpha.trycarbide.com/@jxe/6d5e19369ddb9cc4728510e11a3f7586)
@@ -23,6 +26,7 @@ title: Link Research
 
 ### Unordered
 
+* [New Etoys](http://www.vpri.org/fonc_wiki/index.php?title=New_Etoys)
 * [Alan Kay Videos](http://www.vpri.org/html/words_links/links_ifnct.htm) 
 * spend time with Lively Kernal
 * learn about HyperCard!
@@ -156,23 +160,50 @@ title: Link Research
   * Jefferson quote: " if we think them [the people] not enlightened enough to exercise their control with a wholesome discretion, the remedy is not to take it from them, but to increase their discretion by education"
 
 
-* [STEPS Toward The Reinvention of Programming - 2007](http://www.vpri.org/pdf/tr2007008_steps.pdf)
+* [STEPS 2007](http://www.vpri.org/pdf/tr2007008_steps.pdf)
+  
+* [STEPS 2008](http://www.vpri.org/pdf/tr2008004_steps08.pdf)
 
+* [STEPS 2009](http://www.vpri.org/pdf/tr2009016_steps09.pdf)
+
+* [STEPS 2010](http://www.vpri.org/pdf/tr2010004_steps10.pdf)
+
+* [STEPS 2011](http://www.vpri.org/pdf/tr2011004_steps11.pdf)
+
+* [KScript and KSWorld: A Time-Aware and Mostly Declarative Language and Interactive GUI Framework ](http://www.vpri.org/pdf/tr2013002_KSonward.pdf)
+  * I can't believe my luck. This paper seems to have the same exact goals and incredibly similar methods to StreamSheets: reactive functional programming, dictonary objects, streams, late-bound variable resolution (this "loose coupling" seems like a bad idea given the importance of types but I guess it allows for more dynamic systems), GUI framework called KSWorld, Universal Document Editor called Frank
+  * HyperCard "stack model", "Etoys authoring", "dissolve the barrier between system-defined and user-defined widgets"
+  * "behaviors" (continuous values over time) vs "events" (sequence of discrete values) - they are basically the same thing from different angles
+  * they solve the circular dependency problem between streams with an imperative `set` function. That seems sub-optimal. I wonder how CycleJS handles such circuluar dependencies, such as typing text into a text field changes the visible area of the text, which updates the knob in the scroll bar, but also when the user moves the knob of the scrollbar, that should update the visible area of the text field. Sounds like a difficult thing to solve abstractly in one's head but could be possible with a StreamSheets like interface.
+  * You can refer to the previous value of a stream with an apostrophe so that you can define something as a "deritive", such as nat <- 0 followedBy nat' + 1. 
+  * The graphical framework steals ideas from Morphic, Lessphic, and Tweak.
+  * While many things in this langauge are reactive streams, it seems like you can also modify values imperatively, which doesn't feel right. It's not pure enough for the stream metaphor to be truly powerful. "It might seem appealing to write a layout as a set of dependency relationships between Boxes’ bounds streams, but since a typical layout specification involves relationships that are multi-directional, the dependencies would tend to become circular. Therefore we use procedural code for this part of the framework too." This seems unreasonable to me. Either streams are your core data structure and you commit to them fully or you give up on them entirely. I don't see how you can straddle the line like this. Curious what Andre (and the writers of this paper) would say to this criticism.
+  * When a user wants to directly manipuate an object, they put a "halo" around it which disables all of the reactive events on that object so you can play with it (like "inspect element" in the browser)
+  * I don't understand how this code sets up the buttonDown event: `buttonDown <- eventStream()`. Is the name of the stream on the left, `buttonDown` somehow influencing the types of events pulled out of the `eventStream()` on the right? That's the only thing I can imagine because all the streams are defined this way, such as `buttonUp <- eventStream()`. "To create a value stream that acts as an event (thus not having an initial value), the 0-ary function `eventStream()` is used."
+  * There's a whole lot of the `this` keyword, which you'll not find a single instance of in Elm or CycleJS.
+  * I am struck by how few lines of code, just a few thousand, it takes for them to represent an entire box, layout model, and FRP event engine. This makes me think that doing this project on the web could be trivially easy. In many ways similar to morphicJS. However with the few hours I spent exploring the morphicJS code, I'd aspire to have more managable code, preferably by having less (or no) code in text but most (or all) code built in a previous version of the very tool itself!
+  * I could also look into [Dedalus](https://pdfs.semanticscholar.org/03dc/b87fb0e0d8cd9fa85b09035a98ba5f2c779e.pdf) (which doesn't have `set`) and [Lucid](http://worrydream.com/refs/Wadge%20-%20Lucid,%20the%20Dataflow%20Programming%20Language.pdf) which doesn't have the distinction between continuous and discrete streams (and which Bret Victor hosts!) and [Forms/3](http://web.engr.oregonstate.edu/~burnett/Forms3/forms3.html)
+
+
+* [STEPS 2012](http://www.vpri.org/pdf/tr2012001_steps.pdf)
+  * I decided to start with the final report and see if I can get away with skipping the prior year updates for now...
+  * 
+
+* [Alan Kay - User Interface - 2001](http://www.vpri.org/pdf/hc_user_interface.pdf)
+  * When McLucan said "the medium is the message", "he meant that you can to *become* the medium if you use it" so that the "internalized" medium "can be subtracted out to leave the message behind." McLuhan: "I don't know who discovered water but it wasn't a fish."
+  * TODO read *Towards a Theory of Instruction* (which I already had on my bookshelf, so I moved it to my nightstand)
+  * TODO read "an inner game of tennis" (just bought on audible)
+  * This article is mostly about [how humans have three seperate systems, enactive (know where you are, maipulate), iconic (recognize, compare, configure, concrete), and symbloic (tie together long chains of reasoning, abstract), and culmiates in his slogan "doing [mouse, enactive] with Images [icons, windows, iconic] makes Symbols [Smalltalk, symbolic]"](https://user-images.githubusercontent.com/2288939/30118214-73d7fe12-92f0-11e7-9185-f2a58c8841fb.png)
+  
 
 * [Programming and Programming Languages - 2010](http://www.vpri.org/pdf/rn2010001_programm.pdf)
 
 
-* [STEPS Toward Espressive Programming Systems, 2011 Progress Report Submitted to the National Science Foundation (NSF) October 2011](http://www.vpri.org/pdf/tr2011004_steps11.pdf)
-
-
 * [Worlds: Controlling the Scope of Side Effects - 2011](http://www.vpri.org/pdf/tr2011001_final_worlds.pdf)
-
-
-* [New Etoys](http://www.vpri.org/fonc_wiki/index.php?title=New_Etoys)
-
 
 * [The Future of Reading Depends on the Future of Learning Difficult to Learn Things - 2013](http://www.vpri.org/pdf/future_of_reading.pdf)
  
+* [Towards Making a Computer Tutor for Children of All Ages - 2016](http://www.vpri.org/pdf/tr2016002_tutor.pdf)
 
 * [Stream Processing with a Spreadsheet](https://link.springer.com/chapter/10.1007/978-3-662-44202-9_15)
   * skimmed. the calculus went right over my head
