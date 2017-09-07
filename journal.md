@@ -6,6 +6,24 @@ title: Journal
 
 This jornal is stream-of-consciousness style so apologies in advance if it's difficult to read. You should know that I don't have spellcheck and I'm a terrible speller. Most importantly, you should know that I add new entries at the top of the page, so you'll have to scroll to the bottom if you want to start from the beginning.
 
+### September 7, 2017 11:40am
+
+Success! Not only did I stick to schedule (despite a 45 minute break to talk with mom), but I also mark today as the end of my Alan Kay Deep Dive Experience. [Here is the final commit.](https://github.com/stevekrouse/futureofcoding.org/commit/3c61d3a143f71c72400a3f23ce086ef904fbaa06)
+
+
+#### Alan Kay Deep Dive Recap
+
+While I have been highly influnced by the work of Alan Kay over the past decade -- through Bret Victor, object-oriented programming, let alone GUIs -- I didn't watch more than a handful of his videos and hadn't read any of his papers. Thus given that I had a free week of research I decided to remidy this sittuation and read almost every paper I could find online with his name listed as an author, and watch a handful of his videos (not nearly as many as he's given). I am quite excited by what I have learned! 
+
+I am able to see more clearly now the progression ideas through my idols, from Piaget to Papert to Kay to Resnick and Victor, as well as how the ideas of Montessori, McLuhan, and Postman relate to this beautiful worldview.
+
+More than anything, I am struck by how much I relate to many of these ideas (which from one perspective isn't suprising because these are my role models, the people that I'm actively trying to be like, so it's like saying "what a coincidence that I like the music of my favorite band and its influences"), and how we not only agree on goals, but also on specific implementation ideas, in particular reactive/stream-based programming.
+
+It was also really interesting to get to contexualize what sometimes from afar appears like biterness or regret. I get the sense that while he's so proud of what he's created, he's also ashamed of how inadequate it is and almost wishes he could go back and time and do it right the first time. Samantha John mentioned on an early episode of the podcast that Bret Victor is more worried about something bad becoming ubiquitous rather than nobody noticing it, which is why he doesn't release a lot of his source code. This makes more sense now in the context of Smalltalk being released before it was up to Kay's standards of what a programming environment could be.
+
+Ok, I am now out of excuses, it's time to send him an email!
+
+
 ### September 6, 2017 10:55am
 
 This morning was quite productive! I started research just a 15 minutes late (making my morning coffee and writing in my private journal took longer than expected) so I tacked on some more time to the end of today's research. I got [a decent bit done](https://github.com/stevekrouse/futureofcoding.org/commit/31cb36531e9fa145dfb65832af0cdfb90c39258f), mostly around the STEPS project (which I've decided to only read the final report of unless in reading it I decide to read the progress reports), more specifically the KScript language. 
