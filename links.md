@@ -15,12 +15,12 @@ title: Link Research
 * [General Principles for a Generalized Idea Garden](https://www.researchgate.net/publication/313369217_General_Principles_for_a_Generalized_Idea_Garden)
   * get back to Jonathan Edwards after reading this one!
 * [Usability Analysis of Visual Programming Environments](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.35.815&rep=rep1&type=pdf)
+* https://noflojs.org/
 * [A Module System for a General-Purpose Blocks Language](http://www.vpri.org/pdf/tr2015003_modsys.pdf)
 * [Dedalus](https://pdfs.semanticscholar.org/03dc/b87fb0e0d8cd9fa85b09035a98ba5f2c779e.pdf)
 * [Lucid](http://worrydream.com/refs/Wadge%20-%20Lucid,%20the%20Dataflow%20Programming%20Language.pdf)  
 * [Forms/3](http://web.engr.oregonstate.edu/~burnett/Forms3/forms3.html)
 * [CycleJS Component Difficulties](https://www.youtube.com/watch?v=CU8jtb6UBGg&feature=youtu.be&t=46m15s)
-* https://noflojs.org/
 * [Joe Edelman - citizen logisitics](http://nxhx.org/) and [Chatterbase](http://alpha.trycarbide.com/@jxe/6d5e19369ddb9cc4728510e11a3f7586)
 
 
@@ -144,7 +144,7 @@ title: Link Research
 * [Alan Kay - Education 22nd Century](https://www.youtube.com/watch?v=R1R2jH4PQEo&feature=youtu.be)
   * The fact that we teach sorting in comptuer science classes is a joke! These problems have all been solved! It's a total lack of imagination. TODO make a list of all these silly things in standard college CS education.
   * You don't want a computer system that just gives kids the answer because that's like having a servent that does everything for you. I think this is a super fine line. What about the sorting example from above? I think the answer to this question is precision and expressivity and customizability. If a system can do whatever the student wants, then make it as easy as you can. Where you get into trouble is when the system is to set in its ways to do anything interesting, such as "click this 1 button to make flappy bird." This is why adding more police stations in Sim City as the only way to reduce the crime rate is ridiculous.
-  * He has an idea for "a list of powerful ideas for children to become fluent in". He wants to collect a list of these ideas and then map backwards, thinking about the sorts of tool and programming languages we need in order to make this possible. Let me give it a try: top-down programming, debugging, iteration, version control, thinking about definitions, rules of inference, systematic human biases, deliberate practice, writing (journaling), universiality of computation, criticism, non-violent communitcation, modeling, variables, derivates, limits, emailing... Ok, some of those are not like the others... but you get the idea.
+  * He has an idea for "a list of powerful ideas for children to become fluent in". He wants to collect a list of these ideas and then map backwards, thinking about the sorts of tool and programming languages we need in order to make this possible. Let me give it a try: top-down programming, debugging, iteration, version control, thinking about definitions, rules of inference, systematic human biases, deliberate practice, writing (journaling), universiality of computation, criticism, non-violent communitcation, modeling, variables, derivates, limits, systems, emailing... Ok, some of those are not like the others... but you get the idea.
 
 * [Alan Kay - Computers, Networks and Education](http://www.vpri.org/pdf/sci_amer_article.pdf)
   * students are "fed the menu", because "the representation of ideas have replaced the ideas themselves"
@@ -169,6 +169,7 @@ title: Link Research
 * [STEPS 2010](http://www.vpri.org/pdf/tr2010004_steps10.pdf)
 
 * [STEPS 2011](http://www.vpri.org/pdf/tr2011004_steps11.pdf)
+  * "NoOS = No Operating System" 
 
 * [KScript and KSWorld: A Time-Aware and Mostly Declarative Language and Interactive GUI Framework ](http://www.vpri.org/pdf/tr2013002_KSonward.pdf)
   * I can't believe my luck. This paper seems to have the same exact goals and incredibly similar methods to StreamSheets: reactive functional programming, dictonary objects, streams, late-bound variable resolution (this "loose coupling" seems like a bad idea given the importance of types but I guess it allows for more dynamic systems), GUI framework called KSWorld, Universal Document Editor called Frank
@@ -185,9 +186,25 @@ title: Link Research
   * I could also look into [Dedalus](https://pdfs.semanticscholar.org/03dc/b87fb0e0d8cd9fa85b09035a98ba5f2c779e.pdf) (which doesn't have `set`) and [Lucid](http://worrydream.com/refs/Wadge%20-%20Lucid,%20the%20Dataflow%20Programming%20Language.pdf) which doesn't have the distinction between continuous and discrete streams (and which Bret Victor hosts!) and [Forms/3](http://web.engr.oregonstate.edu/~burnett/Forms3/forms3.html)
 
 
+* [Making Applications in KSWorld](http://www.vpri.org/pdf/m2013003_ksapps.pdf)
+  * seems like Flapjax is quite similar to CycleJS in some ways (less pure though)
+  * Given how similar in design and goals this system is to StreamSheets, I'm wondering what would've happened if they built it like StreamSheets exactly. The thing I'm realizing is that the more generalized I make Streamsheets (just a dataflow programming tool), the more useful and expressive it can be. If it's just for creating HTML UIs it can be less exiciting possibly. On the other hand, NoFlo exists and it's trying to be a generalized dataflow langauge. I'm going to want to spend a whole day with that, like Eve. (And like Eve, I get the sense that it's going to be a fustrating day with a buggy tool.)
+  * I like the "be something" menu name, such as "be a button", "be a slider", "be a line of text". As opposed to "inherit from the button class", which normally plagues OOP.
+  * Making things "scrollable", is not nearly so neat, which speaks to a lacking of multiple-inheritance in their model.
+  * In fact, there's a lot of code going on here, where their could be a UI type of thing, which is understable as this is just a research project.
+  * I do find beauty in how their architecture of everything-is-a-box-that-is-always-editable makes it super easy to build a document editor. The system itself is basically already a document editor. This sounds a lot like how I imagine HyperCard to be, and how Paul Chuisano describes the future of apps. One thing to mention, however, is how turned off I am by the look and feel of the SmallTalk or LivelyKernal or KSWorld environment. It feels very gimicky and old-school and self-contained. TODO think about why it gives off that feeling (is it just that the colors and styles are ugly?) and how to combat that.
+  * I can't stop laughing that in one of their examples is the phrase "What is Science?" which happens to be very similar to the title of a book I'm currently reading. I really have a lot in common with these guys, which is no surpise given that I was shaped by Logo, Scratch, Bret Victor and Alan Kay over the last decade.
+  * It is quite exciting to learn that they built much of this system in a few thousand lines of code! With the right abstractions and goals in mind, you can really do a lot quickly!
+
+
 * [STEPS 2012](http://www.vpri.org/pdf/tr2012001_steps.pdf)
   * I decided to start with the final report and see if I can get away with skipping the prior year updates for now...
-  * 
+  * As you can see above, I did read Apendix I and II before continuing with this paper, which was quite fun as they have an uncany relationship to my current protoype idea, StreamSheets.
+  * All the Maru and NILE stuff go right over my head and I don't want to take the time now to investigate. Suffice it to say that if I ever want to "build beautiful abstractions all the way down to the metal", this is the place to look.
+  * They end up using Bloom and Datalog (Dedalus) in service of seperating the "what" from the "how" of programming. It's interesting to see the same research pop up everywhere!
+  * People clearly want to use the language best suited for a task to do that task. Thus enabling the stitching together of DSLs seems like a good way to go (although this is sometimes a pain to learn all someone else's DSL instead of building it up yourself unless it's a really good DSL), and thus the LISP macro system (or the Ruby DSL system) seem to shine here.
+  * I wonder what work has been inspired/influenced by this work and if it is continuing in some form.
+
 
 * [Alan Kay - User Interface - 2001](http://www.vpri.org/pdf/hc_user_interface.pdf)
   * When McLucan said "the medium is the message", "he meant that you can to *become* the medium if you use it" so that the "internalized" medium "can be subtracted out to leave the message behind." McLuhan: "I don't know who discovered water but it wasn't a fish."
@@ -197,13 +214,30 @@ title: Link Research
   
 
 * [Programming and Programming Languages - 2010](http://www.vpri.org/pdf/rn2010001_programm.pdf)
-
+  * Looking at all this EToys inspired me to find this thread http://forum.world.st/Why-is-Scratch-more-popular-than-Etoys-td3787377.html
+  * He draws a comparison between mathmatics and programming language to better help explain programming languages, but it's useful to me in the opposite way. I think it would be neat if mathmatics used the terminology of "langauge" to explain why so many different sets of notation exist. For example, maxwell's equations, or even e=mc2. Are they the same as the algebra I learned in middle school? I know the calculus is not because there are new symbols.
 
 * [Worlds: Controlling the Scope of Side Effects - 2011](http://www.vpri.org/pdf/tr2011001_final_worlds.pdf)
+  * This is my second reading of this paper (skimming this time)
+  * Seems like a reasonable idea. Reminds me of the singleton-state of the Flux "control pattern"
+  * I think I'm convinced: having "implicit scope" is bad. If you want something on the global object, you should specify it (this becomes less of a typing problem in a structured editor). This is good because 1) it makes scope more understandable, 2) it makes variable declaration and object-key assignment unified, and 3) it allows global state to be a first-class object, not some special object.
+  * I'm not sure I'm 100% convinced of the git-like branching and committing workflow. Seems a little over the top in some ways, but I do like how it gives you "undo for free".
+
 
 * [The Future of Reading Depends on the Future of Learning Difficult to Learn Things - 2013](http://www.vpri.org/pdf/future_of_reading.pdf)
+  * "McLuhan pointed out that what is most important about a communications medium is *what we have to become* in order to use it fluently." Currently, you have to become part-turing-machine and part-nerd in order to program computers. This is bonkers.
+  * O.K. Moore predated Papert and has a notion of "responsive environment" which sounds a lot like a microworld. He also defines the word "autotelic, if engaging in it is done for its own sake rather than for obtaining rewards or avoiding punishments that have no inherent connectino with the activity itself."
+  * "One of the interesting rules of the environment is that children can leave any time they want, but they cannot come back until the next day (this is very similar to one of Montessori's principles about choice of toys.)" Very interesting! I'd be curious to read more into the pros and cons of this approach. While it might have the intended first-order effects (getting kids to stick to certain things for longer time, less flitting around), the second-order effects seem uncertain, for example, I wonder if it makes kids feel manipulated or artifically controlled, or another example, if it prevents kids from taking a break when they need one.
+  * This seems to be mostly about "Seymour/Socrates in a box" which today is super expensive because you have to create these systems by hand, but one day (maybe soon) could be cheap with AI, which is what the following paper is about...
  
+
 * [Towards Making a Computer Tutor for Children of All Ages - 2016](http://www.vpri.org/pdf/tr2016002_tutor.pdf)
+  * "the system may have a database of common user mistakes and advice for correcting them" this sounds similar to the approach I was going to take with IMACS/Samantha
+  * They discuss possilities to make a Clippy-like agent the user talks to, should it be older than them? Younger? An expert? Learning it for the first time like them? More than one of them? (It strikes me that statistically there must be someone who wants to learn something and a near-peer who can help them with that thing at the same time. There was a neat iPad app that paired a student 1 chapter ahead with a mentee one chapter behind in SICP. I don't think it took off but I LOVE the idea.) Take into account student pupil size and finger pointing through webcam.
+  * In the first phase, having humans do the tutoring while "pretending" to be AI from a remote computer is a good first step to collect data. It's important to collect as much data here as possible, potentially more than a comptuer webcam can capture, so maybe bringing students into an experiment room would be good.
+  * The second phase is to begin to build out computer models to detect various user states and "suggest" responses to them that a human can approve of. This sounds eerily similar to the model that many virtual assistant companies, like Clara, are taking, which I find a little nerve-racking because it takes years to test out the riskiest part. I think I'd try my best to not raise money for such a system and instead do it all making money for as long as possible. That is, the students would be paying basically for a human tutor (20% discount or so) but the interface would be indistinguishable from an AI so that you can slowly phase out the human.
+  * Another thing that comes to mind here is that teaching comptuer science to teachers isn't *that* hard. Through The Coding Space, we've found it quite scalable. The main thing holding us back, ironically enough, is finding enough use for those teachers, because we can only put them to work 15ish hours per week in afterschool settings, and thus can only hire part-time teachers who are notoriously short-term employees, which means we can't invest as much in their continued development, and they end up giving back to our community of teachers less, which makes it all less scalable.
+
 
 * [Stream Processing with a Spreadsheet](https://link.springer.com/chapter/10.1007/978-3-662-44202-9_15)
   * skimmed. the calculus went right over my head
@@ -307,7 +341,6 @@ title: Link Research
   * talks about picking the right abstraction and encoding it into types (similar to my idea to kill booleans)
 
 * [Luke Palmer - The purpose of code is to be abstracted over](https://lukepalmer.wordpress.com/2010/01/24/haskell-antipattern-existential-typeclass/#comment-1017)
-
 
 * [Loper OS](http://www.loper-os.org/?p=861)
   * I disagree. I think emacs represents the wrong model: spend a few hundred hours learning this system and we'll improve your brain-computer interface. Instead, why don't we 1) get better abstractions so we have less work (like Paul Chiusano says) and 2) build a more intuiative interface for everyone? 

@@ -60,6 +60,9 @@ title: Research Ideas
 
 * "click this one button to make flappy bird" 
 
+* community where you pair near-peers together to learn together (no money making)
+
+
 <script>
 
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
