@@ -6,6 +6,15 @@ title: Journal
 
 This jornal is stream-of-consciousness style so apologies in advance if it's difficult to read. You should know that I don't have spellcheck and I'm a terrible speller. Most importantly, you should know that I add new entries at the top of the page, so you'll have to scroll to the bottom if you want to start from the beginning.
 
+### September 8, 2017 9:01am
+
+Good morning! So I spent the last hour or so writing Alan Kay a much too long and too epic email. Now I'd like to move on to my Bret Victor Deep Dive. Before I begin, I'd like to share a laugh with everyone with this link to Bret's hit single [Caltech Girl](http://worrydream.com/media/caltech_girl.html). [HOLY SHIT I JUST FOUND THIS GOLD](https://www.youtube.com/watch?v=00vMnIECCbo)
+
+Unfortunately, the link to his earliest website at CalTech seems to be broken: http://sites.ugcs.caltech.edu/~bret/alternate/. I wasn't able to find it on waybackmachine either, so if anyone has access to an archived version of this, please let me know at steve at futureofcoding.org :)
+
+While they are fun, Bret's websites' interactivity does make it a bit harder to exhaustively and systematically explore. Let's start with http://worrydream.com/ugcs...
+
+
 ### September 7, 2017 11:40am
 
 Success! Not only did I stick to schedule (despite a 45 minute break to talk with mom), but I also mark today as the end of my Alan Kay Deep Dive Experience. [Here is the final commit.](https://github.com/stevekrouse/futureofcoding.org/commit/3c61d3a143f71c72400a3f23ce086ef904fbaa06)

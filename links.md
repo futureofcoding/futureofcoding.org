@@ -22,7 +22,8 @@ title: Link Research
 * [Forms/3](http://web.engr.oregonstate.edu/~burnett/Forms3/forms3.html)
 * [CycleJS Component Difficulties](https://www.youtube.com/watch?v=CU8jtb6UBGg&feature=youtu.be&t=46m15s)
 * [Joe Edelman - citizen logisitics](http://nxhx.org/) and [Chatterbase](http://alpha.trycarbide.com/@jxe/6d5e19369ddb9cc4728510e11a3f7586)
-
+* Inmates are running the Asylum
+* Hacker's Delight
 
 ### Unordered
 
@@ -97,6 +98,19 @@ title: Link Research
 * https://www.linkedin.com/pulse/programming-languages-future-coding-chris-grimes
 
 ## Researched
+
+### Bret Victor Deep Dive
+
+* [Bret Victor UGCS](http://worrydream.com/ugcs)
+  * "calltech was best four years of my life", but UC Berkley was "hell"
+  * "I'm a passive pacifist. Like an apolitical Gandhi with food and hair."
+  * "My Ultimate Life Goal is, basically, to Create Something Good. To invent something that improves the state of the world. Something that helps people, something that improves the global quality of life. Something. Someday."
+  * "I like getting e-mail. Send some to bret@ugcs.caltech.edu. Please?" Seems like this changed.
+  * "The Inmates Are Running the Asylum: This book should be required reading for everyone in or around the software industry. Nothing I've read has ever resonated with me this strongly." TODO add this to the top of the list
+  * Hacker's Delight: Despite the cringingly misleading title, this is the best book ever written. I'm in rapture. TODO add this to the top of the list as well.
+  * I'm really enjoying reading his blog from when he, like me now, was 23. Sounds like he was trying to find his way, post-hell-grad-school, and post-break-up with Joanne (which is heartbreaking).
+  * TODO continue reading his blawg after 5/11/01.
+
 
 * [Computer Software - 1984](http://www.vpri.org/pdf/tr1984001_comp_soft.pdf)
   * "A powerful genre can serve as wings or chians. The most treacherous metaphors are the ones that seem to work for a time, because they can keep more powerful insights from bubbling up."
