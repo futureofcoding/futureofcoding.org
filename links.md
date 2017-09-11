@@ -6,6 +6,10 @@ title: Link Research
 
 ## To Research
 
+* pull links (and TODOS) from...
+  * ./notes/andre-staltz-call-9-11-17
+  * ./notes/dan-scanlon-call-9-5-17
+  * ./notes/jaime-brandon-call-9-5-17
 * http://elevr.com/elevr-leaving-ycr/
 * [isomorf.io](http://isomorf.io/)
   * [live tour](https://isomorf.io/#!/tour)

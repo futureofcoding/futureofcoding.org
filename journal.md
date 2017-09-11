@@ -6,6 +6,62 @@ title: Journal
 
 This jornal is stream-of-consciousness style so apologies in advance if it's difficult to read. You should know that I don't have spellcheck and I'm a terrible speller. Most importantly, you should know that I add new entries at the top of the page, so you'll have to scroll to the bottom if you want to start from the beginning.
 
+### September 11, 2017 8:50am
+
+So I haven't yet yeard back from Alan Kay, but I did hear back from Andre Stalz and [had an early morning conversation with him today](./notes/andre-staltz-call-9-11-17.md). It was very productive! I will think more on next-steps on that call and StreamSheets below in my Research Recap.
+
+#### Research Recap #5
+
+* Apologize for no episode last week, working on getting two interviews out the door (Pete and Paul), and should be soon.
+* [Analysis of traffic after launch](http://futureofcoding.org/journal#analytics-after-yesterdays-launch) and now (below) 
+* [Peak from Jaime Brandon](http://futureofcoding.org/journal#thoughts-on-peak)
+* [New Schedule](http://futureofcoding.org/journal#reflections-on-my-schedule-9317)
+* Call with [Jaime Brandon](http://futureofcoding.org/notes/jaime-brandon-call-9-5-17)
+* Call with [Dan Scanlon](http://futureofcoding.org/notes/dan-scanlon-call-9-5-17) 
+* While waiting for Andre, [Alan Kay Deep Dive](http://futureofcoding.org/journal#alan-kay-deep-dive-recap)
+* [Optimal computer use strategies](http://futureofcoding.org/journal#overlapping-windows-considered-too-expressive-and-other-optimal-computer-use-strategies)
+* [LogicHub](http://futureofcoding.org/journal#logichub-1)
+* [Just started Bret Victor deep dive](http://futureofcoding.org/journal#september-8-2017-901am)
+* [Call today with Andre](./notes/andre-staltz-9-11.md)
+* Next steps with research (below)
+
+Dan and Andre let me record our conversations so I'd love to play snipets of them in this research recap, but that sounds like it could be an editing nightmare, especially editing it all on my phone which sometimes has trouble with two tracks (and this would be three).
+
+#### Podcast and website analytics 9/11/17
+
+Podcast - It says my number of suscribers grew from ~50 to ~130 in the past two weeks! Most of the growth seemed to happen between August 31 and Sept 1, which is interesting because I didn't publish anything in that timeframe. It looks like people have been starting with episode 1 and then go straight to the most recent episode, which is currently 8. In total, I have had 156 people listen to episodes, 403 episode downloads, with most people listening on iPhones, most from America, but like 100 (which is shocking to me) other countries, broken down by a few dozen from Canada, France, Brazil, UK, Spain and Singapore.
+
+Website - Probably the most interesting metrics are monthly, weekly and daily active users. I have 245 monthly active users, 35 weeks, and 6 daily. This is very exciting to me that I have a even a single person (let alone 5) other than me that come to my website every day! It's basically only US visitors, half phone and half desktop. Not surprisingly, people who find me via organic search, bounce the least. In the last 28 days, I've had 394 sessions, with a bounce rate of 67%, and 1m31s session duration, with a huge spike on the launch date, settling with higher but still pretty low daily viewage.
+
+#### Next Steps with Research 9/11/17
+
+There are two obvious directions to take moving forward:
+
+1) begin prototyping a visualization of CycleJS data as tabular spreadsheets
+
+2) continue the deep dive on Bret Victor 
+
+Before I compare and contrast these options, let me meditate on any more options...
+
+3) (From futureofcoding.org/ideas) build a generic expression building widget/library (google sheets formulas but without syntax errors)
+
+4) write-up some of my prior research or ideas (such as "flexbox block in cycle v2" or "stop teaching for loops in favor of forEach loops and while loops", from futureofcoding.org/ideas)
+
+5) While are are some other links I'm eager to research, after seeing how much gold was to be mined in an Alan Kay deep dive, I think I'll make it through Bret before looking at anything else.
+
+Reflecting on all of these options (and yes, (5) is not an option but explaining a lack of one), I see that (1) is where my heart is at, and I can justify it logically as well with this principle:
+
+As long as I can see where I can make progress on a prototype that has interesting open questions, I should make that progress so that when I get blocked, I can reach out to people for help as soon as possible, and spend the time waiting on various other research paths. To put it another way, I should always have a prototype that I'm working on, and my other research are merely ways to inspire other prototypes during the times that I'm stuck on my main prototype. 
+
+
+#### Begin prototyping a visualization of CycleJS data as tabular spreadsheets
+
+I guess I can start by using a lot of the graphSerializer code from the CycleJS devtools. Let's think about the app architecture... I'll probably want the app itself in an iframe and then can get the window.cycleJs from appPreview.contentWindow.cycleJs or something.
+
+However, before I go to code, I should think about the core streams as spreadsheets metaphor and demonstrate in drawings how I plan to visualize each xstream operator. Great! That's the next place to go. According to the [xstream documentation, "there are only 26 core operators"](https://github.com/staltz/xstream), so doing pictures for each of those sounds like the way to go. Maybe I'll start on paper and then go to computer diagrams if I feel the need to be more precise.
+
+Sweet, I'm pumped!
+
 ### September 8, 2017 9:01am
 
 Good morning! So I spent the last hour or so writing Alan Kay a much too long and too epic email. Now I'd like to move on to my Bret Victor Deep Dive. Before I begin, I'd like to share a laugh with everyone with this link to Bret's hit single [Caltech Girl](http://worrydream.com/media/caltech_girl.html). [HOLY SHIT I JUST FOUND THIS GOLD](https://www.youtube.com/watch?v=00vMnIECCbo)
