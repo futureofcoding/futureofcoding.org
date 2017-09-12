@@ -26,10 +26,12 @@ title: Link Research
 * [Forms/3](http://web.engr.oregonstate.edu/~burnett/Forms3/forms3.html)
 * [CycleJS Component Difficulties](https://www.youtube.com/watch?v=CU8jtb6UBGg&feature=youtu.be&t=46m15s)
 * [Joe Edelman - citizen logisitics](http://nxhx.org/) and [Chatterbase](http://alpha.trycarbide.com/@jxe/6d5e19369ddb9cc4728510e11a3f7586)
+* http://explorabl.es/reading/
 
 
 ### Unordered
 
+* https://idyll-lang.github.io/
 * Inmates are running the Asylum
 * Hacker's Delight
 * [On Abstraction - Zach Tellman](https://m.youtube.com/watch?v=x9pxbnFC4aQ) from dan scanlon 
