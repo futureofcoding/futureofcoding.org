@@ -6,10 +6,12 @@ title: Link Research
 
 ## To Research
 
-* pull links (and TODOS) from...
-  * ./notes/andre-staltz-call-9-11-17
-  * ./notes/dan-scanlon-call-9-5-17
-  * ./notes/jaime-brandon-call-9-5-17
+* https://www.youtube.com/watch?v=5V1ynVyud4M
+* https://medium.com/open-collective/cycle-js-a-unified-theory-of-everything-for-javascript-e266ac9a59ad
+* https://vimeo.com/217444733
+* https://github.com/Widdershin/bonsai-editor
+* https://github.com/Widdershin/stream-tree
+* making sure everything can be visual (pool, math.random) https://github.com/cyclejs/cyclejs/issues/581
 * http://elevr.com/elevr-leaving-ycr/
 * [isomorf.io](http://isomorf.io/)
   * [live tour](https://isomorf.io/#!/tour)
@@ -20,6 +22,7 @@ title: Link Research
   * get back to Jonathan Edwards after reading this one!
 * [Usability Analysis of Visual Programming Environments](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.35.815&rep=rep1&type=pdf)
 * https://noflojs.org/
+* [MIT Objective spreadsheets](https://sdg.csail.mit.edu/projects/objsheets) from Jaime Brandon
 * [A Module System for a General-Purpose Blocks Language](http://www.vpri.org/pdf/tr2015003_modsys.pdf)
 * [Dedalus](https://pdfs.semanticscholar.org/03dc/b87fb0e0d8cd9fa85b09035a98ba5f2c779e.pdf)
 * [Lucid](http://worrydream.com/refs/Wadge%20-%20Lucid,%20the%20Dataflow%20Programming%20Language.pdf)  
@@ -31,6 +34,7 @@ title: Link Research
 
 ### Unordered
 
+* [query, datalog, logicblox](https://pdfs.semanticscholar.org/0ffa/f68f4399998864d6d9835c7bd8240d322b49.pdf) from Jaime Brandon
 * https://idyll-lang.github.io/
 * Inmates are running the Asylum
 * Hacker's Delight
