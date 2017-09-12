@@ -22,7 +22,7 @@ So I haven't yet yeard back from Alan Kay, but I did hear back from Andre Stalz 
 * [Optimal computer use strategies](http://futureofcoding.org/journal#overlapping-windows-considered-too-expressive-and-other-optimal-computer-use-strategies)
 * [LogicHub](http://futureofcoding.org/journal#logichub-1)
 * [Just started Bret Victor deep dive](http://futureofcoding.org/journal#september-8-2017-901am)
-* [Call today with Andre](./notes/andre-staltz-9-11.md)
+* [Call today with Andre](./notes/andre-staltz-call-9-11-17)
 * Next steps with research (below)
 
 Dan and Andre let me record our conversations so I'd love to play snipets of them in this research recap, but that sounds like it could be an editing nightmare, especially editing it all on my phone which sometimes has trouble with two tracks (and this would be three).
