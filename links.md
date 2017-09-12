@@ -16,6 +16,8 @@ title: Link Research
 * [isomorf.io](http://isomorf.io/)
   * [live tour](https://isomorf.io/#!/tour)
   * [blog](https://medium.com/isomorf-blog)
+  * [Debate about projectional editors](https://www.reddit.com/r/programming/comments/6zhwwl/projectional_programming_rnosyntax/) from Aaron Kent
+  * [An Experiment in Structured Code Editing](https://lobste.rs/s/ofx5mf/experiment_structured_code_editing) from Aaron Kent
 * [anima - Or Arbel](http://www.animaapp.com/)
 * [Whats Functional Programming All About](http://www.lihaoyi.com/post/WhatsFunctionalProgrammingAllAbout.html#what-functional-programming-is-not)
 * [General Principles for a Generalized Idea Garden](https://www.researchgate.net/publication/313369217_General_Principles_for_a_Generalized_Idea_Garden)
