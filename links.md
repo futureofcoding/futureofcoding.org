@@ -15,6 +15,10 @@ title: Link Research
 * https://github.com/gelisam/frp-zoo
 * http://conal.net/papers/push-pull-frp/
 * http://conal.net/papers/icfp97/
+* https://noflojs.org/
+* https://github.com/staltz/cycle-onionify
+
+
 * http://elevr.com/elevr-leaving-ycr/
 * [isomorf.io](http://isomorf.io/)
   * [live tour](https://isomorf.io/#!/tour)
