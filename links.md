@@ -12,6 +12,9 @@ title: Link Research
 * https://github.com/Widdershin/bonsai-editor
 * https://github.com/Widdershin/stream-tree
 * making sure everything can be visual (pool, math.random) https://github.com/cyclejs/cyclejs/issues/581
+* https://github.com/gelisam/frp-zoo
+* http://conal.net/papers/push-pull-frp/
+* http://conal.net/papers/icfp97/
 * http://elevr.com/elevr-leaving-ycr/
 * [isomorf.io](http://isomorf.io/)
   * [live tour](https://isomorf.io/#!/tour)
