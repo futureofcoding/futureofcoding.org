@@ -6,6 +6,29 @@ title: Journal
 
 This jornal is stream-of-consciousness style so apologies in advance if it's difficult to read. You should know that I don't have spellcheck and I'm a terrible speller. Most importantly, you should know that I add new entries at the top of the page, so you'll have to scroll to the bottom if you want to start from the beginning.
 
+### September 13, 2017 11:28am
+
+I actually made some time yesterday for thinking about StreamSheets. I mostly reaquainted myself with xstream, the CycleJS stream library. Some notes:
+
+![image](https://user-images.githubusercontent.com/2288939/30386152-bdd72546-986e-11e7-9951-3879dd6573cd.png)
+![image](https://user-images.githubusercontent.com/2288939/30386167-c2ba8166-986e-11e7-9de5-964b7c0e65d2.png)
+
+I'm pretty new to the Stream programming world, so before I go off trying to make it better through visual metaphors, let's first try to understand it:
+
+* https://www.youtube.com/watch?v=5V1ynVyud4M
+* https://medium.com/open-collective/cycle-js-a-unified-theory-of-everything-for-javascript-e266ac9a59ad
+* https://vimeo.com/217444733
+* https://github.com/Widdershin/bonsai-editor
+* https://github.com/Widdershin/stream-tree
+* making sure everything can be visual (pool, math.random) https://github.com/cyclejs/cyclejs/issues/581
+* https://github.com/gelisam/frp-zoo
+* http://conal.net/papers/push-pull-frp/
+* http://conal.net/papers/icfp97/
+* https://noflojs.org/
+* https://github.com/staltz/cycle-onionify
+
+These links should take me a while!
+
 ### September 11, 2017 8:50am
 
 So I haven't yet yeard back from Alan Kay, but I did hear back from Andre Stalz and [had an early morning conversation with him today](./notes/andre-staltz-call-9-11-17.md). It was very productive! I will think more on next-steps on that call and StreamSheets below in my Research Recap.
@@ -22,7 +45,7 @@ So I haven't yet yeard back from Alan Kay, but I did hear back from Andre Stalz 
 * [Optimal computer use strategies](http://futureofcoding.org/journal#overlapping-windows-considered-too-expressive-and-other-optimal-computer-use-strategies)
 * [LogicHub](http://futureofcoding.org/journal#logichub-1)
 * [Just started Bret Victor deep dive](http://futureofcoding.org/journal#september-8-2017-901am)
-* [Call today with Andre](./notes/andre-staltz-9-11.md)
+* [Call today with Andre](./notes/andre-staltz-call-9-11-17)
 * Next steps with research (below)
 
 Dan and Andre let me record our conversations so I'd love to play snipets of them in this research recap, but that sounds like it could be an editing nightmare, especially editing it all on my phone which sometimes has trouble with two tracks (and this would be three).

@@ -19,6 +19,8 @@ title: Research Ideas
 
 ## Ideas to solve them
 
+* create the equivalent but for researchers (borrowing from Alan Kay, how to invent the future) http://blog.samaltman.com/startup-advice-briefly
+
 * streams as spreadsheets
   * http://futureofcoding.org/journal#streams-as-spreadsheets
   * http://futureofcoding.org/journal#streams-as-spreadsheets-2
