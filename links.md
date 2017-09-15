@@ -20,11 +20,8 @@ title: Link Research
 
 
 * http://elevr.com/elevr-leaving-ycr/
-* [isomorf.io](http://isomorf.io/)
-  * [live tour](https://isomorf.io/#!/tour)
-  * [blog](https://medium.com/isomorf-blog)
-  * [Debate about projectional editors](https://www.reddit.com/r/programming/comments/6zhwwl/projectional_programming_rnosyntax/) from Aaron Kent
-  * [An Experiment in Structured Code Editing](https://lobste.rs/s/ofx5mf/experiment_structured_code_editing) from Aaron Kent
+* [Hazelnut](https://www.youtube.com/watch?v=99SRVnRA9Ec)
+  * https://arxiv.org/pdf/1703.08694.pdf
 * [anima - Or Arbel](http://www.animaapp.com/)
 * [Whats Functional Programming All About](http://www.lihaoyi.com/post/WhatsFunctionalProgrammingAllAbout.html#what-functional-programming-is-not)
 * [General Principles for a Generalized Idea Garden](https://www.researchgate.net/publication/313369217_General_Principles_for_a_Generalized_Idea_Garden)
@@ -131,6 +128,14 @@ title: Link Research
   * Hacker's Delight: Despite the cringingly misleading title, this is the best book ever written. I'm in rapture. TODO add this to the top of the list as well.
   * I'm really enjoying reading his blog from when he, like me now, was 23. Sounds like he was trying to find his way, post-hell-grad-school, and post-break-up with Joanne (which is heartbreaking).
   * TODO continue reading his blawg after 5/11/01.
+
+
+* [isomorf.io](http://isomorf.io/)
+  * [live tour](https://isomorf.io/#!/tour)
+  * [blog](https://medium.com/isomorf-blog)
+  * [Debate about projectional editors](https://www.reddit.com/r/programming/comments/6zhwwl/projectional_programming_rnosyntax/) from Aaron Kent
+  * [An Experiment in Structured Code Editing](https://lobste.rs/s/ofx5mf/experiment_structured_code_editing) from Aaron Kent
+  * [Call with Aaron Kent](./notes/aaron-kent-call-9-15-17)
 
 
 * [Computer Software - 1984](http://www.vpri.org/pdf/tr1984001_comp_soft.pdf)
