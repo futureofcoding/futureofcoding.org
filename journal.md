@@ -6,6 +6,15 @@ title: Journal
 
 This jornal is stream-of-consciousness style so apologies in advance if it's difficult to read. You should know that I don't have spellcheck and I'm a terrible speller. Most importantly, you should know that I add new entries at the top of the page, so you'll have to scroll to the bottom if you want to start from the beginning.
 
+
+### September 15, 2017 4:36pm
+
+#### CycleJS deep dive!
+
+I'm having a lot of fun today reviewing [the links Andre Staltz gave me in this call](./notes/andre-staltz-call-9-11-17.md). [You can see some notes here](https://github.com/stevekrouse/futureofcoding.org/commit/336815f64b5b0b4f0aeeb7be35b50824acd43653).
+
+Need to continue with this next week. I'm both excited by how much I'm into CycleJS (and Eve and STEPS) because it feels like we're all onto something big here. But I'm also a little skeptical because maybe it's all just fads... Either way, I'll keep pulling on these threads to find out.
+
 ### September 13, 2017 11:28am
 
 I actually made some time yesterday for thinking about StreamSheets. I mostly reaquainted myself with xstream, the CycleJS stream library. Some notes:
