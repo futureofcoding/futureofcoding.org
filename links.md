@@ -6,11 +6,6 @@ title: Link Research
 
 ## To Research
 
-* https://www.youtube.com/watch?v=5V1ynVyud4M
-* https://medium.com/open-collective/cycle-js-a-unified-theory-of-everything-for-javascript-e266ac9a59ad
-* https://vimeo.com/217444733
-* https://github.com/Widdershin/bonsai-editor
-* https://github.com/Widdershin/stream-tree
 * making sure everything can be visual (pool, math.random) https://github.com/cyclejs/cyclejs/issues/581
 * https://github.com/gelisam/frp-zoo
 * http://conal.net/papers/push-pull-frp/
@@ -36,7 +31,7 @@ title: Link Research
 * [CycleJS Component Difficulties](https://www.youtube.com/watch?v=CU8jtb6UBGg&feature=youtu.be&t=46m15s)
 * [Joe Edelman - citizen logisitics](http://nxhx.org/) and [Chatterbase](http://alpha.trycarbide.com/@jxe/6d5e19369ddb9cc4728510e11a3f7586)
 * http://explorabl.es/reading/
-
+* https://github.com/raymestalez/nulis
 
 ### Unordered
 
@@ -128,6 +123,41 @@ title: Link Research
   * Hacker's Delight: Despite the cringingly misleading title, this is the best book ever written. I'm in rapture. TODO add this to the top of the list as well.
   * I'm really enjoying reading his blog from when he, like me now, was 23. Sounds like he was trying to find his way, post-hell-grad-school, and post-break-up with Joanne (which is heartbreaking).
   * TODO continue reading his blawg after 5/11/01.
+  
+  
+* [Andre Staltz: The Past, Present, and Future of Cycle.js. Part I – CycleConf 2017](https://vimeo.com/216787869)
+  * fun to see the whole history of how he came to CycleJS through intuition
+  * crazy to see how collaborative this project is! Makes me glad I'm now a supporter.
+  * Great talk, very informative. I wouldn't have needed to chat with Andre as much if I had just found this video (which I almost did, because I did find the slides for this talk)
+  
+
+* [Andre Staltz: The Past, Present, and Future of Cycle.js. Part II – CycleConf 2017](https://vimeo.com/216975979)
+  * TODO
+
+
+* https://github.com/Widdershin/bonsai-editor
+  * it's like stream-tree but with a GUI. drag and drop editor for dataflow diagrams
+  * first version was with mouse-controls, but now working on keyboard shortcuts
+  
+
+* https://github.com/Widdershin/stream-tree
+  * write application by writing an ASCI graph, which turns in JS code
+  
+
+* https://medium.com/open-collective/cycle-js-a-unified-theory-of-everything-for-javascript-e266ac9a59ad
+  * [convinced me to support on open collective!](https://twitter.com/stevekrouse/status/908773352873037826)
+  
+
+* [Nick Johnstone: The Hitchhiker’s Guide to Cycle.js – CycleConf2017](https://vimeo.com/217444733)
+  * Great story about doing time travel, hot reloading, collaborating with Andre 
+  * Gotta send him an email TODO
+
+* [Chris Granger Eve at Strangeloop 2015](https://www.youtube.com/watch?v=5V1ynVyud4M)
+  * Holy crap Andre Staltz was right! I really needed to re-watch this video. It's almost identical to my pitch for StreamSheets.
+  * They explain how they came to datalog from the Berkley BLOOM project
+  * They have a spreadsheet like interface but stuck to a text-based datalog interface to speed up prototyping (but in my opinion CycleJS is the real text-based prototype of this)
+  * However, they did try doing it with a spreadsheet GUI thig! Even an HTML WYSIWYG with layers!
+  * When trying to explain queries to each other, they drew diagrams for them (sounds like CycleJS dataflow diagrams)
 
 
 * [isomorf.io](http://isomorf.io/)
