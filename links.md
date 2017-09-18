@@ -6,14 +6,17 @@ title: Link Research
 
 ## To Research
 
-* making sure everything can be visual (pool, math.random) https://github.com/cyclejs/cyclejs/issues/581
-* https://github.com/gelisam/frp-zoo
-* http://conal.net/papers/push-pull-frp/
-* http://conal.net/papers/icfp97/
 * https://noflojs.org/
-* https://github.com/staltz/cycle-onionify
+
+* http://conal.net/papers/icfp97/
+* http://conal.net/papers/push-pull-frp/
+* https://github.com/gelisam/frp-zoo
+* making sure everything can be visual (pool, math.random) https://github.com/cyclejs/cyclejs/issues/581
 
 
+
+* [TiddlyWikin](http://tiddlywiki.com/)
+* [Alan Kay HN AMA](https://news.ycombinator.com/item?id=11939851)
 * http://elevr.com/elevr-leaving-ycr/
 * [Hazelnut](https://www.youtube.com/watch?v=99SRVnRA9Ec)
   * https://arxiv.org/pdf/1703.08694.pdf
@@ -123,8 +126,21 @@ title: Link Research
   * Hacker's Delight: Despite the cringingly misleading title, this is the best book ever written. I'm in rapture. TODO add this to the top of the list as well.
   * I'm really enjoying reading his blog from when he, like me now, was 23. Sounds like he was trying to find his way, post-hell-grad-school, and post-break-up with Joanne (which is heartbreaking).
   * TODO continue reading his blawg after 5/11/01.
-  
-  
+
+
+* [Mesh Preview](http://chrispsn.com/mesh-preview.html)
+  * his main thesis is excel doesn't treat rows as arrays, but you can fix that by dropping location-based referencing (which I also agree with... I think that refering to a cell as A4 is Exel's version of C pointers.)
+
+
+* [Mesh Announcement Notes](http://chrispsn.com/mesh-announcement-notes.html)
+  * [Racket 2D Syntax](https://news.ycombinator.com/item?id=14824217) is neat (and very very similar to [stream-tree](https://github.com/Widdershin/stream-tree))
+  * HOLY CRAP the [Java Stream Debugger](https://plugins.jetbrains.com/plugin/9696-java-stream-debugger) he links to is super relevant for me. Stream visualization!
+
+* https://github.com/staltz/cycle-onionify
+  * https://staltz.com/unidirectional-user-interface-architectures.html
+  * really neat, powerful, and simple (with just 150 LOC) architecture. I'll have to build something in it eventually to get a better sense for it, and how it'd fit into StreamSheets. It might be impossible...
+
+
 * [Andre Staltz: The Past, Present, and Future of Cycle.js. Part I – CycleConf 2017](https://vimeo.com/216787869)
   * fun to see the whole history of how he came to CycleJS through intuition
   * crazy to see how collaborative this project is! Makes me glad I'm now a supporter.
@@ -132,8 +148,12 @@ title: Link Research
   
 
 * [Andre Staltz: The Past, Present, and Future of Cycle.js. Part II – CycleConf 2017](https://vimeo.com/216975979)
-  * TODO
-
+  * wow, this talk is great, and is basically like his "thesis" on what programming is and how to improve it
+  * [vimeo playback speed increase chrome extension is KILLER](https://chrome.google.com/webstore/detail/vimeo-repeat-speed/noonakfaafcdaagngpjehilgegefdima/related?hl=en) 
+  * He's really into Luna
+  * He is into the [Koka langauge](https://koka-lang.github.io/koka/doc/kokaspec.html), particularly how they use familiar dot-notation to represent functional calls
+  * "Languages are for life" --> 10 year project. Huge commitment. Getting married. I want to do this so bad!
+  
 
 * https://github.com/Widdershin/bonsai-editor
   * it's like stream-tree but with a GUI. drag and drop editor for dataflow diagrams
