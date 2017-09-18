@@ -6,47 +6,74 @@ title: Link Research
 
 ## To Research
 
-* https://noflojs.org/
+### Streamsheets
 
+* [CycleJS Component Difficulties](https://www.youtube.com/watch?v=CU8jtb6UBGg&feature=youtu.be&t=46m15s)
 * http://conal.net/papers/icfp97/
 * http://conal.net/papers/push-pull-frp/
+* http://conal.net/papers/Eros/
+* http://tinyletter.com/Flowsheets/
 * https://github.com/gelisam/frp-zoo
+* https://github.com/reflex-frp/reflex
 * making sure everything can be visual (pool, math.random) https://github.com/cyclejs/cyclejs/issues/581
+* [Forms/3](http://web.engr.oregonstate.edu/~burnett/Forms3/forms3.html)
+* [MIT Objective spreadsheets](https://sdg.csail.mit.edu/projects/objsheets) from Jaime Brandon
+* [Dedalus](https://pdfs.semanticscholar.org/03dc/b87fb0e0d8cd9fa85b09035a98ba5f2c779e.pdf)
+* [Lucid](http://worrydream.com/refs/Wadge%20-%20Lucid,%20the%20Dataflow%20Programming%20Language.pdf) 
+* [query, datalog, logicblox](https://pdfs.semanticscholar.org/0ffa/f68f4399998864d6d9835c7bd8240d322b49.pdf) from Jaime Brandon
+* https://en.wikipedia.org/wiki/Prograph
+* https://noflojs.org/
+* http://www.ragic.com/
+* [Framer 3](https://www.producthunt.com/posts/framer-3)
 
 
+### LogicHub
 
 * [TiddlyWikin](http://tiddlywiki.com/)
-* [Alan Kay HN AMA](https://news.ycombinator.com/item?id=11939851)
-* http://elevr.com/elevr-leaving-ycr/
+* https://github.com/raymestalez/nulis
+* http://wagn.org/
+* [Chorus](http://www.chorus-home.org/)
+
+
+### Projectional / block based editors
+
 * [Hazelnut](https://www.youtube.com/watch?v=99SRVnRA9Ec)
   * https://arxiv.org/pdf/1703.08694.pdf
-* [anima - Or Arbel](http://www.animaapp.com/)
-* [Whats Functional Programming All About](http://www.lihaoyi.com/post/WhatsFunctionalProgrammingAllAbout.html#what-functional-programming-is-not)
 * [General Principles for a Generalized Idea Garden](https://www.researchgate.net/publication/313369217_General_Principles_for_a_Generalized_Idea_Garden)
   * get back to Jonathan Edwards after reading this one!
 * [Usability Analysis of Visual Programming Environments](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.35.815&rep=rep1&type=pdf)
-* https://noflojs.org/
-* [MIT Objective spreadsheets](https://sdg.csail.mit.edu/projects/objsheets) from Jaime Brandon
 * [A Module System for a General-Purpose Blocks Language](http://www.vpri.org/pdf/tr2015003_modsys.pdf)
-* [Dedalus](https://pdfs.semanticscholar.org/03dc/b87fb0e0d8cd9fa85b09035a98ba5f2c779e.pdf)
-* [Lucid](http://worrydream.com/refs/Wadge%20-%20Lucid,%20the%20Dataflow%20Programming%20Language.pdf)  
-* [Forms/3](http://web.engr.oregonstate.edu/~burnett/Forms3/forms3.html)
-* [CycleJS Component Difficulties](https://www.youtube.com/watch?v=CU8jtb6UBGg&feature=youtu.be&t=46m15s)
+* http://www.luna-lang.org/
+* https://www.touchdevelop.com
+* https://www.hyperpad.com/
+* Thunkable
+* https://powerapps.microsoft.com/en-us/
+* Jet Brains MPS
+* http://www.greenfoot.org/frames/
+* http://flowlab.io
+* http://embrio.io/
+* http://harc.ycr.org/project/gp/
+* http://www.andescotia.com/products/marten/
+
+
+### Inspiration 
+
+* [Alan Kay HN AMA](https://news.ycombinator.com/item?id=11939851)
+* http://elevr.com/elevr-leaving-ycr/
+* [Whats Functional Programming All About](http://www.lihaoyi.com/post/WhatsFunctionalProgrammingAllAbout.html#what-functional-programming-is-not)
 * [Joe Edelman - citizen logisitics](http://nxhx.org/) and [Chatterbase](http://alpha.trycarbide.com/@jxe/6d5e19369ddb9cc4728510e11a3f7586)
 * http://explorabl.es/reading/
-* https://github.com/raymestalez/nulis
-
-### Unordered
-
-* [query, datalog, logicblox](https://pdfs.semanticscholar.org/0ffa/f68f4399998864d6d9835c7bd8240d322b49.pdf) from Jaime Brandon
+* http://nxhx.org/
+* [anima - Or Arbel](http://www.animaapp.com/)
 * https://idyll-lang.github.io/
 * Inmates are running the Asylum
 * Hacker's Delight
 * [On Abstraction - Zach Tellman](https://m.youtube.com/watch?v=x9pxbnFC4aQ) from dan scanlon 
 * [New Etoys](http://www.vpri.org/fonc_wiki/index.php?title=New_Etoys)
 * [Alan Kay Videos](http://www.vpri.org/html/words_links/links_ifnct.htm) 
-* spend time with Lively Kernal
-* learn about HyperCard!
+* Lively Kernal
+* HyperCard
+* Vi Hart
 * [code.world](https://code.world/#PgOPqtxOVsfDQJe7-GkGdnQ)
 * [SKETCHPAD A MAN-MACHINE GRAPHICAL COMMUNICATION SYSTEM - Sutherland](https://www.cs.purdue.edu/homes/hosking/197/canon/sutherland.pdf)
 * look into heap analytics for its similarity to streamsheets (from Joe West)
@@ -55,60 +82,36 @@ title: Link Research
 * [Stencil – A reusable web component generator](https://news.ycombinator.com/item?id=15080174)
 * [http://digitalfreepen.com/2017/08/16/elixir-in-depth-notes.html](http://digitalfreepen.com/2017/08/16/elixir-in-depth-notes.html)
 * [John Carmack's keynote at Quakecon 2013 part 4](https://www.youtube.com/watch?v=1PhArSujR_A)
-* http://www.luna-lang.org/
-* https://www.touchdevelop.com
-* http://nxhx.org/
-* http://wagn.org/
-* Vi Hart
 * [Maude](https://www.youtube.com/watch?v=mZE_Xv9qym4), which comes highly reccomended by Ezekiel Smithburg from the Future Programming Slack.
 * http://worrydream.com/substroke/
 * [ICFP 2012. Roly Perera: Functional Programs that Explain their Work.](https://www.youtube.com/watch?v=pqtqaL_ojpk&feature=plcp)
 * [Pacific Northwest Scala 2013 We're Doing It All Wrong by Paul Phillips](https://www.youtube.com/watch?v=TS1lpKBMkgg)
-*http://www.subtext-lang.org/
 * Furure of Programming Workshop - http://www.future-programming.org/
 * http://www.kenperlin.com/
 * http://harc.ycr.org/flex/
 * http://alpha.trycarbide.com/
-* [Chorus](http://www.chorus-home.org/)
 * Kite.com
 * PureScript
 * https://elixir-lang.org/
 * http://www.eff-lang.org/
 * https://personal.cis.strath.ac.uk/conor.mcbride/pub/Frank/TFM.pdf
 * Idris
-* http://conal.net/papers/Eros/
-* http://tinyletter.com/Flowsheets/
 * http://shaunlebron.github.io/parinfer/
 * https://www.sourcetrail.com/
 * http://www.clickteam.com/multimedia-fusion-2
 * Unity
 * https://www.scirra.com/construct2
-* https://www.hyperpad.com/
-* Thunkable
-* https://powerapps.microsoft.com/en-us/
-* http://www.ragic.com/
-* http://www.chorus-home.org/
-* Jet Brains MPS
-* http://www.greenfoot.org/frames/
-* http://flowlab.io
-* http://embrio.io/
-* http://harc.ycr.org/project/gp/
-* [Tulip](https://www.youtube.com/watch?v=lvclTCDeIsY)
 * https://www.pipes.digital/
+* [Tulip](https://www.youtube.com/watch?v=lvclTCDeIsY)
 * https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/
 * http://www.memex.org/licklider.pdf
 * http://web.media.mit.edu/~minsky/papers/TuringLecture/TuringLecture.html
 * [Computer as Communications Device](https://www.dropbox.com/s/4td8aj5gglf4qfj/The%20Computer%20As%20A%20Communications%20Device.pdf?dl=0)
 * http://www.red-lang.org/p/about.html
 * https://cospaces.io/edu/
-* Lively Kernal
 * [Seymour Papert On Logo](http://el.media.mit.edu/logo-foundation/resources/onlogo/index.html)
 * [Type Systems for Beginners](https://gilbert.ghost.io/type-systems-for-beginners-an-introduction/)
 * [Types, Logic, Semantics, and Verification](https://www.cs.uoregon.edu/research/summerschool/summer15/curriculum.html)
-* [Framer 3](https://www.producthunt.com/posts/framer-3)
-* https://en.wikipedia.org/wiki/Prograph
-* http://www.andescotia.com/products/marten/
-* https://github.com/reflex-frp/reflex
 * reasonML
 * http://conal.net/blog/posts/reimagining-matrices
 * https://www.linkedin.com/pulse/programming-languages-future-coding-chris-grimes
