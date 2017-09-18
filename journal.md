@@ -7,6 +7,24 @@ title: Journal
 This jornal is stream-of-consciousness style so apologies in advance if it's difficult to read. You should know that I don't have spellcheck and I'm a terrible speller. Most importantly, you should know that I add new entries at the top of the page, so you'll have to scroll to the bottom if you want to start from the beginning.
 
 
+### September 18, 2017 11:25am
+
+So this wasn't the most productive morning I've ever had, but [I did enjoy the links I reviewed and found some good stuff](https://github.com/stevekrouse/futureofcoding.org/commit/f987a210e92c54ebeda8daa166872443014e3f00).
+
+However, I am feeling overwhelmed for a few reasons:
+
+1) While I am all set to be working on StreamSheets, I feel like I need a firm grasp of my inspiration language CycleJS in order to prorotype it on paper. However, this seems like it will take a little while. I guess I should just dive in, though, and build an app or two in CycleJS, with and/or without Onionify. And then (before or after) read more about FRP. Seems like a deep, hard, time-consuming, and scary hole to fall into but I guess that's what's there to do.
+
+2) I feel like my /links page is getting a little disorganize so I may take a minute to reoganize it. There are a number of things that need to happen:
+
+2a) Convert all bullets to mini headers with hashtags so I can link directly to links.
+
+2b) Organize my un-researched links (organized and unorganized) to reflect my deep dive into CycleJS (and the different directions I can go in afterwards, including Bret Victor)
+
+I want to take time later today to think more deeply about other ways to organize my thinking around what I'm currently working on and what I have to work on after that. The page structure so far (/journal, /links, /ideas) are decent but I think I can continue to do better, so more on that soon...
+
+However, through this writing I feel more settled about continuing to go deeper and deeper into Cycle, starting tomorrow by building a toy app or two in it, followed by reading papers about it, and then maybe some Github issues.
+
 ### September 15, 2017 4:36pm
 
 #### CycleJS deep dive!
