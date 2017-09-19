@@ -58,6 +58,7 @@ title: Link Research
 
 ### Inspiration 
 
+* [Dan Scanlon's Fractal](https://github.com/danscan/fractal) and [video](https://www.youtube.com/watch?v=wtoPXsadpQI&feature=youtu.be)
 * [Alan Kay HN AMA](https://news.ycombinator.com/item?id=11939851)
 * http://elevr.com/elevr-leaving-ycr/
 * [Whats Functional Programming All About](http://www.lihaoyi.com/post/WhatsFunctionalProgrammingAllAbout.html#what-functional-programming-is-not)
