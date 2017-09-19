@@ -1,0 +1,3 @@
+[submodule "prototypes/github-embed-footer"]
+	path = prototypes/github-embed-footer
+	url = https://github.com/stevekrouse/github-embed-footer.git

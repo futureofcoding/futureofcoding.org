@@ -7,6 +7,23 @@ title: Journal
 This jornal is stream-of-consciousness style so apologies in advance if it's difficult to read. You should know that I don't have spellcheck and I'm a terrible speller. Most importantly, you should know that I add new entries at the top of the page, so you'll have to scroll to the bottom if you want to start from the beginning.
 
 
+### September 19, 2017 10:08am
+
+Ok, so that was fustrating. I spent the ENTIRE MORNING trying to get CycleJS to install. This is just more motivation for me to build a more intuative version of this, I guess. I first had to update node with nvm, then try to use `cycle-create-app`, but I still wasn't even able to preview the app after running `npm start`, potentially because of cloud9 random bullshit, such as port or https problems. Here's the help I asked for (but did not yet receive from the CycleJS gitter):
+
+![screenshot 2017-09-19 at 10 10 58 am](https://user-images.githubusercontent.com/2288939/30596689-df844cb0-9d22-11e7-8d5f-a8d1665eb34f.png)
+
+Hopefully I'll be able to figure this out, but if not, I guess I can go back to using WebpackBin, which I just remembered is how I did CycleJS the first time, as you can see with [this unfinished Flappy Bird game](https://www.webpackbin.com/bins/-KgSGb0vZJgtla6bgooC).
+
+I spent some of the research time today [getting the API side of this app working using my friends' new tool Clay](https://www.clay.run/services/steve/github-project-data/code), which was really fun! However, if I really just want to get reacquianted with CycleJS it probably makes more sense to simply finish (and maybe move to Onionify or a better architecture) the Flappy bird game I link to above... Ok, I just spent 10 minutes on this and had fun. Let's pick up here tomorrow...
+
+
+### September 19, 2017 7:34am
+
+I [accomplished 2b from yesterday](https://github.com/stevekrouse/futureofcoding.org/commit/3e3f2b81f1cf9dd809bae2357983754b4b897cce), but I just [created an issue for 2a to do later](https://github.com/stevekrouse/futureofcoding.org/issues/45). As far as more top-level links to organize my research, [here are my thoughts on that](https://github.com/stevekrouse/futureofcoding.org/issues/32).
+
+So let's jump into CycleJS! What shall I build? I want to build something useful. How about [this embedable widget thing](https://github.com/stevekrouse/futureofcoding.org/issues/28)?
+
 ### September 18, 2017 11:25am
 
 So this wasn't the most productive morning I've ever had, but [I did enjoy the links I reviewed and found some good stuff](https://github.com/stevekrouse/futureofcoding.org/commit/f987a210e92c54ebeda8daa166872443014e3f00).
