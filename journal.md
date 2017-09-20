@@ -6,6 +6,9 @@ title: Journal
 
 This jornal is stream-of-consciousness style so apologies in advance if it's difficult to read. You should know that I don't have spellcheck and I'm a terrible speller. Most importantly, you should know that I add new entries at the top of the page, so you'll have to scroll to the bottom if you want to start from the beginning.
 
+### September 20, 2017 9:11am
+
+No time for research today. About to interview Professor Christopher Anand about teaching Elm to K8 students so excited for that conversation and to release it in two weeks. Will have an extra long research session on Friday to make up for it!
 
 ### September 19, 2017 10:08am
 
