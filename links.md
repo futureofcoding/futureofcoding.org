@@ -59,6 +59,8 @@ title: Link Research
 
 ### Inspiration 
 
+* [CS and Literature - from @curious_reader](https://twitter.com/curious_reader/status/908954000501952512)
+* [Blockchains for a Better World - from @curious_reader](https://twitter.com/curious_reader/status/908391783901663232)
 * [Dan Scanlon's Fractal](https://github.com/danscan/fractal) and [video](https://www.youtube.com/watch?v=wtoPXsadpQI&feature=youtu.be)
 * [Alan Kay HN AMA](https://news.ycombinator.com/item?id=11939851)
 * http://elevr.com/elevr-leaving-ycr/
