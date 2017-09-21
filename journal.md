@@ -6,6 +6,12 @@ title: Journal
 
 This jornal is stream-of-consciousness style so apologies in advance if it's difficult to read. You should know that I don't have spellcheck and I'm a terrible speller. Most importantly, you should know that I add new entries at the top of the page, so you'll have to scroll to the bottom if you want to start from the beginning.
 
+### September 21, 2017 3:10pm
+
+I've been really busy the past few days with other, slightly related work. For example, I made a really fun spreadsheet for my business that helped me visualize capital allocations over time, on a month by month basis. We were wondering if how much money we'd need to borrow at any one point in time and I used a technique I learned from [Felienne Hermans](https://www.youtube.com/watch?v=TMIBfzSqguQ) that allowed me to visualize it really easily. It was fun! However this is only slightly related to this project so doesn't really "count" for research time. Thus, I need to make up for the missed time tomorrow which means that most of tomorrow has now been reserved for research. A whole long day to dive deep into CycleJS!
+
+Also I had a bit of time yesterday to work on the CycleJS Flappy Bird and I created a fork of the code where I will move towards a more traditional state singleton stream model (and eventually potentially onionify) [here](https://www.webpackbin.com/bins/-KuW2Hhd6pQAc6Kl3I2Y).
+
 ### September 20, 2017 9:11am
 
 No time for research today. About to interview Professor Christopher Anand about teaching Elm to K8 students so excited for that conversation and to release it in two weeks. Will have an extra long research session on Friday to make up for it!
