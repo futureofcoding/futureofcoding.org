@@ -59,6 +59,7 @@ title: Link Research
 
 ### Inspiration 
 
+* [Babelfish - from Aaron Kent](https://blog.sourced.tech/post/announcing_babelfish/)
 * [CS and Literature - from @curious_reader](https://twitter.com/curious_reader/status/908954000501952512)
 * [Blockchains for a Better World - from @curious_reader](https://twitter.com/curious_reader/status/908391783901663232)
 * [Dan Scanlon's Fractal](https://github.com/danscan/fractal) and [video](https://www.youtube.com/watch?v=wtoPXsadpQI&feature=youtu.be)
