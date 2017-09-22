@@ -11,6 +11,8 @@ This jornal is stream-of-consciousness style so apologies in advance if it's dif
 
 Ok, so I got a decent bit done on my CycleJS flappy bird. However, I do want to note that I've spent a dozen hours on this and 1) it's not done yet (still needs another few hours), and 2) it hurts my brain to do it. Despite all this, I do love how beautiful it all is when it's working. Clearly a text-based interface to stream programming is difficult, so the question is how do I simplify and constrict things? Apparently [Elm did away with FRP to some degree by baking a default architecture into the types](http://elm-lang.org/blog/farewell-to-frp), so that might be a decent way to go. However, I still feel like something more low-level stream based could work as long as we have the right visual metaphor. I think we could've massively sped up my code development with the right visual tools, but that remains to be seen. Potentially I should try to build some games in Elm next week for comparison.
 
+My current project is here: https://www.webpackbin.com/bins/-KueLaY-sIBrTzaW18U4. I really want to play with the CycleJS devtools diagram but that might be difficult with webpackbin...
+
 As far as the Recurse Center goes, it seems like I have to make up my mind in the next day or two... I'm really on the fence. More to come on this front soon.
 
 I also didn't stay focused enough today to get to most of the logistical tasks I was hoping to do, like emailing people and editing my new podcast interview. Ah well, I'll get to them next week. Have a great weekend!
