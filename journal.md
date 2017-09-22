@@ -6,6 +6,32 @@ title: Journal
 
 This jornal is stream-of-consciousness style so apologies in advance if it's difficult to read. You should know that I don't have spellcheck and I'm a terrible speller. Most importantly, you should know that I add new entries at the top of the page, so you'll have to scroll to the bottom if you want to start from the beginning.
 
+
+### September 22, 2017 9:20am
+
+Despite getting a late start to the day and potentially going on a run at some point, today is totally reserved for research to make up for lost time Weds and Thurs this week.
+
+I'm going to spend most of the day, starting in the morning, continuing my CycleJS deep dive, and then in the afternoon do some housekeeping work on the podcast and also for the NYC-based Future Programming Slack meetup group. (I think moving forward as I learn to be more precise with my time, I will begin counting some of this logistical work towards this project. Otherwise, I end up spending much more time that I planned here -- which isn't the worst thing in the world -- but it leaves my work-life balance in a suboptimal place.)
+
+#### To Recurse or not to recurse
+
+The main decision I have to make this morning is whether or not to attend the Recurse Center for six weeks starting Monday 9/25 through Thursday 11/2. The main arguments to go are:
+
+* I've wanted to go for years now
+* They are an inspiration for The Coding Space, so I bet I could learn a lot from them to apply to my business 
+* I'll meet a lot of amazing people
+* I'll become part of the Recurse Center network, including getting access to Zulip
+* Being apart of their network will allow me to scale the Future Programming Slack community better (as many of our current and probably future members will be there)
+
+Arguments against going:
+
+* I seem to have hit my stride from working at home
+* I will have less flexibility in terms of being able to monkey with my schedule, such as taking a run in the middle of the day
+* I probably won't go every day or do the program quite as "by the book" as they'd reccomend given my other current commitments (as in, I could wait to do it)
+
+Given that there are 4 open spots in the batch, I don't think I'd feel super bad about taking a spot and then potentially canceling if it doesn't work with my schedule. Reading their website, I see that they ask you to email them before committing if you have "work, school, or other obligations that will conflict with the batch," so why don't I do that?
+
+
 ### September 21, 2017 3:10pm
 
 I've been really busy the past few days with other, slightly related work. For example, I made a really fun spreadsheet for my business that helped me visualize capital allocations over time, on a month by month basis. We were wondering if how much money we'd need to borrow at any one point in time and I used a technique I learned from [Felienne Hermans](https://www.youtube.com/watch?v=TMIBfzSqguQ) that allowed me to visualize it really easily. It was fun! However this is only slightly related to this project so doesn't really "count" for research time. Thus, I need to make up for the missed time tomorrow which means that most of tomorrow has now been reserved for research. A whole long day to dive deep into CycleJS!
