@@ -7,11 +7,58 @@ title: Journal
 This jornal is stream-of-consciousness style so apologies in advance if it's difficult to read. You should know that I don't have spellcheck and I'm a terrible speller. Most importantly, you should know that I add new entries at the top of the page, so you'll have to scroll to the bottom if you want to start from the beginning.
 
 
+### September 25, 2017 8:50am
+
+#### Research Recap #6
+
+For better and for worse, the last two weeks were less productive than the prior two weeks, both in terms of time-spent (maybe 10 hours less over the two weeks) and in less focus during those hours because I was distracted both with The Coding Space developments and with my personal life.
+
+However, I did some fun and useful things:
+
+* http://futureofcoding.org/journal#cyclejs-deep-dive
+* [Spent way too long trying to get cycle-create-app to work on Cloud9, bounced to WebpackBin which is a godsend, and spent a few hours playing with Clay and giving my friend Nicolae feedback on that](http://futureofcoding.org/journal#september-19-2017-1008am)
+* Had a fun interview with Christopher Anand that you'll get next week
+* [Fun spreadsheet programming for my business and then Onionify](http://futureofcoding.org/journal#september-21-2017-310pm)
+* [No Recurse Center for now](http://futureofcoding.org/journal#to-recurse-or-not-to-recurse)
+* [A whole day with CycleJS Flappy & Onionify](http://futureofcoding.org/journal#september-22-2017-530pm)
+
+#### My plan for next two weeks (9/25/17-10/9/17)
+
+It feels useful to continue this deep dive into CycleJS and FRP, especially in the context of: "I have very similar goals to Alan Kay's STEPS project, which they build with FRP and stream programming. However, they don't totally commit to the metaphor which makes it less powerful. Using the new advances from the cutting-edge open source CycleJS community, can I use the Streams paradigm with a spreadsheet metaphor to more fully realize the vision of the STEPS project to build a better foundation for software?"
+
+To this end, I'll first finish my Onionify Flappy Bird](https://www.webpackbin.com/bins/-KueLaY-sIBrTzaW18U4).
+
+I'll also try to get the CycleJS devtools working, first by asking the gitter to help me use them with WebpackBin... actually let me do that now...
+
+![screenshot 2017-09-25 at 9 18 05 am](https://user-images.githubusercontent.com/2288939/30810290-9ef5e474-a1d2-11e7-8575-541a8555d2d1.png)
+
+That was fun! I even got to help another person with their issue! Now I really feel like I'm getting the hang of CycleJS!
+
+Then I'll read a number of links on this topic, including:
+
+* http://elm-lang.org/blog/farewell-to-frp
+* [CycleJS Component Difficulties](https://www.youtube.com/watch?v=CU8jtb6UBGg&feature=youtu.be&t=46m15s)
+* http://conal.net/papers/icfp97/
+* http://conal.net/papers/push-pull-frp/
+* http://conal.net/papers/Eros/
+* http://tinyletter.com/Flowsheets/
+* https://github.com/gelisam/frp-zoo
+* https://github.com/reflex-frp/reflex
+* making sure everything can be visual (pool, math.random) https://github.com/cyclejs/cyclejs/issues/581
+
+
+I will also email Nick Johnstone of `@cycle/time` and other projects related to this work, possibly to collaborate, and also to get on the podcast.
+
+I'll then either make another CycleJS app for learning, or jump right into drawing out spreadsheet visual metaphors for a number of Stream combinators.
+
+Also next Monday is a Future of Programming meetup, so I'll send out reminders for that. Should be fun! Let me know if you're not part of our slack and want an invite.
+
+
 ### September 22, 2017 5:30pm
 
 Ok, so I got a decent bit done on my CycleJS flappy bird. However, I do want to note that I've spent a dozen hours on this and 1) it's not done yet (still needs another few hours), and 2) it hurts my brain to do it. Despite all this, I do love how beautiful it all is when it's working. Clearly a text-based interface to stream programming is difficult, so the question is how do I simplify and constrict things? Apparently [Elm did away with FRP to some degree by baking a default architecture into the types](http://elm-lang.org/blog/farewell-to-frp), so that might be a decent way to go. However, I still feel like something more low-level stream based could work as long as we have the right visual metaphor. I think we could've massively sped up my code development with the right visual tools, but that remains to be seen. Potentially I should try to build some games in Elm next week for comparison.
 
-My current project is here: https://www.webpackbin.com/bins/-KueLaY-sIBrTzaW18U4. I really want to play with the CycleJS devtools diagram but that might be difficult with webpackbin...
+My current project is [here](https://www.webpackbin.com/bins/-KueLaY-sIBrTzaW18U4). I really want to play with the CycleJS devtools diagram but that might be difficult with webpackbin...
 
 As far as the Recurse Center goes, it seems like I have to make up my mind in the next day or two... I'm really on the fence. More to come on this front soon.
 
