@@ -26,7 +26,7 @@ However, I did some fun and useful things:
 
 It feels useful to continue this deep dive into CycleJS and FRP, especially in the context of: "I have very similar goals to Alan Kay's STEPS project, which they build with FRP and stream programming. However, they don't totally commit to the metaphor which makes it less powerful. Using the new advances from the cutting-edge open source CycleJS community, can I use the Streams paradigm with a spreadsheet metaphor to more fully realize the vision of the STEPS project to build a better foundation for software?"
 
-To this end, I'll first finish my Onionify Flappy Bird](https://www.webpackbin.com/bins/-KueLaY-sIBrTzaW18U4).
+To this end, I'll first finish my [Onionify Flappy Bird](https://www.webpackbin.com/bins/-KueLaY-sIBrTzaW18U4).
 
 I'll also try to get the CycleJS devtools working, first by asking the gitter to help me use them with WebpackBin... actually let me do that now...
 
