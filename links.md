@@ -14,6 +14,7 @@ title: Link Research
 * http://conal.net/papers/push-pull-frp/
 * http://conal.net/papers/Eros/
 * http://tinyletter.com/Flowsheets/
+* https://www.learnrxjs.io/ and https://www.learnrxjs.io/operators/complete.html
 * https://github.com/gelisam/frp-zoo
 * https://github.com/reflex-frp/reflex
 * making sure everything can be visual (pool, math.random) https://github.com/cyclejs/cyclejs/issues/581
@@ -26,7 +27,6 @@ title: Link Research
 * https://noflojs.org/
 * http://www.ragic.com/
 * [Framer 3](https://www.producthunt.com/posts/framer-3)
-
 
 ### LogicHub
 
@@ -57,8 +57,12 @@ title: Link Research
 * http://www.andescotia.com/products/marten/
 
 
-### Inspiration 
+### Random 
 
+* [Words Matter](https://existentialtype.wordpress.com/2012/02/01/words-matter/) - from Paul Chiusano
+* [Dynamic Languages are Static Languages](https://existentialtype.wordpress.com/2011/03/19/dynamic-languages-are-static-languages/) - from Paul Chiusano
+* [Pete Hunt - past, present, and future of ReactJS](https://tech.lendinghome.com/pete-hunt-the-past-present-and-future-of-react-5b47acbf42b) - at Lending Home (from Matt Marcus)
+* [It's time to kill the web](https://blog.plan99.net/its-time-to-kill-the-web-974a9fe80c89)
 * [WebTask](https://webtask.io/) - similar to webscript.io & clay.run (from Nicolae Rusan)
 * [Node playground](https://runkit.com/home) - similar to iPython notebook or TryCarbide (from Nicolae Rusan)
 * [Babelfish - from Aaron Kent](https://blog.sourced.tech/post/announcing_babelfish/)
