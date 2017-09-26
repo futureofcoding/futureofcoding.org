@@ -59,6 +59,8 @@ title: Link Research
 
 ### Inspiration 
 
+* [WebTask](https://webtask.io/) - similar to webscript.io & clay.run (from Nicolae Rusan)
+* [Node playground](https://runkit.com/home) - similar to iPython notebook or TryCarbide (from Nicolae Rusan)
 * [Babelfish - from Aaron Kent](https://blog.sourced.tech/post/announcing_babelfish/)
 * [CS and Literature - from @curious_reader](https://twitter.com/curious_reader/status/908954000501952512)
 * [Blockchains for a Better World - from @curious_reader](https://twitter.com/curious_reader/status/908391783901663232)
@@ -135,6 +137,10 @@ title: Link Research
   * I'm really enjoying reading his blog from when he, like me now, was 23. Sounds like he was trying to find his way, post-hell-grad-school, and post-break-up with Joanne (which is heartbreaking).
   * TODO continue reading his blawg after 5/11/01.
 
+
+* [Clay](https://www.clay.run/)
+  * built this: https://www.clay.run/services/steve/github-project-data/code
+  * chatted with Nicolae about the type signature of the functions and he's been iterating on that, which has been cool to watch
 
 * [Mesh Preview](http://chrispsn.com/mesh-preview.html)
   * his main thesis is excel doesn't treat rows as arrays, but you can fix that by dropping location-based referencing (which I also agree with... I think that refering to a cell as A4 is Exel's version of C pointers.)
