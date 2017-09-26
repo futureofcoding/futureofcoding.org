@@ -6,6 +6,11 @@ title: Journal
 
 This jornal is stream-of-consciousness style so apologies in advance if it's difficult to read. You should know that I don't have spellcheck and I'm a terrible speller. Most importantly, you should know that I add new entries at the top of the page, so you'll have to scroll to the bottom if you want to start from the beginning.
 
+### September 26, 2017 11:53am
+
+I spent another 90 minutes on the [CycleJS Flappy Bird](https://www.webpackbin.com/bins/-KueLaY-sIBrTzaW18U4). It's coming along! This morning I pushed `gameOver` state into the `Bird` and `Pipes` components, even allowing the `Bird` to set `gameOver: true` when it goes out of bounds, which simplified the code a lot. I also switched the order of the reducers, bringing the `Bird` reducer to the front which helped an issue that was tripping me up. I then added `canvas` sinks to all of the components and then combined them in the `main()` function. I still have another few hours remaining on this project (the never ending flappy bird!) to 1) create `Pipe` components underneath the `Pipes` component and 2) detect Pipe collections and setting `gameOver: true`.
+
+I have set aside the remaining hour of my research for today to organize myself around my logisitcally tasks, like organizing the Future of Programming meetup on Monday, putting the final touches on next week's podcast episode, etc, etc. 
 
 ### September 25, 2017 8:50am
 
