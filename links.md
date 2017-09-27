@@ -59,6 +59,7 @@ title: Link Research
 
 ### Random 
 
+* [What Should Follow The Web](https://blog.plan99.net/what-should-follow-the-web-8dcbbeaccd93)
 * [Words Matter](https://existentialtype.wordpress.com/2012/02/01/words-matter/) - from Paul Chiusano
 * [Dynamic Languages are Static Languages](https://existentialtype.wordpress.com/2011/03/19/dynamic-languages-are-static-languages/) - from Paul Chiusano
 * [Pete Hunt - past, present, and future of ReactJS](https://tech.lendinghome.com/pete-hunt-the-past-present-and-future-of-react-5b47acbf42b) - at Lending Home (from Matt Marcus)
