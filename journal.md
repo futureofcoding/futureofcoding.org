@@ -6,6 +6,32 @@ title: Journal
 
 This jornal is stream-of-consciousness style so apologies in advance if it's difficult to read. You should know that I don't have spellcheck and I'm a terrible speller. Most importantly, you should know that I add new entries at the top of the page, so you'll have to scroll to the bottom if you want to start from the beginning.
 
+### September 27, 2017 12:26pm
+
+Today was a productive morning! I finally finished my CycleJS flappy bird! Here [the newer version](https://www.webpackbin.com/bins/-Kv2cnlUINlDvUjJ5RzP) (I forked [the previous version](https://www.webpackbin.com/bins/-KueLaY-sIBrTzaW18U4)). I also went ahead and [created a gist for this code as well](https://gist.github.com/stevekrouse/fe7a9aaa881df66793b48786158a3756) in case (god forbid) my new favorite service webpackbin goes out of exsistance one day -- that's definitely one thing I am learning to avoid from reading decade-old blogs of others'.
+
+Thoughts on CycleJS thus far:
+
+1. It's crazy that the only platform I can get it to run on is webpackbin! (Yes, I know I am being a bit unreasonable by demanding that it be easy to use on a chromebook, but that's where my bar is.)
+
+2. As I remembered from my first time working on this project, it's really difficult to know how to fit the pieces, particularly the boilerplate pieces, of your CycleJS code together. There's a lot of combing around through documentation and examples scattered around the web. Once it comes together, it's beautiful but it isn't immediately obvious how to make that happen.
+
+3. This took sooo long! Obviously the code now is beautiful and I have total control over what happens every second. However, it's a bummer it takes so much longer to write code so beautiful. And thus: my current project to create a layer of abstraction on top of it makes a lot of sense.
+
+4. This is the bleeding edge of reactive programming! No joke - in the course of developing this app, Andre pushed a new version of Onionify that makes it easier to work with dynamic lists. I realized it earlier this morning when things weren't working and I saw "	Update all examples for makeCollection API	- 2 days ago" as the most recent commit message on most of the codebase. 
+
+5. However while the `makeCollection` API does indeed seem cleaner, I wonder how I'm now supposed to [sharing data between components](https://github.com/staltz/cycle-onionify#how-to-share-data-among-components-or-compute-derived-data). I was able to push the `gameOver` state into my `Bird` component by creating a lens that contained both the bird and the `gameOver` data. However, I'm not totally sure what the idomatic way to accomplish this with `makeCollection` is. The best I came up with is by [pushing the shared state (`gameOver` and `score`) into each induvidual list component](https://gist.github.com/stevekrouse/fe7a9aaa881df66793b48786158a3756#file-cyclejs-flappy-bird-js-L158). This pattern also works for setting shared state from within a component: [the child component just updates the state in itself](https://gist.github.com/stevekrouse/fe7a9aaa881df66793b48786158a3756#file-cyclejs-flappy-bird-js-L91) and [the parent setter scans the children to pull the new state when it occurs](https://gist.github.com/stevekrouse/fe7a9aaa881df66793b48786158a3756#file-cyclejs-flappy-bird-js-L162). TODO ask andre about this...
+
+6. TODO - I also really want to play with the CycleJS devtools so I'll look into that soon...
+
+7. An idea from when I first did this project months ago: think about encoding seconds, pixels and p/s and p/s^2 into types with typescript, particularly in the constants at the top of the program.
+
+8. DOM Canvas with the upside-down y-axis hurts my brain! (This isn't a CycleJS issue, really.)
+
+9. Tomorrow I want to start work on building the same exact app but in Elm, potentially using the McMaster university SVG library. Hopefully this doesn't also take me about a dozens hours!
+
+10. I feeling pulled towards creating a "reactive woofjs" at this point. Having just talked to Christopher Anand of McMaster University and Emmanuel Schnazer from Bootstrap (and Pyret), and spending so much time making flappy bird games on the canvas, wishing I had 1) a proper x-y axis with 0, 0 in the center, 2) a Scratch-like sprite abstraction (which would make it easier to check if things are colliding and would make it so that I don't have to redraw blue every time), and 3) most importantly, I could possibly abstract over some boilerplate code that seems to be inherent in all CycleJS and Elm (not sure about Pyret) projects. This project is definitely a digression but not neccesarily a distraction. I think it could be a fun way to learn more about reactive programming through building a simplier abstraction over it than the one I ultimately want to build.
+
 ### September 26, 2017 11:53am
 
 I spent another 90 minutes on the [CycleJS Flappy Bird](https://www.webpackbin.com/bins/-KueLaY-sIBrTzaW18U4). It's coming along! This morning I pushed `gameOver` state into the `Bird` and `Pipes` components, even allowing the `Bird` to set `gameOver: true` when it goes out of bounds, which simplified the code a lot. I also switched the order of the reducers, bringing the `Bird` reducer to the front which helped an issue that was tripping me up. I then added `canvas` sinks to all of the components and then combined them in the `main()` function. I still have another few hours remaining on this project (the never ending flappy bird!) to 1) create `Pipe` components underneath the `Pipes` component and 2) detect Pipe collections and setting `gameOver: true`.
