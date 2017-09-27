@@ -59,6 +59,7 @@ title: Link Research
 
 ### Random 
 
+* [Sourced.tech](http://sourced.tech/) - machine learning trained to generate source code (from Aaron Kent)
 * [What Should Follow The Web](https://blog.plan99.net/what-should-follow-the-web-8dcbbeaccd93)
 * [Words Matter](https://existentialtype.wordpress.com/2012/02/01/words-matter/) - from Paul Chiusano
 * [Dynamic Languages are Static Languages](https://existentialtype.wordpress.com/2011/03/19/dynamic-languages-are-static-languages/) - from Paul Chiusano
