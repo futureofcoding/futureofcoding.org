@@ -6,6 +6,10 @@ title: Journal
 
 This jornal is stream-of-consciousness style so apologies in advance if it's difficult to read. You should know that I don't have spellcheck and I'm a terrible speller. Most importantly, you should know that I add new entries at the top of the page, so you'll have to scroll to the bottom if you want to start from the beginning.
 
+### September 28, 2017 8:38am
+
+I have a hack day at The Coding Space today. Anyone who wants to improve their coding skills comes and works on projects, and I help them if they get stuck. In between when people need help, I'll work on WoofJS issues. I have 6 hours reserved for research tomorrow.
+
 ### September 27, 2017 12:26pm
 
 Today was a productive morning! I finally finished my CycleJS flappy bird! Here [the newer version](https://www.webpackbin.com/bins/-Kv2cnlUINlDvUjJ5RzP) (I forked [the previous version](https://www.webpackbin.com/bins/-KueLaY-sIBrTzaW18U4)). I also went ahead and [created a gist for this code as well](https://gist.github.com/stevekrouse/fe7a9aaa881df66793b48786158a3756) in case (god forbid) my new favorite service webpackbin goes out of exsistance one day -- that's definitely one thing I am learning to avoid from reading decade-old blogs of others'.
