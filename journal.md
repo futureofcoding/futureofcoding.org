@@ -6,6 +6,26 @@ title: Journal
 
 This jornal is stream-of-consciousness style so apologies in advance if it's difficult to read. You should know that I don't have spellcheck and I'm a terrible speller. Most importantly, you should know that I add new entries at the top of the page, so you'll have to scroll to the bottom if you want to start from the beginning.
 
+### Septempber 29, 12:06pm
+
+Ok! So I don't have time for the planned 6 hours of work today but I did get in about for especially if you count the conversation with Andreas I will have in a few hours which was spurred by [this conversation on Twitter](https://twitter.com/curious_reader/status/910943233458438145).
+
+#### Fun conversations
+
+Speaking of talking to cool people and twitter, there's been some fun activity on those fronts:
+
+1. I tweeted out the Atlantic article about the future of coding and [Chris Granger retweeted it](https://twitter.com/stevekrouse/status/913096302606548992)!
+
+2. I finally did get a few emails back from Alan Kay. He's too busy to mentor me now because he's writing a book (very exciting!) but he reccomended I check out what Bret Victor's up to (lol).
+
+3. I sent an email to Nick Johnstone this morning. I hope we become friends!
+
+4. After chatting with Christopher Anand on the podcast (which will come out next week), I've been talking to other people who teach functional programming to children, Emmanuel from Bootstrap and Scott from UCode who also teaches Elm. Maybe we should start a club!
+
+#### Elm Flappy Bird
+
+I began working on [Elm Flappy Bird this morning on Ellie-app](https://ellie-app.com/m6NKF8RpYa1/3), which is very exciting. I was pretty blown away by how much progress I was able to make in just under an hour of coding. Not sure if it's because it's easier to use than CycleJS or because they're so similar that I'm able to use what I learned with Cycle here. Excited to finish this up soon and re-evaluate my StreamSheets prototype idea with my newfound deeper understanding of reactive programming and streams!
+
 ### September 28, 2017 8:38am
 
 I have a hack day at The Coding Space today. Anyone who wants to improve their coding skills comes and works on projects, and I help them if they get stuck. In between when people need help, I'll work on WoofJS issues. I have 6 hours reserved for research tomorrow.
