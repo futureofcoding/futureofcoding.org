@@ -59,6 +59,9 @@ title: Link Research
 
 ### Random 
 
+* [Whats Functional Programming All About](http://www.lihaoyi.com/post/WhatsFunctionalProgrammingAllAbout.html#what-functional-programming-is-not)
+  * TODO read this
+  * This article is amazing! LOVE the sideways recipie thing to explain the distinction between declarative and sequential! I had trouble with this idea before this article.
 * [Sourced.tech](http://sourced.tech/) - machine learning trained to generate source code (from Aaron Kent)
 * [What Should Follow The Web](https://blog.plan99.net/what-should-follow-the-web-8dcbbeaccd93)
 * [Words Matter](https://existentialtype.wordpress.com/2012/02/01/words-matter/) - from Paul Chiusano
@@ -73,7 +76,6 @@ title: Link Research
 * [Dan Scanlon's Fractal](https://github.com/danscan/fractal) and [video](https://www.youtube.com/watch?v=wtoPXsadpQI&feature=youtu.be)
 * [Alan Kay HN AMA](https://news.ycombinator.com/item?id=11939851)
 * http://elevr.com/elevr-leaving-ycr/
-* [Whats Functional Programming All About](http://www.lihaoyi.com/post/WhatsFunctionalProgrammingAllAbout.html#what-functional-programming-is-not)
 * [Joe Edelman - citizen logisitics](http://nxhx.org/) and [Chatterbase](http://alpha.trycarbide.com/@jxe/6d5e19369ddb9cc4728510e11a3f7586)
 * http://explorabl.es/reading/
 * http://nxhx.org/
