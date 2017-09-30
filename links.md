@@ -10,6 +10,7 @@ title: Link Research
 
 * http://elm-lang.org/blog/farewell-to-frp
 * [CycleJS Component Difficulties](https://www.youtube.com/watch?v=CU8jtb6UBGg&feature=youtu.be&t=46m15s)
+* [LINQ](https://www.linqpad.net/)
 * http://conal.net/papers/icfp97/
 * http://conal.net/papers/push-pull-frp/
 * http://conal.net/papers/Eros/
