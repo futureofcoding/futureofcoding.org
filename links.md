@@ -60,6 +60,15 @@ title: Link Research
 
 ### Random 
 
+* [Sapir–Whorf hypothesis](https://en.wikipedia.org/wiki/Linguistic_relativity) langauge affects thoughts- from @curious_reader
+* [A Whole New World](https://www.destroyallsoftware.com/talks/a-whole-new-world) - from @curious_reader
+* [Useing You're Type's Good](https://www.destroyallsoftware.com/talks/useing-youre-types-good) - from @curious_reader
+* [Bondaries](https://www.destroyallsoftware.com/talks/boundaries) - from @curious_reader
+* [IPFS](https://ipfs.io/) - from @curious_reader
+* [A collection of the thoughts of people like Bret Victor, Ted Nelson, Alan Kay and other programming luminaries of our generation](https://github.com/andytudhope/APerspectiveOnTechnology) - from @curious_reader
+* [Final STEPS report hacker news discussion](https://news.ycombinator.com/item?id=11686325)
+* Read [Runar's blog](http://blog.higher-order.com/blog/archives/), especially [his first post](http://blog.higher-order.com/blog/2008/12/04/no-such-thing/) - from @curious_reader
+* [Programming and Scale - Alan Kay](https://www.youtube.com/watch?v=YyIQKBzIuBY) - from @curious_reader
 * [Whats Functional Programming All About](http://www.lihaoyi.com/post/WhatsFunctionalProgrammingAllAbout.html#what-functional-programming-is-not)
   * TODO read this
   * This article is amazing! LOVE the sideways recipie thing to explain the distinction between declarative and sequential! I had trouble with this idea before this article.
@@ -108,6 +117,9 @@ title: Link Research
 * http://alpha.trycarbide.com/
 * Kite.com
 * PureScript
+* [Dijkstra's diary](http://www.cs.utexas.edu/users/EWD/indexChron.html) - from @curious_reader
+* @curious_reader's repo on gitlab
+* [@mrb_bk](https://twitter.com/mrb_bk) - from @curious_reader
 * https://elixir-lang.org/
 * http://www.eff-lang.org/
 * https://personal.cis.strath.ac.uk/conor.mcbride/pub/Frank/TFM.pdf
