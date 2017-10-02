@@ -39,6 +39,7 @@ title: Link Research
 
 ### Projectional / block based editors
 
+* [Max audio editing software](https://en.m.wikipedia.org/wiki/Max_(software))
 * [Hazelnut](https://www.youtube.com/watch?v=99SRVnRA9Ec)
   * https://arxiv.org/pdf/1703.08694.pdf
 * [General Principles for a Generalized Idea Garden](https://www.researchgate.net/publication/313369217_General_Principles_for_a_Generalized_Idea_Garden)
