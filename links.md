@@ -31,6 +31,7 @@ title: Link Research
 
 ### LogicHub
 
+* [Michael Nielson](http://michaelnielsen.org/) - thinking and future of science from Future of programming meeting 10/2/17
 * [TiddlyWikin](http://tiddlywiki.com/)
 * https://github.com/raymestalez/nulis
 * http://wagn.org/
