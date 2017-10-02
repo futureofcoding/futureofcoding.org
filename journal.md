@@ -8,7 +8,7 @@ This jornal is stream-of-consciousness style so apologies in advance if it's dif
 
 ### Septempber 29, 12:06pm
 
-Ok! So I don't have time for the planned 6 hours of work today but I did get in about for especially if you count the conversation with Andreas I will have in a few hours which was spurred by [this conversation on Twitter](https://twitter.com/curious_reader/status/910943233458438145).
+Ok! So I don't have time for the planned 6 hours of work today but I did get in about 4 especially if you count the conversation with Andreas I will have in a few hours which was spurred by [this conversation on Twitter](https://twitter.com/curious_reader/status/910943233458438145).
 
 #### Fun conversations
 
