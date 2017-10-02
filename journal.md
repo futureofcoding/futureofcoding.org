@@ -6,7 +6,66 @@ title: Journal
 
 This jornal is stream-of-consciousness style so apologies in advance if it's difficult to read. You should know that I don't have spellcheck and I'm a terrible speller. Most importantly, you should know that I add new entries at the top of the page, so you'll have to scroll to the bottom if you want to start from the beginning.
 
-### Septempber 29, 12:06pm
+
+### October 2, 2017 8:53am
+
+I continued work on my Elm Flappy Bird this morning ([new version here](https://ellie-app.com/m6NKF8RpYa1/5)) which was fun but slower going than last time (but faster than with CycleJS probably because I know what I'm doing this time). I made jumping work on space key press and also added pipes. In particular I had fun with the way I chained transformations on the model.
+
+```elm
+update : Msg -> GameState -> GameState
+update msg model =
+    let
+      moveBird model = { model |
+        bird = {y = model.bird.y + model.bird.ySpeed, ySpeed = model.bird.ySpeed - 1}
+      }
+      movePipes model = { model |
+        pipes = List.map (\pipe -> {pipe | x = pipe.x - pipeSpeed}) model.pipes
+      }
+      addPipe model = { model |
+        pipes = {x = 250, yOffset = 0}::model.pipes
+      }
+      jumpBird model = { model | 
+        bird = { y = model.bird.y, ySpeed = 10 } 
+      }
+    in
+      case msg of
+        Tick time (keys, _, _) -> model
+          |> moveBird
+          |> movePipes
+          |> (if (round time) % newPipeTime == 0 then addPipe else identity)
+          |> (if keys Space == Down then jumpBird else identity)
+        Jump -> jumpBird model
+```
+
+However while it is very nice to have good type errors, there are a lot of confusing type errors too, particularly when I leave out type annotations or parenthesis. I spend a good deal of time this morning not realizing I needed parenthesis around the if-expressions above. I hope to finish this up in the next day or two!
+
+I got a reply from Nick Johnstone this morning, and I'm really excited to chat with him soon!
+
+I also a reply from Andre Staltz this morning regarding my CycleJS questions from last week (one of which you can see below). I hope to chat with him over Skype soon to chat about 1) getting CycleJS working on Cloud9, 2) my Future of Coding project more explicitly at a high level (as opposed to in the weeks discussion about projects), 3) his Scuttlebutt project because that is interesting.
+
+#### CycleJS Onionify "share data between components" in the case of collection items
+
+Andre Staltz's reply to [my bullet (5) below](http://futureofcoding.org/journal#september-27-2017-1226pm):
+
+> It's possible to give a lens for each list item through the makeCollection API. Just provide it in the itemScope argument, e.g. `key => ({onion: pipeLens(key), '*': key})`, where `pipeLens` is a function that takes a key and returns a lens. This may seem a bit unfamiliar, but in fact when you use `isolate(Component, scope)`, that `scope` argument is the same thing we are using for makeCollection `itemScope`.
+>
+> There are two different isolation use cases:
+> - Isolate the collection of items: `isolate(PipesList, {onion: pipesLens})(sources)`
+> - Isolate each item separately: `itemScope: key => ({onion: pipeLens(key), '*': key})`
+>
+> We tried very hard to make the makeCollection API intuitive and easy, but it's also fundamentally a different piece of the system (it's a dynamic manager of component instances) so its API, e.g., `itemScope` feels different to the normal use of components in Cycle.js, but actually it's just an option to configure how `isolate(Item, scope)` will be called.
+>
+> So it's still possible to "share data between components" in the case of collection items.
+
+#### Juan-benet-insired Master Plan
+
+Three years ago, a friend forwarded me an email written Juan Benet (of IPFS and FileCoin) where he muses on the important things to focus and work on. At the time, I thought it was somewhat interesting but mostly just random and didn't pay it much heed. However, my new friend Andreas (@curious_reader on Twitter) that I spoke to on Friday sugggested I listened to a YC podcast he wa on and it blew my brain: everything he set out to acheive three years ago has either been achieve or will be acheived. Even more fascinating, the same things he was talking about acheiving then are what he's talking about acheiving now. This really shook me to the bone: articulating your ambitious, seemingly-impossible aims and truly standing for them, and then having them morph into reality -- that's powerful. Part of why this affects me so is that I spoke with Juan on the phone for like an hour two years ago when he was working alone on a crazy project without any money to support himself -- and I wasn't at all interested in this project, which has since gone on to earn unicorn status in record time for a startup, just a few years! (Yes, it's through an ICO which are super bubbly now but in his case I don't think its entirely unwarrented.)
+
+Relatedly, I recently decided I was ready to meet someone to seriously date, so I wrote down a list of what I'm looking for in a partner and just a few weeks later I found someone amazing and we're seriously dating! (This also happened to a friend of mine last year!) So basically I am in rapture for the power of articulating, preferably on paper, what you're looking for. (To clarify, I do not believe in the cosmic power of "the secret" whereby I am bending reality to my wishes. On the contrary, I think the reasons this articulation technqiue works are clear: 1) it helps you articulate to yourself what you're looking for, 2) it helps you articulate to others what you're looking for so they can help you find it, 3) it makes it easier to optimize your strategy towards acheiving your goal through reflection.
+
+So I spent 90 minutes on Saturday starting the [about page](./about) of this website, which I think could serve as the "master plan" for this project. (I'm stealing the phrase "master plan" from Elon Musk.) However, I realized that while I did spent a significant amount of time on it, I didn't come close to finishing. Planning takes time. I can't just squeeze it in during the weekend. I need to allocate a significant period of time to reflecting on my goals and strategy, come up with new ideas, get feedback on these ideas, and articulate my new plan of attack. Thus, I will finish this two-week research cycle by wrapping up my Reactive programming deep dive, and spend the entire next two-week cycle working on my Master Plan!
+
+### Septempber 29, 2017 12:06pm
 
 Ok! So I don't have time for the planned 6 hours of work today but I did get in about 4 especially if you count the conversation with Andreas I will have in a few hours which was spurred by [this conversation on Twitter](https://twitter.com/curious_reader/status/910943233458438145).
 
