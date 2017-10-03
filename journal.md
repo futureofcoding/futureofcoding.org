@@ -7,6 +7,78 @@ title: Journal
 This jornal is stream-of-consciousness style so apologies in advance if it's difficult to read. You should know that I don't have spellcheck and I'm a terrible speller. Most importantly, you should know that I add new entries at the top of the page, so you'll have to scroll to the bottom if you want to start from the beginning.
 
 
+### October 3, 2017 10:58am
+
+I had a few fun conversations yesterday, including a reply from @r0ml who agreed to come on the podcast, a [Future of Programming meetup](https://docs.google.com/document/d/1xXeKyR6SzwYMW9ZgHZXoIZsatkYlDL17yp4B5MreRMQ/edit), and also an email from Niko Autio (who I hope to chat with soon and helped spur on the Structured Editor writing below) who was sent to me via Andre Stalz (who I will hopefully find time to chat with this coming Monday to kick off my "master planning").
+
+#### Structural Editors 
+
+Given all the recent Structural Editor (also known as "projectional editor") conversations I've been having, I think now is a good time to write about those, leaving Thursday (as tomorrow I have jury duty, which I make up for by working a double research shift on Friday) to continue the Elm Flappy Bird.
+
+#### Fustrations with Structural Editors
+
+> Inside every cynical person, there is a disappointed idealist. - George Carlin
+
+You may remember that I starting building my own structured editor for JavaScript called Rose, which can you read about at [the end of this post](https://medium.com/@stevekrouse/rose-983dc5e0908f) and [the beginnning of this post](https://medium.com/@stevekrouse/rose-project-april-2017-32af31b078b1), but ended this prototype fairly early. You may also remember [my review of Lamdu](http://futureofcoding.org/journal#july-25-2017-226pm), in which I was both impressed by what this could become but disappointed about its current state. 
+
+You may recall [my conversation with Lloyd Tabb](http://futureofcoding.org/episodes/7-lookers-lloyd-tab-on-growing-languages-through-deprecation.html) where he explains his disillusionment with structured editors because of his failure to build one in the 80s, and his current insistance that text will always win as the interface for programming.
+
+Last night at the Future of Programming meetup, there was a discussion about how excited we all have been at various times about structured editors, but [as you can read in the notes](https://docs.google.com/document/d/1xXeKyR6SzwYMW9ZgHZXoIZsatkYlDL17yp4B5MreRMQ/edit), have been disappointed each time. 
+
+I've recently become friends with Aaron Kent of Isomorf and am quite impressed by their structured editor! However as a "pro user" their tool would still slow me down over text-based editing. (Although it might be faster for a new programmer, but I'm not sure.)
+
+What's crazy about all this negativity towards structured editors is that its coming from people that desperately want to be positive about it. All the negativity comes from dashed hopes.
+
+This is not to say that some of us don't think it's possible to succeed here. (Ok, some of us do think it's impossible to succeed here. But those that do think this often think it because they spent months or years of their life trying and failing to succeed here.) But some of us are just skeptical of that possibility.
+
+#### Optimism about Structural Editors
+
+I, for one, am not skeptical of it at all. Despite all this negativity, I think it's not only possible to succeed in a non-text-based editor (here I'm using a more general term than "structured editor" to include other editor types like block-based or node-based) but probable. I say this from my experience successfully using MIT's Scratch myself and with students, from my decade of experience using dozens of programming languages, from my experience building on top of Google Blockly and trying to build a structured editor for JavaScript referenced above, and from my experience trying out many such editors over the past year, many of which while leaving a lot to be desired, hint at how amazing they could become with just a bit more development.
+
+After seeing the negative feedback on structured editors from the meeting last night, Yair of Lamdu quickly shot back a few notes about how they plan to address each of the comments brought up, such as where to put comments and changes regarding operator precendence. 
+
+I agree with his optimism. While text-based editing does have a signicant tooling advatange because it's been the dominant platform for the last 60 years, I think there's no reason that we can enumerate all of the use-cases and issues that people have with structured-editors and tackle them one at a time until the quality of structured editors outpaces the quality of text-based editors, even for "pro users" that have all the emacs shortcuts memorized. 
+
+One caveat to this, of course, is that in order to build a tool to such a level of quality, you need its developers to stick with it for years and years. Given that there as of yet (aside from LightTable and Eve) been little money for such projects could be an obsticle. However not a insurmountable one, as shown by how the Lamdu developers have made signicant, sustained progress in their free time over the past few years while keeping up with full time jobs. Others in this space are persuing VC funding like Eve did. And then there are researchers who are supported by grants or non profits. 
+
+#### Niko Autio's Microeditor
+
+Niko shot me an email last night with his [video of a prototype here](https://www.youtube.com/watch?v=CNryKyBPfws) and [description here](./notes/niko-autio-microeditor.html).
+
+There are a few really solid insights here:
+
+1. Text is merely one of many projections of the underlying data structure, usually an AST.
+2. You can create many "microeditors" that give you very specific interfaces to this underlying data structure ("I want view THAT piece of data as table and THAT as diagram.") In this way you can have your cake and eat it too.
+3. If you break up each microeditor small enough and build the underlying platform well enough, you could get the open source community to contribute to their development. Potentially you could bootstrap things and build the tool in the tool.
+
+You know... this idea isn't all that crazy. You could combine an existing browser code editor like CodeMirror with exisiting JSON and XML editors and table viewers to get started... I imagine the real trouble with this project will be that it's trying to solve every problem for everyone all at once and won't get good at anyone's specific problem anytime soon. That is, the trouble here is focusing on a use-case to optimize for. 
+
+#### [Ville Vanninen's Foolproof HTML](https://pumpula.net/foolproof-html/)
+
+I think I've seen this before, but was sent it again by Niko last night. In particular I like this diagram (which people in this world constantly have in mind but I have seen written out explicitly before):
+
+![image](https://user-images.githubusercontent.com/2288939/31139520-d34c69be-a83f-11e7-81be-5f168a641eaa.png)
+
+Very neat project! 
+
+1. First they start by removing syntax that humans don't need (but computers like) to get something similar to Jade (or other compile-to-HTML languages)
+2. Don't let humans make syntax errors
+3. Make things easier with good shortcuts
+
+At the end of the day, it's not all that different than a good IDE and Jade. The struggle here would be making something good enough to convince people to switch to it. It seems to be that it may take significant effort to create something here that's even 50% better than a good IDE and Jade, and often things need to be more than 100% better to convince people to switch to them.
+
+#### All the structural editors
+
+At this point, I know about a lot of these things, so I created [a Github issue where we can start a list for them](https://github.com/stevekrouse/futureofcoding.org/issues/52)...
+
+#### Not the highest priority
+
+In a recent talk, Paul Chiusano of Unison explained that while structured editors (like those he himself worked on in the past) will make programming better, they're not currently the highest leverage thing you can do to improve programming. His thought experiment: "would you rather a brain-to-text interface to x86 assembly or a emacs-interface to Haskell?" Most people would prefer Haskell, he says (and I agree), which explains why he's now working on creating better mathmatical abstractions for distributed computing as opposed to more fluent interfaces to existing languages.
+
+In a similar vein, my current thesis is that slapping a structured editor interface on top of our current programming language paradigms will only improve things marginally, and that's after investing a lot of work into them over a period of years (which is why I stopped working on my structured editor Rose). The real leverage is in enabling better paragigms *through* more intuative interfaces, such as enabling stream programming through a spreadsheet interface, like my StreamSheets project I talk about throughout this journal (ctl-F to find it). 
+
+However, the old programming languages and paradigms will stick around for a while, so more power to the people trying to make structured editing work! In particular, I'm excited to watch Isomorf  iterate on their interface as they get people using it to solve real-world problems.
+
 ### October 2, 2017 8:53am
 
 I continued work on my Elm Flappy Bird this morning ([new version here](https://ellie-app.com/m6NKF8RpYa1/5)) which was fun but slower going than last time (but faster than with CycleJS probably because I know what I'm doing this time). I made jumping work on space key press and also added pipes. In particular I had fun with the way I chained transformations on the model.
@@ -1064,9 +1136,9 @@ On Friday... while there are many other interesting links to review, I am feelin
 
 ### July 25 2017 2:26pm
 
-Again, I'm finally getting to research late in the day. I spent the morning reveiewing Woof pull requests and doing emails. But I'm finally here on the Ubuntu side of my chromebook, playing with Unison...
+Again, I'm finally getting to research late in the day. I spent the morning reveiewing Woof pull requests and doing emails. But I'm finally here on the Ubuntu side of my chromebook, playing with Lamdu...
 
-I got the factorial code to work by following the advice of the founder of Unison in the conversation I pasted below:
+I got the factorial code to work by following the advice of the founder of Lamdu in the conversation I pasted below:
 
 ![](http://imgur.com/N2cPWPUl.png)
 

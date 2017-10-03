@@ -40,6 +40,7 @@ title: Link Research
 
 ### Projectional / block based editors
 
+* http://kevinmahoney.co.uk/articles/structural-editor-prototype/
 * [Max audio editing software](https://en.m.wikipedia.org/wiki/Max_(software))
 * [Hazelnut](https://www.youtube.com/watch?v=99SRVnRA9Ec)
   * https://arxiv.org/pdf/1703.08694.pdf
