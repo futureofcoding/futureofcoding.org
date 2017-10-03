@@ -15,7 +15,7 @@ I had a few fun conversations yesterday, including a reply from @r0ml who agreed
 
 Given all the recent Structural Editor (also known as "projectional editor") conversations I've been having, I think now is a good time to write about those, leaving Thursday (as tomorrow I have jury duty, which I make up for by working a double research shift on Friday) to continue the Elm Flappy Bird.
 
-#### Fustrations with Structural Editors
+##### Fustrations with Structural Editors
 
 > Inside every cynical person, there is a disappointed idealist. - George Carlin
 
@@ -31,7 +31,7 @@ What's crazy about all this negativity towards structured editors is that its co
 
 This is not to say that some of us don't think it's possible to succeed here. (Ok, some of us do think it's impossible to succeed here. But those that do think this often think it because they spent months or years of their life trying and failing to succeed here.) But some of us are just skeptical of that possibility.
 
-#### Optimism about Structural Editors
+##### Optimism about Structural Editors
 
 I, for one, am not skeptical of it at all. Despite all this negativity, I think it's not only possible to succeed in a non-text-based editor (here I'm using a more general term than "structured editor" to include other editor types like block-based or node-based) but probable. I say this from my experience successfully using MIT's Scratch myself and with students, from my decade of experience using dozens of programming languages, from my experience building on top of Google Blockly and trying to build a structured editor for JavaScript referenced above, and from my experience trying out many such editors over the past year, many of which while leaving a lot to be desired, hint at how amazing they could become with just a bit more development.
 
@@ -41,7 +41,7 @@ I agree with his optimism. While text-based editing does have a signicant toolin
 
 One caveat to this, of course, is that in order to build a tool to such a level of quality, you need its developers to stick with it for years and years. Given that there as of yet (aside from LightTable and Eve) been little money for such projects could be an obsticle. However not a insurmountable one, as shown by how the Lamdu developers have made signicant, sustained progress in their free time over the past few years while keeping up with full time jobs. Others in this space are persuing VC funding like Eve did. And then there are researchers who are supported by grants or non profits. 
 
-#### Niko Autio's Microeditor
+##### Niko Autio's Microeditor
 
 Niko shot me an email last night with his [video of a prototype here](https://www.youtube.com/watch?v=CNryKyBPfws) and [description here](./notes/niko-autio-microeditor.html).
 
@@ -53,7 +53,7 @@ There are a few really solid insights here:
 
 You know... this idea isn't all that crazy. You could combine an existing browser code editor like CodeMirror with exisiting JSON and XML editors and table viewers to get started... I imagine the real trouble with this project will be that it's trying to solve every problem for everyone all at once and won't get good at anyone's specific problem anytime soon. That is, the trouble here is focusing on a use-case to optimize for. 
 
-#### [Ville Vanninen's Foolproof HTML](https://pumpula.net/foolproof-html/)
+##### [Ville Vanninen's Foolproof HTML](https://pumpula.net/foolproof-html/)
 
 I think I've seen this before, but was sent it again by Niko last night. In particular I like this diagram (which people in this world constantly have in mind but I have seen written out explicitly before):
 
@@ -67,11 +67,11 @@ Very neat project!
 
 At the end of the day, it's not all that different than a good IDE and Jade. The struggle here would be making something good enough to convince people to switch to it. It seems to be that it may take significant effort to create something here that's even 50% better than a good IDE and Jade, and often things need to be more than 100% better to convince people to switch to them.
 
-#### All the structural editors
+##### All the structural editors
 
 At this point, I know about a lot of these things, so I created [a Github issue where we can start a list for them](https://github.com/stevekrouse/futureofcoding.org/issues/52)...
 
-#### Not the highest priority
+##### Not the highest priority
 
 In a recent talk, Paul Chiusano of Unison explained that while structured editors (like those he himself worked on in the past) will make programming better, they're not currently the highest leverage thing you can do to improve programming. His thought experiment: "would you rather a brain-to-text interface to x86 assembly or a emacs-interface to Haskell?" Most people would prefer Haskell, he says (and I agree), which explains why he's now working on creating better mathmatical abstractions for distributed computing as opposed to more fluent interfaces to existing languages.
 
