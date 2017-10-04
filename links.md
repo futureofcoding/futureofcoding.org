@@ -62,7 +62,7 @@ title: Link Research
 
 
 ### Random 
-
+* [Real-Time Programming and the Big Ideas of Computational Literacy](https://llk.media.mit.edu/papers/ch-phd.pdf)
 * [Sapir–Whorf hypothesis](https://en.wikipedia.org/wiki/Linguistic_relativity) langauge affects thoughts- from @curious_reader
 * [A Whole New World](https://www.destroyallsoftware.com/talks/a-whole-new-world) - from @curious_reader
 * [Useing You're Type's Good](https://www.destroyallsoftware.com/talks/useing-youre-types-good) - from @curious_reader
