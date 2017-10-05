@@ -62,6 +62,7 @@ title: Link Research
 
 
 ### Random 
+
 * [Real-Time Programming and the Big Ideas of Computational Literacy](https://llk.media.mit.edu/papers/ch-phd.pdf)
 * [Sapir–Whorf hypothesis](https://en.wikipedia.org/wiki/Linguistic_relativity) langauge affects thoughts- from @curious_reader
 * [A Whole New World](https://www.destroyallsoftware.com/talks/a-whole-new-world) - from @curious_reader
@@ -146,6 +147,7 @@ title: Link Research
 * reasonML
 * http://conal.net/blog/posts/reimagining-matrices
 * https://www.linkedin.com/pulse/programming-languages-future-coding-chris-grimes
+* [Petri net](https://en.wikipedia.org/wiki/Petri_net) - from Wila
 
 ## Researched
 
