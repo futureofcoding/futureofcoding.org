@@ -6,6 +6,20 @@ title: Journal
 
 This jornal is stream-of-consciousness style so apologies in advance if it's difficult to read. You should know that I don't have spellcheck and I'm a terrible speller. Most importantly, you should know that I add new entries at the top of the page, so you'll have to scroll to the bottom if you want to start from the beginning.
 
+### October 5, 2017 9:15am
+
+So as it turns out, I had plenty of productive time on my hands yesterday to do research here while at jury duty. However, possibly because I wasn't expecting to work, I didn't default to continuing on Elm Flappy Bird like I was planning to. Instead I began [strategizing for this project](https://github.com/stevekrouse/futureofcoding.org/issues/51) which I wasn't planning to do until next week but I'm really happy I got started already! I had [some more thoughts in this vein this morning](https://github.com/stevekrouse/futureofcoding.org/issues/53).
+
+#### Death knoll of this journal
+
+If you go and read those thoughts, you will see that despite my love for this very journal, I acknowledge that while it serves me in some ways, a better organizational structure will serve this proejct better, so this will probably be one of the last entries. I am taking great pains (as you can read above) to ensure that no links to this journal will be broken, so no need to worry about that!
+
+#### Streamsheets write-up
+
+I spent the bulk of my research time yesterday [writing the Streamsheets writeup](https://github.com/stevekrouse/futureofcoding.org/issues/54), which was very fun and productive. I got over 2,000 words in! It was in response to a request from the Future of Programming community:
+
+![screenshot 2017-10-05 at 9 19 20 am](https://user-images.githubusercontent.com/2288939/31229342-58dd5fe2-a9ae-11e7-86fc-ad2c4107aec0.png)
+
 
 ### October 3, 2017 10:58am
 
