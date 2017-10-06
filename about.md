@@ -13,11 +13,12 @@ Large advantages are confered upon those who know how to instruct computers:
 1. As the fabric of the world becomes software, and those that can manipulate software become powerful magicians.
 
 2. Learning to communicate with computers teaches one how to think more clearly, precisely, and powerfully.
- 
 
-## Usability is poor
+These reasons, among many others, mean there is a lot of value in learning to code. This is why almost everyone who hears that I "teach coding to children" asks if I can teach them to code. However, the current cost of learning to code is high. Lowering this cost could vastly improve the world.
 
-However, the langauges and tools that we currently use to communicate with computers have poor usability:
+## The usability our tools is poor
+
+The cost of learning to code is high because the langauges and tools that we currently use to communicate with computers have poor usability:
 
 1. They require hundreds of hours grueling of practice to learn to use.
 
@@ -26,7 +27,7 @@ However, the langauges and tools that we currently use to communicate with compu
 
 ## We can do better
 
-But we need not despair! We've repeately improved the usability of the tools by which we communicate with computers, from punchards, to binary, to assembly, to Fortran, to C, to Python, to Haskell.
+But we need not despair! We've repeately improved the usability of the tools by which we communicate with computers, from punchards and binary, to assembly, to Fortran, to C, to Python, to Haskell.
 
 In fact, I believe that we can improve the usability of general programming to that of MIT's Scratch, or Microsoft Office applications like Word, Powerpoint or Excel, or even a user-friendly application like Facebook.
 
@@ -42,19 +43,33 @@ While I did contribute some novel ideas to the space, I spent a lot of time retr
 
 ## Collaboration
 
-In the summer of 2017, I was approached by Irvin Hwang who suggested starting a NYC-based meetup group for people interested in the future of programming. I thought that was the dumbest idea I'd ever heard -- why talk to other people when I could read Alan Kay papers in my room? But I went to the first meeting and it blew my mind wide open. I learned so much in that hour! It inspired my [journal](./journal) which is now the core of my research project. After Irvin became busy with his new job, I took over the group that I originally thought was a waste of time. What a 180!
+In the summer of 2017, I was approached by Irvin Hwang who suggested starting a NYC-based meetup group for people interested in the future of programming. I thought that was the dumbest idea I'd ever heard -- why talk to other people when I could read Alan Kay papers in my room? But I went to the first meeting and it blew my mind wide open. I learned so much in that hour! It inspired my [journal](./journal) which at the time became the core of my research project. After Irvin became busy with his new job, I took over the group that I originally thought was a waste of time. What a 180 degree turn!
 
 It was also around this time that I began my [Future of Coding Podcast](./index.html), where I alternate each week between recapping my own research and speaking with experts. It's been an incredibly valuable experience for me: 1) helping add structure to my research, 2) gain new insights through collaboration, 3) encourage me to reflect on my progress, and 4) give me energy as people respond to my episodes with exciement and ideas of their own.
 
+## I need a well-defined goal
 
-## It's all about prototypes
-
-While podcasting, journaling, reading papers, and playing with others' prototypes are key to the success of this project, they are only valuable insofar as they spur on the creation of useful prototypes that will inform the future of coding. 
+While podcasting, journaling, reading papers, and playing with others' prototypes are key to the success of this project, they are only valuable insofar as they move me closer to my main objective. So what is this objective?
 
 
 ## Goal: Make Computing Accessible to All
 
-Let me make the goal of this project clear: **produce a tool with the power of a general-purpose programming language with the usability qualities of a standard end-user application** 
+I want to live in a world where every human can make their thoughts precise enough for machines to understand them. 
+
+There are two parts to this goal:
+
+1. Education. People need to learn to make their thoughts precise. This is often called "computational thinking." Even with amazing programming environments like LOGO or MIT Scratch, it takes students hundreds of hours to develop the thinking proccesses to communicate their ideas with computers. That's what my company The Coding Space is all about: providing an environment for students to learn computational thinking. This is to say, building an amazing tool is not enough. 
+
+2. Tools. However, building an amazing tool is an enabler! The work done at The Coding Space would not be possible without the work of Seymour Papert on LOGO which inspired Mitch Resnick to create MIT Scratch. And the work I've done on WoofJS also enables our students to learn more than they could've without the tool. 
+
+Thus you need both education and tools. As I move away from working at The Coding Space, I am shifting my focus from education to tools because I see that as currently the main limiting factor.
+
+Our curriculum in Scratch is wonderful. Kids learn computational thinking while making fun games. This wonderful curriculum is continued in WoofJS where students work on learning more valuable concepts while building more complex games. However, there are two related problems:
+
+1. What do students do after they are done with WoofJS?
+2. What if students don't want to make simple and silly games in Scratch or WoofJS? What if they want to create real applications to solve real problems? Why should they have to mess around in toy programming environments for a couple hundred hours before getting to "real coding"? And then once they get to real coding why must these students spend hundreds more hours learning "real coding"'s tools with such poor usability?
+
+Clearly what's needed is **a tool with the power of a general-purpose programming language with the usability qualities of a standard end-user application** 
 
 
 There are a few notable things missing from this goal which I want to make explicit:
@@ -63,7 +78,7 @@ There are a few notable things missing from this goal which I want to make expli
 
 2. I don't need to be the person who creates this tool. I will judge this project an unqualified success if it somehow inspires or informs the creation of this tool by someone else. Would I prefer to create it myself? Yes, that does seem fun. However, I aspire to not be sad if someone beats me to the punch. I aspire to give that person a metaphorical high five, and them move on to the next world-changing project on my to-do list.
 
-3. Yes, this goal is vague. I do not want to commit to what this tool will look like in its goal. You can read [my specific thesis about what it may look like here](./thesis).
+3. Yes, this goal is vague. I do not want to commit to what this tool will look like in its goal. You can read [my specific design priciples about what it may look like here](./priciples).
 
 
 ## Constraints
@@ -77,66 +92,86 @@ There are a few notable things missing from this goal which I want to make expli
 
 ## Strategy
 
-There will always be an unpredictability to research. It's hard to have a "plan" but it behooves me to have a strategy.
+1. Articulate the goal
+2. Come up with a plan to achieve the goal
+3. Get feedback on the plan, and revise the plan accordingly
+4. Attack the plan
+5. Periodically reflect on how the plan has made progress towards the goal. If the goal has not been acheieved, return to step 2. If it has been achieved, pick another goal and return to step 1.
 
-### Follow the example of role models
+I have the goal, and the strategy, so now I need a plan...
 
-#### Alan Kay
+## The Plan
 
-#### Bret Victor
+### What I know
 
-#### Mitch Resnick
+1. Code on github.
+2. Engaged developer community.
+3. Engaged user community
 
-#### Andre Staltz
+### What I do not know
 
-Currently my main role model is Andre Staltz, particularly for his work in creating CycleJS. [In a recent talk](https://vimeo.com/216787869), he explains how CycleJS came out of research and thinking he was doing over a period of years, eventually resulting in some code that some people used, others contributed to, and eventually, piece by slow piece, is growing into an interesting and valuable contriubtion to the front-end framework ecosystem.
+1. Compile target
+2. Early use cases
+3. Early customers
+4. Interface / paradigm
 
-#### Juan Benet
+### Endgame
 
-TODO
+1. Have an idea for a tool
+2. Begin prototyping it
+3. Test it out with users
+4. Iterate on it until it
+5. Get user traction
+6. Get contributor traction
+7. Manage its development until its ready to be passed onto someone else
 
-### Collaborate 
+### How should I balance my time?
 
-TODO 
+There are a few different activities I can do:
 
-### Reflect
+1. General research (like reading Alan Kay or Bret Victor)
+2. Working on a specific project (like reading Conal Elliot to learn about FRP for StreamSheets)
+3. Build a community (hosting meetups, connecting people, podcasting)
+4. High-level strategy (master planning like this)
 
-TODO 
+But at the end of the day, only (2) working on a specific project will lead to the endgame. Everything else is just a way to arrive at (2). So the way to get there faster is by both 1) increasing the amount and quality of ideas, and 2) increasing the speed at which we can invalidate bad ideas. 
 
-### Get a coach
+I should partake in (1) general research only when trying to come up with better ideas because we don't have good ones to work on.
 
-TODO 
+I'm not entirely clear how to think about (3) building a community, because while it won't directly lead to me accomplishing the endgame, it will increase the odds that I inspire someone else to, which would also accomplish my goal. As a reasonable approximation, I want to spend ~10% of my time (or 4 hours per week) on this.
 
-## History
+Finally, I am finding a lot of value in Master Planning in this way. I think I should reflect on my progress towards this plan weekly if not more often, but set aside special time to think more deliberately about it.
 
-Jan-Feb 2016 - Cycle v1 (JQuery + Blockly)
+## Prototype Options
 
-Mar-Aug 2016 - WoofJS
+### 1. StreamSheets
 
-Jan-Feb 2017 - Cycle v2 (VueJS + Blockly)
+TODO LINK
 
-Mar-Apr 2017 - Rose v1 (Projectional Editor for JS)
+### 3. FRP WoofJS 
 
-Jul-Sep 2017 - Lamdu, Eve, Alan Kay, StreamSheets, CycleJS, Elm
+TODO LINK
 
-## Plan
+### 4. Better generic interface than text 
 
-### Functional Reactive Programming (FRP)
+TODO LINK
 
-What I mean by "reactive" here could be accomplished by the word "declarative". This means that every definition is final, constant, cannot be changed anywhere in the code. It *is* what it's defined to be. However if you want dynamic behavior in your application, you'll need those definitions to be "reactive" so that while the definition doesn't change, they do describe behavior that does.
+Blocks, structured editor, flow diagram, spreadsheet interface, multiple representations (email guy)
 
-FRP has a lot going for it. Andre Stalz has shown with the CycleJS devtools that if you describe your application in this way, it can be automatically visualized as a dataflow diagram.
+## Current Protoype: FRP WoofJS or Scratch
 
-However, the usability of programming in CycleJS (or an alternative like Elm or NoFlo) is still poor, in some ways its worse than non-reactive languages like WoofJS. Can we improve the usability by abstracting over it somehow with better metaphors and a graphical user interface?
+### Fight the battle with one interesting front
 
-However, there's a lot about FRP I still don't understand. Instead of jumping right into StreamSheets, which is a generalized reactive tool, I'm now considering scoping down the project to be less general as a way to get my feet wet.
+With FRP WoofJS, I know the compile target (HTML canvas, JS, Elm, or CycleJS), early use case (games and animations), and early users (my students at The Coding Space). The only think I don't know is the paradigm / interface for the tool.
 
+### Next steps:
 
-### Reactive WoofJS (or Scratch)
+get Paul's advice here, as well as Scott Mueller, Emmanuel Schnazer, and Christopher Anand.
 
-WoofJS is a Scratch-inspired JavaScript framework for making games. For (almost) every block in Scratch, there is an equivalent funciton in WoofJS that does (almost) the same thing. Because Scratch is so wonderfully designed, WoofJS gets many of these usability benefits for free. However, WoofJS is also sattled with the problems of Scratch -- which mainly center around its procedural, sequential nature, which makes writing clear, maintainable code much more difficult.
+read Conal Elliot, Ludcid, play with Elm, Pyret, Reflex
 
-Todo pull from [ideas](./ideas)...
+build a few toy apps
+
 
 <script>
 

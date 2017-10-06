@@ -1,8 +1,8 @@
 ---
-title: Thesis
+title: Principles
 ---
 
-# Thesis
+# Principles
 
 Sorry this page doesn't exist yet. [I'm working on it...](https://github.com/stevekrouse/futureofcoding.org/issues/9)
 

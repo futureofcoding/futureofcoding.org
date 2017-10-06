@@ -58,7 +58,7 @@ title: Research Ideas
 
 * continue working on Rose v1 with text as UI
 
-* work on a Lamdu- or Unison- like structured editor for the web
+* work on a Lamdu- or Unison- like structured editor for the web (https://pumpula.net/foolproof-html/)
 
 * "click this one button to make flappy bird" 
 
