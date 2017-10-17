@@ -62,11 +62,16 @@ title: Link Research
 * http://harc.ycr.org/project/gp/
 * http://www.andescotia.com/products/marten/
 
+### Organization
+
+* https://medium.com/open-collective/open-collective-v2-is-live-61b7cd3195e3
+
 
 ### Database for humans
 
 * https://sheetsu.com/
 * [Graphcool framework](https://blog.graph.cool/graphcool-framework-preview-ff42081b1333?gi=566b11413ea2)
+* https://www.producthunt.com/posts/csvshare
 
 ### Random 
 
