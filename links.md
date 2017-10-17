@@ -63,8 +63,14 @@ title: Link Research
 * http://www.andescotia.com/products/marten/
 
 
+### Database for humans
+
+* https://sheetsu.com/
+* [Graphcool framework](https://blog.graph.cool/graphcool-framework-preview-ff42081b1333?gi=566b11413ea2)
+
 ### Random 
 
+* [TOby Schachman's Shadershop](http://tobyschachman.com/Shadershop/)
 * watch videos of yahoo pipes and hypercard - from Glen Chiacchieri
 * [Desigining to reveal the nature of the universe Jonathan Blow](https://www.youtube.com/watch?v=OGSeLSmOALU) - from Glen Chiacchieri
 * [Natalie Rusk](https://en.m.wikipedia.org/wiki/Natalie_Rusk) - written by Glen Chiacchieri
@@ -155,6 +161,7 @@ title: Link Research
 * http://conal.net/blog/posts/reimagining-matrices
 * https://www.linkedin.com/pulse/programming-languages-future-coding-chris-grimes
 * [Petri net](https://en.wikipedia.org/wiki/Petri_net) - from Wila
+* [Exploding Dots](https://www.explodingdots.org/) - from Rufus
 
 ## Researched
 
