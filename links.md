@@ -8,6 +8,7 @@ title: Link Research
 
 ### Streamsheets
 
+* [Glen Flowsheets](https://tinyletter.com/Flowsheets/archive)
 * http://elm-lang.org/blog/farewell-to-frp
 * [CycleJS Component Difficulties](https://www.youtube.com/watch?v=CU8jtb6UBGg&feature=youtu.be&t=46m15s)
 * [LINQ](https://www.linqpad.net/)
@@ -22,7 +23,7 @@ title: Link Research
 * [Forms/3](http://web.engr.oregonstate.edu/~burnett/Forms3/forms3.html)
 * [MIT Objective spreadsheets](https://sdg.csail.mit.edu/projects/objsheets) from Jaime Brandon
 * [Dedalus](https://pdfs.semanticscholar.org/03dc/b87fb0e0d8cd9fa85b09035a98ba5f2c779e.pdf)
-* [Lucid](http://worrydream.com/refs/Wadge%20-%20Lucid,%20the%20Dataflow%20Programming%20Language.pdf) 
+* [Lucid](http://worrydream.com/refs/Wadge%20-%20Lucid,%20the%20Dataflow%20Programming%20Language.pdf) - very important, says Glen Chiacchieri
 * [query, datalog, logicblox](https://pdfs.semanticscholar.org/0ffa/f68f4399998864d6d9835c7bd8240d322b49.pdf) from Jaime Brandon
 * https://en.wikipedia.org/wiki/Prograph
 * https://noflojs.org/
@@ -36,7 +37,8 @@ title: Link Research
 * https://github.com/raymestalez/nulis
 * http://wagn.org/
 * [Chorus](http://www.chorus-home.org/)
-
+* [Ted Nelson Literary Machines](http://www.tcnj.edu/~robertso/readings/nelson-literary-machines.pdf) - from Glen Chiacchieri
+* [As We May Think by Vanneevar Bush](https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/) - from Glen Chiacchieri
 
 ### Projectional / block based editors
 
@@ -60,9 +62,25 @@ title: Link Research
 * http://harc.ycr.org/project/gp/
 * http://www.andescotia.com/products/marten/
 
+### Organization
+
+* https://medium.com/open-collective/open-collective-v2-is-live-61b7cd3195e3
+
+
+### Database for humans
+
+* https://sheetsu.com/
+* [Graphcool framework](https://blog.graph.cool/graphcool-framework-preview-ff42081b1333?gi=566b11413ea2)
+* https://www.producthunt.com/posts/csvshare
 
 ### Random 
 
+* [TOby Schachman's Shadershop](http://tobyschachman.com/Shadershop/)
+* watch videos of yahoo pipes and hypercard - from Glen Chiacchieri
+* [Desigining to reveal the nature of the universe Jonathan Blow](https://www.youtube.com/watch?v=OGSeLSmOALU) - from Glen Chiacchieri
+* [Natalie Rusk](https://en.m.wikipedia.org/wiki/Natalie_Rusk) - written by Glen Chiacchieri
+* [ObservableHQ](https://observablehq.com/) - similar to iPython Notebook from Glen Chiacchieri
+* [Programming Models for Distributed Computation](https://github.com/heathermiller/dist-prog-book/blob/master/README.md)
 * [Real-Time Programming and the Big Ideas of Computational Literacy](https://llk.media.mit.edu/papers/ch-phd.pdf)
 * [Sapir–Whorf hypothesis](https://en.wikipedia.org/wiki/Linguistic_relativity) langauge affects thoughts- from @curious_reader
 * [A Whole New World](https://www.destroyallsoftware.com/talks/a-whole-new-world) - from @curious_reader
@@ -148,6 +166,7 @@ title: Link Research
 * http://conal.net/blog/posts/reimagining-matrices
 * https://www.linkedin.com/pulse/programming-languages-future-coding-chris-grimes
 * [Petri net](https://en.wikipedia.org/wiki/Petri_net) - from Wila
+* [Exploding Dots](https://www.explodingdots.org/) - from Rufus
 
 ## Researched
 
