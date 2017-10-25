@@ -82,6 +82,19 @@ title: Link Research
 * http://juan.benet.ai/data/2014-03-07/format-conversion
 * https://etleap.com/
 
+
+### Explorable explainations
+
+* [Nick Case](http://ncase.me/)
+* https://essay.ink/ - by Omar Rizwan
+
+
+### Mathland
+
+* https://www.khanacademy.org/research/reports/early-math - from Omar Rizwan
+* https://www.khanacademy.org/research/reports/cantor - from Omar Rizwan
+* https://www.khanacademy.org/research?t=projects - from Omar Rizwan
+
 ### Random 
 
 * main competitor to bubble.is: http://www.configure.it/
