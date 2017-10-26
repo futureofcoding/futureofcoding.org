@@ -47,6 +47,8 @@ title: Research Ideas
 
 * can we combine strong types + macros to get natural language coding or less stack overflow?
 
+* make list of all rich "fabric" (powerful ideas) for genetic epistology, such as precision, debugging, mindfulness, definitionism, modeling, etc
+
 * essay about why we should stop teaching for loops in favor of forEach loops and while loops (is this how python works already?)
 
 * essay about pg's lists are just numbers and numbers are just lists. what are core data structures?
