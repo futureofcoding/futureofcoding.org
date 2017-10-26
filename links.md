@@ -42,6 +42,7 @@ title: Link Research
 
 ### Projectional / block based editors
 
+* http://cs.wellesley.edu/~blocks-and-beyond/program.html
 * http://kevinmahoney.co.uk/articles/structural-editor-prototype/
 * [Max audio editing software](https://en.m.wikipedia.org/wiki/Max_(software))
 * [Hazelnut](https://www.youtube.com/watch?v=99SRVnRA9Ec)
@@ -94,6 +95,9 @@ title: Link Research
 * https://www.khanacademy.org/research/reports/early-math - from Omar Rizwan
 * https://www.khanacademy.org/research/reports/cantor - from Omar Rizwan
 * https://www.khanacademy.org/research?t=projects - from Omar Rizwan
+* http://ife.ens-lyon.fr/publications/edition-electronique/cerme6/wg4-11-haspekian-bruillard.pdf
+* https://www.researchgate.net/publication/295403503_Behind_students'_spreadsheet_competencies_their_achievement_in_algebra_A_case_study_in_a_French_vocational_school
+
 
 ### Random 
 
