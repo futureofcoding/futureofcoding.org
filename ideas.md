@@ -49,6 +49,8 @@ title: Research Ideas
 
 * essay about why we should stop teaching for loops in favor of forEach loops and while loops (is this how python works already?)
 
+* essay about pg's lists are just numbers and numbers are just lists. what are core data structures?
+
 * essay about stop teaching sorting algorithms
 
 * essay about the flexbox block in cycle v2
