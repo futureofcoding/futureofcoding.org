@@ -101,6 +101,8 @@ title: Link Research
 
 ### Random 
 
+* http://alan-kay.wikia.com/wiki/Alan_Kay_Wiki - from Glen Chiacchieri
+* [DynamicLand Zine](https://www.dropbox.com/s/68cu6ztvpgmwnsa/dynamicland.pdf?dl=1) - from Glen Chiacchieri
 * main competitor to bubble.is: http://www.configure.it/
 * https://www.froala.com/pages (design web pages with blocks, looks similar to Universe or webflow)
 * http://ravichugh.github.io/sketch-n-sketch/ (similar to aprt.us)
