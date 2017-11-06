@@ -42,6 +42,7 @@ title: Link Research
 
 ### Projectional / block based editors
 
+* http://cs.wellesley.edu/~blocks-and-beyond/program.html
 * http://kevinmahoney.co.uk/articles/structural-editor-prototype/
 * [Max audio editing software](https://en.m.wikipedia.org/wiki/Max_(software))
 * [Hazelnut](https://www.youtube.com/watch?v=99SRVnRA9Ec)
@@ -50,6 +51,7 @@ title: Link Research
   * get back to Jonathan Edwards after reading this one!
 * [Usability Analysis of Visual Programming Environments](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.35.815&rep=rep1&type=pdf)
 * [A Module System for a General-Purpose Blocks Language](http://www.vpri.org/pdf/tr2015003_modsys.pdf)
+* [ProseMirror](https://news.ycombinator.com/item?id=15465125)
 * http://www.luna-lang.org/
 * https://www.touchdevelop.com
 * https://www.hyperpad.com/
@@ -69,12 +71,46 @@ title: Link Research
 
 ### Database for humans
 
+* spend time with airtable -- heston says it's beautiful
 * https://sheetsu.com/
 * [Graphcool framework](https://blog.graph.cool/graphcool-framework-preview-ff42081b1333?gi=566b11413ea2)
 * https://www.producthunt.com/posts/csvshare
+* [Dear Postgres](http://www.craigkerstiens.com/2017/10/12/dear-postgres/)
+* alpha sense, cap iq, sentieo (from Sarah's friend)
+
+### ETL for humans
+
+* http://juan.benet.ai/data/2014-03-07/format-conversion
+* https://etleap.com/
+
+
+### Explorable explainations
+
+* [Nick Case](http://ncase.me/)
+* https://essay.ink/ - by Omar Rizwan
+
+
+### Mathland
+
+* https://www.khanacademy.org/research/reports/early-math - from Omar Rizwan
+* https://www.khanacademy.org/research/reports/cantor - from Omar Rizwan
+* https://www.khanacademy.org/research?t=projects - from Omar Rizwan
+* http://ife.ens-lyon.fr/publications/edition-electronique/cerme6/wg4-11-haspekian-bruillard.pdf
+* https://www.researchgate.net/publication/295403503_Behind_students'_spreadsheet_competencies_their_achievement_in_algebra_A_case_study_in_a_French_vocational_school
+
 
 ### Random 
 
+* http://alan-kay.wikia.com/wiki/Alan_Kay_Wiki - from Glen Chiacchieri
+* [DynamicLand Zine](https://www.dropbox.com/s/68cu6ztvpgmwnsa/dynamicland.pdf?dl=1) - from Glen Chiacchieri
+* main competitor to bubble.is: http://www.configure.it/
+* https://www.froala.com/pages (design web pages with blocks, looks similar to Universe or webflow)
+* http://ravichugh.github.io/sketch-n-sketch/ (similar to aprt.us)
+* http://mgrf.de/vogo/ (looks similar to aprt.us)
+* https://building.onuniverse.com/
+* https://nextjournal.com/dubroy/ohm-parsing-made-easy
+* [Nicky Case - LOGO with english](https://twitter.com/ncasenmare/status/919219174311911424)
+* [HN:	Clojure/Conj 2017 – Opening Keynote by Rich Hickey [video]](https://news.ycombinator.com/item?id=15464423)
 * [TOby Schachman's Shadershop](http://tobyschachman.com/Shadershop/)
 * watch videos of yahoo pipes and hypercard - from Glen Chiacchieri
 * [Desigining to reveal the nature of the universe Jonathan Blow](https://www.youtube.com/watch?v=OGSeLSmOALU) - from Glen Chiacchieri
@@ -118,7 +154,8 @@ title: Link Research
 * [On Abstraction - Zach Tellman](https://m.youtube.com/watch?v=x9pxbnFC4aQ) from dan scanlon 
 * [New Etoys](http://www.vpri.org/fonc_wiki/index.php?title=New_Etoys)
 * [Alan Kay Videos](http://www.vpri.org/html/words_links/links_ifnct.htm) 
-* Lively Kernal
+* Lively Kernal https://harc.ycr.org/project/lively/
+* http://cs.wellesley.edu/~blocks-and-beyond/
 * HyperCard
 * Vi Hart
 * [code.world](https://code.world/#PgOPqtxOVsfDQJe7-GkGdnQ)

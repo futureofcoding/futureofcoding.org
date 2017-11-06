@@ -6,6 +6,10 @@ title: Journal
 
 This jornal is stream-of-consciousness style so apologies in advance if it's difficult to read. You should know that I don't have spellcheck and I'm a terrible speller. Most importantly, you should know that I add new entries at the top of the page, so you'll have to scroll to the bottom if you want to start from the beginning.
 
+### October 18, 2017
+
+This journal is now officially deprecated! If you'd like to continue following my progress, you can do so by following the commit log at futureofcoding.org/log. 
+
 ### October 5, 2017 9:15am
 
 So as it turns out, I had plenty of productive time on my hands yesterday to do research here while at jury duty. However, possibly because I wasn't expecting to work, I didn't default to continuing on Elm Flappy Bird like I was planning to. Instead I began [strategizing for this project](https://github.com/stevekrouse/futureofcoding.org/issues/51) which I wasn't planning to do until next week but I'm really happy I got started already! I had [some more thoughts in this vein this morning](https://github.com/stevekrouse/futureofcoding.org/issues/53).
