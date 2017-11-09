@@ -31,7 +31,7 @@ const putCommitHashInURL = commitHash => {
   searchParams.set("version", commitHash)
   const urlWithoutSearch = window.location.toString().replace(window.location.search, "")
   const newURL = urlWithoutSearch + "?" + searchParams.toString()
-  window.history.replaceState({}, null, newURL) // so as to now cause page to reload
+  window.history.replaceState({}, null, newURL) // replaceState updates the URL without reloading the page
 }
 
 const getMostRecentCommits = (repoPath, filePath) => fetch(
