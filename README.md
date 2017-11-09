@@ -8,4 +8,4 @@ You can also take a look at [the issues](https://github.com/stevekrouse/futureof
 
 Feel free to shoot me an email as well. I'm steve at futureofcoding.org.
 
-<script repoPath="stevekrouse/futureofcoding.org" type="text/javascript" src="https://cdn.rawgit.com/stevekrouse/unbreakable-links/67bca330b3423c82bbcadcc4bb4025e1234fc9dc/index.js"></script>
+<script repoPath="stevekrouse/futureofcoding.org" type="text/javascript" src="/unbreakable-links/index.js"></script>
