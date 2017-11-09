@@ -242,4 +242,4 @@ ga('create', 'UA-103157758-1', 'auto');
 ga('send', 'pageview');
 
 </script>
-<script repoPath="stevekrouse/futureofcoding.org" type="text/javascript" src="https://cdn.rawgit.com/stevekrouse/unbreakable-links/a52fab9ea12aa7faa69debc8456e1d33bcdcd70d/index.js"></script>
+<script repoPath="stevekrouse/futureofcoding.org" type="text/javascript" src="https://cdn.rawgit.com/stevekrouse/unbreakable-links/67bca330b3423c82bbcadcc4bb4025e1234fc9dc/index.js"></script>
