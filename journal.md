@@ -1396,9 +1396,10 @@ Clearly, I should start with (8) because it will help me come up with other thin
    }
 
    var all = document.getElementsByTagName("li");
-   for (var i=0, i < all.length; i++) {
+   for (var i=0; i < all.length; i++) {
         var element = all[i];
         element.innerHTML = urlify(element.innerHTML);
    }
   
   </script>
+<script repoPath="stevekrouse/futureofcoding.org" type="text/javascript" src="https://cdn.rawgit.com/stevekrouse/unbreakable-links/a52fab9ea12aa7faa69debc8456e1d33bcdcd70d/index.js"></script>
