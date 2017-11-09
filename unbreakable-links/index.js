@@ -13,6 +13,7 @@ const repoPathFromScriptAttribute = () => {
 const rawGitLink = (repoPath, filePath, commitHash) => "https://cdn.rawgit.com/" + repoPath + "/" + (commitHash ? commitHash : "master") + filePath
 
 const load = (repoPath, filePath, commitHash) => {
+  console.log("would have loaded: " + rawGitLink(repoPath, filePath, commitHash))
   return // disabled for now
   document.body.style.margin = "0 0 0 0px"
   const iframe = document.createElement("iframe")
@@ -50,8 +51,6 @@ const getFileExistsNow = (repoPath, filePath) => fetch(
   .then(resp => resp.status == 200)
 
 const showBanner = (repoPath, filePath, status, newCommitHash) => {
-  return // disabled for now
-  // TODO add links to newCommitHash page in banner text
   const onclick = `onclick="window.location.search = '?version=${newCommitHash}'"`
   const bannerText = {
     "FILE-NEVER-EXISTED": `This page doesn't exist in our archives.`,
@@ -61,6 +60,9 @@ const showBanner = (repoPath, filePath, status, newCommitHash) => {
     "DELETED-MOST-RECENT": "This page has been deleted. You are viewing the most-up-to-date archived version.",
     "NEWER-VERSION-DELETED-AVAILABLE": `This page has been deleted, but this is not <a ${onclick}>the most up-to-date version in the archive</a>.`
   }[status]
+  
+  console.log("would have said: " + bannerText)
+  return // disabled for now
   
   const iconDiv = document.createElement('span')
   iconDiv.style.width = "30px"
