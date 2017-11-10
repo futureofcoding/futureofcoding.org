@@ -172,8 +172,11 @@ Emmanuel of Bubble.is says visual programming will be a slow revolution. Until y
 How do we get from here to there? Elon made it seem so simple in his first plan for Tesla:
 
 > Build sports car
+
 > Use that money to build an affordable car
+
 > Use that money to build an even more affordable car
+
 > While doing above, also provide zero emission electric power generation options
 
 I think it's safe to say that I don't know enough about this problem to declare my plan so succiently. Yet!
