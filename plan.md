@@ -167,7 +167,7 @@ While "as powerful as JavaScript" mostly covers it, I want to make clear that th
 
 Emmanuel of Bubble.is says visual programming will be a slow revolution. Until you can point to something people already know about and say "that was built with this", this is not "real coding."
 
-### Strategy
+## Strategy
 
 How do we get from here to there? Elon made it seem so simple in his first plan for Tesla:
 
@@ -228,7 +228,7 @@ I will also now start looking into various funding options for my work here, par
 
 I'd love to have a least $1 or 2k per month coming in in a sustainabile way within the next few months.
 
-### Intriguing Research Topics
+### Next Research Topics
 
 After I finish that essay, my next step will be *picking what to research next*. Regardless of whether I'm a builder or researcher, I'll still need to do research as my next step. 
 
