@@ -4,281 +4,267 @@ title: Future of Coding Plan
 
 # Future of Coding Plan
 
-## Todos
+Last month, I set aside a single day -- October 16th, 2017 -- to write up [my life plan](http://stevekrouse.com). It summarized my past and current philosophies on life. One goal of this plan was to set the foundation for my work plan for the Future of Coding. Possibly the most important part of my life plan was setting my priorities:
 
-* integrate this with /about and the older version of /plan
-* create /goals
-* update /about
-* create /community-guidelines
+1. My mental health
+2. The mental health of my significant other
+3. The mental health of my mom, dad, and brothers
+4. My physical health
+5. My relationship with my significant other
+6. My relationships with my mom, dad, and brothers
+7. My relationships with my ~5 closest friends
+8. My work
+9. My relationships with my extended family
+10. My relationships with my ~20 closest friends
 
-## Why
+Note that work is #8. Speaking of work, creating this work plan has proved more difficult. This is potentially because I've had a crappy time getting rid of a stubborn cold. Or perhaps because by not doing it in a single day gives other people the opportunity to give me feedback which undermines my confidence in the plan I created the day before and leads me to starting over.
 
-Today and for the foreseeable future coding is the essence of empowerment: intellectual expression, economic freedom, and endless hours of serious fun.
+## Versions of this plan 
 
-TODO add emotions, human element into this. Maybe tell a story.
+For some reason, I think it's important to explain how I arrived at my ideas, not just giving you the polished final version. Let me show you my steps. You can even see my eraser marks.
 
-Coding is an extension of your imagionation. Dream it, code it.
+### 1. [/about](https://github.com/stevekrouse/futureofcoding.org/commit/16321d65a0381b78a1aa049d4666aadac9db8319#diff-6083a88ee3411b0d17ce02d738f69d47)
 
-ASPIRATIONAL. Your imagionation is the limit.
+My first draft did a good job of justifying the path I was currently on. I articulated my goal of making "programming as intuative as Facebook", and my strategy of getting there by building "a functional reactive Scratch."" The next steps, according to this plan, are FRP research (Conal Elliot, Reflex, CycleJS, Elm, Reflex), working on my design principles, and starting to prototype!
 
-###  Mission 
+### 2. [/plan v1](https://github.com/stevekrouse/futureofcoding.org/commit/4d37f65a04b418772687da1645d1da8d01a4fc30#diff-f763d4e632c0df8461069772c5498887)
 
-Empower everyone to communicate and develop their ideas fully (and precisely?) (with computers?)
+Where the last version was justifying, this next version was inquiring. It was directly inspired by watching [Chris Granger's SPLASH 2017 keynote](https://www.youtube.com/watch?v=a_o-ZzgpiK8), which I highly recommend. It refocused my attention on the end-user. What do *they* want to do?
 
-### Vision
+I also created the follow chart to help organize my dozen ideas on how to move forward:
 
-Programming can be as easy to use as Facebook. (And more engaging?)
+| # | Customer  | Sustained by      |  
+|---+-----------+-------------------+
+| 1 | Students  | Parents           |
+| 2 | Students  | Patreon / OC*     |
+| 3 | Adults    | Companies         |
+| 4 | Adults    | Open Collective   |
+| 5 | FoC Ppl*  | Patreon           |
+| 6 | FoC Ppl*  | VC Management fee |
 
-### Goals
+    * OC stands for Open Collective. 
+    * FoC Ppl stands for "Future of Coding people", other people working on future of programming tools
 
-[~90%](http://www.pewresearch.org/fact-tank/2017/01/12/evolution-of-technology/ft_17-01-10_internetfactsheets/) of Americans use the internet.
-[~60%](https://www.statista.com/statistics/183460/share-of-the-us-population-using-facebook/) of Americans use Facebook.
-[~1%](https://www.computerworld.com/article/2483690/it-careers/india-to-overtake-u-s--on-number-of-developers-by-2017.html) of Americans know how to code.
+### 3. [/plan v2](https://github.com/stevekrouse/futureofcoding.org/commit/7385f741463a6cc23b90c724afb2322860e99dbe#diff-f763d4e632c0df8461069772c5498887)
+
+I showed the above table to Dan Shipper last week. He was really excited about #5: doing research, creating prototypes, writing essays, and recording podcasts for the Future of Coding community. It does seem like a good match for me: allowing me to focus on my favorite activities, and get to skip dealing with the logistics of revenue, customers, and employees. This path makes sense as long as I don't care about money (beyond basic sustainability) or having control.
+
+The open questions from this plan are:
+
+1. What if nobody listens? What if nobody builds the future of coding that I write about? 
+
+2. How do I write content that people read? How do I develop a following? 
+
+3. How do I sustain this strategy financially?
+
+4. Will I enjoy being a full time "researcher", instead of an entrepreneur?
+
+### 4. /plan v3 - the current version, below
+
+Yesterday was an cognitive dissonance kind-of day. I spent it talking with three outstanding entrepreneurs in the future of coding space. They made the for-profit model difficult to dismiss. 
+
+Lloyd Tabb of Looker, Paul Chiusano of Unison, and Emmanuel Straschnov of Bubble.is are building respective products for people who work at businesses. There are two clear benefits to this strategy:
+
+1. The for-profit sustainability models makes a lot of sense. If 1) your customer is someone who has money and 2) you provide them with something they cannot get cheaper elsewhere, they will continue to sustain your efforts indefinitely. 
+
+2. Most simple platforms, like Facebook, the iPhone and Scratch, are simple *because* they are so cohesive. As much as I don't like the *idea* of walled-gardens created by one monolithic organization, that's how many of our most intuitive interfaces were created.
+
+At the same time, the research model has been quite successful. Maybe I'd feel less cognitive dissonance if I spent yesterday with the thought-leadership crowd. Some notable examples of research translating to end-users:
+
+* Alan Kay's PARC -> Steve Jobs -> the Mac -> billions of people
+* Bret Victor's Learnable Programming -> me -> The Coding Space & WoofJS -> thousands of students
+* Elon Musk's Hyperloop -> Hyperloop One -> hopefully millions of people some day soon
+
+Luckily later today, November 10th, 2017, I have a phone call with Nicky Case who seems to be living the researcher dream.
+
+## The Mission
+
+While my strategy/plan still needs work, my mission is becoming clearer. 
+
+It was helpful for me yesterday to contrast my goals with those of Emmanuel's at Bubble.is.
+
+His goal is to *empower businesses to create apps without code*. That's an amazing goal. But it's not my goal. Why? When I use Bubble, I don't feel joy. I don't feel myself getting smarter. I'm not thinking powerful ideas in the Seymour Papert sense. Bubble is (pun not intended) the cheapest and quickest way to get something done. It's about the end-product, the business solution. That's not what programming is for me.
+
+For me, programming is a medium for creative expression. Just like writing. It's how I articulate what's in my head, refine my ideas, and communicate them with others. The medium of coding is different from the medium of writing in the same way that the medium of pictures is different from that of writing.
+
+All media -- writing, pictures, coding -- can be used either use-case: business or artistic. You can write advirtisement copy or a fictional short story. You can create a entreprise software company or share a simple animation with friends.
+
+The same goes for bicyling. Steve Jobs saw the computer as the "bicycle for the mind." You can bike to get somehwere faster or to workout or to simply have fun.
+
+[Pencil Code](https://pencilcode.net)'s mission is to "make programming as simple and powerful as using a pencil." That's pretty close to what I'm going for.
+
+Let's go with this for now: "empowering creative expression through programming"
+
+## The Vision
+
+If that's the mission, what's the vision? 
+
+Here are some quick phrases I've found effective at communicating what I'm trying to do:
+
+1. "Squarespace for apps"
+2. "A tool as powerful as JavaScript and as easy to use as Facebook"
+3. "A tool as easy to use as Scratch but with a really high ceiling"
+
+### Principles
+
+Those phrases more or less sum up the picture I have in my head. However, there are a few additional principles that are important. If we made a "Squarespace for apps" that didn't embody these principles, I wouldn't consider the job done.
+
+#### Comprehensible
+
+We need more than just access to an open source repository of files and folders. It currently takes hours to get familiar enough with a new codebase even to make a simple change. The organization of code needs to lend itself to comprehensiblilty.
+
+The CycleJS devtools dataflow diagram does a good job of making a codebase quickly comprehensible:
+
+<video preload="none" autoplay loop poster="https://user-images.githubusercontent.com/2288939/32678297-cdd9b3ac-c62f-11e7-8534-861163725b04.png" src="./media/cycle-js-devtools-diagram.mp4" type="video/mp4" style="width:50%"></video>
+
+#### Liberal
+
+As [r0ml says](https://lwn.net/Articles/712376/), the legal right to fork a codebase is not enough. What would be the value in having all of Facebook's code up on Github? It wouldn't allow us to modify the Facebook platform -- we'd only be able to start a competing platform somewhere else.
+
+We need a programming platform that makes it easy for end-users to modify apps in arbitrarily complex ways *as they are running.*
+
+Imagine system where you can select a piece of text in a running app and change it's properties, just like how you can with Inspect Element:
+
+![inspect3](https://user-images.githubusercontent.com/2288939/32678093-f9ccd9fe-c62e-11e7-9986-3f9f5bb5e502.gif)
+
+When I show this to my students, they immediately want to know:
+
+1. Does this change for everyone?
+2. Is it saved for me?
+
+Currently the answer to both questions is no, but we can imagine a system where would could answer with a tentative yes to the second question and an even more tentative yes to the first.
+
+Together, comprehensibile and liberal software will enable software to be more decentralized and cheaper because it will drastically increase the number of people who can modify applications.
+
+#### Powerful ways of thinking
+
+There are powerful ways of thinking that can be embedded within programming, such as:
+
+* rapid iteration - immediately seeing how your changes affect the output
+* anthropormphization - imagining yourself inside the algorithm
+* top-down design - breaking a big task into smaller sub-problems
+* composibility - fitting pieces together
+* abstracting - generalizing code to work in different contexts
+* modeling - understand how state changes over time
+* simplicity - build complex systems out of understandble parts
+
+In [Making JavaScript Learnable](https://medium.com/@stevekrouse/woof-d9adf2110fc6), I constrast how ProccessingJS and WoofJS enable thinking:
+
+![screenshot 2017-11-10 at 4 19 50 pm](https://user-images.githubusercontent.com/2288939/32679070-08b75ba2-c633-11e7-8a15-e6c2711265e2.png)
+
+#### Intuitive
+
+While "easy as Facebook" mostly covers it, I want to make clear that it needs to be "learnable" in the Seymour Papert/[Learnable Programming](worrydream.com/LearnableProgramming/) sense.
+
+This means that you don't have to take a class or watch a video to get started. You learn by doing, *learn by building*. As 
+
+Scratch is a perfect example of such an interface, both for its lack of syntax and for the way it [represents types as shapes](https://medium.com/@stevekrouse/types-are-shapes-d6af1e83192f).
 
 
+#### No Ceiling
 
-## Strategy
+While "as powerful as JavaScript" mostly covers it, I want to make clear that this system is not just for kids or just to learn how to code. As Bret says, "these are not training wheels." One of the biggest challenges of this project will be convincing people that this is "real coding", despite it not looking like what they imagine real coding to look like. 
 
-This project is hard. Essentially hard. We can't do it alone. 
+Emmanuel of Bubble.is says visual programming will be a slow revolution. Until you can point to something people already know about and say "that was built with this", this is not "real coding."
 
-My strategy is to support the future of coding movement within the developer community.
+### Strategy
 
-What would the world look like if 10,000 developers were working full time on projects related to the future of coding?
+How do we get from here to there? Elon made it seem so simple in his first plan for Tesla:
 
-### Priorities
+> Build sports car
+> Use that money to build an affordable car
+> Use that money to build an even more affordable car
+> While doing above, also provide zero emission electric power generation options
 
-#### Accomplish the goal
+I think it's safe to say that I don't know enough about this problem to declare my plan so succiently. Yet!
 
-TODO
+There are so many pieces to this puzzle that need work. Think about all you'd have to explain to a non-programmer:
 
-#### Medium is the message
+* the language and syntax
+* the comptutational model 
+* the underlying technology stack (the internet, the web, the app store)
+* setting up their workflow to allow for fast iteration (webpack, hot reloading)
+* connecting to databases (SQL, NoSQL, ORM, deployment)
+* setting up user accounts and authentication (Rails, Devise)
+* setting up deployment (heroku)
+* eventually helping with scalability (redis, load balancing)
+* collaboration with other developers (git, github, pull requests, issues)
+* version control (semantic versioning, releases, cache busting)
+* package and dependency management
 
-- Git Linux Facebook
-- Elon / Jobs jerks. Zuck stole from early cofounders
-- I always wanted to be a model for others to follow and was sad when I realized that as a rich kid I was unrelatable
-  - However now I wonder... we fight so our kids can become lawyers, philospohers, artists...
-  - In a post scarcity world, can I be a model for people with UBI looking for meaning? What happens when all kids have trust funds? Burning man. Player piano.
-  - When god, work ethic of burguisee disappear, what brings us meaning?
-  - I was trying to be self made man of 20th century. I coulnd‘t be carnegie
-  - More like spielfogel. Working hard even with a trust fund
-  - Acknowledge all of the privilege
-  - Separating the joy of creating from the necessary of creating
-  - Getting over the shame, embracing the creative spirit, the artistic spirit to have fun to impact people, inspire them, entertain them
-  - "Not everyone can be an artist" —> yes they can! The world is a big place. Everyone has a website. That would‘ve been unheard of
-  - Think about how we continue to get better
-       * Lean
-       * Decentralization with blockchain
-       * Open source
-       * Etc
-       * Always at the beginning of infinity deutch
-        - Mask and wig play / unibomber
-- Equal parts elon Musk (Hyperloop), Andre Staltz (CycleJS), Nicky Case (Explorable Explainations &amp; Patreon), Bret Victor (essays and talks), Justin Lafazan (NextGen Summit FB community), Sam Harris (thinking in public), "and zero parts humble" says my brother
+No wonder coding bootcamps take three months!
 
+### Build or Research?
 
-## Anti-priorities
+I think the main question is whether I want to build or research long-term.
 
-1. Control
-2. Financial Success
-3. Credit
+On the one hand, builders get shit done. Can I imagine myself starting a company like Looker or Bubble.is? Creating a new open-source langauge/platform like Linux, Clojure or Scratch? One benefit of working on a single project is that it could consolidate further innovation on the remaining problems (listed above) by employees and/or the open source community. 
+    
+On the other hand, it all starts with research. Can I imagine myself staying in research-mode in perpetuity, like Alan Kay or Bret Victor? Would I be fufilled doing research, making prototypes, and publishing papers?
+    
+It's clear that both models move the world forward. Without foundational research, people wouldn't know what to build. Without people starting projects, none of the great ideas from research would get built. I guess it comes down to *what am I best at?* and *what do I enjoy most?*
 
-### Sweetspot
+Those are two questions that I don't know that answers to. Yet! Luckily, I don't have to decide now for forever. I can take each model out for a test-drive, see how it goes, and change later if necessary.
 
-- Framework: Intersection of things I am good at, enjoy, pays bills, impact
-  - ![45c69235-ebfb-4c01-ab97-ce40195ab6df](https://user-images.githubusercontent.com/2288939/32399269-0f892d24-c0cb-11e7-8414-fa02277eda1c.jpeg)
+### Wrapping up The Coding Space & WoofJS
 
-### Tactics
+Besides, I'm getting ahead of myself here. Before I take on "building the future of coding" as either a builder or researcher, I need to wrap up my work with The Coding Space. To me this means communicating what I learned about teaching kids to code over the past years. Writing this essay will take at least a few weeks, maybe even a few months if I do it justice.
 
- * Invited to keynote a conference like SPLASH by Jan 1 2019
- * My activities will be research, writing, talks, interviews (customer and expert), podcasts, journaling, and prototyping
- * Goal is to be a thought leader "thought leader"
- * Not be a bottleneck. Come up with peer-to-peer ways of leveraging myself, community organizing
-
-* Publish problems
-  @r0ml: "list of what things want to do would be valuable. Just their unfiltered asks."
-        - What do kids want to do?
-       *  Mischief, such as spamoji and Gmail phishing
-2. Make money such as spamoji
-3. Get acclaim and attention
-4. Make something their friends use
-5. Allow their friends to communicate, high score, chat room, make plans, share notes
-6. Do something their friends think is hard.
-7. Show their friends how to do something, teach friends
-8. Earn money! Could getting kids bitcoin be a good idea? Get them a wallet where they couldn‘t have a bank account? Legality...?
- * business/product ideas
-      - Musk hyperloop
-      - Learnable programming -> TCS and WoofJS
-        - Email to Bret TODO find this
-        - Also emails to Granger and Alan with no response: make peer to peer like Justin Next Gen
-        - Also always reply or have autoresponder about why not and send to right place
-      - Tell the story of being at Looker and people saying that there were no tech companies doing interesting things. The problem is what problem to solve. Helping show people problems. Connecting people. Advising people. Empowering people.
-      - Tell story of Lando and Heston saying too many dollars chasing too few companies
-      - All about control. Employees or people I don‘t even talk to. Woofjs from LP. Or instruments of Elon.
-      - Some ideas
-        - Woof social network, teacher accounts
-       * who‘s woof‘s customer? students? teachers? after school programs? how would they word their problem?
-        - Woof/scratch resources site
-        - Database for humans
-        - Streamsheets / cyclejs devtools
-        - Logichub
-        - FoC community
-        - Unbreakable links as a github pages competitor
-        - ETL for humans
-        - Embedable blocks
-        - Embedable sprite editor
-        - Embedable media selector
-      - Prototypes
-        - Release code
-       * Not as much guilt or worry about premature adoption as Bret and Alan. More trust in this community. Not regret minimizing.
-
-
-### How I settled on this strategy
-
- * Difficult to have a goal-oriented career like Elon as opposed to proccess oriented one like a doctor
- * Articulated my thinking around /about and /plan
-      - Categorized dozens of ideas into 6 categories
-      - Showed the table to Dan Shipper
-      - #5 was clear to him (partially because it‘s most attractive to him as well)
-      - Allows me to do 80% of my favorite parts and 20% of my least favorite parts
-      - Works becuase I don‘t want control or lots of money
- * some processes to think about explicitly, some things in conversation, others subconsciously like in a math exam read problems first then go back
-
-
-### Feedback
-
- * Eli, "yeah this is clearly what makes sense for you."
- * My mom says "building your brand"
- * Dad says "you keep teaching me"
- * Grandma says "I better take care of myself. Gives me incentive to live long enough to see what you come up with."
- * Me "I feel like this is the right path for me because I‘m terrified both of success and failure."
+In the meanwhile, I'll continue publishing my podcast once a week, spend time talking to people on [the Future of Programming Slack](https://futureprogramming.slack.com), and talking with [people I admire on Twitter](https://twitter.com/stevekrouse/lists/future-of-coding).
 
 ### Sustainability
 
-* $2k per month from this project by July 1 2018
-* $4k per month by Jan 1 2019
-* Foundations, think tanks, corporate sponsors, patreon, open collective
-* Interview Nicky Case
-* Interview nadia eghbal
-* Explore "give it back to community model with Zach Valenti"
+I will also now start looking into various funding options for my work here, particularly for the research and non-profit models because I have much more questions about it than the for-profit model. My current thinking includes:
 
-### Actionable metrics
+* starting a Patreon
+* talking with foundations
+* talking with corporate sponsors
+* talking with research groups
+* talking with think tanks
+* talking to media companies about get paid for my writing content directly
 
-* not vanity metrics
-* ideas
-  * time reading
-  * github projects created
-  * commits per day
-  * number of hours end users spend in projects the community creates
+I'd love to have a least $1 or 2k per month coming in in a sustainabile way within the next few months.
 
+### Intriguing Research Topics
 
-## Next Steps
+After I finish that essay, my next step will be *picking what to research next*. Regardless of whether I'm a builder or researcher, I'll still need to do research as my next step. 
 
-### Putting a "bow" on my work at The Coding Space
+#### Visual Metaphors for Functional Reactive Programming
 
-#### "So you think you have an app idea"
+Because of how easy it is to *understand* a program written in the FRP-style, I am intrigued by finding a way to make functional reactive programming more intuitive via visual metaphors. Doing research here would mean:
 
-#### "So you want to learn to code"
+* reading Conal Elliot, playing with Fran
+* playing with Haskell's Reflex
+* prototyping Streamsheets
+* prototyping FRP Scratch, FRP Woof
 
-* Pimpelur vs school langauge vs duo lingo
-* Scratch is amazing (finish this on medium or include here)
-* Learnable programming
-* Not Ruby on Rails (Sam john post, monad tutorial fallacy). Meaningful to you and also intuitive.
-* Motivated by green checks, systematic
-* Top down with workflowy
-* Peak
+#### A Library For Visual Expression Building
 
-#### "So you want to someone else to learn to code"
+Andre Staltz made an interesting research suggestion [two months ago](/futureofcoding.org/notes/andre-staltz-call-9-11-17.md). Clearly the coding platform of the future will have some "expression builder" that, as Glen Chiacchieri says, will look more like math on paper than math in Google Sheets:
 
-* for the skill or for the transferable skills
-* School math vs IMACS
-* Socratic
-* Emotional validation
-* Motivational interviewing
+![image](https://user-images.githubusercontent.com/2288939/32679315-04384694-c634-11e7-89f6-207aa873be23.png)
+![image](https://user-images.githubusercontent.com/2288939/32679317-075ba280-c634-11e7-94b8-27fda41a7505.png)
 
-#### "So you want to make tech more diverse and inclusive"
+Given that this is a core component that *every* tool in this space will need, why not build it into a library that we can all use? The Ace and CodeMirror text editors are underratedly helpful in enabling innovation here. WoofJS would be significantly worse and more fustrating to build without them. 
 
-* with Nicole Kelner
+I imagine this library would be quite similar to Blockly, which enabled me to build [two](http://cycle.thecodingspace.com/#bo4zu4) [prototypes](http://stevekrouse.com/cycle/#todo-mvc) very quickly. The downsides of Blockly were 1) that it was built on top of Google Closure, and 2) that it didn't provide enough customizibility, particularly around the shape of the blocks, which greatly limits the level of innovation that can be done on the computational metaphors.
 
+## Summary
 
-### WoofJS
+In summary, here's my tentative plan:
 
-* Sustainability
-* Looking for full time person (engineer or business?)
-* Podcast
+1. The next 3-5 weeks will be spent writing about teaching kids to code. I will also continue podcasting, and begin looking into sustainability options for research.
 
+2. The following 4-8 weeks will back to research: probably either into visual metaphors for functional reactive programming, or a library for visual expression building.
 
-### Future of Coding
+3. Figure out whether my research will turn into a project/company or paper.
 
-#### State of Future of Coding
+4. If it's a project, build it. 
 
-* yearly post about progress in various sections
-* Maintain a list of product ideas
- * Similar to PG‘s list - look at that for context
- * But others can add their thoughts so maybe github issues
+5. If it's a paper, write it. 
 
-##### Databases
+6. Find something else to research.
 
-##### Collaboration
-
-##### Version control
-
-##### Deployment
-
-##### Authentication
-
-##### Analytics
-
-##### Libraries / dependencies / importing & exporting
-
-##### TODO: something about blocks, sytnax errors
-
-##### Computational Metaphors
-
-##### Foundational Architecture
-
-#### Community
-
-* slack group
-* meetups online
-* community guidelines like open source or sharing ndas secrets competitiveness
-  * Figure out what license to give all my code and recommend to the community
-    * Ask @r0ml. Also want open source if service as public performance
-* reach out to Justin at next gen summit ask Eli for because they run a killer fb group
-
-
-#### Research
-
-* Think about platforms for decentralizing this research effort (stephan lesser convo)
-  * maybe subreddit is the right platform...
-  * wiki?
-* Organize my research list
-* think about organizing links, collecting notes on them,categorizing them, ranking them in terms of urgency, getting comments on each line
-* Douglas Englebart, augmenting humans at top
-* Conal Elliot at top for computational metaphors
-* Codd at top for databases
-* guy who created etherium on top for foundational archatechure
-* continue working on twitter list (and newsletters) of people to follow here
-* Check hckrnews once per week on calendar
-* Set times for reading / research every week on calendar
-
-
-#### Writing
-
-* Migrate from trello public to github issues probably
-  * Also include "overwhelming feeling while learning, crying with dancing and android phone, scheme vs rails"
-  
-
-#### Podcast
-
-* Season 2?
-* Stream of consciousness episodes?
-* Topical solo episodes?
- 
-
-#### Twitter
-
-* Make a list of my top influencers and engage with them
-* Create twitter chat?
-* Create hashtag?
 
 
 <script>
