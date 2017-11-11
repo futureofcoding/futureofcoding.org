@@ -72,9 +72,33 @@ title: Nicky Case Call 11/10/17
     b. Examples
     c. Show
     d. Allow audience to "do"
-  
+  7. "Kill your darlings" 
+    a. Get rid of tangents. 
+    b. Get feedback from friends
+* his patreon story
+  * created right after parable of polygons, Jan 2015, $84
+  * grew linerally from parable of polygons until Sept 2015 when released something new
+  * advice: don't work on magnus opus
+  * advice: collaborate someone with an audience (like Vi Hart)
+  * Dec 2015 another jump: simulate world in emoji
+  * October 2016 we become what we behold $600
+  * To build a better ballet was timley so got a bump
+  * loopy got another bump
+  * 4 months ago, evolution of trust was a big jump and continued growth over the next few months
+  * In August, gave a pretty popular talk
+  * two audiences: 1) lay people, 2) programmers
+  * power law distribution, not many above $10
+* advice
+  * just set up a patreon
+  * if you have an audience, make it semi-presentable and polished
+    * add images links to all of your projects
+    * images headers
+    * maybe make a video
+  * rewards should be conservative
+    * access
+    * name in credits
+    * limited rewards for drawing character
 
-  
 
 
 <script>
