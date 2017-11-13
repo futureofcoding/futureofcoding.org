@@ -14,11 +14,11 @@ I think it's important to explain how I arrived at my ideas. Let me show you my 
 
 ### 1. [/about](https://github.com/stevekrouse/futureofcoding.org/blob/16321d65a0381b78a1aa049d4666aadac9db8319/about.md)
 
-My first draft did a good job of justifying the path I was currently on. I articulated my goal of making "programming as intuative as Facebook", and my strategy of getting there by building "a functional reactive Scratch." The next steps, according to this plan, are FRP research (Conal Elliot, Reflex, CycleJS, Elm), working on my design principles, and starting to prototype!
+My first draft did a good job of justifying the path I was currently on. I articulated my goal of making "programming as intuative as Facebook", and my strategy of getting there by building "a functional reactive Scratch." The next steps, according to this plan, are FRP research, working on my design principles, and starting to prototype!
 
 ### 2. [/plan v1](https://github.com/stevekrouse/futureofcoding.org/blob/4d37f65a04b418772687da1645d1da8d01a4fc30/plan.md)
 
-Where the last version was justifying, this next version was inquiring. It was directly inspired by [Chris Granger's SPLASH 2017 keynote](https://www.youtube.com/watch?v=a_o-ZzgpiK8), which I highly recommend. It refocused my attention on the end-user. What do *they* want to do?
+Where the last version was justifying, this next version was inquiring. It was directly inspired by [Chris Granger's SPLASH 2017 keynote](https://www.youtube.com/watch?v=a_o-ZzgpiK8), which I highly recommend. It refocused my attention on the end-user. What do *they* want to do with coding?
 
 In it, I also created the follow chart to help organize my dozen ideas on how to move forward:
 
@@ -61,7 +61,7 @@ Yesterday, November 9th 2017, I interviewed Emmanuel at Bubble.is. It was useful
 
 For me, programming is a medium for creative expression. Just like writing. It's how I articulate what's in my head, refine my ideas, and communicate them with others. 
 
-All media -- writing, pictures, coding -- can be used either for business or art. You can write advirtisement copy or a fictional short story. You can create a entreprise software company or share a simple animation with friends.
+All media -- writing, pictures, coding -- can be used either for business or art. You can write advirtisement copy or a fictional short story. You can create an entreprise software company or share a simple animation with friends.
 
 The same goes for bicyling. Steve Jobs saw the computer as the "bicycle for the mind." You can bike to get somehwere faster or to workout or to simply have fun.
 
@@ -132,8 +132,6 @@ Those are two questions that I don't know that answers to. Yet! Luckily, I don't
 
 Besides, I'm getting ahead of myself here. Before I take on "building the future of coding" as either a builder or researcher, I need to wrap up my work with The Coding Space and WoofJS. This means communicating what I learned about teaching kids to code over the past years. Writing this will take at least a few weeks, maybe even a few months if I do it justice.
 
-In the meanwhile, I'll continue publishing my podcast once a week, spend time talking to people on [the Future of Programming Slack](https://futureprogramming.slack.com), and talking with [people I admire on Twitter](https://twitter.com/stevekrouse/lists/future-of-coding).
-
 ### Sustainability
 
 I will also now start looking into various funding options for my work here, particularly for the research and non-profit models because I have much more questions about it than the for-profit model. My current thinking includes:
@@ -145,7 +143,7 @@ I will also now start looking into various funding options for my work here, par
 * talking with think tanks
 * talking to media companies about get paid for my writing content directly
 
-I'd love to have $1k per month coming in in a sustainabile way within the next few months.
+I'd love to have $1k per month coming in in a sustainabile way within the next few months. I really admire [Nicky Case](http://ncase.me) and he seems to have figured out how to [support himself through Patreon](https://www.patreon.com/ncase).
 
 ### Next Research Topics
 
@@ -175,15 +173,15 @@ I imagine this library would be quite similar to Blockly, which enabled me to bu
 
 In summary, here's my tentative plan:
 
-1. Launch a Patreon! This should happen in the next week or three (because I'm taking off next week for Thanksgiving).
+1. Launch a Patreon. This will happen in the next week or three (because I'm taking off next week for Thanksgiving).
  
-2. Write! Mostly about teaching and learning to code. 4-8 weeks, so Dec and Jan.
+2. Write. Mostly about teaching and learning to code. 4-8 weeks, so Dec and Jan.
 
-3. Research! Possibly into visual metaphors for functional reactive programming, or a library for visual expression building. 4-8 weeks, so Feb and March.
+3. Research. Possibly into visual metaphors for functional reactive programming, or a library for visual expression building. 4-8 weeks, so Feb and March.
 
-4. Figure out whether my research will turn into a project, company, or essay.
+4. Build or Write. Figure out whether my research will turn into a project or essay. If it's a project, build it. If it's an essay, write it. 4-12 weeks, so April, and possibly May and June.
 
-5. If it's a project, build it. If it's an essay, write it, and then find something else to research.
+6. Iterate. Re-evaluate progress and create the next draft of this plan.
 
 
 <script>
