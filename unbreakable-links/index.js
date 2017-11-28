@@ -103,6 +103,8 @@ const filePathFromRepoPath = repoPath => {
 }
 
 window.addEventListener("load", () => {
+  return // disable the entire library for now
+  
   // do nothing if this library is being loaded inside itself
   if (window.frameElement && window.frameElement.classList.contains('unbreakable-links')) { return }
   
