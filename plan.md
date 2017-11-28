@@ -173,7 +173,7 @@ I imagine this library would be quite similar to Blockly, which enabled me to bu
 
 In summary, here's my tentative plan:
 
-1. Launch a Patreon. This will happen in the next week or three (because I'm taking off next week for Thanksgiving).
+~~1. Launch a Patreon. This will happen in the next week or three (because I'm taking off next week for Thanksgiving).~~ *Will punt on this for now.*
  
 2. Write. Mostly about teaching and learning to code. 4-8 weeks, so Dec and Jan.
 
