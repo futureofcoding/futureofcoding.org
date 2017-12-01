@@ -4,9 +4,15 @@ title: Future of Coding Plan
 
 # Future of Coding Plan
 
+
+## Table of Contents
+
+* TOC
+{:toc}
+
 Last month, I set aside a single day -- October 16th, 2017 -- to write [my life plan](http://stevekrouse.com). It summarized my past and current philosophies on life. It also help me set my priorities. My work is #8.
 
-Speaking of work, creating this Future of Coding plan has proved difficult. I produced a number of different versions over the past few weeks. This is the 4th.
+Speaking of work, creating this Future of Coding plan has proved difficult. I produced a number of different versions over the past few weeks. This is the 5th.
 
 ## Versions of this plan 
 
@@ -48,140 +54,80 @@ The open questions from this plan are:
 
 4. Will I enjoy being a full time "researcher", instead of an entrepreneur?
 
-### 4. /plan v3 - the current version, below
+### 4. [/plan v3](https://github.com/stevekrouse/futureofcoding.org/blob/fcb70a6ebb26033a3dcb308929ca277145f286b8/plan.md)
 
-Go ahead and read it for yourself ;-)
+In this version of the plan I started keeping this running tab of past versions of the plan. (Something that the [unbreakable-links library](https://github.com/stevekrouse/unbreakable-links) may one day do for each of my files automatically.)
+
+I also articulated my mission as "empowering creative expression through programming" and my design principles, [which I refactored out to their own page](/principles).
+
+The central question is *to build or to research?*
+
+But first, I need to make sure things are wrapped up at The Coding Space, WoofJS.
+
+Then I need to do research on FRP or a blockly competitor. 
+
+And also think about sustainability.
+
+### 5. /plan v4
+
+This is the current version below...
+
+## Crusade
+
+### Inventing on Principle
+
+The lens for this version of the plan is Bret Victor's Inventing on Principle. 
+
+#### Delicously Embaressing
+
+I haven't watched this video since I was a freshman in college, five years ago. I can still remember buzzing with excitement as I wrote an email to Bret Victor immediatley watching, saying something to the effect of, *That is how I want to live my life. Tell me what to do next.* 
+
+I wish I had a copy of that email. I bet is deliciously embaressing... oops I found it:
+
+> Hey Bret,
+>
+> I just watched a few of your lectures and was especially impressed by Media for Thinking the Unthinkable and your DBX talk. At the end of Media For Thinking The Unthinkable talk, you mentioned that if we'd "like to help you find [this new medium], let me know." So this is me letting you know that'd I like to help you find it. 
+>
+> I'm not exactly sure what that'll entail, but you've convinced me that it is an incredibly worthwhile project.
+>
+> Best,
+> Steve
+
+So it seems like my memory is failing me here. While I did love *Inventing on Principle*, it sounds like I waited for a few more videos -- and an "invitation" -- to email him. 
+
+Anyways, last week I rewatched it last week and was blow away all over again. There was so much that I had forgotten! 
+
+#### Fighting for a cause
+
+First of all, the main point of the talk is the concept of "crusade" or "fighting for a cause," which I've recently been refering to as "living for an outcome," without realizing the similarty. I thought I was doing an Elon Musk, Juan Benet thing. If forgot about Larry Tesler (no modes), Bret Victor (immediate connection to creation), and even my hero Seymour Papert (microworlds). I have been having trouble figuring out Alan Kay's.
+
+Last night in discussion with Jonathan Leung, we articulated Elon's as "averting existential disaster." Juan Benet's is something like, because Elon's taking care that, I'll work on "accelerating innovation via Bell-Labs-style research."
+
+For contrast, I don't think Steve Jobs or Bill Gates had a cause they were fighting for. 
+
+#### Trick question: how do you find your cause?
+
+That's not the right question because your cause doesn't exist somewhere nebulous "out there", either somewhere else or some time else in the future. You don't have a cause. There is nothing to find. You must *create* your cause based on your beliefs and priorities about the world. (In fact, nothing is discovered. Everything is constructed. I just wrote [almost a thousand words on the subject](/essays/invented-or-discovered).)
+
+#### How do you construct your cause?
+
+Bret gives some good advice: do things. Interact with the world. Try a lot of different things. Reflect on your reactions, your responses. What attracts you? What repels you? What lights you up? See what you create. Keep a list. It make take years. 
+
+Then reflect on it. Can you synthesize all of what you've created and what lights you up into a unifying vision? 
+
+##### Insight
+
+A cause can not simply be to *make simple products*. That's too general. There's no insight. There's no umpgh. You can't wage a crusade on a platitude. 
+
+```(Disclamer: The actual historical Christian crusades were horrific in basically all ways, save the one: fighting with ones life for what one believes in. However, if this wording bothers people for all of the negative connotations, I will look for a better metaphor.)```
+
+If you want to fight with your life for something that everyone already agrees with you on, you're going to have a boring life. You need to have an insight that others disagree with because they don't have the context to appreciate your vision. As YC says, the insight that Airbnb has was that strangers would pay to stay in other strangers' homes. Imagine Airbnb without this insight: making travel accomidations better. It's un-actionable.
+
+"No modes." Now that's an insight. "Creators need immediate connection to what they create." That's an insight. "Microworlds can be what the gears were for Papert." That insight is responsible for making me who I am.
+
+I think Elon's is something like "save the planet from existential risks as a by-product of selling people what they want." It's the Tony Stark method, funding your superhero exploits by selling weapons, only Elon is combining them, which if I recall Tony Stark eventually did too.
 
 
-## The Mission
-
-While my strategy still needs work, my mission is becoming clearer. 
-
-Yesterday, November 9th 2017, I interviewed Emmanuel at Bubble.is. It was useful to think about my goals in relation to theirs. Bubble's goal is to *empower businesses to create apps without code*. That's an amazing goal. But it's not my goal. Why? When I use Bubble, I don't feel joy. I don't feel myself getting smarter. I'm not thinking powerful ideas in the Seymour Papert sense. Bubble is the cheapest way to get something done. It's about the end-product, the business solution. That's not what programming is for me.
-
-For me, programming is a medium for creative expression. Just like writing. It's how I articulate what's in my head, refine my ideas, and communicate them with others. 
-
-All media -- writing, pictures, coding -- can be used either for business or art. You can write advirtisement copy or a fictional short story. You can create an entreprise software company or share a simple animation with friends.
-
-The same goes for bicyling. Steve Jobs saw the computer as the "bicycle for the mind." You can bike to get somehwere faster or to workout or to simply have fun.
-
-[Pencil Code](https://pencilcode.net)'s mission is to "make programming as simple and powerful as using a pencil." That's pretty close to what I'm going for.
-
-Let's go with this for now: "empowering creative expression through programming"
-
-
-## The Vision
-
-If that's the mission, what's the vision? 
-
-Here are some quick phrases I've found effective at communicating what I'm trying to do:
-
-1. "Squarespace for apps"
-2. "A tool as powerful as JavaScript and as easy to use as Facebook"
-3. "A tool as easy to use as Scratch but with a really high ceiling"
-
-### Principles
-
-Those phrases more or less sum up the picture I have in my head. However, there are a few additional principles that are important. If we made a "Squarespace for apps" that didn't embody these principles, I wouldn't consider the job done.
-
-You can read them [here](./principles).
-
-## Strategy
-
-How do we get from here to there? Elon made it seem so simple in his first plan for Tesla:
-
-> Build sports car
-
-> Use that money to build an affordable car
-
-> Use that money to build an even more affordable car
-
-> While doing above, also provide zero emission electric power generation options
-
-I think it's safe to say that I don't know enough to declare my plan so succiently. Yet!
-
-There are so many pieces to this puzzle that need work. Think about all you need to learn now to code:
-
-* the language and syntax
-* the comptutational model 
-* the underlying technology stack (the internet, the web, the app store)
-* setting up their workflow to allow for fast iteration (webpack, hot reloading)
-* connecting to databases (SQL, NoSQL, ORM, deployment)
-* setting up user accounts and authentication (Rails, Devise)
-* setting up deployment (heroku)
-* eventually helping with scalability (redis, load balancing)
-* collaboration with other developers (git, github, pull requests, issues)
-* version control (semantic versioning, releases, cache busting)
-* package and dependency management
-
-No wonder coding bootcamps take three months!
-
-### Build or Research?
-
-My main strategy question is whether I want to build or research long-term.
-
-On the one hand, builders get shit done. Do I imagine myself starting a company like Looker or Bubble? Creating a new open-source langauge/platform like Linux, Clojure, or Scratch? One benefit of working on a single project is that it could consolidate further innovation on the remaining problems (listed above) by employees and/or the open source community. 
-    
-On the other hand, it all starts with research. Do I imagine myself staying in research-mode in perpetuity, like Alan Kay or Bret Victor? Would I be fufilled doing research, making prototypes, and publishing papers?
-    
-It's clear that both models move the world forward. Without foundational research, people wouldn't know what to build. Without people starting projects, none of the great ideas from research would get built. I guess it comes down to *what am I best at?* and *what do I enjoy most?*
-
-Those are two questions that I don't know that answers to. Yet! Luckily, I don't have to decide now for forever. I can take each strategy out for a test-drive, see how it goes, and change later if necessary. 
-
-### Wrapping up The Coding Space & WoofJS
-
-Besides, I'm getting ahead of myself here. Before I take on "building the future of coding" as either a builder or researcher, I need to wrap up my work with The Coding Space and WoofJS. This means communicating what I learned about teaching kids to code over the past years. Writing this will take at least a few weeks, maybe even a few months if I do it justice.
-
-### Sustainability
-
-I will also now start looking into various funding options for my work here, particularly for the research and non-profit models because I have much more questions about it than the for-profit model. My current thinking includes:
-
-* starting a Patreon
-* talking with foundations
-* talking with corporate sponsors
-* talking with research groups
-* talking with think tanks
-* talking to media companies about get paid for my writing content directly
-
-I'd love to have $1k per month coming in in a sustainabile way within the next few months. I really admire [Nicky Case](http://ncase.me) and he seems to have figured out how to [support himself through Patreon](https://www.patreon.com/ncase).
-
-### Next Research Topics
-
-After I finish writing about teaching and learning coding, my next step will be *picking what to research next*. Regardless of whether I'm a builder or researcher, I'll still need to do research as my next step. 
-
-#### Visual Metaphors for Functional Reactive Programming
-
-Because of how easy it is to *understand* a program written in the FRP-style, I am intrigued by finding a way to make functional reactive programming more intuitive via visual metaphors. Doing research here would mean:
-
-* reading Conal Elliot, playing with Fran
-* playing with Haskell's Reflex
-* prototyping Streamsheets
-* prototyping FRP Scratch, FRP Woof
-
-#### A Library For Visual Expression Building
-
-Andre Staltz made an interesting research suggestion [two months ago](/futureofcoding.org/notes/andre-staltz-call-9-11-17). Clearly the coding platform of the future will have some "expression builder" that, as Glen Chiacchieri says, will look more like math on paper than math in Google Sheets:
-
-![image](https://user-images.githubusercontent.com/2288939/32679315-04384694-c634-11e7-89f6-207aa873be23.png)
-![image](https://user-images.githubusercontent.com/2288939/32679317-075ba280-c634-11e7-94b8-27fda41a7505.png)
-
-Given that this is a core component that *every* tool in this space will need, why not build it into a library that we can all use? The Ace and CodeMirror text editors are underratedly helpful in enabling innovation here. WoofJS would be significantly worse and more fustrating to build without them. 
-
-I imagine this library would be quite similar to Blockly, which enabled me to build two prototypes ([Cycle v1](http://cycle.thecodingspace.com/#bo4zu4) and [Cycle v2](http://stevekrouse.com/cycle/#todo-mvc)) very quickly. The downsides of Blockly were 1) that it was built on top of Google Closure, and 2) that it didn't provide enough customizibility, particularly around the shape of the blocks, which greatly limits the level of innovation that can be done on the computational metaphors.
-
-## Summary
-
-In summary, here's my tentative plan:
-
-~~1. Launch a Patreon. This will happen in the next week or three (because I'm taking off next week for Thanksgiving).~~ *Will punt on this for now.*
- 
-2. Write. Mostly about teaching and learning to code. 4-8 weeks, so Dec and Jan.
-
-3. Research. Possibly into visual metaphors for functional reactive programming, or a library for visual expression building. 4-8 weeks, so Feb and March.
-
-4. Build or Write. Figure out whether my research will turn into a project or essay. If it's a project, build it. If it's an essay, write it. 4-12 weeks, so April, and possibly May and June.
-
-6. Iterate. Re-evaluate progress and create the next draft of this plan.
 
 
 <script>
