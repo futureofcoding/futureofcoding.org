@@ -4,15 +4,14 @@ title: Future of Coding Plan
 
 # Future of Coding Plan
 
+Last month, I set aside a single day -- October 16th, 2017 -- to write [my life plan](http://stevekrouse.com). It summarized my past and current philosophies on life. It also help me set my priorities. My work is #8.
+
+Speaking of work, creating this Future of Coding plan has proved difficult. I produced a number of different versions over the past few weeks. This is the 5th.
 
 ## Table of Contents
 
 * TOC
 {:toc}
-
-Last month, I set aside a single day -- October 16th, 2017 -- to write [my life plan](http://stevekrouse.com). It summarized my past and current philosophies on life. It also help me set my priorities. My work is #8.
-
-Speaking of work, creating this Future of Coding plan has proved difficult. I produced a number of different versions over the past few weeks. This is the 5th.
 
 ## Versions of this plan 
 
@@ -127,7 +126,38 @@ If you want to fight with your life for something that everyone already agrees w
 
 I think Elon's is something like "save the planet from existential risks as a by-product of selling people what they want." It's the Tony Stark method, funding your superhero exploits by selling weapons, only Elon is combining them, which if I recall Tony Stark eventually did too.
 
+## Constructing my cause
 
+I have thrown out a few different poorly articulated ideas in the past, including *enable thinking* (which I'd currently rephrase to the Engelbart *augment thinking*), or *transform programming into a medium for creative expression.* However, the first of those was too broad and the second too specific to contain my and what I want to fight for with my life.
+
+So how do I construct my cause. There are a few ways to do this:
+
+### 1) Pickle myself
+
+![](/media/Screenshot 2017-12-01 at 5.40.46 PM.png)
+
+Marinate in the ideas that pull me close. That's Bret Victor and all of his influences, particularly Seymour Papert, but also Alan Kay, Vaneer Bush, Douglas Engelbart, Jerome Bruner, and all the people Alan Kay talk about, including Mountessouri, Marshall McLuhan, and of course Papert's model Piaget. I'd also include a few more modern influences including Juan Benet, Chris Granger, Pete Hunt, Lloyd Tab, Paul Chiusano, Omar Rizwan, Nicky Case, Chris Granger again because his last Strangeloop keynote was fire, Jonathan Edwards, Mitch Resnick, Andre Staltz, and the almost 100 people [on my twitter list](https://twitter.com/stevekrouse/lists/future-of-coding).
+
+Read all of your influences. Everything they've written. Read their sources. Of the things that you have fond memories of, read them again. Takes notes. Reflect on them in length in writing. This is what I did yesterday with the Dynamicland zine and it got me thoroughly pickled.
+
+### 2) Look at what I've done, and generalize
+
+I haven't done this part yet. Will do when I resume writing this plan at some point next week...
+
+
+## Next Steps
+
+### 1. Construct crusade
+
+### 1a. Bret Victor Deep Dive
+
+### 1b. Visit Dynamicland
+
+And maybe Protocol Labs.
+
+### 1c. Continue pickling, building & reflecting
+
+### 2. Construct "real" plan
 
 
 <script>
