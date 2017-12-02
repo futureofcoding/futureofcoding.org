@@ -269,141 +269,275 @@ I could see myself being less impactful because I can't work well with others.
 
 ## Stage 2: Specific Goal Identification: Introduction
 
-In this stage, you will first be asked to define and personally title your overall future plan. Then, you will be asked to take your general plans for the ideal future and break them up into more specific goals. Each of these separate goals will also be given its own title. This step will help you clarify your goals.
+**In this stage, you will first be asked to define and personally title your overall future plan. Then, you will be asked to take your general plans for the ideal future and break them up into more specific goals. Each of these separate goals will also be given its own title. This step will help you clarify your goals.**
 
-Please specify a title and brief description for your ideal future as a whole. This can be as simple as "My Ideal Future," in both fields, or, if you have something more personal in mind, you can specify that. Imagine that you are both specifying and summarizing your ambitions with this title. This will help you remember what you are aiming for.
-In later screens you can define, prioritize, and analyze specific goals.
+**Please specify a title and brief description for your ideal future as a whole. This can be as simple as "My Ideal Future," in both fields, or, if you have something more personal in mind, you can specify that. Imagine that you are both specifying and summarizing your ambitions with this title. This will help you remember what you are aiming for.**
+**In later screens you can define, prioritize, and analyze specific goals.**
 
-Goal Title:
-Goal Description: 
+**Goal Title:** My Life & Work Plan
+**Goal Description:** Living consciously, living for a cause
 
-Please break down your ideal future into 8 goals. You can re-word, re-write and organize the relevant material from Step 1 for your goal summaries, if you wish, or you can rely on your memory. The exercise allows you to specify a minimum of 6 goals, but people who identify 8 have better results with this exercise.
-These specific goals can be from a number of different domains.
--A personal goal might be "I would like to be healthier."
--A career goal might be "I would like to be more interested in my job"
--A social goal might be "I would like to meet more people".
-The summaries you write about each goal should be reasonably brief and memorable. Make sure that each goal summary includes nothing but the most important information. You will have 10-15 minutes for this part of the exercise. Feel free to revise and edit.
+**Please break down your ideal future into 8 goals. You can re-word, re-write and organize the relevant material from Step 1 for your goal summaries, if you wish, or you can rely on your memory. The exercise allows you to specify a minimum of 6 goals, but people who identify 8 have better results with this exercise.**
+**These specific goals can be from a number of different domains.**
+**-A personal goal might be "I would like to be healthier."**
+**-A career goal might be "I would like to be more interested in my job"**
+**-A social goal might be "I would like to meet more people".**
+**The summaries you write about each goal should be reasonably brief and memorable. Make sure that each goal summary includes nothing but the most important information. You will have 10-15 minutes for this part of the exercise. Feel free to revise and edit.**
 
-Goal 1
-Goal Title:
-Goal Description:
+**Goal 1**
+**Goal Title:** Respond more, react less
+**Goal Description:** Through mindfulness practices like the Alexander Technique and potentially meditation and retreats, I want to be more calm and collected about all of my actions, either alone walking, while working, and while in conversation with others.
 
-Goal 2
-Goal Title:
-Goal Description:
+**Goal 2**
+**Goal Title:** Construct my crusade
+**Goal Description:** Read, write, reflect, and collaborate myself to a simple mission I can dedicate my life to
 
-Goal 3
-Goal Title:
-Goal Description:
+**Goal 3**
+**Goal Title:** Long-term financial sustainability
+**Goal Description:** For my crusading
 
-Goal 4
-Goal Title:
-Goal Description:
+**Goal 4**
+**Goal Title:** Build and/or use catch-up system
+**Goal Description:** A system that allows me to more consciously manage who I catch up with on a regular basis. Kinda like a CRM but for my friends and family.
 
-Goal 5
-Goal Title:
-Goal Description:
+**Goal 5**
+**Goal Title:** Contribute meaningfully towards my cause
+**Goal Description:** I guess this will depend on my cause, but I could imagine writing an essay like **Learnable Programming** or giving a talk like **The Future of Programming** or Chris Granger’s most recent keynote at SPLASH would be in the right ballpark.
 
-Goal 6
-Goal Title:
-Goal Description:
+**Goal 6**
+**Goal Title:** Positivity and inspiration
+**Goal Description:** I want to be a light in the life of everyone I touch, from strangers I run into to close friends and family. 
 
-Goal 7
-Goal Title:
-Goal Description:
+**Goal 7**
+**Goal Title:** Build partnerships and/or a team
+**Goal Description:** It takes a village to pursue a cause. (Potentially once I’ve figured out what my cause is, it would be the right time for me to take the Landmark SCLP program. Or I could just do it my own way.) Even if I’m just a solo writer, I will depend on others, collaborators, partners, teammates, etc. Finding and working with these people is key.
 
-Goal 8
-Goal Title:
-Goal Description:
+**Goal 8**
+**Goal Title:** Build my reputation/brand
+**Goal Description:** In order to be taken seriously, the ideas come first. At the same time, ideas that don’t ever see the light of day are just a tree falling in the forest: not making a sound. I need to improve my twitter, essay writing, event-throwing games.
 
-2.3. Prioritizing Your Goals
+### 2.3. Prioritizing Your Goals
 
-Please organize your goals. Give your most important goal a rank of 1, your next most important goal a rank of 2, and so on. You can use the update button at any time to to re-order the list.
-[List them in order of importance]
-[[1] Goal 1: Goal Title]
-[[2] Goal 2: Goal Title]
-[[3] Goal 3: Goal Title]
-[[4] Goal 4: Goal Title]
-[[5] Goal 5: Goal Title]
-[[6] Goal 6: Goal Title]
-[[7] Goal 7: Goal Title]
-[[8] Goal 8: Goal Title]
+**Please organize your goals. Give your most important goal a rank of 1, your next most important goal a rank of 2, and so on. You can use the update button at any time to to re-order the list.**
 
-2.4. Strategizing About Your Goals
+**[List them in order of importance]**
 
-Now you will be asked about the following elements or feature for each of the specific goals you have identified:
-Evaluating Your Motives
--Considering the Broad Personal and Social Impact of Goals
--Considering the Detailed Strategies for Goal Attainment
--Identifying Potential Obstacles and their Solutions
--Monitoring Progress towards Desired Goals
-Thus, the five pages that contain these elements or features will repeat until all your goals have been assessed.
+**Goal 1:** Respond, not react
+**Goal 2:** Construct my cause
+**Goal 3:** Contribute meaningfully to my cause
+**Goal 4:** Positivity and inspiration
+**Goal 5:** Long-term financial sustainability
+**Goal 6:** Build partnerships and/or team
+**Goal 7:** Build reputation/brand
+**Goal 8:** Catch-up system
 
-[This section asks questions about each your goals (1-8) in the order you decided on in 2.3. Answer questions 2.4.1-2.4.5 for goal 1, then repeat for each goal]
-2.4.1. Evaluating Your Motives
+### 2.4. Strategizing About Your Goals
 
-For this goal, you might want to consider issues such as the following:
--Do you truly believe that pursuing this goal is important?
--Would you feel ashamed, guilty or anxious if you didn't?
--Do you want to achieve this goal personally, or are you doing it to please someone else? (It is often a good thing to do something for someone else, but you should know when you are doing that.)
--Are you pursuing this goal because the situation that you find yourself in in seems to demand it?
--Is the pursuit of this goal enjoyable, stimulating or satisfying?
--Is this goal part of a deeply felt personal dream?
-Please spend a minute or two writing down your reasons for pursuing this goal:
+**Now you will be asked about the following elements or feature for each of the specific goals you have identified:**
+**Evaluating Your Motives**
+**-Considering the Broad Personal and Social Impact of Goals**
+**-Considering the Detailed Strategies for Goal Attainment**
+**-Identifying Potential Obstacles and their Solutions**
+**-Monitoring Progress towards Desired Goals**
+**Thus, the five pages that contain these elements or features will repeat until all your goals have been assessed.**
 
+**[This section asks questions about each your goals (1-8) in the order you decided on in 2.3. Answer questions 2.4.1-2.4.5 for goal 1, then repeat for each goal]**
 
-2.4.2. Considering the Broad Personal and Social Impact of Goals
+#### 2.4.1. Evaluating Your Motives
 
-Goals can have an impact beyond the obvious. Our specific personal goals are connected to larger, more important life goals. These higher-order goals reflect our most important ideals. The specific goal of spending more time studying or reading, for example, is a specific element of the more important goal of being a well-educated person. Achieving other specific goals, such as becoming more assertive, help us to move closer to our ideal self.
+**For this goal, you might want to consider issues such as the following:**
+**-Do you truly believe that pursuing this goal is important?**
+**-Would you feel ashamed, guilty or anxious if you didn't?**
+**-Do you want to achieve this goal personally, or are you doing it to please someone else? (It is often a good thing to do something for someone else, but you should know when you are doing that.)**
+**-Are you pursuing this goal because the situation that you find yourself in in seems to demand it?**
+**-Is the pursuit of this goal enjoyable, stimulating or satisfying?**
+**-Is this goal part of a deeply felt personal dream?**
+**Please spend a minute or two writing down your reasons for pursuing this goal:**
 
-You will now be asked to write about what more globally important things might be affected by your attainment the goal listed below:
--How would disciplined success change the way that you see yourself?
--How would other parts of your personal life change, in consequence?
--How would this affect the way that others perceive you? (You might also consider fears of being successful. Sometimes people are afraid to succeed because of the responsibility this would entail. Sometimes they are afraid of even becoming conscious of their true goals, because then they would be aware when they fail. These are not good strategies.)
--How would attaining this goal affect the lives of the people around you?
--What broader beneficial social impact might your success have?
-Please write a short description of how attaining this goal would change additional important aspects of your life, and the lives of others.
+**Goal 1:** Respond, not react
 
+Yes I truly believe this is important. Reacting is animal. Responding is human. Responding and not reacting is key to integrity and integrity is what makes things work. I feel a yearning to accomplish this, like a challenge. I am doing this partly to be a better friend, partner, and son for my love ones. It’s a challenge, but not in the tradition sense where “trying harder” yields better results. I have always wanted some sort of enlightenment and I feel this is a step in the right direction.
 
-2.4.3. Considering the Detailed Strategies for Goal Attainment
+**Goal 2:** Construct my cause
 
-Goals are related to lesser, smaller sub-goals and behaviors, as well as connected to higher-order, more important abstract goals. Sub-goals are easier to achieve, but are still fundamental to reaching our greater aspirations. Sub-goals can thus be thought of as strategies for greater goal achievement. Thinking about what specific things need to be done in order to achieve your goals allows you to create practical strategies for realizing your dreams. Please take some time to write about the concrete daily or weekly things you might do to further your goal. Deeply consider what particular behaviors this goal is built upon.
--Should you spend more time planning at school or at work?
--Do you need to spend more time with your friends, or your children?
--Do you need to discuss household chores with your roommates, partner or spouse?
--Specify when you are going to work on your goal. Specify how often. Specify where. Think hard about how you are going to implement your plans. Make your plans concrete.
-Write down those concrete weekly or daily things you might do to further this goal.
+Do I really want to live this way? Yes. It’s hard to imagine a better way to live. Shooting for the hedonic happiness of the people around me is fine but I want to live for more. I want to live for a cause. And thus constructing the cause is the first step. Living for the wrong cause — while probably more fun — is definitely worse for the world.
 
+**Goal 3:** Contribute meaningfully to my cause
 
-2.4.4. Identifying Potential Obstacles and their Solutions
+Just as how before I started The Coding Space but knew that my identity was an entrepreneur and it felt strange to not have started any companies, it now feels weird to be a researcher/writer person without an article that goes reasonably viral in the community. Like 10k reads minimum and front page of hacker news. But I’d prefer 100k reads and #1, 2 or 3 on HN. Yes this is partially a status and ego thing, but it’s also a real thing. I can’t contribute to ideas without people engaging with my ideas.
 
-Thinking about achieving a goal is obviously easier than going out and getting it done. Many things related to the natural environment, the social group and the self can stand in your way. It is useful to anticipate these difficulties, so that you can plan to overcome them.
-Consider your goal, once again. Write down all the potential obstacles you can think up. Write down ways to overcome these obstacles.
-How might you interfere with your own plans? How can you ensure this won't happen? Sometimes change is threatening to people we know and love. Will the people you know help you, or interfere? How can you communicate with them, so that they will support you? Think of realistic and worst-case scenarios. What are your options? What are your alternative plans?
-Write down potential obstacles to this goal, and specify the ways you might overcome them.
+**Goal 4:** Positivity and inspiration
 
+Because why not? There are some people in my life — Potluck is the epitome — who just make me smile to think about. Why not be that person for the people in my life? 
 
-2.4.5. Monitoring Progress towards Desired Goals
+**Goal 5:** Long-term financial sustainability
 
-We need to know, concretely, whether or not we are progressing towards the attainment of valued goals. Of course, this is not an easy task. When we want to complete very specific tasks, feedback on our performance is relatively easy to monitor. However, if our goals are less short-term, this becomes a little more difficult.
-You are now being asked to identify personal benchmarks that will allow you to evaluate your own performance.
--When would you like to achieve this goal? Be specific. Even if you have to revise a deadline later, it is still better to set one.
--What sorts of things will you accept as evidence that you are progressing towards your stated goal?
--How often are you going to monitor your own behavior?
--How will things in your life have to change, measurably, for you to feel satisfied in your progress?
--How can you ensure that you are neither pushing yourself too hard, and ensuring failure, or being too easy on yourself, and risking boredom and cynicism?
--Your benchmarks should be personal indicators of success. It doesn't matter what others may think defines progress towards your goal. Write down those accomplishments would truly indicate positive movement on your part. Feel free to write as much as you feel is necessary.
-Write down how you might monitor your progress with regards to this goal.
+I would feel like a leech if I wasn’t able to support my lifestyle through my work. Knowing that Robert Moses didn’t earn a salary until he was 40 or something will help with my self-judgement (as long as I can see my work having an impact). And I don’t need to make much. I simply don’t want to be a financial burden on anyone, or for money to be an issue for me, and between me and my loved ones.
 
+**Goal 6:** Build partnerships and/or team
+**Goal 7:** Build reputation/brand
+**Goal 8:** Catch-up system
 
-2.5. Future Steps
+#### 2.4.2. Considering the Broad Personal and Social Impact of Goals
 
-People often worry themselves unproductively by constantly revisiting their goals, instead of concentrating on their attainment. It is easy to undermine yourself, by always questioning your aims and intentions. Am I doing the right thing? Have I chosen the correct goals? This leads to chronic worry, unproductive behavior, and lack of opportunity to learn.
--Now that you have set goals, it is best to concentrate on a daily or weekly basis on implementing the strategies you have devised for their attainment, instead of worrying about the goals themselves. It is just as important to stick to a plan, as it is to make a plan.
--If you implement your goals, even if they are not perfect, you will learn enough during the implementation phase to make better goals next time. As you continue to repeat the process, you will get wiser and wiser.
--Set aside some time every week or two - no more than ten or twenty minutes - to mentally review your performance. You will gather all sorts of useful information that you can use to reconsider your plans, down the road.
-Researchers have found that if someone performs goal-setting tasks multiple times over a long period, there is a greater chance of health and productivity improvements.
-As a result, you might wish to engage in this sort of exercise on a regular basis, every four, six, or twelve months, as your situation changes.
+**Goals can have an impact beyond the obvious. Our specific personal goals are connected to larger, more important life goals. These higher-order goals reflect our most important ideals. The specific goal of spending more time studying or reading, for example, is a specific element of the more important goal of being a well-educated person. Achieving other specific goals, such as becoming more assertive, help us to move closer to our ideal self.**
+
+**You will now be asked to write about what more globally important things might be affected by your attainment the goal listed below:**
+**-How would disciplined success change the way that you see yourself?**
+**-How would other parts of your personal life change, in consequence?**
+**-How would this affect the way that others perceive you? (You might also consider fears of being successful. Sometimes people are afraid to succeed because of the responsibility this would entail. Sometimes they are afraid of even becoming conscious of their true goals, because then they would be aware when they fail. These are not good strategies.)**
+**-How would attaining this goal affect the lives of the people around you?**
+**-What broader beneficial social impact might your success have?**
+**Please write a short description of how attaining this goal would change additional important aspects of your life, and the lives of others.**
+
+**Goal 1:** Respond, not react
+
+I would see myself as more of an adult, more in control of my own life and of the entire world. People who react with way, and with integrity, and with a cause, are forces of nature, like Elon, Docks, Juan. Others would perceive me as calmer and wiser. It would make my conversations clearer, less frenetic. It would allow me to speed up by slowing down in all parts of my life.
+
+**Goal 2:** Construct my cause
+
+My whole life would make more sense in the context of an articulated constructed goal. I would get better and better at explaining it to all sorts of audiences over time. I would be able to attract collaborators to me like a magnet. I would be able to track and optimize my progress. I would be a man on a mission.
+
+**Goal 3:** Contribute meaningfully to my cause
+
+People would begin to see me as I am beginning to see myself: as an intellectual who has things to say. Someone who absorbs ideas like a sponge and produces quality ones at a prodigious pace. Someone whose ideas will inspire others and change the world. Of course, the ideas is that this perception will be rooted in the reality of the impact my ideas have upon people who engage with them.
+
+**Goal 4:** Positivity and inspiration
+
+In the short term, being a light of positivity makes the people around me happier and more capable of solving problems in their own lives. In the longer term, my positivity will attract people to me. It will also make it easier for me to help people and be helped by people. 
+
+**Goal 5:** Long-term financial sustainability
+
+I would have more pride in myself and less anxiety about my finances. Sarah and I might “treat ourselves” a bit more, travel a bit more.
+
+**Goal 6:** Build partnerships and/or team
+**Goal 7:** Build reputation/brand
+**Goal 8:** Catch-up system
+
+#### 2.4.3. Considering the Detailed Strategies for Goal Attainment
+
+**Goals are related to lesser, smaller sub-goals and behaviors, as well as connected to higher-order, more important abstract goals. Sub-goals are easier to achieve, but are still fundamental to reaching our greater aspirations. Sub-goals can thus be thought of as strategies for greater goal achievement. Thinking about what specific things need to be done in order to achieve your goals allows you to create practical strategies for realizing your dreams. Please take some time to write about the concrete daily or weekly things you might do to further your goal. Deeply consider what particular behaviors this goal is built upon.**
+**-Should you spend more time planning at school or at work?**
+**-Do you need to spend more time with your friends, or your children?**
+**-Do you need to discuss household chores with your roommates, partner or spouse?**
+**-Specify when you are going to work on your goal. Specify how often. Specify where. Think hard about how you are going to implement your plans. Make your plans concrete.**
+**Write down those concrete weekly or daily things you might do to further this goal.**
+
+**Goal 1:** Respond, not react
+
+Continue taking lessons once or twice a week with Rebecca and doing my Alexander Technique homework. Experiment with different meditation practices, potentially working with Michael Taft or going on retreats. Continue reflecting in my journal.
+
+**Goal 2:** Construct my cause
+
+Pickle myself in ideas, which I’m doing, and reflect on my past projects, and work on new projects and reflect on them. Also, go to Dynamicland and chat with them about all this.
+
+**Goal 3:** Contribute meaningfully to my cause
+
+This means that I need to spend a meaningful amount of time writing a polished piece. The level of research and polish I put into it will have to be far beyond what I’ve done in the past. (Or there’s also the churn out a lot of little pieces, but I’m less excited about this model at the moment because it feels to half-baked for the level of quality I’m now shooting for. But I can definitely revisit this.)
+
+One way to get an easy win under my belt here would be collaborating with someone, such as Nicky Case.
+
+**Goal 4:** Positivity and inspiration
+
+Learning to respond and not react is key. Also *not making people wrong* is really really key. Another one is speaking in terms that *they* understand. Another one is talking less. Asking more questions.
+
+**Goal 5:** Long-term financial sustainability
+
+The work is key. Start with producing good ideas. Use your savings as seed money. Then once we’re on the right track, then look into grants, Patreon, fellowships, research positions, etc.
+
+**Goal 6:** Build partnerships and/or team
+**Goal 7:** Build reputation/brand
+**Goal 8:** Catch-up system
+
+#### 2.4.4. Identifying Potential Obstacles and their Solutions
+
+**Thinking about achieving a goal is obviously easier than going out and getting it done. Many things related to the natural environment, the social group and the self can stand in your way. It is useful to anticipate these difficulties, so that you can plan to overcome them.**
+**Consider your goal, once again. Write down all the potential obstacles you can think up. Write down ways to overcome these obstacles.**
+**How might you interfere with your own plans? How can you ensure this won't happen? Sometimes change is threatening to people we know and love. Will the people you know help you, or interfere? How can you communicate with them, so that they will support you? Think of realistic and worst-case scenarios. What are your options? What are your alternative plans?**
+**Write down potential obstacles to this goal, and specify the ways you might overcome them.**
+
+**Goal 1:** Respond, not react
+
+Running out of money before feeling “done” with lessons with Rebecca. Not super likely. Parents can always help.
+
+Getting into a funk of some sort and loosing my practice. Or moving away and not being able to find a teacher I like as much as Rebecca. Both seem unlikely. 
+
+**Goal 2:** Construct my cause
+
+I could see myself flitting around from cause to cause. As long as I reflect with myself and mentors, seems avoidable. I’m ok with it taking a few years if necessary to come up with a cause.
+
+I could see myself getting tired of not having a clear direction and just wanting to work for someone else who has a cause that I can latch onto.
+
+**Goal 3:** Contribute meaningfully to my cause
+
+Being stuck on constructing my cause and not working on any meaningful work. I will have to realize that contributing will help me construct the cause over time.
+
+Noting finishing things, always moving onto the next one. I am aware of this and will make sure to reflect upon it and catch it if it’s getting out of hand.
+
+Allowing my essay to get bigger and bigger as I try to make it more and more perfect and complete, eventually turning into a book or Magnus opus. Basically **not shipping**. Again, I think I and my advisors would catch me on this within a few weeks.
+
+**Goal 4:** Positivity and inspiration
+
+Me being in pain. Making sure I’m on top of AT is key. 
+
+Me being in bad moods. Potentially meditation (or AT) will help with this.
+
+Me feeling attacked. Responding, not reacting is key.
+
+**Goal 5:** Long-term financial sustainability
+
+Not being able to find enough people with enough disposable income who resonate with my crusade enough to give me enough to be comfortable.
+
+Potentially I could see this happening by fixating on the wrong sources, such as Patreon, at the expense of other less sexy sources like government or foundation grants. Reflection will help me catch this and keep the funnel mentality.
+
+**Goal 6:** Build partnerships and/or team
+**Goal 7:** Build reputation/brand
+**Goal 8:** Catch-up system
+
+#### 2.4.5. Monitoring Progress towards Desired Goals
+
+**We need to know, concretely, whether or not we are progressing towards the attainment of valued goals. Of course, this is not an easy task. When we want to complete very specific tasks, feedback on our performance is relatively easy to monitor. However, if our goals are less short-term, this becomes a little more difficult.**
+**You are now being asked to identify personal benchmarks that will allow you to evaluate your own performance.**
+**-When would you like to achieve this goal? Be specific. Even if you have to revise a deadline later, it is still better to set one.**
+**-What sorts of things will you accept as evidence that you are progressing towards your stated goal?**
+**-How often are you going to monitor your own behavior?**
+**-How will things in your life have to change, measurably, for you to feel satisfied in your progress?**
+**-How can you ensure that you are neither pushing yourself too hard, and ensuring failure, or being too easy on yourself, and risking boredom and cynicism?**
+**-Your benchmarks should be personal indicators of success. It doesn't matter what others may think defines progress towards your goal. Write down those accomplishments would truly indicate positive movement on your part. Feel free to write as much as you feel is necessary.**
+**Write down how you might monitor your progress with regards to this goal.**
+
+**Goal 1:** Respond, not react
+
+The thing about being more mindful is that the more mindful you are the more you *notice yourself being mindful.* That is, someone with little mindfulness may think of themselves as mindful because they *can’t detect what they can’t detect* and mindfulness is the process of *making the unconscious conscious*. Thus this is a trickier one to detect inside my own head. Yet, I can still tell when my I don’t check in with my body and my posture goes to shit. Same with interacting with people in a reactive, not responsive way. On a macro level, I would expect that when I’m better at this that I am calmer. Speak less in conversation. Have easier conversations. Have people smile more when they talk to me. 
+
+**Goal 2:** Construct my cause
+
+As far as process goals, as long as I continue to wake at 7am, sleep at 11pm, do 4-6 hours of work per day, producing ~5k words, I’m on the right track, particularly if I’m also spending  some of that time that time talking with the right people.
+
+**Goal 3:** Contribute meaningfully to my cause
+
+Large number of reads of an article or stars on a GitHub library. Between 10-100k reads. Front page of HN, higher the better. Being cited in other articles that I read later on various sites and places. Being contact by collaborators, people who want to be on the podcast, work together.
+
+**Goal 4:** Positivity and inspiration
+
+More smiles around me. More people magically solving their problems after talking to me. (Yes, this really has happened simply from positivity. We didn’t even talk about the problems. Simply a positive outlook was enough to liberate them to solve the problem 100% without my advice.) People around me being more fulfilled, pursuing their lives with gusto.
+
+**Goal 5:** Long-term financial sustainability
+
+Pretty straightforward to measure. $2k per month is base. $3k per month is less anxiety about nice stuff. $4k per month and above is contributing to my savings every month. 
+
+**Goal 6:** Build partnerships and/or team
+**Goal 7:** Build reputation/brand
+**Goal 8:** Catch-up system
+
+### 2.5. Future Steps
+
+**People often worry themselves unproductively by constantly revisiting their goals, instead of concentrating on their attainment. It is easy to undermine yourself, by always questioning your aims and intentions. Am I doing the right thing? Have I chosen the correct goals? This leads to chronic worry, unproductive behavior, and lack of opportunity to learn.**
+**-Now that you have set goals, it is best to concentrate on a daily or weekly basis on implementing the strategies you have devised for their attainment, instead of worrying about the goals themselves. It is just as important to stick to a plan, as it is to make a plan.**
+**-If you implement your goals, even if they are not perfect, you will learn enough during the implementation phase to make better goals next time. As you continue to repeat the process, you will get wiser and wiser.**
+**-Set aside some time every week or two - no more than ten or twenty minutes - to mentally review your performance. You will gather all sorts of useful information that you can use to reconsider your plans, down the road.**
+**Researchers have found that if someone performs goal-setting tasks multiple times over a long period, there is a greater chance of health and productivity improvements.**
+**As a result, you might wish to engage in this sort of exercise on a regular basis, every four, six, or twelve months, as your situation changes.**
 
 Your Ideal Future
 Below is a copy of your Ideal Future including the essays you wrote during Stage 1 and the goal setting and analysis you performed during Stage 2.
