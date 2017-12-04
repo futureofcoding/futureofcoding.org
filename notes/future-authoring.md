@@ -186,7 +186,7 @@ Wait a second. I just had another thought. What about tools? If I think about ho
 
 Holy shit. One of my main things is: you cannot seperate man from his tools. A human literally is the tool-making animal. Augmented humans. That was Douglas Engelbart. Mine is so similar. But it's a bit more: humans = ape + tools. That's really what I'm trying to fight for. We *are* our tools. That's why tools are so important. They mean everything. That's why important ideas are so important: they are tools. Words, the idea of human rights, analogies: these are all tools to think with as much as a google doc or a piece of code. HOLY crap **humans = ape + tools**. Is that my crusade?
 
-If it is, then how do I measure it's progress? Ok, well no humans = ape + tools is an insight but it's not the problem. It's more like:
+If it is, then how do I measure it's progress? Ok, well no `humans = ape + tools` is an insight but it's not the problem. It's more like:
 
 1) humans = apes + tools
 2) tools (including ideas, patterns of thought, software, etc) are the way that humans design the next version of humanity
