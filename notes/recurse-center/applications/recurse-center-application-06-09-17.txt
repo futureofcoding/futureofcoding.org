@@ -1,0 +1,60 @@
+Steven Krouse
+You submitted this application on June 09, 2017, to the Fall 2, 2017 batch. You can see the status of your application here.
+
+Code CracklePop
+for (var i = 1; i <= 100; i++) {
+  if (i % 15 === 0) {
+    console.log("CracklePop")
+  } else if (i % 5 === 0) {
+    console.log("Pop")
+  } else if (i % 3 === 0) {
+    console.log("Crackle")
+  } else {
+    console.log(i)
+  }
+}
+Please link to a program you've written from scratch.
+http://woofjs.com/create.html#2048
+
+What is the most fascinating thing you've learned in the past month?
+http://blog.sigfpe.com/2009/05/three-projections-of-doctor-futamura.html
+
+I can't claim that I've entirely "learned" the Three Projections of Dr Futamura, but I'm fascinated with my rudimentary understanding of them. The basic gist of it is that by using code specializers, you can convert an interpreter to a compiler. However, when it gets really fun is when you realize that your specializer itself is a computer program that can be specialized... for itself! Then you have a generic interpreter-to-compiler converter so there's really no need to write compilers anymore (in theory)!
+
+What do you want to be doing in two years?
+I'm doing it now! I hope to be further along in two years, but I think the general actives and focus will be the same.
+
+I admire the work of Seymour Papert and Mitch Resnick. I love building more "learable" programming languages like LOGO and Scratch. For example, I'm working on WoofJS and Rose.
+
+Why do you want to attend the Recurse Center?
+I recently attended a meetup of current and former Recursers and was blown away by them. I learned so much in that meeting that I was really drawn to the idea of surrounding myself with people like that all the time.
+
+What would you like to work on at the Recurse Center?
+Building learnable programming languages (https://stevekrouse.com/rose-983dc5e0908f)
+
+Topics to research:
+
+Programming models and abstractions (Alan Kay, Bret Victor, Luna Lang, Eve, Unison, etc) 
+Database runtimes (SQL, firebase, datomic, graph.cool) 
+Compilers (Unison, Haskell, typecheckers, Truffle and Graal)
+
+Describe your programming background in a few sentences.
+I started learning to code in middle school with LOGO. I fell in love with it, moving on to Scheme, Java, Haskell and Python in high school and college. My specialty is functional programming and designing programming languages.
+
+Have you worked professionally as a programmer?
+I worked as a software engineer at First Round Capital doing ETL and analytics. Then I worked at Looker (looker.com) doing software engineering in Ruby/Sinatra, mostly concerned with scaling, security and APIs.
+
+Two years ago I started an after school coding program for children in Manhattan, where I designed a Recurse-center-inspired program. I created the curriculum (coding.space) and a JavaScript language and IDE (woofjs.com).
+
+Do you have a Computer Science degree or are you seeking one?
+I got 3 semesters into my CS degree at Penn. I took most of the CS classes they had before I left. I don't indeed to go back.
+
+How did you hear about RC?
+I've been following you guys for years. I've read every word on this website multiple times. I'm a real fanboy!
+
+Links
+github.com/stevekrouse 
+linkedin.com/in/stevekrouse 
+stevekrouse.com 
+woofjs.com 
+coding.space
