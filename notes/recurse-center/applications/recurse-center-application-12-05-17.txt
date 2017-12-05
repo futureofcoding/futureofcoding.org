@@ -1,0 +1,61 @@
+Steven Krouse
+You submitted this application on December 05, 2017, to the Mini 1, 2018 batch. You can see the status of your application here.
+
+Code CracklePop
+for (var i = 1; i <= 100; i++) {
+  if (i % 15 === 0) {
+    console.log("CracklePop")
+  } else if (i % 5 === 0) {
+    console.log("Pop")
+  } else if (i % 3 === 0) {
+    console.log("Crackle")
+  } else {
+    console.log(i)
+  }
+}
+Please link to a program you've written from scratch.
+http://woofjs.com/create.html#2048
+
+What is the most fascinating thing you've learned in the past month?
+The book "How to Measure Anything" is currently blowing my brain. As you may have guessed, its core thesis is that you can measure any quantity, no matter how seemingly intangible. He makes his case through the following claims:
+
+(1) Any quantity you care about can be detected. If it can be detected you can count the number of detections, potentially with the help of statistics (random sampling) to help you generalize. For example, you could measure "student engagement" by the number of hands that go up when a teacher asks a question to the class. Or by counting the number of students who are taking notes, talking, looking at the teacher, or looking out the window.
+
+(2) A practical definition of measurement: a reduction in uncertainty about a quantity. This definition liberates us from imaging measurement as an overly formal precise process. Measurement is merely a way to get *closer* to an value, not declare the final word on it.
+
+What do you want to be doing in two years?
+I want to democratize software development from now until the project is complete, which will likely not be the case in two years. Here's why:
+
+A tool is that which augments. We humans internalize our tools. They become an inseparable part of ourselves. Separating me from my iPhone in the middle of an foreign faraway city would diminish me more than separating me from my left arm.
+
+Improvements in our tools are improvements in ourselves. Even more sinister, improvements in ourselves are constrained by the limitations in our tools. Currently only an elite few are able to modify our tools. If we improved our tools for designing tools (our programming languages), we could usher in a wave of self-improvement and augmentation. We could all become better, more capable, even happier.
+
+Why do you want to attend the Recurse Center?
+I've wanted to attend the Recurse Center for years. In recent months, I attended a few Recurse Center events and was shocked by how much I learned from the Recursers there. I was really drawn to the idea of surrounding myself with people like that all the time.
+
+What would you like to work on at the Recurse Center?
+I'm currently on a Bret Victor kick, so potentially I'd be excited about building a tool to solve a problem that he alludes to in one of his essays or talks. (This wouldn't be the first time I responded to a Bret Victor essay with a project: https://medium.com/@stevekrouse/woof-d9adf2110fc6)
+
+Another idea: Nicky Case and I have been talking about collaborating on an Explorable Explaination style essay about how communication works.
+
+I've been meaning to learn more about Functional Reactive Programming, particularly the Haskell library Reflex, so I could build a game or two in that library.
+
+Describe your programming background in a few sentences.
+I started learning to code in middle school with LOGO. I fell in love with it, moving on to Scheme, Java, Haskell and Python in high school and college. In particular, I enjoy functional programming, recently with Elm. I currently mostly program in JavaScript, sometimes with VueJS.
+
+Have you worked professionally as a programmer?
+I worked as a software engineer at First Round Capital doing ETL and analytics. Then I worked at Looker (looker.com) doing software engineering in Ruby/Sinatra, mostly concerned with scaling, security and APIs.
+
+Two years ago I started an after school coding program for children in Manhattan, where I designed a Recurse-center-inspired program. I created the curriculum (http://coding.space) and a JavaScript language and IDE (http://woofjs.com).
+
+Do you have a Computer Science degree or are you seeking one?
+I got 3 semesters into my CS degree at Penn. I took most of the CS classes they had before I left. I don't indeed to go back.
+
+How did you hear about RC?
+I've been following you guys for years. I've read every word on your website multiple times. I'm a real fanboy!
+
+Links
+github.com/stevekrouse 
+linkedin.com/in/stevekrouse 
+stevekrouse.com 
+futureofcoding.org
