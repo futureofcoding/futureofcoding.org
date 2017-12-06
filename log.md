@@ -3,19 +3,37 @@ title: Log
 ---
 
 <style>
-  .commit-header {
-    font-size: 20px;
+  .header {
+    font-size: 35px;
+    font-weight: bold;
+  }
+  #title {
+    font-size: 50px;
+  }
+  .date {
+    font-size: 15px;
+    color: #aaa;
+    margin-right: 10px
   }
 </style>
 
-# Log
+<h1 id="title">Log</h1>
+
+This log represents my progress on the Future of Coding project. I intend to update this log every weekday.
+
+The data for this log are pulled from the commit message history for this repository. 
 
 <div id="commits-container">
-{% for commit in site.data.git-log %}
-  <div>
-    <div class="commit-header">{{ commit.committer.date }} - <a href="https://github.com/stevekrouse/futureofcoding.org/commit/{{ commit.commit }}">{{ commit.commit }}</a></div>
-    <div class="commit-message">{{ commit.message | markdownify  }}</div>
-  </div>
+{% for commit in site.data.git-log %} 
+  {% if commit.message != 'updated git log' %}
+    {% unless commit.message contains 'Merge branch' %}
+      {% assign first_line = commit.message | newline_to_br | split: '<br />' | first %} 
+      {% assign date = commit.committer.date | date_to_string | prepend: "_" | append: "_" %}
+      {% assign header = first_line | remove: "#" | prepend: '</span>' | prepend: date | prepend: '<span class="header"><span class="date">' | append: '</span>'  %}
+      {% assign message = commit.message | remove_first: first_line | prepend: header %}
+      <div class="commit">{{ message | markdownify }}</div>
+    {% endunless %} 
+  {% endif %}
 {% endfor %}
 </div>
 
