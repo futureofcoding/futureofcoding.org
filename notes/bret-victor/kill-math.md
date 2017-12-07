@@ -107,7 +107,26 @@ Sometimes questions can be answered by just knowing about the right tool / datas
 
 I want to quote this entire section. All gold. Here's the key: building an ergonomic tool means building a tool that "adapts complex situations so they can be seen, experienced, and reasoned about with our plain old [monkey] brain." 
 
-What I feel like he misses -- which is strange given that this whole essay is Papert inspired -- is that the way to make concepts visceral is to make them to relate to what has previously been "seen, experience, and reasoned about." That is, by analogy to powerful ideas already in the monkey brain. Yes, our monkey brains already have a notion of visual spaces, thus graphs are relatively easy to understand (although, not totaly intuitive). Some of this might be inborn, but that's not required: humans could learn these things as babies, which would in fact be responsible for the illusion that they are inborn. One may be tempted to say: let's make all our tools in terms of the base-level of metaphors already in most people's brains. I think that's limiting, because as Seymour showed, even a few particularly powerful metaphors can enable a vast amount of learning (or assimilation, as he would say.)
+What I feel like he misses -- which is strange given that this whole essay is Papert inspired -- is that the way to make concepts visceral is to make them to relate to what has previously been "seen, experience, and reasoned about." That is, by analogy to powerful ideas already in the monkey brain. Yes, our monkey brains already have a notion of visual spaces, thus graphs are relatively easy to understand (although, not totaly intuitive). Some of this might be inborn, but that's not required: humans could learn these things as babies (which would in fact be responsible for the illusion that they are inborn). One may be tempted to say: let's make all our tools in terms of the base-level of metaphors already in most people's brains. I think that's limiting, because as Seymour showed, even a few particularly powerful metaphors can enable a vast amount of learning (or assimilation, as he would say.)
+
+## Logo Turtle in Calculus
+
+He tells the story of being able to better understand integration in calculus because he could relate it to the movement of the LOGO turtle. I tell a very similar story. A derivitive is simply the angle of the LOGO turtle as he walks along a curve. My experience with LOGO allowed me to seamlessly assimilate this idea from calculus, which to my peers made me look like some kind of inborn genius. 
+
+### Memory Geniuses
+
+Here's the mystery for you. In _Peak_ by Anders Ericson, he relates the story of teaching a randomly selected student and training him in his working memory, beyond the plus or minus seven that all humans share. At first they weren't able to make much progress, but after months of effort they raised his number to 30, 50, 80, 100, crushing all world records until that point. From there, others have taken this memory game to ever-higher places. 
+
+How do these memory geniuses do it? They start out just like you and me. And through training, they change. How do the learn to use their brains? 
+
+The key to solving this riddle is realizing that it's impossible to expand working memory. However it *is* possible to 1) compress information and 2) cleverly transfer it to long-term memory, which is exactly what these geniuses do.
+
+To compress information, think of it like the Huffman encoding but inside a human's head. To transform information to long-term memory, they use variations on the memory palace technique.
+
+The key here is that expanding human capability is all abou the tools at the human's disposal, inside their brain and out. A person that seems smarter simply has better software installed. The bright side is: we can copy software between brains.
+
+
+
 
 <script>
 
