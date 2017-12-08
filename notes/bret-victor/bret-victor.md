@@ -7,11 +7,33 @@ title: Bret Victor
 * TOC
 {:toc}
 
-## Kill Math (page created)
-
 ## [Interactive Exploration of a Dynamical System](https://vimeo.com/23839605) - May 16, 2011
 
+Wow, this is really the pre-cursor to Nicky Case's new [JoyJS](http://ncase.me/joy-demo/nonlinear/?model=prey)! There are only two things Nicky is missing:
+
+1. The ability to directly manipulate the graphs, as opposed to dragging the numbers.
+2. The ability to abstract over constants, displaying multiple different values of a constant on the screen at the same time.
+
 ## [Scientific Communication](http://worrydream.com/#!/ScientificCommunicationAsSequentialArt) - May 24, 2011
+
+This time I actually read the paper as he instructs. Seems like it might be where he found the word "dynamical." It's pretty interesting, albeit a lot of words to say: it takes a un-intuatively small number of floaters (people who have friends outside their clique) to make the people of a group of cliques a much shorter number of "handshakes" apart.
+
+The authors, and Bret, spend most of the time explaining how to define (or contruct) these networks, as well as the key definitions of L (average number of handshakes between all two people) and C (average fraction of how many of each node's friends know each other).
+
+One thing to note: neither representation of this information "starts with a why" that I care about. Here's an example of what that would look like:
+
+* Imagine yourself an actor in Bollywood. You are mostly friends with Bollywood actors. Yet you really want to meet an American actor, say Kevin Spacey. Is there a chance any of your friends know him, or know someone who knows him?
+* As a kid, I wanted to meet Orson Scott Card. My dad had an idea, "Orson is Morman. There's a Morman guy at my office. I wonder if they know each other." "Dad!" I said, "You can't just ask that!" "Who know?" my dad replied, "Maybe the Mormons are all connected like the Jews?" Turns out my dad's work friend did know Orson Scott Card. Was this an lucky fluke or was it charictarisitc of how people are connected?
+
+Another criticism is that much of the overly consice mathmatic lingo was still used in Bret's version, for example, `C(p) / C(0)`. Or <code>C<sub>p</sub> >> C<sub>random</sub></code>. Huh? Two ways to make those more accessible:
+
+1. Use the english-word-analogy instead of the notation. Instead of `C(p) / C(0)`, you could just call it the "cliquishness of a network", not even explaining that you normalized it as compared to a regular network.
+2. Visualize each sub-component of the equation. If you must expose the normalization computation, do it in a way I can explore. Show me what `C(p)` is as compared to `C(0)` so I can see how the normalization works.
+
+
+Another idea: instead of small pictures of black circles and lines, the pictures could be much bigger and be of movie stars and movies as edges. That could be quite compelling!
+
+A final point is that the data could be explorable all the way down, as Bret demonstrates in *Ten Brighter Ideas?*. Instead of simply trusting their data in the final graph, we could allow the reader to dynamically generate it based on various assumptions, thus making it fully citable and auditable to the core.
 
 ## [Scrubbing Calculator](http://worrydream.com/#!/ScrubbingCalculator) - May 31, 2011
 
