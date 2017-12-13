@@ -40,16 +40,30 @@ A final point is that the data could be explorable all the way down, as Bret dem
 
 ## [The Ladder of Abstraction](http://worrydream.com/#!2/LadderOfAbstraction) - Oct 2011
 
+http://worrydream.com/MediaForThinkingTheUnthinkable/note.html
+
+> I've seen some people refer to "Inventing on Principle" as my "manifesto", which is understandable, but untrue. If you were to ask me for a personal manifesto, I'd probably have to point you to "Up and Down the Ladder of Abstraction". It uses a programming example, but it's not about programming. It's about a way of thinking. In particular -- a way of using representations to think powerfully about systems.
+
 ## [A Brief Rant](http://worrydream.com/#!/ABriefRantOnTheFutureOfInteractionDesign) - Nov 2011
+
+Vision without implementation is hard.
 
 ## [Learnable Programming](http://worrydream.com/#!/LearnableProgramming) - Sept 2012
 
 
 ## [Media for Thinking the Unthinkable](http://worrydream.com/#!/MediaForThinkingTheUnthinkable) - April 4, 2013
 
+http://worrydream.com/MediaForThinkingTheUnthinkable/note.html
+
 ## [Stop Drawing Dead Fish](https://vimeo.com/64895205) - April 26, 2013
 
+Beautiful. Yet unclear what problem it solves for whom.
+
 ## [Drawing Dynamic Visualizations](https://vimeo.com/66085662) - May 2013
+
+http://worrydream.com/DrawingDynamicVisualizationsTalkAddendum/
+
+Beautiful. Reminds me both of JoyJS and Aprt.us and [Programming with Comics](http://whynotfireworks.com/programming-with-comics/). Crazy how many tools this man inspires!
 
 ## [The Future of Programming](https://vimeo.com/71278954) - July 2013
 
@@ -62,7 +76,7 @@ A final point is that the data could be explorable all the way down, as Bret dem
 ## [What a technologist can do about climate change](http://worrydream.com/#!/ClimateChange) - Nov 2015
 
 
-
+## https://www.evanmiller.org/dont-kill-math.html
 
 
 
