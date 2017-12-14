@@ -29,7 +29,7 @@ Another criticism is that much of the overly consice mathmatic lingo was still u
 
 1. Use the english-word-analogy instead of the notation. Instead of `C(p) / C(0)`, you could just call it the "cliquishness of a network", not even explaining that you normalized it as compared to a regular network.
 2. Visualize each sub-component of the equation. If you must expose the normalization computation, do it in a way I can explore. Show me what `C(p)` is as compared to `C(0)` so I can see how the normalization works.
-
+3. [Colorized math equations](https://betterexplained.com/articles/colorized-math-equations/)
 
 Another idea: instead of small pictures of black circles and lines, the pictures could be much bigger and be of movie stars and movies as edges. That could be quite compelling!
 
@@ -37,12 +37,23 @@ A final point is that the data could be explorable all the way down, as Bret dem
 
 ## [Scrubbing Calculator](http://worrydream.com/#!/ScrubbingCalculator) - May 31, 2011
 
+Beautiful. Really clever way to get around symbols.
+
+Looks like someone made it real: https://cruncher.io/?/-L0KBBVxhSk404NeILvD
+
+One drawback of this interface is that doesn't allow you to import data.
+
+Another is that you have to first make number and then connect them. It would be neat if it could automatically connect numbers with the same text description.
 
 ## [The Ladder of Abstraction](http://worrydream.com/#!2/LadderOfAbstraction) - Oct 2011
 
-http://worrydream.com/MediaForThinkingTheUnthinkable/note.html
+Wow, I didn't realize this piece meant so much to Bret! As he says [here](http://worrydream.com/MediaForThinkingTheUnthinkable/note.html):
 
 > I've seen some people refer to "Inventing on Principle" as my "manifesto", which is understandable, but untrue. If you were to ask me for a personal manifesto, I'd probably have to point you to "Up and Down the Ladder of Abstraction". It uses a programming example, but it's not about programming. It's about a way of thinking. In particular -- a way of using representations to think powerfully about systems.
+
+I've so internatlized walking up and down the ladder of abstraction, both through reading this essay, doing a lot of programming, particularly functional prorgramming, as well as taking and then TA-ing a comptuer architechture class (where we went [from electrons to C](/futureofcoding.org/notes/halfway-there-cis-240.md)).
+
+As Bret explains, he "adopted the notion of "abstracting over a variable" from computer science. In particular, lambda abstraction corresponds directly to the sort of visual abstraction we're doing here." I'm pretty darn familiar with this proccess. I imagine this article might fall flat on an audience without functional-thinking experience. 
 
 ## [A Brief Rant](http://worrydream.com/#!/ABriefRantOnTheFutureOfInteractionDesign) - Nov 2011
 

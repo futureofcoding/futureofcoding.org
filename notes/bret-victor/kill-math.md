@@ -125,8 +125,31 @@ To compress information, think of it like the Huffman encoding but inside a huma
 
 The key here is that expanding human capability is all abou the tools at the human's disposal, inside their brain and out. A person that seems smarter simply has better software installed. The bright side is: we can copy software between brains.
 
+## Review: [Don't Kill Math](## https://www.evanmiller.org/dont-kill-math.html)
 
+[Review published October 27, 2012 by Evan Miller]
 
+> The unifying goal of Victor’s work, as he puts it in his Inventing on Principle talk (for all practical purposes, Victor’s manifesto) is to bring people into closer communion with their creative ideas. I personally applaud this goal, and would be hard-pressed to find anyone who is against it (who can oppose human creativity?).
+
+Huh, that's a good point. This is strange because in that very talk Bret explains that one's crusade needs to be controversial. And yet his goal of bringing people closer to their ideas is something I imagine all people would agree with...
+
+Holy shit this article is both scathing and well-thought-out. It may be the best critique of BV I've seen thus far!
+
+Let's address Evan's points. 
+
+Firstly, he characterizes Bret's arguments as attacking "analytic methods." This is slightly confusing because BV uses the term "symbolic" to reference what he's unhappy about.
+
+Secondly, Evan seems to think that Kill Math wants to replace all math with simulations. That's misleading because BV wants to replace symbolic math with "concrete modeling, simulation, and visualization," as stated in [Simulation as a Practical Tool](http://worrydream.com/SimulationAsAPracticalTool/). Evan doesn't address BV's scrubbing calculator at all, which I think, would alleviate many of his concerns that Bret hates all analytical approaches. He simply wants to make them more concrete by leveraging our new magic paper.
+
+Evan's critique of the "UP and Down the Ladder of Abstraction" ring true, yet I think he misses the point a bit. Bret is describing an approach to thinking about problems, not trying to truly solve one problem. Maybe a better, more real example would've helped.
+
+There are a few things that Evan misses:
+
+1. The reason that symbolic/analytical methods work for him (and people like him, including me) is that we've so thoroughly internalized how moving the knobs on the various bits of the equation will tweak things. I understand ratios physically through lots of suffering through not. What is math?
+2. And that's just the basics. More complicated formula terrify me. It's incredibly hard to learn about a new formula from the symbols. How does Evan expect me to visualize `sin(theta) = r/h`? I can't do the inverse sin in my head! Imagine how much our magic computer paper could augment this formula to aid my inuition! Bret isn't saying we should do away with formula, but that we gotta be able to do better now that we have magic paper!
+3. Evan talks about equations as being useful for the reader to understand how to model a problem, know what is important and what is irrelevant. I think that's akin to giving the punchline of a joke to a person so they can reason out what the joke must've been. Instead, [like Khalid suggests](https://betterexplained.com/articles/adept-method/), the technical definition is often the last thing you want to see. Humans learn through invention. Thus we should come to formulas the same way their inventors do: with our intuitions first. Symbols last. Concrete *then* abstract.
+
+Finally, Evan scores a nice shot on BV by pointing out that he hides the underlying formula in his Explorable Explanation article. Yet this criticism rings false as he's criticizing the same guy who made [TenBrighterIdeas](http://worrydream.com/TenBrighterIdeas/) which allows you to see the entire model as well as edit the actual source code.
 
 <script>
 
