@@ -16,13 +16,14 @@ title: Log
     font-size: 50px;
   }
   .date {
-    font-size: 20px;
+    font-size: 15px;
     color: #aaa;
     margin-bottom: 10px;
     font-style: italic;
   }
   .commit > .files {
     color: rgb(255,169,77);
+    margin-bottom: 5px;
   }
   .hash {
     font-size: 15px;
