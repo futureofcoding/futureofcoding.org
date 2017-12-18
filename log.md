@@ -2,39 +2,65 @@
 title: Log
 ---
 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+  
 <style>
   .header {
     font-size: 35px;
     font-weight: bold;
+    margin-bottom: 5px;
   }
   #title {
     font-size: 50px;
   }
   .date {
-    font-size: 15px;
+    font-size: 20px;
     color: #aaa;
-    margin-right: 10px
+    margin-bottom: 10px;
+    font-style: italic;
+  }
+  .commit > .files {
+    color: rgb(255,169,77);
+  }
+  .hash {
+    font-size: 15px;
   }
 </style>
 
 <h1 id="title">Log</h1>
 
-This log represents my progress on the Future of Coding project. I intend to update this log every weekday.
+This log represents my progress on the Future of Coding project. I intend to update this log every weekday, except when otherwise specified.
 
-The data for this log are pulled from the commit message history for this repository. <a href="' | prepend: link | prepend: '">'
+The data for this log are pulled from the commit message history for this repository, which can be found in [`/_data/git-log.json`](/_data/git-log.json).
 
 <div id="commits-container">
 {% for commit in site.data.git-log %} 
   {% if commit.message != 'updated git log' %}
     {% unless commit.message contains 'Merge branch' %}
       {% assign first_line = commit.message | newline_to_br | split: '<br />' | first %} 
-      {% assign date = commit.committer.date | date_to_string | prepend: "_" | append: "_" %}
-      {% assign link = 'https://github.com/stevekrouse/futureofcoding.org/commit/' | append: commit.commit %}
-      {% assign date_span = '<span class="date">' | append: date | append: '</span>' %}
-      {% assign first_line_span = '<a href="' | append: link | append: '">' | append: first_line | remove: "#" | append: '</a>' %}
-      {% assign header = '<span class="header">' | append: date_span | append: first_line_span | append: '</span>'  %}
-      {% assign message = commit.message | remove_first: first_line | prepend: header %}
-      <div class="commit">{{ message | markdownify }}</div>
+      {% assign date = commit.committer.date | date_to_string %}
+      {% assign message = commit.message | remove_first: first_line %}
+      <div class="commit">
+        <h2 class="header">
+          {{ first_line | remove: "#" }}
+          <a class="hash" href="https://github.com/stevekrouse/futureofcoding.org/commit/{{ commit.commit }}">{{ commit.commit | truncate: 7, ""}}</a>
+        </h2>
+        <div class="date">{{ date }}</div>
+        {% if commit.changes != empty %}
+          <div class="files">
+            {% for change in commit.changes %}
+              {% if change[2] != '_data/git-log.json' %}
+               <div class="file">
+                  edited: <a target="_blank" href="https://github.com/stevekrouse/futureofcoding.org/blob/{{commit.commit}}/{{change[2]}}">{{change[2]}}</a>
+                </div>
+              {% endif %}  
+            {% endfor %}
+          </div>
+        {% endif %}
+        {{ message | markdownify }}
+      </div>
     {% endunless %} 
   {% endif %}
 {% endfor %}
@@ -49,4 +75,3 @@ The data for this log are pulled from the commit message history for this reposi
   ga('send', 'pageview');
 </script>
 <script repoPath="stevekrouse/futureofcoding.org" type="text/javascript" src="/unbreakable-links/index.js"></script>
-
