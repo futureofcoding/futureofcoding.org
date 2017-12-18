@@ -7,6 +7,10 @@ title: Quotes
 * TOC
 {:toc}
 
+## Jason Brennan
+
+“This isn’t about visual programming vs plaintext programming, this is about programs to manage computer resources vs programs as representations of complex and dynamic thoughts.” 
+
 ## Jeff Bezos
 
 [We used to plug appliences into lightbulbs sockets](https://youtu.be/vMKNUylmanQ?t=12m22s). 
