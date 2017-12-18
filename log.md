@@ -19,11 +19,16 @@ title: Log
     font-style: italic;
   }
   .commit > .files {
-    color: rgb(255,169,77);
     margin-bottom: 5px;
   }
   .hash {
     font-size: 15px;
+  }
+  .additions {
+    color: rgb(81,207,102);
+  }
+  .deletions {
+    color: rgb(250,82,82);
   }
 </style>
 
@@ -51,7 +56,11 @@ The data for this page is pulled from the commit message history for this reposi
             {% for change in commit.changes %}
               {% if change[2] != '_data/git-log.json' %}
                <div class="file">
-                  edited: <a target="_blank" href="https://github.com/stevekrouse/futureofcoding.org/blob/{{commit.commit}}/{{change[2]}}">{{change[2]}}</a>
+                  <span class="additions">{{change[0]}} additions</span> &
+                  <span class="deletions">{{change[1]}} deletions</span>
+                  <a target="_blank" href="https://github.com/stevekrouse/futureofcoding.org/blob/{{commit.commit}}/{{change[2]}}">
+                    {{change[2]}}
+                  </a>
                 </div>
               {% endif %}  
             {% endfor %}
