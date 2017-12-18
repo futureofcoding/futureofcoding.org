@@ -12,9 +12,6 @@ title: Log
     font-weight: bold;
     margin-bottom: 5px;
   }
-  #title {
-    font-size: 50px;
-  }
   .date {
     font-size: 15px;
     color: #aaa;
@@ -32,16 +29,16 @@ title: Log
 
 <h1 id="title">Log</h1>
 
-This log represents my progress on the Future of Coding project. I intend to update this log every weekday, except when otherwise specified.
+Welcome to my development journal. This is an experiment in radical transparency. You can read my unfiltered daily thoughts below. Pardon my typo-laden stream-of-consciousness. 
 
-The data for this log are pulled from the commit message history for this repository, which can be found in [`/_data/git-log.json`](/_data/git-log.json).
+The data for this page is pulled from the commit message history for this repository. It's similar to what you'd see if you did `git log`. 
 
 <div id="commits-container">
 {% for commit in site.data.git-log %} 
   {% if commit.message != 'updated git log' %}
     {% unless commit.message contains 'Merge branch' %}
       {% assign first_line = commit.message | newline_to_br | split: '<br />' | first %} 
-      {% assign date = commit.committer.date | date_to_string %}
+      {% assign date = commit.committer.date | date: "%m/%d/%y %a %l:%M %p" %}
       {% assign message = commit.message | remove_first: first_line %}
       <div class="commit">
         <h2 class="header">
