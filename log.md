@@ -42,7 +42,7 @@ The data for this page is pulled from the commit message history for this reposi
       {% assign message = commit.message | remove_first: first_line %}
       <div class="commit">
         <h2 class="header">
-          {{ first_line | remove: "#" }}
+          {{ first_line | remove: "#" | replace: "<li>", "li" }}
           <a class="hash" href="https://github.com/stevekrouse/futureofcoding.org/commit/{{ commit.commit }}">{{ commit.commit | truncate: 7, ""}}</a>
         </h2>
         <div class="date">{{ date }}</div>
