@@ -46,10 +46,9 @@ The data for this page is pulled from the commit message history for this reposi
       {% assign date = commit.committer.date | date: "%m/%d/%y %a %l:%M %p" %}
       {% assign message = commit.message | remove_first: first_line %}
       <div class="commit">
-        <h2 class="header">
+        <a class="hash" href="https://github.com/stevekrouse/futureofcoding.org/commit/{{ commit.commit }}"><h2 class="header">
           {{ first_line | remove: "#" | replace: "<li>", "li" }}
-          <a class="hash" href="https://github.com/stevekrouse/futureofcoding.org/commit/{{ commit.commit }}">{{ commit.commit | truncate: 7, ""}}</a>
-        </h2>
+        </h2></a>
         <div class="date">{{ date }}</div>
         {% if commit.changes != empty %}
           <div class="files">
