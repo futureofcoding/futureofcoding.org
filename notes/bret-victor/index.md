@@ -104,9 +104,13 @@ Beautiful. Reminds me both of JoyJS and Aprt.us and [Programming with Comics](ht
 
 ## _June 2014_ - [Seeing Spaces](https://vimeo.com/97903574)
 
+## _March 2014_ [RESEARCH AGENDA AND FORMER FLOOR PLAN](http://worrydream.com/cdg/ResearchAgenda-v0.19-poster.pdf)
+
 ## _Oct 2014_ - [Humane Representation of Thought](https://vimeo.com/115154289)
 
 ## _Nov 2015_ - [What a technologist can do about climate change](http://worrydream.com/#!/ClimateChange) 
+
+
 
 ## [Quotes](http://worrydream.com/#!/quotes)
 
