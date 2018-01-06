@@ -52,13 +52,13 @@ I'm really getting revved up with the idea of video games, because they align th
 
 ### Environment / langauge goals
 
-While he starts with the environment, I'd rather start with the langauge, or in other words, *start from the user who doesn't know how to code*.
+While he starts with the environment, I'd rather start from *the user* who doesn't know how to code.
 
 I believe the core challenge of learning to program is: **the assimilation of models.**
 
 Bret calls this: "identity and metaphor -- _how can I relate the computer's world to my own?_")
 
-In order to be able to make anything, the user needs to have a ever-improving model of how their tools behave. For example, think about about a child assimilates the model of a hammer. It's clear from the way it's shaped from which end to pick it up. Then when you pick it up, you immediatley notice that it's much heavier on one side. And of course you've seen others people use hammers, so the model snaps right into place: swing this where I want BAM.
+In order to be able to make anything, the user needs to have a ever-improving model of how their tools behave. For example, think about about a child assimilates the model of a hammer. It's clear from the way it's shaped from which end to pick it up. Then when you pick it up, you immediatley notice that it's much heavier on one side. And of course you've seen others people use hammers, so the model snaps right into place: swing this near where I want it to make a BAM.
 
 #### Powerful mental models / ideas
 
@@ -71,62 +71,122 @@ Thus we want to help students assimilate *powerful* mental models, what Seymour 
 
 These are the two-sides of the *composability* coin. As we've learned from functional programming, composibility is a very powerful idea. It allows us to do *top-down design*, where one decomposes a problem into its subproblems in such a way that solving the sub-problems automatically solves the solution -- because you've pre-composed the sub-problems properly before solving them.
 
-So now that we know composability is a powerful idea, how do we help a new user assimilate it?
-
-TODO
+So now that we know composability is a powerful idea, the question to ask is how do we help a new user assimilate it? In his article, Bret compares LOGO and Hypercard to ProcessingJS to show how limited it is on both of these fronts. However, I would be excited by a more thorough discussion on how to build intuitively for decomposition and recomposition.
 
 Other powerful mental models/ideas include:
 
-* referential transparency (partitioning side-effects) TODO
+* referential transparency (partitioning side-effects) 
 * type system
-* TODO
-
-#### Technological realities
-
-* proccessor speed
-* storage
-* network speed
-* computational efficiency
-
-TODO
 
 #### Powerful ways of working
 
 Additionally, we know about some powerful ways of working:
 
-* creating by reacting
-* creating by abstracting
-* small steps
-* refactoring
+* creating by reacting to what's on the screen
+* abstracting similar code via variables/functions
+* working in small steps
+* refactoring code to be more readable, faster, etc
 * version control workflow branching
 * planning a project, estimating time, github issues, prioritizing
 
-#### New learnable programming essay
+## The features are not the point
 
-Here's the framing:
+> We often think of a programming environment or language in terms of its features -- this one "has code folding", that one "has type inference". This is like thinking about a book in terms of its words -- this book has a "fortuitous", that one has a "munificent". What matters is not individual words, but how the words together convey a message.
 
-human <-> interface <-> computer
+Love it!
 
-Humans want to make things with comptuers. In order to make something you need to have a model of how it works in your head.
+## Read the vocabulary
 
-On the one extreme to the left, you could make an interface building upon models that people already have in their heads. This is why Microsoft Word is so successful. The cursor is much like the tip of a pencil and the page is much like a physical page. The mapping is clear.
+> Thought experiment. Imagine if you bought a new microwave, took it out of the box, and found a panel of unlabeled buttons. Imagine if the microwave encouraged you to randomly hit buttons until you figured out what they did.
 
-On the other extreme to the right, you could simply have the human learn how the computer works, starting from electrons up through NAND and NOR gates, to proccessors, binary, Assembly, and C. This epitomizes Bret's Alan Perlis quote, "To understand a program, you must become both the machine and the program."
+Great metaphor!
 
-In the middle, you have powerful models for thinking, which take technological realities into account.
+The demo of hover over for documentation inline is so beautiful. Makes me wonder if we could add that to WoofJS... In Woof, the sprites are given named parameters, so that's ok. However, we could probably improve the understanding of control structures if we added side-notes about them. Currently we add those notes inline in comments which is just awkward. It would also be nice if WoofJS had live update so users could see in real time the effect of their changes - it's a bummer we reload the entire page on any change.
 
-TODO looks like there are two dimensions here:
+## Follow the flow
 
-1. Familiarity of model (is it a human model or comptuer model)
-2. Power of model (does it enable powerful ways of thinking)
+Ah, this section is criticizing what I just mentioned, the immediate update, in addition to not showing incremental steps.
 
-Microsoft Excel. Unless you're coming from an accounting background, the grid model is new to you. (Side note: it wasn't until I learned SQL that I learned that properties are at the top and rows are entities. This array of dictionaries metaphor is quite powerful. I imagine people who grow up with Airtable or Fieldbook will learn those powerful ideas seamlessly.) There are two fascinating metaphors in Excel that are incredibly easy to pick up:
+> People understand things that they can see and touch.
 
-1. *Underneath* a cell can be a formula that produces it. The metaphor of "under the hood" is easily assimilated.
-2. *Dragging* a formula iterates it over data, updating the references as it goes. Very easy to pick up. Then if you don't want certain references to update as you drag, you learn about the `$` operator. It's a great example of doing the commong thing automatically and letting you ask for a special case when you need it.
+For-loops are the worst. I'd definitely vote to replace them with iterating over an array. Or even a while-loop if neccesary.
 
+Allowing the programmer to scrub through the steps is great. In particular it allows them to see how/why things loop around. This would probably entirely eliminate one of the first questions that almost every Scratch student has of how forever-loops work. This is a big deal. The more of those questions we eliminate, the less need there is of trained teachers, the more the environment can scale.
 
+Of course, I am excited with functional programming ideas, which have a less-intuitive model of flow. Yet it enables higher comprehension and more powerful thinking once you do understand it. I think the Elm time travel debuggers and the CycleJS devtools diagrams point in interesting directions.
 
+### Make flow visible
+
+Really cool section! Love the metaphor to driving directions. Also love the way he abstracts over iterations of a loop. He's totally on point that this could be super helpful when you're curious when the loop goes into an inner-if statement.
+
+### Make time tangible
+
+This is cool too! Giving users another way to slice a program. See it from another angle. 
+
+However, there feels like a slight arbitrary-ness to some of these examples. That is, I wonder if there's a way to build a langauge in which it's easy to build this visualization tools on top of so that people could build and publish these just like they build and publish libraries and frameworks.
+
+### Make time visible
+
+Beautiful! This is allowing us to see the path of an object all at once on the screen. Very reminiscent of the Ladder of Abstraction and also the Elm mario time travel debugger (which was probably inspired by this essay).
+
+### Summary — Follow the flow
+
+> The environment can make flow tangible, by enabling the programmer to explore forward and backward at her own pace.
+
+This is key. Time travel debugger.
+
+> The environment can make flow visible, by visualizing the pattern of execution.
+
+This is also key. CycleJS devtools diagram.
+
+> The environment can represent time at multiple granularities, such as frames or event responses, to enable exploration across these meaningful chunks of execution.
+
+Again, this sounds to me like add-ons that the community could build given a really solid underlying structure. A structure that Conal Elliot would build. Perfect abstractions.
+
+### FRP Scratch
+
+I'm reading this essay in part in terms of a new programming environment for children that I've been thinking about recently. Sometimes I call it an FRP Scratch. It's like Scratch but with a more functional reactive runtime, so as to enable time travel debugging and also a CycleJS-like diagram of the code.
+
+Yet my conversation with Jason Brennan is making me rethinking directly copying Scratch as much as I was planning to. That is, there's a lot of really interesting metaphors and abstractions outside of Scratch that haven't been explored. For example: direct manipulation. But of course direct manipulation, while intuative, does seem to limit the power of the comptutational abstractions. Things to think about!
+
+## See the state
+
+> The computer somehow drew that picture, so the computer must have calculated all those scaleFactors itself. Are you seriously recalculating them in your head?
+>
+> ... setting a "breakpoint" ... is like monitoring traffic on the freeway by setting up a barricade ... writing to a "console" ... is like figuring out where your dog goes during the day by following the trail of droppings.
+>
+>
+> The entire purpose of code is to manipulate data, and we never see the data. We write with blindfolds... 
+> ... Spreadsheets rule because they show the data.
+> ... Edward Tufte has one primary rule... Show the data.
+> ... the number one thing you can do is to show the data.
+
+Beautiful. I'm sold. Let's show the data!
+
+### Show the data
+
+This becomes easier when you can step through time easily.
+
+### Show comparisons
+
+![screenshot 2018-01-06 at 10 49 33 am](https://user-images.githubusercontent.com/2288939/34641266-5f0962fc-f2cf-11e7-91e6-231235e00144.png)
+
+Woah. I forgot about this. Beautiful...
+
+And then when I was mesmerized by that plot, he hit me with the knockout punch: 
+
+> Is it possible to understand a loop with, say, thousands of iterations, without drowning in thousands of numbers?
+>
+> Yes -- there is an entire field of study devoted to depicting large amounts of numbers. To visualize this data, we can use all of the standard techniques of data visualization.
+
+And then he turns the table plot to a graph. And I died. Holy crap I really need to read this Tufte guy. Looks liek Amazon lost the package of his book in transit... Let me call them now.
+
+### Eliminate hidden state
+
+I love how he explains the two ways to eliminate hiddden state:
+
+1. Make it non-hidden
+2. Show it
 
 <script>
 
