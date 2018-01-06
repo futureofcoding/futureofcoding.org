@@ -188,6 +188,34 @@ I love how he explains the two ways to eliminate hiddden state:
 1. Make it non-hidden
 2. Show it
 
+WoofJS improves on the way ProcssingJS (or the normal canvas API) exposes color changes by making them explicit extra local parameters to sprites, as opposed to implicit global state. However, WoofJS still has hidden global data in the form of variables as well as the attributes of sprites, which can be changed from anywhere in the code.
+
+Scratch (and Bret's demo) show global variables by simply putting them on the screen (unless you choose to hide them.) Very straightforward.
+
+Woah, the way he makes transformation matrixes understandable by visualizing them is beautiful! Why hadn't I thought of that?!
+
+This is a great rule: "All state must be eliminated or shown."
+
+## Create by reacting
+
+### Get something on the screen as soon as possible
+
+This is pretty straightforward. WoofJS does this well with autocomplete. 
+
+> Strangely, I don't actually know of any APIs that are intentionally designed with autocomplete in mind. I do know many APIs, such as Processing, that are designed for brevity, which is irrelevant in an environment with good autocomplete.
+
+Well WoofJS was designed with autocomplete in mind. Typing out all the parameter names was never part of the deal. I knew those would be written for you.
+
+### Dump the parts bucket onto the floor
+
+Scratch does a pretty good job of this. WoofJS does a slightly worse job but still pretty good - and we're going to make it more like Scratch soon. Dynamicland makes this really interesting because you can literally dump the programming constructs on the literal floor (or put them on a bookshelf).
+
+#### Direct manipulation
+
+The direct manipulation stuff he shows here is also very cool.
+
+TODO think about and/or find someone else's thoughts on the pros and cons of direct manipulation.
+
 <script>
 
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
