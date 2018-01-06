@@ -50,3 +50,7 @@ One final note. A lot has been said (TODO link needed) about social engineering 
 3. Actions that neither the customer nor customer support rep should ever take.
 
 We all know that the internal customer support interface has many of these actions available. You may blame training or hiring if these actions are taken by reps. But I blame the interface. 
+
+## Not chat bot
+
+Many have thought that the future of customer support is a chat bot, possibly with AI. However, text is a poor interface. Otherwise amazon.com would be a chat bot experience. The only reason we think the future of customer support is a chat bot is because we think that we need another human to press buttons on some internal interface for us.
