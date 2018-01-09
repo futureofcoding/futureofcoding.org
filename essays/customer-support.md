@@ -1,8 +1,8 @@
 ---
-title: Customer Support
+title: Customer service
 ---
 
-# Customer Support
+# Customer service
 
 ## How important is interface design
 
@@ -54,3 +54,24 @@ We all know that the internal customer support interface has many of these actio
 ## Not chat bot
 
 Many have thought that the future of customer support is a chat bot, possibly with AI. However, text is a poor interface. Otherwise amazon.com would be a chat bot experience. The only reason we think the future of customer support is a chat bot is because we think that we need another human to press buttons on some internal interface for us.
+
+## Restaurants, waiters, and menus
+
+Earlier this week, I was reflecting on the thoughts in this essay while at a favorite restaurant. We were waiting for a waiter to take our order. We kept looking around for him, but didn't see him. It took 5-10 minutes for him to come over. Then I watched him run over to the restaurant comptuer, punch in our order, and then approach the next table. 
+
+### Ideal menu
+
+Whenever I'm at a new restaurant, I want to know "what's popular here?" as well as "what do people with my tastes order here?" You may recognize these questions as the sorts of things that Amazon routinely answers for you before you even ask the question with their interfaces that rank popular and well reviewed products, as well as their "people who bought this also bought" section. If we had a better interfaces at restaurants (as well as a system where a person's orders could follow them between restaurants -- which would also integrate with payment, splitting the bill, and of course your health apps, which, of course, would prevent you from placing any order that would exceed your chosen health goals or would at least make you aware of the attempted discretion), we could without much effort compute much of this information and display it intuitively for users. 
+
+## Human-to-human-to-comptuer
+
+It struck me that this sittuation is strikingly similar to the customer support sittuation. What's the similarity? You have a customer interfacing with a agent of a businesss interfacing with a comptuer on behalf of the customer. It's a human-to-human-to-computer interface. Once I was able to articulate this abstraction it lead me to see the commonality of many different sittuations I find problematic:
+
+* accountants
+* lawyers
+* software developers
+* designers
+
+Each of these professionals listen to a customer, ask relevant questions, propose relevant options, type stuff into a computer, show the results to the customer, and repeat this proccess until the desired result on the computer is achieved. It's a big waste of time, money, and source of great fustration. Most of all, in the medium-is-the-message sense, it leads people to feel less empowered than they would if they had a proper comptuer interface for they, themselves to get to directly interface with the problem domain.
+
+One example of a human-to-human interface without a computer at the other end would be a pschologist. Clearly I'm not talking about solving this interface with a computer. Although there are some interesting moves in this direction, even with a simple quiz interface such as can be found at clearerthinking.org

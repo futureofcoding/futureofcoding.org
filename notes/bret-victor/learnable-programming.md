@@ -214,7 +214,133 @@ Scratch does a pretty good job of this. WoofJS does a slightly worse job but sti
 
 The direct manipulation stuff he shows here is also very cool.
 
-TODO think about and/or find someone else's thoughts on the pros and cons of direct manipulation.
+Direct manipulation is clearly the best interface we can imagine for those sorts of concrete things that can be directly manipulated. Yet when one is trying to abstract, direct manipulation because less clear, because, of course, there is not something concrete to manipulate.
+
+I think I have happened upon an interesting semantic twist of phrase. Direct manipulation of concrete visual objects is simply dragging them around with your mouse in the appropriate way. This is clearly directly manipulating the object, as opposed to indirectly manipulating another object somewhere else and then seeing the change on the target object. Yet, what about an abstraction? What would it mean to directly manipulate an abstraction? Well that would merely mean to manipulate it directly, not indirectly, which I'm taking to mean, manipulate it in itself, not by manipulating something else. 
+
+All this talk of manipulating something, itself, and not somewhere else is making me think of [Andre Staltz's writings on consolidating all ways an object can change within the object itself](https://futurice.com/blog/reactive-mvc-and-the-virtual-dom), which of course form the basis of FRP systems like CycleJS.
+
+## Create by abstracting
+
+> Learning programming is learning abstraction... [Without abstraction it'd] makes no sense at all... What is the point of learning to "code", if it's just a way of getting the computer to do things that are easier to do directly?
+
+### Start constant, then vary
+
+I'm glad Bret and [Brent](https://byorgey.wordpress.com/2009/01/12/abstraction-intuition-and-the-monad-tutorial-fallacy/) agree.
+
+On the surface level, I really love the demo of creating variables from concrete numbers, and then extending those variables throughout the code by connecting them to other concrete numbers. You've gotta admit, you'd never think of that! It concieves of variables in a really neat way. 
+
+Yet, I imagine that many professional programmers see it as a unneccsary visual gimmick. But then, those programmers would be far from their experience of learning variables, and thus would not see how confusing learning abstraction is.
+
+In my experience teaching computer science, I saw this all the time. For example, one of our more advanced students created a choose your own adventure game where you'd first pick a character, then a location, then a pet, etc. And he accomplished this logic by first creating one branch of the code, and then copying and pasting it lower down and changing relevant variables. He had built up this rickety structure to thousands of lines of code, which, if he had used abstraction, could've been 10x shorter. 
+
+There were three problems apparent:
+
+1. The fact that the interface, which in this case was my interface WoofJS, didn't automatically lend itself well to abstraction. The fact that copy-and-paste was the easiest way to acommplish this is a bummer. (A similar thing is true of Scratch programs, which are known to turn into spagetti code.)
+
+2. When I went to help this student with a particular bug, I personally found the code so large and incomprehensible that I was unable to help him with the code in its current state. Yet I was *unable to communicate the benefits of abstraction sufficiently to convince* this child to learn them and refactor his code. I was saved only by my co-founder and co-teacher in this class who proposed it this way: "Steve wants to teach you a really advanced thing called a variable. It's like a magic hack."
+
+3. Once the child was explained (and the fact that they had to be explained, not intuited from the interface is the 1st listed here) the basic concepts behind variables and functions, they were still unable to apply them to accomplish their aims. In other words, they still prefered copy-and-paste, which if you think about it, is really the obvious approach to *start constant, and then vary*.
+
+Given all of these observations of problems, I would propose I method of building abstraction that builds ontop of a child's natural inclination to copy and paste. This would be messy, but possible, in a texual interface. You could do what I was helping this student do manually: search through the text for similar chunks that only differ in a few key places, and if found, ask the user if they would like you to replace those chuncks with call to functions with the appropriate parameters.
+
+In a non-textual interface, this could be even cleaner because the very interface they use to "duplicate" a chunk of code in the UI could lead them to an interface for abstraction.
+
+Given the beauty and power of functional programming and functional abstraction, I believe that there are likely beautiful visual metaphors to be found that could make proccess seamlessly intuative for students.
+
+### Start with one, then make many
+
+Again, this is beautiful. Yet I fear I would have to agree with the vetran programmer who looks at this like it's a visual gimmick. I can't imagine any beginner programmer actually being able to climb up the ladder of abstraction in this way. How does a student go from: I want these houses to have different heights to I can describe my house as a function of a height parameter/variable, and then call it with different values? 
+
+But of course, I'm attacking a strawman here because even Bret wouldn't defend these demos as usable. He's merely trying to articulate what usable would look like. As Bret would doubtless agree, the words "function" and "var" are far too arcane for students to intuit.
+
+I could see the "layer" metaphor from Photoshop being an interesting place to start. It seems like [Figma's components feature](https://blog.figma.com/components-in-figma-e7e80fcf6fd2) is pretty intuative, yet I'd prefer more explicitness around what's overriding what and when -- and in general more abstractness. (Looks like [someone at Figma is a fan of Xerox PARC...](https://rsms.me/1950s-called-wanted-toolbox-back))
+
+## Langauge
+
+### Great works
+
+Ah, such nostalgia for this section of this essay. If Bret didn't curse at me to read Mindstorms, who knows where I'd be today?
+
+### Identity and metaphor
+
+From my personal experience I can vouch for the power of identifying with the LOGO turtle. In the medium-is-the-message sense, even more powerful is the felt sense of what it feels to intuit in one's own body how to figure things out, understand things. I truly feel like my self confidence in problem solving was built *in my body* with LOGO experiences.
+
+> Smalltalk, like Logo, also has a strong resonant metaphor, which is the message... "Assignment statements -- even abstract ones -- express very low-level goals... Human programmers aren't Turing machines -- and the less their programming systems require Turing machine techniques, the better."
+
+This is a good point. Sequential programming and variables must die. I'm not saying that Haskell or Elm are the pinacle of intuative, but they are closer to the right level of abstraction than the thin layers of abstraction we have over computer hardware architecture.
+
+### Decomposition
+
+> Modularity is the human mind's lever against complexity. Breaking down a complex thing into understandable chunks is essential for understanding, perhaps the essence of understanding.
+
+Yes, modularity, compression, and analogy. These make sense to me as the basis for understanding.
+
+#### LOGO
+
+> Logo uses the metaphor of "teaching the turtle a new word". 
+
+This doesn't seem that clever. It's merely another name for a subroutine. And, of course, all sequential code is difficult to decompose so that's not great.
+
+> ... Long and careful thought was given to the process by which a learner discovers the need for subprocedures, and then factors a large procedure into subprocedures.
+
+I'd be really curious to [know more about this long and careful thoughts...](./questions)
+
+
+#### Forth
+
+Side note: the way this langauge explicitly deals with pushing and popping this to the stack makes me wonder about how we call functions: the name of the function, followed by its parameters. It's just adding stuff to the stack. So crazy. Even haskell, `reduce (+) 0 [1,2 3]` is so simplistic. Well, I guess that's simplisitic for lambda calculus reasons, and less stack-reasons. Ugh, just get me to a better place then text.
+
+Direct note: the most interesting thing is how little Forth does, and yet how powerful it is. I love the escape hatches to assembly. Such a great langauge for assemly nerds.
+
+#### [Why Functional Programming Matters](http://worrydream.com/refs/Hughes-WhyFunctionalProgrammingMatters.pdf)
+
+Really a brilliant article. And now I have a better sense of what Bret means below in the recomposition section. The key insight of this essay is that functional programming langauges, like Haskell, aren't great only because of what they eliminiate, such as mutable variables, but what they add, such as HOF and lazy evaluation, both of which I really didn't appreciate enough until this essay. 
+
+The fun analogy he uses is that it's not the elimination of GOTO that's important but the addition of named subroutines. In a similar vein, it's less important that we rid ourselves of side-effects, than that we add support for HOF and lazy evaluation which allow for modularity, which is the most important thing.
+
+Yet! I foud myself falling asleep at the wheel while reading some of the more mathmatical sections of this essay, which some FP essays tend towards. It makes me wonder: it seems like the reason FP is so great is modularity through mathmatical abstraction, yet that's also what makes it so difficult to parse. And thus why I'm so excited about where the CycleJS FRP diagram points. Taking functional programming and visualizing it in such a beautiful, non-textual way. 
+
+Basically, I am trying to reconcile my and Bret's love of functional programming and our mutual desire to "kill math," when the FP that we both love is based upon and looks quite similar to the mathmatics that we both want to kill. It's almost nonesensical when you put it that way, huh? This Bret guy wants to make programming more like math, but then kill math? This is another good [question](./questions)...
+
+
+### Recomposition
+
+> Creating is remixing. To a large extent, new ideas are old ideas in new combinations.
+
+Well, there it is: analogy as the core of creation.
+
+Hypercard is the bomb.com - maybe Joe Cohen will figure out how to bring it to the Web.
+
+#### No global state
+
+Proccessing's recomposition is the worst because of poor encapulation / global state. Just another argument for no global state.
+
+But you must have some, right? What is global state? It's merely an object/dictionary at the top level, often implicitly referenced. You can make it less implicit by referecing it directly, which in javascript would be the `window` object, which all variables are defined upon, more or less, I'm not certain of the details, and the subtleties of const, var, let, or using none of these.
+
+Alan Kay's World's paper got me thinking about the advantages of making global state less explicit. But even Haskell has a notion of global state. It's just not mutable. And then it can be imported into other global states as a module. I don't really like this.
+
+When you want to reference something, there are a few ways: it's name, it's location, it's contents, or it's unique ID. Under the hood, Paul's Unison langauge refers to all definitions by a hash of its contents. In this way, symbolic name really is just a pointer to stuff underneath. IPFS works in a similar way. This also reminds me of Rich Hickey's view of the world: a named entity is simply the stream of a series of values over time that represent that name.
+
+Anyways, back to global state: it can be entirely eliminated with content-hashed-references, because it's in effect copying-and-pasting all over the place. In this world, names are just labels for actual stuff. 
+
+I can't put a finger on why, but this feels like a powerful insight. But then again, it might just be a feeling.
+
+#### Sequencing and monads
+
+Despite all my FP and Haskell experience, I never felt very comforatable with monads. This is probably related to the fact that I only used Haskell in the university setting. However, potentially monads aren't needed for sequencing side-effect-y code. That's what FRP is supposed to be for, right? This section of the essay, unsurprisingly, is making me want to do my Conal Elliot FRP deep dive sooner rather than later.
+
+### Readability
+
+[The apple naming methods guidelines](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/CodingGuidelines/Articles/NamingMethods.html) is amazing! My first thought is that this could be a great starting place for building a graphical library that makes some of these ideas intuitively embeded in the landscape. Yet of course words do a good job of this as well. 
+
+In a proper interface we wouldn't have to worry as much about camel case since Alcuin of York did indeed invent the concept of spaces between words hundred of years ago. 
+
+This reminds me of my idea to build a more human-readable regex. I continue reflecting on this idea [here](/essays/regex-for-humans).
+
+## Okay then
+
+...
 
 <script>
 
