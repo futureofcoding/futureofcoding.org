@@ -340,7 +340,44 @@ This reminds me of my idea to build a more human-readable regex. I continue refl
 
 ## Okay then
 
-...
+> The design principles presented in this essay can be used as a checklist to evaluate a programming system for learning.
+
+I am the only person I am aware of to [take this seriously](https://medium.com/@stevekrouse/woof-d9adf2110fc6).
+
+To evaluate this checklist, as a checklist, I'd have to say that it's more provacative than it is helpful.
+
+### These are not training wheels
+
+> A frequent question about the sort of techniques presented here is, "How does this scale to real-world programming?" 
+
+Yep, I get this question a lot.
+
+> This is a reasonable question, but it's somewhat like asking how the internal combustion engine will benefit horses. The question assumes the wrong kind of change.
+
+I'm not sure I buy this argument anymore. It's like asking, how the ICE will *interact* with horses, not benefit them. That would be akin to asking, how do these changes benefit programmers, which is not what these people are asking.
+
+> Here is a more useful attitude: Programming has to work like this... Given these requirements, how do we redesign programming?
+
+This is an emperical claim about the usefulness of a given attitude towards solving a problem. I am doubtful that it this is true.
+
+#### No Silver Bullet
+
+Hard to believe I've never read this before! Notes continued [here](/notes/no-silver-bullet).
+
+## Footnotes
+
+My acquaintance Christina Cacioppo (which makes sense) and Stripe's Patrick Collison (which is more confusing) gave feedback on this essay.
+
+And *another* imporing to read Mindstorms! I didn't realize he says it *4* times!
+
+## Reflections...
+
+Well it'd take so much time to reflect on my reflections on this essay that I don't even want to go there.
+
+But I will say that I got a lot out of this. It's difficult to imagine a world where I haven't read Will Wright, Fred Brooks, and the other tangents I went down here. I have a much deeper sense of Bret's world now that I've gotten a sense of his influences. I am excited to dig into Tufte, possibly tomorrow morning!
+
+This is less related to this particular essay, but... I'm also beginning to detect a communication style that Bret (and others in social activism) use that is compelling (because it plays off of our favorite emotion: outrage), but not helpful for solving problems. It makes me wonder where the "get up and go" to persue a social cause comes from, if not from outrage (or the desire to be right, or to achieve high status). That is, I am theorizing that people with social causes are *less*, not more, concerned with the happiness of other people, despite them purporting to work on their behalf. If they were truly interested in the needs of other people, why not help people in the terms which they want to be helped?
+
 
 <script>
 
