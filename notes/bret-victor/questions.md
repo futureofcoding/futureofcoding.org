@@ -9,6 +9,8 @@ In _Learnable Programming_, you mention "Long and careful thought was given to t
 
 How do square your admiration for functional programming with your desire to "kill math", given that FP looks a lot like the math you want to kill? (My guess is that he likes the abstractions of FP, but not the notation, and conversely he likes dislikes the notions of mathmatics, not the abstractions.)
 
+You often reference, directly or indirectly, how many of the principles of functional programming could improve programming generally. Yet few, if any, of your talks, papers, or demos, seem to embody those principles. Why is this?
+
 <script>
 
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
