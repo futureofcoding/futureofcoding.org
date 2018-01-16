@@ -55,9 +55,11 @@ The data for this page is pulled from the commit message history for this reposi
             {% for change in commit.changes %}
               {% if change[2] != '_data/git-log.json' %}
                <div class="file">
-                  <span class="additions">{{change[0]}} additions</span> &
-                  <span class="deletions">{{change[1]}} deletions</span>
-                  <a target="_blank" href="https://github.com/stevekrouse/futureofcoding.org/blob/{{commit.commit}}/{{change[2]}}">
+                  <a target="_blank" class="changes" href="https://github.com/stevekrouse/futureofcoding.org/blob/{{commit.commit}}/{{change[2]}}">
+                    <span class="additions">{{change[0]}} additions</span> &
+                    <span class="deletions">{{change[1]}} deletions</span>
+                  </a>
+                  <a target="_blank" href="/{{change[2] | remove: ".md"}}">
                     {{change[2]}}
                   </a>
                 </div>
