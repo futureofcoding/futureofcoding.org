@@ -34,9 +34,9 @@ Also, Luke said that it could be possible for me to host an event in the space o
 
 ## Day 2
 
-_Jan 15, 2018_
+_Jan 16, 2018_
 
-### Pre-thinking
+### Prep
 
 #### Fundraising
 
@@ -100,6 +100,31 @@ Things I saw yesterday that I will look at for inspiration:
 * dial widget
 * count dots on page
 * widgets that have pointy thing coming out
+
+### Recap
+
+Day 2 was a little less overwhelming, but also jam-packed. 
+
+When I first got in, I spent some time reading as much as I could of the source code of the Realtalk engine (big board). This was fun and seemed like a good way to learn about things -- as opposed to looking at random examples. 
+Then we had lunch. I chatted with Luke about his prior experience starting two companies, and how he was intitally so excited about VR, but now, like other early-VR enthusiasts, he has trouble putting on the goggles. Additionally, he mentioned how far away the technology is from being anywhere near good enough quality. 
+
+Then I spent a lot of time with Josh, who explained how the macro/pattern matching system works, the backend architecture (Realtalk, the webserver, the text-editor, the filesystem), including printing out the compiled Lua code that is generated. He also showed me the "Addition Kit" which I LOVED, as well as Editor in the World, which was also really cool. He pointed at a few other "kits" that I'm excited to check out. 
+
+Then Luke and I spent an hour or so talking about fundraising. That was fascinating, however, I don't feel comfortable publishing any of details there.
+
+## Day 3
+
+_Jan 17, 2018_
+
+### Prep
+
+I don't have any particular inspiration on what to build yet. I still feel like there's so much to see and tinker with. Here are the things that most interest me:
+
+* math kit (how it works, what fun tweaks could I make)
+* looking through the other kits, in particular a mini-editor Paula made
+* there was a page on wall in the carpet room that I remember piquing my interest, but I forget what it was
+* making a game of some sort
+* understaing and tweaking editor in the world
 
 
 <script>
