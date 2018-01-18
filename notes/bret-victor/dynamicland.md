@@ -126,6 +126,45 @@ I don't have any particular inspiration on what to build yet. I still feel like 
 * making a game of some sort
 * understaing and tweaking editor in the world
 
+### Recap
+
+I got to the lab at 10:30 this morning. First I played around with various kits: the math kit, the fractal tree kit, the logic kit, Paul's blocks kit, etc. Then I played with the RGB dial selector, but it was fustratingly difficult. Then I picked up poke with Toby and Bret. 
+
+#### Bret meets Alan
+
+Over lunch, I asked Bret about how he got connected to Alan. Here's approximately the story:
+
+> I made a website and one of Alan's researchers showed it to him. Alan often dismisses things when he firsts sees them -- "we were doing that back in the 70s at PARC" -- but if you keep showing him somthing that he needs to see, he'll eventually get it. They showed him my stuff a few times and we set up a time to meet. It kept getting pushed back because Alan had meeting with people like Barak Obama - this was in 2011 - but eventually I went to visit the lab. They were working on STEPS at the time. I stayed for a few weeks at the lab.
+
+After lunch, I perused the books in the library. I felt a little overwhelmed, not really excited about any particular project. I decided that I'd made a simple "dot catching game." That was fun and took 45 min or so. 
+
+#### Math Kit v2
+
+I was then saved by Virgina again. She wanted a way to do "spreadsheet like things" to data in the system. So first we needed to figure out a way to represent numbers. What eventually worked was using a "poker chip" style, where you count the number of different colored chips on a page, greens are ones, reds and tens, and blues are hundreds. That was fun.
+
+Then Luke showed us how to select a group of blocks, so it became clearer how to create aggregation functions. I made "sum" and "count". Then I modified the Math Kit so that it works for division; it used to only work for addition but now it works for +-/*. I combined sum, count and division to get the average of numbers.
+
+##### Things to think about
+
+* how the number primitives aren't super stable (depending on lighting)
+* name for this project. Other ideas are RealSheet, RealData, RealMath
+
+##### Things to definitely do:
+
+* refactor number pages to claims and a seperate library page
+* make a few other operators +/-*
+
+##### Things to maybe do:
+
+* print out a massive table of pasted on numbers (cover up dots for nothing, not zero)
+* print an average function
+* reference a selection from afar
+* reference a number from afar
+* map a function over a selection
+* pairwise do something to two selections
+* get an item from a selection via index 
+* max, min over selection
+* maybe a custom version of selection that's less noisy
 
 <script>
 
