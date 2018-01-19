@@ -205,6 +205,34 @@ This is really important but shouldn't take more than 30 min.
 
 I asked him today if we could talk tomorrow and he said he was mostly free. What to chat about? Basically explain that I'm looking for my next move and would appreciate his advice on how to figure it out. I'm considering doing research, possibly hanging out here if you'll have me, or I could help with other things like fundraising. The standard thing is to start a startup, but I'm not sure that's for me. If I were to go down the researcher route, how would you reccomend I go about it? If I wanted to follow in your footsteps, what would my first steps be?
 
+
+## Day 5
+
+_Jan 19, 2018_
+
+### Prep
+
+I've been at the lab since 10am this morning. Being the first one here, I accidentally set off the alarm. That was a fun start to the morning! I spent the last two hours responding to emails and booking flights home.
+
+My priorities today are:
+
+1. Chat with Bret. I think my notes yesterday are reasonable places to start.
+2. Get confirmation about my birthday in the space.
+3. Take photos and videos of what I made
+4. Make what I made practical somehow (with Virgina), including making a binder / documentation and refactoring the code to one page (or two one-pages)
+5. Add extra capabilities.
+
+#### Extra capabilities
+
+This is the least of my priorities, but it is the only one I can work on until Bret or Virgina get here. Of my list from yesterday, here's what I want to work on, in order:
+
+* showing map calculations on page
+* showing arithmatic calculations on page
+* spitting out map from arithmatic operator
+* chaining maps from arithmatic operators
+* zipwise map
+
+
 <script>
 
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
