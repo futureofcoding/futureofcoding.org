@@ -166,6 +166,45 @@ Then Luke showed us how to select a group of blocks, so it became clearer how to
 * max, min over selection
 * maybe a custom version of selection that's less noisy
 
+## Day 4
+
+_Jan 18, 2018_
+
+I got in at 10:30am this morning as the same time as Omar. I showed him what I had been working on, the game and Math Kit v2. There were a bunch of volunteers in the space today making things. 
+
+### Math kit progress
+
+I spent the whole day on my math kit today. I spent a long time refactoring the code I wrote the day before to make things more stable. I refactored the numbers to the Math Kit library, so that you only need to claim that something is a number in order for it to work with the system. I also lowered the opacity on all the colors used in the system so as to less interfere with the dot detection for my "poker chip numbers." 
+
+I also refactored sum_selection and count_selection to the Math Kit library. Then late in the day I started to make simple mapping over the numbers work. But before that, I spent 30ish minutes re-writing standard functional programming utilities so I don't have to do dumb Lua for-loops anymore. Basic mapping works now, and you can do cool things, like map over the list and divide each item by the sum of the list.
+
+The highlight of my day was when Omar used the "is number" convention that I made up to create his x-scrubber component. His component worked seamlessly with mine. For example, we hooked up him scrubber which goes from 0 to 1 to a *5 and we got a scrubber from 0 to 5. Amazing!
+
+### Math kit ideas for tomorrow
+
+* work with virgina to think about applications
+* data entry from csv
+* virtual number table from corner range
+* showing map calculations on page
+* showing arithmatic calculations on page
+* spitting out map from arithmatic operator
+* chaining maps from arithmatic operators
+* zipwise map
+* reference from afar (either range or number)
+* get an item from a selection via index 
+* max, min over selection
+* make a binder
+
+### Other ideas for tomorrow
+
+#### Take photos and videos of what I made!!!
+
+This is really important but shouldn't take more than 30 min.
+
+#### Chat with Bret. 
+
+I asked him today if we could talk tomorrow and he said he was mostly free. What to chat about? Basically explain that I'm looking for my next move and would appreciate his advice on how to figure it out. I'm considering doing research, possibly hanging out here if you'll have me, or I could help with other things like fundraising. The standard thing is to start a startup, but I'm not sure that's for me. If I were to go down the researcher route, how would you reccomend I go about it? If I wanted to follow in your footsteps, what would my first steps be?
+
 <script>
 
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
