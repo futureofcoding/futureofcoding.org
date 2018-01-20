@@ -232,6 +232,35 @@ This is the least of my priorities, but it is the only one I can work on until B
 * chaining maps from arithmatic operators
 * zipwise map
 
+### Recap
+
+Today I accomplished all of my priorities as well as the "extra capabilities."
+
+#### Videos!
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z0GB5ClzBA0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zXURk0sI4qk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YiDGAwcxQfA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-TO17CGIK3Q?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UPb66EcCTF8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+#### Chat with Bret
+
+I finally worked up the courage to chat with Bret. I think we spoke for an hour or so. I took some notes but will need some time to organize and proccess them. Hope to release soon.
+
+##### Things for tomorrow
+
+* include the latest poker chip numbers and "math kit v2" into my box
+* need a better name for my box than "math kit v2"
+* need to draw the cover and sides
+* documentation for box, maybe with videos or pictures?
+* better formatter for numbers than %0.3g
+
+But the most important thing for tomorrow is: **thinking about organizing activities for my birthday!!!**
 
 <script>
 
