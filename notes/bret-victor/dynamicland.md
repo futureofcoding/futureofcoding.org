@@ -259,6 +259,7 @@ I finally worked up the courage to chat with Bret. I think we spoke for an hour 
 * need to draw the cover and sides
 * documentation for box, maybe with videos or pictures?
 * better formatter for numbers than %0.3g
+* tweet videos!
 
 But the most important thing for tomorrow is: **thinking about organizing activities for my birthday!!!**
 
