@@ -263,6 +263,50 @@ I finally worked up the courage to chat with Bret. I think we spoke for an hour 
 
 But the most important thing for tomorrow is: **thinking about organizing activities for my birthday!!!**
 
+## Recap
+
+### Convo with Bret
+
+The conversation got off to a rocky start. I went in asking for very general advice, and Bret wasn't sure how to help.
+
+One thing he said: you can't just decide to do what Nicky Case is doing. Nicky can't not do what he's doing. There' just a manic energy there.
+
+He also reccomended the documetary The Corporation and Noam Chomsky's work for understanding his perspective on capitalism.
+
+He explained his philosophy for prototyping leading to buildng a platform, and then prototyping on top of that platform.
+
+He mentioned that Alan Kay is one of the greatest philosophers of all time, yet people seem to think he's the OOP or overlapping windows guy. He explains Alan best at the bottom of Links 2013.
+
+Probably the most helpful thing he said was:
+
+> Everyone I admire didn't do anything impressive in their twenties. Papert in 50s. Alan in 30s. Tufte in 50s. Jack Goodie 60s. Twenties is time for breadth.
+
+He also said to optimize for "feels important" or "there's something here and I need to know what it is."
+
+What's Alan Kay's mission?
+
+> medium where children grow up to adults to take care of society by being fluent in systems
+
+What's Bret's mission?
+
+> Ditto with Alan's mission, plus continuous with human life, humane.
+
+Another really important thing that Bret said:
+
+> You can't just improve coding. You need a broader mission. Everyone who's improved coding, Papert, McArthy, Alan, has done it with a broader goal in mind, and the technology fell out of that.
+
+Great Alan quote:
+
+> Sure we can make the $100 laptop, but I can't make 1000 great teachers to save my life. 
+
+His answer is AI. Bret believes that converstations should only happen with humans, not AI agent. Alan is into the agent. Bret is Ok with AI in environment, just not agent.
+
+Bret also referenced "shit crayons" a lot. I'm glad I read that piece. 
+
+> Kids were going to always make things dance. Like in a sandbox. We need an environment for teaching non-human universals like science. That's why Etoys is clearly the best.
+
+
+
 <script>
 
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
