@@ -67,97 +67,110 @@ Then I need to do research on FRP or a blockly competitor.
 
 And also think about sustainability.
 
-### 5. /plan v4
+### 5. [/plan v4](https://github.com/stevekrouse/futureofcoding.org/blob/825e4615a2fcfcde88623d8f1cfd9cece25ac9a7/plan.md)
+
+Bret Victor's Inventing on Pricinple was the main influence for this version of the plan. It imports social activism's notion of a cause or crusade into engineering. The main features of this plan are:
+
+0. You don't *find* your cause, you *construct* it.
+1. Pickling myself by reading all of my influences, and their influences
+2. Reflecting on past work
+3. Once I have a better sense of my cause, then constructing a "real" plan to attack that cause.
+
+In a sense, this plan was a plan to find a cause, which is vision plus insight. Examples of causes include Larry Tesler's "no modes", Seymour Papert's "microworlds", or Elon Musk's "save the planet from existential risks through for-profit business."
+
+### 6. /plan v5
 
 This is the current version below...
 
-## Crusade
+## Motivation: programming is something beautiful worth saving
 
-### Inventing on Principle
+Programming can be like playing a video game: rapid feedback loops, a feeling of tangible progress, and social engagement.
 
-The lens for this version of the plan is Bret Victor's Inventing on Principle. 
+It can also be as fustrating as running through water. It make you feel as stupid as watching a movie 10x as complicated as Inception. 
 
-#### Delicously Embaressing
+I believe it's this combination of a glittering core engulfed in icky crap that makes programming so uniquely worthy of being extracted, reformed, improved, rescued from the parts of itself that make it less than it could be.
 
-I haven't watched this video since I was a freshman in college, five years ago. I can still remember buzzing with excitement as I wrote an email to Bret Victor immediatley watching, saying something to the effect of, *That is how I want to live my life. Tell me what to do next.* 
+## Concerns
 
-I wish I had a copy of that email. I bet is deliciously embaressing... oops I found it:
+### 1) Financial sustainability
 
-> Hey Bret,
->
-> I just watched a few of your lectures and was especially impressed by Media for Thinking the Unthinkable and your DBX talk. At the end of Media For Thinking The Unthinkable talk, you mentioned that if we'd "like to help you find [this new medium], let me know." So this is me letting you know that'd I like to help you find it. 
->
-> I'm not exactly sure what that'll entail, but you've convinced me that it is an incredibly worthwhile project.
->
-> Best,
-> Steve
+I find that a whole category of mental anxiety is eliminated when I am able to earn enough money to pay for my expenses without dipping into savings. This is bare minimum financial sustainability. 
 
-So it seems like my memory is failing me here. While I did love *Inventing on Principle*, it sounds like I waited for a few more videos -- and an "invitation" -- to email him. 
+Recently I've been able to manage this with ~10 hours of part-time work for Paul Biggar (CircleCi) and Ellen Chisa's new programming langauge startup. It's an amazing sittuation: getting paid for PL research. 
 
-Anyways, last week I rewatched it last week and was blow away all over again. There was so much that I had forgotten! 
+Whenever this gig ends, hopefully not for a couple months, I will likely want to replace it. But I don't want to fret about this, because 1) I have time, and 2) maybe I will decide I don't like this part-time consulting, part-time research lifestyle.
 
-#### Fighting for a cause
+In the meantime, it no longer feeels like my savings are falling through my fingers like sand. Hopefully this lack of anxiety will help me make make some progress here.
 
-First of all, the main point of the talk is the concept of "crusade" or "fighting for a cause," which I've recently been refering to as "living for an outcome," without realizing the similarty. I thought I was doing an Elon Musk, Juan Benet thing. If forgot about Larry Tesler (no modes), Bret Victor (immediate connection to creation), and even my hero Seymour Papert (microworlds). I have been having trouble figuring out Alan Kay's.
+### 2) A feeling of momentum
 
-Last night in discussion with Jonathan Leung, we articulated Elon's as "averting existential disaster." Juan Benet's is something like, because Elon's taking care that, I'll work on "accelerating innovation via Bell-Labs-style research."
+I heard somewhere that burn out isn't caused by working too much, because we all know that can be envigorating. Instead burn out is caused by a lack of momentum, when it feels like we're a hamster spinning on a wheel.
 
-For contrast, I don't think Steve Jobs or Bill Gates had a cause they were fighting for. 
+But I don't want to over-do this, reducing everything to numbers to optimize progress. Instead I want to be able to look back and admire what I've created whenever I need a boost of confidence.
 
-#### Trick question: how do you find your cause?
+For example, when I add a new feature to Woof, later that night I will go to woofjs.com/create to admire my new creation. It's a wonderful ego boost!
 
-That's not the right question because your cause doesn't exist somewhere nebulous "out there", either somewhere else or some time else in the future. You don't have a cause. There is nothing to find. You must *create* your cause based on your beliefs and priorities about the world. (In fact, nothing is discovered. Everything is constructed. I just wrote [almost a thousand words on the subject](/essays/invented-or-discovered).)
+Yet in the past, I've found that the lack of structure in this project, in particular reading and watching online content, leaves me feeling unproductive.
 
-#### How do you construct your cause?
+## What's the goal?
 
-Bret gives some good advice: do things. Interact with the world. Try a lot of different things. Reflect on your reactions, your responses. What attracts you? What repels you? What lights you up? See what you create. Keep a list. It make take years. 
+### Project, not essays or research
 
-Then reflect on it. Can you synthesize all of what you've created and what lights you up into a unifying vision? 
+In the past, I flirted with the idea of emulating Bret Victor in the sense that I'd create essays, not products, like an academic.
 
-##### Insight
+But my current dreaming is around creating a widely adopted project. For example, I admire projects like React, Clojure/Script, Datomic, CycleJS, Elm, Scratch, Bubble, etc. 
 
-A cause can not simply be to *make simple products*. That's too general. There's no insight. There's no umpgh. You can't wage a crusade on a platitude. 
+Maybe a company would form around this product I'd create. Maybe I'd get hired by some company to develop it open-source, like Elm and No Red Ink. Maybe I'd get cooler consulting gigs via this product.
 
-```(Disclamer: The actual historical Christian crusades were horrific in basically all ways, save the one: fighting with ones life for what one believes in. However, if this wording bothers people for all of the negative connotations, I will look for a better metaphor.)```
+## On my mind
 
-If you want to fight with your life for something that everyone already agrees with you on, you're going to have a boring life. You need to have an insight that others disagree with because they don't have the context to appreciate your vision. As YC says, the insight that Airbnb has was that strangers would pay to stay in other strangers' homes. Imagine Airbnb without this insight: making travel accomidations better. It's un-actionable.
+### 1. WoofJS 
 
-"No modes." Now that's an insight. "Creators need immediate connection to what they create." That's an insight. "Microworlds can be what the gears were for Papert." That insight is responsible for making me who I am.
+WoofJS seems to accomplish many of these parameters. Why is it *not* the project?
 
-I think Elon's is something like "save the planet from existential risks as a by-product of selling people what they want." It's the Tony Stark method, funding your superhero exploits by selling weapons, only Elon is combining them, which if I recall Tony Stark eventually did too.
+1. It's a pretty large project at this point, and it's very fustrating to improve and refactor it
+2. It's not innovative enough, not an interesting solution enough
+3. It's not naturally growing fast enough
+4. There's no obvious path to making some amount of money
+5. I'm not curious about solving the problems it would take to make Woof successful
+6. It doesn't satiate my motivation of extracting the beautiful core of programming. This is a neat platform for kids, but it still leaves programming mostly stuck where it is. 
 
-## Constructing my cause
+Rebuttals to these points:
 
-I have thrown out a few different poorly articulated ideas in the past, including *enable thinking* (which I'd currently rephrase to the Engelbart *augment thinking*), or *transform programming into a medium for creative expression.* However, the first of those was too broad and the second too specific to contain my and what I want to fight for with my life.
+1. This happens to all projects. If you leave a project becaues of technical debt, you'll never build a big project.
+2. It solves a real problem: next step after Scratch, as well as the transition to text-based coding. It is also as innovative as many other platforms in this space, such as Codesters, VidCode, etc. 
+3. We don't have great metrics on growth anyways. We aren't optimizing it in obvious ways yet. Things have a tipping point once they get "good enough" so more work could change this, like it did for Bubble.
+4. Growth would solve this via trainings or teacher accounts or ads or a small amount of support from a non profit, like the Scratch Foundation, or even Patreon.
+5. This point is hard to rebut...
+6. This point is hard to rebut...
 
-So how do I construct my cause. There are a few ways to do this:
+One last rebuttal: potentially WoofJS could been "starter project" for me to experience some inital success to build upon, given that I feel like I know how to make it work. 
 
-### 1) Pickle myself
+> The worthwhile problems are the ones you can really solve or help solve, the ones you can really contribute something to. A problem is grand in science if it lies before us unsolved and we see some way for us to make some headway into it. I would advise you to take even simpler, or as you say, humbler, problems until you find some you can really solve easily, no matter how trivial. You will get the pleasure of success, and of helping your fellow man, even if it is only to answer a question in the mind of a colleague less able than you. You must not take away from yourself these pleasures because you have some erroneous idea of what is worthwhile. - [Richard Feynman](http://scienceblogs.com/thescian/2008/03/11/what-are-worthwhile-problems-f/)
 
-![](/media/Screenshot 2017-12-01 at 5.40.46 PM.png)
+**Conclusion**: For now, I will continue to work on Woof un-systematically (when I feel like it), but might return to it if I feel like I need a small success under my belt.
 
-Marinate in the ideas that pull me close. That's Bret Victor and all of his influences, particularly Seymour Papert, but also Alan Kay, Vaneer Bush, Douglas Engelbart, Jerome Bruner, and all the people Alan Kay talk about, including Mountessouri, Marshall McLuhan, and of course Papert's model Piaget. I'd also include a few more modern influences including Juan Benet, Chris Granger, Pete Hunt, Lloyd Tab, Paul Chiusano, Omar Rizwan, Nicky Case, Chris Granger again because his last Strangeloop keynote was fire, Jonathan Edwards, Mitch Resnick, Andre Staltz, and the almost 100 people [on my twitter list](https://twitter.com/stevekrouse/lists/future-of-coding).
+### 2. Research FRP: Fran, CycleJS, Elm, STEP's Nile, xstate
 
-Read all of your influences. Everything they've written. Read their sources. Of the things that you have fond memories of, read them again. Takes notes. Reflect on them in length in writing. This is what I did yesterday with the Dynamicland zine and it got me thoroughly pickled.
+I don't feel particularly pulled toward open-ended FRP research at the moment...
 
-### 2) Look at what I've done, and generalize
+### 3. Better layout: MorphicJS, STEP's Nile, Subform Layout, Facebook Yoga, Conal's Fran, Brent's diagrams
 
-I haven't done this part yet. Will do when I resume writing this plan at some point next week...
+The idea is that dumb things like centering elements should be easy, because we have math. It's all just relationships between quantities, right?
 
+Subform takes an interesting approach here, which simplifies things greatly, but I fear may not be as programmatic as one would want. Need to do more thinking there.
 
-## Next Steps
+### 4. Turtles all the way down (Squeak, Lively Kernal, MorphicJS, STEP's Nile)
 
-### 1. Construct crusade
+r0ml's demo of Squeak Smalltalk was a powerful demo of turtles all the way down. Understanding Nile - Bret has a cool link on this I wasn't able to find, but I did find [this one](https://news.ycombinator.com/item?id=10535364) - seems like a worthwhile exercise. Re-watching the Lively Kernal videos with new eyes seems like a good idea too. MorphicJS and chatting with Jens could be quite helpful here as well. I'd be shocked if others didn't have projects in this vein as well - I just need to find the right keywords.
 
-### 1a. Bret Victor Deep Dive
+### 5. Primitive types (boolean, int) considered harmful
 
-### 1b. Visit Dynamicland
+Can a better specification of our app's state help us build it? 
 
-And maybe Protocol Labs.
+## Planning is boring, let's just do stuff... (to continue the plan later)
 
-### 1c. Continue pickling, building & reflecting
-
-### 2. Construct "real" plan
+Going to start with #5 because it's been on my mind for a while, and I've thought about it from a new perspective recently and it's been on my mind.
 
 
 <script>
