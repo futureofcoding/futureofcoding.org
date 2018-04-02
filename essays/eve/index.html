@@ -3,11 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Heebo:300" rel="stylesheet">
+  
   <script>
     (function(i, s, o, g, r, a, m) {
       i['GoogleAnalyticsObject'] = r;
@@ -25,43 +23,101 @@
     ga('send', 'pageview');
   </script>
 
-  <title>Versions of Eve</title>
+  <title>A Visual History of Eve</title>
 
   <style>
+    body {
+      font-family: 'Heebo', sans-serif;
+    }
+  
     #heading {
-      margin: 50px;
+      margin: 25px 25px 50px 25px;
       text-align: center;
+      margin-left:auto;
+      margin-right: auto;
+      text-align: left;
+      max-width: 640px;
+    }
+    #title {
+      letter-spacing: 1px;
+      font-weight: normal;
+      margin-bottom: 0px;
+    }
+    #subtitle {
+      margin: 0px;
+      font-style: italic;
+      
+    }
+    h2 {
+      letter-spacing: 0.8px;
+      font-weight: normal;
+      margin-bottom: 5px;
     }
     .item {
       margin-left:auto;
       margin-right: auto;
-      text-align: center;
+      text-align: left;
       width: 640px;
-      margin-bottom: 20px;
+      margin-bottom: 70px;
     }
     .description {
-      text-align: center;
-      margin-left:auto;
-      margin-right: auto;
-      width: 450px;
+      text-align: left;
+      font-weight: lighter;
     }
     .pic {
       max-width: 640px;
+      max-height: 500px;
     }
   
+    .none {
+      height: 300px; 
+      width:640px;
+      background-color: lightgrey;
+      line-height: 300px;
+      color: darkslategray;
+      font-weight: bold;
+      font-size: 20px;
+      text-align: center;
+    }
+    
+  #foc {
+    font-size: 30px;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-weight: 500;
+    color: #00c784;
+  }  
   </style>
 </head>
 
 <body>
+  
   <div id="heading">
-    <h1>Versions of Eve</h1>
-    <!-- TODO description-->
+    <a href="http://futureofcoding.org" style="text-decoration: none;">
+      <h1 id="foc">Future of Coding</h1>
+    </a>
+    <h1 id="title">A Visual History of Eve: 2014 - 2018</h1>
+    <h2 id="subtitle"></h2>
+    <p>
+      In early 2014, Chris Granger et al <a href="https://techcrunch.com/2014/10/01/eve-raises-2-3m-to-rethink-programming/">raised 2.3M in a round led by Andreessen Horowitz</a> with the mission of democratizing programming. 
+    </p>
+    <p>
+      They spent their first two years building 30+ prototypes of graphical programming tools. Most of their prototypes enabled users to build interactive visual applications, such as TodoMVC or FourSquare.
+    </p>
+    <p>
+      Two years in, they released Eve v0.2 as the first prototype available to the public. It was a browser-based literate programming environment. Despite all of the graphical programming prototypes, Eve v0.2 was a text-based language. It was inspired by <a href="http://db.cs.berkeley.edu/papers/datalog2011-dedalus.pdf">Dedalus</a> (from the <a href="http://boom.cs.berkeley.edu/">BOOM Lab</a>), which in turn is based on Datalog, a subset of Prolog.
+    </p>
+    <p>
+      They continued iterating on Eve v0.2, and blogged about v0.3 and v0.4, but never released hosted versions of either. <a href="https://groups.google.com/forum/#!topic/eve-talk/YFguOGkNrBo">Eve shut down in early 2018</a>  after failing to find an acquirer.
+    </p>
+    <p>
+      Thanks to the Eve team: Chris Granger, Corey Montella, Josh Cole, and Jamie Brandon. You were an inspiration.
+    </p>
   </div>
 
   <div class="item">
     <h2>Aurora</h2>
     <div class="description">
-      First seen at <a href="https://www.infoq.com/presentations/reimagining-software">StrangeLoop 2013</a>. Also discussed in <a href="http://incidentalcomplexity.com/2014/10/16/retrospective">this retrospective</a> ("January 2014" section).
+      First seen at <a href="https://www.infoq.com/presentations/reimagining-software">StrangeLoop 2013</a>. Discussed in <a href="http://incidentalcomplexity.com/2014/10/16/retrospective">this retrospective</a> ("January 2014" section).
     </div>
     <iframe width="640" height="360" src="https://www.youtube.com/embed/L6iUm_Cqx2s?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   </div>
@@ -93,24 +149,23 @@
   <div class="item">
     <h2>First Syntax</h2>
     <div class="description">
-      Discussed in the <a href="http://incidentalcomplexity.com/2014/11/05/oct/">Oct 2014</a> and <a href="http://incidentalcomplexity.com/2014/12/01/nov/">Nov 2014</a> Dev Diary entries.
+      Discussed in the <a href="http://incidentalcomplexity.com/2014/11/05/oct/">Oct 2014</a> and <a href="http://incidentalcomplexity.com/2014/12/01/nov/">Nov 2014</a> entries.
     </div>
     <iframe width="640" height="360" src="https://www.youtube.com/embed/m-acupIazWI?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   </div>
   
   <div class="item">
-    <h2>Direct Manipulation Editor</h2>
+    <h2>Direct Manipulation & Tables</h2>
     <div class="description">
       Demoed at <a href="https://youtu.be/5V1ynVyud4M?t=32m9s">StrangeLoop 2015</a>. 
     </div>
-    <!--TODO replace with GIF-->
     <img class="pic" src="./direct-manipulation-editor.png"/>
   </div>
   
   <div class="item">
     <h2>FiveSquare</h2>
     <div class="description">
-      Discussed in <a href="http://incidentalcomplexity.com/2015/07/02/mar-jun/">March-June 2015 Dev Diary</a>. Also demoed at <a href="https://youtu.be/5V1ynVyud4M?t=34m21s">StrangeLoop 2015</a>. 
+      Discussed in <a href="http://incidentalcomplexity.com/2015/07/02/mar-jun/">March-June 2015</a>. Also demoed at <a href="https://youtu.be/5V1ynVyud4M?t=34m21s">StrangeLoop 2015</a>. 
     </div>
     <img class="pic" src="./FiveSquare.png"/>
   </div>
@@ -118,7 +173,7 @@
   <div class="item">
     <h2>GraphEve (a.k.a. <a href="http://www.chris-granger.com/2015/08/17/version-0/">Eve v0)</a></h2>
     <div class="description">
-      Discussed in <a href="http://incidentalcomplexity.com/2015/10/15/jul-sept/">July-September 2015 Dev Diary</a>. Also demoed at <a href="https://youtu.be/5V1ynVyud4M?t=34m21s">StrangeLoop 2015</a>. 
+      Discussed in <a href="http://incidentalcomplexity.com/2015/10/15/jul-sept/">July-September 2015</a>. Also demoed at <a href="https://youtu.be/5V1ynVyud4M?t=34m21s">StrangeLoop 2015</a>. 
     </div>
     <iframe width="640" height="360" src="https://www.youtube.com/embed/iDyMZZZ2GU4?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   </div>
@@ -126,7 +181,7 @@
   <div class="item">
     <h2>MadLibs Notebook</h2>
     <div class="description">
-      Discussed in <a href="http://incidentalcomplexity.com/2015/10/15/jul-sept/">July-September 2015 Dev Diary</a>. Also demoed at <a href="https://youtu.be/5V1ynVyud4M?t=42m35s">StrangeLoop 2015</a>.  
+      Discussed in <a href="http://incidentalcomplexity.com/2015/10/15/jul-sept/">July-September 2015</a>. Also demoed at <a href="https://youtu.be/5V1ynVyud4M?t=42m35s">StrangeLoop 2015</a>.  
     </div>
     <img class="pic" src="./madlibs-notebook.png"/>
   </div>
@@ -134,7 +189,7 @@
   <div class="item">
     <h2>Grid Eve</h2>
     <div class="description">
-      Discussed in <a href="http://incidentalcomplexity.com/2016/06/03/oct-nov/">October-November 2015 Dev Diary</a>.
+      Discussed in <a href="http://incidentalcomplexity.com/2016/06/03/oct-nov/">October-November 2015</a>.
     </div>
     <img class="pic" src="./grid-eve.gif"/>
   </div>
@@ -142,7 +197,7 @@
   <div class="item">
     <h2>CardWiki</h2>
     <div class="description">
-      Discussed in <a href="http://incidentalcomplexity.com/2016/06/03/oct-nov/">October-November 2015 Dev Diary</a>.
+      Discussed in <a href="http://incidentalcomplexity.com/2016/06/03/oct-nov/">October-November 2015</a>.
     </div>
     <img class="pic" src="./card-wiki.png"/>
   </div>
@@ -150,7 +205,7 @@
   <div class="item">
     <h2>MarkdownEve </h2>
     <div class="description">
-      Discussed in <a href="http://incidentalcomplexity.com/2016/06/10/jan-feb/">January-February 2016 Dev Diary</a>.
+      Discussed in <a href="http://incidentalcomplexity.com/2016/06/10/jan-feb/">January-February 2016</a>.
     </div>
     <img class="pic" src="./markdown-eve.gif"/>
   </div>
@@ -158,7 +213,7 @@
   <div class="item">
     <h2>WikiEve</h2>
     <div class="description">
-      Discussed in <a href="http://incidentalcomplexity.com/2016/06/10/jan-feb/">January-February 2016 Dev Diary</a>.
+      Discussed in <a href="http://incidentalcomplexity.com/2016/06/10/jan-feb/">January-February 2016</a>.
     </div>
     <img class="pic" src="./wiki-eve.png"/>
   </div>
@@ -166,7 +221,7 @@
   <div class="item">
     <h2>WikiGrid</h2>
     <div class="description">
-      Discussed first in <a href="http://incidentalcomplexity.com/2016/06/22/mar1/">March 2016 Dev Diary</a> and more in <a href="http://incidentalcomplexity.com/2016/06/30/apr/">April 2016 Dev Diary</a>.
+      Discussed in <a href="http://incidentalcomplexity.com/2016/06/22/mar1/">March 2016</a> and <a href="http://incidentalcomplexity.com/2016/06/30/apr/">April 2016</a>.
     </div>
     <img class="pic" src="./wiki-grid.gif"/>
   </div>
@@ -174,7 +229,7 @@
   <div class="item">
     <h2>REPLv1</h2>
     <div class="description">
-      Discussed in <a href="http://incidentalcomplexity.com/2016/06/22/mar2/">March 2016 Dev Diary</a>.
+      Discussed in <a href="http://incidentalcomplexity.com/2016/06/22/mar2/">March 2016</a>.
     </div>
     <img class="pic" src="./repl-v-1.png"/>
   </div>
@@ -182,7 +237,7 @@
   <div class="item">
     <h2>REPLv2</h2>
     <div class="description">
-      Discussed in <a href="http://incidentalcomplexity.com/2016/06/30/apr/">April 2016 Dev Diary</a>.
+      Discussed in <a href="http://incidentalcomplexity.com/2016/06/30/apr/">April 2016</a>.
     </div>
     <img class="pic" src="./repl-v-2.png"/>
   </div>
@@ -190,7 +245,7 @@
   <div class="item">
     <h2>Eve v0.1</h2>
     <div class="description">
-      Discussed in <a href="http://www.chris-granger.com/2016/07/21/two-years-of-eve/">Chris's "Two years of Eve"</a> and also in <a href="http://incidentalcomplexity.com/2016/08/03/july/">July 2016 Dev Diary</a>
+      Discussed in <a href="http://www.chris-granger.com/2016/07/21/two-years-of-eve/">Chris's "Two years of Eve"</a> and <a href="http://incidentalcomplexity.com/2016/08/03/july/">July 2016</a>.
     </div>
     <img class="pic" src="./eve-v-1.gif"/>
   </div>
@@ -198,7 +253,7 @@
   <div class="item">
     <h2>Eve v0.2</h2>
     <div class="description">
-      Discussed in <a href="http://incidentalcomplexity.com/2016/11/18/october/">October 2016 Dev Diary</a>. See it in action in <a href="https://www.youtube.com/watch?v=TWAMr72VaaU">"Eve: A day in the life"</a>. It can be used online at <a href="http://play.witheve.com/#/examples/quickstart.eve">play.witheve.com</a>.
+      Discussed in <a href="http://incidentalcomplexity.com/2016/11/18/october/">October 2016</a>. See it in action at "<a href="https://www.youtube.com/watch?v=TWAMr72VaaU">Eve: A day in the life</a>". It can be used online at <a href="http://play.witheve.com/#/examples/quickstart.eve">play.witheve.com</a>.
     </div>
     <img class="pic" src="./eve-v-2.png" />
   </div>
@@ -206,15 +261,17 @@
   <div class="item">
     <h2>Eve v0.3</h2>
     <div class="description">
-      Discussed in <a href="http://incidentalcomplexity.com/2017/04/06/march/">March 2017 Dev Diary</a> and <a href="http://incidentalcomplexity.com/2017/04/18/release-0.3p2/">various</a> <a href="http://incidentalcomplexity.com/2017/06/01/may/">release</a> <a href="http://incidentalcomplexity.com/2017/06/23/release-0.3p5/">notes</a>.
+      Discussed in <a href="http://incidentalcomplexity.com/2017/04/06/march/">March 2017</a> and <a href="http://incidentalcomplexity.com/2017/04/18/release-0.3p2/">various</a> <a href="http://incidentalcomplexity.com/2017/06/01/may/">release</a> <a href="http://incidentalcomplexity.com/2017/06/23/release-0.3p5/">notes</a>. This version was eventually skipped in favor of v0.4.
     </div>
-    <!--TODO no picture available-->
+    <div class="none">
+      <div>Photo not available</div>
+    </div>
   </div>
   
   <div class="item">
     <h2>Eve v0.4</h2>
     <div class="description">
-      Discussed in <a href="http://incidentalcomplexity.com/2017/08/14/July/">July 2017 Dev Diary</a>.
+      Discussed in <a href="http://incidentalcomplexity.com/2017/08/14/July/">July 2017</a>, this version was moved to Rust for faster performance.
     </div>
     <img class="pic" src="./v0.4-performance.gif"/>
   </div>
