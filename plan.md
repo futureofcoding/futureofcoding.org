@@ -78,99 +78,58 @@ Bret Victor's Inventing on Pricinple was the main influence for this version of 
 
 In a sense, this plan was a plan to find a cause, which is vision plus insight. Examples of causes include Larry Tesler's "no modes", Seymour Papert's "microworlds", or Elon Musk's "save the planet from existential risks through for-profit business."
 
-### 6. /plan v5
+### 6. [/plan v5](https://github.com/stevekrouse/futureofcoding.org/blob/a86cfb0a358b757e60abc7ec3a66c8a0d76a760b/plan.md#motivation-programming-is-something-beautiful-worth-saving)
+
+TODO summarize
 
 This is the current version below...
 
-## Motivation: programming is something beautiful worth saving
+## Goals are hard
 
-Programming can be like playing a video game: rapid feedback loops, a feeling of tangible progress, and social engagement.
+Goals are hard, and in the past I've spent too much time agonizing on them. Goals are exciting becuase maybe if I make them abstract enough, I can take unexpected shortcuts to achieve them. Such as, if my goal were to do yoga all day, instead of going to Wall Street, working my butt off to earn enough money to retire, I could instead take a course on teaching yoga and skip right to the end. Abstract goals are a lot like declarative programming, in that they leave a lot of room for unexpected optimization.
 
-It can also be as fustrating as running through water. It make you feel as stupid as watching a movie 10x as complicated as Inception. 
+### All the cool kids had goals
 
-I believe it's this combination of a glittering core engulfed in icky crap that makes programming so uniquely worthy of being extracted, reformed, improved, rescued from the parts of itself that make it less than it could be.
+BV argues that all of the best programming languages were created incidentally on their creators way to accomplishing something more ambitious, such as C, LISP, LOGO and Smalltalk. This is a great point. While I am inspired by many Alan Kay and BV motivations, such as moving creators closer to their medium of creation and increasing the feedback loop, as well as diminishing consumer/producer duality, I'm not entirely sold on which mission is my own yet.
 
-## Concerns
+## So let's be concrete and problem-focused
 
-### 1) Financial sustainability
 
-I find that a whole category of mental anxiety is eliminated when I am able to earn enough money to pay for my expenses without dipping into savings. This is bare minimum financial sustainability. 
+### 1) Elegant animation
 
-Recently I've been able to manage this with ~10 hours of part-time work for Paul Biggar (CircleCi) and Ellen Chisa's new programming langauge startup. It's an amazing sittuation: getting paid for PL research. 
+I keep finding myself drawn to the problem of the most elegant ways to create interactive animations, mostly games, but also more traditional UIs. I think it's a facsinating problem because there's so much *essential* complexity. You want a ball to fall with realisitic gravity? But bounce of the walls? With a certain amount of elasticity? And to delete itself whenever it touches another ball? A program that accomplishes this in Woof isn't that much longer than its English specification.
 
-Whenever this gig ends, hopefully not for a couple months, I will likely want to replace it. But I don't want to fret about this, because 1) I have time, and 2) maybe I will decide I don't like this part-time consulting, part-time research lifestyle.
+Of course, you can't talk about elegant specifications for animations without mentioning Fran and the original Conal, continuous-time FRP. I'm digging into this and loving it. Still not entirely grokking it yet.
 
-In the meantime, it no longer feeels like my savings are falling through my fingers like sand. Hopefully this lack of anxiety will help me make make some progress here.
+I have lots of experience teaching Scratch and Woof to kids, as well as designing the Woof library on top the JS canvas. The Scratch/Woof approach is great in the beginning but definitely does not scale to complexity. All Scratch projects tend towards spaghetti code... unless their creator is trained in a more functional way of thinking, which cannot be adequately taught in Scratch. The tool works against you. Ditto for Woof. Scratch and Woof are [shit crayons](http://bogost.com/writing/shit_crayons/): they do enable creativity, but not powerful (read mathmatical) ways of thinking.
 
-### 2) A feeling of momentum
+All this makes me wonder if there's a way to go fully mathmatical here. What if adding gravity into my code was simply adding the equations of motion to my code? (This goes well with my "fuck gravity engines" rant that I still need to write.) The more I think in this direction, the more I wonder what computation is. What really is *compute-able*? I'm also getting more curious about logic programming. I vaguely remember learning that this failed because very non-trivial to optimize the performance of high-level code. I wonder if this has changed, especially now with machine learning or some other clever hacks.
 
-I heard somewhere that burn out isn't caused by working too much, because we all know that can be envigorating. Instead burn out is caused by a lack of momentum, when it feels like we're a hamster spinning on a wheel.
+An important caveat here is that everyone hates declarative languages: CSS, SQL, Makefiles, etc. They are a main to debug, partially because you can't set breakpoints or tell what it's doing. There's an essay I want to expore / write about how we can make declarative langauges feel imperitive if we want to by letting the programmer write the derivitive and then we take the integral. It's what JoyJS feels like (although he's not actually doing it probably.)
 
-But I don't want to over-do this, reducing everything to numbers to optimize progress. Instead I want to be able to look back and admire what I've created whenever I need a boost of confidence.
+### 2) Back-end is the worst
 
-For example, when I add a new feature to Woof, later that night I will go to woofjs.com/create to admire my new creation. It's a wonderful ego boost!
+Another problem that motivates me, but from the other direction, is the back-end. I hate it, despise it. Deployment, build tools: I hope they all die painful deaths. Sometimes I feel like the entire back-end (besides the database) is incidental complexity. Yet I'm not currently motivated to tackle this problem. The Paul's, Chiusano and Biggar, are taking a crack at it for now, but maybe I'll focus on it later, possibly by joining one of them.
 
-Yet in the past, I've found that the lack of structure in this project, in particular reading and watching online content, leaves me feeling unproductive.
+## The Dream
 
-## What's the goal?
+How could the world look in the future? Here are a few dreams:
 
-### Project, not essays or research
+1) There's a tool that feels a lot like Scratch or Facebook Origami, yet it scales so non-genius 13-year-olds can create massive multiplayer games and make $$$. Another way to put this: you don't need front-end engineers anymore (or you need much fewer), because desingers will be able to build what they want and ship it.
 
-In the past, I flirted with the idea of emulating Bret Victor in the sense that I'd create essays, not products, like an academic.
+2) Ditto for the back-end. This looks a lot like either of the Paul's dreams, but probably closer to Paul Chiusano's dream.
 
-But my current dreaming is around creating a widely adopted project. For example, I admire projects like React, Clojure/Script, Datomic, CycleJS, Elm, Scratch, Bubble, etc. 
+And these dreams imply the market for software engineers would plumet. Coding bootcamps would die off entirely, and in their place would be designer bootcamps that teach these new tools, in the same way there are Excel bootcamps now. On the one hand, I am sad about the prospect of putting tens or hundreds of thousands of my fellow engineers out of work. On the other hand, I am really excited to see what 100k smart, educated, resourceful, connected people would do when put out of work. Thousands of former Wall Street people found their way to tech in the wake of the 2008 crisis. What industry will techies go to if we steal their jobs? I don't know, but I do have confidence! Maybe they'll start small businesses like The Coding Space.
 
-Maybe a company would form around this product I'd create. Maybe I'd get hired by some company to develop it open-source, like Elm and No Red Ink. Maybe I'd get cooler consulting gigs via this product.
+## The Plan
 
-## On my mind
+I don't yet have concrete goals, so I don't have a concrete plan. What I do have is a direction: learning and credibility. I don't exactly know how, but I feel confident that if I continue to learn more, build more, and share more, I will continue to move in the right direction, and continue to gain clarity.
 
-### 1. WoofJS 
+One next step for me will be attending and speaking at conferences, such as Strange Loop. I haven't applied to any yet but will start doing so, maybe starting with Jonathan Edwards' in Boston in a few months.
 
-WoofJS seems to accomplish many of these parameters. Why is it *not* the project?
+Another key step will be finding a co-founder / collaborator of sorts. I am definitely still on the lookout for this person, and hope that if I continue to put myself out there, maybe they will find me.
 
-1. It's a pretty large project at this point, and it's very fustrating to improve and refactor it
-2. It's not innovative enough, not an interesting solution enough
-3. It's not naturally growing fast enough
-4. There's no obvious path to making some amount of money
-5. I'm not curious about solving the problems it would take to make Woof successful
-6. It doesn't satiate my motivation of extracting the beautiful core of programming. This is a neat platform for kids, but it still leaves programming mostly stuck where it is. 
-
-Rebuttals to these points:
-
-1. This happens to all projects. If you leave a project becaues of technical debt, you'll never build a big project.
-2. It solves a real problem: next step after Scratch, as well as the transition to text-based coding. It is also as innovative as many other platforms in this space, such as Codesters, VidCode, etc. 
-3. We don't have great metrics on growth anyways. We aren't optimizing it in obvious ways yet. Things have a tipping point once they get "good enough" so more work could change this, like it did for Bubble.
-4. Growth would solve this via trainings or teacher accounts or ads or a small amount of support from a non profit, like the Scratch Foundation, or even Patreon.
-5. This point is hard to rebut...
-6. This point is hard to rebut...
-
-One last rebuttal: potentially WoofJS could been "starter project" for me to experience some inital success to build upon, given that I feel like I know how to make it work. 
-
-> The worthwhile problems are the ones you can really solve or help solve, the ones you can really contribute something to. A problem is grand in science if it lies before us unsolved and we see some way for us to make some headway into it. I would advise you to take even simpler, or as you say, humbler, problems until you find some you can really solve easily, no matter how trivial. You will get the pleasure of success, and of helping your fellow man, even if it is only to answer a question in the mind of a colleague less able than you. You must not take away from yourself these pleasures because you have some erroneous idea of what is worthwhile. - [Richard Feynman](http://scienceblogs.com/thescian/2008/03/11/what-are-worthwhile-problems-f/)
-
-**Conclusion**: For now, I will continue to work on Woof un-systematically (when I feel like it), but might return to it if I feel like I need a small success under my belt.
-
-### 2. Research FRP: Fran, CycleJS, Elm, STEP's Nile, xstate
-
-I don't feel particularly pulled toward open-ended FRP research at the moment...
-
-### 3. Better layout: MorphicJS, STEP's Nile, Subform Layout, Facebook Yoga, Conal's Fran, Brent's diagrams
-
-The idea is that dumb things like centering elements should be easy, because we have math. It's all just relationships between quantities, right?
-
-Subform takes an interesting approach here, which simplifies things greatly, but I fear may not be as programmatic as one would want. Need to do more thinking there.
-
-### 4. Turtles all the way down (Squeak, Lively Kernal, MorphicJS, STEP's Nile)
-
-r0ml's demo of Squeak Smalltalk was a powerful demo of turtles all the way down. Understanding Nile - Bret has a cool link on this I wasn't able to find, but I did find [this one](https://news.ycombinator.com/item?id=10535364) - seems like a worthwhile exercise. Re-watching the Lively Kernal videos with new eyes seems like a good idea too. MorphicJS and chatting with Jens could be quite helpful here as well. I'd be shocked if others didn't have projects in this vein as well - I just need to find the right keywords.
-
-### 5. Primitive types (boolean, int) considered harmful
-
-Can a better specification of our app's state help us build it? 
-
-## Planning is boring, let's just do stuff... (to continue the plan later)
-
-Going to start with #5 because it's been on my mind for a while, and I've thought about it from a new perspective recently and it's been on my mind.
+One final note: I didn't realize this until writing this plan just now, but I think that my goal is actually a lot clearer than I thought. I want to make a combo of Scratch and Origami that could compete with Unreal Engine or Unity.
 
 
 <script>
