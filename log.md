@@ -34,9 +34,9 @@ title: Log
 
 <h1 id="title">Log</h1>
 
-Welcome to my development journal. This is an experiment in radical transparency. You can read my unfiltered daily thoughts below. Pardon my typo-laden stream-of-consciousness. 
+Welcome to my development journal. This is an experiment in radical transparency. You can read my unfiltered daily thoughts below. Pardon my typo-laden stream-of-consciousness. It was inspired by Jamie Brandon's development journals for [Eve](http://incidentalcomplexity.com/2014/10/16/retrospective/) and [Imp](https://github.com/jamii/imp).
 
-The data for this page is pulled from the commit message history for this repository. It's similar to what you'd see if you did `git log`. 
+The data for this page is pulled from the commit message history for this repository. It's similar to what you'd see if you did `git log`. (I used to keep these kind of notes in the [now deprecated journal](./journal). Those journal entries are below in the log - [imported via some skullduggery](https://beta.observablehq.com/@stevekrouse/parse-and-join-journal-to-commits).)
 
 <div id="commits-container">
 {% for commit in site.data.git-log %} 
@@ -68,6 +68,7 @@ The data for this page is pulled from the commit message history for this reposi
           </div>
         {% endif %}
         {{ message | markdownify }}
+        {{ site.data.commitToJournalMarkdown[commit.commit] | markdownify }}
       </div>
     {% endunless %} 
   {% endif %}
