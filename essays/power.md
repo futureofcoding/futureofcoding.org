@@ -1,10 +1,8 @@
 ---
-title: Visual Programming
+title: The Trick to Get Any Student Interested In Computer Science and How It'll Change the World
 ---
 
-# Visual Programming
-
-The Trick to Get Any Student Interested In Computer Science and How It'll Change the World
+# The Trick to Get Any Student Interested In Computer Science and How It'll Change the World
 
 As a computer science teacher, I sometimes found myself with a student totally uninterested in programming. However I always had a secret in my back pocket that no kid could resist falling for.
 
