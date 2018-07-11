@@ -4,6 +4,8 @@ title: Abstractions are leaky, and for sissies
 
 # Abstractions are leaky, and for sissies
 
+_July 4th, 2018_
+
 Explaining what I do at parties is a common source of frustration. It's almost impossible with non-programmers. You’d think it’d be easier with my fellow coders, but it’s not by much.
 
 At a recent party, I was explaining how my goal is to create a programming language for creating front-end interfaces that’ll be better, easier to use than, say, React, Elm, CycleJS, etc.
