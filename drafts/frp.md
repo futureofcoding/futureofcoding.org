@@ -6,7 +6,7 @@ title: FRP
 
 If you wanted to understand the entirety of a software project, you'd have to read every line of code. But what if you only wanted to understand a single module? Can you get away with only reading a similarly smally piece of the code? In other words, is module comprehension proportional to the amount of code read? We can refer to such a project as "modularly comprehensible."
 
-<iframe src="https://www.desmos.com/calculator/2dfy7ke1mp?embed" width="500px" height="500px" style="border: 1px solid #ccc" frameborder=0></iframe>
+<iframe width="560" height="500" src="https://www.desmos.com/calculator/2dfy7ke1mp?embed" frameborder="0" allowfullscreen></iframe>
 
 Most programming languages are not modularly comprehensible in such a linear fashion but in an exponential one, as demonstrated in the yellow curve above, where understanding is dim until you've read almost all the code, at which point your understanding expands very quickly.
 
@@ -56,11 +56,11 @@ I believe that Staltz understates the non-modularity of the Interactive pattern.
 
 Explicit dependencies are a huge win for modular comprehensibility. For example, consider the program `A` below, which is explicitly defined in terms of its modules below. In this picture read an arrow from B to A as "A is defined in terms of B" or "B is an explicit depdency of A." 
 
-<iframe src="https://mermaidjs.github.io/mermaid-live-editor/#/view/eyJjb2RlIjoiXG5ncmFwaCBCVFxuICAgIFxuQi0tPkFcbkMtLT5BXG5ELS0-QVxuRS0tPkFcbkYtLT5CXG5HLS0-QlxuSC0tPkJcbkktLT5DXG5KLS0-Q1xuSy0tPkRcbkwtLT5FXG5NLS0-RVxuTi0tPkVcbk8tLT5FXG5LLS0-TlxuUS0tPk5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In19" width="500px" height="320px" style="border: 1px solid #ccc" frameborder=0></iframe>
+<iframe width="500" height="300" src="https://mermaidjs.github.io/mermaid-live-editor/#/view/eyJjb2RlIjoiXG5ncmFwaCBCVFxuICAgIFxuQi0tPkFcbkMtLT5BXG5ELS0-QVxuRS0tPkFcbkYtLT5CXG5HLS0-QlxuSC0tPkJcbkktLT5DXG5KLS0-Q1xuSy0tPkRcbkwtLT5FXG5NLS0-RVxuTi0tPkVcbk8tLT5FXG5LLS0-TlxuUS0tPk5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In19" frameborder="0" allowfullscreen></iframe>
 
 If you want to understand a module, you have to understand it's modules, recursively. So if you want to understand the entire program, A, you have to read everything. However, let's say you were only interested in module E. In this case you only have to read the children of E, highlighted below:
 
-<iframe src="https://mermaidjs.github.io/mermaid-live-editor/#/view/eyJjb2RlIjoiXG5ncmFwaCBCVFxuICAgIFxuQi0tPkFcbkMtLT5BXG5ELS0-QVxuRS0tPkFcbkYtLT5CXG5HLS0-QlxuSC0tPkJcbkktLT5DXG5KLS0-Q1xuSy0tPkRcbkwtLT5FXG5NLS0-RVxuTi0tPkVcbk8tLT5FXG5LLS0-TlxuUS0tPk5cblxuY2xhc3NEZWYgY2xhc3NOYW1lIGZpbGw6eWVsbG93LHN0cm9rZTojMzMzLHN0cm9rZS13aWR0aDo0cHg7XG5jbGFzcyBFLEwsTSxOLE8sUSxLIGNsYXNzTmFtZTtcbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In19" width="500px" height="320px" style="border: 1px solid #ccc" frameborder=0></iframe>
+<iframe width="500" height="300" src="https://mermaidjs.github.io/mermaid-live-editor/#/view/eyJjb2RlIjoiXG5ncmFwaCBCVFxuICAgIFxuQi0tPkFcbkMtLT5BXG5ELS0-QVxuRS0tPkFcbkYtLT5CXG5HLS0-QlxuSC0tPkJcbkktLT5DXG5KLS0-Q1xuSy0tPkRcbkwtLT5FXG5NLS0-RVxuTi0tPkVcbk8tLT5FXG5LLS0-TlxuUS0tPk5cblxuY2xhc3NEZWYgY2xhc3NOYW1lIGZpbGw6eWVsbG93LHN0cm9rZTojMzMzLHN0cm9rZS13aWR0aDo0cHg7XG5jbGFzcyBFLEwsTSxOLE8sUSxLIGNsYXNzTmFtZTtcbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In19" frameborder="0" allowfullscreen></iframe>
 
 Explicit data dependencies allow you to comprehend modules by reading their definitions, recursively. This allows you to *categorically rule out all the modules you do not have to read* in order to comprehend the relevant module. If a module is not an explicit dependency (or dependency of a dependency...), it's not relevant. In fact, it's explicitly *independent*.
 
@@ -90,7 +90,7 @@ The core of the architecture is a reducer function that takes the old state, and
 reducer :: state -> event -> state
 ```
 
-<iframe src="https://mermaidjs.github.io/mermaid-live-editor/#/view/eyJjb2RlIjoiXG5ncmFwaCBURFxuIFxucmVkdWNlci0tPnN0YXRlXG5zdGF0ZSAtLT4gdmlldyBcbnZpZXctLT58ZXZlbnR8cmVkdWNlclxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifX0" width="500px" height="320px" style="border: 1px solid #ccc" frameborder=0></iframe>
+<iframe width="500" height="300" src="https://mermaidjs.github.io/mermaid-live-editor/#/view/eyJjb2RlIjoiXG5ncmFwaCBURFxuIFxucmVkdWNlci0tPnN0YXRlXG5zdGF0ZSAtLT4gdmlldyBcbnZpZXctLT58ZXZlbnR8cmVkdWNlclxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifX0" frameborder="0" allowfullscreen></iframe>
 
 The "view" (HTML and CSS) of the application is defined declaratively in terms of `state`. 
 
