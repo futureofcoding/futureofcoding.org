@@ -1,0 +1,48 @@
+You submitted this application on July 13, 2018, to the Fall 1, 2018 batch. You can see the status of your application here.
+
+Code CracklePop
+for (var i = 1; i <= 100; i++) {
+  if (i % 15 === 0) {
+    console.log("CracklePop")
+  } else if (i % 5 === 0) {
+    console.log("Pop")
+  } else if (i % 3 === 0) {
+    console.log("Crackle")
+  } else {
+    console.log(i)
+  }
+}
+Please link to a program you've written from scratch.
+http://woofjs.com/create.html#2048
+
+What is the most fascinating thing you've learned in the past month?
+I learned some fascinating things about voting system in "How to Not Be Wrong". While first-pass-the-post voting is obviously worse than more modern schemes, such as instant-runoff voting, it's not entirely clear what the optimal voting scheme is. In fact, it may be impossible to construct a voting system that doesn't violate our intuitions in certain cases.
+
+Our intuition about voting is that if in a head-to-head race, candidate A would be preferred to candidate B, then candidate B should definitely not be the candidate. However, what if there is a third candidate, C, who would beat A in a head-to-head race, but would lose to B? In this case, it's unclear who to put in office.
+
+What do you want to be doing in two years?
+I'm currently doing independent programming language research, and I'd love to be able to continue that for the foreseeable future. Maybe by then I'll have a real programming language to maintain!
+
+Why do you want to attend the Recurse Center?
+I've wanted to attend the Recurse Center for years, but haven't found the right time. In recent months, I attended a few Recurse Center events and was shocked by how much I learned from the Recursers there. I was really drawn to the idea of surrounding myself with people like that.
+
+What would you like to work on at the Recurse Center?
+I'm currently working on investing a code comprehensibility, how long it takes a developer to learn an unfamiliar codebase. (In that way, my work is in the spirit of Glen's http://glench.github.io/fuzzyset.js/ui/, which he did at the Recurse Center.) More specifically, I am researching ways to make comprehensibility more modular, so that one's understanding grows proportionally with the amount of code read - as opposed to how now you have to read much of a system to even understand a small part of it. I believe the functional reactive programming paradigm lends itself well to comprehensible modularity, because of it's focus on explicit dependencies. A draft of my work in progress in this space can be found here: http://futureofcoding.org/drafts/frp. At the Recurse Center, I'd like to work on this line of inquiry.
+
+Describe your programming background in a few sentences.
+I started learning to code in middle school with LOGO. I fell in love with it, moving on to Scheme, Java, Haskell and Python in high school and college. In particular, I enjoy functional programming, recently with Elm. I currently mostly program in JavaScript, sometimes with VueJS. I founded an after-school CS program, where I created woofjs, a JavaScript framework, for my students. Now I'm doing independent programming language research in Functional Reactive Programming.
+
+Have you worked professionally as a programmer?
+I worked as a software engineer at First Round Capital doing analytics. Then I worked at Looker (looker.com) doing software engineering, mostly concerned with scaling, security and APIs. I'm currently doing part-time programming languages research for Dark, co-founded by Paul Bigger, founder of CircleCi.
+
+Do you have a Computer Science degree or are you seeking one?
+I got 3 semesters into my CS degree at Penn. I took most of the CS classes they had before I left. I don't indeed to go back.
+
+How did you hear about RC?
+I've been following you guys for years. I've read every word on your website multiple times. I'm a real fanboy!
+
+Links
+github.com/stevekrouse 
+linkedin.com/in/stevekrouse 
+stevekrouse.com 
+futureofcoding.org
