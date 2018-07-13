@@ -2,31 +2,22 @@
 title: FRP
 ---
 
+* TOC
+{: toc }
+
 # Functional Reactive Programming and Modular Comprehensibility
 
 If you wanted to understand the entirety of a software project, you'd have to read every line of code. But what if you only wanted to understand a single module? Can you get away with only reading a similarly smally piece of the code? In other words, is module comprehension proportional to the amount of code read? We can refer to such a project as "modularly comprehensible."
 
-<iframe width="560" height="500" src="https://www.desmos.com/calculator/2dfy7ke1mp?embed" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="500" src="https://www.desmos.com/calculator/gzeqaru5pe?embed" frameborder="0" allowfullscreen></iframe>
 
-Most programming languages are not modularly comprehensible in such a linear fashion but in an exponential one, as demonstrated in the yellow curve above, where understanding is dim until you've read almost all the code, at which point your understanding expands very quickly.
+Most programming languages are not modularly comprehensible in such a linear fashion but in an exponential one, as demonstrated in the yellow curve above, where understanding is very limited until you've read almost all the code, at which point it expands very quickly.
 
 The lack of modular comprehensibility slows down the time it takes a programmer to make a change to an unfamiliar project. This is particularly relevant in open-source software, because developers have limited time to contribute. Have you ever wanted to make a small bug-fix or improvement to an open-source project, but gave up after a few hours of failing to understand how the code works? 
 
-## Related issues
-
-Of course, the modularity of comprehensibility is only one piece of code comprehensibility. 
-
-Another big piece is understanding how the files, folders, import statements, and build tools and parsed together into a unifed program. Where's the entry point for goodness sake?! 
-
-Another impediment to code comprehensibility is code's symbolic, abstract nature. In [A Human-Readable Interactive Representation of a Code Library](http://glench.github.io/fuzzyset.js/ui/), Glen Chiacchieri makes a library more understandale through editable concrete values at various stages of code execution. Glen's thesis that concrete values are key to comprehension is backed by research that found that "to comprehend programs, developers need to acquire runtime information [to inspect the state of the application]. For this, developers frequently execute the application using a debugger." [[Walid Maalej, Rebecca Tiarks, Tobias Roehm, and Rainer Koschke. 2014. On the Comprehension of Program Comprehension](https://dl.acm.org/citation.cfm?id=2622669)]
-
-And of course, code comprehensibility is only a small part of making a change to a project, which also includes getting the code to compile and run on your machine, editing the code, and testing your changes - not to mention the social complexities of getting your pull request merged into the main project (which involves getting your code reviewer to *comprehend* your changes).
-
-However, the scope of this post is limited to the modularity of code comprehension.
-
 ## Module dependencies
 
-Code is often not modularly comprehensible because the way dependencies between modules are organized. 
+Code is not modularly comprehensible because the way dependencies between modules are organized. 
 
 In [Reactive MVC and The Virtual DOM](https://web.archive.org/web/20180530055638/https://futurice.com/blog/reactive-mvc-and-the-virtual-dom), Andre Staltz discusses the trade-offs between the Interactive (or imperitive) pattern and Reactive patterns.
 
@@ -40,47 +31,51 @@ In [Reactive MVC and The Virtual DOM](https://web.archive.org/web/20180530055638
 >  
 >  ![image](https://user-images.githubusercontent.com/2288939/42631121-3789f186-85a7-11e8-893f-6357c6aa8864.png)
 >  
-> In the Interactive pattern, module X defines which other modules X affects.  
+> **In the Interactive pattern, module X defines which other modules X affects.**  
 >  
 > The dual of Interactive is Reactive, where arrows are defined in the opposite end, in the arrow head, as such:  
 >  
 > ![image](https://user-images.githubusercontent.com/2288939/42631130-39df12ae-85a7-11e8-8ce3-ed48235efeb4.png)  
 >    
-> In the Reactive pattern, module X defines which other modules affect X.  
+> **In the Reactive pattern, module X defines which other modules affect X.**  
 >  
 > The benefit of Reactive over Interactive is mainly separation of concerns. In Interactive, if you want to discover what affects X, you need to search for all such calls `X.update()` in other modules. However, in Reactive, all that it takes is to peek inside X, since it defines everything which affects it. For instance, this property is common in spreadsheet calculations. The definition of the contents of one cell are always defined just in that cell, regardless of changes happening on the other cells it depends on.
 
-Note on the word "module": In his example above, Staltz uses JavaScript files as representative of modules, but you could replace the `foo.js` filename with `foo` the variable or function name for similar result. Modular comprehensibility has nothing to do with browserify modules. In other words, I'm using the dictionary definition of module: "any of a number of distinct but interrelated units from which a program may be built up or into which a complex activity may be analyzed."
+Note on the word "module": In his example above, Staltz uses JavaScript files as representative of modules, but you could replace the `foo.js` filename with `foo` the variable or function name for similar result. Modular comprehensibility has nothing to do with browserify modules. The dictionary definition of module is relevant: "any of a number of distinct but interrelated units from which a program may be built up or into which a complex activity may be analyzed."
 
-I believe that Staltz understates the non-modularity of the Interactive pattern. Let's say you wish to understand the behavior of X, so you grep for `X.update` in all modules. Now you have to go to the call site in each module and understand that module well enough to know what triggers that line of code, and what the values of the arguments it will pass it. If you're lucky, all that information is self-contained in that module, but you'll likely be forced to understand yet more modules to understand how *this* module affects X.
+I believe that Staltz understates the non-modularity of the Interactive pattern. Let's say you wish to understand the behavior of X, so you grep for `X.update` in all modules. For each module `X.update` appears in, you have to go to the call site(s) and understand that module well enough to know what triggers that line of code, and arguments it will pass in. If you're lucky, all that information is self-contained, but you'll likely be forced to understand yet more modules to understand how *this* module affects X.
 
-Explicit dependencies are a huge win for modular comprehensibility. For example, consider the program `A` below, which is explicitly defined in terms of its modules below. In this picture read an arrow from B to A as "A is defined in terms of B" or "B is an explicit depdency of A." 
+The modular comprehensibility of a language is a function of how explict or implicit data dependencies are between modules. The Interactive pattern, which is representative of JavaScript, can never be modularly comprehensible, because data dependencies are hopelessly implicit. 
+
+The Reactive Pattern enforces explicit dependencies, which are a huge win for modular comprehensibility. For example, consider the program `A` below, which is explicitly defined in terms of its modules below. In this picture read an arrow from B to A as "A is defined in terms of B" or "A explictly depends upon B."
 
 <iframe width="500" height="300" src="https://mermaidjs.github.io/mermaid-live-editor/#/view/eyJjb2RlIjoiXG5ncmFwaCBCVFxuICAgIFxuQi0tPkFcbkMtLT5BXG5ELS0-QVxuRS0tPkFcbkYtLT5CXG5HLS0-QlxuSC0tPkJcbkktLT5DXG5KLS0-Q1xuSy0tPkRcbkwtLT5FXG5NLS0-RVxuTi0tPkVcbk8tLT5FXG5LLS0-TlxuUS0tPk5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In19" frameborder="0" allowfullscreen></iframe>
 
-If you want to understand a module, you have to understand it's modules, recursively. So if you want to understand the entire program, A, you have to read everything. However, let's say you were only interested in module E. In this case you only have to read the children of E, highlighted below:
+If you want to understand a module, you have to understand it's modules, recursively. So if you want to understand the entire program, A, you have to read everything. However, let's say you were only interested in module E. In this case you only have to read the E and it's children, recursively, highlighted below:
 
 <iframe width="500" height="300" src="https://mermaidjs.github.io/mermaid-live-editor/#/view/eyJjb2RlIjoiXG5ncmFwaCBCVFxuICAgIFxuQi0tPkFcbkMtLT5BXG5ELS0-QVxuRS0tPkFcbkYtLT5CXG5HLS0-QlxuSC0tPkJcbkktLT5DXG5KLS0-Q1xuSy0tPkRcbkwtLT5FXG5NLS0-RVxuTi0tPkVcbk8tLT5FXG5LLS0-TlxuUS0tPk5cblxuY2xhc3NEZWYgY2xhc3NOYW1lIGZpbGw6eWVsbG93LHN0cm9rZTojMzMzLHN0cm9rZS13aWR0aDo0cHg7XG5jbGFzcyBFLEwsTSxOLE8sUSxLIGNsYXNzTmFtZTtcbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In19" frameborder="0" allowfullscreen></iframe>
 
-Explicit data dependencies allow you to comprehend modules by reading their definitions, recursively. This allows you to *categorically rule out all the modules you do not have to read* in order to comprehend the relevant module. If a module is not an explicit dependency (or dependency of a dependency...), it's not relevant. In fact, it's explicitly *independent*.
-
-## Related work
-
-TODO program slicing and program paths
+Explicit data dependencies allow you to comprehend modules by reading their definitions, recursively. This allows you to *categorically rule out all the modules you do not have to read* in order to comprehend the relevant module. In the above example, that's all the modules that are not highlighted. If a module is not an explicit dependency (or dependency of a dependency...), it's not relevant. In fact, it's explicitly *independent*.
 
 ## Restricting the model
 
-In order to enforce explicit dependencies, we must restrict our programming model by disallowing side-effects, such a mutable state, leaving us with only pure functions, and a langauge in the spirit of Haskell. 
+The Reactive Pattern enforces explicit dependencies by restricting the programming model, disallowing side-effects, such a mutable state, leaving us with only pure functions, and a langauge in the spirit of Haskell. 
 
-TODO need to defend this restriction.
+This works beautifully for batch software that accept an input and return an output, but does not scale to interactive software that responds to inputs over time. That's where FRP comes in.
 
-This works beautifully for batch software that accept an input and return an output, but does not scale on its own to interactive software that responds to inputs over time. That's where FRP comes in.
+## FRP
 
-## FRP and the Elm Architecture
+"Functional Reactive Programming is a way of writing interactive software using only **pure functions**" [[Ryan Trinkle](https://youtu.be/dOy7zIk3IUI?t=1m27s)]
 
-"Functional Reactive Programming is a way of writing software using only pure functions." [[Ryan Trinkle](https://www.youtube.com/watch?v=dOy7zIk3IUI?t=1m26s)]
+FRP is particularly useful for constructing software interfaces. The popular UI framworks of today, such as ReactJS, are inspired by FRP principles - but without entirely forgoeing side-effects.
 
-FRP is particularly useful for constructing software interfaces. The popular UI framworks of today, such as ReactJS, are based on FRP principles.
+behaviors and events (streams)
+
+I like to think about FRP as "zooming out." code is organized around pieces of data, and events are subordinated as explicit dependencies of data as infinite streams. 
+
+space time issues
+
+# The Elm Architecture
 
 However, most web-based FRP frameworks share a data model that does not feature modular comprehensibility. The data model they share was originally concieved as for the Elm programming language, a pure langauge in the spirit of Haskell, and entitled "The Elm Architecture." It inspired ReactJS's Redux, VueJS's Vuex, CycleJS's Onionify, among many others.
 
@@ -129,16 +124,6 @@ As it turns out, the FRP-inspired libaries we've discussed so far aren't truly r
 
 The main distinction between [OG](https://www.urbandictionary.com/define.php?term=OG) FRP and Synchronous dataflow langaugse is whether they allow higher-order streams. Because Eve, ReactJS, and VueJS do not, they are closer in spirit to dataflow langauges such as Esterel and Lucid Synchrone, than they are to the OG FRP frameworks, such as Fran. (CycleJS does allow higher-order streams.)
 
-## [OG](https://www.urbandictionary.com/define.php?term=OG) FRP
-
-TODO
-
-behaviors and events (streams)
-
-I like to think about FRP as "zooming out." code is organized around pieces of data, and events are subordinated as explicit dependencies of data as infinite streams. 
-
-space time issues
-
 ## Cyclic FRP
 
 Cycles are a major concern with explicit dependencies. For one, most FRP libraries in the wild do not support them. The only one I was able to find was Reflex, which is not nearly as popular as the other frameworks discussed.
@@ -180,9 +165,33 @@ view count = intButton [ onClick Increment ] count
 
 Yes there's less coupling. But is that always a good thing? No, there is such a thing as too little coupling.
 
-## Visualizing higher-order, cyclic FRP
+## Related Work
+
+Code comprehensibility is only a one important piece of making a change to a project. Other issues worth considering which also include: 
+
+* installing the proper software to gett the code to compile and run on your machine, 
+* editing the code, 
+* and testing your changes - 
+* not to mention the social complexities of getting your pull request merged into the main project (which involves getting your code reviewer to *comprehend* your changes).
+
+And, of course, the modularity of comprehensibility is only one piece of code comprehensibility. 
+
+Another big piece is understanding how the files, folders, import statements, and build tools and parsed together into a unifed program. Where's the entry point for goodness sake?! 
+
+Another impediment to code comprehensibility is code's symbolic, abstract nature. In [A Human-Readable Interactive Representation of a Code Library](http://glench.github.io/fuzzyset.js/ui/), Glen Chiacchieri makes a library more understandale through editable concrete values at various stages of code execution. Glen's thesis that concrete values are key to comprehension is backed by research that found that "to comprehend programs, developers need to acquire runtime information [to inspect the state of the application]. For this, developers frequently execute the application using a debugger." [[Walid Maalej, Rebecca Tiarks, Tobias Roehm, and Rainer Koschke. 2014. On the Comprehension of Program Comprehension](https://dl.acm.org/citation.cfm?id=2622669)]
+
+TODO program paths and slicing
+
+## Future Work
 
 Visualizing cyclic dependencies in a comprehensible way will be a challenge. I will freely admit that if it ultimately proves impossible to visualize cyclic dependencies in a comprehensible way, FRP may not be the silver bullet for modular comprehensibility I hope it can be.
+
+## Conclusions
+
+
+## Acknowledgements
+
+Thank you Jonathan Edwards for you continued mentorship.
 
 ## ToDo
 
