@@ -45,10 +45,6 @@ Note on the word "module": In his example above, Staltz uses JavaScript files as
 
 Staltz understates the non-modularity of the Interactive pattern. Let's say you wish to understand the behavior of X. You grep for `X.update` in all modules. For each module `X.update` appears in, you have to go to the call site(s) and understand that module well enough to know what triggers that line of code, and the value of the arguments it will pass in. If you're lucky, all that information is self-contained, but you'll likely be forced to understand yet more modules to understand how *this* module affects X.
 
-The Interactive Pattern, representative of most JavaScript UI frameworks, is not modularly comprehensible, because data dependencies are implicit, because the language permits side-effects, such as mutable state, which allows `bar.updateSomething(someValue);`.  
-
-The Reactive Pattern is modularly comprehensibility because it enforces explicit dependencies, by disallowing side-effects.
-
 Consider the program `A` of the Reactive Pattern, which is explicitly defined in terms of its modules. In this picture read an arrow from B to A as "A is defined in terms of B."
 
 <iframe width="500" height="300" src="https://mermaidjs.github.io/mermaid-live-editor/#/view/eyJjb2RlIjoiXG5ncmFwaCBCVFxuICAgIFxuQi0tPkFcbkMtLT5BXG5ELS0-QVxuRS0tPkFcbkYtLT5CXG5HLS0-QlxuSC0tPkJcbkktLT5DXG5KLS0-Q1xuSy0tPkRcbkwtLT5FXG5NLS0-RVxuTi0tPkVcbk8tLT5FXG5LLS0-TlxuUS0tPk5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In19" frameborder="0" allowfullscreen></iframe>
@@ -59,9 +55,11 @@ If you want to understand a module, you have to understand the modules it's defi
 
 This allows you to *categorically rule out all the modules you do not have to read* in order to comprehend the relevant module(s). In the above example, that's all the modules that are not highlighted. If a module is not an explicit dependency (or dependency of a dependency...), it's not relevant. In fact, it's explicitly *independent*.
 
-## Disallowing side-effects: only pure functions
+## Only pure functions (disallowing side-effects)
 
-The Reactive Pattern enforces explicit dependencies disallowing side-effects. As defined in Wikipedia, a side-effect "modifies some state outside its local environment or has an observable interaction with the outside world." 
+The Interactive Pattern, representative of most JavaScript UI frameworks, is not modularly comprehensible, because data dependencies are implicit, because the language permits side-effects, such as mutable state, which allows `bar.updateSomething(someValue);`.  
+
+The Reactive Pattern is modularly comprehensibility because it enforces explicit dependencies, by disallowing side-effects. As defined in Wikipedia, a side-effect "modifies some state outside its local environment or has an observable interaction with the outside world." 
 
 Let's address the first part of that definition, "modifies some state outside its local environment". Removing side-effects disallows calls like these:
 
@@ -104,6 +102,8 @@ But how do we calculate the counts? I have two helpful metaphors for FRP: "zoomi
 var count = 0
 document.getElementById("counter-button").onclick = e => {
   count++
+  // Before FRP, we'd have to do:
+  // document.getElementById("counter-button").innerText = count;
 }
 ```
 
@@ -114,7 +114,7 @@ const count = document.getElementById("counter-button").clicks
                 .reduce((accumulator, currentValue) => accumulator + 1)
 ```
 
-You may be wondering how `count` can be a `const`, even though it will update as the button is clicked. This is because `count` is itself a stream of values that can be used as a dependency in streams defined elsewhere.
+You may be wondering how `count` can be a `const`, even though it will update as the button is clicked. This is because `count` is itself a stream of values that can be used as a dependency in streams defined elsewhere. `count` is constant in the sense that there's no code anywhere that can modify `count` besides its definition above. `count` is read-only.
 
 TODO:
 
