@@ -11,15 +11,15 @@ If you wanted to understand the entirety of a software project, you'd have to re
 
 <iframe width="560" height="500" src="https://www.desmos.com/calculator/gzeqaru5pe?embed" frameborder="0" allowfullscreen></iframe>
 
-Most programming languages are not modularly comprehensible in such a linear fashion but in an exponential one, as demonstrated in the yellow curve above, where understanding is very limited until you've read almost all the code, at which point it expands very quickly.
+Most programming languages are not modularly comprehensible in such a linear fashion but in an exponential one, as illustrated with the yellow curve. Understanding is very limited until you've read almost all the code, at which point it expands very quickly.
 
-The lack of modular comprehensibility slows down the time it takes a programmer to make a change to an unfamiliar project. This is particularly relevant in open-source software, because developers have limited time to contribute. Have you ever wanted to make a small bug-fix or improvement to an open-source project, but gave up after a few hours of failing to understand how the code works? 
+The lack of modular comprehensibility slows down the time it takes a programmer to make a change to an unfamiliar project. This is particularly relevant in open-source software, because developers have limited time to contribute. Have you ever wanted to make a small bug-fix or improvement to an open-source project, but gave up after a few hours of failing to understand how the code works?
 
-## Module dependencies
+## Data dependencies
 
-Code is not modularly comprehensible because the way dependencies between modules are organized. 
+Most code is not modularly comprehensible because the way data dependencies between modules are organized. 
 
-In [Reactive MVC and The Virtual DOM](https://web.archive.org/web/20180530055638/https://futurice.com/blog/reactive-mvc-and-the-virtual-dom), Andre Staltz discusses the trade-offs between the Interactive (or imperitive) pattern and Reactive patterns.
+In [Reactive MVC and The Virtual DOM](https://web.archive.org/web/20180530055638/https://futurice.com/blog/reactive-mvc-and-the-virtual-dom), Andre Staltz discusses the trade-offs between the Interactive and Reactive patterns.
 
 > ![image](https://user-images.githubusercontent.com/2288939/42631117-35144a28-85a7-11e8-877e-552732396590.png)
 >  
@@ -41,41 +41,89 @@ In [Reactive MVC and The Virtual DOM](https://web.archive.org/web/20180530055638
 >  
 > The benefit of Reactive over Interactive is mainly separation of concerns. In Interactive, if you want to discover what affects X, you need to search for all such calls `X.update()` in other modules. However, in Reactive, all that it takes is to peek inside X, since it defines everything which affects it. For instance, this property is common in spreadsheet calculations. The definition of the contents of one cell are always defined just in that cell, regardless of changes happening on the other cells it depends on.
 
-Note on the word "module": In his example above, Staltz uses JavaScript files as representative of modules, but you could replace the `foo.js` filename with `foo` the variable or function name for similar result. Modular comprehensibility has nothing to do with browserify modules. The dictionary definition of module is relevant: "any of a number of distinct but interrelated units from which a program may be built up or into which a complex activity may be analyzed."
+Note on the word "module": In his example above, Staltz uses JavaScript files as representative of modules, but you could replace the `foo.js` filename with `foo` the variable name for a similar result. Modular comprehensibility has nothing to do with browserify modules. The dictionary definition of module is relevant: "any of a number of distinct but interrelated units from which a program may be built up or into which a complex activity may be analyzed."
 
-I believe that Staltz understates the non-modularity of the Interactive pattern. Let's say you wish to understand the behavior of X, so you grep for `X.update` in all modules. For each module `X.update` appears in, you have to go to the call site(s) and understand that module well enough to know what triggers that line of code, and arguments it will pass in. If you're lucky, all that information is self-contained, but you'll likely be forced to understand yet more modules to understand how *this* module affects X.
+Staltz understates the non-modularity of the Interactive pattern. Let's say you wish to understand the behavior of X. You grep for `X.update` in all modules. For each module `X.update` appears in, you have to go to the call site(s) and understand that module well enough to know what triggers that line of code, and the value of the arguments it will pass in. If you're lucky, all that information is self-contained, but you'll likely be forced to understand yet more modules to understand how *this* module affects X.
 
-The modular comprehensibility of a language is a function of how explict or implicit data dependencies are between modules. The Interactive pattern, which is representative of JavaScript, can never be modularly comprehensible, because data dependencies are hopelessly implicit. 
+The Interactive Pattern, representative of most JavaScript UI frameworks, is not modularly comprehensible, because data dependencies are implicit, because the language permits side-effects, such as mutable state, which allows `bar.updateSomething(someValue);`.  
 
-The Reactive Pattern enforces explicit dependencies, which are a huge win for modular comprehensibility. For example, consider the program `A` below, which is explicitly defined in terms of its modules below. In this picture read an arrow from B to A as "A is defined in terms of B" or "A explictly depends upon B."
+The Reactive Pattern is modularly comprehensibility because it enforces explicit dependencies, by disallowing side-effects.
+
+Consider the program `A` of the Reactive Pattern, which is explicitly defined in terms of its modules. In this picture read an arrow from B to A as "A is defined in terms of B."
 
 <iframe width="500" height="300" src="https://mermaidjs.github.io/mermaid-live-editor/#/view/eyJjb2RlIjoiXG5ncmFwaCBCVFxuICAgIFxuQi0tPkFcbkMtLT5BXG5ELS0-QVxuRS0tPkFcbkYtLT5CXG5HLS0-QlxuSC0tPkJcbkktLT5DXG5KLS0-Q1xuSy0tPkRcbkwtLT5FXG5NLS0-RVxuTi0tPkVcbk8tLT5FXG5LLS0-TlxuUS0tPk5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In19" frameborder="0" allowfullscreen></iframe>
 
-If you want to understand a module, you have to understand it's modules, recursively. So if you want to understand the entire program, A, you have to read everything. However, let's say you were only interested in module E. In this case you only have to read the E and it's children, recursively, highlighted below:
+If you want to understand a module, you have to understand the modules it's defined in terms of, recursively. So if you want to understand the entire program, A, you have to read everything. However, let's say you were only interested in module E. In this case you only have to read the E and it's children, recursively, highlighted below:
 
 <iframe width="500" height="300" src="https://mermaidjs.github.io/mermaid-live-editor/#/view/eyJjb2RlIjoiXG5ncmFwaCBCVFxuICAgIFxuQi0tPkFcbkMtLT5BXG5ELS0-QVxuRS0tPkFcbkYtLT5CXG5HLS0-QlxuSC0tPkJcbkktLT5DXG5KLS0-Q1xuSy0tPkRcbkwtLT5FXG5NLS0-RVxuTi0tPkVcbk8tLT5FXG5LLS0-TlxuUS0tPk5cblxuY2xhc3NEZWYgY2xhc3NOYW1lIGZpbGw6eWVsbG93LHN0cm9rZTojMzMzLHN0cm9rZS13aWR0aDo0cHg7XG5jbGFzcyBFLEwsTSxOLE8sUSxLIGNsYXNzTmFtZTtcbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In19" frameborder="0" allowfullscreen></iframe>
 
-Explicit data dependencies allow you to comprehend modules by reading their definitions, recursively. This allows you to *categorically rule out all the modules you do not have to read* in order to comprehend the relevant module. In the above example, that's all the modules that are not highlighted. If a module is not an explicit dependency (or dependency of a dependency...), it's not relevant. In fact, it's explicitly *independent*.
+This allows you to *categorically rule out all the modules you do not have to read* in order to comprehend the relevant module(s). In the above example, that's all the modules that are not highlighted. If a module is not an explicit dependency (or dependency of a dependency...), it's not relevant. In fact, it's explicitly *independent*.
 
-## Restricting the model
+## Disallowing side-effects: only pure functions
 
-The Reactive Pattern enforces explicit dependencies by restricting the programming model, disallowing side-effects, such a mutable state, leaving us with only pure functions, and a langauge in the spirit of Haskell. 
+The Reactive Pattern enforces explicit dependencies disallowing side-effects. As defined in Wikipedia, a side-effect "modifies some state outside its local environment or has an observable interaction with the outside world." 
 
-This works beautifully for batch software that accept an input and return an output, but does not scale to interactive software that responds to inputs over time. That's where FRP comes in.
+Let's address the first part of that definition, "modifies some state outside its local environment". Removing side-effects disallows calls like these:
+
+> `bar.updateSomething(someValue);` 
+
+As discussed above, the problem with this code is that it can live outside of `bar`, which makes it really difficult to comprehend `bar`s behavior without reading all the modules that affect it as well (and all the modules that affect those).
+
+We can go even further and disallow *all* mutable state, leaving us with only pure functions, and a langauge in the spirit of Haskell. 
+
+Next, let's address the second part of the definition, "has an observable interaction with the outside world." Pure functions work beautifully for batch software that accept an input, do some internal computation, and return an output, such as a compiler. 
+
+However, programming is ultimately about building software that *affects the world*. Ultimately our software is going to have to *do things*: move bits, open files and sockets, send HTTP requests. How can pure functions represent all that?
+
+The accepted answer to this question is: they can't. Haskell is split into two worlds: the world of pure expressions and the world of the `IO ()` monad. Life isn't worth living without getting and putting characters to the terminal:
+
+```
+getChar :: IO Char
+putChar :: Char -> IO ()
+```
+
+Just kidding. It's 2018. Who's writing terminal apps? Creating modern user interfaces has very little to do with getting and putting characters on the screen on-by-one. 
 
 ## FRP
 
-"Functional Reactive Programming is a way of writing interactive software using only **pure functions**" [[Ryan Trinkle](https://youtu.be/dOy7zIk3IUI?t=1m27s)]
+The popular way to create UIs today is inspired by Functional Reactive Programming. FRP is a way of declaratively describing interactive UIs *with only pure functions* - no monads required. 
 
-FRP is particularly useful for constructing software interfaces. The popular UI framworks of today, such as ReactJS, are inspired by FRP principles - but without entirely forgoeing side-effects.
+You *declaratively describe what the UI should look like as a function of state*, as opposed to imperitively adding and removing characters to the screen one-by-one. (Of course, there's code somewhere that's adding and removing characters from the screen, possibly in the form of a "virtual dom", but we don't have to worry about that - it's below FRP's level of abstraction.)
 
-behaviors and events (streams)
+Let's make a button that counts its clicks. The UI is a simple pure function from the number of clicks to the button's HTML:
 
-I like to think about FRP as "zooming out." code is organized around pieces of data, and events are subordinated as explicit dependencies of data as infinite streams. 
+```javascript
+function view(count) {
+  return `<button id='counter-button'>${count}</button>`
+}
+```
+
+But how do we calculate the counts? I have two helpful metaphors for FRP: "zooming out" and "inverting control". Normally, you deal with events one by one, and the code is organized in terms of events. "When an event occurs, run the following code."
+
+```javascript
+var count = 0
+document.getElementById("counter-button").onclick = e => {
+  count++
+}
+```
+
+But let's zoom out. Instead of dealing with events one-by-one, let's consider all the events that will ever happen as infinite lists (streams) of events. Next, let's define our data in terms of these streams, so that the data is now top-level and events are subordinated as dependencies of data.
+
+```javascript
+const count = document.getElementById("counter-button").clicks
+                .reduce((accumulator, currentValue) => accumulator + 1)
+```
+
+You may be wondering how `count` can be a `const`, even though it will update as the button is clicked. This is because `count` is itself a stream of values that can be used as a dependency in streams defined elsewhere.
+
+TODO:
 
 space time issues
 
-# The Elm Architecture
+While the popular UI framworks of today, such as ReactJS, are inspired by FRP principles, they do not 
+
+
+## The Elm Architecture
 
 However, most web-based FRP frameworks share a data model that does not feature modular comprehensibility. The data model they share was originally concieved as for the Elm programming language, a pure langauge in the spirit of Haskell, and entitled "The Elm Architecture." It inspired ReactJS's Redux, VueJS's Vuex, CycleJS's Onionify, among many others.
 
@@ -197,6 +245,7 @@ Thank you Jonathan Edwards for you continued mentorship.
 
 * title ideas
   * FRP and Explicit Data Dependencies
+* put Staltz in my own words?
 * Reflex TodoMVC?
 * find a real life open-source UI app as an example?
   * https://github.com/rtfeldman/elm-spa-example
