@@ -1,77 +1,68 @@
+
 ---
 title: FRP
 ---
 
+# Modular Comprehensibility and FRP
+
 * TOC
 {: toc }
 
-# Functional Reactive Programming and Modular Comprehensibility
+### Abstract
 
-If you wanted to understand the entirety of a software project, you'd have to read every line of code. But what if you only wanted to understand a single module? Can you get away with only reading a similarly smally piece of the code? In other words, is module comprehension proportional to the amount of code read? We can refer to such a project as "modularly comprehensible."
+When trying to comprehend a section of an unfamiliar codebase, developers spend an amount of time disproportionate to the size of the section. This is particularly relevant for would-be open-source contributors, who have limited time, and often only want to make changes in a small number of sections. I show how higher-order Functional Reactive Programming, such as in the Redux library, achieves a high level of comprehensibility modularity for user interface construction. I believe the use of such a paradigm would decrease the on-boarding time for developers to make effective changes. 
 
-<iframe width="560" height="500" src="https://www.desmos.com/calculator/gzeqaru5pe?embed" frameborder="0" allowfullscreen></iframe>
+## 1. Introduction
+
+Virtually all software development work is modifying existing code. First you must understand how the code currently works. This often is the bulk of your effort. Making the modification is often very simple, just a few lines of code. To speed up software development, we should minimize the amount of time it takes a developer to comprehend enough to make an effective edit. 
+
+Code comprehensibility is particularly relevant to open-source. Open-source works best when the user of the software can also edit the source code. What's the point of being free to read the code if you cannot understand it?
+
+I believe that our programming model is to blame for the current level of difficulty developers face in comprehending a unfamiliar project, and below argue in favor of a model that improves one aspect of code comprehensibility.
+
+The contributions of this paper are:
+
+* Establishing "modular comprehensibility" as a new frame to evaluate programming frameworks.
+* Demonstrating how implicit dependencies and side effects decrease modular comprehensibility, while explicit dependencies and pure functions increase it.
+* Articulating the modular comprehensibility trade-offs between two Functional Reactive Programming models: the first-order, non-cyclic Elm Architecture with the higher-order, cyclic Reflex.
+
+## 2 Background
+
+### 2.1 Modular Comprehensibility
+
+If you wanted to understand the entirety of a software project, you'd have to read every line of code. But what if you only wanted to understand a small part, such as how a particular button behaves? Can you get away with only reading a similarly small piece of the code? In other words, is module comprehension proportional to the amount of code read? We can refer to such a project as "modularly comprehensible."
+
+![image](https://user-images.githubusercontent.com/2288939/42785649-4e5f98b6-8921-11e8-9f23-34b44e35b804.png)
 
 Most programming languages are not modularly comprehensible in such a linear fashion but in an exponential one, as illustrated with the yellow curve. Understanding is very limited until you've read almost all the code, at which point it expands very quickly.
 
-The lack of modular comprehensibility slows down the time it takes a programmer to make a change to an unfamiliar project. This is particularly relevant in open-source software, because developers have limited time to contribute. Have you ever wanted to make a small bug-fix or improvement to an open-source project, but gave up after a few hours of failing to understand how the code works?
+The lack of modular comprehensibility slows down the time it takes a programmer to make a change to an unfamiliar project. This is particularly relevant in open-source software, because developers have limited time to contribute. It's also particularly relevant with front-end code, which is notoriously difficult to follow. Have you ever wanted to make a small bug-fix or improvement to an open-source project, but gave up after a few hours of failing to understand how the code works?
 
-## Data dependencies
+## 2.2 Data dependencies
 
 Most code is not modularly comprehensible because the way data dependencies between modules are organized. 
 
-In [Reactive MVC and The Virtual DOM](https://web.archive.org/web/20180530055638/https://futurice.com/blog/reactive-mvc-and-the-virtual-dom), Andre Staltz discusses the trade-offs between the Interactive and Reactive patterns.
+In a traditional imperative langauge, modules affect other modules *at a distance*, such as `car.setVelocity(52)`. Modules specify which other modules they *affect*.
 
-> ![image](https://user-images.githubusercontent.com/2288939/42631117-35144a28-85a7-11e8-877e-552732396590.png)
->  
-> An arrow from foo to bar means that foo somehow affects bar, by updating data in bar. A typical case is code inside foo which calls  
->    
-> `bar.updateSomething(someValue);`  
->  
-> Question: where does each arrow live in a program? They can't simply live in between modules, because all code is inside some module. The answer is: it depends, but typically, you expect the arrow to be defined in the arrow's tail, as such:
->  
->  ![image](https://user-images.githubusercontent.com/2288939/42631121-3789f186-85a7-11e8-893f-6357c6aa8864.png)
->  
-> **In the Interactive pattern, module X defines which other modules X affects.**  
->  
-> The dual of Interactive is Reactive, where arrows are defined in the opposite end, in the arrow head, as such:  
->  
-> ![image](https://user-images.githubusercontent.com/2288939/42631130-39df12ae-85a7-11e8-8ce3-ed48235efeb4.png)  
->    
-> **In the Reactive pattern, module X defines which other modules affect X.**  
->  
-> The benefit of Reactive over Interactive is mainly separation of concerns. In Interactive, if you want to discover what affects X, you need to search for all such calls `X.update()` in other modules. However, in Reactive, all that it takes is to peek inside X, since it defines everything which affects it. For instance, this property is common in spreadsheet calculations. The definition of the contents of one cell are always defined just in that cell, regardless of changes happening on the other cells it depends on.
+TODO picture
 
-Note on the word "module": In his example above, Staltz uses JavaScript files as representative of modules, but you could replace the `foo.js` filename with `foo` the variable name for a similar result. Modular comprehensibility has nothing to do with browserify modules. The dictionary definition of module is relevant: "any of a number of distinct but interrelated units from which a program may be built up or into which a complex activity may be analyzed."
+From the perspective of modulary comprehensibility, this is the opposite of what you'd want. Let's say you wish to understand the behavior of `car.veloctiy`. You grep for `car.setVelocity` in the codebase. For each `car.setVelocity` , you have to go to that call site and understand its context well enough to know what triggers that line of code, and the value of the arguments it will pass in. If you're lucky, all that information is self-contained, but you'll likely be forced to expand your understanding to yet other sections of potentially irrelevant code.
 
-Staltz understates the non-modularity of the Interactive pattern. Let's say you wish to understand the behavior of X. You grep for `X.update` in all modules. For each module `X.update` appears in, you have to go to the call site(s) and understand that module well enough to know what triggers that line of code, and the value of the arguments it will pass in. If you're lucky, all that information is self-contained, but you'll likely be forced to understand yet more modules to understand how *this* module affects X.
+To achieve modular comprehensibility, modules should be defined in terms of the modules that can affect *themselves*. "This property is common in spreadsheet calculations. The definition of the contents of one cell are always defined just in that cell, regardless of changes happening on the other cells it depends on." [1]
 
-Consider the program `A` of the Reactive Pattern, which is explicitly defined in terms of its modules. In this picture read an arrow from B to A as "A is defined in terms of B."
+TODO picture
 
-<iframe width="500" height="300" src="https://mermaidjs.github.io/mermaid-live-editor/#/view/eyJjb2RlIjoiXG5ncmFwaCBCVFxuICAgIFxuQi0tPkFcbkMtLT5BXG5ELS0-QVxuRS0tPkFcbkYtLT5CXG5HLS0-QlxuSC0tPkJcbkktLT5DXG5KLS0-Q1xuSy0tPkRcbkwtLT5FXG5NLS0-RVxuTi0tPkVcbk8tLT5FXG5LLS0-TlxuUS0tPk5cbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In19" frameborder="0" allowfullscreen></iframe>
+This way you can understand a module by understanding the modules its defined in terms of, recursively. To understand E, you only have to read the E and it's children, recursively, highlighted below:
 
-If you want to understand a module, you have to understand the modules it's defined in terms of, recursively. So if you want to understand the entire program, A, you have to read everything. However, let's say you were only interested in module E. In this case you only have to read the E and it's children, recursively, highlighted below:
-
-<iframe width="500" height="300" src="https://mermaidjs.github.io/mermaid-live-editor/#/view/eyJjb2RlIjoiXG5ncmFwaCBCVFxuICAgIFxuQi0tPkFcbkMtLT5BXG5ELS0-QVxuRS0tPkFcbkYtLT5CXG5HLS0-QlxuSC0tPkJcbkktLT5DXG5KLS0-Q1xuSy0tPkRcbkwtLT5FXG5NLS0-RVxuTi0tPkVcbk8tLT5FXG5LLS0-TlxuUS0tPk5cblxuY2xhc3NEZWYgY2xhc3NOYW1lIGZpbGw6eWVsbG93LHN0cm9rZTojMzMzLHN0cm9rZS13aWR0aDo0cHg7XG5jbGFzcyBFLEwsTSxOLE8sUSxLIGNsYXNzTmFtZTtcbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In19" frameborder="0" allowfullscreen></iframe>
+TODO picture
 
 This allows you to *categorically rule out all the modules you do not have to read* in order to comprehend the relevant module(s). In the above example, that's all the modules that are not highlighted. If a module is not an explicit dependency (or dependency of a dependency...), it's not relevant. In fact, it's explicitly *independent*.
 
-## Only pure functions (disallowing side-effects)
+### 2.3 Pure functions & disallowing side-effects
 
-The Interactive Pattern, representative of most JavaScript UI frameworks, is not modularly comprehensible, because data dependencies are implicit, because the language permits side-effects, such as mutable state, which allows `bar.updateSomething(someValue);`.  
+Side-effects mutate *from a distance*, making data dependencies implicit. By disallowing side-effects, we can make data dependencies explicit, which clarifies the relevancy of various sections of code to our present purposes, a boon for modular comprehensibility. In other words, no more `car.setVelocity(53)`.
 
-The Reactive Pattern is modularly comprehensibility because it enforces explicit dependencies, by disallowing side-effects. As defined in Wikipedia, a side-effect "modifies some state outside its local environment or has an observable interaction with the outside world." 
-
-Let's address the first part of that definition, "modifies some state outside its local environment". Removing side-effects disallows calls like these:
-
-> `bar.updateSomething(someValue);` 
-
-As discussed above, the problem with this code is that it can live outside of `bar`, which makes it really difficult to comprehend `bar`s behavior without reading all the modules that affect it as well (and all the modules that affect those).
-
-We can go even further and disallow *all* mutable state, leaving us with only pure functions, and a langauge in the spirit of Haskell. 
-
-Next, let's address the second part of the definition, "has an observable interaction with the outside world." Pure functions work beautifully for batch software that accept an input, do some internal computation, and return an output, such as a compiler. 
-
-However, programming is ultimately about building software that *affects the world*. Ultimately our software is going to have to *do things*: move bits, open files and sockets, send HTTP requests. How can pure functions represent all that?
+This leaves us with a language of pure functions, such as Haskell. Pure functions work beautifully for batch software that accept an input, do some internal computation, and return an output, such as a compiler. However, programming is ultimately about building software that *affects the world*. Ultimately our software is going to have to *do things*: move bits, open files and sockets, send HTTP requests. How can pure functions represent all that?
 
 The accepted answer to this question is: they can't. Haskell is split into two worlds: the world of pure expressions and the world of the `IO ()` monad. Life isn't worth living without getting and putting characters to the terminal:
 
@@ -82,13 +73,25 @@ putChar :: Char -> IO ()
 
 Just kidding. It's 2018. Who's writing terminal apps? Creating modern user interfaces has very little to do with getting and putting characters on the screen on-by-one. 
 
-## FRP
+### 2.4 FRP
 
 The popular way to create UIs today is inspired by Functional Reactive Programming. FRP is a way of declaratively describing interactive UIs *with only pure functions* - no monads required. 
 
-You *declaratively describe what the UI should look like as a function of state*, as opposed to imperitively adding and removing characters to the screen one-by-one. (Of course, there's code somewhere that's adding and removing characters from the screen, possibly in the form of a "virtual dom", but we don't have to worry about that - it's below FRP's level of abstraction.)
+You *declaratively describe what the UI should look like as a function of state*, as opposed to imperatively adding and removing characters to the screen one-by-one. (Of course, there's code somewhere that's adding and removing characters from the screen, possibly in the form of a "virtual DOM", but we don't have to worry about that - it's below FRP's level of abstraction.)
 
-Let's make a button that counts its clicks. The UI is a simple pure function from the number of clicks to the button's HTML:
+I have two helpful metaphors for FRP: "zooming out" and "inverting control". We can see them in action by contrasting the FRP style with its imperative counterpart constructing a button that counts its clicks:
+
+#### Imperative Button View
+
+The UI is specified only in terms of its initial state. The code that modifies it lives elsewhere. In fact, code from many different places could modify this button.
+
+```html
+<button id='counter-button'>0</button>
+```
+
+#### FRP Button View
+
+The UI is a pure function from the number of clicks to the button's HTML. The only thing that can affect this button is the value of the `count` argument.
 
 ```javascript
 function view(count) {
@@ -96,60 +99,68 @@ function view(count) {
 }
 ```
 
-But how do we calculate the counts? I have two helpful metaphors for FRP: "zooming out" and "inverting control". Normally, you deal with events one by one, and the code is organized in terms of events. "When an event occurs, run the following code."
+#### Imperative Button Update
+
+How do we calculate the counts? Normally, you deal with events one by one, and the code is organized in terms of events. "When an event occurs, run the following code."
 
 ```javascript
 var count = 0
 document.getElementById("counter-button").onclick = e => {
   count++
-  // Before FRP, we'd have to do:
-  // document.getElementById("counter-button").innerText = count;
+  document.getElementById("counter-button").innerText = count;
 }
 ```
+
+#### FRP Button Update
 
 But let's zoom out. Instead of dealing with events one-by-one, let's consider all the events that will ever happen as infinite lists (streams) of events. Next, let's define our data in terms of these streams, so that the data is now top-level and events are subordinated as dependencies of data.
 
 ```javascript
-const count = document.getElementById("counter-button").clicks
-                .reduce((accumulator, currentValue) => accumulator + 1)
+const count = DOM.select("#counter-button").events('click')
+                .reduce((accumulator, currentValue) => accumulator + 1, 0)
 ```
 
 You may be wondering how `count` can be a `const`, even though it will update as the button is clicked. This is because `count` is itself a stream of values that can be used as a dependency in streams defined elsewhere. `count` is constant in the sense that there's no code anywhere that can modify `count` besides its definition above. `count` is read-only.
 
-TODO:
+You also may be wondering about `DOM.select("#counter-button").events('click')` in the FRP Button Update example. Selector-based event querying is how CycleJS works [2] and fits this example. And how does the `count` stream get passed into the `view()` function? Good questions! Below we will discuss a more semantic approach that exposes the true cyclic nature of this button. 
 
-space time issues
+FRP implementations have been plagued with space and time leaks. In other words, they take up a lot of space and are slow. Thus while many UI libraries are inspired by FRP, they do not adhere strictly to only *pure functions*, in part for performance reasons. For example, many FRP libraries disallow higher-order streams (streams-of-streams), which as we will see below is ultimately bad for modular comprehensibility.
 
-While the popular UI framworks of today, such as ReactJS, are inspired by FRP principles, they do not 
+## 3. The Elm Architecture
 
+Elm is a pure functional language in the spirit of Haskell that compiles to JavaScript. It is an FRP-inspired langauge that only allows first-order and non-cyclic streams. 
 
-## The Elm Architecture
+The Elm Architecture follows directly from the first-order, non-cyclic restrictions. Because streams cannot contain other streams, nor be cyclical, the only way to construct a user interface, which is inherently cyclic, is to have a single, large, language-supported cycle.
 
-However, most web-based FRP frameworks share a data model that does not feature modular comprehensibility. The data model they share was originally concieved as for the Elm programming language, a pure langauge in the spirit of Haskell, and entitled "The Elm Architecture." It inspired ReactJS's Redux, VueJS's Vuex, CycleJS's Onionify, among many others.
+<iframe width="500" height="300" src="https://mermaidjs.github.io/mermaid-live-editor/#/view/eyJjb2RlIjoiXG5ncmFwaCBURFxuIFxucmVkdWNlci0tPnN0YXRlXG5zdGF0ZSAtLT4gdmlldyBcbnZpZXctLT58ZXZlbnR8cmVkdWNlclxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifX0" frameborder="0" allowfullscreen></iframe>
 
-The core of the architecture is a reducer function that takes the old state, and an event, and returns a newly computed state.
+The Elm Architecture was built originally for use in Elm, but has since inspired ReactJS's Redux, VueJS's Vuex, CycleJS's Onionify, among many other front-end state management libraries.
+
+While The Elm Architecture does adhere to the letter of the comprehensible modularity law - only pure functions, no side effects - it does not adhere to the spirit of the law - no mutation from a distance, no implicit dependencies. This design decision was made consciously in Elm to decrease coupling. [3]
+
+Let's examine the architecture. The reducer is function that takes the old state, and an event, and returns a newly computed state.
 
 ```haskell
 reducer :: state -> event -> state
 ```
 
-<iframe width="500" height="300" src="https://mermaidjs.github.io/mermaid-live-editor/#/view/eyJjb2RlIjoiXG5ncmFwaCBURFxuIFxucmVkdWNlci0tPnN0YXRlXG5zdGF0ZSAtLT4gdmlldyBcbnZpZXctLT58ZXZlbnR8cmVkdWNlclxuIiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifX0" frameborder="0" allowfullscreen></iframe>
+Like in the "FRP Button View" example above, the "view" (HTML and CSS) of the application is defined declaratively in terms of a `state` variable. In the Elm Architecture, the state is a singleton value. 
 
-The "view" (HTML and CSS) of the application is defined declaratively in terms of `state`. 
-
-The way the view sends events to the `reducer` differs between the frameworks. For example, React and Elm generates events from *within* view, such as `<button onClick={this.handleClick()}>` or `button [ onClick Increment ]`, respectively, while CycleJS derives event information *outside* the view, such as `const clicks = DOM.select('button').events('click')`. 
+The way the view sends events to the `reducer` differs between the frameworks. As we saw above, CycleJS derives event information *outside* the view, such as `const clicks = DOM.select('#counter-button').events('click')`. React and Elm generates events from *within* view, such as `<button onClick={this.handleClick()}>` or `button [ onClick Increment ]`, respectively.
 
 Additionally, these frameworks sometimes wrap events in semantic labels called "actions" or "messages". For example, an `onClick` event could become a `Submit` action. This will become clearer in the Elm example below.
 
-In the Elm Architecture, we are explicit about the initial value of state, how the state determines the view, and how various events effect the state. This is a huge improvement over the non-FRP frameworks of the past, such as JQuery. Benefits include serializable state, which gives us hot-swapping and time travel debugging!
+In the Elm Architecture, we are explicit about the initial value of state, how the state determines the view, and how various events effect the state. This is a huge improvement over the non-FRP UI creation, such as the Imperative Button above. It gives us serializable state, which gives us hot-swapping and time travel debugging!
 
-However, let's examine the Elm Architecture from a modular comprehensibility point of view. Any message can modify any state. In the reducer, called  `update`, in [Elm ToDoMVC](https://github.com/evancz/elm-todomvc/blob/master/Todo.elm), the `Add` message triggers an update of three different pieces of state:
+However, let's examine the Elm Architecture from a modular comprehensibility point of view. 
+
+Any message can modify any state. In the reducer, called  `update` in [Elm ToDoMVC](https://github.com/evancz/elm-todomvc/blob/master/Todo.elm), the `Add` message triggers an update of three different pieces of state:
 
 ![image](https://user-images.githubusercontent.com/2288939/42649315-6113b890-85d7-11e8-88fb-184081fe3ba5.png)
 
-This means that you can't modularly gain a complete understanding of any piece of state. You have to look through *all* the messages for any piece of state.
+This means that you can't modularly gain a complete understanding of any piece of state. You have to look through *all* the messages for any piece of state, which may be spread across many files.
 
-There's also a subtler way this undermines explicit dependencies: each piece of state can be modified in terms of *any other piece of state*. There's no explict isolation between independent states. 
+There's also a subtler way this undermines explicit dependencies: each piece of state can be modified in terms of *any other piece of state*. There's no explicit isolation between independent states. 
 
 Additionally, any view element can emit any message. Again from [Elm ToDoMVC](https://github.com/evancz/elm-todomvc/blob/master/Todo.elm), the viewInput's `onInput` and `onEnter` events send `UpdateField` and `Add` messages, respectively: 
 
@@ -157,43 +168,26 @@ Additionally, any view element can emit any message. Again from [Elm ToDoMVC](ht
 
 If we’re looking to understand a single piece of state, we’re not much better off than with an entirely imperative framework: we still have to read more-or-less the whole application even if we wish only to comprehend only a small piece.
 
-However, this is a feature as well as a bug. The Elm Architecture purposefully designed to limit the explicitness of dependencies. In [Accidentally Concurrent](https://youtu.be/DfLvDFxcAIA?t=27m32s), the creator of Elm Evan Czaplicki explains how he things explicit dependencies can lead to crazy incomprehensibility:
+## 4. Redux
 
-<img src="https://user-images.githubusercontent.com/2288939/42652385-3f6d0454-85e0-11e8-98b6-ce4d1b48bf16.png" width="500px">
+Let's contrast the Elm Architecture with a framework that allows higher-order and cyclic streams. The Redux FRP library, built for Haskell's ghcjs, fits the bill.
 
-However, you and I, dear reader, are not scared off my explicit dependencies, because they are what allows us to know what code we must read and what code we can safely avoid. If you focus on a single circle at a time, you can easily see what it depends upon. (Except maybe for some of those nasty-looking cyclic states. We'll come back to those below.)
-
-## Synchronous dataflow and higher-order streams
-
-As it turns out, the FRP-inspired libaries we've discussed so far aren't truly representative of FRP as it was originally concieved. In Elm 0.17, Elm said [A Farewell to FRP](http://elm-lang.org/blog/farewell-to-frp):
-
-> So is Elm about FRP anymore? No. Those days are over now. Elm is just a functional language that takes concurrency very seriously. And from a user's perspective, Elm is just a friendly functional language!  
-> Interested readers may find Lucid Synchrone interesting. Unfortunately for me, I had no idea my thesis had so much in common with synchronous programming languages at the time, but the connections are quite striking. I might argue that Elm was *never* about FRP.
-
-The main distinction between [OG](https://www.urbandictionary.com/define.php?term=OG) FRP and Synchronous dataflow langaugse is whether they allow higher-order streams. Because Eve, ReactJS, and VueJS do not, they are closer in spirit to dataflow langauges such as Esterel and Lucid Synchrone, than they are to the OG FRP frameworks, such as Fran. (CycleJS does allow higher-order streams.)
-
-## Cyclic FRP
-
-Cycles are a major concern with explicit dependencies. For one, most FRP libraries in the wild do not support them. The only one I was able to find was Reflex, which is not nearly as popular as the other frameworks discussed.
-
-But even if cyclic FRP is possible, is it desirable? As we saw above in Evan Czaplicki's crazy picture, things can get hairy fast. In fact, it may seem like things are *too explicit*, too tightly coupled.
-
-I, however, would push back on this concern. I believe that if the essential, inherent nature of a module is that it's cyclically dependent with another module, we should explicitly expose that nature in the structure of the code. 
-
-TODO maybe talk about https://en.wikipedia.org/wiki/Connascence
-
-Let's examine my favorite simple cyclic dependency: a button that counts its clicks. This is one way to do it in Reflex:
+#### Reflex Button
 
 ```haskell
 clickEvents <- intButton clicksCount
-clicksCount <- count clickEvents
+clicksCount <- foldDyn (\accumulator currentValue -> accumulator + 1) 0 clickEvents
 ```
 
 First look at `intButton clicksCount`. This is where the button is created with the number of clicks as it's text. 
 
-`intButton` is a helper function of type `Show a => Dynamic a -> m (Event t ())`. In other words, it inputs a dynamic value (a stream) that can be coerced to a string (that's what the `Show a =>` part means), creates a button on the screen with that value, and returns an event stream (which in this case is just click events).
+`intButton` is a helper function of type `Show a => Dynamic a -> m (Event t ())`. In other words, it inputs a dynamic value (stream) that can be coerced to a string (that's what the `Show a =>` part means), creates a button on the screen with that value, and returns an event stream. (I made the helper function return only an event stream of clicks, but we could return an event stream of other events as well.)
 
 `clicksCount` is simply counting the number of events within the `clickEvents` stream.
+
+But even if cyclic FRP is possible, is it desirable? In fact, it may seem like things are *too explicit*, too tightly coupled.
+
+#### Elm Architecture Button
 
 Here's the same program in Elm:
 
@@ -213,39 +207,47 @@ view count = intButton [ onClick Increment ] count
 
 Yes there's less coupling. But is that always a good thing? No, there is such a thing as too little coupling.
 
-## Related Work
+If the essential, inherent nature is cyclical, we should explicitly expose that cycle in the structure of the code. 
 
-Code comprehensibility is only a one important piece of making a change to a project. Other issues worth considering which also include: 
 
-* installing the proper software to gett the code to compile and run on your machine, 
-* editing the code, 
-* and testing your changes - 
-* not to mention the social complexities of getting your pull request merged into the main project (which involves getting your code reviewer to *comprehend* your changes).
+## 5. Related Work
 
-And, of course, the modularity of comprehensibility is only one piece of code comprehensibility. 
-
-Another big piece is understanding how the files, folders, import statements, and build tools and parsed together into a unifed program. Where's the entry point for goodness sake?! 
-
-Another impediment to code comprehensibility is code's symbolic, abstract nature. In [A Human-Readable Interactive Representation of a Code Library](http://glench.github.io/fuzzyset.js/ui/), Glen Chiacchieri makes a library more understandale through editable concrete values at various stages of code execution. Glen's thesis that concrete values are key to comprehension is backed by research that found that "to comprehend programs, developers need to acquire runtime information [to inspect the state of the application]. For this, developers frequently execute the application using a debugger." [[Walid Maalej, Rebecca Tiarks, Tobias Roehm, and Rainer Koschke. 2014. On the Comprehension of Program Comprehension](https://dl.acm.org/citation.cfm?id=2622669)]
+Another impediment to code comprehensibility is code's symbolic, abstract nature. Glen Chiacchieri makes a library more understandable through editable concrete values at various stages of code execution. [4] Glen's thesis that concrete values are key to comprehension is backed by research that found that "to comprehend programs, developers need to acquire runtime information [to inspect the state of the application]. For this, developers frequently execute the application using a debugger." [5]
 
 TODO program paths and slicing
 
-## Future Work
+## 6. Future Work
 
-Visualizing cyclic dependencies in a comprehensible way will be a challenge. I will freely admit that if it ultimately proves impossible to visualize cyclic dependencies in a comprehensible way, FRP may not be the silver bullet for modular comprehensibility I hope it can be.
+Visualizing cyclic dependencies in a comprehensible way will be a challenge. I will freely admit that if it ultimately proves impossible to visualize cyclic dependencies in a comprehensible way, FRP may not be the silver bullet for modular comprehensibility I hope it can be. TODO
 
-## Conclusions
+Code comprehensibility is only a one important piece onboarding to an unfamiliar project. Other issues worth considering which also include: 
 
+* installing the proper software to get the code to compile and run on your machine, 
+* editing the code, 
+* and testing your changes 
+
+And, of course, the modularity of comprehensibility is only one piece of code comprehensibility. Another big piece is simply understanding how the files, folders, import statements, and build tools and parsed together into a unified program. Where's the entry point for goodness sake?! 
+
+## 7. Conclusions
+
+TODO
 
 ## Acknowledgements
 
 Thank you Jonathan Edwards for you continued mentorship.
 
+## References
+
+[1] - [Reactive MVC and The Virtual DOM](https://web.archive.org/web/20180530055638/https://futurice.com/blog/reactive-mvc-and-the-virtual-dom)
+[2] - [CycleJS Guide: Why CSS selectors?](https://cycle.js.org/model-view-intent.html#model-view-intent-what-mvc-is-really-about-why-css-selectors)
+[3] - [Accidentally Concurrent](https://youtu.be/DfLvDFxcAIA?t=27m32s)
+[4] - [A Human-Readable Interactive Representation of a Code Library](http://glench.github.io/fuzzyset.js/ui/)
+[5] - [Walid Maalej, Rebecca Tiarks, Tobias Roehm, and Rainer Koschke. 2014. On the Comprehension of Program Comprehension](https://dl.acm.org/citation.cfm?id=2622669)
+
 ## ToDo
 
-* title ideas
-  * FRP and Explicit Data Dependencies
-* put Staltz in my own words?
+* re-do deleted photos from old version https://github.com/stevekrouse/futureofcoding.org/blob/5f4dab8f1fee8a4d36caa8dc5c042215797dd53f/drafts/frp.md
+* spell check (again)
 * Reflex TodoMVC?
 * find a real life open-source UI app as an example?
   * https://github.com/rtfeldman/elm-spa-example
