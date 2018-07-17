@@ -9,7 +9,7 @@ title: FRP
 
 ### Abstract
 
-When trying to comprehend a section of an unfamiliar codebase, developers spend an amount of time disproportionate to the size of the section. This is particularly relevant for would-be open-source contributors, who have limited time, and often only want to make changes in a small number of sections. I show how higher-order Functional Reactive Programming, such as in the Redux library, achieves a high level of comprehensibility modularity for user interface construction. I believe the use of such a paradigm would decrease the on-boarding time for developers to make effective changes. 
+When trying to comprehend a section of an unfamiliar codebase, developers spend an amount of time disproportionate to the size of the section. This is particularly relevant for would-be open-source contributors, who have limited time, and often only want to make changes in a small number of sections. I show how higher-order Functional Reactive Programming, such as in the Reflex library, achieves a high level of comprehensibility modularity for user interface construction. I believe the use of such a paradigm would decrease the on-boarding time for developers to make effective changes. 
 
 ## 1. Introduction
 
@@ -167,9 +167,9 @@ Additionally, any view element can emit any message. Again from [Elm ToDoMVC](ht
 
 If we’re looking to understand a single piece of state, we’re not much better off than with an entirely imperative framework: we still have to read more-or-less the whole application even if we wish only to comprehend only a small piece.
 
-## 4. Redux
+## 4. Reflex
 
-Let's contrast the Elm Architecture with a framework that allows higher-order and cyclic streams. The Redux FRP library, built for Haskell's ghcjs, fits the bill.
+Let's contrast the Elm Architecture with a framework that allows higher-order and cyclic streams. The Reflex FRP library, built for Haskell's ghcjs, fits the bill.
 
 #### Reflex Button
 
