@@ -6,10 +6,7 @@ title: Hilltop Lang Review
 
 _07/17/18_
 
-* TOC
-{:toc}
-
-On July 6, 2018 I got an email from Dan Swirsky, a patent attorny and part-time programming language enthusiast, who is working on " a new reactive language-type paradigm, an IDE design that uses a structure editor, and a language that is super simple and super readable." I agreed to review his langauge and post the review on the site.
+On July 6, 2018 I got an email from Dan Swirsky, a patent attorny and part-time programming language enthusiast, who is working on " a new reactive language-type paradigm, an IDE design that uses a structure editor, and a language that is super simple and super readable." I agreed to review his langauge and post the review on the site. You can learn more at [https://hilltop-lang.org](https://hilltop-lang.org).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/594gwzvxnd0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
