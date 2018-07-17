@@ -1,4 +1,3 @@
-
 ---
 title: FRP
 ---
@@ -38,7 +37,7 @@ Most programming languages are not modularly comprehensible in such a linear fas
 
 The lack of modular comprehensibility slows down the time it takes a programmer to make a change to an unfamiliar project. This is particularly relevant in open-source software, because developers have limited time to contribute. It's also particularly relevant with front-end code, which is notoriously difficult to follow. Have you ever wanted to make a small bug-fix or improvement to an open-source project, but gave up after a few hours of failing to understand how the code works?
 
-## 2.2 Data dependencies
+### 2.2 Data dependencies
 
 Most code is not modularly comprehensible because the way data dependencies between modules are organized. 
 
@@ -174,10 +173,7 @@ Let's contrast the Elm Architecture with a framework that allows higher-order an
 
 #### Reflex Button
 
-```haskell
-clickEvents <- intButton clicksCount
-clicksCount <- foldDyn (\accumulator currentValue -> accumulator + 1) 0 clickEvents
-```
+<script src="https://gist.github.com/stevekrouse/dd5adf44e0994bb8665161e0aefed5b6.js"></script>
 
 First look at `intButton clicksCount`. This is where the button is created with the number of clicks as it's text. 
 
@@ -191,19 +187,7 @@ But even if cyclic FRP is possible, is it desirable? In fact, it may seem like t
 
 Here's the same program in Elm:
 
-```elm
--- model
-count = 0
-
---reducer
-update msg count =
-  case msg of
-    Increment ->
-      count + 1
-
--- view
-view count = intButton [ onClick Increment ] count
-```
+<script src="https://gist.github.com/stevekrouse/0e07c0da9803b7386612fa6eb2dc8275.js"></script>
 
 Yes there's less coupling. But is that always a good thing? No, there is such a thing as too little coupling.
 
@@ -234,15 +218,19 @@ TODO
 
 ## Acknowledgements
 
-Thank you Jonathan Edwards for you continued mentorship.
+Thank you Jonathan Edwards for your continued mentorship.
 
 ## References
 
-[1] - [Reactive MVC and The Virtual DOM](https://web.archive.org/web/20180530055638/https://futurice.com/blog/reactive-mvc-and-the-virtual-dom)
-[2] - [CycleJS Guide: Why CSS selectors?](https://cycle.js.org/model-view-intent.html#model-view-intent-what-mvc-is-really-about-why-css-selectors)
-[3] - [Accidentally Concurrent](https://youtu.be/DfLvDFxcAIA?t=27m32s)
-[4] - [A Human-Readable Interactive Representation of a Code Library](http://glench.github.io/fuzzyset.js/ui/)
-[5] - [Walid Maalej, Rebecca Tiarks, Tobias Roehm, and Rainer Koschke. 2014. On the Comprehension of Program Comprehension](https://dl.acm.org/citation.cfm?id=2622669)
+[1] - Andre Staltz. [Reactive MVC and The Virtual DOM](https://web.archive.org/web/20180530055638/https://futurice.com/blog/reactive-mvc-and-the-virtual-dom)
+
+[2] - Andre Staltz. [CycleJS Guide: Why CSS selectors?](https://cycle.js.org/model-view-intent.html#model-view-intent-what-mvc-is-really-about-why-css-selectors)
+
+[3] - Ryan Trinkle. [Accidentally Concurrent](https://youtu.be/DfLvDFxcAIA?t=27m32s)
+
+[4] - Glen Chiacchieri. [A Human-Readable Interactive Representation of a Code Library](http://glench.github.io/fuzzyset.js/ui/)
+
+[5] - Walid Maalej, Rebecca Tiarks, Tobias Roehm, and Rainer Koschke. [On the Comprehension of Program Comprehension](https://dl.acm.org/citation.cfm?id=2622669) 
 
 ## ToDo
 
