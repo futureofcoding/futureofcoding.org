@@ -62,6 +62,7 @@ If we’re looking to understand a single piece of state, we’re not much bette
 * maybe reverse the order of the introduction
 * be clearer on what explicit means
   * data = ...
+  * inversion of control (http://degoes.net/articles/destroy-all-ifs)
   * explicit in the math formula sense
 * the elm architecture section
   * edit this section a lot 
