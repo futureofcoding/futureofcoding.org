@@ -1,0 +1,25 @@
+---
+title: Future of Coding Log
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>Future of Coding Log</title>
+  <description>Welcome to my development journal. This is an experiment in radical transparency. You can read my unfiltered daily thoughts below. Pardon my typo-laden stream-of-consciousness.</description>
+  <link>http://futureofcoding.org/log</link>
+  <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
+  <ttl>600</ttl>
+  {% for commit in site.data.git-log %} {% if commit.message != 'updated git log' %} {% unless commit.message contains 'Merge branch' %} {% assign first_line = commit.message | newline_to_br | split: '<br />' | first | remove: '## ' %} {% assign date = commit.committer.date | date_to_rfc822 %} {% assign message = commit.message | remove_first: first_line | strip_newlines | remove_first: '* TOC{: toc }' | remove: '#' %}
+  <item>
+    <title>{{ first_line | | escape}}</title>
+    <description>
+      {{ message | slice: 0, 200 | remove: '<' | escape }}...
+    </description>
+    <link>http://futureofcoding.org/log#{{ first_line | slugify}}</link>
+    <guid isPermaLink="false">{{ first_line | slugify}}?date={{ date | uri_escape  }}</guid>
+    <pubDate>{{ date }}</pubDate>
+  </item> 
+        {% endunless %} {% endif %}{% endfor %}
+</channel>
+</rss>
+
