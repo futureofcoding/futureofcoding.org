@@ -60,6 +60,46 @@ The Reflex library was built for Haskell web development via ghcjs. It features 
 * compare ToDoMVC to Elm
 * what does foldDyn do and what's its type? Show how the stream is higher order.
 
+```haskell
+todoMVC :: ( DomBuilder t m
+           , DomBuilderSpace m ~ GhcjsDomSpace
+           , MonadFix m
+           , MonadHold t m
+           , PostBuild t m
+           )
+        => m ()
+todoMVC = do
+  el "div" $ do
+    elAttr "section" ("class" =: "todoapp") $ do
+      mainHeader
+      
+      foldDyn :: (a -> b -> b ) -> b -> Event a -> m (Dynamic b)
+      tasks   :: Dynamic (Map Int Task)
+      rec tasks <- foldDyn (\transformation oldTasks -> transformation oldTasks) initialTasks listTransformationEvent
+      
+      mergeWith  :: (a -> a -> a) -> [Event a] -> Event a
+      listTransformationEvent ::  Event (Map Int Task -> Map Int Task)
+      let listTransformationEvent = mergeWith (.)  [ 
+        insertNewEvent
+       , listModifyTasks
+       , clearCompletedEvent
+      ]
+      
+      let insertNewEvent :: Event (Map Int Task -> Map Int Task)
+          insertNewEvent = fmap insertNew_ newTask
+      newTask <- taskEntry
+      
+      listModifyTasks :: Event (Map Int Task -> Map Int Task)
+      listModifyTasks <- taskList activeFilter tasks
+      
+      (activeFilter, clearCompleted) <- controls tasks
+      fmap :: (a ->    b) -> Dynamic a -> Dynamic b
+      let clearCompletedEvent :: Event (Map Int Task -> Map Int Task)
+          clearCompletedEvent = fmap (\_ -> Map.filter $ not . taskCompleted) clearCompleted 
+      return ()
+    infoFooter
+```
+
 ## 4. Is the cure worse than the disease?
 
 * how the elm architecure is good
