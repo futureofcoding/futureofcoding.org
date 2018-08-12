@@ -3,10 +3,14 @@
 title: FRP
 ---
 
-# Explicit Functional Reactive Programming
+# Explictly Comprehensible Functional Reactive Programming
 
 * TOC
 {: toc }
+
+## Abstract
+
+TODO*
 
 ## 1. Introduction
 
@@ -14,7 +18,7 @@ Today software projects are so large that programmers cannot read every line. Ho
 
 This question is incredibly difficult to answer in imperative programming languages with mutable state, where variables can be modified anywhere they are in scope. In functional programming without mutable state, all terms explicitly list what they depend. Definitions are final and cannot be modified elsewhere in the code. This explicitness makes it incredibly easy to determine which parts of the code are dependent and independent of each other, and guide us towards what we do and do not need to read for our present purposes.
 
-However, it is still possible to obfuscate the relationships between pieces of state in functional programming. One can simulate mutable state by passing around an arbitrarily large compound state value as an extra parameter to each function. This is considered an anti-pattern because "ease of reasoning is lost (we still know that each function is dependent only upon its arguments, but one of them has become so large and contains irrelevant values that the benefit of this knowledge as an aid to understanding is almost nothing)." [Out of the Tarpit]
+However, it is still possible to obfuscate the relationships between pieces of state in functional programming. One can simulate mutable state by passing around an arbitrarily large compound state value as an extra parameter to each function. This is considered an anti-pattern because "ease of reasoning is lost (we still know that each function is dependent only upon its arguments, but one of them has become so large and contains irrelevant values that the benefit of this knowledge as an aid to understanding is almost nothing)." [[Out of the Tarpit](https://github.com/papers-we-love/papers-we-love/blob/master/design/out-of-the-tar-pit.pdf)]
 
 Yet in Functional Reactive Programming (FRP), a variation on this anti-pattern has become the dominant architecture. Originally conceived for the Elm programming language, The Elm Architecture has since inspired ReactJS's Redux, VueJS's Vuex, CycleJS's Onionify, among many other front-end state management libraries.
 
@@ -260,23 +264,57 @@ Explictness allows us to see the shape of this application, how its pieces come 
 
 <iframe width="1700px" height="1800px" src="https://mermaidjs.github.io/mermaid-live-editor/#/view/eyJjb2RlIjoiZ3JhcGggVERcblxubmV3VGFza0V2ZW50Pm5ld1Rhc2tFdmVudF09PT4gdGFza3Ncbmxpc3RNb2RpZnlUYXNrcz5saXN0TW9kaWZ5VGFza3NdID09PiB0YXNrc1xuXG5jbGVhckNvbXBsZXRlZEV2ZW50PmNsZWFyQ29tcGxldGVkRXZlbnRdID09PiB0YXNrc1xudGFza3MgLS0-IHZpc2libGVUYXNrc1xuXG5hY3RpdmVGaWx0ZXItLT52aXNpYmxlVGFza3NcbnN1YmdyYXBoIHRhc2tMaXN0XG4gICAgdmlzaWJsZVRhc2tzLS0-Y29tcGxldGVkQ2hlY2tib3h7Y29tcGxldGVkQ2hlY2tib3h9XG4gICAgdmlzaWJsZVRhc2tzLS0-IGRlc2NyaXB0aW9uTGFiZWx7ZGVzY3JpcHRpb25MYWJlbH1cbiAgICB2aXNpYmxlVGFza3MtLT4gZWRpdEJveHtlZGl0Qm94fVxuICAgICB0b2dnbGVBbGxDaGVja2JveHt0b2dnbGVBbGxDaGVja2JveH0tLT50b2dnbGVBbGw-dG9nZ2xlQWxsXVxuICAgIHRvZ2dsZUFsbC0tPmxpc3RNb2RpZnlUYXNrc1xuICAgIHRvZ2dsZUFsbC0tPnRvZ2dsZVN0YXRlXG4gICB0b2dnbGVTdGF0ZS0tPnRvZ2dsZUFsbENoZWNrYm94XG4gICAgY2hhbmdlU2VsZj5jaGFuZ2VTZWxmXS0tPml0ZW1DaGFuZ2VzPml0ZW1DaGFuZ2VzXVxuICAgIGl0ZW1DaGFuZ2VzPml0ZW1DaGFuZ2VzXS0tPmxpc3RNb2RpZnlUYXNrc1xuICAgICBzdWJncmFwaCB0b2RvSXRlbVxuICAgICAgICAgIGVkaXRCb3h7ZWRpdEJveH0tLT5lZGl0Qm94RW50ZXI-ZWRpdEJveEVudGVyXVxuICAgICAgICAgIGVkaXRCb3gtLT5lZGl0Qm94VGV4dFZhbHVlXG4gICAgICAgICAgZWRpdEJveFRleHRWYWx1ZS0tPnNldERlc2NyaXB0aW9uPnNldERlc2NyaXB0aW9uXVxuICAgICAgICAgIGVkaXRCb3hFbnRlci0tPnNldERlc2NyaXB0aW9uPnNldERlc2NyaXB0aW9uXVxuICAgICAgICAgIGVkaXRCb3gtLT58b24gZXNjIGtleXxjYW5jZWxFZGl0XG4gICAgICAgICAgZGVzdHJveUJ1dHRvbntkZXN0cm95QnV0dG9ufS0tPmRlc3Ryb3lcbiAgICAgICAgICBkZXNjcmlwdGlvbkxhYmVse2Rlc2NyaXB0aW9uTGFiZWx9LS0-fG9uIGRvdWJsZSBjbGlja3xzdGFydEVkaXRpbmdcbiAgICAgICAgICBjb21wbGV0ZWRDaGVja2JveHtjb21wbGV0ZWRDaGVja2JveH0tLT5zZXRDb21wbGV0ZWRcbiAgICAgICAgICBlZGl0Qm94RW50ZXItLT5lZGl0aW5nXG4gICAgICAgICAgc3RhcnRFZGl0aW5nPnN0YXJ0RWRpdGluZ10tLT5lZGl0aW5nXG4gICAgICAgICAgY2FuY2VsRWRpdD5jYW5jZWxFZGl0XS0tPmVkaXRpbmdcbiAgICAgICAgICBzZXRDb21wbGV0ZWQ-c2V0Q29tcGxldGVkXS0tPmNoYW5nZVNlbGZcbiAgICAgICAgICBkZXN0cm95PmRlc3Ryb3ldLS0-Y2hhbmdlU2VsZlxuICAgICAgICAgIHNldERlc2NyaXB0aW9uPnNldERlc2NyaXB0aW9uXSAtLT5jaGFuZ2VTZWxmXG4gICAgICAgICAgZWRpdGluZy0tPnxoaWRlcy9zaG93cyB2aWEgY3NzfGVkaXRCb3hcbiAgICAgICAgICBlZGl0aW5nLS0-fGhpZGVzL3Nob3dzIHZpYSBjc3N8ZGVzY3JpcHRpb25MYWJlbFxuICAgICBlbmRcbmVuZFxuXG5zdWJncmFwaCBjb250cm9sc1xuICAgIGFsbEJ1dHRvbnthbGxCdXR0b259IC0tPmFsbEJ1dHRvbkNsaWNrZWQ-YWxsQnV0dG9uQ2xpY2tlZF1cbiAgICBhY3RpdmVCdXR0b257YWN0aXZlQnV0dG9ufS0tPmFjdGl2ZUJ1dHRvbkNsaWNrZWQ-YWN0aXZlQnV0dG9ubkNsaWNrZWRdXG4gICAgY29tcGxldGVkQnV0dG9ue2NvbXBsZXRlZEJ1dHRvbn0gLS0-Y29tcGxldGVkQnV0dG9uQ2xpY2tlZD5jb21wbGV0ZWRCdXR0b25DbGlja2VkXVxuICAgYWxsQnV0dG9uQ2xpY2tlZFxuICAgIGFsbEJ1dHRvbkNsaWNrZWQtLT5hY3RpdmVGaWx0ZXJcbiAgICBhY3RpdmVCdXR0b25DbGlja2VkLS0-YWN0aXZlRmlsdGVyXG4gICAgY29tcGxldGVkQnV0dG9uQ2xpY2tlZC0tPmFjdGl2ZUZpbHRlclxuICAgIGFjdGl2ZUZpbHRlci0tPmFjdGl2ZUJ1dHRvblxuICAgIGFjdGl2ZUZpbHRlci0tPmNvbXBsZXRlZEJ1dHRvblxuICAgIGFjdGl2ZUZpbHRlci0tPmFsbEJ1dHRvblxuICAgIGNsZWFyQ29tcGxldGVkQnV0dG9ue2NsZWFyQ29tcGxldGVkQnV0dG9ufS0tPmNsZWFyQ29tcGxldGVkRXZlbnRcbiAgICBhY3RpdmVGaWx0ZXItLT50b2RvUmVtYWluaW5nQ291bnRcbmVuZFxuXG5zdWJncmFwaCB0YXNrRW50cnlcbiAgIGRlc2NyaXB0aW9uQm94e2Rlc2NyaXB0aW9uQm94fS0tPlxuZGVzY3JpcHRpb25Cb3hFbnRlcj5kZXNjcmlwdGlvbkJveEVudGVyXVxuICBkZXNjcmlwdGlvbkJveHtkZXNjcmlwdGlvbkJveH0tLT5cbmRlc2NyaXB0aW9uQm94VmFsdWVcbiAgZGVzY3JpcHRpb25Cb3hFbnRlci0tPm5ld1Rhc2tFdmVudFxuICBkZXNjcmlwdGlvbkJveFZhbHVlLS0-bmV3VGFza0V2ZW50XG4gIGRlc2NyaXB0aW9uQm94RW50ZXItLT58Y2xlYXIgb24gZW50ZXJ8ZGVzY3JpcHRpb25Cb3h7ZGVzY3JpcHRpb25Cb3h9XG5lbmRcblxudGFza3MgLS0-IHRvZG9SZW1haW5pbmdDb3VudFxuXG5jbGFzc0RlZiBvcmFuZ2UgZmlsbDojZjk2XG5jbGFzcyB0YXNrcyxhY3RpdmVGaWx0ZXIsdG9kb1JlbWFpbmluZ0NvdW50LHZpc2libGVUYXNrcyxlZGl0aW5nLGl0ZW1zLHRvZ2dsZVN0YXRlLGVkaXRCb3hUZXh0VmFsdWUsZGVzY3JpcHRpb25Cb3hWYWx1ZSBvcmFuZ2VcblxuY2xhc3NEZWYgZ3JlZW4gZmlsbDojNGZmZjVhXG5jbGFzcyBuZXdUYXNrRXZlbnQsY2xlYXJDb21wbGV0ZWRFdmVudCxzZXRDb21wbGV0ZWQsZGVzdHJveSxjaGFuZ2VTZWxmLHNldERlc2NyaXB0aW9uLHN0YXJ0RWRpdGluZyxjYW5jZWxFZGl0LHRvZ2dsZUFsbCxsaXN0TW9kaWZ5VGFza3MsYWxsQnV0dG9uQ2xpY2tlZCxhY3RpdmVCdXR0b25DbGlja2VkLGNvbXBsZXRlZEJ1dHRvbkNsaWNrZWQsZGVzY3JpcHRpb25Cb3hFbnRlcixpdGVtQ2hhbmdlcyxlZGl0Qm94RW50ZXIgZ3JlZW4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9fQ" frameborder="0" allowfullscreen></iframe>
 
+*HTML elements are rotated blue squares, Events are green rectangles missing a triangle, and Dyanamics are orange rectangles. Dependencies have arrows to what depends on them. The three arrows for the three depedencies of `tasks` are bolded.*
+
 ## 5. Is the cure worse than the disease?
 
-* how the elm architecure is good (LOGO / one piece at a time is easy to reason about from a writing perspective)
-* why higher order and cyclic streams are difficult
-* Also note the dependency on lazy eval which is part of the reason for space leakiness.
-* possible in JS without Haskell-y runtime?
+This paper argues for higher-order and cyclic streams for the purposes of *comprehensibility*. Yet the dense Reflex Haskell code and diagram above don't seem particularly easy to understand. The creator of Elm takes this stance, [arguing that explicit depedencies leads to a "crazy" graph of depedencies](https://youtu.be/DfLvDFxcAIA?t=27m32s).
+
+The Elm Architecture has many benefits. For one, it simulates global mutable state, which is very familiar to most programmers. Additionally, the proccess-one-message-at-a-time style does simplify the code writing proccess. It also reduces coupling between the view and the model. Finally, Elm's model variable is easily serialized, which allows for time-travel debugging, hot reloading, and easy-to-implement undo features.
+
+However, I still believe we can gain more without this architecture. While it is unquestionable easier to *write* in the Elm Architecture when you have a small application, we are concerned with the much more common case of a very large application one does not know well and wishes to understand a small piece of. Here I'd definitely prefer the complex Reflex diagram above because the clear relationships between states makes it clear how the applcation fits together, and what code we can ignore.
+
+Reducing coupling seems like a good idea, but of course there can be too little coupling. I believe that the amount of coupling in the code should reflect the essential coupling in the underlying idea. If the nature of an interface is cyclic, the code shouldn't obfuscate that fact, but expose it clearly. More importantly it should make explicit the independence of independent things.
+
+To be fair, let me not understate the difficulty of writing Reflex code. It is hell on earth, grappling with its unweildy types, double `fmap`ing over streams, and waiting for `ghcjs` to compile. Yet I can't help but look dreamily at the Reflex Todo MVC diagram above. I see Reflex as representing a reasonably sound computational model that is in much need of a interface upgrade, which I'll discuss further in **Section 7**.
+
+A discussion of the downsides of FRP wouldn't be complete without noting the space and time leakiness its implementations have been plauged with. Yet this paper chooses to focus on the comprehensibility angle, and leave those details to other papers.
 
 ## 6. Related Work
 
-The field of program slicing takes a different tatic to this problem. It leaves the underlying imperative programming model the same, and uses both static analysis and execution traces to determine which sections of code are relevant. [4]
+The [Program Slicing on Wikipedia](https://en.wikipedia.org/wiki/Program_slicing) takes a different tatic to this problem. It leaves the underlying imperative programming model the same, and uses both static analysis and execution traces to determine which sections of code are relevant. 
+
+Another big piece is of code comprehensibility understanding how the files, folders, import statements, and build tools parse together into a unified program. Where's the entry point for goodness sake?! The [Madge](https://github.com/pahen/madge) project parses JavaScript code and generates a visual graph of module dependencies.
 
 ## 7. Future work
 
-* Visualizations
-* Building a langauge that's easier to use - maybe in JS
+## 7.1. Visualizations
+
+While the Reflex library's semantics are ideal for modular comprehensibility, the library itself is difficult to use for a variety of reasons. Even from a simple a comprehensibility perspective, Reflex is not ideal. The Haskell syntax is incredibly difficult to parse - even for me personally. Given that our goal is comprehensibility, this is unacceptable. We need to develop a better user interface to Reflex code than text.
+
+I am inspired by the visual stream combinators of [RxMarbles](http://rxmarbles.com/):
+
+![image](https://user-images.githubusercontent.com/2288939/42888086-75611458-8a75-11e8-91dd-8b82fc4d65dc.png)
+
+[rxviz.com](https://rxviz.com/) and [RxFiddle](https://rxfiddle.net) parse out the streams from your code and visualize them dynamically. RxViz does a particularly great job of visualizing the evolution of higher-order streams in realtime:
+
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/2288939/42888753-e7565522-8a76-11e8-851a-642573778206.gif)
+
+However, RxViz only shows the final output stream, and how the various input streams combine. RxFiddle makes an effort to show the high-level view of stream dependencies (in between the code and marble diagrams):
+
+![image](https://user-images.githubusercontent.com/2288939/42889193-d288f63a-8a77-11e8-94f0-a4a32333f9d2.png)
+
+One challange in particular will be visualizing cyclic dependencies. This may require learning from M. C. Escher.
+
+Eventually, it would be ideal if one could edit the streams from the visual representation directly.
+
+## 7.2. JavaScript-based
+
+It order to be a true alternative to the Elm Architecture in the broader JavaScript comunity, a competing model must be able to be build within JavaScript, without requiring ghcjs compilation. In theory, it is possible to create a cyclic an event propagation graph (to copy Reflex's implementation) in JavaScript, but JavaScript's semantics are quite different from pure functional programming so it may not have a natural feel. Hoewver, the [CycleJS library](https://cycle.js.org/) allows for higher-order and even [semi-cyclic streams](https://github.com/staltz/xstream#-imitatetarget), so maybe it isn't so difficult. 
 
 ## 8. Conclusion
+
+As the popularity of FRP frameworks continues, its increasingly important to have a data model architecture that prioritizes comprehensibilty for large programs. This paper does not present a direct solution to this problem, but instead attempts to sound the alarm that what we're currently satisfied with, The Elm Architecture, is not good enough. The Reflex library, with its higher-order and cyclic streams, points in the right direction, but we are still far from a complete solution to the problem of comprehensible user interface construction.
 
 
 <script>
