@@ -10,7 +10,7 @@ title: FRP
 
 ## Abstract
 
-TODO*
+Large Functional Reactive programs written in The Elm Architecture are difficult to comprehend without reading every line of code. A more scalable architecture would allow programmers to understand a small piece of larger application. This paper articulates the comprehensibility benefits of such an alternative architecture based on higher-order and cyclic streams.
 
 ## 1. Introduction
 
