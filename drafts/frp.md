@@ -292,7 +292,7 @@ Another big piece is of code comprehensibility understanding how files, folders,
 
 ## 7. Future work
 
-## 7.1. Visualizations
+### 7.1. Visualizations
 
 While the Reflex library's semantics are ideal for modular comprehensibility, the library itself is difficult to use for a variety of reasons. The syntax is incredibly difficult to parse - even for me personally. Given that our goal is comprehensibility, this is unacceptable.
 
@@ -312,7 +312,7 @@ One challange in particular will be visualizing cyclic dependencies. This may re
 
 Eventually, it would be ideal if one could edit the streams from the visual representation directly.
 
-## 7.2. JavaScript-based
+### 7.2. JavaScript-based
 
 It order to be a true alternative to the Elm Architecture in the broader JavaScript comunity, a competing model must be possible within JavaScript, without requiring ghcjs compilation. In theory, it is possible to create a cyclic an event propagation graph (to copy Reflex's implementation) in JavaScript, but JavaScript's semantics are quite different from pure functional programming so it may not have a natural feel.  The [CycleJS library](https://cycle.js.org/) allows for higher-order and even [semi-cyclic streams](https://github.com/staltz/xstream#-imitatetarget), so maybe it won't be so difficult. 
 
