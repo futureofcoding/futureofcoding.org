@@ -10,7 +10,7 @@ title: FRP
 
 ## Abstract
 
-Large Functional Reactive programs written in The Elm Architecture are difficult to comprehend without reading every line of code. A more modular architecture would allow programmers to understand a small piece without reading the entire application. This paper shows how higher-order and cyclic streams can improve comprehensibility.
+Large Functional Reactive programs written in The Elm Architecture are difficult to comprehend without reading every line of code. A more modular architecture would allow programmers to understand a small piece without reading the entire application. This paper shows how higher-order and cyclic streams, as demonstrated via the Reflex library, can improve comprehensibility.
 
 ## 1. Introduction
 
@@ -26,9 +26,7 @@ This paper contrasts The Elm Architecture with a state management pattern that m
 
 ## 2. The Elm Architecture
 
-Elm is a pure functional language in the spirit of ML that compiles to JavaScript. It only allows first-order and non-cyclic streams for reasons discussed in **Section 5**.
-
-User interfaces are inherently a cycle of alternating input and output, which is reflected in the Elm architecture:
+Elm is a pure functional language in the spirit of ML that compiles to JavaScript. It only allows first-order and non-cyclic streams for reasons discussed in **Section 5**. User interfaces are inherently a cycle of alternating input and output, which is reflected in the Elm architecture:
 
 <iframe width="500" height="300" src="https://mermaidjs.github.io/mermaid-live-editor/#/view/eyJjb2RlIjoiXG5ncmFwaCBURFxuIFxudXBkYXRlLS0-IHMyKG5ldyBtb2RlbClcbnMyKG5ldyBtb2RlbCkgLS0-IHZpZXcgXG52aWV3LS0-fG1lc3NhZ2UsIG9sZCBtb2RlbHx1cGRhdGVcbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In19" frameborder="0" allowfullscreen></iframe>
 
@@ -96,7 +94,7 @@ main =
 
 ## 3. Reflex
 
-The Reflex library was built for Haskell web development via ghcjs. It features higher-order and cyclic streams, which means that streams can contain streams, and streams can reference streams that reference themselves. It is these features that are necessary to maintain explicitness in FRP.
+The Reflex library was built for Haskell web development via ghcjs, a Haskell to JavaScript compiler. It features higher-order and cyclic streams, which means that streams can contain streams, and streams can reference streams that reference themselves. It is these features that are necessary to maintain explicitness in FRP.
 
 Like in traditional FRP, Reflex has two main concepts: Events and Behaviors. Events are discrete occurrences in time, while Behaviors are continuously defined values for all points in time. For implementation reasons, Reflex also has another key concept, a Dynamic value, which has the properties of both Events and Behaviors, in that it is defined in all points in time as well as being able to notify you at the discrete points in time when it changes. In the following examples we use only Events and Dynamic values.
 
@@ -292,7 +290,7 @@ However, I still believe we can gain more without this architecture. While it is
 
 Reducing coupling seems like a good idea, but of course there can be too little coupling. I believe that the amount of coupling in the code should reflect the essential coupling in the underlying idea. If the nature of an interface is cyclic, the code shouldn't obfuscate that fact, but expose it clearly. More importantly it should make explicit the independence of independent things.
 
-To be fair, let me not understate the difficulty of writing Reflex code. It is hell on earth, grappling with its unweildy types, double `fmap`ing over streams, and waiting for `ghcjs` to compile. Yet I can't help but look dreamily at the Reflex Todo MVC diagram above. I see Reflex as representing a reasonably sound computational model that is in much need of a interface upgrade, which I'll discuss further in **Section 7**.
+To be fair, let me not understate the difficulty of writing Reflex code. It is hell on earth, grappling with its unwieldy types, double `fmap`ing over streams, and waiting for `ghcjs` to compile. Yet I can't help but look dreamily at the Reflex Todo MVC diagram above. I see Reflex as representing a reasonably sound computational model that is in much need of a interface upgrade, which I'll discuss further in **Section 7**.
 
 A discussion of the downsides of FRP wouldn't be complete without noting the space and time leakiness its implementations have been plagued with. Yet this paper chooses to focus on the comprehensibility angle, and leave those details to other papers.
 
@@ -320,13 +318,13 @@ However, RxViz only shows the final output stream, not how the various input str
 
 ![image](https://user-images.githubusercontent.com/2288939/42889193-d288f63a-8a77-11e8-94f0-a4a32333f9d2.png)
 
-One challange in particular will be visualizing cyclic dependencies. This may require learning from M. C. Escher.
+One challenge in particular will be visualizing cyclic dependencies. This may require learning from M. C. Escher.
 
 Eventually, it would be ideal if one could edit the streams from the visual representation directly.
 
 ### 7.2. JavaScript-based
 
-It order to be a true alternative to the Elm Architecture in the broader JavaScript comunity, a competing model must be possible within JavaScript, without requiring ghcjs compilation. In theory, it is possible to create a cyclic an event propagation graph (to copy Reflex's implementation) in JavaScript, but JavaScript's semantics are quite different from pure functional programming so it may not have a natural feel.  The [CycleJS library](https://cycle.js.org/) allows for higher-order and even [semi-cyclic streams](https://github.com/staltz/xstream#-imitatetarget), so maybe it won't be so difficult. 
+It order to be a true alternative to the Elm Architecture in the broader JavaScript community, a competing model must be possible within JavaScript, without requiring ghcjs compilation. In theory, it is possible to create a cyclic an event propagation network (to copy Reflex's implementation) in JavaScript, but JavaScript's semantics are quite different from pure functional programming so it may not have a natural feel.  The [CycleJS library](https://cycle.js.org/) allows for higher-order and even [semi-cyclic streams](https://github.com/staltz/xstream#-imitatetarget), so maybe it won't be so difficult. 
 
 ### 7.3. Elm Static Analysis
 
@@ -337,7 +335,7 @@ However this static analaysis would be much less powerful in Elm-inspired JavaSc
 
 ## 8. Conclusion
 
-As the popularity of FRP frameworks continues, its increasingly important to have a data model architecture that prioritizes comprehensibilty for large programs. This paper does not present a direct solution to this problem, but instead attempts to sound the alarm that what we're currently satisfied with, The Elm Architecture, is not good enough. The Reflex library, with its higher-order and cyclic streams, points in the right direction, but we are still far from a complete solution to the problem of comprehensible user interface construction.
+As the popularity of FRP frameworks continues, it's increasingly important to have a data model architecture that prioritizes comprehensibility for large programs. This paper does not present a direct solution to this problem, but instead attempts to sound the alarm that what we're currently satisfied with, The Elm Architecture, is not good enough. The Reflex library, with its higher-order and cyclic streams, points in the right direction, but we are still far from a complete solution to the problem of comprehensible user interface construction.
 
 
 <script>
