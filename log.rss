@@ -9,9 +9,9 @@ title: Future of Coding Log
   <link>http://futureofcoding.org/log</link>
   <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
   <ttl>600</ttl>
-  {% for commit in site.data.git-log %} {% if commit.message != 'updated git log' %} {% unless commit.message contains 'Merge branch' %} {% assign first_line = commit.message | newline_to_br | split: '<br />' | first | remove: '## ' %} {% assign date = commit.committer.date | date_to_rfc822 %} {% assign message = commit.message | remove_first: first_line | strip_newlines | remove_first: '* TOC{: toc }' | remove: '#' %}
+  {% for commit in site.data.git-log %} {% if commit.message != 'updated git log' %} {% unless commit.message contains 'Merge branch' %} {% unless commit.message contains 'Please enter the commit message for your changes.' %} {% assign first_line = commit.message | newline_to_br | split: '<br />' | first | remove: '## ' %} {% assign date = commit.committer.date | date_to_rfc822 %} {% assign message = commit.message | remove_first: first_line | strip_newlines | remove_first: '* TOC{: toc }' | remove: '#' %}
   <item>
-    <title>{{ first_line | | escape}}</title>
+    <title>{{ first_line | escape}}</title>
     <description>
       {{ message | slice: 0, 200 | remove: '<' | escape }}...
     </description>
@@ -19,7 +19,7 @@ title: Future of Coding Log
     <guid isPermaLink="false">{{ first_line | slugify}}?date={{ date | uri_escape  }}</guid>
     <pubDate>{{ date }}</pubDate>
   </item> 
-        {% endunless %} {% endif %}{% endfor %}
+       {% endunless %} {% endunless %} {% endif %}{% endfor %}
 </channel>
 </rss>
 

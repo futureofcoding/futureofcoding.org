@@ -44,34 +44,36 @@ The data for this page is pulled from the commit message history for this reposi
 {% for commit in site.data.git-log %} 
   {% if commit.message != 'updated git log' %}
     {% unless commit.message contains 'Merge branch' %}
-      {% assign first_line = commit.message | newline_to_br | split: '<br />' | first %} 
-      {% assign date = commit.committer.date | date: "%m/%d/%y %a %l:%M %p" %}
-      {% assign message = commit.message | remove_first: first_line %}
-      <div class="commit">
-        <a class="hash" href="https://github.com/stevekrouse/futureofcoding.org/commit/{{ commit.commit }}"><h2 class="header">
-          {{ first_line | remove: "#" | replace: "<li>", "li" }}
-        </h2></a>
-        <div class="date">{{ date }}</div>
-        {% if commit.changes != empty %}
-          <div class="files">
-            {% for change in commit.changes %}
-              {% if change[2] != '_data/git-log.json' %}
-               <div class="file">
-                  <a target="_blank" class="changes" href="https://github.com/stevekrouse/futureofcoding.org/blob/{{commit.commit}}/{{change[2]}}">
-                    <span class="additions">{{change[0]}} additions</span> &
-                    <span class="deletions">{{change[1]}} deletions</span>
-                  </a>
-                  <a target="_blank" href="/{{change[2] | remove: ".md"}}">
-                    {{change[2]}}
-                  </a>
-                </div>
-              {% endif %}  
-            {% endfor %}
-          </div>
-        {% endif %}
-        {{ message | markdownify }}
-        {{ site.data.commitToJournalMarkdown[commit.commit] | markdownify }}
-      </div>
+      {% unless commit.message contains 'Please enter the commit message for your changes.' %}
+        {% assign first_line = commit.message | newline_to_br | split: '<br />' | first %} 
+        {% assign date = commit.committer.date | date: "%m/%d/%y %a %l:%M %p" %}
+        {% assign message = commit.message | remove_first: first_line %}
+        <div class="commit">
+          <a class="hash" href="https://github.com/stevekrouse/futureofcoding.org/commit/{{ commit.commit }}"><h2 class="header">
+            {{ first_line | remove: "#" | replace: "<li>", "li" }}
+          </h2></a>
+          <div class="date">{{ date }}</div>
+          {% if commit.changes != empty %}
+            <div class="files">
+              {% for change in commit.changes %}
+                {% if change[2] != '_data/git-log.json' %}
+                 <div class="file">
+                    <a target="_blank" class="changes" href="https://github.com/stevekrouse/futureofcoding.org/blob/{{commit.commit}}/{{change[2]}}">
+                      <span class="additions">{{change[0]}} additions</span> &
+                      <span class="deletions">{{change[1]}} deletions</span>
+                    </a>
+                    <a target="_blank" href="/{{change[2] | remove: ".md"}}">
+                      {{change[2]}}
+                    </a>
+                  </div>
+                {% endif %}  
+              {% endfor %}
+            </div>
+          {% endif %}
+          {{ message | markdownify }}
+          {{ site.data.commitToJournalMarkdown[commit.commit] | markdownify }}
+        </div>
+      {% endunless %} 
     {% endunless %} 
   {% endif %}
 {% endfor %}
