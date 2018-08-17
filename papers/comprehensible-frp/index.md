@@ -1,4 +1,3 @@
-
 ---
 title: Explicitly Comprehensible Functional Reactive Programming
 ---
