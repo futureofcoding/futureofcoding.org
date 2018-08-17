@@ -1,16 +1,18 @@
 
 ---
-title: FRP
+title: Explicitly Comprehensible Functional Reactive Programming
 ---
 
-# Explictly Comprehensible Functional Reactive Programming
+# Explicitly Comprehensible Functional Reactive Programming
 
 * TOC
 {: toc }
 
+This paper was submitted to REBLS 2018. You can see [the submitted PDF version of this paper here](./comprehensible-frp.pdf). The [full LaTex for the paper can be found here](https://github.com/stevekrouse/futureofcoding.org/tree/master/papers/comprehensible-frp/LaTex).
+
 ## Abstract
 
-Large Functional Reactive programs written in The Elm Architecture are difficult to comprehend without reading every line of code. A more modular architecture would allow programmers to understand a small piece without reading the entire application. This paper shows how higher-order and cyclic streams, as demonstrated via the Reflex library, can improve comprehensibility.
+Functional Reactive programs written in The Elm Architecture are difficult to comprehend without reading every line of code. A more modular architecture would allow programmers to understand a small piece without reading the entire application. This paper shows how higher-order and cyclic streams, as demonstrated via the Reflex library, can improve comprehensibility.
 
 ## 1. Introduction
 
@@ -18,7 +20,7 @@ Today software projects are so large that programmers cannot read every line. Ho
 
 This question is incredibly difficult to answer in languages with mutable state, where variables can be modified anywhere they are in scope. In functional programming without mutable state, all terms explicitly list what they depend upon. This explicitness makes it easy to mechanistically determine which parts of the code are dependent and independent of each other, and guide us towards what we do and do not need to read for our present purposes.
 
-However, it is still possible to obfuscate the relationships between pieces of state in functional programming. One can simulate global mutable state by passing around an arbitrarily large compound state value as an extra parameter to each function. This is considered an anti-pattern because "ease of reasoning is lost (we still know that each function is dependent only upon its arguments, but one of them has become so large and contains irrelevant values that the benefit of this knowledge as an aid to understanding is almost nothing)." [[Out of the Tarpit](https://github.com/papers-we-love/papers-we-love/blob/master/design/out-of-the-tar-pit.pdf)]
+However, it is still possible to obfuscate the relationships between pieces of state in functional programming. One can simulate global mutable state by passing around an arbitrarily large compound state value as an extra parameter to each function. This is considered an anti-pattern because "ease of reasoning is lost (we still know that each function is dependent only upon its arguments, but one of them has become so large and contains irrelevant values that the benefit of this knowledge as an aid to understanding is almost nothing)." \cite{moseley2006out}
 
 Yet in Functional Reactive Programming (FRP), a variation on this anti-pattern has become the dominant architecture. Originally conceived for the Elm programming language, The Elm Architecture has since inspired ReactJS's Redux, VueJS's Vuex, CycleJS's Onionify, among many other front-end state management libraries.
 
@@ -106,7 +108,10 @@ bodyElement = do
   rec evIncr <- button "+1"
       el "div" $ display count
       evDecr <- button "-1"
-      count <- foldDyn (+) 0 $ leftmost [1 <$ evIncr, -1 <$ evDecr]
+      count <- foldDyn (+) 0 $ leftmost 
+        [ 1 <$ evIncr
+        , -1 <$ evDecr
+        ]
   return ()
   
 main :: IO ()
@@ -166,7 +171,7 @@ Even in this small example we can see how `count` is defined much more explicitl
 
 ## 4. TodoMVC Comparison 
 
-ToDoMVC has become a standard application to compare front-end frameworks. It runs ~300 lines in both Elm and Reflex. We compare [Elm ToDoMVC](https://github.com/evancz/elm-todomvc/blob/166e5f2afc704629ee6d03de00deac892dfaeed0/Todo.elm) with [Reflex ToDoMVC](https://github.com/reflex-frp/reflex-todomvc/blob/cd15a37b0e6decf42840967ce5fba6a03cf278fa/src/Reflex/TodoMVC.hs).
+ToDoMVC has become a standard application to compare front-end frameworks. It runs ~300 lines in both Elm and Reflex. We compare [Elm ToDoMVC(https://github.com/evancz/elm-todomvc/blob/166e5f2afc704629ee6d03de00deac892dfaeed0/Todo.elm) with [Reflex ToDoMVC](https://github.com/reflex-frp/reflex-todomvc/blob/cd15a37b0e6decf42840967ce5fba6a03cf278fa/src/Reflex/TodoMVC.hs).
 
 ![image](https://user-images.githubusercontent.com/2288939/43979574-2cef3b36-9cb9-11e8-98f9-7cb25b27326a.png)
 
@@ -174,7 +179,7 @@ Say we wish to understand the behavior of the list of todo items in both impleme
 
 ### 4.1 Elm TodoMVC
 
-In Elm, any message can modify any state. For example, in the reducer (called  `update` in [Elm ToDoMVC](https://github.com/evancz/elm-todomvc/blob/master/Todo.elm)), the `Add` message triggers an update of three different pieces of state:
+In Elm, any message can modify any state. For example, in the reducer (called  `update` in Elm ToDoMVC, the `Add` message triggers an update of three different pieces of state:
 
 ![image](https://user-images.githubusercontent.com/2288939/42886488-ab1c24c4-8a71-11e8-92f5-13dc2f282ad4.png)
 
