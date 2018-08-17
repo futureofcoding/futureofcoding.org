@@ -4,10 +4,10 @@ title: Explicitly Comprehensible Functional Reactive Programming
 
 # Explicitly Comprehensible Functional Reactive Programming
 
+This paper was submitted to REBLS 2018. You can see [the submitted PDF version of this paper here](./comprehensible-frp.pdf). The [full LaTex for the paper can be found here](https://github.com/stevekrouse/futureofcoding.org/tree/master/papers/comprehensible-frp/LaTeX).
+
 * TOC
 {: toc }
-
-This paper was submitted to REBLS 2018. You can see [the submitted PDF version of this paper here](./comprehensible-frp.pdf). The [full LaTex for the paper can be found here](https://github.com/stevekrouse/futureofcoding.org/tree/master/papers/comprehensible-frp/LaTex).
 
 ## Abstract
 
