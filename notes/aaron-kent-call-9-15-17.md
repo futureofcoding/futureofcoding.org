@@ -1,3 +1,7 @@
+---
+title: Aaron Kent Call 9/15/17
+---
+
 # Aaron Kent Call 9/15/17
 
 * Scala people
