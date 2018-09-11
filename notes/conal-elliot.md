@@ -10,8 +10,18 @@ title: Conal Elliot
 
 ## Haskellcast
 
-* Push pull FRP: modern reformulation in applicative etc. Algebra for time varying values. Analogy: you can't say "when a reactive behavior changes" (once you build up an event such as red until mouse click then blue) but many FRP systems do this. It's like making a distinction between 2+5 and 3+4. Turns math into a tree datat structure manipulation and you loose lots of the properties. 
-* FRP as a graph is too complex. Exposes too much info. Not abstract enough for optimization. 
+> It’s important to me that you cannot look in a behavior and say like “when does it change (change in the sense of events)?” Because in order to answer that question One would need a more complex semantic model.  
+> Now, many or most so-called FRP systems I see out there do have some notion of “when does something change.” And every one of those breaks the semantic model. 
+>  
+> It’s like you have arithmetic, right? So FRP is arithmetic for time-varying quantities of all sorts of types. By arithmetic, I mean some algebra, some set of operators that have nice laws, nice properties. And imagine if you thought of arithmetic as about compositional structure or about the express that you evaluated.   
+>  
+> If you added 3 and 4, can you tell tell the difference between that and what you get by adding 2 and 5? It’s very important to the laws of arithmetic that you cannot tell the difference. If you could tell the difference, then what you would have would not be a type of numbers with a nice set of operations. It would be something more like a type of trees or something like that. And there would be no interesting equational properties. And you’d have something very complicated. And you’d have to talk about your API instead of talking about... You wouldn’t be doing math, you’d be doing data structure manipulation. 
+>   
+> For instance every time you hear somebody talk about FRP in terms of graphs or propagation or something like that, they are missing the point entirely. Because they are taking about some sort of operational, mechanistic model, not about what it means.   
+>  
+> And what I see happen over and over is not only do people generate a complex model but they don’t know it’s complex because they haven’t looked at it precisely. And they thwart most attempts to do nontrivial optimization’s because they’ve exposed too much information. So I want to make it as abstract and useful as possible, so it’s simple for somebody to think about, and I can do radically different sorts of optimization experiments. 
+
+* Push pull FRP: modern reformulation in applicative etc.
 * Un-amb (used to pick between two algorithms that may work), Least upper bound, lattice, denotational semantics (Dana scott(deep)-chris strachy(simple, very useful) semantics)
   * Chris strachy wanted to translate from arbitrary programming language to lambda calculus to understand goto and loops with breaks (and he understood continuations). 
   * Denotational semantics: express lang as AST (recursive algebraic data type) and map to this language of functions. It's compositional: meaning of expression is meaning of sub expressions. 
