@@ -18,7 +18,7 @@ And it'd be fun!
 
 But even as scoped as it seems, it's really a bear of a project. Even just building a barely useful version that only implements the basics of regex would take hours and hours. And then what? The slog of filling out the implementation would then begin, and I'd be like Olli of Regex UCR, holding the reins of a half-finished open source project without anyone to help me. 
 
-Potentially this project would be easier if I simply built of their work? Or maybe not, as it [seems like they don't have much built](https://cdn.rawgit.com/savolai/regex-you-can-read/master/app/index.html), although this rawgit view might be deceptively simplistic.
+Potentially this project would be easier if I simply built of their work? Or maybe not, as it [seems like they don't have much built](https://rawcdn.githack.com/savolai/regex-you-can-read/master/app/index.html), although this rawgit view might be deceptively simplistic.
 
 I think the way I'd try to tackle this by implementing a UI-based interface on top of [VerbalExpressions](https://github.com/VerbalExpressions/JSVerbalExpressions). Which then, given how uniform this library is, and how many different langauges it compiles to, we could then compile it to various sub-languages pretty easily. This is abstraction at its finest! I'd be building on top of an abstraction of an abstraction! 
 

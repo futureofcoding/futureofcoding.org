@@ -10,7 +10,7 @@ const repoPathFromScriptAttribute = () => {
   return currentScript.getAttribute('repoPath')
 }
 
-const rawGitLink = (repoPath, filePath, commitHash) => "https://cdn.rawgit.com/" + repoPath + "/" + (commitHash ? commitHash : "master") + filePath
+const rawGitLink = (repoPath, filePath, commitHash) => "https://rawcdn.githack.com/" + repoPath + "/" + (commitHash ? commitHash : "master") + filePath
 
 const load = (repoPath, filePath, commitHash) => {
   console.log("would have loaded: " + rawGitLink(repoPath, filePath, commitHash))

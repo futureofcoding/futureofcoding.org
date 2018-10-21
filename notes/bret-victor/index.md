@@ -88,10 +88,10 @@ Vision without implementation is hard to imagine. I reacted negatively to this p
 
 I've seen and thought about these ideas and examples sufficiently to be not terribly impressed with my nth viewing of them in this video. Probably the most exciting thing I found was Bret's work visualizing Nile:
 
-[demo_shape](https://cdn.rawgit.com/damelang/nile/master/viz/NileViewer/demo_shape.html)
-[demo_reals](https://cdn.rawgit.com/damelang/nile/master/viz/NileViewer/demo_reals.html)
-[demo_points](https://cdn.rawgit.com/damelang/nile/master/viz/NileViewer/demo_points.html)
-[demo_beziers](https://cdn.rawgit.com/damelang/nile/master/viz/NileViewer/demo_beziers.html)
+[demo_shape](https://rawcdn.githack.com/damelang/nile/master/viz/NileViewer/demo_shape.html)
+[demo_reals](https://rawcdn.githack.com/damelang/nile/master/viz/NileViewer/demo_reals.html)
+[demo_points](https://rawcdn.githack.com/damelang/nile/master/viz/NileViewer/demo_points.html)
+[demo_beziers](https://rawcdn.githack.com/damelang/nile/master/viz/NileViewer/demo_beziers.html)
 
 I of course came across this system in my deep dive of Alan Kay, but as with most mathmatical inventions, I found it intimidating and unapproachable. Yet, potentially these sites will make it easier for me to gain an ituition for it. In a more general sense, this makes me wonder about all sorts of mathmatical notations that intimidate me, but probably hold all sorts of beauty, such as maxwell's equations (which Bret often references) or the abstract mathmatics that inspires functional programming, such as category theory. I guess this sort of thinking is what inspired Chris Olah to explain Machine Learning.
 

@@ -616,7 +616,7 @@ Andre replied already! He is busy preparing for a bunch of conferences so might 
 
 ### August 28, 2017 2:28pm
 
-I made [some decent progress on StreamSheets this morning](https://cdn.rawgit.com/stevekrouse/futureofcoding.org/d44e9b61d5b044c3daa3ae8b4b0690a09e1fa55d/prototypes/streamsheets/index.html). It's now simply a table that populates with event information when you do things with your mouse over the "preview div" on the left of the page.
+I made [some decent progress on StreamSheets this morning](https://rawcdn.githack.com/stevekrouse/futureofcoding.org/d44e9b61d5b044c3daa3ae8b4b0690a09e1fa55d/prototypes/streamsheets/index.html). It's now simply a table that populates with event information when you do things with your mouse over the "preview div" on the left of the page.
 
 I'm feeling a little daunted by all of the things that need to happen to build this prototype from a UI perspective. Given that so much of what I'm doing is conjectural, I worry that committing to a design and building it might take too long. I'm looking for a hack of some sort that will allow me to get a sense of what a working version of this *could* look like. 
 

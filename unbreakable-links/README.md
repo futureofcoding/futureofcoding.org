@@ -11,7 +11,7 @@ By associating your content with its git commit hash, it ensures your links neve
 Add the following script tag to every page in your website: 
 
 ```html
-<script repoPath="stevekrouse/unbreakable-links" type="text/javascript" src="https://cdn.rawgit.com/stevekrouse/unbreakable-links/master/index.js"></script>
+<script repoPath="stevekrouse/unbreakable-links" type="text/javascript" src="https://rawcdn.githack.com/stevekrouse/unbreakable-links/master/index.js"></script>
 ```
 
 **NOTE: don't forget to customize the `repoPath` attribute to what it is for you.**
