@@ -1,0 +1,87 @@
+---
+title: Feedback on FRP Talk
+---
+
+# Feedback on FRP Talk
+
+_10/22/18_
+
+
+- Summary
+  - A popular FRP architecture, The Elm Architecture, loses many of the comprehensibility benefits of functional programming. It&#39;s single global state value allows dependencies between pieces of state to remain implicit as in imperative programming, leading towards spaghetti code. We can regain the benefits of FP in FRP with an architecture like Reflex. It&#39;s higher order and cyclic streams allow us to explicitly list the dependencies of various pieces of state.
+- Questions
+  - Is it good to list &quot;what this talk is about?&quot; and that is doesn&#39;t have The Answer?
+  - Does the Out of the Tarpit quote come across?
+  - Any tips for making Reflex code more understandable in the slides?
+  - Is the ordering good?
+    - Elm counter, todo, Reflex counter, todo, convertibility, diagrams, cyclic
+    - JE - suggest Elm counter, Elm todomvc, Elm diagram, Reflex all the way through**
+    - Could possibly skip counter examples (maybe just skip Reflex). But Ivan really appreciated Reflex counter. Nevermind.**
+  - Trump hat too much?
+- Summaries
+  - Geoff summary
+    - There is a way to do FP that makes it hard to understand, particularly how state comes to be in the program. That style has become very popular. That&#39;s a problem.
+  - Josh
+    - One of the main metaphors through the talk is that thing discussed in Tarpit paper. There&#39;s a potential for FRP to emulate imperative programming and this kind of monolithic state device with arbitrary mutability of this state through messages recreates spaghetti code nature and you lose very explicit dependencies of data on other data which is what you&#39;re supposed to get from FP
+  - Ivan
+    - The popular pattern with pure functions but you pass in global state ball is a compromise of the purity -- this pattern is kinda like you&#39;re making a trade off between state altogether, but the ways its edited is scattered.
+  - JE
+    - This is about different ways to do FRP, such as the model view update. Steve likes higher order and cyclical streams, and thinks that a good thing that you can&#39;t do in the Elm approach
+- What we liked, what made you smile, what made you think
+  - JE
+    - Liked my attitude, humble, overreaching, not trying to sell me something, more credible throughout the talk. Qualified claims. Hope to leave you &quot;unhappy&quot; as opposed to selling.
+    - Ctl-F style was convincing
+    - Calling out &quot;extreme pattern&quot; was good. It&#39;s called &quot;monads&quot;
+    - Overall this talk is OK. Would be OK to give as is. But everything we do now is gravy.
+  - Ivan
+    - Good arch, strong introduction with very founded problem
+    - Really liked the ending. Was expecting a comparison of benefits but instead there was the additional bit of &quot;hope this makes you unhappy.&quot;
+    - He handled one of my nagging feelings really well: &quot;I see some improvement in Reflex over Elm, but I also see some costs.&quot; But it was nice at the end to point to this. I liked this a lot.
+    - The statement of problem was concise and relatable. Excellent problem to be dealing with. Got emotional buy in. Not puffy.
+    - Slides were clean and legible.
+    - Talk complemented the paper, which I read before. Nice summary, but liked to see which bit were emphasized.
+    - The graphs were nice. I felt there were room for more illustration over code.
+    - On slide 18, he mentions generality and that Elm is more general, and at first I was wondering why is that bad but he addressed it.
+  - Josh
+    - Basically a good, well presented talk.
+    - Somehow the metaphor parallelism with tarpit blob of data was much more clear as a central way of seeing than when I read the paper. I found that very convincing because I already bought into that. It allowed me to transfer my already held beliefs.
+    - I appreciate how example driven it is. It&#39;s not abstract
+    - Pointing through graphs makes more sense
+  - Geoff
+    - Thesis was very clear. Never in doubt. Easy to understand main claim
+    - MVC was a good choice, complex enough
+    - Was able to follow code explanations
+    - Liked the code visualizations
+- Ways to improve
+  - Ivan - from background in arts - &quot;practice like you perform&quot; - rehearse something in a way that closely matches the performance as much as possible, so form right habits
+    - I don&#39;t know if you can use the mouse in that way when it&#39;s projected on overhead
+      - I can get over this by increasing cursor size in accessibility setting
+    - Rewatch the video and see all places not smooth and write down and do it again and again till super smooth
+      - Write down all examples I&#39;m going to use, etc, etc
+  - Josh - main point was moving away from big blog of data and pervasive mutability to a system of more atomized bits of data and a clear dependencies on each other. But higher order and cyclic streams make this possible. In the case of cyclic streams this feels important because there&#39;s something inherently cyclical of UIs but the higher order streams on a technical level but it felt jarringly related, but the example of buttons making buttons I could get on a technical level, but it seems contrived. How important is this because it seems more like a technical implementation detail? I may need more justification for this
+  - Geoff - agrees with Josh. A few key points were a bit quickly, so I didn&#39;t have enough context to be convinced. Even cyclic or higher order streams seemed like a vague sense of why you need this. Could a few sentences crystalize this so the audience could explain this themselves? Another key point that was too fast: one direction is more useful than the other, and not the same thing. Too fast. What if I wanted to see what a button does? Wouldn&#39;t Elm make that easier? You could walk through a specific example question that you could answer in Reflex that Elm cannot
+  - JE - why does the Ctl-F matter? If you want to make a change. Make the point by an example new feature to add to the feature. Here&#39;s what&#39;s problematic about adding this new feature. Show change in Elm and Reflex. Would&#39;ve quieted nagging voice in my mind: programming in Haskell is like solving a puzzle. Change things a little bit and you have to rewrite everything. Worried its fragile. Would&#39;ve been utterly convincing.
+  - Josh - agrees on example change. Not entirely sufficient, because it may make some kinds of change easier. I would feel better if Geoff&#39;s trade-off was made more explicit.
+  - JE - There&#39;s a duality here. One should be easier in one, and one is easier in the other.
+  - Ivan - it&#39;s about changing the number of places things change. Increasing locality in one place but decreasing it in another place. (It&#39;s inherent in text.) It&#39;s about increasing relationships between seperate sites.
+  - Trump hat joke - thumbs down from Josh, Geoff, and Ivan. Left me with mixed feelings. Funny but distracts from the clarity of message.
+  - JE - slide before it was a good conclusion with &quot;unhappy&quot;. If you have to apologize for it, don&#39;t do it
+  - Big quote from out of tarpit
+    - Didn&#39;t have time to read big wall of text....
+    - But I read Out of the Tarpit
+    - Suggestion: trim it down to key summary and read that
+  - JE - don&#39;t put up a big chunk of text unless you read it, unless we blur it out, but better is to say it yourself
+  - JE - what about reflex todomvc diagram? Did everybody understand it? I had trouble. It was big. I had trouble grokking. Text was too small in video. Wish there was a bit more of a walkthrough to explain what was going on. Bigger words. I didn&#39;t really get it.
+  - Geoff - I had seen them before. One idea is to reduce them to a stylized form (remove todo item).
+  - Ivan - good for him to mention that Reflex is more complicated and why that&#39;s a good thing. Important moment in talk. &quot;This looks big and complex but we&#39;ll talk about a simplified version of it&quot; on the next slide. He never mentioned these diagrams were about TodoMVC. Were they diagrams about all Elm and Reflex apps?
+  - JE - early on important statement. Reflex shows more intention. Sounds like an important claim but wasn&#39;t 100% convinced of it. How to make it more convincing?
+  - Geoff - I was not convinced. Maybe drop the sentence.
+  - JE - Either drop it or back it up. That&#39;s very important. Streams don&#39;t feel like a natural solution, but just a clever solution.
+  - Josh - I had same set of reactions. If a todo app intention is fold over merge streams. Very contentious claim.
+  - Ivan - same feelings for diff statement. Slide 15: Reflex&#39;s state-central view is more useful. In what regard? Locality of state is useful. But aren&#39;t you just trading one kind for another kind? There&#39;s a very core assumption about what programming is gaining but a bit muddy. The reason he&#39;s talking about intent is that there&#39;s a presumed benefit of working in Reflex style. There&#39;s some precision in there missing.
+  - JE - examples would ground all this out. Elm is more general but that&#39;s a bad thing. This is an important part of the talk. Went by too fast. Could&#39;ve driven this home a little harder.
+  - Josh - talk has two levels. Articulation of differences. Calling out for this problem. Higher level of talk is that one is better. It&#39;s clear Steve is saying stuff on higher level but it&#39;s a little muddy, and it wouldn&#39;t be a huge loss to be a bit less ambitious. Just a comparison is useful.
+  - JE - those slides are the weak point.
+  - Ivan - I wouldn&#39;t get rid of all the higher level because then it doesn&#39;t end well with the unhappiness at the end. It would lose the drive towards even better solutions than what we have today.
+  - Ivan - meta issue. We don&#39;t have another one. This was fun.
+  - JE - if anyone else giving talks wants to do this, I&#39;d volunteer.
