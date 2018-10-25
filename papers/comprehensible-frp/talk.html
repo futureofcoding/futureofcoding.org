@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Explicitly Comprehensible FRP</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+  </head>
+  <body>
+<textarea id="source">
+
+class: center, middle
+
+# Explicitly Comprehensible Functional Reactive Programming
+
+## Steve Krouse
+
+---
+
+# This talk is about
+
+## 1) the comprehensibility
+
+When making a change, it's the first and most-time-consuming step.
+
+## 2) of large
+
+Software today is 10k lines minimum but goes up to millions.
+      
+## 3) FRP applications.
+
+They are becoming increasingly prevalent.
+
+---
+
+# This this talk does not have The Answer<sup>TM<sup>
+  
+I complain about where we are, and point us in a promising direction.
+
+---
+
+# FP is comprehensible
+## 1) Local reasoning
+Code elsewhere cannot affect this code via *side-effects*.
+<br>
+## 2) Explicit data dependencies
+
+We can grok this code by reading its dependency definitions recursively.
+
+---
+# FP is not *always* comprehensible
+
+> There is in principle nothing to stop functional programs from **passing a single extra parameter into and out of every single function** in the entire system. If this extra parameter were a **collection (compound value)** of some kind then it could be used to **simulate an arbitrarily large set of mutable variables**... 
+  
+  > **...ease of reasoning is lost** (we still know that each function is dependent only upon its arguments, but one of them has become so large and **contains irrelevant values** that the benefit of this knowledge as an aid to understanding is almost nothing). This is however **an extreme example** and does not detract from the general power of the functional approach
+
+> -- Out of the Tarpit (Moseley and Marks)
+
+---
+
+class: center, middle
+
+# This "extreme example" has become the *most popular* pattern in FRP!
+
+---
+class: center, middle
+# The Elm Architecture
+
+<iframe width="300" height="300" src="https://mermaidjs.github.io/mermaid-live-editor/#/view/eyJjb2RlIjoiXG5ncmFwaCBURFxuIFxudXBkYXRlLS0-IHMyKG5ldyBtb2RlbClcbnMyKG5ldyBtb2RlbCkgLS0-IHZpZXcgXG52aWV3LS0-fG1lc3NhZ2UsIG9sZCBtb2RlbHx1cGRhdGVcbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In19" frameborder="0" allowfullscreen=""></iframe>
+
+---
+
+# Elm Counter
+  
+<button onclick="num.innerText -= -1">+1</button><span id="num">0</span><button onclick="num.innerText -= 1">-1</button>
+
+```
+01 type alias Model = { count : Int } 
+02      
+03 initialModel : Model 
+04 initialModel = { count = 0 } 
+05
+06 type Msg = Increment | Decrement 
+07
+08 update : Msg -> Model -> Model 
+09 update msg model = case msg of 
+10   Increment -> { model | count = model.count + 1 } 
+11   Decrement -> { model | count = model.count - 1 } 
+12
+13 view : Model -> Html Msg 
+14 view model = div [] 
+15   [ button 
+16       [ onClick Increment ] 
+17       [ text "+1" ] 
+18   , span [] [ text <| toString model.count ] 
+19   , button 
+20       [ onClick Decrement ]
+21       [ text "-1" ] 
+22   ]
+```
+
+---
+                        
+# Elm Todo MVC
+
+<img src="https://user-images.githubusercontent.com/2288939/43979574-2cef3b36-9cb9-11e8-98f9-7cb25b27326a.png" width="400px">
+      
+```
+Add -> 
+{  model
+  | uid = model.uid + 1
+  , field = ""
+  , entries = if String.isEmpty model.field 
+      then model.entries 
+      else model.entries ++ [newEntry model.field model.uid ]
+}
+```
+  
+---
+
+# Elm TodoMVC diagram
+      
+<!-- TODO why this and brother blurry? -->
+
+<iframe style="margin-left:-70px" width="900px" height="600px" src="https://mermaidjs.github.io/mermaid-live-editor/#/view/eyJjb2RlIjoiZ3JhcGggVERcblxuc3ViZ3JhcGggdmlld1xudmlld0lucHV0Qm94XG50b2RvQ2hlY2tib3hcbnRvZG9JbnB1dFxuYWN0aXZlQnV0dG9ue2FjdGl2ZUJ1dHRvbn1cbmNvbXBsZXRlZEJ1dHRvbntjb21wbGV0ZWRCdXR0b259XG5hbGxCdXR0b257YWxsQnV0dG9ufVxuZGVsZXRlQnV0dG9uXG5jbGVhckNvbXBsZXRlQnV0dG9uXG5jaGVja0FsbEJveFxuZW5kXG5cbm9sZE1vZGVsLS0-dmlld0lucHV0Qm94XG5vbGRNb2RlbC0tPmNoZWNrQWxsQm94XG5vbGRNb2RlbC0tPnRvZG9DaGVja2JveFxub2xkTW9kZWwtLT50b2RvSW5wdXRcbm9sZE1vZGVsLS0-YWN0aXZlQnV0dG9ue2FjdGl2ZUJ1dHRvbn1cbm9sZE1vZGVsLS0-Y29tcGxldGVkQnV0dG9ue2NvbXBsZXRlZEJ1dHRvbn1cbm9sZE1vZGVsLS0-YWxsQnV0dG9ue2FsbEJ1dHRvbn1cblxudmlld0lucHV0Qm94e0lucHV0Qm94fSAtLT4gQWRkXG52aWV3SW5wdXRCb3h7SW5wdXRCb3h9IC0tPiBVcGRhdGVGaWVsZFxuXG5zdWJncmFwaCBtZXNzYWdlc1xuRGVsZXRlQ29tcGxldGVcbkRlbGV0ZVxuVXBkYXRlRmllbGRcbkFkZFxuQ2hlY2tBbGxcbkNoZWNrXG5FZGl0aW5nRW50cnlcbkNoYW5nZVZpc2liaWxpdHlcblVwZGF0ZUVudHJ5XG5lbmRcblxuICBjaGVja0FsbEJveHtjaGVja0FsbEJveH0gLS0-IENoZWNrQWxsPkNoZWNrQWxsXVxuXG4gICAgdG9kb0NoZWNrYm94e3RvZG9DaGVja2JveH0tLT5DaGVjaz5DaGVja11cbiAgICBkZWxldGVCdXR0b257ZGVsZXRlQnV0dG9ufS0tPkRlbGV0ZT5EZWxldGVdXG4gICAgdG9kb0lucHV0e3RvZG9JbnB1dH0gLS0-IFVwZGF0ZUVudHJ5PlVwZGF0ZUVudHJ5XVxuICAgIHRvZG9JbnB1dCAtLT4gRWRpdGluZ0VudHJ5PkVkaXRpbmdFbnRyeV1cblxuIFxuXG5cblxuQWRkPkFkZF0tLT51cGRhdGVcbkVkaXRpbmdFbnRyeS0tPnVwZGF0ZVxuVXBkYXRlRW50cnktLT51cGRhdGVcbkRlbGV0ZS0tPnVwZGF0ZVxuQ2hlY2stLT51cGRhdGVcbkNoZWNrQWxsLS0-dXBkYXRlXG5VcGRhdGVGaWVsZD5VcGRhdGVGaWVsZF0tLT51cGRhdGVcblxuXG5cbiBjbGVhckNvbXBsZXRlQnV0dG9ue2NsZWFyQ29tcGxldGVCdXR0b259LS0-RGVsZXRlQ29tcGxldGU-RGVsZXRlQ29tcGxldGVdXG5hY3RpdmVCdXR0b257YWN0aXZlQnV0dG9ufS0tPkNoYW5nZVZpc2liaWxpdHk-Q2hhbmdlVmlzaWJpbGl0eV1cbmNvbXBsZXRlZEJ1dHRvbntjb21wbGV0ZWRCdXR0b259LS0-Q2hhbmdlVmlzaWJpbGl0eT5DaGFuZ2VWaXNpYmlsaXR5XVxuYWxsQnV0dG9ue2FsbEJ1dHRvbn0tLT5DaGFuZ2VWaXNpYmlsaXR5PkNoYW5nZVZpc2liaWxpdHldXG5cblxuQ2hhbmdlVmlzaWJpbGl0eS0tPnVwZGF0ZVxuRGVsZXRlQ29tcGxldGUtLT51cGRhdGVcblxub2xkTW9kZWw9PT51cGRhdGVcblxudXBkYXRlLS0-bmV3TW9kZWxcbm9sZE1vZGVsLS4tbmV3TW9kZWxcblxuc3ViZ3JhcGggcmVkdWNlclxudXBkYXRlXG5lbmRcblxuY2xhc3NEZWYgcGluayBmaWxsOnBpbmtcbmNsYXNzIHVwZGF0ZSBwaW5rXG5cbmNsYXNzRGVmIG9yYW5nZSBmaWxsOiNmOTZcbmNsYXNzIG5ld01vZGVsLG9sZE1vZGVsIG9yYW5nZVxuXG5jbGFzc0RlZiBncmVlbiBmaWxsOiM0ZmZmNWFcbmNsYXNzIENoZWNrQWxsLENoZWNrLERlbGV0ZSxVcGRhdGVFbnRyeSxFZGl0aW5nRW50cnksVXBkYXRlRmllbGQsQWRkLERlbGV0ZUNvbXBsZXRlLENoYW5nZVZpc2liaWxpdHkgZ3JlZW4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9fQ" frameborder="0" allowfullscreen=""></iframe>
+
+---
+# Elm TodoMVC Ctl-F "entries ="
+
+<img style="position: absolute; clip: rect(0px, 300px, 492px, 0px);" src="https://user-images.githubusercontent.com/2288939/46862901-e237bb00-ce0d-11e8-89ee-fc8a19fb1759.png" height="700px">
+      
+<img style="position: absolute; top: -350px; right:0px; clip: rect(492px, 300px, 1500px, 0px);" src="https://user-images.githubusercontent.com/2288939/46862901-e237bb00-ce0d-11e8-89ee-fc8a19fb1759.png" height="700px">
+      
+---
+      
+# Elm TodoMVC Ctl-F "entries =" messages
+
+<img style="position: absolute; clip: rect(0px, 300px, 502px, 0px);" src="https://user-images.githubusercontent.com/2288939/46862900-e237bb00-ce0d-11e8-90d3-5dce86ebc8ff.png" height="1000px">
+      
+<img style="position: absolute; top: -350px;right:0px; clip: rect(502px, 300px, 1500px, 0px);" src="https://user-images.githubusercontent.com/2288939/46862900-e237bb00-ce0d-11e8-90d3-5dce86ebc8ff.png" height="1000px">
+
+---
+
+# Reflex FRP
+haskell, ghcjs
+
+## 1) higher order
+
+Stream can contain streams
+      
+## 2) cyclic
+
+Streams can refer to streams that refer to themselves
+      
+---
+# Reflex Counter
+
+```
+01 button :: Text -> m (Event ())
+02 el :: Text -> m a -> m a
+03 display :: Show a => Dynamic a -> m ()
+04 (<$) :: a -> Event b -> Event a 
+05 leftmost :: [Event a] -> Event a 
+06 foldDyn :: (a -> b -> b) -> b -> Event a -> m (Dynamic b)
+09
+08 bodyElement :: MonadWidget t m => m () 
+09 bodyElement = do 
+10   rec evIncr <- button "+1" 
+11       el "div" $ display count 
+12       evDecr <- button "-1" 
+13       count <- foldDyn (+) 0 $ leftmost
+14         [ 1 <$ evIncr 
+15         , -1 <$ evDecr 
+16         ] 
+17   return () 
+18
+19 main :: IO () 
+20 main = mainWidget bodyElement 
+```
+               
+
+---
+# Reflex TodoMVC Entries
+
+```
+01 initialTasks :: Map Int Task
+02 initialTasks = Map.empty 
+03
+04 insertNew_ :: Task -> Map Int Task -> Map Int Task 
+05
+06 todoMVC :: (DomBuilder t m, MonadFix m, MonadHold t m) => m ()
+07 todoMVC = do
+08   el "div" $ do
+09     elAttr "section" ("class" =: "todoapp") $ do 
+10       mainHeader
+11       rec tasks <- foldDyn ($) initialTasks $
+12           mergeWith (.)
+13             [ fmap insertNew_ newTask 
+14             , listModifyTasks 
+15             , fmap (const $ Map.filter $ not . taskCompleted) clearCompleted
+16             ] 
+17           newTask <- taskEntry
+18           listModifyTasks <- taskList activeFilter tasks
+19           (activeFilter, clearCompleted) <- controls tasks
+20    return ()
+21  infoFooter
+```
+      
+Cycle: `tasks` depends upon `listModifyTasks` and `clearCompleted`, which depend upon `tasks`
+
+---
+# Reflex TodoMVC Diagram
+
+<iframe style="margin-left:-50px" width="900px" height="500px" overflow="scroll" frameborder="none" src="https://mermaidjs.github.io/mermaid-live-editor/#/view/eyJjb2RlIjoiZ3JhcGggVERcblxubmV3VGFza0V2ZW50Pm5ld1Rhc2tFdmVudF09PT4gdGFza3Ncbmxpc3RNb2RpZnlUYXNrcz5saXN0TW9kaWZ5VGFza3NdID09PiB0YXNrc1xuXG5jbGVhckNvbXBsZXRlZEV2ZW50PmNsZWFyQ29tcGxldGVkRXZlbnRdID09PiB0YXNrc1xudGFza3MgLS0-IHZpc2libGVUYXNrc1xuXG5hY3RpdmVGaWx0ZXItLT52aXNpYmxlVGFza3NcbnN1YmdyYXBoIHRhc2tMaXN0XG4gICAgdmlzaWJsZVRhc2tzLS0-Y29tcGxldGVkQ2hlY2tib3h7Y29tcGxldGVkQ2hlY2tib3h9XG4gICAgdmlzaWJsZVRhc2tzLS0-IGRlc2NyaXB0aW9uTGFiZWx7ZGVzY3JpcHRpb25MYWJlbH1cbiAgICB2aXNpYmxlVGFza3MtLT4gZWRpdEJveHtlZGl0Qm94fVxuICAgICB0b2dnbGVBbGxDaGVja2JveHt0b2dnbGVBbGxDaGVja2JveH0tLT50b2dnbGVBbGw-dG9nZ2xlQWxsXVxuICAgIHRvZ2dsZUFsbC0tPmxpc3RNb2RpZnlUYXNrc1xuICAgIHRvZ2dsZUFsbC0tPnRvZ2dsZVN0YXRlXG4gICB0b2dnbGVTdGF0ZS0tPnRvZ2dsZUFsbENoZWNrYm94XG4gICAgY2hhbmdlU2VsZj5jaGFuZ2VTZWxmXS0tPml0ZW1DaGFuZ2VzPml0ZW1DaGFuZ2VzXVxuICAgIGl0ZW1DaGFuZ2VzPml0ZW1DaGFuZ2VzXS0tPmxpc3RNb2RpZnlUYXNrc1xuICAgICBzdWJncmFwaCB0b2RvSXRlbVxuICAgICAgICAgIGVkaXRCb3h7ZWRpdEJveH0tLT5lZGl0Qm94RW50ZXI-ZWRpdEJveEVudGVyXVxuICAgICAgICAgIGVkaXRCb3gtLT5lZGl0Qm94VGV4dFZhbHVlXG4gICAgICAgICAgZWRpdEJveFRleHRWYWx1ZS0tPnNldERlc2NyaXB0aW9uPnNldERlc2NyaXB0aW9uXVxuICAgICAgICAgIGVkaXRCb3hFbnRlci0tPnNldERlc2NyaXB0aW9uPnNldERlc2NyaXB0aW9uXVxuICAgICAgICAgIGVkaXRCb3gtLT58b24gZXNjIGtleXxjYW5jZWxFZGl0XG4gICAgICAgICAgZGVzdHJveUJ1dHRvbntkZXN0cm95QnV0dG9ufS0tPmRlc3Ryb3lcbiAgICAgICAgICBkZXNjcmlwdGlvbkxhYmVse2Rlc2NyaXB0aW9uTGFiZWx9LS0-fG9uIGRvdWJsZSBjbGlja3xzdGFydEVkaXRpbmdcbiAgICAgICAgICBjb21wbGV0ZWRDaGVja2JveHtjb21wbGV0ZWRDaGVja2JveH0tLT5zZXRDb21wbGV0ZWRcbiAgICAgICAgICBlZGl0Qm94RW50ZXItLT5lZGl0aW5nXG4gICAgICAgICAgc3RhcnRFZGl0aW5nPnN0YXJ0RWRpdGluZ10tLT5lZGl0aW5nXG4gICAgICAgICAgY2FuY2VsRWRpdD5jYW5jZWxFZGl0XS0tPmVkaXRpbmdcbiAgICAgICAgICBzZXRDb21wbGV0ZWQ-c2V0Q29tcGxldGVkXS0tPmNoYW5nZVNlbGZcbiAgICAgICAgICBkZXN0cm95PmRlc3Ryb3ldLS0-Y2hhbmdlU2VsZlxuICAgICAgICAgIHNldERlc2NyaXB0aW9uPnNldERlc2NyaXB0aW9uXSAtLT5jaGFuZ2VTZWxmXG4gICAgICAgICAgZWRpdGluZy0tPnxoaWRlcy9zaG93cyB2aWEgY3NzfGVkaXRCb3hcbiAgICAgICAgICBlZGl0aW5nLS0-fGhpZGVzL3Nob3dzIHZpYSBjc3N8ZGVzY3JpcHRpb25MYWJlbFxuICAgICBlbmRcbmVuZFxuXG5zdWJncmFwaCBjb250cm9sc1xuICAgIGFsbEJ1dHRvbnthbGxCdXR0b259IC0tPmFsbEJ1dHRvbkNsaWNrZWQ-YWxsQnV0dG9uQ2xpY2tlZF1cbiAgICBhY3RpdmVCdXR0b257YWN0aXZlQnV0dG9ufS0tPmFjdGl2ZUJ1dHRvbkNsaWNrZWQ-YWN0aXZlQnV0dG9ubkNsaWNrZWRdXG4gICAgY29tcGxldGVkQnV0dG9ue2NvbXBsZXRlZEJ1dHRvbn0gLS0-Y29tcGxldGVkQnV0dG9uQ2xpY2tlZD5jb21wbGV0ZWRCdXR0b25DbGlja2VkXVxuICAgYWxsQnV0dG9uQ2xpY2tlZFxuICAgIGFsbEJ1dHRvbkNsaWNrZWQtLT5hY3RpdmVGaWx0ZXJcbiAgICBhY3RpdmVCdXR0b25DbGlja2VkLS0-YWN0aXZlRmlsdGVyXG4gICAgY29tcGxldGVkQnV0dG9uQ2xpY2tlZC0tPmFjdGl2ZUZpbHRlclxuICAgIGFjdGl2ZUZpbHRlci0tPmFjdGl2ZUJ1dHRvblxuICAgIGFjdGl2ZUZpbHRlci0tPmNvbXBsZXRlZEJ1dHRvblxuICAgIGFjdGl2ZUZpbHRlci0tPmFsbEJ1dHRvblxuICAgIGNsZWFyQ29tcGxldGVkQnV0dG9ue2NsZWFyQ29tcGxldGVkQnV0dG9ufS0tPmNsZWFyQ29tcGxldGVkRXZlbnRcbiAgICBhY3RpdmVGaWx0ZXItLT50b2RvUmVtYWluaW5nQ291bnRcbmVuZFxuXG5zdWJncmFwaCB0YXNrRW50cnlcbiAgIGRlc2NyaXB0aW9uQm94e2Rlc2NyaXB0aW9uQm94fS0tPlxuZGVzY3JpcHRpb25Cb3hFbnRlcj5kZXNjcmlwdGlvbkJveEVudGVyXVxuICBkZXNjcmlwdGlvbkJveHtkZXNjcmlwdGlvbkJveH0tLT5cbmRlc2NyaXB0aW9uQm94VmFsdWVcbiAgZGVzY3JpcHRpb25Cb3hFbnRlci0tPm5ld1Rhc2tFdmVudFxuICBkZXNjcmlwdGlvbkJveFZhbHVlLS0-bmV3VGFza0V2ZW50XG4gIGRlc2NyaXB0aW9uQm94RW50ZXItLT58Y2xlYXIgb24gZW50ZXJ8ZGVzY3JpcHRpb25Cb3h7ZGVzY3JpcHRpb25Cb3h9XG5lbmRcblxudGFza3MgLS0-IHRvZG9SZW1haW5pbmdDb3VudFxuXG5jbGFzc0RlZiBvcmFuZ2UgZmlsbDojZjk2XG5jbGFzcyB0YXNrcyxhY3RpdmVGaWx0ZXIsdG9kb1JlbWFpbmluZ0NvdW50LHZpc2libGVUYXNrcyxlZGl0aW5nLGl0ZW1zLHRvZ2dsZVN0YXRlLGVkaXRCb3hUZXh0VmFsdWUsZGVzY3JpcHRpb25Cb3hWYWx1ZSBvcmFuZ2VcblxuY2xhc3NEZWYgZ3JlZW4gZmlsbDojNGZmZjVhXG5jbGFzcyBuZXdUYXNrRXZlbnQsY2xlYXJDb21wbGV0ZWRFdmVudCxzZXRDb21wbGV0ZWQsZGVzdHJveSxjaGFuZ2VTZWxmLHNldERlc2NyaXB0aW9uLHN0YXJ0RWRpdGluZyxjYW5jZWxFZGl0LHRvZ2dsZUFsbCxsaXN0TW9kaWZ5VGFza3MsYWxsQnV0dG9uQ2xpY2tlZCxhY3RpdmVCdXR0b25DbGlja2VkLGNvbXBsZXRlZEJ1dHRvbkNsaWNrZWQsZGVzY3JpcHRpb25Cb3hFbnRlcixpdGVtQ2hhbmdlcyxlZGl0Qm94RW50ZXIgZ3JlZW4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9fQ"></iframe>
+
+---
+# Reflex TodoMVC Diagram (Simplified)
+      
+<iframe style="margin-left:-50px" width="620px" height="500px" overflow="scroll" frameborder="none" src="./reflex-diagram-simplified.svg"></iframe>
+  
+---
+
+# Is the cure worse than the disease?
+
+### - Serializeable Elm singleton -> time travel debugging, hot reloading
+### - Reflex + ghcjs is annoying
+      
+---
+# Conclusion
+
+## I hope you are now _unhappy_ with where we are. And excited to look for other solutions. Such a _higher-order_ and _cyclic_ streams. So that we can... (please forgive me)
+
+
+</textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create({highlightLanguage: 'haskell'});
+      slideshow.gotoSlide(16);
+    </script>
+  </body>
+</html>
