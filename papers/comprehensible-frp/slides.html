@@ -15,6 +15,8 @@
       }
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
     </style>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
   </head>
   <body>
 <textarea id="source">
@@ -26,26 +28,12 @@ class: center, middle
 ## Steve Krouse
 
 ---
-
-# This talk is about
-
-## 1) the comprehensibility
-
-When making a change, it's the first and most-time-consuming step.
-
-## 2) of large
-
-Software today is 10k lines minimum but goes up to millions.
-      
-## 3) FRP applications.
-
-They are becoming increasingly prevalent.
+class: center, middle
+# This talk is about the comprehensibility of large FRP applications.
 
 ---
-
+class: center, middle
 # This this talk does not have The Answer<sup>TM<sup>
-  
-I complain about where we are, and point us in a promising direction.
 
 ---
 
@@ -58,6 +46,10 @@ Code elsewhere cannot affect this code via *side-effects*.
 We can grok this code by reading its dependency definitions recursively.
 
 ---
+# FP is not *always* comprehensible
+
+---
+
 # FP is not *always* comprehensible
 
 > There is in principle nothing to stop functional programs from **passing a single extra parameter into and out of every single function** in the entire system. If this extra parameter were a **collection (compound value)** of some kind then it could be used to **simulate an arbitrarily large set of mutable variables**... 
@@ -128,13 +120,6 @@ Add ->
   
 ---
 
-# Elm TodoMVC diagram
-      
-<!-- TODO why this and brother blurry? -->
-
-<iframe style="margin-left:-70px" width="900px" height="600px" src="https://mermaidjs.github.io/mermaid-live-editor/#/view/eyJjb2RlIjoiZ3JhcGggVERcblxuc3ViZ3JhcGggdmlld1xudmlld0lucHV0Qm94XG50b2RvQ2hlY2tib3hcbnRvZG9JbnB1dFxuYWN0aXZlQnV0dG9ue2FjdGl2ZUJ1dHRvbn1cbmNvbXBsZXRlZEJ1dHRvbntjb21wbGV0ZWRCdXR0b259XG5hbGxCdXR0b257YWxsQnV0dG9ufVxuZGVsZXRlQnV0dG9uXG5jbGVhckNvbXBsZXRlQnV0dG9uXG5jaGVja0FsbEJveFxuZW5kXG5cbm9sZE1vZGVsLS0-dmlld0lucHV0Qm94XG5vbGRNb2RlbC0tPmNoZWNrQWxsQm94XG5vbGRNb2RlbC0tPnRvZG9DaGVja2JveFxub2xkTW9kZWwtLT50b2RvSW5wdXRcbm9sZE1vZGVsLS0-YWN0aXZlQnV0dG9ue2FjdGl2ZUJ1dHRvbn1cbm9sZE1vZGVsLS0-Y29tcGxldGVkQnV0dG9ue2NvbXBsZXRlZEJ1dHRvbn1cbm9sZE1vZGVsLS0-YWxsQnV0dG9ue2FsbEJ1dHRvbn1cblxudmlld0lucHV0Qm94e0lucHV0Qm94fSAtLT4gQWRkXG52aWV3SW5wdXRCb3h7SW5wdXRCb3h9IC0tPiBVcGRhdGVGaWVsZFxuXG5zdWJncmFwaCBtZXNzYWdlc1xuRGVsZXRlQ29tcGxldGVcbkRlbGV0ZVxuVXBkYXRlRmllbGRcbkFkZFxuQ2hlY2tBbGxcbkNoZWNrXG5FZGl0aW5nRW50cnlcbkNoYW5nZVZpc2liaWxpdHlcblVwZGF0ZUVudHJ5XG5lbmRcblxuICBjaGVja0FsbEJveHtjaGVja0FsbEJveH0gLS0-IENoZWNrQWxsPkNoZWNrQWxsXVxuXG4gICAgdG9kb0NoZWNrYm94e3RvZG9DaGVja2JveH0tLT5DaGVjaz5DaGVja11cbiAgICBkZWxldGVCdXR0b257ZGVsZXRlQnV0dG9ufS0tPkRlbGV0ZT5EZWxldGVdXG4gICAgdG9kb0lucHV0e3RvZG9JbnB1dH0gLS0-IFVwZGF0ZUVudHJ5PlVwZGF0ZUVudHJ5XVxuICAgIHRvZG9JbnB1dCAtLT4gRWRpdGluZ0VudHJ5PkVkaXRpbmdFbnRyeV1cblxuIFxuXG5cblxuQWRkPkFkZF0tLT51cGRhdGVcbkVkaXRpbmdFbnRyeS0tPnVwZGF0ZVxuVXBkYXRlRW50cnktLT51cGRhdGVcbkRlbGV0ZS0tPnVwZGF0ZVxuQ2hlY2stLT51cGRhdGVcbkNoZWNrQWxsLS0-dXBkYXRlXG5VcGRhdGVGaWVsZD5VcGRhdGVGaWVsZF0tLT51cGRhdGVcblxuXG5cbiBjbGVhckNvbXBsZXRlQnV0dG9ue2NsZWFyQ29tcGxldGVCdXR0b259LS0-RGVsZXRlQ29tcGxldGU-RGVsZXRlQ29tcGxldGVdXG5hY3RpdmVCdXR0b257YWN0aXZlQnV0dG9ufS0tPkNoYW5nZVZpc2liaWxpdHk-Q2hhbmdlVmlzaWJpbGl0eV1cbmNvbXBsZXRlZEJ1dHRvbntjb21wbGV0ZWRCdXR0b259LS0-Q2hhbmdlVmlzaWJpbGl0eT5DaGFuZ2VWaXNpYmlsaXR5XVxuYWxsQnV0dG9ue2FsbEJ1dHRvbn0tLT5DaGFuZ2VWaXNpYmlsaXR5PkNoYW5nZVZpc2liaWxpdHldXG5cblxuQ2hhbmdlVmlzaWJpbGl0eS0tPnVwZGF0ZVxuRGVsZXRlQ29tcGxldGUtLT51cGRhdGVcblxub2xkTW9kZWw9PT51cGRhdGVcblxudXBkYXRlLS0-bmV3TW9kZWxcbm9sZE1vZGVsLS4tbmV3TW9kZWxcblxuc3ViZ3JhcGggcmVkdWNlclxudXBkYXRlXG5lbmRcblxuY2xhc3NEZWYgcGluayBmaWxsOnBpbmtcbmNsYXNzIHVwZGF0ZSBwaW5rXG5cbmNsYXNzRGVmIG9yYW5nZSBmaWxsOiNmOTZcbmNsYXNzIG5ld01vZGVsLG9sZE1vZGVsIG9yYW5nZVxuXG5jbGFzc0RlZiBncmVlbiBmaWxsOiM0ZmZmNWFcbmNsYXNzIENoZWNrQWxsLENoZWNrLERlbGV0ZSxVcGRhdGVFbnRyeSxFZGl0aW5nRW50cnksVXBkYXRlRmllbGQsQWRkLERlbGV0ZUNvbXBsZXRlLENoYW5nZVZpc2liaWxpdHkgZ3JlZW4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9fQ" frameborder="0" allowfullscreen=""></iframe>
-
----
 # Elm TodoMVC Ctl-F "entries ="
 
 <img style="position: absolute; clip: rect(0px, 300px, 492px, 0px);" src="https://user-images.githubusercontent.com/2288939/46862901-e237bb00-ce0d-11e8-89ee-fc8a19fb1759.png" height="700px">
@@ -148,6 +133,12 @@ Add ->
 <img style="position: absolute; clip: rect(0px, 300px, 502px, 0px);" src="https://user-images.githubusercontent.com/2288939/46862900-e237bb00-ce0d-11e8-90d3-5dce86ebc8ff.png" height="1000px">
       
 <img style="position: absolute; top: -350px;right:0px; clip: rect(502px, 300px, 1500px, 0px);" src="https://user-images.githubusercontent.com/2288939/46862900-e237bb00-ce0d-11e8-90d3-5dce86ebc8ff.png" height="1000px">
+
+---
+
+# Elm TodoMVC diagram
+
+<iframe style="margin-left:-70px" width="900px" height="600px" src="https://mermaidjs.github.io/mermaid-live-editor/#/view/eyJjb2RlIjoiZ3JhcGggVERcblxuc3ViZ3JhcGggdmlld1xudmlld0lucHV0Qm94XG50b2RvQ2hlY2tib3hcbnRvZG9JbnB1dFxuYWN0aXZlQnV0dG9ue2FjdGl2ZUJ1dHRvbn1cbmNvbXBsZXRlZEJ1dHRvbntjb21wbGV0ZWRCdXR0b259XG5hbGxCdXR0b257YWxsQnV0dG9ufVxuZGVsZXRlQnV0dG9uXG5jbGVhckNvbXBsZXRlQnV0dG9uXG5jaGVja0FsbEJveFxuZW5kXG5cbm9sZE1vZGVsLS0-dmlld0lucHV0Qm94XG5vbGRNb2RlbC0tPmNoZWNrQWxsQm94XG5vbGRNb2RlbC0tPnRvZG9DaGVja2JveFxub2xkTW9kZWwtLT50b2RvSW5wdXRcbm9sZE1vZGVsLS0-YWN0aXZlQnV0dG9ue2FjdGl2ZUJ1dHRvbn1cbm9sZE1vZGVsLS0-Y29tcGxldGVkQnV0dG9ue2NvbXBsZXRlZEJ1dHRvbn1cbm9sZE1vZGVsLS0-YWxsQnV0dG9ue2FsbEJ1dHRvbn1cblxudmlld0lucHV0Qm94e0lucHV0Qm94fSAtLT4gQWRkXG52aWV3SW5wdXRCb3h7SW5wdXRCb3h9IC0tPiBVcGRhdGVGaWVsZFxuXG5zdWJncmFwaCBtZXNzYWdlc1xuRGVsZXRlQ29tcGxldGVcbkRlbGV0ZVxuVXBkYXRlRmllbGRcbkFkZFxuQ2hlY2tBbGxcbkNoZWNrXG5FZGl0aW5nRW50cnlcbkNoYW5nZVZpc2liaWxpdHlcblVwZGF0ZUVudHJ5XG5lbmRcblxuICBjaGVja0FsbEJveHtjaGVja0FsbEJveH0gLS0-IENoZWNrQWxsPkNoZWNrQWxsXVxuXG4gICAgdG9kb0NoZWNrYm94e3RvZG9DaGVja2JveH0tLT5DaGVjaz5DaGVja11cbiAgICBkZWxldGVCdXR0b257ZGVsZXRlQnV0dG9ufS0tPkRlbGV0ZT5EZWxldGVdXG4gICAgdG9kb0lucHV0e3RvZG9JbnB1dH0gLS0-IFVwZGF0ZUVudHJ5PlVwZGF0ZUVudHJ5XVxuICAgIHRvZG9JbnB1dCAtLT4gRWRpdGluZ0VudHJ5PkVkaXRpbmdFbnRyeV1cblxuIFxuXG5cblxuQWRkPkFkZF0tLT51cGRhdGVcbkVkaXRpbmdFbnRyeS0tPnVwZGF0ZVxuVXBkYXRlRW50cnktLT51cGRhdGVcbkRlbGV0ZS0tPnVwZGF0ZVxuQ2hlY2stLT51cGRhdGVcbkNoZWNrQWxsLS0-dXBkYXRlXG5VcGRhdGVGaWVsZD5VcGRhdGVGaWVsZF0tLT51cGRhdGVcblxuXG5cbiBjbGVhckNvbXBsZXRlQnV0dG9ue2NsZWFyQ29tcGxldGVCdXR0b259LS0-RGVsZXRlQ29tcGxldGU-RGVsZXRlQ29tcGxldGVdXG5hY3RpdmVCdXR0b257YWN0aXZlQnV0dG9ufS0tPkNoYW5nZVZpc2liaWxpdHk-Q2hhbmdlVmlzaWJpbGl0eV1cbmNvbXBsZXRlZEJ1dHRvbntjb21wbGV0ZWRCdXR0b259LS0-Q2hhbmdlVmlzaWJpbGl0eT5DaGFuZ2VWaXNpYmlsaXR5XVxuYWxsQnV0dG9ue2FsbEJ1dHRvbn0tLT5DaGFuZ2VWaXNpYmlsaXR5PkNoYW5nZVZpc2liaWxpdHldXG5cblxuQ2hhbmdlVmlzaWJpbGl0eS0tPnVwZGF0ZVxuRGVsZXRlQ29tcGxldGUtLT51cGRhdGVcblxub2xkTW9kZWw9PT51cGRhdGVcblxudXBkYXRlLS0-bmV3TW9kZWxcbm9sZE1vZGVsLS4tbmV3TW9kZWxcblxuc3ViZ3JhcGggcmVkdWNlclxudXBkYXRlXG5lbmRcblxuY2xhc3NEZWYgcGluayBmaWxsOnBpbmtcbmNsYXNzIHVwZGF0ZSBwaW5rXG5cbmNsYXNzRGVmIG9yYW5nZSBmaWxsOiNmOTZcbmNsYXNzIG5ld01vZGVsLG9sZE1vZGVsIG9yYW5nZVxuXG5jbGFzc0RlZiBncmVlbiBmaWxsOiM0ZmZmNWFcbmNsYXNzIENoZWNrQWxsLENoZWNrLERlbGV0ZSxVcGRhdGVFbnRyeSxFZGl0aW5nRW50cnksVXBkYXRlRmllbGQsQWRkLERlbGV0ZUNvbXBsZXRlLENoYW5nZVZpc2liaWxpdHkgZ3JlZW4iLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9fQ" frameborder="0" allowfullscreen=""></iframe>
 
 ---
 
@@ -230,23 +221,23 @@ Cycle: `tasks` depends upon `listModifyTasks` and `clearCompleted`, which depend
   
 ---
 
-# Is the cure worse than the disease?
+# Reflex is not The Answer<sup>TM<sup>
 
-### - Serializeable Elm singleton -> time travel debugging, hot reloading
 ### - Reflex + ghcjs is annoying
+### - Elm is pleasant 
+### - The Elm Architecture model is serializable -> time travel debugging, hot reloading
+
       
 ---
 # Conclusion
 
-## I hope you are now _unhappy_ with where we are. And excited to look for other solutions. Such a _higher-order_ and _cyclic_ streams. So that we can... (please forgive me)
+## I hope you are now _unhappy_ with where we are with state management in FRP. And excited to look for other solutions. Such a _higher-order_ and _cyclic_ streams. 
 
 
 </textarea>
-    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
-    </script>
     <script>
       var slideshow = remark.create({highlightLanguage: 'haskell'});
-      slideshow.gotoSlide(16);
+      //slideshow.gotoSlide(1);
     </script>
   </body>
 </html>
