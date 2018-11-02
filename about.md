@@ -2,177 +2,104 @@
 title: About
 ---
 
-# About - Future of Coding
+# About
 
-Welcome to the podcast and open-journal research project to create the future of coding.
+## tl;dr
 
-## Computing is power
+Future of Coding is a research project and podcast by me, Steve Krouse. My research is focused on building an open-source programming langauge / system. The podcast alternates between interviews with programming language experts and reflections on my own research journy.
 
-Large advantages are confered upon those who know how to instruct computers:
+## Me
 
-1. As the fabric of the world becomes software, and those that can manipulate software become powerful magicians.
+Hi, my name is Steve Krouse. When I meet people, I like to begin with life stories. Context is important. Here's mine - as it relates to this project:
 
-2. Learning to communicate with computers teaches one how to think more clearly, precisely, and powerfully.
+I was born in NYC in 1994 and raised in South Florida.
 
-These reasons, among many others, mean there is a lot of value in learning to code. This is why almost everyone who hears that I "teach coding to children" asks if I can teach them to code. However, the current cost of learning to code is high. Lowering this cost could vastly improve the world.
+As a kid, I was "bad at school", and particularly "bad at math." However, as I was a "computer kid", I started going to a wonderful after-school computer science program, [IMACS](https://imacs.org). Through learning LOGO, Scheme, Java and Haskell in middle school and high school at IMACS's self-paced, and nurturing environment, I became a computational, mathmatical, and introspective thinker. I became very good at school, especially mathematics and physics.
 
-## The usability our tools is poor
+I went to the University of Pennslyvania for college. After taking most of the CS classes at Penn, I left without graduating in early 2014, and went to work at [Looker](https://looker.com). I left Looker at the end of 2014. 
 
-The cost of learning to code is high because the langauges and tools that we currently use to communicate with computers have poor usability:
+While at college and Looker, I was deeply influenced by Bret Victor and Seymour Papert. Ever since my experience of transforming from a self-identified "stupid person" to a "smart person" in middle school, I was curious about how it happened and if similar changes could be nurtured in others. Reading Papert in college, I learned that my own transformation was was no accident - Seymour intentially set out to create mathmatical thinkers from math-haters with LOGO, and he accomplished his goal in me.
 
-1. They require hundreds of hours grueling of practice to learn to use.
+With these thoughts in mind, in July 2015 I co-founded [The Coding Space](https://thecodingspace.com), where We taught kids to code in a self-paced environment similar in spirit to IMACS. I created [a Scratch-based curriculum](https://coding.space), as well as [WoofJS](https://woofjs.com), a JavaScript framework and oneline IDE to transition kids from Scratch to JS.
 
-2. Even after you are familiar with them, they are still not easy to use.
+Sometime in the middle of 2017, I left The Coding Space to work on programming langauges full time. 
 
+When I first began working, I thought I'd have the whole thing solved in just a matter of months, all by myself. I was wrong. While I did contribute make some interesting prototypes, I spent a lot of time retracing the steps of those that came before me. I learned the hard way that I need to read my history.
 
-## We can do better
+In the summer of 2017, I was approached by Irvin Hwang who suggested starting a NYC-based meetup group for people interested in the future of programming. I thought that was the dumbest idea I'd ever heard: why talk to other people when I could read Alan Kay papers in my room? But I went to the first meeting and it blew my mind wide open. I learned so much in that hour! It inspired my [log](./log) which has become the core of my research practice. After Irvin became busy with his new job, I took over the group, and created a Slack for "future of programming folks" all over the world. I learned the easy way the importance of community.
 
-But we need not despair! We've repeately improved the usability of the tools by which we communicate with computers, from punchards and binary, to assembly, to Fortran, to C, to Python, to Haskell.
+It was also around this time that I began the podcast. I alternates between recapping my own research and speaking with experts. It's been an incredibly valuable experience for me, helping add structure to my research, gaining new insights through collaboration, encouraging me to reflect on my progress, and giving me energy as people respond to my episodes with exciement and ideas of their own.
 
-In fact, I believe that we can improve the usability of general programming to that of MIT's Scratch, or Microsoft Office applications like Word, Powerpoint or Excel, or even a user-friendly application like Facebook.
+My framing for this project has gone through a number of turbulent stages (Bret-Victor-wannabe, total-disenhartenment, irrational exuberance, etc), but I have recently (as of Fall 2018) come to a very positive mental space, described below. These days, I describe myself as a *programming language designer*, because my goal is to create a working system (not just produce research) that resembles a programming langauge in its expressive power, but will feel more like a system in the Excel or Smalltalk sense than a text-and-compiler-based programming language.
 
-However, there's a mystery here: we haven't made much progress on this front in decades. If improvement is possible, where is it? What are the barriers?
+## Mission
 
+The mission of this project is to *enable all people[1] to modify the software they use in the course of using it*. 
 
-## I started working in 2015
+This mission is would cause the following changes, in order of increasing importance:
 
-I started working on this problem, developing programming languages prototypes, a few years ago. When I first began working on it, I thought I'd have the whole thing solved in just a matter of months. I was wrong.
+1. All software will be co-created by decentralized communities, rather than centralized groups or companies. 
+2. Through the power of crowd-sourcing, the quality of all software will become much higher than existing software.
+3. All software will be much more composible, interoperable with other pieces of software.
+4. All software will be arbitrarily customizable, allowing for bespoke, tailored experiences.
+5. Learning to communicate with computers teaches one how to think more clearly, precisely, mathmatically, and powerfully. If one can manipulate the software one uses, if only one learns how to organize one's thoughts, many people will self-teach them how to do just that.
+6. As the fabric of the world is eaten by software, the ability to fully manipulate that software one uses is an essential freedom.
 
-While I did contribute some novel ideas to the space, I spent a lot of time retracing the steps of those that came before me. I learned the hard way that I need to read my history, learn about what others have done here.
+This vision is not new. It's not even that creative: it's obvious that people would change things if they could. Yet this problem has proven stubborn over the decades and most have given it up as insoluble. We have all but forgotten the essential characteristic of computers: their malleability.
 
+## Thesis
 
-## Collaboration
+My (current) angle on this problem is most influenced by:
 
-In the summer of 2017, I was approached by Irvin Hwang who suggested starting a NYC-based meetup group for people interested in the future of programming. I thought that was the dumbest idea I'd ever heard -- why talk to other people when I could read Alan Kay papers in my room? But I went to the first meeting and it blew my mind wide open. I learned so much in that hour! It inspired my [journal](./journal) which at the time became the core of my research project. After Irvin became busy with his new job, I took over the group that I originally thought was a waste of time. What a 180 degree turn!
+* Jonathan Edwards
+* Out of the Tarpit
+* Conal Elliot
+* Bret Victor
+* Paul Chiusano
 
-It was also around this time that I began my [Future of Coding Podcast](./index.html), where I alternate each week between recapping my own research and speaking with experts. It's been an incredibly valuable experience for me: 1) helping add structure to my research, 2) gain new insights through collaboration, 3) encourage me to reflect on my progress, and 4) give me energy as people respond to my episodes with exciement and ideas of their own.
+And is comprised of the following claims:
 
-## I need a well-defined goal
+1. The *comprehensibility* of *large* software is of utmost importance.
+2. In order to enable comprehensibility without sacraficing expressivity, we must strive to eliminate all forms of incidental complexity in programming. Programming should be describing the essential nature of the problem: the view from the user - if the user were made to see all the implications of things.
+3. Mathmatics is the langauge of essence, or as close as we can get. Something like the lambda calculus is the langauge of computation free of mechanical and historical accidents. 
+4. The solution is to create denotative languages, languages where each term denotes an equivalent mathmatical object.
+5. We must [rid ourselves of the IO Monad](http://conal.net/blog/posts/can-functional-programming-be-liberated-from-the-von-neumann-paradigm), replacing it with better abstractions for whole systems.
+6. We must have an editing experience that's lively and fluid. These mathmatical abstractions scare people because their UI stinks. This is a very difficult UI problem, but tractible.
 
-While podcasting, journaling, reading papers, and playing with others' prototypes are key to the success of this project, they are only valuable insofar as they move me closer to my main objective. So what is this objective?
+## Vague dream programming langauge system
 
+* Haskel-ish structured-ish editor in the style of Lamdu, early Unison prototypes, Dark, Luna, Isomorf, etc. This UI problem is large and unsolved. It will likely be one of the most complicated UIs ever created, and thus eventually bootstrapping would be great.
+* Web based. It’d be great if it could run in browsers but not terrible to have it communicate over socket to begin with. Eventually compiling to WebAssembly will raise all boats.
+* Hash-based definitions in the style of Unison (and possibly IPFS)
+* Naming system in the style of DNS (or something more modern) where specific people get rights to assign names to hashes, and re-assign them whenever
+* LIVE programming in the sense that terms are evaluated immediately, even if incomplete in the sense of Hazel
+* Entirely blurs the line between front-end and back-end and collapses the distinction to one of data from my computer and data from elsewhere. Computation can similarly happen on my computer and elsewhere -- both potentially for fees.
+* Everything is running, all the time, in pieces. There’s never “running” or “pausing” code, any more than there is “running”  or “pausing” a google doc. You can open and close it (or something that refers to it), but you can’t stop it.
+* And working on something new, doesn’t break anything existing.
+Changing a definition only produces a new definition but you are given the option to update all old hashes to the new definition if you wish. This is an open research problem, but I imagine Unison has solved a lot of the problems here.
 
-## Goal: Make Computing Accessible to All
+### How is this different from...?
 
-I want to live in a world where every human can make their thoughts precise enough for machines to understand them. 
+(This section is quite messy.)
 
-There are two parts to this goal:
+* Unison? It’s web-based. More UI-builder focused than cloud-focused. Also more focused on the UI than the implementation... but so was Paul in early days.
+* Lamdu? It's web-based. More UI-focused. It has no interest in reading or writing to files, putting characters on the terminal, opening sockets, etc.
+* Luna? Web-based. More concerned with UI-builder and higher-level abstractions.
+* Isomorf? It's more UI-builder focused. More of a focus on live-ness.
 
-1. Education. People need to learn to make their thoughts precise. This is often called "computational thinking." Even with amazing programming environments like LOGO or MIT Scratch, it takes students hundreds of hours to develop the thinking proccesses to communicate their ideas with computers. That's what my company The Coding Space is all about: providing an environment for students to learn computational thinking. This is to say, building an amazing tool is not enough. 
+## Open questions
 
-2. Tools. However, building an amazing tool is an enabler! The work done at The Coding Space would not be possible without the work of Seymour Papert on LOGO which inspired Mitch Resnick to create MIT Scratch. And the work I've done on WoofJS also enables our students to learn more than they could've without the tool. 
+1. Cannonical-ness - I’ve written about this elsewhere. I think it has to do with intense type and math theory stuff.
+2. While we don’t want to expose IO to the user at all, we do want to enable developers of this tool to write abstractions over IO. How do we handle that? The way Haskell does, with the IO monad?
+3. Version control in a world with a ridiculous amount of branches on branches on branches on branches.
 
-Thus you need both education and tools. As I move away from working at The Coding Space, I am shifting my focus from education to tools because I see that as currently the main limiting factor.
+## Next steps
 
-Our curriculum in Scratch is wonderful. Kids learn computational thinking while making fun games. This wonderful curriculum is continued in WoofJS where students work on learning more valuable concepts while building more complex games. However, there are two related problems:
+1. Protoyping live interface in graphics
+2. Learning about how to implement some of these features / PL theory, playing in code
+3. Abstracting over cloud data, users, authentication, permissioning, realtime games, Real World, etc
 
-1. What do students do after they are done with WoofJS?
-2. What if students don't want to make simple and silly games in Scratch or WoofJS? What if they want to create real applications to solve real problems? Why should they have to mess around in toy programming environments for a couple hundred hours before getting to "real coding"? And then once they get to real coding why must these students spend hundreds more hours learning "real coding"'s tools with such poor usability?
-
-Clearly what's needed is **a tool with the power of a general-purpose programming language with the usability qualities of a standard end-user application** 
-
-
-There are a few notable things missing from this goal which I want to make explicit:
-
-1. My aim is not to create a company. My aim is to produce a tool. If it seems like a company is the best way to accomplish this aim, so be it. However, I aspire to be able to create this tool outside of a traditional company structure, more like Linux or CycleJS.
-
-2. I don't need to be the person who creates this tool. I will judge this project an unqualified success if it somehow inspires or informs the creation of this tool by someone else. Would I prefer to create it myself? Yes, that does seem fun. However, I aspire to not be sad if someone beats me to the punch. I aspire to give that person a metaphorical high five, and them move on to the next world-changing project on my to-do list.
-
-3. Yes, this goal is vague. I do not want to commit to what this tool will look like in its goal. You can read [my specific design priciples about what it may look like here](./priciples).
-
-
-## Constraints
-
-1. My time. Currently it's limited to 20ish hours per week for this project. Over time I will increase this time as I decrease my commitmentes to other projects. However, as my work-life balance is important to me (and to the long-term sustainability of this project), I will have a maximum of 40ish hours per week here. Thus it is important both to 1) spend my time in a maximally useful way and 2) to leverage other people.
-
-2. Capital. While I do have enough capital to sustain myself working on this project indefinitely, I do not currently have the funds to sustain others. I wonder if this will become more of a blocker over time as I collaborate with others that need day jobs to pay the bills and what creative solutions we can come up with to overcome this.
-
-3. Knowledge. While I have been programming for a decade and developing programming languages for years now, there is still so much more for me to learn. It sometimes feels endless, because even as I gain appreciation for all the work that has been done before, it is impossible to stay astride of all the new innovations in the field that are being developed constantly. Filtering out the noise will become increasingly important.
-
-
-## Strategy
-
-1. Articulate the goal
-2. Come up with a plan to achieve the goal
-3. Get feedback on the plan, and revise the plan accordingly
-4. Attack the plan
-5. Periodically reflect on how the plan has made progress towards the goal. If the goal has not been acheieved, return to step 2. If it has been achieved, pick another goal and return to step 1.
-
-I have the goal, and the strategy, so now I need a plan...
-
-## The Plan
-
-### What I know
-
-1. Code on github.
-2. Engaged developer community.
-3. Engaged user community
-
-### What I do not know
-
-1. Compile target
-2. Early use cases
-3. Early customers
-4. Interface / paradigm
-
-### Endgame
-
-1. Have an idea for a tool
-2. Begin prototyping it
-3. Test it out with users
-4. Iterate on it until it
-5. Get user traction
-6. Get contributor traction
-7. Manage its development until its ready to be passed onto someone else
-
-### How should I balance my time?
-
-There are a few different activities I can do:
-
-1. General research (like reading Alan Kay or Bret Victor)
-2. Working on a specific project (like reading Conal Elliot to learn about FRP for StreamSheets)
-3. Build a community (hosting meetups, connecting people, podcasting)
-4. High-level strategy (master planning like this)
-
-But at the end of the day, only (2) working on a specific project will lead to the endgame. Everything else is just a way to arrive at (2). So the way to get there faster is by both 1) increasing the amount and quality of ideas, and 2) increasing the speed at which we can invalidate bad ideas. 
-
-I should partake in (1) general research only when trying to come up with better ideas because we don't have good ones to work on.
-
-I'm not entirely clear how to think about (3) building a community, because while it won't directly lead to me accomplishing the endgame, it will increase the odds that I inspire someone else to, which would also accomplish my goal. As a reasonable approximation, I want to spend ~10% of my time (or 4 hours per week) on this.
-
-Finally, I am finding a lot of value in Master Planning in this way. I think I should reflect on my progress towards this plan weekly if not more often, but set aside special time to think more deliberately about it.
-
-## Prototype Options
-
-### 1. StreamSheets
-
-TODO LINK
-
-### 3. FRP WoofJS 
-
-TODO LINK
-
-### 4. Better generic interface than text 
-
-TODO LINK
-
-Blocks, structured editor, flow diagram, spreadsheet interface, multiple representations (email guy)
-
-## Current Protoype: FRP WoofJS or Scratch
-
-### Fight the battle with one interesting front
-
-With FRP WoofJS, I know the compile target (HTML canvas, JS, Elm, or CycleJS), early use case (games and animations), and early users (my students at The Coding Space). The only think I don't know is the paradigm / interface for the tool.
-
-### Next steps:
-
-get Paul's advice here, as well as Scott Mueller, Emmanuel Schnazer, and Christopher Anand.
-
-read Conal Elliot, Ludcid, play with Elm, Pyret, Reflex
-
-build a few toy apps
-
-
+[1] - "All people" is a strong phrase. Apparently 77% of Wikipedia is written by 1% of editors - and that's not even counting users. The difference with software is that people will want to customize it for themselves, while Wikipedia is for a general audience, so there's less motivation to edit it.
 
 <script>
 
