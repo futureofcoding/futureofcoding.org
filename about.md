@@ -6,7 +6,7 @@ title: About
 
 ## tl;dr
 
-Future of Coding is a research project and podcast by me, Steve Krouse. My research is focused on building an open-source programming langauge / system. The podcast alternates between interviews with programming language experts and reflections on my own research journy.
+Future of Coding is a research project and podcast by me, Steve Krouse. My research is focused on building an open-source programming langauge. The podcast alternates between interviews with programming language experts and reflections on my own research journy.
 
 ## Me
 
@@ -14,21 +14,21 @@ Hi, my name is Steve Krouse. When I meet people, I like to begin with life stori
 
 I was born in NYC in 1994 and raised in South Florida.
 
-As a kid, I was "bad at school", and particularly "bad at math." However, as I was a "computer kid", I started going to a wonderful after-school computer science program, [IMACS](https://imacs.org). Through learning LOGO, Scheme, Java and Haskell in middle school and high school at IMACS's self-paced, and nurturing environment, I became a computational, mathmatical, and introspective thinker. I became very good at school, especially mathematics and physics.
+As a kid, I was "bad at school", and particularly "bad at math." However, as I was a "computer kid", I started going to a wonderful after-school computer science program, [IMACS](https://imacs.org). Through learning LOGO, Scheme, Java, and Haskell in middle school and high school at IMACS's self-paced, nurturing environment, I became a computational, mathmatical, and introspective thinker. I became very good at school, especially mathematics and physics. 
 
 I went to the University of Pennslyvania for college. After taking most of the CS classes at Penn, I left without graduating in early 2014, and went to work at [Looker](https://looker.com). I left Looker at the end of 2014. 
 
-While at college and Looker, I was deeply influenced by Bret Victor and Seymour Papert. Ever since my experience of transforming from a self-identified "stupid person" to a "smart person" in middle school, I was curious about how it happened and if similar changes could be nurtured in others. Reading Papert in college, I learned that my own transformation was was no accident - Seymour intentially set out to create mathmatical thinkers from math-haters with LOGO, and he accomplished his goal in me.
+While at college and Looker, I was deeply influenced by Bret Victor and Seymour Papert. Ever since my experience of transforming from a self-identified "stupid person" to a "smart person" in middle school, I was curious about how it happened and if similar changes could be nurtured in others. Reading Papert in college, I learned that my own transformation was was no accident - Papert intentially set out to create mathmatical thinkers from math-haters with LOGO, and he accomplished his goal in me.
 
-With these thoughts in mind, in July 2015 I co-founded [The Coding Space](https://thecodingspace.com), where We taught kids to code in a self-paced environment similar in spirit to IMACS. I created [a Scratch-based curriculum](https://coding.space), as well as [WoofJS](https://woofjs.com), a JavaScript framework and oneline IDE to transition kids from Scratch to JS.
+With these thoughts in mind, in July 2015 I co-founded [The Coding Space](https://thecodingspace.com), where we taught kids to code in a self-paced environment similar in spirit to IMACS. I created [a Scratch-based curriculum](https://coding.space), as well as [WoofJS](https://woofjs.com), a JavaScript framework and oneline IDE to transition kids from Scratch to JS.
 
-Sometime in the middle of 2017, I left The Coding Space to work on programming langauges full time. 
+In mid-2017, I left The Coding Space to work on programming langauges full time. 
 
-When I first began working, I thought I'd have the whole thing solved in just a matter of months, all by myself. I was wrong. While I did contribute make some interesting prototypes, I spent a lot of time retracing the steps of those that came before me. I learned the hard way that I need to read my history.
+At first, I thought I'd have the whole thing solved in just a matter of months, all by myself. I was wrong. While I did make some interesting prototypes, I spent a lot of time retracing the steps of those that came before me. I learned the hard way that I need to read my history.
 
 In the summer of 2017, I was approached by Irvin Hwang who suggested starting a NYC-based meetup group for people interested in the future of programming. I thought that was the dumbest idea I'd ever heard: why talk to other people when I could read Alan Kay papers in my room? But I went to the first meeting and it blew my mind wide open. I learned so much in that hour! It inspired my [log](./log) which has become the core of my research practice. After Irvin became busy with his new job, I took over the group, and created a Slack for "future of programming folks" all over the world. I learned the easy way the importance of community.
 
-It was also around this time that I began the podcast. I alternates between recapping my own research and speaking with experts. It's been an incredibly valuable experience for me, helping add structure to my research, gaining new insights through collaboration, encouraging me to reflect on my progress, and giving me energy as people respond to my episodes with exciement and ideas of their own.
+It was also around this time that I began the podcast. It alternates between recapping my own research and speaking with experts. It's been an incredibly valuable experience for me, helping add structure to my research, gaining new insights through collaboration, encouraging me to reflect on my progress, and giving me energy as people respond to my episodes with exciement and ideas of their own.
 
 My framing for this project has gone through a number of turbulent stages (Bret-Victor-wannabe, total-disenhartenment, irrational exuberance, etc), but I have recently (as of Fall 2018) come to a very positive mental space, described below. These days, I describe myself as a *programming language designer*, because my goal is to create a working system (not just produce research) that resembles a programming langauge in its expressive power, but will feel more like a system in the Excel or Smalltalk sense than a text-and-compiler-based programming language.
 
@@ -36,16 +36,16 @@ My framing for this project has gone through a number of turbulent stages (Bret-
 
 The mission of this project is to *enable all people[1] to modify the software they use in the course of using it*. 
 
-This mission is would cause the following changes, in order of increasing importance:
+This mission would cause the following changes, in order of increasing importance:
 
 1. All software will be co-created by decentralized communities, rather than centralized groups or companies. 
 2. Through the power of crowd-sourcing, the quality of all software will become much higher than existing software.
 3. All software will be much more composible, interoperable with other pieces of software.
 4. All software will be arbitrarily customizable, allowing for bespoke, tailored experiences.
-5. Learning to communicate with computers teaches one how to think more clearly, precisely, mathmatically, and powerfully. If one can manipulate the software one uses, if only one learns how to organize one's thoughts, many people will self-teach them how to do just that.
+5. Learning to communicate with computers teaches one how to think more clearly, precisely, mathmatically, and powerfully. If one can manipulate the software one uses, if only one learns how to organize one's thoughts, many people will self-teach themselvse to do just that.
 6. As the fabric of the world is eaten by software, the ability to fully manipulate that software one uses is an essential freedom.
 
-This vision is not new. It's not even that creative: it's obvious that people would change things if they could. Yet this problem has proven stubborn over the decades and most have given it up as insoluble. We have all but forgotten the essential characteristic of computers: their malleability.
+This vision is not new nor creative: it's obvious that people would change things if they could. Yet this problem has proven stubborn over the decades and most have given it up as insoluble. We have all but forgotten the essential characteristic of computers: their malleability.
 
 ## Thesis
 
@@ -78,14 +78,19 @@ And is comprised of the following claims:
 * And working on something new, doesn’t break anything existing.
 Changing a definition only produces a new definition but you are given the option to update all old hashes to the new definition if you wish. This is an open research problem, but I imagine Unison has solved a lot of the problems here.
 
+## Killer app
+
+If/when this platform is built, the first app I'll build in it is a build-your-own-email-app kit. Everyone's email workflow is specific and it's a huge part of how we all run our lives. Being able to customize things to exactly how we'd like them would be a superpower. For myself, I'd like to be able to combine my email app with features of task management applications, such as re-ordering items and nesting items within other items. Part of the inspiration for this "killer app" is that Google Inbox, my preferred email client, is being shut down in a few months. The economics of building a consumer quality app only allows for lowest-common-denominator experiences. The only way to mantain sustainable personalized experiences is with a crowd-sourced development platform. I imagine we'd want to leverage GMail's API to do this.
+
 ### How is this different from...?
 
-(This section is quite messy.)
+[This section is quite messy.]
 
 * Unison? It’s web-based. More UI-builder focused than cloud-focused. Also more focused on the UI than the implementation... but so was Paul in early days.
 * Lamdu? It's web-based. More UI-focused. It has no interest in reading or writing to files, putting characters on the terminal, opening sockets, etc.
 * Luna? Web-based. More concerned with UI-builder and higher-level abstractions.
 * Isomorf? It's more UI-builder focused. More of a focus on live-ness.
+* Dark? It's more focused on the front-end.
 
 ## Open questions
 
