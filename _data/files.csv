@@ -1,5 +1,10 @@
 fileName
+./links.md
+./plan.md
+./about.md
+./ideas.md
 ./unbreakable-links/README.md
+./404.md
 ./reflections/13.md
 ./reflections/10.md
 ./reflections/11.md
@@ -55,6 +60,8 @@ fileName
 ./code/reflex/button_and_text.jsexe/index.html
 ./essays/sissies.md
 ./essays/eve/index.html
+./principles.md
+./index.html
 ./drafts/customer-support.md
 ./drafts/casual.md
 ./drafts/app-idea.md
@@ -64,6 +71,9 @@ fileName
 ./drafts/invented-or-discovered.md
 ./drafts/power.md
 ./drafts/legal-code.md
+./log.md
+./README.md
+./journal.md
 ./episodes/15-raising-genius-with-scott-mueller.html
 ./episodes/20.md
 ./episodes/2-research-recap.html
