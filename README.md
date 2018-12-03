@@ -10,7 +10,7 @@ Feel free to shoot me an email as well. I'm steve at futureofcoding.org.
 
 [My podcast pipeline](https://github.com/stevekrouse/futureofcoding.org/projects/1) is where I organize my guests.
 
-I keep a number of ["virtual webpage"](https://github.com/stevekrouse/futureofcoding.org/issues?q=is%3Aopen+is%3Aissue+label%3A%22virtual+webpage%22) when a GitHub issue is a better format for them than a regular webpage for some reason.
+I keep a number of ["virtual webpages"](https://github.com/stevekrouse/futureofcoding.org/issues?q=is%3Aopen+is%3Aissue+label%3A%22virtual+webpage%22) when a GitHub issue is a better format for them than a regular webpage for some reason.
 
 ## Developing notes
 
