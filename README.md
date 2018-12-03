@@ -10,6 +10,8 @@ Feel free to shoot me an email as well. I'm steve at futureofcoding.org.
 
 My podcast pipeline can be found here: https://github.com/stevekrouse/futureofcoding.org/projects/1
 
+There a number of GitHub Issue that serve as "virtual webpages" because a GitHub issue is a better format for them than a regular webpage for some reason. They can be found here: https://github.com/stevekrouse/futureofcoding.org/issues?q=is%3Aopen+is%3Aissue+label%3A%22virtual+webpage%22
+
 ## Developing notes
 
 ### Remove large media files locally
