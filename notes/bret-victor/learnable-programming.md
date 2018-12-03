@@ -141,7 +141,7 @@ This is also key. CycleJS devtools diagram.
 
 > The environment can represent time at multiple granularities, such as frames or event responses, to enable exploration across these meaningful chunks of execution.
 
-Again, this sounds to me like add-ons that the community could build given a really solid underlying structure. A structure that Conal Elliot would build. Perfect abstractions.
+Again, this sounds to me like add-ons that the community could build given a really solid underlying structure. A structure that Conal Elliott would build. Perfect abstractions.
 
 ### FRP Scratch
 
@@ -328,7 +328,7 @@ I can't put a finger on why, but this feels like a powerful insight. But then ag
 
 #### Sequencing and monads
 
-Despite all my FP and Haskell experience, I never felt very comforatable with monads. This is probably related to the fact that I only used Haskell in the university setting. However, potentially monads aren't needed for sequencing side-effect-y code. That's what FRP is supposed to be for, right? This section of the essay, unsurprisingly, is making me want to do my Conal Elliot FRP deep dive sooner rather than later.
+Despite all my FP and Haskell experience, I never felt very comforatable with monads. This is probably related to the fact that I only used Haskell in the university setting. However, potentially monads aren't needed for sequencing side-effect-y code. That's what FRP is supposed to be for, right? This section of the essay, unsurprisingly, is making me want to do my Conal Elliott FRP deep dive sooner rather than later.
 
 ### Readability
 

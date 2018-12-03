@@ -111,11 +111,11 @@ Just kidding. It's 2018. Who's writing a terminal apps? Luckily creating web app
 
 ## Functional Reactive Programming
 
-Funnily enough, the popular way to create web apps in 2018 is based on the work of early Haskellers Conal Elliot and Paul Hudak. They came up with a way of declaratively describing interactive animations *with only pure functions, no monads required*. ReactJS, VueJS, CycleJS, etc are based on this "reactive" paradigm, where you declaratively describe what's on the page, as opposed to imperitively adding and removing characters to the screen one-by-one. Of course, there's code somewhere in your computer that's adding and removing characters from the screen, but we don't have to worry about that - it's below our level of abstraction. 
+Funnily enough, the popular way to create web apps in 2018 is based on the work of early Haskellers Conal Elliott and Paul Hudak. They came up with a way of declaratively describing interactive animations *with only pure functions, no monads required*. ReactJS, VueJS, CycleJS, etc are based on this "reactive" paradigm, where you declaratively describe what's on the page, as opposed to imperitively adding and removing characters to the screen one-by-one. Of course, there's code somewhere in your computer that's adding and removing characters from the screen, but we don't have to worry about that - it's below our level of abstraction. 
 
 TODO how does FRP accomplish this?
 
-This doesn't just apply to user interfaces. Conal Elliot argues in [Can functional programming be liberated from the von Neumann paradigm?](http://conal.net/blog/posts/can-functional-programming-be-liberated-from-the-von-neumann-paradigm) that we can perform that same trick for any IO-based software interface. 
+This doesn't just apply to user interfaces. Conal Elliott argues in [Can functional programming be liberated from the von Neumann paradigm?](http://conal.net/blog/posts/can-functional-programming-be-liberated-from-the-von-neumann-paradigm) that we can perform that same trick for any IO-based software interface. 
 
 
 ## Are we there yet?

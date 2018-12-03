@@ -597,7 +597,7 @@ Andre replied already! He is busy preparing for a bunch of conferences so might 
 * Jonathan Edwards
   * https://github.com/stevekrouse/futureofcoding.org/commit/52a0d72bc49f2d56eebcfcdaae440467008f1cd2
   * https://github.com/stevekrouse/futureofcoding.org/commit/cd83671ac0a4d68818c40815c9f5202ec078aafc
-* Conal Elliot
+* Conal Elliott
   * https://github.com/stevekrouse/futureofcoding.org/commit/52a0d72bc49f2d56eebcfcdaae440467008f1cd2 
 * Eve
   * http://futureofcoding.org/journal#my-first-full-day-with-eve

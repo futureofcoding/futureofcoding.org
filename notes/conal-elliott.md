@@ -1,8 +1,8 @@
 ---
-title: Conal Elliot
+title: Conal Elliott
 ---
 
-# Conal Elliot
+# Conal Elliott
 
 * TOC
 {:toc}

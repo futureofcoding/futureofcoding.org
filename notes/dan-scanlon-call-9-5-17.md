@@ -67,7 +67,7 @@ title: Dan Scanlon Call 9/5/17
   * doing this research in his free time
     * restraining himself from coding it himself
     * trying to think it out in his head, hypothetically
-    * TODO Elliot Conal denotational design
+    * TODO Elliott Conal denotational design
 
 * Get his feedback on my research
   * StreamSheets

@@ -53,7 +53,7 @@ My (current) angle on this problem is most influenced by:
 
 * Jonathan Edwards
 * Out of the Tarpit
-* Conal Elliot
+* Conal Elliott
 * Bret Victor
 * Paul Chiusano
 

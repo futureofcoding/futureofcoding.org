@@ -501,12 +501,12 @@ title: Link Research
   * haskell programming as a graph
   * I don't usually find graphs compelling. I prefer blocks/structured editor approaches which leave the text closer to prose sentences for better reading. I'm not a computer so I don't like reading trees.
 
-* [Conal Elliot - Tangible Functional Programming](https://www.youtube.com/watch?v=faJ8N0giqzw)
+* [Conal Elliott - Tangible Functional Programming](https://www.youtube.com/watch?v=faJ8N0giqzw)
   * the dream: combine usability and composability (so like IFFT but at the right level of abstraction)
   * UNIX pipes with input and output text makes it easy to compose
   * I've already seen this video, I'm now realizing, he shows how to drag outputs into inputs in a GUI
 
-* [Conal Elliot - Fran - Composing Reactive Animations](http://conal.net/fran/tutorial.htm)
+* [Conal Elliott - Fran - Composing Reactive Animations](http://conal.net/fran/tutorial.htm)
   * Holy shit! This is like Reactive WoofJS (or the Elm game engine) but was made in 1998 in Haskell! He makes quick work of my "inital value problem": simply give a function all the arugments it needs, starting value, and rate of increase
   * Let me send this over to my friends at McMaster University to see if they've thought about making an Elm version...
 
@@ -514,7 +514,7 @@ title: Link Research
   * seperate design spec from implementation
   * FRP is about continuous time in the same way vector graphics are about continuous space
   
-* [Conal Elliot - Denotational Design](http://conal.net/papers/type-class-morphisms/)
+* [Conal Elliott - Denotational Design](http://conal.net/papers/type-class-morphisms/)
   * "The purpose of abstraction is not to be vauge but to create a new semantic level in which one can be absolutely precise." - Dijkstra
   * Peter Landin reccomends that "denotive" to replace ill-defined "functional" and "declarative". A langauge is only "denotive" if each expression only depends on sub-expressions
   * before you think about implementation... what are the main types, main operations, what do the types mean?
