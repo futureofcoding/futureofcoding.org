@@ -379,15 +379,5 @@ But I will say that I got a lot out of this. It's difficult to imagine a world w
 This is less related to this particular essay, but... I'm also beginning to detect a communication style that Bret (and others in social activism) use that is compelling (because it plays off of our favorite emotion: outrage), but not helpful for solving problems. It makes me wonder where the "get up and go" to persue a social cause comes from, if not from outrage (or the desire to be right, or to achieve high status). That is, I am theorizing that people with social causes are *less*, not more, concerned with the happiness of other people, despite them purporting to work on their behalf. If they were truly interested in the needs of other people, why not help people in the terms which they want to be helped?
 
 
-<script>
-
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-103157758-1', 'auto');
-ga('send', 'pageview');
-
-</script>
+{% include analytics.html %}
 

@@ -20,14 +20,4 @@ Really interesting, and quite similar to my thoughts around "throwing out HTML a
 
 Kevin explains the motivation for this library in [this video](https://www.deconstructconf.com/2017/kevin-lynagh-choosing-features). Instead of margin, padding, absolute-positioning, and flexbox, they simplify laying out content with two concepts: 1) position before, size, position after, and 2) stretch pixels, which can be used to define relationships between the quantities in (1). This is a clever way to avoid making designers specify relationships with algebra but still ahve a lot of expressivity.
 
-<script>
-
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-103157758-1', 'auto');
-ga('send', 'pageview');
-
-</script>
+{% include analytics.html %}

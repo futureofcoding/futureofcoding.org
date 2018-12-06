@@ -68,5 +68,4 @@ title: Research Ideas
 
 * community where you pair near-peers together to learn together (no money making)
 
-
-
+{% include analytics.html %}

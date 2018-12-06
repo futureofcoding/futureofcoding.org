@@ -151,14 +151,4 @@ There are a few things that Evan misses:
 
 Finally, Evan scores a nice shot on BV by pointing out that he hides the underlying formula in his Explorable Explanation article. Yet this criticism rings false as he's criticizing the same guy who made [TenBrighterIdeas](http://worrydream.com/TenBrighterIdeas/) which allows you to see the entire model as well as edit the actual source code.
 
-<script>
-
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-103157758-1', 'auto');
-ga('send', 'pageview');
-
-</script>
+{% include analytics.html %}
