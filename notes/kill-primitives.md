@@ -111,5 +111,5 @@ Conal Ellot's denotation design. [This article was helpful in accessing it](http
   ga('create', 'UA-103157758-1', 'auto');
   ga('send', 'pageview');
 </script>
-<script repoPath="stevekrouse/futureofcoding.org" type="text/javascript" src="/unbreakable-links/index.js"></script>
+
 

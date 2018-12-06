@@ -29,5 +29,5 @@ Very intersting thread: https://github.com/funkia/turbine/issues/51
   ga('create', 'UA-103157758-1', 'auto');
   ga('send', 'pageview');
 </script>
-<script repoPath="stevekrouse/futureofcoding.org" type="text/javascript" src="/unbreakable-links/index.js"></script>
+
 

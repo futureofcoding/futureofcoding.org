@@ -50,5 +50,5 @@ I skimmed a few of these, but they were confusing. Will need to come back at som
   ga('create', 'UA-103157758-1', 'auto');
   ga('send', 'pageview');
 </script>
-<script repoPath="stevekrouse/futureofcoding.org" type="text/javascript" src="/unbreakable-links/index.js"></script>
+
 

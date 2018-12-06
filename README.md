@@ -88,4 +88,4 @@ function journal {
 }
 ```
 
-<script repoPath="stevekrouse/futureofcoding.org" type="text/javascript" src="/unbreakable-links/index.js"></script>
+

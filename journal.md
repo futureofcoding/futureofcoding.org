@@ -1402,4 +1402,3 @@ Clearly, I should start with (8) because it will help me come up with other thin
    }
   
   </script>
-<script repoPath="stevekrouse/futureofcoding.org" type="text/javascript" src="/unbreakable-links/index.js"></script>
