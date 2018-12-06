@@ -1,3 +1,4 @@
 timezone: America/New_York
 plugins:
   - jekyll-sitemap
+url: "https://futureofcoding.org"
