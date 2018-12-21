@@ -43,74 +43,73 @@ You are welcomd to join [our Slack community](https://join.slack.com/t/futurepro
 
 # Episodes
 
+<span class="date">2018 Dec 05 -</span> [#34 - The Edges of Representation: Katherine Ye](./episodes/034)
 
-<span class="date">2018 Dec 05 -</span> [#34 - The Edges of Representation: Katherine Ye](./episodes/34)
+<span class="date">2018 Nov 28 -</span> [#33 - Reflection 14: /about](./episodes/033)
 
-<span class="date">2018 Nov 28 -</span> [#33 - Reflection 14: /about](./episodes/33)
+<span class="date">2018 Oct 24 -</span> [#32 - Basic Developer Human Rights: Quinn Slack](./episodes/032)
 
-<span class="date">2018 Oct 24 -</span> [#32 - Basic Developer Human Rights: Quinn Slack](./episodes/32)
+<span class="date">2018 Oct 12 -</span> [#31 - Sustaining the Underfunded: Nadia Eghbal](./episodes/031)
 
-<span class="date">2018 Oct 12 -</span> [#31 - Sustaining the Underfunded: Nadia Eghbal](./episodes/31)
+<span class="date">2018 Sep 22 -</span> [#30 - On The Maintenance Of Large Software: James Koppel](./episodes/030)
 
-<span class="date">2018 Sep 22 -</span> [#30 - On The Maintenance Of Large Software: James Koppel](./episodes/30)
+<span class="date">2018 Aug 27 -</span> [#29 - Reflection 13: Independent Mentorship](./episodes/029)
 
-<span class="date">2018 Aug 27 -</span> [#29 - Reflection 13: Independent Mentorship](./episodes/29)
+<span class="date">2018 Aug 27 -</span> [#28 - Exploring Dynamicland: Omar Rizwan](./episodes/028)
 
-<span class="date">2018 Aug 27 -</span> [#28 - Exploring Dynamicland: Omar Rizwan](./episodes/28)
+<span class="date">2018 Jul 17 -</span> [#27 - Bringing Explicit Modeling To The Web: David K Piano](./episodes/027)
 
-<span class="date">2018 Jul 17 -</span> [#27 - Bringing Explicit Modeling To The Web: David K Piano](./episodes/27)
+<span class="date">2018 Jul 03 -</span> [#26 - Compassion & Programming: Glen Chiacchieri](./episodes/026)
 
-<span class="date">2018 Jul 03 -</span> [#26 - Compassion & Programming: Glen Chiacchieri](./episodes/26)
+<span class="date">2018 Jun 12 -</span> [#25 - You Should Think About Some States: Kevin Lynagh](./episodes/025)
 
-<span class="date">2018 Jun 12 -</span> [#25 - You Should Think About Some States: Kevin Lynagh](./episodes/25)
+<span class="date">2018 May 22 -</span> [#24 - Stop Being A Sysadmin For Your Own Machine: Nick Santos](./episodes/024)
 
-<span class="date">2018 May 22 -</span> [#24 - Stop Being A Sysadmin For Your Own Machine: Nick Santos](./episodes/24)
+<span class="date">2018 May 17 -</span> [#23 - Teaching Abstraction: Brent Yorgey](./episodes/023)
 
-<span class="date">2018 May 17 -</span> [#23 - Teaching Abstraction: Brent Yorgey](./episodes/23)
+<span class="date">2018 May 02 -</span> [#22 - Learning Programming At Scale: Philip Guo](./episodes/022)
 
-<span class="date">2018 May 02 -</span> [#22 - Learning Programming At Scale: Philip Guo](./episodes/22)
+<span class="date">2018 Feb 01 -</span> [#21 - Building for Developers: Aidan Cunniffe](./episodes/021)
 
-<span class="date">2018 Feb 01 -</span> [#21 - Building for Developers: Aidan Cunniffe](./episodes/21)
+<span class="date">2017 Dec 29 -</span> [#20 - Coding on (the) Beach: Jason Brennan](./episodes/020)
 
-<span class="date">2017 Dec 29 -</span> [#20 - Coding on (the) Beach: Jason Brennan](./episodes/20)
+<span class="date">2017 Dec 13 -</span> [#19 - Building Universe: Joe Cohen](./episodes/019)
 
-<span class="date">2017 Dec 13 -</span> [#19 - Building Universe: Joe Cohen](./episodes/19-building-universe-joe-cohen.html)
+<span class="date">2017 Dec 04 -</span> [#18 - Research Recap Nine: Constructing My Crusade](./episodes/018)
 
-<span class="date">2017 Dec 04 -</span> [#18 - Research Recap Nine: Constructing My Crusade](./episodes/18-research-recap-nine.html)
+<span class="date">2017 Nov 28 -</span> [#17 - Bootstrapping Bubble.is: Emmanuel Straschnov](./episodes/017)
 
-<span class="date">2017 Nov 28 -</span> [#17 - Bootstrapping Bubble.is: Emmanuel Straschnov](./episodes/17-bootstrapping-bubble-is-emmanuel-straschnov.html)
+<span class="date">2017 Nov 06 -</span> [#16 - Research Recap Eight: Life & Work Planning](./episodes/016)
 
-<span class="date">2017 Nov 06 -</span> [#16 - Research Recap Eight: Life & Work Planning](./episodes/16-research-recap-eight-life-and-work-planning.html)
+<span class="date">2017 Oct 17 -</span> [#15 - Raising Genius with Scott Mueller](./episodes/015)
 
-<span class="date">2017 Oct 17 -</span> [#15 - Raising Genius with Scott Mueller](./episodes/15-raising-genius-with-scott-mueller.html)
+<span class="date">2017 Oct 09 -</span> [#14 - Research Recap Seven: Master Planning](./episodes/014)
 
-<span class="date">2017 Oct 09 -</span> [#14 - Research Recap Seven: Master Planning](./episodes/14-research-recap-seven-master-planning.html)
+<span class="date">2017 Oct 03 -</span> [#13 - Teaching Elm To 4th Graders: Christopher Anand](./episodes/013)
 
-<span class="date">2017 Oct 03 -</span> [#13 - Teaching Elm To 4th Graders: Christopher Anand](./episodes/13-teaching-elm-to-4th-graders-christopher-anand.html)
+<span class="date">2017 Sep 25 -</span> [#12 - Research Recap Six: CycleJS Deep Dive](./episodes/012)
 
-<span class="date">2017 Sep 25 -</span> [#12 - Research Recap Six: CycleJS Deep Dive](./episodes/12-research-recap-six-cycle-js-deep-dive.html)
+<span class="date">2017 Sep 19 -</span> [#11 - How ReactJS was created - with Pete Hunt](./episodes/011)
 
-<span class="date">2017 Sep 19 -</span> [#11 - How ReactJS was created - with Pete Hunt](./episodes/11-how-reactjs-was-created-with-pete-hunt.html)
+<span class="date">2017 Sep 13 -</span> [#10 - Unison's Paul Chiusano on how Abstraction Will Save Distributed Computing](./episodes/010)
 
-<span class="date">2017 Sep 13 -</span> [#10 - Unison's Paul Chiusano on how Abstraction Will Save Distributed Computing](./episodes/10-unisons-paul-chiusano-on-how-abstraction-will-save-distributed-computing.html)
+<span class="date">2017 Sep 11 -</span> [#09 - Research Recap Five](./episodes/009)
 
-<span class="date">2017 Sep 11 -</span> [#09 - Research Recap Five](./episodes/9-research-recap-five.html)
+<span class="date">2017 Aug 30 -</span> [#08 - Research Recap Four](./episodes/008)
 
-<span class="date">2017 Aug 30 -</span> [#08 - Research Recap Four](./episodes/8-research-recap-four.html)
+<span class="date">2017 Jul 21 -</span> [#07 - Looker's Lloyd Tabb on Growing Languages Through Deprecation](./episodes/007)
 
-<span class="date">2017 Jul 21 -</span> [#07 - Looker's Lloyd Tabb on Growing Languages Through Deprecation](./episodes/7-lookers-lloyd-tab-on-growing-languages-through-deprecation.html)
+<span class="date">2017 Aug 24 -</span> [#06 - Research Recap Three (WoofJS Workflow)](./episodes/006)
 
-<span class="date">2017 Aug 24 -</span> [#06 - Research Recap Three (WoofJS Workflow)](./episodes/6-research-recap-three.html)
+<span class="date">2017 Aug 09 -</span> [#05 - Samantha John of Hopscotch on Learnable Programming](./episodes/005)
 
-<span class="date">2017 Aug 09 -</span> [#05 - Samantha John of Hopscotch on Learnable Programming](./episodes/5-samantha-john.html)
+<span class="date">2017 Aug 09 -</span> [#04 - Research Recap Two](./episodes/004)
 
-<span class="date">2017 Aug 09 -</span> [#04 - Research Recap Two](./episodes/4-research-recap-two.html)
+<span class="date">2017 Jul 29 -</span> [#03 - Jonathan Leung on Inventing on Principle](./episodes/003)
 
-<span class="date">2017 Jul 29 -</span> [#03 - Jonathan Leung on Inventing on Principle](./episodes/3-jonathan-leung-on-inventing-on-principle.html)
+<span class="date">2017 Jul 16 -</span> [#02 - Research Recap](./episodes/002)
 
-<span class="date">2017 Jul 16 -</span> [#02 - Research Recap](./episodes/2-research-recap.html)
-
-<span class="date">2017 Jul 13 -</span> [#01 - Welcome to the Future of Coding](./episodes/1-welcome.html)
+<span class="date">2017 Jul 13 -</span> [#01 - Welcome to the Future of Coding](./episodes/001)
 
 # Papers
 
