@@ -54,16 +54,17 @@ First, `pip install git2json` as explained [here](https://github.com/tarmstrong/
 Then create `.git/hooks/post-commit` with the following contents:
 
 ```bash
-# to get the data for directory listings
-echo 'fileName' > _data/files.csv && find . -regextype posix-egrep -regex ".*\.(md|html)$"  -not -path "./_site/*" >> _data/files.csv
-
-# get the data for git log
-git2json > _data/git-log.json
-
 previousMessage=$(git log -1 --pretty=%B)
 
 if [ "$previousMessage" != "updated git log" ]
 then
+    git2json > _data/git-log.json
+    echo 'fileName' > _data/files.csv && find . -regextype posix-egrep -regex ".*\.(md|html)$"  -not -path "./_site/*" >> _data/files.csv
+    
+    # https://stackoverflow.com/questions/16993082/why-doesnt-git-recognize-that-my-file-has-been-changed-therefore-git-add-not-w
+    git rm --cached _data/files.csv
+    git reset _data/files.csv
+    
     git add _data/git-log.json
     git add _data/files.csv
     git commit -m "updated git log" 
