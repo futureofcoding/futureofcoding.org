@@ -56,4 +56,4 @@ Features that you probably already have in mind:
     - Same with color, although it's less obvious how to animate that.
 
 
-{% include analytics.html %}
+

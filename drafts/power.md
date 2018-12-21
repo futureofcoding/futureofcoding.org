@@ -46,5 +46,5 @@ I know what you're thinking. "Ok, I agree this is a beautiful vision, but how do
 
 Stay tuned. I have a few ideas on how we can get there. Spoiler alert: interpreted functional (reactive) programming with live visualizations.
 
-{% include analytics.html %}
+
 

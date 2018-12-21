@@ -244,5 +244,5 @@ Haven't read.
 
 
 
-{% include analytics.html %}
+
 

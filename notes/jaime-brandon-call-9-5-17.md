@@ -61,4 +61,4 @@ title: Jaime Brandon Call 9/5/17
   * 15 min of saying hi
   * then pair people randomly and send them on 15min walks (TODO add this to list of options for future programming meetings)
 
-{% include analytics.html %}
+

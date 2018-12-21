@@ -78,4 +78,4 @@ The CycleJS way is to put pointers in your view code and then declaratively defi
 One visual metaphor I have in mind: state is a product of interacting with the view, so why not put the construction of state to the right of the view? Of course, the view is a function of the state, but it's just a consumer of state so you can just reference it as a value to the left of the view. What's missing from this metaphor is the merging of events, and mapping them into actions, and then updating a centralized state by action, which seems neccesary for scalability, yet in my mind seems not much different from just allowing nested components to mutate global state willy nilly.
 
 
-{% include analytics.html %}
+

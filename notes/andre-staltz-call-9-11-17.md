@@ -118,4 +118,4 @@
 * readme has more info on getting started
 
 
-{% include analytics.html %}
+

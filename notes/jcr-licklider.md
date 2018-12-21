@@ -9,4 +9,4 @@ http://query.nytimes.com/gst/abstract.html?res=9905E4DF103CE43BBC4153DFB766838C6
 http://memex.org/licklider.pdf
 
 
-{% include analytics.html %}
+

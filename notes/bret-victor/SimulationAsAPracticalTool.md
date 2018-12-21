@@ -19,4 +19,4 @@ Solving this problem for "adults" is more interesting.
 
 I wonder if the Mathmatica Langauge is the best solution we currently have to this problem?
 
-{% include analytics.html %}
+

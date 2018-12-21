@@ -192,4 +192,4 @@ to the argument being put forward in this paper.
 7. Relatedly (to 6), define "comprehensibility", possibly in terms of interdepencies between data/state, possibly with "static" and "explicit"
 
 
-{% include analytics.html %}
+

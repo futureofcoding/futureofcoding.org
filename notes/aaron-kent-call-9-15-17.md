@@ -31,4 +31,4 @@ title: Aaron Kent Call 9/15/17
 * graph.cool 
 
 
-{% include analytics.html %}
+

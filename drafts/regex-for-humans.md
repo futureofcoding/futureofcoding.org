@@ -27,5 +27,5 @@ However, I'd really want to think through if this would make this library easier
 In conclusion, while this project seems like a neat way to show off my Bret Victor inspiration, I'm not sure who has what problem, and if this semi-proposed solution would solve it.
 
 
-{% include analytics.html %}
+
 

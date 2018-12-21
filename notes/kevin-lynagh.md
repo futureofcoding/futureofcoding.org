@@ -20,4 +20,4 @@ Really interesting, and quite similar to my thoughts around "throwing out HTML a
 
 Kevin explains the motivation for this library in [this video](https://www.deconstructconf.com/2017/kevin-lynagh-choosing-features). Instead of margin, padding, absolute-positioning, and flexbox, they simplify laying out content with two concepts: 1) position before, size, position after, and 2) stretch pixels, which can be used to define relationships between the quantities in (1). This is a clever way to avoid making designers specify relationships with algebra but still ahve a lot of expressivity.
 
-{% include analytics.html %}
+

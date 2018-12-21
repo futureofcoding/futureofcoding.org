@@ -38,5 +38,5 @@ https://lwn.net/Articles/712376/
 [2] Yes, you could submit a pull request, but let’s assume the feature you’re adding is not broadly applicable, so not all users of the service would want it.
 
 
-{% include analytics.html %}
+
 

@@ -16,5 +16,5 @@ If you have been struggling in this class thus far, don't worry: most of the poi
 
 We hope you all had a great, relaxing break and that you'll all excited to be heading back. We can't wait to teach you guys some C! 
 
-{% include analytics.html %}
+
 

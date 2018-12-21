@@ -151,4 +151,4 @@ There are a few things that Evan misses:
 
 Finally, Evan scores a nice shot on BV by pointing out that he hides the underlying formula in his Explorable Explanation article. Yet this criticism rings false as he's criticizing the same guy who made [TenBrighterIdeas](http://worrydream.com/TenBrighterIdeas/) which allows you to see the entire model as well as edit the actual source code.
 
-{% include analytics.html %}
+

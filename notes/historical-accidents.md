@@ -20,4 +20,4 @@ Examples of "features" in programming languages that we'd do better without:
 * Event listeners are probably an accident or something (I'm thinking of the unification of states and events with the scheme I thought of for woof mousedown catching things)
 
 
-{% include analytics.html %}
+

@@ -39,4 +39,4 @@ http://michaelnielsen.org/blog/interesting-problems-the-church-turing-deutsch-pr
 
 ## [Magic Paper](http://cognitivemedium.com/magic_paper/) - November 2017
 
-{% include analytics.html %}
+

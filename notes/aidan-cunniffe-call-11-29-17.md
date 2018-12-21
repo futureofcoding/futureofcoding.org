@@ -19,4 +19,4 @@
 * whole company will be open source
 
 
-{% include analytics.html %}
+

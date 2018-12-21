@@ -173,4 +173,4 @@ Can a better specification of our app's state help us build it?
 Going to start with #5 because it's been on my mind for a while, and I've thought about it from a new perspective recently and it's been on my mind.
 
 
-{% include analytics.html %}
+

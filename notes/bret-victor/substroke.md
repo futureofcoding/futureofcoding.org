@@ -19,4 +19,4 @@ This was much easier for me to understand and feels similar.
 
 ### [Vogo](mgrf.de/vogo/)
 
-{% include analytics.html %}
+

@@ -16,4 +16,4 @@ This paper was accpeted to the [REBLS Workshop](https://2018.splashcon.org/track
 
 Functional Reactive programs written in The Elm Architecture are difficult to comprehend without reading every line of code. A more modular architecture would allow programmers to understand a small piece without reading the entire application. This paper shows how higher-order and cyclic streams, as demonstrated via the Reflex library, can improve comprehensibility.
 
-{% include analytics.html %}
+

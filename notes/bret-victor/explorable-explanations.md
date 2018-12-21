@@ -31,4 +31,4 @@ Wow, this is quite similar to my LogicHub idea.
 
 This tools like a really neat tool to build interactive fiction: http://inform7.com
 
-{% include analytics.html %}
+

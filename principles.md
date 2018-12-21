@@ -68,4 +68,4 @@ While "as powerful as JavaScript" mostly covers it, I want to make clear that th
 Emmanuel of Bubble.is says visual programming will be a slow revolution. Until you can point to something people already know about and say "that was built with this", this is not "real coding."
 
 
-{% include analytics.html %}
+

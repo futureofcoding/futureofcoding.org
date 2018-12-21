@@ -45,5 +45,5 @@ Microsoft Excel. Unless you're coming from an accounting background, the grid mo
 1. Familiarity of model (is it a human model or comptuer model)
 2. Power of model (does it enable powerful ways of thinking)
 
-{% include analytics.html %}
+
 

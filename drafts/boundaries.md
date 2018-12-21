@@ -25,5 +25,5 @@ understandability is also key
 ## security
 
 
-{% include analytics.html %}
+
 

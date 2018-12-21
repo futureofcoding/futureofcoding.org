@@ -11,5 +11,5 @@ How do square your admiration for functional programming with your desire to "ki
 
 You often reference, directly or indirectly, how many of the principles of functional programming could improve programming generally. Yet few, if any, of your talks, papers, or demos, seem to embody those principles. Why is this?
 
-{% include analytics.html %}
+
 

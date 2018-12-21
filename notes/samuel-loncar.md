@@ -70,4 +70,4 @@ History of philosophy is not relevant to philosophers doing philosophy.
 
 It’s less-efficient to ask everyone to be aware of all relevant views on a subject before putting forth any new ones. Instead, we can merely allow people to put forth any old ideas, and trust that the community will offer the criticism from relevant sources when necessary.
 
-{% include analytics.html %}
+

@@ -54,5 +54,5 @@ While we all share the same basic assumptions about how programming can be impro
 
 And then I step out of this vibrant online community and into a party in the physical world and Dave just doesn't get it, and I've forgotten how to get Dave.
 
-{% include analytics.html %}
+
 

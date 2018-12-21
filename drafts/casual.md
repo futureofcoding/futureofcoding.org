@@ -161,5 +161,5 @@ So if we’re looking to understand a piece of state, we’re not much better of
 
 
 
-{% include analytics.html %}
+
 

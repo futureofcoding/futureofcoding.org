@@ -120,4 +120,4 @@ The themes are recombination and improvisation. Remixing. Where the name for Scr
 Ari Weinstein's company Workflow was trying to add recombination and improvisation into the app architecture. Ditto for Zapier and IFFT. But as Bret would say, the underlying architecture should natively support recombination and improvisation. It shouldn't be a seperate product grafted on. 
 
 
-{% include analytics.html %}
+

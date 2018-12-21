@@ -102,5 +102,5 @@ And a way to edit the apps you're using, as use use them. (This will be a challe
 
 You can follow the progress on futureofcoding.org/log and I'm always looking for collaborators.
 
-{% include analytics.html %}
+
 

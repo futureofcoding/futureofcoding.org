@@ -82,4 +82,4 @@ title: Dan Scanlon Call 9/5/17
 
 * TODO add to slack group
 
-{% include analytics.html %}
+
