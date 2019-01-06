@@ -35,6 +35,8 @@ The podcast alternates between interviews with programming language experts and 
 
 # Episodes
 
+<span class="date">2019 Jan 06 -</span> [#35 - Democratizing Web Design: Vlad Magdalin](./episodes/035)
+
 <span class="date">2018 Dec 05 -</span> [#34 - The Edges of Representation: Katherine Ye](./episodes/034)
 
 <span class="date">2018 Nov 28 -</span> [#33 - Reflection 14: /about](./episodes/033)
