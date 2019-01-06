@@ -23,23 +23,15 @@
 
 <br> 
 
-Welcome to the Future of Coding. My name is Steve Krouse.
+Future of Coding is a [community](/slack), [podcast](/episodes), and [research project](/log) organized by Steve Krouse. 
 
 <br>
 
-Podcast episodes alternate between interviews and research updates.
+Join the [Slack community](https://join.slack.com/t/futureprogramming/shared_invite/enQtMjYyMTQyOTgzMzAxLWUyOWFlZWVmZDIwZWU0Yzg5YTVlOWIzNTE0OTZjYWQxYjI0MDNhOWUzMDE0MmNjNjExMDA1ZmMxYjI3OTYxZGI)! We share ideas, prototypes, opinions, and debate each other endlessly. We also organize meetups in NYC, London, Boston... and maybe your city next?! Learn more about our community [here](./slack-readme).
 
 <br>
 
-My daily progress is tracked in the [commit log](./log), but you'll probably want to start with [a higher-level overview](./about).
-
-<br>
-
-You are welcomd to join [our Slack community](https://join.slack.com/t/futureprogramming/shared_invite/enQtMjYyMTQyOTgzMzAxLWUyOWFlZWVmZDIwZWU0Yzg5YTVlOWIzNTE0OTZjYWQxYjI0MDNhOWUzMDE0MmNjNjExMDA1ZmMxYjI3OTYxZGI), where we organize meetups in NYC, London, Boston... and maybe your city next?!
-
-<br>
-
-[Twitter](https://twitter.com/stevekrouse) is a great place to contact me, but email works too: steve at this domain.
+The podcast alternates between interviews with programming language experts and reflections on my own research journy. My research is focused on [democratizing programming](https://woofjs-stevekrouse-1.c9users.io/about#mission). [Twitter](https://twitter.com/stevekrouse) is a great place to contact me, but email works too: steve at this domain.
 
 # Episodes
 
