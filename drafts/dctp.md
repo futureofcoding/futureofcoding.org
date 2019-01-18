@@ -39,7 +39,7 @@ And now I am cursed to be one of those condescending assholes, a Conal zombie, d
 
 When a programming language designer defines a word in their language, that's the end of the story. But when a programming language designer coins a phrase in English, that's only the beginning of their ordeal. Alan Kay coined the phrase "object-oriented programming" (OOP) in the 70s, but OOP has taken on a life of its own, [which has caused much confusion and heartache to its creator](http://wiki.c2.com/?AlanKaysDefinitionOfObjectOriented). 
 
-Functional reactive programming (FRP) has [a similarly confused and contested etymology](https://medium.com/@andrestaltz/why-i-cannot-say-frp-but-i-just-did-d5ffaa23973b). In the 90s, Conal Elliot pioneered a new software paradigm for programming interactive animations and dubbed it Functional Reactive Programming (FRP). Like Kay, Elliot then watched others use his own term to describe things totally opposed to his original vision. While he initially fought to maintain the integrity of his phrase, Conal eventually conceded defeat. Like OOP, FRP now is a bastardized term that refers to work *inspired* by the "original FRP." Conal has retreated to coining a new, less-sexy (maybe on purpose?) phrase to describe his original vision: Denotative Continuous Time Programming (DCTP). From here on out I will use DCTP to refer to "original FRP".
+Functional reactive programming (FRP) has [a similarly confused and contested etymology](https://medium.com/@andrestaltz/why-i-cannot-say-frp-but-i-just-did-d5ffaa23973b). In the 90s, Conal Elliott pioneered a new software paradigm for programming interactive animations and dubbed it Functional Reactive Programming (FRP). Like Kay, Elliot then watched others use his own term to describe things totally opposed to his original vision. While he initially fought to maintain the integrity of his phrase, Conal eventually conceded defeat. Like OOP, FRP now is a bastardized term that refers to work *inspired* by the "original FRP." Conal has retreated to coining a new, less-sexy (maybe on purpose?) phrase to describe his original vision: Denotative Continuous Time Programming (DCTP). From here on out I will use DCTP to refer to "original FRP".
 
 ## Continuity
 
@@ -105,32 +105,92 @@ rightDriftCircle t = circle t 0 1 Green
 
 Let's have our circle move in a circle: `circle cos(t) sin(t) 1 Green`
 
-#### Why program with continuous time?
+#### Why Program With Continuous Time?
 
-There are a [lot](https://github.com/conal/talk-2014-bayhac-denotational-design#why-continuous-time-matters) of [reasons](http://conal.net/blog/posts/why-program-with-continuous-time).  The most compelling argument for me is for the same reason we use SVGs: resolution independence. We want to be able to transform our programs "in time and space with ease and without propagating and amplifying sampling artifacts."
+Of course, for the computer to render the above graphics on the screen, it must at some point convert the continuous time and space to discretized pixels and ticks of time. So what's the point of programming in continuous time if it will eventually be discretized? 
 
-[maybe TODO] If we wanted to make the animations from above in discrete time and space, they would look like this: 
+There are a [lot](https://github.com/conal/talk-2014-bayhac-denotational-design#why-continuous-time-matters) of [reasons](http://conal.net/blog/posts/why-program-with-continuous-time).  The most compelling argument for me is for the same reason we use SVGs: resolution independence. We want to be able to transform our programs "in time and space with ease and without propagating and amplifying sampling artifacts." We want to discretize at the last possible moment, and stay as abstract as possible for as long as possible.
 
-Explain why continuous time (and laziness) are key for modularity.
+Explain why continuous time (and laziness) are key for compositionality and modularity.
 
-### Behaviors 
+### Denotational Semantics
 
-### Events
+So know you know the CT of DCTP: continuous time. But what of the Denotative D?
 
-### Higher order flows
-(maybe these don't belong here...?)
+We've already been doing it. The original name for denotational semantics was "mathematical semantics". It was pioneered by Chris Strachey and Dana Scott in the early 1970s. It is an approach to model a programming language with mathematical objects. So above, when we modeled a graphic as a function from x and y, that was denotational semantics.
 
-### Cyclical/recursive flows
-(maybe these don't belong here...?)
+In his 1977 Turing Award Lecture, [Can Programming Be Liberated from the von Neumann Style? A functional style and its algebra of programs](http://www.thocp.net/biographies/papers/backus_turingaward_lecture.pdf), John Backus explains how denotational semantics uncovers the hidden complexities in imperative, von-Neumann-based languages:
 
-## Doing vs being
-(maybe these don't belong here...?)
+> When applied to a von Neumann language ... the complexity of the language is mirrored in the complexity of the description, which is a bewildering collection of productions, domains, functions, and equations that is only slightly more helpful in proving facts about programs than the reference manual of the language...
 
-### Expressions only
+In other words, most programming languages lack powerful mathematical properties. For example, the lack of equational reasoning (being able to replace expressions with equal ones) it makes it difficult to reason about such programs, let alone *prove* things about them. Additionally, lacking in mathematical properties prevents composability and modularity of programs.
+
+You can learn more about denotational design and semantics from Conal's [video](https://www.youtube.com/watch?v=bmKYiUOEo2A) and [paper](http://conal.net/papers/type-class-morphisms/).
+
+### Flows
+
+Let's get to the coding already! Enough metaphors and semantics!
+
+There are two main types in DCTP: Behaviors and Events. I will refer to them both as flows because they both resembles timeline-y things.
+
+Behaviors are continuous functions of time: 
+
+* the x-y-position of your mouse
+* the constant function `t -> 1`
+* the Boolean valued function: `t -> t > 10`
+
+Events are discrete occurrences in time:
+
+* the click event of your mouse
+* key press events of your keyboard
+* an interval of 3 seconds
+
+#### Flow combinators
+
+[TODO turbine]
+
+#### Higher-Order Flows
+
+It's very often useful for a flow to contain other flow:
+
+[TODO examples]
+
+However, it can be unwieldy to work with such flows. Usually, one manages by collapsing them down to more manageable types, such as via the following chart:
+
+[TODO chart]
+
+#### Cyclical/Recursive Flows
+
+It's also often useful to have cyclically/recursively defined flows:
+
+[TODO examples]
+
+Denotationally, cyclical or recursive flows are very similar to recursive functions, which are semantically a fixpoint. This is a very confusing point I barely understand myself. Suffice it to say that this magic works for sound mathematical reasons.
+
+#### Performance
+
+It's well known that FRP has suffered space and time leaks. People often complain about the performance of mathematical or abstract language like Haskell. 
+
+[asked conal for help here]
+
+
+## "A denotationally simple model for whole systems"
+
+Now that you understand DCTP, you are ready to see why I think it can save programming. 
+
+Isn't Excel wonderful? One of the reasons that allows Excel to be so wonderful is that it's entirely free from control flow. There's no sequencing of instructions. There's only data flow, which is directed via mathematical expressions.
+
+In [The Next 700 Programming Languages](https://www.cs.cmu.edu/~crary/819-f09/Landin66.pdf), Peter Landin calls such languages that only ... "expression languages."
+
+http://conal.net/blog/posts/can-functional-programming-be-liberated-from-the-von-neumann-paradigm
 
 ### Monads aren't the answer
 
+### Expressions only
+
 ### FRP everywhere...
+
+#### HTTP = JQuery
 
 ## Common gotchas
 
@@ -154,3 +214,6 @@ https://stackoverflow.com/questions/5385377/the-difference-between-reactive-and-
 https://stackoverflow.com/questions/1028250/what-is-functional-reactive-programming/1030631#1030631
 
 https://futureofcoding.org/notes/conal-elliott/
+
+
+
