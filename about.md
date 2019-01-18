@@ -6,7 +6,7 @@ title: About
 
 Future of Coding is a [community](/slack), [podcast](/episodes), and [research project](/log) organized by Steve Krouse. 
 
-The community lives on Slack: you can [join here](/slack) and [learn more here](slack-readme). The podcast alternates between interviews with programming language experts and reflections on my own research journy. My research is focused on building an open-source programming langauge. 
+The community lives on Slack: you can [join here](/slack) and [learn more here](slack-readme). The podcast alternates between interviews with programming language experts and reflections on my own research journey. My research is focused on building an open-source programming language. 
 
 This work is funded by [repl.it](https://repl.it) and my generous patrons. If you find this work valuable, [please consider supporting](https://patreon.com/stevekrouse).
 
@@ -81,7 +81,7 @@ All in all, there are 4 large problems to solve:
 
 ## Vague dream programming language system
 
-* Haskel-ish structured-ish editor in the style of Lamdu, early Unison prototypes, Dark, Luna, Isomorf, etc. This UI problem is large and unsolved. It will likely be one of the most complicated UIs ever created, and thus eventually bootstrapping would be great.
+* Haskell-ish structured-ish editor in the style of Lamdu, early Unison prototypes, Dark, Luna, Isomorf, etc. This UI problem is large and unsolved. It will likely be one of the most complicated UIs ever created, and thus eventually bootstrapping would be great.
 * Web based. It’d be great if it could run in browsers but not terrible to have it communicate over socket to begin with. Eventually compiling to WebAssembly will raise all boats.
 * Hash-based definitions in the style of Unison (and possibly IPFS)
 * Naming system in the style of DNS (or something more modern) where specific people get rights to assign names to hashes, and re-assign them whenever
@@ -96,3 +96,4 @@ Changing a definition only produces a new definition but you are given the optio
 If/when this platform is built, the first app I'll build in it is a build-your-own-email-app kit. Everyone's email workflow is specific and it's a huge part of how we all run our lives. Being able to customize things to exactly how we'd like them would be a superpower. For myself, I'd like to be able to combine my email app with features of task management applications, such as re-ordering items and nesting items within other items. Part of the inspiration for this "killer app" is that Google Inbox, my preferred email client, is being shut down in a few months. The economics of building a consumer quality app only allows for lowest-common-denominator experiences. The only way to maintain sustainable personalized experiences is with a crowd-sourced development platform. I imagine we'd want to leverage Gmail's API to do this.
 
 <a name="1">[1]</a> - "All people" is a strong phrase. Apparently 77% of Wikipedia is written by 1% of editors - and that's not even counting users. The difference with software is that people will want to customize it for themselves, while Wikipedia is for a general audience, so there's less motivation to edit it.
+
