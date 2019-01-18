@@ -7,11 +7,15 @@ title: The Misunderstood Roots of FRP Will Save Programming
 * TOC
 {:toc}
 
-_For many years, I've been searching for the "perfect" library/framework/language/paradigm for programming user interfaces. I wanted a tool that designers or other non-programmers could use to program arbitrarily complex user interfaces, such as TodoMVC. Like many others, I fell in love with FRP with the rise of ReactJS and spent a few years searching for the perfect reactive model. Eventually, I found my way back to the original work on FRP by Conal Elliott, where I was surpised to find that it needed little improving: it was gotten right from the start. However, Conal's FRP has a reputation for being difficult to understand. It took me almost a year to understand his perspective. This essay attempts to make Conal's vision more understandable, and also show how this perspective could be the foundation for a new world of end-user programming, not just with user interfaces, but for all programming: authentication, authorization, storage, multi-node computing, machine learning, etc..._
+For many years, I've been searching for the "perfect" library/framework/language/paradigm for programming user interfaces. I wanted a tool that designers or other non-programmers could use to program arbitrarily complex user interfaces, such as TodoMVC. 
+
+Like many others, I fell in love with FRP with the rise of ReactJS and spent a few years searching for the perfect reactive model. Eventually, I found my way back to the original work on FRP by Conal Elliott, where I was surpised to find that it needed little improving: it was gotten right from the start. 
+
+However, Conal's FRP has a reputation for being difficult to understand. It took me almost a year to make sense of it. This essay attempts to make Conal's vision more understandable, and also show how this perspective could be the foundation for a new world of end-user programming, not just with user interfaces, but for all programming: storage, multi-node computing, machine learning, etc..._
 
 ## The Curse of FRP
 
-I fell in love with ReactJS in late 2014. The view is a pure function of state. 🤯 It was so obviously *right*.
+I fell in love with ReactJS in late 2014. The view is a pure function of state. It was so obviously *right*.
 
 But of course it wasn't perfect. For one, it wasn't clear how that state changed over time. Redux seemed to make sense -- and hot reloading and time travel debugging are awesome -- but over time I began to sense that React didn't solve all my problems. I eagerly slurped up each new React-inspired frameworks, such as VueJS and CycleJS, to see if they could finally be the "full solution" to interface development, but always felt something was missing.
 
@@ -19,9 +23,9 @@ But of course it wasn't perfect. For one, it wasn't clear how that state changed
 
 I didn't like to hear this. I loved React and the FRP I knew. I was reluctant to read [a stodgy paper from the 90s](http://conal.net/papers/icfp97/). But I trusted and respected Paul so I gave it a go.
 
-My eyes immediately glazed over. I wasn't able to make sense of almost any part of it, so I gave up. However, I couldn't escape HN comments alluding to [real](https://hn.algolia.com/?sort=byPopularity&prefix&page=0&dateRange=all&type=comment&query=real%20frp) or [original](https://hn.algolia.com/?sort=byPopularity&prefix&page=0&dateRange=all&type=comment&query=original%20frp) FRP.
+My eyes immediately glazed over. I wasn't able to make sense of almost any part of it, so I gave up. However, I couldn't escape HN comments alluding to "[real](https://hn.algolia.com/?sort=byPopularity&prefix&page=0&dateRange=all&type=comment&query=real%20frp)" or "[original](https://hn.algolia.com/?sort=byPopularity&prefix&page=0&dateRange=all&type=comment&query=original%20frp)" FRP.
 
-They were annoying enough to send me back to Conal for another try. I wanted to show these pompous pricks that their precious old FRP was *worse* than my modern FRP. (Maybe you feel the same towards me, dear reader? 😜) 
+They were annoying enough to send me back to Conal for another try. I wanted to show these pompous pricks that their precious old FRP was *worse* than my modern FRP. (Maybe you feel the same way towards me, dear reader? 😜) 
 
 Yet I couldn't make heads or tail of Conal, even in [video](https://www.youtube.com/watch?v=j3Q32brCUAI) [form](https://www.youtube.com/watch?v=teRC_Lf61Gw). I gave up again. Over the course of a year, I tried on-and-off again to read Conal's papers, but they never made sense. I decided to give it up for nonsense. There was no there there.
 
@@ -112,29 +116,7 @@ How about in a circle?
 circle cos(t) sin(t) 1 Green
 ```
 
-#### "Why program with continuous time?"
-
-Of course, for the computer to render the above graphics on the screen, it must at some point convert the continuous time and space to discretized pixels and ticks of time. So what's the point of programming in continuous time if it will eventually be discretized? 
-
-There are a [lot](https://github.com/conal/talk-2014-bayhac-denotational-design#why-continuous-time-matters) of [reasons](http://conal.net/blog/posts/why-program-with-continuous-time).  The most compelling argument for me is for the same reason we use SVGs: resolution independence. We want to be able to transform our programs "in time and space with ease and without propagating and amplifying sampling artifacts." We want to discretize at the last possible moment, and stay as abstract as possible for as long as possible.
-
-[TODO Explain why continuous time (and laziness) are key for compositionality and modularity, maybe citing my FRP paper]
-
-### Denotational Semantics
-
-Now we know the CT (Continuous Time) of DCTP, but what of the D (Denotative)?
-
-We've already been doing it. The original name for denotational semantics was "mathematical semantics". It was pioneered by Chris Strachey and Dana Scott in the early 1970s. It is an approach to model a programming language with mathematical objects. So above, when we modeled a graphic as a function from `x` and `y`, and then `t`, to `Color`,  that was denotational semantics.
-
-In his 1977 Turing Award Lecture, [Can Programming Be Liberated from the von Neumann Style? A functional style and its algebra of programs](http://www.thocp.net/biographies/papers/backus_turingaward_lecture.pdf), John Backus explains how denotational semantics uncovers the hidden complexities in imperative, von-Neumann-based languages:
-
-> When applied to a von Neumann language ... the complexity of the language is mirrored in the complexity of the description, which is a bewildering collection of productions, domains, functions, and equations that is only slightly more helpful in proving facts about programs than the reference manual of the language...
-
-In other words, most programming languages lack powerful mathematical properties. For example, the lack of equational reasoning (being able to replace expressions with equal ones) makes it difficult to reason about such programs, let alone *prove* things about them. Additionally, lacking in mathematical properties prevents composability and modularity of programs. [TODO maybe join this section with the composability and modularity from the section above?]
-
-You can learn more about denotational design and semantics from Conal's [video](https://www.youtube.com/watch?v=bmKYiUOEo2A) and [paper](http://conal.net/papers/type-class-morphisms/).
-
-### Flows
+## Flows
 
 There are two main types in DCTP: Behaviors and Events. I will refer to them both as "flows" because they both resembles timeline-y things.
 
@@ -150,11 +132,11 @@ Events are discrete occurrences in time:
 * key press events of your keyboard
 * an interval of 3 seconds
 
-#### Flow combinators
+### Flow combinators
 
 [TODO turbine]
 
-#### Higher-Order Flows
+### Higher-Order Flows
 
 It's very often useful for a flow to contain other flow:
 
@@ -164,7 +146,7 @@ However, it can be unwieldy to work with such flows. Usually, one manages by col
 
 [TODO chart]
 
-#### Cyclical/Recursive Flows
+### Cyclical/Recursive Flows
 
 It's also often useful to have cyclically/recursively defined flows:
 
@@ -172,25 +154,45 @@ It's also often useful to have cyclically/recursively defined flows:
 
 Denotationally, cyclical or recursive flows are very similar to recursive functions, which are semantically a fixpoint. 
 
-#### Performance
+## Denotational Semantics
 
-It's well known that FRP has suffered space and time leaks. People often complain about the performance of mathematical or abstract language like Haskell. 
+Now we know the CT (Continuous Time) of DCTP, but what of the D (Denotative)?
 
-[asked conal for help here]
+We've already been doing it. The original name for denotational semantics was "mathematical semantics". It was pioneered by Chris Strachey and Dana Scott in the early 1970s. It is an approach to model a programming language with mathematical objects. So above, when we modeled a graphic as a function from `x` and `y`, and then `t`, to `Color`,  that was denotational semantics.
 
+In his 1977 Turing Award Lecture, [Can Programming Be Liberated from the von Neumann Style? A functional style and its algebra of programs](http://www.thocp.net/biographies/papers/backus_turingaward_lecture.pdf), John Backus explains how denotational semantics uncovers the hidden complexities in imperative, von-Neumann-based languages:
+
+> When applied to a von Neumann language ... the complexity of the language is mirrored in the complexity of the description, which is a bewildering collection of productions, domains, functions, and equations that is only slightly more helpful in proving facts about programs than the reference manual of the language...
+
+In other words, most programming languages lack powerful mathematical properties. For example, the lack of equational reasoning (being able to replace expressions with equal ones) makes it difficult to reason about such programs, let alone *prove* things about them. Additionally, lacking in mathematical properties prevents composability and modularity of programs. [TODO maybe join this section with the composability and modularity from the section above?]
+
+### "Why program with continuous time?"
+
+Of course, for the computer to render the above graphics on the screen, it must at some point convert the continuous time and space to discretized pixels and ticks of time. So what's the point of programming in continuous time if it will eventually be discretized? 
+
+There are a [lot](https://github.com/conal/talk-2014-bayhac-denotational-design#why-continuous-time-matters) of [reasons](http://conal.net/blog/posts/why-program-with-continuous-time).  The most compelling argument for me is for the same reason we use SVGs: resolution independence. We want to be able to transform our programs "in time and space with ease and without propagating and amplifying sampling artifacts." We want to discretize at the last possible moment, and stay as abstract as possible for as long as possible.
+
+[TODO Explain why continuous time (and laziness) are key for compositionality and modularity, maybe citing my FRP paper]
+
+You can learn more about denotational design and semantics from Conal's [video](https://www.youtube.com/watch?v=bmKYiUOEo2A) and [paper](http://conal.net/papers/type-class-morphisms/).
 
 ## "A denotationally simple model for whole systems"
 
-Now that you understand DCTP, you are ready to see why I think it can save programming. 
+Now that you understand DCTP, here's why I think it can save programming... 
 
-Isn't Excel wonderful? One of the reasons that allows Excel to be so wonderful is that it's entirely free from control flow. There's no sequencing of instructions. There's only data flow, which is directed via mathematical expressions.
+Aren't spreadsheets wonderful? A key to their success is that there is no control flow, no sequencing of instructions. Only data flow.
 
-In [The Next 700 Programming Languages](https://www.cs.cmu.edu/~crary/819-f09/Landin66.pdf), Peter Landin calls such languages "denotative" when they contain only nested mathmatical expressions, and each expression *denotes* (can be model by) some mathmatical object. He says, "The
-antithesis of denotative is 'imperative.'"
+In [The Next 700 Programming Languages](https://www.cs.cmu.edu/~crary/819-f09/Landin66.pdf), Peter Landin calls such languages "denotative" when they contain only nested mathmatical expressions, and each expression *denotes* (can be model by) some mathmatical object. And, "The antithesis of denotative is 'imperative.'"
+
+As Conal says:
+
+> There is a lot of confusion about the meaning of “functional” and “declarative” as descriptions of programming languages and paradigms.... I’ve started using the more specific term “denotational programming” in my blog subtitle and elsewhere, as an alternative to what I used to call “functional programming”. While there are other notions of “functional”, applicable even to monadic IO, I think “denotational” captures the fundamental and far-reaching benefits that we called “good for reasoning about” and “powerfully compositional”. - [Is Haskell a purely functional language?](http://conal.net/blog/posts/is-haskell-a-purely-functional-language)
 
 Haskell is such a denotative lanugage... That is, except for monads.
 
-### Monads are Imperitive Programming
+[TODO maybe combine this section with "why program with continuous time?" and denotational sematnics]
+
+### Monads are Imperitive
 
 While monads do technically denote mathmatical objects, in practice they are imperitive programming imported into denotational programming. In [Can functional programming be liberated from the von Neumann paradigm?](http://conal.net/blog/posts/can-functional-programming-be-liberated-from-the-von-neumann-paradigm) Conal Elliott rants:
 
@@ -200,13 +202,13 @@ This state of affairs is particularly depressing because the Haskell community, 
 
 > In a sense, I see us as in a worse position than before. Since the adoption of monadic IO, it’s been less immediately apparent that we’re still enslaved, so there’s been much less activity in searching for the promised land that the prophet JB [John Backus] foretold. Our current home is not painful enough to goad us onward, as were continuation-based I/O and stream-based I/O. (See [A History of Haskell](https://www.microsoft.com/en-us/research/publication/a-history-of-haskell-being-lazy-with-class/?from=http%3A%2F%2Fresearch.microsoft.com%2F~simonpj%2Fpapers%2Fhistory-of-haskell%2F), section 7.1.) Nor does it fully liberate us.
 
-Let's liberate ourselves from the IO Monad. But wait, what about all the things we can't do without it? [TODO emoji]
+Let's liberate ourselves from the IO Monad by simply refusing to use it. We are free!!!!!! 
+
+But wait... what about all the things we can't do without it? What about open and closing files and sockets, reading and writing from the console and the database? How do we do all the things we need to as self-respecting programmers?! 
 
 > The imperative interfaces in today OSs and data-bases are troubling at first, and indeed I often hear people (even on #haskell) using these examples as demonstration that the imperative programming model is inescapable.
 
-What about open and closing files and sockets, reading and writing from the console and the database? How do we do all the things we need to as programmers?! [TODO emoji]
-
-The answer is hidden inside FRP. You ready for it? Here it is: stop doing those things. Stop it with the files and the sockets and the reading and writing to the console and the database. Those are imperitive things that you can only do imperitively. There's no magic that can save you and make imperitive things denotative. The only solution is to "shift[ it] out of the role of a programming model notion and into the role of implementation of a programming model notion."
+The answer is hidden inside FRP. You ready for it? Here it is: stop. Stop it with the files and the sockets. Stop it with the reading and writing to the console and the database. Those are imperitive things that you can only do imperitively. There's no monad magic that can save you and make imperitive things denotative. The only solution is to "shift [imperitivity] out of the role of a programming model notion and into the role of implementation of a programming model notion."
 
 ### ReactJS is JQuery-as-a-Service
 
@@ -218,24 +220,46 @@ The Conal Elliott war cry:
 
 > let’s explore how to move I/O entirely out of our programming model into the implementation of a denotationally simple model for whole systems.
 
-#### HTTP = JQuery
+### HTTP = JQuery
 
-One day in the shower, I was wondering how to incorporate HTTP requests into the FRP paradigm. Then it hit me. HTTP = JQuery. In other words, HTTP requests are too low level. They are similar to manually mutating the DOM via JQuery. We need to go higher level and build a semantic model for "whole systems."
+One day in the shower, I was wondering how to incorporate HTTP requests into the FRP paradigm. Then it hit me. HTTP = JQuery. HTTP requests are too low level. They are similar to manually querying or mutating the DOM via JQuery, except it's manually querying or mutating server state.  We need to go higher level and build a semantic model for "whole systems."
 
+The same is true of all imperative APIs, including databases, files, sockets, etc. It's not that we have to abandon these technologies entirely. But only as the _implementation_ of a denotative programming system. The computer's job should be to make HTTP requets for you, just like React mutates the DOM on your behalf. 
 
+### Performance
 
-## Common gotchas
+It's well known that FRP has suffered space and time leaks. People often complain about the performance of mathematical or abstract language like Haskell. 
 
-* DAG or graphs
-* mutation
-* discrete time
+[asked conal for help here]
+
+## Common Gotchas
+
+### Thinking about DAGs
+
+A very common misconception with DCTP is confusing it with its implementation details. If you catch yourself thinking of DCTP as a DAG (directed acyclic graph), you still haven't quite gotten it. The builder of a DCTP framework or library _may_ decided to choose a DAG as an internal data structure, but they may choose an entirely difference underlying evaluation strategy. In fact, a DAG is the wrong structure for true DCTP entirely because DAGs are acyclic when you'll need cycles to represent the full range of user interfaces.
+
+### Doing vs Being
+
+If you find describing your code in terms of _steps_, you've probably slipped back into imperitive programming. As Conal's koan tells us:
+
+> Imperitive is doing. Denotational is being.
+
+I find it helpful to ask myself: What _is_ it? 
+
+[TODO]
+
+In [What's Functional Programming All About?](http://www.lihaoyi.com/post/WhatsFunctionalProgrammingAllAbout.html), Li Hayoi explains: "The core of Functional Programming [or denotative programming] is thinking about data-flow rather than control-flow." He demostrates this beautifully by converting an imperitive tiramisu recipe to a dataflow diagram:
+
+![](http://www.lihaoyi.com/post/BasicFunctionalProgramming/TiramisuDiagram.png) [TODO upload photo]
+
+[TODO]
 
 ## Further reading
 
-* http://vindum.io/blog/lets-reinvent-frp/
-* https://github.com/conal/talk-2015-essence-and-origins-of-frp
-* https://github.com/conal/talk-2014-bayhac-denotational-design#why-continuous-time-matters
-
+* [What's Functional Programming All About?](http://www.lihaoyi.com/post/WhatsFunctionalProgrammingAllAbout.html)
+* [Let's reinvent FRP](http://vindum.io/blog/lets-reinvent-frp/) by Simon Friis Vindum
+* [The Essense and Origins of FRP](https://github.com/conal/talk-2015-essence-and-origins-of-frp)
+* The original FRP paper by Conal Elliott and Paul Hudak: [Functional Reactive Animation](http://conal.net/papers/icfp97/)
 
 ## Notes
 
