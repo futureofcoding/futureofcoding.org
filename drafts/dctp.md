@@ -61,7 +61,7 @@ SVGs retain all the relevant info until the very last moment when the computer f
 
 #### What is a graphic?
 
-Let's get a bit more mathematical with our definitions. A graphic is something that relates x- and y- coordinates to colors. You give it an x-y pair; it gives you a color. 
+Let's get a bit more mathematical[[1](#1)] with our definitions. A graphic is something that relates x- and y- coordinates to colors. You give it an x-y pair; it gives you a color. 
 
 Here's the difference between bitmaps and SVGs: what kind of numbers make up the x-y pairs? 
 
@@ -87,6 +87,7 @@ const example1 = (x, y) => red
 
 <iframe height="300px" width="100%" frameborder="none" scrolling="no" src="https://stevekrouse.com/embed-jsbin/?id=pinitox"></iframe>
  _[Example 1 GPU Code](https://jsbin.com/pinitox/edit?js,output)_
+[TODO convert all these to GIFs]
 
 Here's another: a green circle with radius 50, centered at (100, 150).
 
@@ -187,61 +188,74 @@ const example6 = layer([
 [Example 6 GPU Code](https://jsbin.com/viropan/edit?js,output)
 
 
-<!--## Interactivity-->
+## Interactivity
 
-<!--### Behaviors and Events-->
+The above animations are neat, but they are static in the sense that movies are static: no interactivity. We want to be able to press, click, type, and play with our screens. Let's go deeper into the DCTP rabbithole.
 
-<!--There are two main types in DCTP: Behaviors and Events.-->
+### Behaviors and Events
 
-<!--![](https://camo.githubusercontent.com/9b8fca9342d56465fc9536efdf8b26e182958a2f/68747470733a2f2f7261776769742e636f6d2f66756e6b69612f686172656163746976652f6d61737465722f666967757265732f6265686176696f722e737667)-->
+The two main types in DCTP are Behaviors and Events.
 
-<!--_Graphic of Behaviors from the [Hareactive documentation](https://github.com/funkia/hareactive)_-->
+![](https://camo.githubusercontent.com/9b8fca9342d56465fc9536efdf8b26e182958a2f/68747470733a2f2f7261776769742e636f6d2f66756e6b69612f686172656163746976652f6d61737465722f666967757265732f6265686176696f722e737667)
 
-<!--Behaviors are continuous functions of time: -->
+_Graphic of Behaviors from the [Hareactive documentation](https://github.com/funkia/hareactive)_
 
-<!--* the animation diagrams from above-->
-<!--* the x-y-position of your mouse-->
-<!--* the constant function `t -> 1`-->
-<!--* the Boolean valued function: `t -> t > 10`-->
+Behaviors are continuous functions of time: 
 
-<!--![](https://camo.githubusercontent.com/bdbe25d1c8cf3490714fcf8d90039be58afcda35/68747470733a2f2f7261776769742e636f6d2f66756e6b69612f686172656163746976652f6d61737465722f666967757265732f73747265616d2e737667)-->
+* the animation diagrams from above
+* the x-y-position of your mouse
+* the constant function `t -> 1`
+* the Boolean valued function: `t -> t > 10`
 
-<!--_Graphic of EVents from the [Hareactive documentation](https://github.com/funkia/hareactive)_-->
+![](https://camo.githubusercontent.com/bdbe25d1c8cf3490714fcf8d90039be58afcda35/68747470733a2f2f7261776769742e636f6d2f66756e6b69612f686172656163746976652f6d61737465722f666967757265732f73747265616d2e737667)
 
-<!--Events are discrete occurrences in time:-->
+_Graphic of EVents from the [Hareactive documentation](https://github.com/funkia/hareactive)_
 
-<!--* the click event of your mouse-->
-<!--* key press events of your keyboard-->
-<!--* an interval of 3 seconds-->
+Events are discrete occurrences in time:
+
+* the click event of your mouse
+* key press event of your keyboard
+* an interval of 3 seconds
+
+### DCTP & HTML
+
+The above animation code was purposefully simplisitic: we literally used pure, mathmatical functions. This works fine on the canvas, especially with the help of the GPU. However, functions from `x` and `y` to `Color` is likely not the way we want to build HTML-based user interfaces. Instead we will use the (experimental) [Turbine](https://github.com/funkia/turbine) framework, built on top of the [Hareactive](https://github.com/funkia/hareactive) DCTP library.
+
+Let's start with a simple counter button:
 
 
+### Cyclical Flows
+
+What if we want the button to count inside itself?
+
+### Higher-order Flows
+
+What if we want a variable number of counters? [maybe simpler]
+
+### Higher-order & Cyclical Flows
+
+What if we want counters that make counters that make counters...? [maybe simplier]
 
 
-## Denotational Semantics
+This example may seem contrived, but it's a good minimal example to test the expressivity of a UI paradigm. 
 
-Now we know the CT (Continuous Time) of DCTP, but what of the D (Denotative)?
+### Visualizing Flows
 
-We've already been doing it. The original name for denotational semantics was "mathematical semantics". It was pioneered by Chris Strachey and Dana Scott in the early 1970s. It is an approach to model a programming language with mathematical objects. So above, when we modeled a graphic as a function from `x` and `y`, and then `t`, to `Color`,  that was denotational semantics.
+While I am in love with this paradigm, it hurts my head to mentally grabble with such unweildy types. And these are just simple examples! How are mere mortals supposed to program this way?
 
-In his 1977 Turing Award Lecture, [Can Programming Be Liberated from the von Neumann Style? A functional style and its algebra of programs](http://www.thocp.net/biographies/papers/backus_turingaward_lecture.pdf), John Backus explains how denotational semantics uncovers the hidden complexities in imperative, von-Neumann-based languages:
+I have a hunch: visualize the flows. 
 
-> the complexity of the language is mirrored in the complexity of the description, which is a bewildering collection of productions, domains, functions, and equations that is only slightly more helpful in proving facts about programs than the reference manual of the language...
+[TODO graphics]
 
-In other words, most programming languages lack powerful mathematical properties. For example, the lack of equational reasoning (being able to replace expressions with equal ones) makes it difficult to reason about such programs, let alone *prove* things about them. Additionally, lacking in mathematical properties prevents composability and modularity of programs. [TODO maybe join this section with the composability and modularity from the section above?]
+There's been some interesting work done here [TODO linkify], and I'm hoping to further it by building similar visualization tools for Hareactive and Turbine.
 
-### "Why program with continuous time?"
+## "Why program with continuous time?"
+
+[TODO this section needs cleaning]
 
 Of course, for the computer to render the above graphics on the screen, it must at some point convert the continuous time and space to discretized pixels and ticks of time. So what's the point of programming in continuous time if it will eventually be discretized? 
 
 There are a [lot](https://github.com/conal/talk-2014-bayhac-denotational-design#why-continuous-time-matters) of [reasons](http://conal.net/blog/posts/why-program-with-continuous-time).  The most compelling argument for me is for the same reason we use SVGs: resolution independence. We want to be able to transform our programs "in time and space with ease and without propagating and amplifying sampling artifacts." We want to discretize at the last possible moment, and stay as abstract as possible for as long as possible.
-
-[TODO Explain why continuous time (and laziness) are key for compositionality and modularity, maybe citing my FRP paper]
-
-You can learn more about denotational design and semantics from Conal's [video](https://www.youtube.com/watch?v=bmKYiUOEo2A) and [paper](http://conal.net/papers/type-class-morphisms/).
-
-## "A denotationally simple model for whole systems"
-
-Now that you understand DCTP, here's why I think it can save programming... 
 
 Aren't spreadsheets wonderful? A key to their success is that there is no control flow, no sequencing of instructions. Only data flow.
 
@@ -253,7 +267,8 @@ As Conal says:
 
 Haskell is such a denotative lanugage... That is, except for monads.
 
-[TODO maybe combine this section with "why program with continuous time?" and denotational sematnics]
+[TODO Explain why continuous time (and laziness) are key for compositionality and modularity, maybe citing my FRP paper]
+
 
 ### Monads are Imperitive
 
@@ -267,11 +282,19 @@ This state of affairs is particularly depressing because the Haskell community, 
 
 Let's liberate ourselves from the IO Monad by simply refusing to use it. We are free!!!!!! 
 
+### "A denotationally simple model for whole systems"
+
 But wait... what about all the things we can't do without it? What about open and closing files and sockets, reading and writing from the console and the database? How do we do all the things we need to as self-respecting programmers?! 
 
-> The imperative interfaces in today OSs and data-bases are troubling at first, and indeed I often hear people (even on #haskell) using these examples as demonstration that the imperative programming model is inescapable.
+> The imperative interfaces in today OSs and data-bases are troubling at first, and indeed I often hear people (even on #haskell) using these examples as demonstration that the imperative programming model is inescapable.  
+>  
+> - [Can functional programming be liberated from the von Neumann paradigm?](http://conal.net/blog/posts/can-functional-programming-be-liberated-from-the-von-neumann-paradigm)
 
-The answer is hidden inside FRP. You ready for it? Here it is: stop. Stop it with the files and the sockets. Stop it with the reading and writing to the console and the database. Those are imperitive things that you can only do imperitively. There's no monad magic that can save you and make imperitive things denotative. The only solution is to "shift [imperitivity] out of the role of a programming model notion and into the role of implementation of a programming model notion."
+The answer is hidden inside FRP. You ready for it? Here it is: stop. Stop it with the files and the sockets. Stop it with the reading and writing to the console and the database. Those are imperitive things that you can only do imperitively. There's no monad magic that can save you and make imperitive things denotative. The only solution is to 
+
+> move I/O entirely out of our programming model into the implementation of a denotationally simple model for whole systems.  
+>  
+> - [Can functional programming be liberated from the von Neumann paradigm?](http://conal.net/blog/posts/can-functional-programming-be-liberated-from-the-von-neumann-paradigm)
 
 ### ReactJS is JQuery-as-a-Service
 
@@ -279,23 +302,15 @@ One of the ways I understood ReactJS was as JQuery-as-a-Service. I would describ
 
 Before ReactJS, if you told me I could make TodoMVC without the imperitive DOM API of adding, removing and editing nodes, I'd tell you that you were crazy. But then React did it. Describe your UI as a function and it will do the *imperitive mutation stuff under the hood.* That's the trick. We can't actually get rid of imperitive programming, just like we can't get rid of the fact that SVGs eventually need to pixelate to show up on the screen. We can just hide those details below the programmers level of abstraction.
 
-The Conal Elliott war cry:
-
-> let’s explore how to move I/O entirely out of our programming model into the implementation of a denotationally simple model for whole systems.
-
 ### HTTP = JQuery
 
-One day in the shower, I was wondering how to incorporate HTTP requests into the FRP paradigm. Then it hit me. HTTP = JQuery. HTTP requests are too low level. They are similar to manually querying or mutating the DOM via JQuery, except it's manually querying or mutating server state.  We need to go higher level and build a semantic model for "whole systems."
+One day in the shower, I was wondering how to incorporate HTTP requests into the DCTP paradigm. Then it hit me. HTTP = JQuery. HTTP requests are too low level. They are similar to manually querying or mutating the DOM via JQuery, except it's manually querying or mutating server state.  We need to go higher level and build a semantic model for "whole systems."
 
-The same is true of all imperative APIs, including databases, files, sockets, etc. It's not that we have to abandon these technologies entirely. But only as the _implementation_ of a denotative programming system. The computer's job should be to make HTTP requets for you, just like React mutates the DOM on your behalf. 
-
-### Performance
-
-It's well known that FRP has suffered space and time leaks. People often complain about the performance of mathematical or abstract language like Haskell. 
-
-[asked conal for help here]
+The same is true of all imperative APIs, including databases, files, sockets, etc. It's not that we have to abandon these technologies entirely. But only as the _implementation_ of a denotative programming system. The computer's job should making HTTP requets, reading and writing to files and databases, on your behalf, just like React mutates the DOM on your behalf. 
 
 ## Common Gotchas
+
+DCTP is notoriously difficult to understand. Even if you get most of it, you are likely not yet entirely rid of imperitive thinking habits.
 
 ### Thinking about DAGs
 
@@ -315,6 +330,16 @@ In [What's Functional Programming All About?](http://www.lihaoyi.com/post/WhatsF
 
 [TODO]
 
+### Performance
+
+It's well known that FRP has suffered space and time leaks. People often complain about the performance of denotational langauges like Haskell. 
+
+If you look at my 100x100 pixel animations running on the CPU, you may write off this paradigm for its impracticality. However, you'd simply be fooled by the von Nueman bottleneck [TODO link]. When I switched to the GPU, the code ran without a hitch. 
+
+Conal argues that performance criticisms of denotational programming have it exactly wrong. Not just wrong, exactly wrong. One of the main benefits of denotational programming is equational reasoning, which is the key factor that enables speeding up code: the ability to optimize it by replacing some parts with faster parts. 
+
+When your code is abstract and free of imperitive, technological, operational concerns, you can compile down much further and easier. Conal brags about compiling his Haskell code down to custom-made circuits for blazing speeds.
+
 ## Further reading
 
 * [What's Functional Programming All About?](http://www.lihaoyi.com/post/WhatsFunctionalProgrammingAllAbout.html)
@@ -331,3 +356,5 @@ https://stackoverflow.com/questions/5385377/the-difference-between-reactive-and-
 https://stackoverflow.com/questions/1028250/what-is-functional-reactive-programming/1030631#1030631
 
 https://futureofcoding.org/notes/conal-elliott/
+
+<a name="1" href="#1">[1]</a> - The "D" in DCTP stands for "denotational semantics." The original name for denotational semantics was "mathematical semantics". It was pioneered by Chris Strachey and Dana Scott in the early 1970s. It is an approach to model a programming language with mathematical objects. For example, in this essay we model static graphics as a functions from `x` and `y` to `Color` and moving animations from `x`, `y`, and `t` to `Color`. You can learn more about denotational design and semantics from Conal's [video](https://www.youtube.com/watch?v=bmKYiUOEo2A) and [paper](http://conal.net/papers/type-class-morphisms/).
