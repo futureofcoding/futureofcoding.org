@@ -31,17 +31,44 @@ Then someone (I forget who - if this is you, THANK YOU!!!) suggested I listen to
 
 Now I am cursed to be one of those condescending assholes, a Conal zombie, doomed to roam the land, pleading other to "go back and read Conal", while knowing full well how hard it will be for them to see the light. This essay is how I hope to give you my disease.
 
-## The Curse of Coining a Programming Paradigm
+## DCTP & Denotational
+
+### The Curse of Coining a Programming Paradigm
 
 When a programming language designer defines a word in their language, that's the end of the story. But when a programming language designer coins a phrase in English, that's only the beginning of their ordeal. Alan Kay coined the phrase "object-oriented programming" (OOP) in the 70s, but OOP took on a life of its own, [which has caused much confusion and heartache to its creator](http://wiki.c2.com/?AlanKaysDefinitionOfObjectOriented). 
 
 Functional reactive programming (FRP) has [a similarly confused and contested etymology](https://medium.com/@andrestaltz/why-i-cannot-say-frp-but-i-just-did-d5ffaa23973b). In the 90s, Conal Elliott pioneered a new software paradigm for programming interactive animations and dubbed it "Functional Reactive Programming" (FRP). Like Kay, Elliott then watched others use his term to describe things totally opposed to his original vision. Conal eventually conceded defeat. Like OOP, FRP now is a bastardized term that refers to work *inspired* by the "original FRP." Conal has retreated to coining a new, less-sexy (maybe on purpose?) phrase to describe his original vision: Denotative Continuous Time Programming (DCTP). From here on out I will use DCTP to refer to "original FRP."
 
+### Denotational Programming
+
+Aren't spreadsheets wonderful? A key to their success is that there is no control flow, no sequencing of instructions. Only data flow.
+
+In [What's Functional Programming All About?](http://www.lihaoyi.com/post/WhatsFunctionalProgrammingAllAbout.html), Li Hayoi explains: "The core of Functional Programming is thinking about data-flow rather than control-flow." He demostrates this beautifully by converting a stateful imperitive tiramisu recipe to a dataflow diagram:
+
+![](https://user-images.githubusercontent.com/2288939/51426743-e7fc2400-1be6-11e9-9aa6-1c45d3c8f83e.png) 
+
+[TODO]
+
+In [The Next 700 Programming Languages](https://www.cs.cmu.edu/~crary/819-f09/Landin66.pdf), Peter Landin calls such languages "denotative":
+
+> (a) each expression has a nesting subexpression structure, (b) each subexpression
+denotes something (usually a number, truth value ornumerical function), (c) the thing an expression denotes, i.e., its "value", depends only on the values of its subexpressions, not on other properties of them.
+
+In other words "denotative" languages contain no statements, but only nested mathmatical expressions, where each expression *denotes* (can be model by) some mathmatical object. 
+
+Denotational programming has a number of benefits:
+
+1. **Equational reasoning**. In denotational programming, the equal sign (=) means what it does in a mathematics textbook: we can replace instances of the left with the expression to the right or vice-a-versa.
+2. **Definitional reasoning**. We can *fully* understand an expression by its subexpressions, and their subexpressions, recursively. There are no spooky action-at-a-distance side-effects that can manipulate things from afar. In this way, we don't have to read the entire codebase to understand all the places our state could be manipulated.
+3. **Modularity & Composibility**. TODO 
+
+I will follow Landin and [Elliott](http://conal.net/blog/posts/is-haskell-a-purely-functional-language) in using the phrase "denotational" instead of "functional", and "imperitive" to describe its opposite.
+
 ## Continuity
 
 The [inspiration for DCTP came in the form of a question from John Reynolds](http://conal.net/blog/posts/early-inspirations-and-new-directions-in-functional-reactive-programming). It roughly amounted to: 
 
-> What would programming look like if time were continuous?
+> What would it be like to program in continuous time?
 
 This is a wonderful question, but it's hard to answer it directly, partly because time is hard to visualize. Let's come at this via a slightly different question and then circle back to time:
 
@@ -61,7 +88,7 @@ SVGs retain all the relevant info until the very last moment when the computer f
 
 #### What is a graphic?
 
-Let's get a bit more mathematical[[1](#1)] with our definitions. A graphic is something that relates x- and y- coordinates to colors. You give it an x-y pair; it gives you a color. 
+Let's get a bit more mathematical (or denotational)[1](#1) with our definitions. A graphic is something that relates x- and y- coordinates to colors. You give it an x-y pair; it gives you a color. 
 
 Here's the difference between bitmaps and SVGs: what kind of numbers make up the x-y pairs? 
 
@@ -114,7 +141,7 @@ In most programming, time is discrete. The ticks of time can be counted one-by-o
 
 Now let's return to the original question that inspired FRP: 
 
-> What would programming look like if time were continuous?
+> What would it be like to program in continuous time?
 
 #### What is an animation?
 
@@ -190,7 +217,7 @@ const example6 = layer([
 
 ## Interactivity
 
-The above animations are neat, but they are static in the sense that movies are static: no interactivity. We want to be able to press, click, type, and play with our screens. Let's go deeper into the DCTP rabbithole.
+The above animations are neat, but there's no interactivity. We want to be able to press, click, type, and play with our screens. Let's go deeper into the DCTP rabbithole.
 
 ### Behaviors and Events
 
@@ -209,7 +236,7 @@ Behaviors are continuous functions of time:
 
 ![](https://camo.githubusercontent.com/bdbe25d1c8cf3490714fcf8d90039be58afcda35/68747470733a2f2f7261776769742e636f6d2f66756e6b69612f686172656163746976652f6d61737465722f666967757265732f73747265616d2e737667)
 
-_Graphic of EVents from the [Hareactive documentation](https://github.com/funkia/hareactive)_
+_Graphic of Events from the [Hareactive documentation](https://github.com/funkia/hareactive)_
 
 Events are discrete occurrences in time:
 
@@ -223,21 +250,63 @@ The above animation code was purposefully simplisitic: we literally used pure, m
 
 Let's start with a simple counter button:
 
+<button onclick="ex1.innerText -= -1">Count!</button><span id="ex1" >0</span>
+
+```javascript
+const counter = function*() {
+  // put a button on the screen
+  // `clickEvent` is the stream of all click events on that button
+  const {click: clickEvent} = yield button("Count!")
+  
+  // calculate the number of clicks on the button
+  // `scan` is like fold or reduce, but over streams
+  // `liftNow` and `sample` are outside the scope of this essay
+  const clicks = yield liftNow(sample(scan((n, m) => m + 1, 0, clickEvent))); 
+  
+  // put the clicks count on the screen
+  yield span(clicks)
+};
+```
+[![Edit Turbine Counter](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/rym2pwy3lp?module=%2Fsrc%2Findex.js)
+
+[TODO drawn flows?]
 
 ### Cyclical Flows
 
 What if we want the button to count inside itself?
 
+<button onclick="this.innerText -= -1">0</button>
+
+```javascript
+const counter = loop(
+  // create a cycle with `loop`
+  // the `clicks` Behavior (defined in the function below) is passed in
+  ({ clicks }) => function*() {
+    
+    // use the `clicks` Behavior BEFORE IT's DEFINED
+    const { click: clickEvent } = yield button(clicks);
+
+    // define `clicks_`
+    const clicks_ = yield liftNow(sample(scan((n, m) => m + 1, 0, clickEvent)));
+
+    // set `clicks` to `clicks_` to tie the recursive knot
+    return { clicks: clicks_ };
+  }
+);
+```
+[![Edit buttons that create buttons](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/xorqy1q73q)
+
+[TODO drawn flows?]
+
 ### Higher-order Flows
 
-What if we want a variable number of counters? [maybe simpler]
+TODO 
 
 ### Higher-order & Cyclical Flows
 
-What if we want counters that make counters that make counters...? [maybe simplier]
+What if we want a button that makes buttons that make buttons... but only the odd buttons can make buttons? This example may seem contrived, but it's a good minimal example to test the expressivity of a UI paradigm. 
 
-
-This example may seem contrived, but it's a good minimal example to test the expressivity of a UI paradigm. 
+https://codesandbox.io/s/xorqy1q73q
 
 ### Visualizing Flows
 
@@ -249,26 +318,9 @@ I have a hunch: visualize the flows.
 
 There's been some interesting work done here [TODO linkify], and I'm hoping to further it by building similar visualization tools for Hareactive and Turbine.
 
-## "Why program with continuous time?"
+## Denotational Programming Beyond User Interfaces
 
-[TODO this section needs cleaning]
-
-Of course, for the computer to render the above graphics on the screen, it must at some point convert the continuous time and space to discretized pixels and ticks of time. So what's the point of programming in continuous time if it will eventually be discretized? 
-
-There are a [lot](https://github.com/conal/talk-2014-bayhac-denotational-design#why-continuous-time-matters) of [reasons](http://conal.net/blog/posts/why-program-with-continuous-time).  The most compelling argument for me is for the same reason we use SVGs: resolution independence. We want to be able to transform our programs "in time and space with ease and without propagating and amplifying sampling artifacts." We want to discretize at the last possible moment, and stay as abstract as possible for as long as possible.
-
-Aren't spreadsheets wonderful? A key to their success is that there is no control flow, no sequencing of instructions. Only data flow.
-
-In [The Next 700 Programming Languages](https://www.cs.cmu.edu/~crary/819-f09/Landin66.pdf), Peter Landin calls such languages "denotative" when they contain only nested mathmatical expressions, and each expression *denotes* (can be model by) some mathmatical object. And, "The antithesis of denotative is 'imperative.'"
-
-As Conal says:
-
-> There is a lot of confusion about the meaning of “functional” and “declarative” as descriptions of programming languages and paradigms.... I’ve started using the more specific term “denotational programming” in my blog subtitle and elsewhere, as an alternative to what I used to call “functional programming”. While there are other notions of “functional”, applicable even to monadic IO, I think “denotational” captures the fundamental and far-reaching benefits that we called “good for reasoning about” and “powerfully compositional”. - [Is Haskell a purely functional language?](http://conal.net/blog/posts/is-haskell-a-purely-functional-language)
-
-Haskell is such a denotative lanugage... That is, except for monads.
-
-[TODO Explain why continuous time (and laziness) are key for compositionality and modularity, maybe citing my FRP paper]
-
+TODO
 
 ### Monads are Imperitive
 
@@ -308,13 +360,23 @@ One day in the shower, I was wondering how to incorporate HTTP requests into the
 
 The same is true of all imperative APIs, including databases, files, sockets, etc. It's not that we have to abandon these technologies entirely. But only as the _implementation_ of a denotative programming system. The computer's job should making HTTP requets, reading and writing to files and databases, on your behalf, just like React mutates the DOM on your behalf. 
 
-## Common Gotchas
+## FAQ and Common Gotchas
 
-DCTP is notoriously difficult to understand. Even if you get most of it, you are likely not yet entirely rid of imperitive thinking habits.
+### Why program with continuous time?
 
-### Thinking about DAGs
+Of course, for the computer to render animations on the screen, it must at some point convert the continuous time and space to discretized pixels and ticks of time. So what's the point of programming in continuous time if it will eventually be discretized? 
 
-A very common misconception with DCTP is confusing it with its implementation details. If you catch yourself thinking of DCTP as a DAG (directed acyclic graph), you still haven't quite gotten it. The builder of a DCTP framework or library _may_ decided to choose a DAG as an internal data structure, but they may choose an entirely different underlying evaluation strategy. In fact, a DAG is likely the wrong structure for DCTP because DAGs are (definitionally) acyclic, but DCTP often requires cycles (recursively defined Behaviors and Events) to represent the full range of user interfaces.
+There are a [lot](https://github.com/conal/talk-2014-bayhac-denotational-design#why-continuous-time-matters) of [reasons](http://conal.net/blog/posts/why-program-with-continuous-time).  The most compelling argument for me is for the same reason we use SVGs: resolution independence. We want to be able to transform our programs "in time and space with ease and without propagating and amplifying sampling artifacts." We want to discretize at the last possible moment, and stay as abstract as possible for as long as possible.
+
+### Thinking about DAGs or propagation
+
+A very common misconception with DCTP is confusing it with its implementation details. If you catch yourself thinking of DCTP as a DAG (directed acyclic graph), you still haven't quite gotten it. 
+
+> Every time you hear somebody talk about FRP in terms of graphs or propagation or something like that, they are missing the point entirely. Because they are taking about some sort of operational, mechanistic model, not about what it means.
+>
+> - Conal Elliott on the Haskellcast Podcast
+
+The builder of a DCTP framework or library _may_ decided to choose a DAG as an internal data structure, but they may choose an entirely different underlying evaluation strategy. In fact, a DAG is likely the wrong structure for DCTP because DAGs are (definitionally) acyclic, but DCTP often requires cycles (recursively defined Behaviors and Events) to represent the full range of user interfaces.
 
 ### Doing vs Being
 
@@ -323,12 +385,6 @@ If you find describing your code in terms of _steps_, you've probably slipped ba
 > Imperitive is doing. Denotational is being.
 
 I find it helpful to ask myself: What _is_ it?  [TODO]
-
-In [What's Functional Programming All About?](http://www.lihaoyi.com/post/WhatsFunctionalProgrammingAllAbout.html), Li Hayoi explains: "The core of Functional Programming [or denotative programming] is thinking about data-flow rather than control-flow." He demostrates this beautifully by converting an imperitive tiramisu recipe to a dataflow diagram:
-
-![](https://user-images.githubusercontent.com/2288939/51426743-e7fc2400-1be6-11e9-9aa6-1c45d3c8f83e.png) 
-
-[TODO]
 
 ### Performance
 
@@ -346,6 +402,7 @@ When your code is abstract and free of imperitive, technological, operational co
 * [Let's reinvent FRP](http://vindum.io/blog/lets-reinvent-frp/) by Simon Friis Vindum
 * [The Essense and Origins of FRP](https://github.com/conal/talk-2015-essence-and-origins-of-frp)
 * [Functional Reactive Animation](http://conal.net/papers/icfp97/) - the original FRP paper by Conal Elliott and Paul Hudak 
+* [The introduction to Reactive Programming you've been missing](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754) by Andre Staltz
 
 ## Notes
 
