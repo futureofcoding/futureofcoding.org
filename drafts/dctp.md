@@ -7,29 +7,27 @@ title: The Misunderstood Roots of FRP Will Save Programming
 * TOC
 {:toc}
 
-For many years, I've been searching for the "perfect" library/framework/language/paradigm for programming user interfaces. I wanted a tool that designers or other non-programmers could use to program arbitrarily complex user interfaces, such as TodoMVC. 
+For many years, I've been searching for the "perfect" library/framework/language/paradigm for programming user interfaces. I wanted a tool that non-programmers could use to program arbitrarily complex user interfaces, such as [TodoMVC](http://todomvc.com). 
 
 Like many others, I fell in love with FRP with the rise of ReactJS and spent a few years searching for the perfect reactive model. Eventually, I found my way back to the original work on FRP by Conal Elliott, where I was surpised to find that it needed little improving: it was gotten right from the start. 
 
-However, Conal's FRP has a reputation for being difficult to understand. It took me almost a year to make sense of it. This essay attempts to make Conal's vision more understandable, and also show how this perspective could be the foundation for a new world of end-user programming, not just with user interfaces, but for all programming: storage, multi-node computing, machine learning, etc..._
+However, Conal's FRP has a reputation for being difficult to understand. It took me almost a year to make sense of it. This essay attempts to make Conal's vision more understandable, and also show how this perspective could be the foundation for a new era of programming, not just with user interfaces, but for all programming: multi-node computing, storage, machine learning, etc...
 
-## The Curse of FRP
+## The Curse of Orignal FRP
 
 I fell in love with ReactJS in late 2014. The view is a pure function of state. It was so obviously *right*.
 
-But of course it wasn't perfect. For one, it wasn't clear how that state changed over time. Redux seemed to make sense -- and hot reloading and time travel debugging are awesome -- but over time I began to sense that React didn't solve all my problems. I eagerly slurped up each new React-inspired frameworks, such as VueJS and CycleJS, to see if they could finally be the "full solution" to interface development, but always felt something was missing.
+But of course it wasn't perfect. For one, it wasn't clear how that state changed over time. Redux seemed to make sense -- and hot reloading and time travel debugging are awesome -- but over time I began to sense that React didn't solve all my problems. I eagerly slurped up each new React-inspired frameworks, such as VueJS and CycleJS, to see if they could finally be the "full solution" to interface development, but always something was missing.
 
 [Paul Chiusano](https://pchiusano.github.io/) suggested I read [Conal Elliott](http://conal.net). "You know," he said, "Conal is the original guy behind FRP. React isn't even 'real' FRP. You should go back and read him."
 
-I didn't like to hear this. I loved React and the FRP I knew. I was reluctant to read [a stodgy paper from the 90s](http://conal.net/papers/icfp97/). But I trusted and respected Paul so I gave it a go.
+I didn't like to hear this. I loved React and the FRP I knew. I was reluctant to read [a stodgy paper from the 90s](http://conal.net/papers/icfp97/). But I trusted and respected Paul so I gave it a go. My eyes immediately glazed over. I wasn't able to make sense of almost any part of it, so I gave up. 
 
-My eyes immediately glazed over. I wasn't able to make sense of almost any part of it, so I gave up. However, I couldn't escape HN comments alluding to "[real](https://hn.algolia.com/?sort=byPopularity&prefix&page=0&dateRange=all&type=comment&query=real%20frp)" or "[original](https://hn.algolia.com/?sort=byPopularity&prefix&page=0&dateRange=all&type=comment&query=original%20frp)" FRP.
+However, I couldn't escape HN comments alluding to "[real](https://hn.algolia.com/?sort=byPopularity&prefix&page=0&dateRange=all&type=comment&query=real%20frp)" or "[original](https://hn.algolia.com/?sort=byPopularity&prefix&page=0&dateRange=all&type=comment&query=original%20frp)" FRP. They were annoying enough to send me back to Conal for another try. I wanted to show these pompous pricks that their precious old FRP was *worse* than my modern FRP. (Maybe you feel the same way towards me, dear reader? 😜) 
 
-They were annoying enough to send me back to Conal for another try. I wanted to show these pompous pricks that their precious old FRP was *worse* than my modern FRP. (Maybe you feel the same way towards me, dear reader? 😜) 
+Yet I couldn't make heads or tail of Conal, even in [video](https://www.youtube.com/watch?v=j3Q32brCUAI) [form](https://www.youtube.com/watch?v=teRC_Lf61Gw). I gave up again. Over the course of a year, I tried on-and-off to read Conal's papers, but they never made sense. I decided to give it up for nonsense. There was no there there.
 
-Yet I couldn't make heads or tail of Conal, even in [video](https://www.youtube.com/watch?v=j3Q32brCUAI) [form](https://www.youtube.com/watch?v=teRC_Lf61Gw). I gave up again. Over the course of a year, I tried on-and-off again to read Conal's papers, but they never made sense. I decided to give it up for nonsense. There was no there there.
-
-Then someone (I forget who - if this is you, THANK YOU!!!) suggested I listen to [Conal's interview on the Haskellcast podcast](http://www.haskellcast.com/episode/009-conal-elliott-on-frp-and-denotational-design). Things started to click. I went back to his papers one last time.... 💥. It hit me. It all fell into place. I saw the light. I saw how the beautify of React could be joined with a solution to state management without the annoying parts of Redux. I saw how we could program user interfaces without mutable variables anywhere, just `const` statements as far as the eye could see... 
+Then someone (I forget who - if this is you, THANK YOU!!!) suggested I listen to [Conal's interview on the Haskellcast podcast](http://www.haskellcast.com/episode/009-conal-elliott-on-frp-and-denotational-design). Things started to click. I went back to his papers one last time.... 💥. It hit me. It all fell into place. I saw the light. I saw how the beauty of React could be joined with a solution to state management without the annoying parts of Redux. I saw how we could program user interfaces without mutable variables anywhere, just `const` statements as far as the eye could see... 
 
 Now I am cursed to be one of those condescending assholes, a Conal zombie, doomed to roam the land, pleading other to "go back and read Conal", while knowing full well how hard it will be for them to see the light. This essay is how I hope to give you my disease.
 
@@ -37,7 +35,7 @@ Now I am cursed to be one of those condescending assholes, a Conal zombie, doome
 
 When a programming language designer defines a word in their language, that's the end of the story. But when a programming language designer coins a phrase in English, that's only the beginning of their ordeal. Alan Kay coined the phrase "object-oriented programming" (OOP) in the 70s, but OOP took on a life of its own, [which has caused much confusion and heartache to its creator](http://wiki.c2.com/?AlanKaysDefinitionOfObjectOriented). 
 
-Functional reactive programming (FRP) has [a similarly confused and contested etymology](https://medium.com/@andrestaltz/why-i-cannot-say-frp-but-i-just-did-d5ffaa23973b). In the 90s, Conal Elliott pioneered a new software paradigm for programming interactive animations and dubbed it Functional Reactive Programming (FRP). Like Kay, Elliott then watched others use his term to describe things totally opposed to his original vision. Conal eventually conceded defeat. Like OOP, FRP now is a bastardized term that refers to work *inspired* by the "original FRP." Conal has retreated to coining a new, less-sexy (maybe on purpose?) phrase to describe his original vision: Denotative Continuous Time Programming (DCTP). From here on out I will use DCTP to refer to "original FRP."
+Functional reactive programming (FRP) has [a similarly confused and contested etymology](https://medium.com/@andrestaltz/why-i-cannot-say-frp-but-i-just-did-d5ffaa23973b). In the 90s, Conal Elliott pioneered a new software paradigm for programming interactive animations and dubbed it "Functional Reactive Programming" (FRP). Like Kay, Elliott then watched others use his term to describe things totally opposed to his original vision. Conal eventually conceded defeat. Like OOP, FRP now is a bastardized term that refers to work *inspired* by the "original FRP." Conal has retreated to coining a new, less-sexy (maybe on purpose?) phrase to describe his original vision: Denotative Continuous Time Programming (DCTP). From here on out I will use DCTP to refer to "original FRP."
 
 ## Continuity
 
@@ -51,9 +49,13 @@ This is a wonderful question, but it's hard to answer it directly, partly becaus
 
 ### Continuous Space
 
-In layman's terms: if you zoom in a bitmap graphic, it will get all pixelated. But if you zoom into an SVG, it will remain crystal clear. 
+In layman's terms: if you zoom in a bitmap graphic, it will get all pixelated. But if you zoom into an SVG (Scalable Vector Graphics), it will remain crystal clear. 
 
-This is because a circle in a bitmap graphic is just an array of pixels, so if you zoom in, the computer has no choice but to "blow up" each pixel. However, if you have a circle in an SVG, the computer always remembers it's a circle and thus will be able to show it at whatever resolution you want. SVGs are "resolution-independent".
+![bitmap](https://user-images.githubusercontent.com/2288939/51426691-1f1e0580-1be6-11e9-96ee-1088845d8bfb.jpg)
+
+_Image Source: [StickerYou Blog](https://www.stickeryou.com/blog/post/vector-vs-bitmap)_
+
+This is because a circle in a bitmap graphic is just an array of pixels, so if you zoom in, the computer has no choice but to "blow up" each pixel. However, with a circle in an SVG, the computer always remembers it's a circle and thus will be able to show it at whatever resolution you want. SVGs are "resolution-independent".
 
 SVGs retain all the relevant info until the very last moment when the computer finally has to put the picture on the screen; then it turns your circle into a bunch of pixels.  On the other hand, a bitmap is a bag of pixels always, and thus when you want to zoom in, it's stuck with too little information (it doesn't know those pixels started out as a circle) to give you what you want. It's gone to pixels "too early."
 
@@ -65,23 +67,49 @@ Here's the difference between bitmaps and SVGs: what kind of numbers make up the
 
 With bitmaps, it's a pair of integers `(Int, Int) -> Color`, while with SVGs it's a pair of real numbers `(Real, Real) -> Color`.
 
-A bitmap is a graphic over discrete space. This means that you can count the pixels one by one. There are no pixels in between two adjacent pixels. This is why we have trouble zooming in - we must create more pixels in between where no pixels yet exist.
+A bitmap is a graphic over discrete space. This means that you can count the pixels one by one. There are no pixels in between two adjacent pixels. This is why we have trouble zooming in: we must create more pixels in between where no pixels yet exist.
 
 An SVG is a graphic over continuous space. Between any two points in an SVG there are an INFINITY of points. It wouldn't even make sense to discuss adjacent points, because you could always find more points in between any two points. This is why SVGs scale so well. SVG graphics know the values of infinitely many points, so they are infinitely flexible.
 
 If you're not used to dealing with the infinite every day, you may wonder how we can store an infinity of points. It's easy: just use mathematical functions.
 
-Here's a very simple graphic that describes an infinity of points. For all points, the color is black: `(x, y) -> Black`. Boom. Infinity conquered. 
+Here's a very simple graphic that describes an infinity of points. For all points, the color is red. Boom. Infinity conquered. 
 
-[todo pic]
+```javascript
+// Example 1
 
-Here's another: a green circle with radius 1, centered at (1,2): `(x, y) -> (x - 1)^2 + (y - 2)^2 < 1 ? Green : Clear`.
+const red = [255, 0, 0, 255]
 
-[todo pic]
+const example1 = (x, y) => red
+```
+
+**Note:** If you'd like to play with the simple example _code_ used in this essay, [it all lives here](https://jsbin.com/pelamug/edit?js,output), running in a small 100x100 pixel window on the CPU. However, the example _outputs_ were constructed to be much bigger with uglier GPU code which is linked next to each output.
+
+<iframe height="300px" width="100%" frameborder="none" scrolling="no" src="https://stevekrouse.com/embed-jsbin/?id=pinitox"></iframe>
+ _[Example 1 GPU Code](https://jsbin.com/pinitox/edit?js,output)_
+
+Here's another: a green circle with radius 50, centered at (100, 150).
+
+
+```javascript
+// Example 2
+
+const green = [0, 255, 0, 255]
+const white = [255, 255, 255, 255]
+
+function circle(centerX, centerY, r, color) {
+  return (x, y) => Math.pow(centerX - x, 2) + Math.pow(centerY - y, 2) < Math.pow(r, 2) ? color : white
+}
+
+const example2 = circle(100, 150, 50, green)
+```
+
+<iframe height="300px" width="100%" frameborder="none" scrolling="no" src="https://stevekrouse.com/embed-jsbin/?id=hiresut"></iframe>
+[Example 2 GPU Code](https://jsbin.com/hiresut/edit?js,output)
 
 ### Continuous Time
 
-In 99.99% of programming, time is discrete. The ticks of time can be counted one-by-one, and there is no time in between adjacent points. For example, JavaScript's `requestAnimationFrame` has discrete time ticking along at about 60 times per second.
+In most programming, time is discrete. The ticks of time can be counted one-by-one, and there is no time in between adjacent points. For example, JavaScript's `requestAnimationFrame` has discrete time ticking along at about 60 times per second.
 
 Now let's return to the original question that inspired FRP: 
 
@@ -89,70 +117,105 @@ Now let's return to the original question that inspired FRP:
 
 #### What is an animation?
 
-An animation is a graphic that changes over time. That is, it's takes an `x` and `y` as before, but now it also inputs a `t` for time, and outputs a Color as before: `(x, y, t) -> Color`. But again, what kinds of numbers are `x`, `y` and `t`? If they are integers, we're in discrete space and time. Let's make them all reals. We want continuous time.
+An animation is a graphic that changes over time. That is, it takes an `x` and `y` as before, but now it also inputs a `t` for time, and outputs a Color as before: `(x, y, t) -> Color`. But again, what kinds of numbers are `x`, `y` and `t`? If they are integers, we're in discrete space and time. Let's make them all reals, and enter continuous time.
 
-Let's use continuous time to have our circle drift off the screen to the right: `(x, y, t) -> (x, y) -> (x-t)^2 + y^2 < 1 ? Green : Clear`. 
+Let's use continuous time to have our green circle drift off the screen to the right. (You may have to refresh the page to see him go.) 
 
-Let's have him go faster: `(x, y, t) -> (x, y) -> (x - (2 * t))^2 + y^2 < 1 ? Green : Clear`
+```javascript
+// Example 3
 
-[todo pic]
-
-We can simplify this by defining a function for our static circle:
-
-```haskell
-circle centerX centerY radius color = (x, y) -> (x - centerX)^2 + (y - centerY)^2 < radius^2 ? color : Clear
+const example3 = (x, y, t) => circle(10*t, 0, 50, green)(x, y)
 ```
 
-And then moving him along:
+<iframe height="300px" width="100%" frameborder="none" scrolling="no" src="https://stevekrouse.com/embed-jsbin/?id=kayakim"></iframe>
+[Example 3 GPU Code](https://jsbin.com/kayakim/edit?js,output)
 
-```haskell
-rightDriftCircle t = circle t 0 1 Green
-fasterDriftRightCircle t = circle 2*t 0 1 Green
+Let's have him go faster. (You may have to refresh the page to see him go.)
+
+```javascript
+// Example 4
+
+const example4 = (x, y, t) => circle(100*t, 0, 50, green)(x, y)
 ```
 
-How about in a circle?
+<iframe height="300px" width="100%" frameborder="none" scrolling="no" src="https://stevekrouse.com/embed-jsbin/?id=hahegon"></iframe>
+[Example 4 GPU Code](https://jsbin.com/hahegon/edit?js,output)
 
-```haskell
-circle cos(t) sin(t) 1 Green
+How abou moving in a circle? Let's use some trig!
+
+```javascript
+// Example 5
+
+const example 5 = circle(50*Math.cos(10*t), 50*Math.sin(-10*t), 50, green)(x, y)
 ```
 
-## Flows
+<iframe height="300px" width="100%" frameborder="none" scrolling="no" src="https://stevekrouse.com/embed-jsbin/?id=busemas"></iframe>
+[Example 5 GPU Code](https://jsbin.com/busemas/edit?js,output)
 
-There are two main types in DCTP: Behaviors and Events. I will refer to them both as "flows" because they both resembles timeline-y things.
+Let's get funky!
 
-Behaviors are continuous functions of time: 
+```javascript
+// Example 6
 
-* the x-y-position of your mouse
-* the constant function `t -> 1`
-* the Boolean valued function: `t -> t > 10`
+function layer(fs) {
+  return (x, y, t) => {
+    for (var i = 0; i < fs.length; i++) {
+      let c = fs[i](x,y,t)
+      if (c !== white) {
+        return c
+      } 
+    }
+    return white
+  }
+}
 
-Events are discrete occurrences in time:
+const example6 = layer([
+  circle(50*Math.cos(10*t), 50*Math.sin(-10*t), 50*Math.sin(10*t) + 25, [
+    Math.cos(x*t), 
+    Math.cos(y*t), 
+    Math.cos(x*y*t
+  ]),
+  [
+    255*Math.cos(2*x*y*t),
+    255*Math.cos(7*x*y*t),
+    255*Math.cos(11*x*y*t)
+  ]
+])
+```
 
-* the click event of your mouse
-* key press events of your keyboard
-* an interval of 3 seconds
+<iframe height="300px" width="100%" frameborder="none" scrolling="no" src="https://stevekrouse.com/embed-jsbin/?id=viropan"></iframe>
+[Example 6 GPU Code](https://jsbin.com/viropan/edit?js,output)
 
-### Flow combinators
 
-[TODO turbine]
+<!--## Interactivity-->
 
-### Higher-Order Flows
+<!--### Behaviors and Events-->
 
-It's very often useful for a flow to contain other flow:
+<!--There are two main types in DCTP: Behaviors and Events.-->
 
-[TODO examples]
+<!--![](https://camo.githubusercontent.com/9b8fca9342d56465fc9536efdf8b26e182958a2f/68747470733a2f2f7261776769742e636f6d2f66756e6b69612f686172656163746976652f6d61737465722f666967757265732f6265686176696f722e737667)-->
 
-However, it can be unwieldy to work with such flows. Usually, one manages by collapsing them down to more manageable types, such as via the following chart:
+<!--_Graphic of Behaviors from the [Hareactive documentation](https://github.com/funkia/hareactive)_-->
 
-[TODO chart]
+<!--Behaviors are continuous functions of time: -->
 
-### Cyclical/Recursive Flows
+<!--* the animation diagrams from above-->
+<!--* the x-y-position of your mouse-->
+<!--* the constant function `t -> 1`-->
+<!--* the Boolean valued function: `t -> t > 10`-->
 
-It's also often useful to have cyclically/recursively defined flows:
+<!--![](https://camo.githubusercontent.com/bdbe25d1c8cf3490714fcf8d90039be58afcda35/68747470733a2f2f7261776769742e636f6d2f66756e6b69612f686172656163746976652f6d61737465722f666967757265732f73747265616d2e737667)-->
 
-[TODO examples]
+<!--_Graphic of EVents from the [Hareactive documentation](https://github.com/funkia/hareactive)_-->
 
-Denotationally, cyclical or recursive flows are very similar to recursive functions, which are semantically a fixpoint. 
+<!--Events are discrete occurrences in time:-->
+
+<!--* the click event of your mouse-->
+<!--* key press events of your keyboard-->
+<!--* an interval of 3 seconds-->
+
+
+
 
 ## Denotational Semantics
 
@@ -162,7 +225,7 @@ We've already been doing it. The original name for denotational semantics was "m
 
 In his 1977 Turing Award Lecture, [Can Programming Be Liberated from the von Neumann Style? A functional style and its algebra of programs](http://www.thocp.net/biographies/papers/backus_turingaward_lecture.pdf), John Backus explains how denotational semantics uncovers the hidden complexities in imperative, von-Neumann-based languages:
 
-> When applied to a von Neumann language ... the complexity of the language is mirrored in the complexity of the description, which is a bewildering collection of productions, domains, functions, and equations that is only slightly more helpful in proving facts about programs than the reference manual of the language...
+> the complexity of the language is mirrored in the complexity of the description, which is a bewildering collection of productions, domains, functions, and equations that is only slightly more helpful in proving facts about programs than the reference manual of the language...
 
 In other words, most programming languages lack powerful mathematical properties. For example, the lack of equational reasoning (being able to replace expressions with equal ones) makes it difficult to reason about such programs, let alone *prove* things about them. Additionally, lacking in mathematical properties prevents composability and modularity of programs. [TODO maybe join this section with the composability and modularity from the section above?]
 
@@ -236,7 +299,7 @@ It's well known that FRP has suffered space and time leaks. People often complai
 
 ### Thinking about DAGs
 
-A very common misconception with DCTP is confusing it with its implementation details. If you catch yourself thinking of DCTP as a DAG (directed acyclic graph), you still haven't quite gotten it. The builder of a DCTP framework or library _may_ decided to choose a DAG as an internal data structure, but they may choose an entirely difference underlying evaluation strategy. In fact, a DAG is the wrong structure for true DCTP entirely because DAGs are acyclic when you'll need cycles to represent the full range of user interfaces.
+A very common misconception with DCTP is confusing it with its implementation details. If you catch yourself thinking of DCTP as a DAG (directed acyclic graph), you still haven't quite gotten it. The builder of a DCTP framework or library _may_ decided to choose a DAG as an internal data structure, but they may choose an entirely different underlying evaluation strategy. In fact, a DAG is likely the wrong structure for DCTP because DAGs are (definitionally) acyclic, but DCTP often requires cycles (recursively defined Behaviors and Events) to represent the full range of user interfaces.
 
 ### Doing vs Being
 
@@ -244,13 +307,11 @@ If you find describing your code in terms of _steps_, you've probably slipped ba
 
 > Imperitive is doing. Denotational is being.
 
-I find it helpful to ask myself: What _is_ it? 
-
-[TODO]
+I find it helpful to ask myself: What _is_ it?  [TODO]
 
 In [What's Functional Programming All About?](http://www.lihaoyi.com/post/WhatsFunctionalProgrammingAllAbout.html), Li Hayoi explains: "The core of Functional Programming [or denotative programming] is thinking about data-flow rather than control-flow." He demostrates this beautifully by converting an imperitive tiramisu recipe to a dataflow diagram:
 
-![](http://www.lihaoyi.com/post/BasicFunctionalProgramming/TiramisuDiagram.png) [TODO upload photo]
+![](https://user-images.githubusercontent.com/2288939/51426743-e7fc2400-1be6-11e9-9aa6-1c45d3c8f83e.png) 
 
 [TODO]
 
@@ -259,7 +320,7 @@ In [What's Functional Programming All About?](http://www.lihaoyi.com/post/WhatsF
 * [What's Functional Programming All About?](http://www.lihaoyi.com/post/WhatsFunctionalProgrammingAllAbout.html)
 * [Let's reinvent FRP](http://vindum.io/blog/lets-reinvent-frp/) by Simon Friis Vindum
 * [The Essense and Origins of FRP](https://github.com/conal/talk-2015-essence-and-origins-of-frp)
-* The original FRP paper by Conal Elliott and Paul Hudak: [Functional Reactive Animation](http://conal.net/papers/icfp97/)
+* [Functional Reactive Animation](http://conal.net/papers/icfp97/) - the original FRP paper by Conal Elliott and Paul Hudak 
 
 ## Notes
 
@@ -270,6 +331,3 @@ https://stackoverflow.com/questions/5385377/the-difference-between-reactive-and-
 https://stackoverflow.com/questions/1028250/what-is-functional-reactive-programming/1030631#1030631
 
 https://futureofcoding.org/notes/conal-elliott/
-
-
-
