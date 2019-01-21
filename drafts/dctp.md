@@ -4,20 +4,20 @@ title: The Misunderstood Roots of FRP Will Save Programming
 
 <h1>The Misunderstood Roots of FRP Will Save Programming</h1>
 
-* TOC
-{:toc}
-
-For many years, I've been searching for the "perfect" library/framework/language/paradigm for programming user interfaces. I wanted a tool that non-programmers could use to program arbitrarily complex user interfaces, such as [TodoMVC](http://todomvc.com). 
+For many years I been searched for the perfect paradigm for programming user interfaces. My dream is to use such a paradigm to create a tool that non-programmers could use to program arbitrarily complex user interfaces. 
 
 Like many others, I fell in love with FRP with the rise of ReactJS and spent a few years searching for the perfect reactive model. Eventually, I found my way back to the original work on FRP by Conal Elliott, where I was surprised to find that it needed little improving: it was gotten right from the start. 
 
-However, Conal's FRP has a reputation for being difficult to understand. It took me almost a year to make sense of it. This essay attempts to make Conal's vision more understandable, and also show how this perspective could be the foundation for a new era of programming, not just with user interfaces, but for all programming: multi-node computing, storage, machine learning, etc... I promise I won't mention Category Theory even once.
+However, Conal's FRP has a reputation for being difficult to understand. It took me almost a year to make sense of it. This essay attempts to make Conal's vision more understandable, and also show how this perspective could be the foundation for a new era of programming, not just with user interfaces, but for all programming: multi-node computing, storage, machine learning, etc...
 
-## The Curse of Original FRP
+* TOC
+{:toc}
+
+## The Curse of "Original FRP"
 
 I fell in love with ReactJS in late 2014. The view is a pure function of state. It was so obviously *right*.
 
-But of course it wasn't perfect. For one, it wasn't clear how that state changed over time. Redux seemed to make sense -- and hot reloading and time travel debugging are awesome -- but over time I began to sense that React didn't solve all my problems. I eagerly slurped up each new React-inspired frameworks, such as VueJS and CycleJS, to see if they could finally be the "full solution" to interface development, but always something was missing.
+But of course it wasn't perfect. For one, it wasn't clear how that state changed over time. Redux seemed to make sense -- and hot reloading and time travel debugging are awesome -- but I began to sense that React didn't solve all my problems. I eagerly slurped up each new React-inspired framework, such as VueJS and CycleJS, to see if they could finally be the "full solution" to interface development, but always something was missing.
 
 [Paul Chiusano](https://pchiusano.github.io/) suggested I read [Conal Elliott](http://conal.net). "You know," he said, "Conal is the original guy behind FRP. React isn't even 'real' FRP. You should go back and read him."
 
@@ -29,9 +29,9 @@ Yet I couldn't make heads or tail of Conal, even in [video](https://www.youtube.
 
 Then someone (I forget who - if this is you, THANK YOU!!!) suggested I listen to [Conal's interview on the Haskellcast podcast](http://www.haskellcast.com/episode/009-conal-elliott-on-frp-and-denotational-design). Things started to click. I went back to his papers one last time.... 💥. It hit me. It all fell into place. I saw the light. I saw how the beauty of React could be joined with a solution to state management without the annoying parts of Redux. I saw how we could program user interfaces without mutable variables anywhere, just `const` statements as far as the eye could see... 
 
-Now I am cursed to be one of those condescending assholes, a Conal zombie, doomed to roam the land, pleading other to "go back and read Conal", while knowing full well how hard it will be for them to see the light. This essay is how I hope to give you my disease.
+Now I am cursed to be one of those condescending assholes, a Conal zombie, doomed to roam the land, pleading other to "go back and read Conal", while knowing full well how hard it will be for them to see the light[[1](#)]. This essay is how I hope to give you my disease.
 
-### DCTP
+## DCTP
 
 When a programming language designer defines a word in their language, that's the end of the story. But when a programming language designer coins a phrase in English, that's only the beginning of their ordeal. Alan Kay coined the phrase "object-oriented programming" (OOP) in the 70s, but OOP took on a life of its own, [which has caused much confusion and heartache to its creator](http://wiki.c2.com/?AlanKaysDefinitionOfObjectOriented). 
 
@@ -86,11 +86,11 @@ def make_tiramisu(eggs, sugar1, wine, cheese, cream, fingers, espresso, sugar2, 
     )
 ```
 
-The beauty of the denotational style is that the dataflow is so clear, as you can see when we convert the above Python code to a dataflow diagram:
+The beauty of the denotational style is that the flow of data is so clear. Below Hayoi reformats the above Python code as a diagram to emphasis the flow of data:
 
 ![](https://user-images.githubusercontent.com/2288939/51426743-e7fc2400-1be6-11e9-9aa6-1c45d3c8f83e.png) 
 
-This will help us easily answer questions that are all-but-buried in the imperative description, such as: 
+Denotative code like this helps us easily answers questions that are all-but-buried in the imperative description, such as:
 
 > If I have two people to make this tiramisu, which parts can be done in parallel?
 
@@ -111,8 +111,8 @@ In other words "denotative" languages contain no statements, but only nested mat
 Denotational programming has a number of benefits:
 
 1. **Equational reasoning**. In denotational programming, the equal sign (=) means what it does in a mathematics textbook: we can replace instances of the left with the expression to the right or vice-a-versa. This is particularly important for [performance optimizations](#performance).
-2. **Definitional reasoning**. We can *fully* understand an expression by its subexpressions, and their subexpressions, recursively. There are no spooky action-at-a-distance side-effects that can manipulate things from afar. In this way, we don't have to read the entire codebase to understand all the places our state could be manipulated. I use this perspective to [argue against the Elm/Redux architecture and for DCTP in this paper](/papers/comprehensible-frp).
-3. **Modularity & Composability**. "Modularity comes from providing information while making as few restrictive assumptions as possible about how that information can be used." For example, "laziness lets us build infinite data structures, thus not assuming what finite subset any particular usage will access." The more our code is abstract, general, and unspecific, mathematical, and free from operational concerns, the easier it is to use it in other contexts. John Hughes's must-read [Why Functional Programming Matters](http://www.cse.chalmers.se/~rjmh/Papers/whyfp.html) beautifully demonstrates how the denotative style, particularly laziness and higher-order functions, enable modularity.
+2. **Definitional reasoning**. We can *fully* understand an expression by its subexpressions, and their subexpressions, recursively. There are no spooky action-at-a-distance side-effects that can manipulate things from afar. In this way, we don't have to read the entire codebase to understand all the places our state could be manipulated. I use this perspective to [argue against the Elm/Redux architecture and for DCTP](/papers/comprehensible-frp).
+3. **Modularity & Composability**. Conal explains, "Modularity comes from providing information while making as few restrictive assumptions as possible about how that information can be used." For example, "laziness lets us build infinite data structures, thus not assuming what finite subset any particular usage will access." The more our code is abstract, general, unspecific, mathematical, and free from operational concerns, the easier it is to use it in other contexts. John Hughes's must-read [Why Functional Programming Matters](http://www.cse.chalmers.se/~rjmh/Papers/whyfp.html) beautifully demonstrates how the denotative style, particularly laziness and higher-order functions, enable modularity.
 
 In this essay, I will follow Landin and [Elliott](http://conal.net/blog/posts/is-haskell-a-purely-functional-language) in using the phrase "denotational" instead of "functional", and "imperative" to describe its opposite.
 
@@ -140,9 +140,9 @@ SVGs retain all the relevant info until the very last moment when the computer f
 
 #### What is a graphic?
 
-Let's get a bit more mathematical (or denotational)[1](#1) with our definitions. A graphic is something that relates x- and y- coordinates to colors. You give it an x-y pair; it gives you a color. 
+Let's get a bit more mathematical (or denotational)[[2](#2)] with our definitions. A graphic is something that relates `x` and `y` coordinates to colors. You give it an `(x, y)` pair; it gives you a color. 
 
-Here's the difference between bitmaps and SVGs: what kind of numbers make up the x-y pairs? 
+Here's the difference between bitmaps and SVGs: what kind of numbers make up the `(x, y)` pairs? 
 
 With bitmaps, it's a pair of integers `(Int, Int) -> Color`, while with SVGs it's a pair of real numbers `(Real, Real) -> Color`.
 
@@ -167,9 +167,7 @@ const example1 = (x, y) => red
 </svg>
  _[Example 1 GPU Code](https://jsbin.com/pinitox/edit?js,output)_
  
-**Note:** If you'd like to play with the simple example _code_ used in this essay, [it all lives here](https://jsbin.com/pelamug/edit?js,output), running in a small 100x100 pixel window on the CPU. However, the example _outputs_ were constructed to be much bigger with uglier GPU code which is linked next to each output.
-
-**Note 2:** I actually replaced some of the outputs with SVGs because all the GPU code freaked out on mobile. You can see that code by inspecting the HTML of this page.
+_The code for examples 1-6 in this essay reflect the initial JavaScript I wrote, which you can play with [here](https://jsbin.com/pelamug/edit?js,output). However, that code was purposefully simple, and thus too slow for graphics larger than 150x150 pixels. It was calculating the color for each pixel on the CPU! Underneath each example, I link to a JSBin with the roughly equivalent (but much uglier) code running on the GPU via [gpu.js](http://gpu.rocks/). However, the current version of this essay only features one GPU-based example, number 6. The first five examples have been replaced with equivalent SVGs so as to be easier on your phone's GPU._
 
 **Here's another: a green circle with radius 50, centered at (100, 150).**
 
@@ -194,17 +192,17 @@ const example2 = circle(100, 150, 50, green)
 
 ### Continuous Time
 
-In most programming, time is discrete. The ticks of time can be counted one-by-one, and there is no time in between adjacent points. For example, JavaScript's `requestAnimationFrame` has discrete time ticking along at about 60 times per second.
-
 Now let's return to the original question that inspired FRP: 
 
 > What would it be like to program in continuous time?
 
+In most programming, time is discrete. The ticks of time can be counted one-by-one, and there is no time in between adjacent points. For example, JavaScript's `requestAnimationFrame` has discrete time ticking along at about 60 times per second.
+
 #### What is an animation?
 
-An animation is a graphic that changes over time. That is, it takes an `x` and `y` as before, but now it also inputs a `t` for time, and outputs a Color as before: `(x, y, t) -> Color`. But again, what kinds of numbers are `x`, `y` and `t`? If they are integers, we're in discrete space and time. Let's make them all reals, and enter continuous time.
+An animation is a graphic that changes over time. That is, it takes an `x` and `y` as before, but now it also inputs a `t` for time, and outputs a `Color` as before: `(x, y, t) -> Color`. But again, what kinds of numbers are `x`, `y` and `t`? If they are integers, we're in discrete space and time. Let's make them all reals, and enter continuous space and time.
 
-**Let's use continuous time to have our green circle drift off the screen to the right.** (You may have to refresh the page to see him go.) 
+**Let's have our green circle drift off the screen to the right.** (You may have to refresh the page to see him go.) 
 
 ```javascript
 // Example 3
@@ -247,7 +245,7 @@ const example4 = (x, y, t) => circle(100*t, 0, 50, green)(x, y)
 ```javascript
 // Example 5
 
-const example 5 = circle(50*Math.cos(10*t), 50*Math.sin(-10*t), 50, green)(x, y)
+const example5 = (x, y, t) => circle(50*Math.cos(10*t), 50*Math.sin(-10*t), 50, green)(x, y)
 ```
 
 <svg height="300px" width="100%">
@@ -329,7 +327,7 @@ Events are discrete occurrences in time:
 
 ### DCTP & HTML
 
-The above animation code was purposefully simplistic: we used pure, mathematical function. This works fine on the canvas, especially with the help of the GPU. However, functions from `x` and `y` to `Color` is likely not the way we want to build HTML-based user interfaces. Instead we will use the [Turbine](https://github.com/funkia/turbine) framework, built on top of the [Hareactive](https://github.com/funkia/hareactive) DCTP  library.
+The code snipets above were purposefully simplistic: we used pure, mathematical functions. This works great for shape-based animations on the canvas, especially with the help of the GPU. However, functions from `x` and `y` to `Color` are likely not the way we want to build HTML-based user interfaces. Instead we will use the [Turbine](https://github.com/funkia/turbine) framework, built on top of the [Hareactive](https://github.com/funkia/hareactive) DCTP library.
 
 **Let's start with a simple counter button**:
 
@@ -343,11 +341,11 @@ const counter = function*() {
   
   // calculate the number of clicks on the button
   // `scan` is like fold or reduce, but over streams
-  // `liftNow` and `sample` are outside the scope of this essay
-  const clicks = yield liftNow(sample(scan((n, m) => m + 1, 0, clickEvent))); 
+  // ignore `liftNow` and `sample` for the purposes of this essay
+  const clicksCountehavior = yield liftNow(sample(scan((n, m) => m + 1, 0, clickEvent))); 
   
   // put the clicks count on the screen
-  yield span(clicks)
+  yield span(clicksCountehavior)
 };
 ```
 [![Edit Turbine Counter](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/rym2pwy3lp?module=%2Fsrc%2Findex.js)
@@ -359,19 +357,19 @@ const counter = function*() {
 <button onclick="this.innerText -= -1">0</button>
 
 ```javascript
+// create a cycle with `loop`
 const counter = loop(
-  // create a cycle with `loop`
-  // the `clicks` Behavior (defined in the function below) is passed in
-  ({ clicks }) => function*() {
+  // `clicksCountBehavior` is defined recursively below
+  ({ clicksCountBehavior }) => function*() {
     
-    // use the `clicks` Behavior BEFORE IT's DEFINED
-    const { click: clickEvent } = yield button(clicks);
+    // use `clicksCountBehavior` here BEFORE IT's DEFINED
+    const { click: clickEvent } = yield button(clicksCountBehavior);
 
-    // define `clicks_`
-    const clicks_ = yield liftNow(sample(scan((n, m) => m + 1, 0, clickEvent)));
+    // define `clicksCountBehavior_`
+    const clicksCountBehavior_ = yield liftNow(sample(scan((n, m) => m + 1, 0, clickEvent)));
 
-    // set `clicks` to `clicks_` to tie the recursive knot
-    return { clicks: clicks_ };
+    // set `clicksCountBehavior` to `clicksCountBehavior_` to tie the recursive knot
+    return { clicksCountBehavior: clicksCountBehavior_ };
   }
 );
 ```
@@ -399,7 +397,7 @@ const counter = loop(
   makeButton(1)
 </script>
 
-```
+```javascript
 const buttonsThatMakeButtons = loop(
   // `output` and `count` are defined in terms of EACH OTHER below
   ({ output, count }) =>
@@ -423,7 +421,7 @@ const buttonsThatMakeButtons = loop(
       );
       
       // output_ is a `Behavior [Event Click]`
-      // it's returned after putting a variable number of buttons on the screen (`count`)
+      // it's returned after putting a variable number (`count`) buttons on the screen
       const output_ = yield list(
         i => button(i).output({ click: "click" }),
         count.map(c => range(c).map(x => x + 1))
@@ -455,7 +453,7 @@ If you _have_ been bitten by the denotational bug, you may be wondering about ho
 
 ### Monads are Imperative
 
-While other monads do technically denote mathematical objects, the IO monad does not. It is imperative programming imported into denotational programming. In [Can functional programming be liberated from the von Neumann paradigm?](http://conal.net/blog/posts/can-functional-programming-be-liberated-from-the-von-neumann-paradigm) Conal Elliott rants:
+While other monads denote mathematical objects, the IO monad does not. It is imperative programming imported into denotational programming. In [Can functional programming be liberated from the von Neumann paradigm?](http://conal.net/blog/posts/can-functional-programming-be-liberated-from-the-von-neumann-paradigm) Conal Elliott rants:
 
 > “monadic IO” is a way to generate imperative computations (not just I/O) without having to say anything at all about the semantic content of those computations. Rather than retooling our mental habits completely away from the imperative model of computation, monadic IO is a way to hang onto these old mental habits, and use them in a hybrid functional/imperative programming style, in which the imperative doesn’t contaminate the functional, semantically.
 
@@ -463,7 +461,7 @@ This state of affairs is particularly depressing because the Haskell community, 
 
 > In a sense, I see us as in a worse position than before. Since the adoption of monadic IO, it’s been less immediately apparent that we’re still enslaved, so there’s been much less activity in searching for the promised land that the prophet JB [John Backus] foretold. Our current home is not painful enough to goad us onward, as were continuation-based I/O and stream-based I/O. (See [A History of Haskell](https://www.microsoft.com/en-us/research/publication/a-history-of-haskell-being-lazy-with-class/?from=http%3A%2F%2Fresearch.microsoft.com%2F~simonpj%2Fpapers%2Fhistory-of-haskell%2F), section 7.1.) Nor does it fully liberate us.
 
-Let's liberate ourselves from the IO Monad by simply refusing to use it. We are free!!!!!! 
+Let's liberate ourselves from the IO Monad by simply refusing to use it. We are freeeeeeeee!
 
 ### "A denotationally simple model for whole systems"
 
@@ -479,13 +477,11 @@ It's a trick question. We don't need to do any of those things.
 
 Stop it with the files and the sockets. Stop it with the reading and writing to the console and the database. Those are imperative things that you can only do imperatively. There's no monadic magic that can save you and make imperative things denotative. The only solution is to "move I/O entirely out of our programming model into the implementation of a denotationally simple model for whole systems."
 
+Ok, that was a lot. Let me explain...
+
 ### ReactJS is JQuery-as-a-Service
 
-Let me explain...
-
-One of the ways I understood ReactJS was as JQuery-as-a-Service. I would describe how I want my HTML to look like for any value of state, and then React would figure out what it needs to do (via virtual-dom-diffing) to mutate the DOM to look the way I want it to (JQuery-esque mutations). I no longer have to worry about manually, imperatively keeping the state and the DOM in sync. React does it for me.
-
-Before ReactJS, if you told me I could make TodoMVC without the imperative DOM API of adding, removing and editing nodes, I'd tell you that you were crazy. But then React did it. Describe your UI as a function and it will do the *imperative mutation stuff under the hood.* 
+One of the ways I originally understood ReactJS was as JQuery-as-a-Service. I would describe how I want my HTML to look like for any value of state, and then React would figure out what it needs to do (virtual-dom-diffing) to mutate the DOM to look the way I want it to (JQuery-esque mutations). I no longer have to worry about manually, imperatively keeping the state and the DOM in sync. React does it for me. If you describe your UI as a function, React will do the imperative mutation stuff *under the hood.* 
 
 *That's the trick.* We can't actually get rid of imperative programming, just like we can't get rid of the fact that SVGs eventually need to pixelate to show up on the screen. We can just hide those details below the programmer's level of abstraction.
 
@@ -495,11 +491,11 @@ OK, so let's apply this kind of thinking beyond the DOM. What about HTTP request
 
 Did you catch it this time? That's another trick question.
 
-HTTP = JQuery. HTTP requests are too low level. Just like JQuery manually queried and mutated the DOM, HTTP requests manually query and mutate server state.
+HTTP requests are too low level. Just like JQuery manually queried and mutated the DOM, HTTP requests manually query and mutate server state.
 
-The same is true of all imperative APIs, including databases, files, sockets, etc. It's not that we have to abandon these technologies entirely. Their place is as the _implementation_ of denotative programming systems. The computer's (or compiler's) job should making HTTP requests, reading and writing to files and databases, on your behalf, just like React mutates the DOM on your behalf. 
+The same is true of all imperative APIs, including databases, files, sockets, etc. All these abstractions are too low-level for the problems every-day programmers need to solve. Their place is in the _implementation_ of denotative programming systems. The computer's (or compiler's) job should making HTTP requests, reading and writing to files and databases, on your behalf, just like React mutates the DOM on your behalf. 
 
-We need to forget our old notions of a "frontend" and "backend". We need to go higher level and build a denotational model for "whole systems." 
+We need to liberate ourselves from the antiquated notions of a "frontend" and "backend". We need to go higher level and build a denotational model for "whole systems." 
 
 ### Multi-computer DCTP
 
@@ -509,31 +505,31 @@ Let's extend our simple counter button from above to a multi-computer counter bu
 
 Notice how nowhere in my description of the counter is any mention of frontends vs backends, databases, or HTTP requests. The essential complexity of this problem has nothing to do with such things, and neither should our code for this problem. Those details would be the compiler or runtime's job.
 
-We could say that the multi-computer-count _is_ the count of "all computer's" click events, for "all time", where "all computers" conveys merging of streams on various computers and "all time" conveys the persistent, running total storage of this number *somewhere*.
+Here's a high-level description of what the code could look like: the multi-computer-count _is_ the count of "all computer's" click events, for "all time", where "all computers" conveys the merging of streams on various computers and "all time" conveys the persistent, running total storage of this number *somewhere*.
 
-One important essential complexity detail to keep in mind is that we cannot abstract away the amount of time it takes for information to travel between computers. I find it helpful to imagine multi-planet counter button, where we are counting along with Elon's colony on Mars, 3 light-minutes away.
+One important essential complexity detail to keep in mind is that we cannot abstract away the amount of time it takes for information to travel between computers. I find it helpful to imagine interplanetary counter button, where we are counting along with Elon's Mars colony, 3 light-minutes away.
 
-My current favorite strategy to encode this reality into our denotational model is through the lens of _perception_. Think about creating this application from the perspective of one computer. What is the multi-computer count from the perspective of this computer?
+My current favorite strategy to encode this reality into our denotational model is through the lens of _perception_. Think about creating this counter button from the perspective of one computer. What is the "multi-computer count" from the perspective of this computer?
 
 It's the count of the merging of two Event streams:
 
-1. The local click event stream on the button on this computer
+1. The local click event stream from the button on this computer
 2. The remote click event stream of all other computers click events
 
 There are (at least) two differences between local and remote Events:
 
 1. Remote events contain the "computerId" from which they originated
-2. Remote events contain two points in time: a) when they originally occurred and b) the time at which this local computer _percieved_ them (when the data from Mars reached it)
+2. Remote events contain two points in time: a) when they originally occurred and b) the time at which this local computer _percieved_ them. For example, if we were communicating with Mars, there'd be a three minute delay between occurance and perception.
 
 So in order to merge local and remote Events steams, we will probably need to `lift` the local Event stream into a remote one. Then we `merge`. Then we `count`. Now we have a remote `Behavior`, which we can (maybe through some other type munging) put on the screen.
 
-I tried to warn you that was going to be hand-wavy. I hope you read between the lines and got the basic gist.
+I tried to warn you this was going to be hand-wavy. I hope you read between the lines and got the basic gist.
 
 ### Machine learning is not about neural networks
 
-Here's one final example of how the definitional approach could affect another area of programming: machine learning. 
+Here's one final example of how the denotational approach could affect another area of programming: machine learning. 
 
-In a recent call with Conal, he criticized the mainstream perspective on ML. For example, the Tensorflow API is all about graph construction, but that's just an implementation detail.
+In a recent call I had with Conal, he criticized the mainstream perspective on ML. For example, he said, the Tensorflow API is all about graph construction, but that's just an implementation detail.
 
 So if it's not about graphs or neural networks, What is machine learning about?
 
@@ -541,17 +537,25 @@ Optimizing functions.
 
 A neural network is one possible optimization technique, but if you expose that API to your users, your locking them into a lower-level abstraction than their problem requires. Conal is currently building a denotational ML API that he thinks will not only be more elegant to program with, but be more performant as well. 
 
+<!--### Eliminating Incidental Complexity-->
+
+<!--TODO-->
+
+<!--> "A programming language is low level when its programs require attention to the irrelevant." - Alan Perlis -->
+
+<!--Fred Brook's distinction between essential and incidental complexity.-->
+
 ## FAQ and Common Gotchas
 
 ### Why program with continuous time?
 
 Of course, for the computer to render animations on the screen, it must at some point convert the continuous time and space to discretized pixels and ticks of time. So what's the point of programming in continuous time if it will eventually be discretized? 
 
-There are a [lot](https://github.com/conal/talk-2014-bayhac-denotational-design#why-continuous-time-matters) of [reasons](http://conal.net/blog/posts/why-program-with-continuous-time).  The most compelling argument for me is for the same reason we use SVGs: resolution independence. We want to be able to transform our programs "in time and space with ease and without propagating and amplifying sampling artifacts." We want to discretize at the last possible moment, and stay as abstract as possible for as long as possible.
+There are a [lot](https://github.com/conal/talk-2014-bayhac-denotational-design#why-continuous-time-matters) of [reasons](http://conal.net/blog/posts/why-program-with-continuous-time). The most compelling argument for me is for the same reason we use SVGs: resolution independence. We want to be able to transform our programs "in time and space with ease and without propagating and amplifying sampling artifacts." We want to discretize at the last possible moment, and stay as abstract as possible for as long as possible.
 
-### Thinking about DAGs or propagation
+### Got DAGs on the mind?
 
-A very common misconception with DCTP is confusing it with its implementation details. If you catch yourself thinking of DCTP as a DAG (directed acyclic graph), you still haven't quite gotten it. 
+A very common misconception is confusing DCTP with its implementation details. If you catch yourself thinking of DCTP as a DAG (directed acyclic graph), you still haven't quite gotten it. 
 
 > Every time you hear somebody talk about FRP in terms of graphs or propagation or something like that, they are missing the point entirely. Because they are talking about some sort of operational, mechanistic model, not about what it means.
 >
@@ -575,7 +579,7 @@ However, you'll get stuck in quicksand if you ask what _is_ an inherently impera
 
 It's well known that FRP has suffered space and time leaks. People often complain about the performance of denotational languages like Haskell. 
 
-If you look at my 100x100 pixel animations running on the CPU, you may write off this paradigm for its impracticality. However, you'd simply be fooled by the "[von Neumann bottleneck]"(https://dl.acm.org/citation.cfm?id=359579). When I switched to the GPU (and SVG), the code ran without a hitch. 
+If you look at my 100x100 pixel animations running on the CPU, you may write off this paradigm for its impracticality. However, you'd simply be fooled by the "[von Neumann bottleneck](https://dl.acm.org/citation.cfm?id=359579)", because when I switched to the GPU, the code ran without a hitch. 
 
 Conal argues that performance criticisms of denotational programming have it exactly wrong. Not just wrong, exactly wrong. One of the main benefits of denotational programming is equational reasoning, which is the key factor that enables speeding up code: the ability to optimize it by replacing some parts with faster parts. 
 
@@ -583,17 +587,17 @@ When your code is abstract and free of imperative, technological, operational co
 
 ## Further resources
 
-* [What's Functional Programming All About?](http://www.lihaoyi.com/post/WhatsFunctionalProgrammingAllAbout.html)
 * [Let's reinvent FRP](http://vindum.io/blog/lets-reinvent-frp/) by Simon Friis Vindum
 * Conal answers "What is FRP?" on Stack Overflow [here](https://stackoverflow.com/a/5878525) and [here](https://stackoverflow.com/questions/1028250/what-is-functional-reactive-programming/1030631#1030631)
 * [Explicitly Comprehensible Functional Reactive Programming](/papers/comprehensible-frp) by Steve Krouse
 * [The Essence and Origins of FRP](https://github.com/conal/talk-2015-essence-and-origins-of-frp)
 * [Functional Reactive Animation](http://conal.net/papers/icfp97/) - the original FRP paper by Conal Elliott and Paul Hudak 
+* [What's Functional Programming All About?](http://www.lihaoyi.com/post/WhatsFunctionalProgrammingAllAbout.html)
 * [The introduction to Reactive Programming you've been missing](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754) by Andre Staltz
 * [Why Functional Programming Matters](http://www.cse.chalmers.se/~rjmh/Papers/whyfp.html) by John Hughes
 
 ## Footnotes
 
-<a name="1" href="#1">[1]</a> - The "D" in DCTP stands for "denotational semantics." The original name for denotational semantics was "mathematical semantics". It was pioneered by Chris Strachey and Dana Scott in the early 1970s. It is an approach to model a programming language with mathematical objects. For example, in this essay we model static graphics as a functions from `x` and `y` to `Color` and moving animations from `x`, `y`, and `t` to `Color`. You can learn more about denotational design and semantics from Conal's [video](https://www.youtube.com/watch?v=bmKYiUOEo2A) and [paper](http://conal.net/papers/type-class-morphisms/).
+<a name="1" href="#1">[1]</a> - A few weeks ago, I posted Conals' [Can functional programming be liberated from the von Neumann paradigm?](http://conal.net/blog/posts/can-functional-programming-be-liberated-from-the-von-neumann-paradigm) to Hacker News to [much confusion](https://news.ycombinator.com/item?id=18692470). I expect this essay to be no different.
 
-
+<a name="2" href="#2">[2]</a> - The "D" in DCTP stands for "denotational semantics." The original name for denotational semantics was "mathematical semantics". It was pioneered by Chris Strachey and Dana Scott in the early 1970s. It is an approach to model a programming language with mathematical objects. For example, in this essay we model static graphics as a functions from `x` and `y` to `Color` and moving animations from `x`, `y`, and `t` to `Color`. You can learn more about denotational design and semantics from Conal's [video](https://www.youtube.com/watch?v=bmKYiUOEo2A) and [paper](http://conal.net/papers/type-class-morphisms/).
