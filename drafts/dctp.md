@@ -4,7 +4,7 @@ title: The Misunderstood Roots of FRP Will Save Programming
 
 <h1>The Misunderstood Roots of FRP Will Save Programming</h1>
 
-For many years I been searched for the perfect paradigm for programming user interfaces. My dream is to use such a paradigm to create a tool that non-programmers could use to program arbitrarily complex user interfaces. 
+For many years I been searching for the perfect paradigm for programming user interfaces. My dream is to use such a paradigm to create a tool that non-programmers could use to program arbitrarily complex user interfaces. 
 
 Like many others, I fell in love with FRP with the rise of ReactJS and spent a few years searching for the perfect reactive model. Eventually, I found my way back to the original work on FRP by Conal Elliott, where I was surprised to find that it needed little improving: it was gotten right from the start. 
 
@@ -27,7 +27,7 @@ However, I couldn't escape HN comments alluding to "[real](https://hn.algolia.co
 
 Yet I couldn't make heads or tail of Conal, even in [video](https://www.youtube.com/watch?v=j3Q32brCUAI) [form](https://www.youtube.com/watch?v=teRC_Lf61Gw). I gave up again. Over the course of a year, I tried on-and-off to read Conal's papers, but they never made sense. I decided to give it up for nonsense. There was no there there.
 
-Then someone (I forget who - if this is you, THANK YOU!!!) suggested I listen to [Conal's interview on the Haskellcast podcast](http://www.haskellcast.com/episode/009-conal-elliott-on-frp-and-denotational-design). Things started to click. I went back to his papers one last time.... 💥. It hit me. It all fell into place. I saw the light. I saw how the beauty of React could be joined with a solution to state management without the annoying parts of Redux. I saw how we could program user interfaces without mutable variables anywhere, just `const` statements as far as the eye could see... 
+Then Ivan Reese suggested I listen to [Conal's interview on the Haskellcast podcast](http://www.haskellcast.com/episode/009-conal-elliott-on-frp-and-denotational-design). Things started to click. I went back to his papers one last time.... 💥. It hit me. It all fell into place. I saw the light. I saw how the beauty of React could be joined with a solution to state management without the annoying parts of Redux. I saw how we could program user interfaces without mutable variables anywhere, just `const` statements as far as the eye could see... 
 
 Now I am cursed to be one of those condescending assholes, a Conal zombie, doomed to roam the land, pleading other to "go back and read Conal", while knowing full well how hard it will be for them to see the light[[1](#)]. This essay is how I hope to give you my disease.
 
@@ -596,8 +596,292 @@ When your code is abstract and free of imperative, technological, operational co
 * [The introduction to Reactive Programming you've been missing](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754) by Andre Staltz
 * [Why Functional Programming Matters](http://www.cse.chalmers.se/~rjmh/Papers/whyfp.html) by John Hughes
 
+## Acknowledgements
+
+Thanks to Paul Chiusano for pushing me to take on this perspective.
+
+Thanks to Nick Smith, Mark McGranaghan, Kartik Agaram, Will Taysom, Will Crichton, Vladimir Gordeev, Gregg Tavares, Duncan Woods, and Ivan Reese for reading early drafts of this essay.
+
 ## Footnotes
 
 <a name="1" href="#1">[1]</a> - A few weeks ago, I posted Conals' [Can functional programming be liberated from the von Neumann paradigm?](http://conal.net/blog/posts/can-functional-programming-be-liberated-from-the-von-neumann-paradigm) to Hacker News to [much confusion](https://news.ycombinator.com/item?id=18692470). I expect this essay to be no different.
 
 <a name="2" href="#2">[2]</a> - The "D" in DCTP stands for "denotational semantics." The original name for denotational semantics was "mathematical semantics". It was pioneered by Chris Strachey and Dana Scott in the early 1970s. It is an approach to model a programming language with mathematical objects. For example, in this essay we model static graphics as a functions from `x` and `y` to `Color` and moving animations from `x`, `y`, and `t` to `Color`. You can learn more about denotational design and semantics from Conal's [video](https://www.youtube.com/watch?v=bmKYiUOEo2A) and [paper](http://conal.net/papers/type-class-morphisms/).
+
+## Draft 1 Feedback
+
+### Kartik
+
+> It reads well, but I guess I don't understand what part was opaque until you finally read through Conal. Maybe you should include your thought processes before and how Conal helped resolve them. What about React made you unhappy? Maybe I'm just not the target audience :slightly_smiling_face: I'm not that immersed in the Haskell/React worlds.
+
+This is a good point. I was vague about how React didn't solve all my problems, but I imagine people familiar with front-end framekworks are familiar with these state issues.
+
+### Mark 
+
+> My background for reference:
+>
+> * Quite like FRP, know ReactJS well and have done some Elm.
+>
+> * Lots of experience with and appreciation for Scheme- and Clojure-style functional programming, but not e.g. Haskell.
+
+> * I’ve read your article twice but haven’t e.g. followed all the links yet. So it’s my initial impression!
+> 
+> My feedback:
+> 
+> * Everything before “DCTP & HTML’ (https://futureofcoding.org/drafts/dctp#dctp--html) was very clear to me.
+> 
+> * I got stuck starting in this section though. “However, functions from x and y to Color is likely not the way we want to build HTML-based user interfaces.” I didn’t understand why this was true. In particular sure you don’t want to paint x/y coordinates manually, but why specifically do we want/need to go to the DCTP style suggested in the following code snippet, with `liftNow` etc? We could have avoided painting x/y coordinates manually with e.g. standard ReactJS style code.
+
+Yes, I agree this transition was sharp, and it's a lot to throw people into turbine without much warning or help. 
+
+It's troubling that it didn't come through that ReactJS, while avoiding paining pixels, would have the state troubles that DCTP avoids.
+
+> * Perhaps related to the above, the motivation for continuous time and resolution independence makes total sense to me, but I don’t understand why ReactJS doesn’t have that and DCTP does?
+
+TODO I guess I didn't explain how React requires state to change somehow, and that's usually operationally, or via Redux, which is not modular.
+
+> * I wasn’t able to figure out what the key idea is that separates DCTP from ReactJS-style FRP, in terms of their benefits. I can see from the example code that they’re different. And yes there’s a certain purity to DCTP. But why is that difference good? For the initial counter example, what’s bad about ReactJS-style FRP that suggests we should introduce `liftNow`, `sample`, and `scan`? Or maybe the benefits only really kick in on larger and more complex apps?
+
+TODO!!! My last paper on why Redux goes against modularity speaks to this... I wonder if I should follow the example of John Hughe's _Why FP Matters_ and speak mostly to modularity and evaluate DCTP vs React in that light...
+
+> * It would have been helpful to have this summary at the beginning so that I could understand how the various specifics mentioned throughout the article fit in (and so that I knew what i was getting myself into). Something like “In the DCTP model things are defined in terms of X, in contrast to the Y of ReactJS. This requires some additional programming concepts A, B, C in DCTP but more elegantly handles situations J, K, and L that are troublesome with ReactJS. This means you’ll be able to deliver apps that are N, O, and P.”
+
+TODO This is very interesting that it seems like DCTP requires extra concepts than React! I guess if you're coming from JS, and wanted to embed DCTP into JS, it'll seem like more concepts, but as Conal says, it's way less concepts. People used to JS and the opertional model don't realize how complicated the things they use are.
+
+>  After making the above comments I read one of the linked articles - http://vindum.io/blog/lets-reinvent-frp/ - which helped my understanding. In particular it filled in the helper functions you had to skip over. But I’m still not sure why this programming style is better than ReactJS. Especially for highly stateful apps where it’s very natural to think in terms of state’ = f(state, event) and view’ = g(state’).
+
+TODO I agree that that way is powerful (although not natural, and besides I'm over "natural"), but it's not powerful as it comes to modularity.
+
+> The thing I’m left most interested in is  understanding why this approach is better. I think based on your article and the ones linked I could figure out how it works. But can it really help us write complex, interactive, stateful apps, in practice? I’m very open to the idea! But I haven’t been able to see how yet
+
+Yeah, I don't think we can until we have the visualization tooling I want to build...
+
+### Will
+
+> My main critique: the article feels disjointed, and the primary claims aren’t sufficiently backed up by the examples. For example, you introduce denotational programming, along with three fairly abstract claims about its benefits. Then you explain the basics of continuous time and interactivity, but those lessons aren’t placed in context of your claims. I think a much stronger article would have a main running example. You would implement that example in both “normal” JS and in your alternative version. You could demonstrate how simple extensions to your example are easy in the FRP version (showing modularity), and perhaps you could embed a subtle bug in the JS version (showing how reasoning is more difficult).
+
+TODO!!! This is a great idea! Drop the Turbine/hareactive bits, have a single running example where modularity shines, comparing it to React, where modularity does not. Similar to the Decomposition/Recomposition sections of BV's Learnable Programing.
+
+> As it stands, the examples provided are not enough to convince me of your claims, particularly since some of them (like the odd-button-generator) are contrived.
+
+Yeah, it's hard to see why this is a good example from the outset...
+
+> I would focus on having significantly smaller scope to the article. “FRP Will Save Programming” is an extremely broad claim that’s difficult to defend. Distill out the essential concepts of FRP/DTCP/whatnot, show a few concise examples, maybe add your generalizations at the end.
+
+TODO This is likely true, but makes me sad... let's think about this more...
+
+> One last thing: I would focus your efforts on the “interactivity” section. The continuous time part makes perfect sense--representing graphics as a pure function of time--but the interactivity part lost me. There’s a lot of helper functions here I don’t understand, there’s a framework I don’t understand, and none of it is really explained. What is a `function*`? Why is this a coroutine? Is this the simplest way to implement these functions? This is a serious concern, because I would imagine most JS people reading this would think “wow this is crazy Haskell code. I could do this just as easily with a for loop and a counter variable.” You run the risk of turning people off from the paradigm.
+
+Agreed, gotta lose the Turbine.
+
+> I think you should consider what points you want to make. Why should people care about this new perspective? You already enumerated a few reasons in the denotative programming section, so just go for those. “FRP Can Simplify UI Programming” seems like a sensible title for such a perspective.
+
+TODO This is building upon my last paper. Maybe this one should start by clearing up the prior one, focusing on one running modularity example, where I do side-by-side comparisons, in the same langauge!
+ 
+> Also, semi-related, you may be interested in the classic graphics essay “A Pixel Is _Not_ A Little Square!” http://alvyray.com/Memos/CG/Microsoft/6_pixel.pdf
+> 
+> Actual last thing… I’m not a huge fan of the example in from Li Haoyi’s blog. It feels like a strawman. In standard OOP practice, I would write:
+
+```fingers = fingers.soak2seconds(sugar2.dissolve(espresso))
+mixture
+  .beat(cheese.beat())
+  .fold(cream)
+  .assemble(fingers)
+  ...
+```
+> 
+> And that reads way more naturally to me than the denotational version, which has the classic “inside-out” functional programming readability issue.
+
+TODO Wow! My point really did not come across here, because the syntax has nothing to do with what I was trying to say there. It's like I said `a+b` is better than `set reg1 to a; set reg2 to b; add reg1 reg2 and put in reg3` and he responded with `b+a` is clearer than `a+b`. 
+
+It seems everybody missed how we can extend what we like from spreadsheets (pure math expressions) and do all our programming with them. Of course, you can use `where` expresionss or whatever you want to make the reading or constructing easier. Golly!
+
+### Vladimir
+
+> > The only solution is to “move I/O entirely out of our programming model into the implementation of a denotationally simple model for whole systems.”
+
+> So DCTP can used only as a DSL inside something bigger and imperative, right? Seems like there is no way around it.
+
+Yes that's what I said, but with entirely the opposite emphasis. We can't get rid of imperitivity... except for the 99% of the time you're not working on the langauge/runtime.
+
+### Greg
+
+> I've seen that example of tiramisu before and the first is **far more easy to follow** than the second.
+> To me it's like reverse polish notation (RPN) vs infix or whatever it's called. As someone with lisp experience and forth experience I get RPN but I count myself as an exception. I'm sure all of you get it too but the average person will be lost. I don't agree that having to dig through a bunch of nested parentheses some how makes the data flow obvious. The first one seems vastly more obvious to me. Step 1 flows to step 2, step 2 flows to step 3, etc.  Yes, as a programmer I get all the benefits of the RPN tiramisu recipe but that's not how people think. They read a recipe top to bottom and follow the top instructions before they bottom.
+> 
+> I guess what I'm trying to say is I'm not denying the RPN style is better for many definitions of better but one of those benefits is not "The beauty of the denotational style is that the flow of data is so clear"
+> 
+> It's not clear at all. Rather, after you've spent time parsing it in your mind you can deduce a bunch of things you can't with the top style. But "clear"? Not even a little
+
+Again, confusing the semantics and the syntax. I'm arguing for the semantics, and I thought showing the diagram would make this clear, but I guess not.
+
+> Another benefit claims to be "Equational reasoning. In denotational programming, the equal sign (=) means what it does in a mathematics textbook"
+> 
+> Being like a math textbooks is not better except for mathematicians. Most people find math equations cryptic and hard to parse.
+
+TODO Yes, this is the "natural-ness" argument. I am over it. I want "good tools" that have modularity, composibility, easy to reason about without having to read all the code, and I don't care as much if people need to grow and expand their mind to take advantage of the better tool. It's a one time, amortized cost. Also we can eventually lower it with visual and other abstraction-y helper structures. Paul Chiusano convinced me of this switch. Naturalness is a fool's errand. Pro-tools require investment and that's ok. As long as the investment is for some good purpose. (It's also great to have people learn to think mathmatically in a way that motivates them.)
+
+> The first GPU area where you made functions to draw moire patterns and circle also set off alarm bells. Shadertoy is a famous site which I guess you could call DCTP for fragment shaders. But, they show how poor this style works for real world problems. Compare any shadertoy shader that draws a city or a forest to an actual game that draws a city or a forest. The shadertoy shader will run at less than 1fps fullscreen. The game will run at 60fps on the same computer and if it's it a good game will look significantly better.
+
+I guess my performance section didn't come through. "I guess you could call DCTP" says it all. Clearly I didn't explain DCTP well enough.
+
+> I know your point was demonstrate something else, just pointing out it was raising concerns with it's direction and is related to a recent thread I started which is that FRP/DCTP seems to fail at perf at scale without just as much extra engineering as non FRP/DCTP.
+
+"Abstractions are always leaky"
+
+> I got lost at the first counter example. I know what `function*` means and `yield` but it was not remotely clear how yielding a button, followed by the next yield (no clue what it's doing even ignoring liftnow and sample), and then it yields a span. Em, okay, a function that's yielding 3 completely unrelated types? Yea, completely lost.
+
+Turbine must go!!!
+
+> After that it seemed to meander with a bunch of claims with no real connection. I kind of got lost
+
+Hahahahaha
+
+> >  I would describe how I want my HTML to look like for any value of state, and then React would figure out what it needs to do (virtual-dom-diffing) to mutate the DOM to look the way I want it to (JQuery-esque mutations). I no longer have to worry about manually, imperatively keeping the state and the DOM in sync. React does it for me
+>
+> As pointed out above this is not my experience. It might be the goal but the overhead of managing all those hidden objects ends up killing perf on any non-trivial project and so the abstraction leaks as you have to add more and more ways to prevent react from shuffling so many DOM objects around.
+>
+> I blame that on the DOM, not on React, but I feel like it's kind of a truism that idealism often fails against reality.
+>
+> Maybe a good example would actually be a spreadsheet in react with a toolbar showing various formatting options. The toolbar needs to reflect the format of the currently selected cell, possibly multiple cells. Updating any individual cell or cell format, the naive solution would have react generate some intermediate format (virtual dom) of 30 or 40 toolbar settings and then 390 cells (just checked the default Google Spreadsheet on my laptop).  It would then diff all 420 objects only to up the properties of 1 cell.
+> 
+> The amount of work required to make it just deal with an individual cell and ignore everything else so you get better perf I think is still unfortunately a  important problem with React style FRP
+
+"Abstractions are always leaky." He clearly missed that with mathematical programming, we could optimize away those issues... I guess I can see how it seems like "magical thinking" to people used to dealing with leaky abstractions in real life...
+
+### Duncan
+
+> - :heart: the introduction -  it's easy and fun read, very human, discusses people, the process of learning and etymology. I would enjoy an article just on etymology!
+
+Well that's nice to hear. I was fearing to get the opposite reaction: "cut down on the intro."
+
+> - code examples were tough going: too much effort to understand the point being made. I only have stamina for one or two in an article before I glaze and skip them unless they are really easy to grok.
+
+Hopefully removing Turbine would help with this.
+
+> - trig triggers mathematical allergies - can they be even simpler e.g. just linear movement?
+
+TODO yeah, I probably need to slow down for non-math people here.
+
+> side-by-side compare/contrast to clarify the argument would really help
+> - I haven't left the article understanding quite how my react-ish FRP conflicts with Conal's FRP
+
+TODO wow, so the article totally failed! I agree side-by-side may help.
+
+> - Continuous time seems easy/obvious for continuous trig functions. Imperative code would likely use time arguments too. I don't know how it applies to stateful iterative things e.g. game of life or practical animation concerns like "how much work can I fit in this frame to achieve 60fps"?
+
+TODO this is reasonable. If this article is for React people, doing a canvas example may not be the right move...
+ 
+> The argument I take away is that FRP is
+i) easier to optimise
+ii) nice because its a tree of mathematical expressions
+
+> For me, these are not the path to "saving programming", they are are in fact curses holding it back. They sacrifice human concerns for making the compiler's life easy and mathematical purity respectively. Like @Will, RPN came to my mind - it's cool to calculator geeks but a total UX fail for normies.
+> 
+> IMHO there is nothing more user hostile and disenfranchising than formal mathematics. If anything, language design has more to learn from recipe sites than algebra e.g. simple lists of ingredients and equipment as well as the process instructions, photos of intermediate results, videos of the whole process, prediction of time taken, comment rolls for users to share feedback and improvements. They prioritize sharing understanding whereas algebra feels like compression/encryption.
+> 
+> Can the argument be made in terms of human concerns not mathematical ones? e.g. can you disprove the claim "We naturally talk and think imperatively, therefore imperative style is the easiest way for us to instruct a computer to perform a task."?
+
+The naturalness argument, well said
+
+> They sacrifice human concerns for making the compiler's life easy and mathematical purity respectively. Like @Will, RPN came to my mind - it's cool to calculator geeks but a total UX fail for normies.... IMHO there is nothing more user hostile and disenfranchising than formal mathematics. If anything, language design has more to learn from recipe sites than algebra ... They prioritize sharing understanding whereas algebra feels like compression/encryption.
+
+This is also well said:
+
+> Can the argument be made in terms of human concerns not mathematical ones? e.g. can you disprove the claim "We naturally talk and think imperatively, therefore imperative style is the easiest way for us to instruct a computer to perform a task."?
+
+Again, I don't care how we naturally do things, so I won't try to disprove that. 
+
+TODO But I do agree that I don't show the benefits in terms of human factors - well said! Even modularity is not really a human factor! Being able to read a codebase without having to worry about side-effects is a good point. One way to convince people would be to put React/Redux vs DCTP for a large app and they can see how it takes less time to understand the DCTP one... But that'll only really work once I have the visualizations done...
+
+### William Taysom
+
+> It's a start, the beginnings of an essay I'd really like to share.  To add to others' good feedback, I'll reiterate that the DCTP body text doesn't match up with the introduction.  I expected to see React-inspired frameworks fall down in a way that DCTP does not.
+> 
+> The Denotational bullets 1,2,3 come to a theme of untangling accidental dependencies of imperative state transitions.  Consider that every operator in an imperative program is a function from the world state to the world state where it's a bit hard to say how much of the world is being examined or updated by each operator.  (Though scope and encapsulation are about imposing limits.)
+> 
+> Besides that, you do a fine job of pointing out that Denotational is treeish whereas control flow is linear.  (Though control flow does often have a subtask tree, but the subtasks either ordered or quickly become a concurrent tangle.)
+
+Huh, I guess a lot of the points others didn't seem to get, got across for William.
+
+> Continuity is a hard sell.  The story of SVG rasterization is a good start.  (Do we yet have a decent SVG editor yet?  There are too few of us who cling to the mosaic effect of pixel art – long live Deluxe Paint.)  Animation effects are good too because you want them to start and end on time with interpolation in the middle.  The Behaviors/Events division has always rubbed me the wrong way.  (Similar with continuous and discrete probability distributions.)
+> 
+> Moreover, "infinity of points" has become outright painful.  (I absolutely forgive it since most people talk this way, but it is *wrong* all the same.)  Continuity actually gives you the exact opposite of many points.  A circle *is* a point together with a radius that's a full description.  From those parameters you can construct or sample many points related to the circle, but those are more qualities of the space, of the "mathematical functions" available than of the circle by itself.  We don't "store" infinitely many points; we imply them!
+
+TODO Ah, I see the issue. I said, "If you’re not used to dealing with the infinite every day, you may wonder how we can store an infinity of points." I thought it would become clear I didn't literally mean store when below I show how we "describe" an infinity by just returning a constant function. 
+
+### Ivan Rese
+
+> There are a lot of great points here, especially from Will and William. I made a few attempts to write up my thoughts, but they never converged on anything as helpful — I just kept going off the deep end ranting about sampling (which.. again, Will and William nailed).
+> 
+> Best advice I can give is.. pay close attention to the fact that Conal's FRP was created to tell people how to make animations. Conal's FRP basically says, "Use sampling of continuous functions, rather than sprite sequences, or code that assumes a fixed timestep — and write code in a compositional style so that you can build bigger animations by combining smaller animations." The nice dovetailing of those two ideas is what makes FRP great _for coding computer-generated animations._ If you want to stretch the definition of FRP to cover other problem domains (eg: GUIs), it's not worth spending a lot of time covering the motivating examples for the original FRP (continuous time and space), because that's just a history lesson. I'd suggest distilling the references to time and space down to a single sentence, or a paragraph at most, or make that stuff a separate post about the history of FRP as an addendum to your post about FRP for GUIs. Rather, figure out what it is about FRP that works so well for GUIs you can capture the gist of it in a sentence, the equivalent of, "Use sampling of continuous functions, rather than sprite sequences, or code that assumes a fixed timestep — and [...]"
+
+TODO interesting point... I fear this will only work for people like Ivan who already get the Fran vision...
+
+> As an aside, it's worth noting that sprite sequences remain an _extremely_ popular form of animation in 2D games (and elsewhere). There are games that attempt to do generative animation but preserve the look of sprite animation, or a hybrid (eg: http://joarportfolio.com/rainWorld.html), but they're the exception and the results have never been fantastic. Many games even write their physics assuming a fixed pixel-size, rather than going resolution independent. There are strong motivations for taking this approach, beyond just "old games were like that so it's nostalgic" or "writing continuous time/space stuff is hard". So what we see in games is a world where both approaches — continuous and discrete — coexist, both for time and space.
+
+TODO I'm not sure what to do with this comment... I was thinking about how movies are technically just 30fps and thus discrete but come across as continuous. But of course we can't model movies as continuous functions because we wouldn't know how to approximate in between frames... Is that related? Sometimes we want discrete things. That doesn't seem a problem to me. Just that when we are modeling continuous things, we shouldn't shirk from it.
+
+### Nick Smith
+
+https://via.hypothes.is/https://futureofcoding.org/drafts/dctp.html#annotations:query:
+
+> > where I was surprised to find that it needed little improving: it was gotten right from the start.
+
+> to me this comes across as a little partisan, or "holier than thou"
+
+Yeah, the tone was for people who wanted to learn / agree with me.
+
+> > I wanted to show these pompous pricks that their precious old FRP was worse than my modern FRP. (Maybe you feel the same way towards me, dear reader? 😜)
+
+> I think this language is far too aggressive and is likely to turn people off right away. Even if they were to keep reading, they'd probably turn combative for the rest of the article, which is not a mindset amenable to persuasion.
+
+Yep, agreed that this article wouldn't pursuade the skeptical at all.
+
+> > no there there
+
+> typo
+
+TODO even though [it's a thing](https://en.wiktionary.org/wiki/there_is_no_there_there), I probably should use a different, more well known phrase
+
+> > I use this perspective to argue against the Elm/Redux architecture and for DCTP.
+
+> It's not clear to me how/where Elm fails to be denotational. A clear technical description of the gap would be really helpful.
+
+Yeah, as said above, I can definitely include insights from my last paper here.
+
+> > const count_ = yield liftNow( sample( scan( (n, m) => 1 + m, 1, switchStream( output.map(l => combine(...l.map((o, i) => o.click.mapTo(i + 1)))) ).filter(x => (x % 2 === 1)) ) ) );
+
+> This code just seems like it could be much more simple if described using a discrete Model-View-Update architecture (TEA). The logic here is dead simple, but fiddling around with the streams and cycles arguably adds incidental complexity.
+
+Yeah, doing it in JS does make it seem more complex but that's only because JS is different and inhospitable.
+
+> > While I am in love with this paradigm, it hurts my head to mentally grapple with such unwieldy types
+
+> Seems like you agree…
+
+Hahaha
+
+> > So, have you caught the denotational disease? I hope so!
+
+> I'm afraid I haven't, and it's not because if the quality of your explanations. I just really don't see how this is better than the Elm architecture. Dealing with streams and continuous time just adds a lot of cognitive overhead that simply doesn't exist in TEA. Yes, with TEA you have to look across model, view, and update functions to see the whole data flow, but your attempts to visualise DCTP could easily be put to TEA for the same benefit.
+
+Yeah, this essay isn't going to work on skeptics...
+
+> > non-solution
+
+> Non-solution to what? Your tone is quite dismissive. While monadic IO may not be ideal, it's certainly been put to a lot of good use in production software.
+> I don't like monadic IO either, but it's hard to convince people of anything when you shoot down their beliefs too aggressively.
+
+Ditto. This is for people who already dislike monads...
+
+> > “move I/O entirely out of our programming model into the implementation of a denotationally simple model for whole systems.”  
+
+> You rely on Conal's beliefs, arguments, and utterings quite heavily. I can't help but consider that your belief in the usefulness of DCTP is thus an offshoot of Conal's (convincing) stories, rather than a conclusion you have truly reached on your own through independent critical thought. I think it's crucial to keep asking: what if Conal just hasn't found the answer here? What if DCTP can't find widespread utility? Maybe it can, but breakthroughs like this are really rare, and I've failed to believe this one myself despite many attempts.
+
+Ouch!
+
+### Todo
+
+* https://www.shadertoy.com/
+* http://alvyray.com/Memos/CG/Microsoft/6_pixel.pdf
