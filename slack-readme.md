@@ -35,44 +35,44 @@ So if you are reading this message, congrats on following the instructions!
 
 ## Channels
 
-#introductions
+### #introductions
 
 Tell us about your background, how you got into these topics, and why you joined the Slack. Feel free to share past project URLs and tag other members you know.
 
-#general
+### #general
 
 - Share interesting links you&#39;ve found and want to spark a discussion over
 - Ask questions or /poll the crowd
 - Share your own projects for high fives or feedback (after reading the etiquette for sharing your own work)
 
-#meta
+### #meta
 
 Discuss ways to better collaborate, improve this Slack, or resolve community issues. This is place to propose the creation of new channels.
 
-#1-on-1s
+### #1-on-1s
 
 Every 4 weeks, @donut will randomly pair everyone in this channel for 1-on-1 conversations. It&#39;s a good way to get to know others in the Slack.
 
-Locations
+### Locations
 
 - #nyc
 - #london
 - #boston
 
-Topics
+### Topics
 
 - #graphics
 - #music
 
 ## Style Guide
 
-Threading
+### Threading
 
 This slack discusses nuanced topics, so we have a strong preference for organizing conversations by thread. If you want to respond to someone, respond in the thread of that message. Do not respond with another top-level message.
 
 When creating a top-level message, try to create it in a single message so that it&#39;s easier to thread off it. You can create newlines with shift-enter. It&#39;s helpful to draft longer messages in your personal channel @yourname channel.
 
-Sharing your own work
+### Sharing your own work
 
 When sharing your own work, start the post with &quot;\*Show FoC:\*&quot;
 
@@ -93,34 +93,34 @@ This community was started by Irvin Hwang as a Google Group in mid-2017 for orga
 
 ## Changelog
 
-Jan 28, 2018
+### Jan 28, 2018
 
 - Added #1-on-1s with Donut Time bot to introduce people every 4 weeks
 
-Dec 20, 2018
+### Dec 20, 2018
 
 - Started this README
 - Tested out riot.im integration to little success
 
-Dec 21, 2018
+### Dec 21, 2018
 
 - Moved &quot;Background&quot; section much lower (h/t Denis Semenov)
 - Created #music channel
 - Changed the name of the Slack to Future of Coding and the URL to futureofcoding.slack.com
 - Created #music channel
 
-Proposed changes
+### Proposed changes
 
 - Merged #random and #feedback into #general
 - Moved this to futureofcoding.org/community/README.md
 
 ## Related Communities
 
-Twitter
+### Twitter
 
 Many of us also congretate on Twitter. You can check out [who I follow](http://twitter.com/stevekrouse/following) and [what I like](http://twitter.com/stevekrouse/likes) as a good place to join the conversation.
 
-Others
+### Others
 
 - [r/n](https://www.reddit.com/r/nosyntax/)[osyntax](https://www.reddit.com/r/nosyntax/)
 - [r/futureofprogramming](https://www.reddit.com/r/futureofprogramming)
