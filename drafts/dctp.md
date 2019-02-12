@@ -885,3 +885,10 @@ Ouch!
 
 * https://www.shadertoy.com/
 * http://alvyray.com/Memos/CG/Microsoft/6_pixel.pdf
+* JE future directions
+* re-read comments and finish with new ones
+  * salon de refuge reviewers
+  * Mariano Guerra
+* https://hillelwayne.com/post/persuasive-examples/
+* https://youtu.be/aXVUoT_objA?t=1378
+* Re-read/re-watch "Denotational design with type class morphisms" & read "The simple essence of automatic differentiation"
