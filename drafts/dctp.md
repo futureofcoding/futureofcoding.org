@@ -881,14 +881,55 @@ Ditto. This is for people who already dislike monads...
 
 Ouch!
 
-### Todo
+## Draft 2
 
-* https://www.shadertoy.com/
+I am realizing the above draft is much too large in scope and loses people. I'd like to pick a smaller target for draft 2.
+
+### Topics
+
+#### Original FRP for React people
+
+Explaining original FRP could be the explicit goal of the paper a la http://worrydream.com/ScientificCommunicationAsSequentialArt/ for Conal's https://github.com/conal/talk-2015-essence-and-origins-of-frp/blob/master/README.md (or maybe https://github.com/conal/talk-2014-lambdajam-denotational-design or https://github.com/conal/talk-2015-more-elegant-frp)
+
+#### What isn't considered harmful?
+
+The game of removing goto, control flow/statements, mutation... math seems to be OK. The game of adding back in, goto can be replace with X (dikjstra), mutation with recursion/HOF, control flow is often unnecessary and can be replaced with data flow.
+
+How to UI? IO Monad. Then FRP.
+
+For filesystem?
+
+Database?
+
+#### Denotational computing
+
+Better term than "functional"
+
+shielded from operational... (what about https://granule-project.github.io/research.html?)
+
+Can we do with just functions at the bottom (no types and combinators) or do we need those for speed?
+
+#### Multi-node DCTP
+
+- 2 computers
+- chat app
+- Event t Sender Recipient Message --> RemoteEvent t1 t2 Sender Recipient Message
+
+### Readings done
+
+* https://youtu.be/aXVUoT_objA?t=1378
 * http://alvyray.com/Memos/CG/Microsoft/6_pixel.pdf
-* JE future directions
+* Re-read/re-watch "Denotational design with type class morphisms" & read "The simple essence of automatic differentiation"
+* towards a theory of the comprehension of computer programs brooks
+
+### Todos 
+
 * re-read comments and finish with new ones
   * salon de refuge reviewers
   * Mariano Guerra
+* read global variable considered harmful
+* programming with(out) goto
+* can programming be liberated, period?
+* https://wiki.haskell.org/Introduction
+* (again) dikstra and landin, and possibly backus 
 * https://hillelwayne.com/post/persuasive-examples/
-* https://youtu.be/aXVUoT_objA?t=1378
-* Re-read/re-watch "Denotational design with type class morphisms" & read "The simple essence of automatic differentiation"
