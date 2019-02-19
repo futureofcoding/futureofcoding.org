@@ -58,6 +58,8 @@ Every 4 weeks, @donut will randomly pair everyone in this channel for 1-on-1 con
 - #nyc
 - #london
 - #boston
+- #kitchener-waterloo
+- #sf
 
 ### Topics
 
@@ -93,7 +95,15 @@ This community was started by Irvin Hwang as a Google Group in mid-2017 for orga
 
 ## Changelog
 
-### Jan 28, 2018
+### Feb 16, 2019
+
+- Added #sf & #kitchener-waterloo channels
+
+### Jan 29, 2019
+
+- Converted this doc from google doc to markdown
+
+### Jan 28, 2019
 
 - Added #1-on-1s with Donut Time bot to introduce people every 4 weeks
 
@@ -112,7 +122,8 @@ This community was started by Irvin Hwang as a Google Group in mid-2017 for orga
 ### Proposed changes
 
 - Merged #random and #feedback into #general
-- Moved this to futureofcoding.org/community/README.md
+- Peter Abrahamsen suggested a #seattle channel but I'm waiting for them to delete their privately named channel so I can create the public version. (Slack disallows channels with the same name.)
+- Switching to Zulip (for better threading) or Spectrum (for public conversations)
 
 ## Related Communities
 
