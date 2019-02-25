@@ -2,7 +2,10 @@
 title: The Misunderstood Roots of FRP Will Save Programming
 ---
 
-<h1>The Misunderstood Roots of FRP Will Save Programming</h1>
+* TOC
+{:toc}
+
+# The Misunderstood Roots of FRP Will Save Programming
 
 For many years I been searching for the perfect paradigm for programming user interfaces. My dream is to use such a paradigm to create a tool that non-programmers could use to program arbitrarily complex user interfaces. 
 
@@ -10,8 +13,6 @@ Like many others, I fell in love with FRP with the rise of ReactJS and spent a f
 
 However, Conal's FRP has a reputation for being difficult to understand. It took me almost a year to make sense of it. This essay attempts to make Conal's vision more understandable, and also show how this perspective could be the foundation for a new era of programming, not just with user interfaces, but for all programming: multi-node computing, storage, machine learning, etc...
 
-* TOC
-{:toc}
 
 ## The Curse of "Original FRP"
 
@@ -681,8 +682,9 @@ TODO This is building upon my last paper. Maybe this one should start by clearin
 > Also, semi-related, you may be interested in the classic graphics essay “A Pixel Is _Not_ A Little Square!” http://alvyray.com/Memos/CG/Microsoft/6_pixel.pdf
 > 
 > Actual last thing… I’m not a huge fan of the example in from Li Haoyi’s blog. It feels like a strawman. In standard OOP practice, I would write:
-
-```fingers = fingers.soak2seconds(sugar2.dissolve(espresso))
+> 
+```javascript
+fingers = fingers.soak2seconds(sugar2.dissolve(espresso))
 mixture
   .beat(cheese.beat())
   .fold(cream)
@@ -881,17 +883,64 @@ Ditto. This is for people who already dislike monads...
 
 Ouch!
 
-## Draft 2
+### Mariano Guerra
+
+> just read your dctp draft, here are some notes I took while reading it, not sure if all useful :slightly_smiling_face:  
+> * didn't read the entire thing yet, but some exploration on why Elm stopped being pure FRP? (in reaction to "React isn’t even ‘real’ FRP")
+
+This is a great idea! This confused the hell out of me as well.
+
+> * is this sentence correct? "There was no there there" (non native english here)
+
+Yep, gotta fix this.
+
+> * note: following all the links, already a great resource :slightly_smiling_face:  
+> * the reference here takes me nowhere "while knowing full well how hard it will be for them to see the light[1]"
+
+Yes, maybe just unlinkify that.
+
+> * the part "CT is for Continuous Time" reminds me a little bit about [Ivan Sutherland - "How Quantized Should a Digital System Be?"](https://www.youtube.com/watch?v=aXVUoT_objA) (or what I remember of it)
+
+Great video!
+
+> * "so as to be easier on your phone’s GPU" assuming I'm reading on a phone :slightly_smiling_face:  
+> * just curious, did you have any "problem" when campaigning against the IO Monad? :smile:  
+> * in "Multi-computer DCTP", sounds like CRDTs, as long as the remote streams' operations are commutative there's no "perception divergence" from different places, but if order of application matters, then maybe the system can inform you that other's may "perceive it differently"
+> * maybe a "conclusions" and "future work" sections?
+> * "If you catch yourself thinking of DCTP as a DAG (directed acyclic graph), you still haven’t quite gotten it." <- exactly, until your post I "understood" FRP as a continuous data flow on a DAG, which didn't sounded too interesting or useful to me :slightly_smiling_face:
+> * "However, you’ll get stuck in quicksand if you ask what is an inherently imperative notion, such as a file or HTTP request. Try to denotationally model only the essential complexity of your problem, not the operational details of how your machine will carry it out." <- love that paragraph. Do you know things to read about the process to build "denotational models" of things?
+
+I'll send him http://conal.net/papers/type-class-morphisms/
+
+> general note: some paragraphs and sections end up abruptly, I guess you plan to expand them. that creates a break in the flow between some paragraphs and sections. I had this impression that there was no "story" or "plot" being followed, in the sense that I don't know what is the objective of the document. It doesn't matter if it's informational because I learned a lot, but if you have a "plan" for the document, I didn't got it (maybe my fault :P)
+> maybe abstract/summary/introduction and conclusion, discussion sections would give it more structure and sense? (but it will look like a paper, which I don't know if it's your objective)
+
+This is probably a good idea...
+
+> other than that, it's the best thing I've read about FRP congrats! :tada:
+not sure if it fits this document, but a glosary of what the "vocabulary" of the code samples mean would make it a little easier to follow (talking about `liftNow`, `sample`, `scan` and others)
+
+Wow, that's really nice!
+
+> I know this, if they are the same maybe you can link to them: https://rxmarbles.com/
+
+TODO good fix.
+
+> regarding people confusing the syntax with the semantics of your imperative vs declarative example, maybe some other notation helps (or a clarification that the focus is in the semantics and not the syntax)
+
+Yes, great point if I inclue the tiramisu diagram.
+
+# Draft 2
 
 I am realizing the above draft is much too large in scope and loses people. I'd like to pick a smaller target for draft 2.
 
-### Topics
+## Topics
 
-#### Original FRP for React people
+### Original FRP for React people
 
 Explaining original FRP could be the explicit goal of the paper a la http://worrydream.com/ScientificCommunicationAsSequentialArt/ for Conal's https://github.com/conal/talk-2015-essence-and-origins-of-frp/blob/master/README.md (or maybe https://github.com/conal/talk-2014-lambdajam-denotational-design or https://github.com/conal/talk-2015-more-elegant-frp)
 
-#### What isn't considered harmful?
+### What isn't considered harmful?
 
 The game of removing goto, control flow/statements, mutation... math seems to be OK. The game of adding back in, goto can be replace with X (dikjstra), mutation with recursion/HOF, control flow is often unnecessary and can be replaced with data flow.
 
@@ -901,7 +950,7 @@ For filesystem?
 
 Database?
 
-#### Denotational computing
+### Denotational computing
 
 Better term than "functional"
 
@@ -909,27 +958,258 @@ shielded from operational... (what about https://granule-project.github.io/resea
 
 Can we do with just functions at the bottom (no types and combinators) or do we need those for speed?
 
-#### Multi-node DCTP
+### Multi-node DCTP (potential draft 2)
+  
+Dikstra's 1968 Goto Considered Harmful argues that we can produce better code by replacing goto with structured commands, such as functions, if-statements, and loops. In this tradition, the functional programming community has continued to demonstrate how we can produce better programs without various side-effects, sometimes with the introduction of new language features. For example, many forms of mutable state can be expressed with recursion.  
+  
+Of course these effects aren't truly eliminated but merely shifted down the technological stack. The compiler for a language with recursion will likely utilize mutable state for an efficient implementation. The benefits of pure languages are also their costs: being cut off from operational details let us focus on essential complexity, but at the same time inhibit us improving the performance of our programs. Hopefully these costs will continue to decrease over time due to faster and bigger chips, and advanced compilation techniques. Modern compilers for high level languages already produce competitive speed and space efficiency for contexts where resources aren't extremely tight.  
+  
+Modern functional programming languages like Haskell demonstrate that pure functional programming without side-effects is practical and indeed desirable in many contexts. For the remaining contexts, Haskell programmers use the IO Monad as an escape hatch for arbitrary effects, such as reading from and writing to files, the console, databases, and network connections. While *technically* pure, the IO Monad essentially creates a separate silo for effects in otherwise pure code. It is the ongoing quest of the pure functional programming to demonstrate how we can do more and more of our work without resorting to effects at all.
+  
+Functional Reactive Programming (FRP) was a big step forward for this effort. FRP demonstrated how reactive systems such as robotics and user interfaces can be programmed without effects. Instead of manually redrawing graphics or engaging motors, FRP programs declaratively describe dynamic relationships between time-varying values. The effectful hardware commands are delegated to the FRP library.  
+  
+Data persistence and distributed computing are two areas the pure FP community has yet to "abstract over." We still use the IO Monad to generate the effects of reading from and writing to the filesystem or database, as well as sending and receiving data across the network. Most programmers either never question these interfaces or consider them inevitable. FP zealots hold out hope that we'll one day embrace them into the fold.  
+  
+What appears as two problems is in fact one. Data persistence is essentially sending to a place with particular guarantees about how you'll be able to retrieve it later. A local datastore behaves much like a remote one in that it has non-negligible latency, albeit much less than a remote one.
 
-- 2 computers
-- chat app
-- Event t Sender Recipient Message --> RemoteEvent t1 t2 Sender Recipient Message
+We can be sure what the pure versions of these interfaces *won't* be. We won't be manually setting various pieces of data for persistence, mutating them, and cleaning them up. We already know how to program with automatic RAM memory management, so we can be confident that a compiler can handle the same task with persistent memory "on disk".
+  
+The same goes doesn't network requests. We can be sure that we won't be manually making and receiving network requests one by one. That's analogous to manually querying and mutating the HTML DOM with JQuery. FRP showed us how to declaratively describe our view (HTML) as a function of a time-varying state, and leave it to the FRP engine, such as ReactJS, to make the appropriate DOM mutations for us as necessary.
 
-### Readings done
+Let's start by upgrading the simplest FRP example, a button counter application, to a distributed button counter.  First a local counter:
+
+```haskell
+instance Functor Event ...
+instance Foldable Event ...
+
+count :: Event a -> Behavior Int
+count event = foldl (+) 0 (map (const 1) event)
+
+instance Monad (Dom a) ...
+
+button :: Text -> Dom (Event ())
+span :: Text -> Dom ()
+
+counter :: Dom ()
+counter = button "Click Me" >>= \clicks -> span $ count clicks
+
+runDom :: DomSelector -> Dom -> Monad IO
+runDom "#app" counter
+```
+
+The dynamic `counter` application is expressed entirely purely. For example, `counter >>= counter` would produce two equivalent but independent counters side-by-side. But like all pure computations, we do need one effect: evaluate me. In non-graphical Haskell programs, the runtime engine is usually implicit -- evaluate this code on this computer's processor, with this computer's RAM -- but we can specify how much RAM on the command line. In this counter, we need to be a bit more explicit about *where* we want this application to live on the screen. The imperative `runDom` function runs the `counter` application at the DOM node with id `app`.  
+
+Similarly, for our distributed counter we need to specify a "runtime engine" that will carry out the computation for us. We can assume the engine is a publicly accessible server that we identify with a URL.
+
+```haskell
+newtype DistributedValue a = { value :: a, computerId :: string, perception :: Time, occurance: Time }
+newtype DistributedEvent a    = DistributedEvent (DistributedValue a)
+-- TODO newtype DistributedBehavior a = DistributedBehavior (DistributedValue a)
+
+distributed :: Event a -> DistributedEvent a
+distributed :: Behavior a -> DistributedBehavior b
+
+counterDistributed :: DistributedDom ()
+counterDistributed = button "Click Me" >>= \clicks -> span $ count $ distributed clicks
+
+runDomDistributed :: DomSelector -> DistributedDom -> Monad IO
+runDomDistributed "#app" "https://distributedfrp.com/jsSksl34KelwN" counterDistributed
+```
+
+#### Semantics of Distributed FRP
+
+```haskell
+type TimeSemantic = Real | Infinity | NegativeInfinity
+
+type BehaviorSemantic a = TimeSemantic -> a
+type EventSemantic a    = [(TimeSemantic , a)] -- for non-decreasing time
+
+at   :: Behavior a -> BehaviorSemantic a
+occs :: Event a -> EventSemantic a
+
+-- The first TimeSemantic is when we ask for the value
+-- The second TimeSemantic is when we recieve the value
+type RemoteBehaviorSemantic a = TimeSemantic -> (TimeSemantic, a)
+
+-- The first TimeSemantic is when it occured 
+-- The second TimeSemantic is when it was percieved by the computer running this computation
+type RemoteEventSemantic a = [(TimeSemantic, TimeSemantic, a)]
+
+at   :: RemoteBehavior a -> RemoteBehaviorSemantic a
+occs :: RemoteEvent a -> RemoteEventSemantic a
+
+time :: RemoteBehavior Time
+at time = \t -> (t, t)
+
+instanceSemantic Functor RemoteBehavior where
+	at (fmap f b) = \t -> (t1, f x)
+		where (t1, x) = (f `at` t)
+	              
+-- the result is percieved as the later perception time
+instanceSemantic Applicative RemoteBehavior where
+	at (pure a)    = \t -> (t, a)
+	at (bF <*> bX) = \t -> (max bFTime bXTime, f x)
+	  where (bFTime, f) = (bF `at` t)
+	  where (bXTime, x) = (bX `at` t)
+```
+
+```haskell
+switcher :: RemoteBehavior a -> RemoteEvent (RemoteBehavior a) 
+         -> RemoteBehavior a
+         
+(b0 `switcher` e) `at` t = last (b0:(map thrd (before (occs e) t)) `at` t
+
+thrd = (_, _, c) -> c
+
+before :: RemoteEventSemantic a -> TimeSemantic -> [a]
+before events t =  filter (\(t1, t2, _) -> t1 < t) events
+```
+
+```haskell
+instanceSemantic Monoid RemoteEvent where 
+	occs mempty         = []
+	occs (e mappend e') = occs e `merge occs e'
+
+```haskell
+-- left-bias merge, ordered by percieved time
+merge :: RemoteEventSemantic a -> RemoteEventSemantic a 
+      -> RemoteEventSemantic a
+[]     `merge` events' = events'
+events `merge` []      = events
+(event@(t1, t2, a):events) `merge` (event'@(t1', t2', a'):events')
+	| t2 <= t2' = event:(events `merge` (event':events'))
+	| otherwise = event':((event:events) `merge` events')
+
+instanceSemantic Functor (RemoteEvent a) where
+	occs (fmap f e) = map (\(t1, t2, a) -> (t1, t2, f a) (occs e)
+	
+instanceSemantic Functor DistributedEvent where
+	occs (fmap f e) = map (\(t1, t2, a) -> (t1, t2, f a)) (occs e)
+```
+
+#### Multi-computer DCTP Todos
+
+- why is effect-free good?
+- why is IO monad not truly effect free?
+- denotational design separates performance from essential complexity --> why is this the right separation?
+- do I need to explain FRP behaviors and events better?
+
+----------------------
+
+- distributed behavior
+- persistance that lives or doesn't live past page refresh (timing of when to accumulate ... FRP Now?)
+- encryption and permission (read and write)
+
+----------------------
+
+does this make any sense?
+```haskell
+newtype Remote a = Event a
+```
+You can get an event stream, optionally bind it to a user or computer identifier by signing it, optionally encrypt  it, you can then lift it to a remove event stream, then do a remoteFold to proccess it, taking into account whatever permissioning you want on that data to create a emoteBehavior. You can then 
+
+collapse down that RemoteBehavior somehow via the flattening things...
+
+Or maybe
+
+```haskell
+newtype RemoteEvent a = Event (t, a)
+```
+
+```haskell
+newtype RemoteBehavior a = Future (Behavior (t, a))
+```
+
+----------------------
+
+I  really need to figure out how `Event` is `Future Reactive` from http://conal.net/papers/push-pull-frp/push-pull-frp.pdf
+
+## Readings done
 
 * https://youtu.be/aXVUoT_objA?t=1378
 * http://alvyray.com/Memos/CG/Microsoft/6_pixel.pdf
 * Re-read/re-watch "Denotational design with type class morphisms" & read "The simple essence of automatic differentiation"
 * towards a theory of the comprehension of computer programs brooks
+* https://wiki.haskell.org/Introduction
+* can programming be liberated, period? eh, not into this. mostly skimmed.
+* re-skimmed no sliver bullet
+* re-skimmed goto considred harmful
 
-### Todos 
+### Programming Considered as a Human Activity
 
+https://www.cs.utexas.edu/~EWD/transcriptions/EWD01xx/EWD117.html
+
+Another dikstra where he considers getting rid of mutation but skips it because he can only do it with ugly recursion
+
+### programming with(out) goto
+
+adds some context to dikstra's original piece
+
+### global variable considered harmful
+
+> We are attempting to extend the analysis of what constitutes well-structured programming... Unlike the goto situation, the scope problem does not have 1) a single offending construct whose elimination will correct the problem and 2) a collection of familiar constructs which are (almost) adequate to capture the essential uses of the underlying primitive concept.
+
+### The Conception, Evolution, and Application of Functional Programming Languages
+
+http://haskell.cs.yale.edu/wp-content/uploads/2011/01/cs.pdf
+
+* P. Hudak report on early Haskell.
+
+> It remains the goal of the functional programming community to demonstrate that one can do completely without side-effects, without sacrificing efficiency or modularity. Of course, as mentioned earlier, the lack of side-effects is not all there is to the functional programming paradigm—as we shall soon see, modern functional languages rely heavily on certain other features, most notably higher-order functions, lazy evaluation, and data abstraction.
+
+> Church’s work was motivated by the desire to create a calculus (informally, a syntax for terms and set of rewrite rules for transforming terms) that captured one’s intuition about the behavior of functions. This approach is counter to the consideration of functions as, for example, sets (more precisely, sets of argument/value pairs), since the intent was to capture the computational aspects of functions. A calculus is a formal way for doing just that.
+
+Functional history: Church lambda calculus, McCarthy LISP, Landin Iswim, Iverson APL, Backus liberate (dude behind Fortran and Algol), ML language, The Hindley-Milner Type System, David Turner laziness, Dataflow (lucid), Haskell
+
+> it is hard to imagine doing without either goto’s or assignment statements, until one is shown what to use in their place. In the case of goto, one uses instead “structured commands,” and in the case of assignment statements one uses instead lexical binding and recursion.
+
+> When Dijkstra first introduced structured programming, much of the programming community was aghast—how could one do without goto? But as people programmed in the new style, it was realized that what was being imposed was a “discipline” for good programming, not a “police state” to inhibit expressiveness. Exactly the same can be said of side-effect-free programming, and its advocates hope that as people become more comfortable programming in the functional style, they will appreciate the good sides of the discipline thus imposed. When viewed in this way functional languages can be seen as a logical step in the evolution of imperative languages—thus, of course, rendering them non-imperative. On the other hand, it is exactly this purity that some programmers object to, and one could argue that just as a “tasteful” use of goto here or there is acceptable, so is a “tasteful” use of a side-effect. Such small impurities certainly shouldn’t invalidate the functional programming style, and thus may be acceptable.
+
+### The Next 700 Programming Langauges
+
+https://www.cs.cmu.edu/~crary/819-f09/Landin66.pdf
+
+> The commonplace expressions of arithmetic and algebra have a certain simplicity that most communications to computers lack. In particular, (a) each expression has a nesting subexpression structure, (b) each subexpression denotes something (usually a number, truth vMue or numerical function), (c) the thing an expression denotes, i.e., its "value", depends only on the values of its subexpressions, not on other properties of them. It is these properties, and crucially (c), that explains why such expressions are easier to construct and understand. Thus it is (c) that lies behind the evolutionary trend towards "bigger righthand sides" in place of strings of small, explicitly sequenced assignments and jumps. When faced with a new notation that borrows the functional appearance of everyday algebra, it is (c) that gives us a test for whether the notation is genuinely functional or merely masquerading.
+
+> There is a game sometimes played with ALGOL 60 programs--rewriting them so as to avoid using labels and go to statements. It is part of a more embracing game-- reducing the extent to which the program conveys its information by explicit sequencing. Roughly speaking this amounts to using fewer and larger statements. The game's significance lies in that it frequently produces a more "transparent" program--easier to understand, debug, modify and incorporate into a larger program. The author does not argue the ease against explicit sequencing here. Instead he takes as point of departure the observation that the user of any programming language is frequently presented with a choice between using explicit sequencing or some alternative feature of the language. Furthermore languages vary greatly in the alternatives they offer. For example, our game is greatly facilitated by ALGOL 60'S conditional statements and conditional expressions. So the question considered here is: What other such features are there? This question is considered because, not surprisingly, it turns out that an emphasis on describing things in terms of other things leads to the same kind of requirements as an emphasis against explicit sequencing.... One interesting observation is that the most recalcitrant uses of explicit sequencing appear to be associated with success/failure situations and the action needed on failure.
+
+> Strachey: I mean, roughly, languages which do not contain assignment statements or jumps. This is, as a matter of fact, not a very clear distinction because you can always disguise the assignments and the jumps, for that matter, inside other statement forms which make them look different. The important characteristic of DLs is that it is possible to produce equivalence relations... That equivalence relation, which appears to be essential in almost every proof, does not hold if you allow assignment statements. The great advantage then of l)Ls is that they give you some hope of proving the equivalence of program transformations and to begin to have a calculus for combining and manipulating them, which at the moment we haven't got... They are an interesting subset, but one which is inconvenient to use unless you are used to it. We need them because at the moment we don't know how to construct proofs with languages which include imperatives and jumps....I am not convinced that all problems are amenable to programming in DLs but I am not convinced that there are any which are not either; I preserve an open mind on this point. It is perfectly true that in the process of rewriting programs to avoid labels and jumps, you've gone half the way towards going into 1)Ls. When you have also avoided assignment statements, you've gone the rest of the way. With many problems you can, in fact, go the whole way...I think the last question, "Should DLs be nIixed with imperative languages?", clearly has the answer that they should, because at the moment we don't know how to do everything in pure DLs.
+
+Then Smith confuses a machine "smart enough to solve them problem for you" and "a language such as LISP, where you define a function explicitly and have only one imperative, which was "evaluate this expression and print the result."
+
+But still Naur is confused: "I still don't understand this distinction about an implicit language. Does it mean that whenever you have such a language there is a built-in feature for solving equations?"
+
+> Strachey: You can, in fact, impose an ordering on a language which doesn't have the sequencing of commands by nesting the functional applications.   
+>  
+> Landin: The point is that when you compound functional expressions you are imposing a partial ordering, and when you decompose this into commands you are unnecessarily giving a lot of information about sequencing. 
+>  
+> Strachey: One inconvenient thing about a purely imperative language is that you have to specify far too much sequencing. For example, if you wish to do a matrix multiplication, you have to do n a multiplications. If you write an ordinary program to do this, you have to specify the exact sequence which they are all to be done. Actually, it doesn't matter in what order you do the multiplications so long as you add them together in the right groups. Thus the ordinary sort of imperative language imposes much too much sequencing, which makes it very difficult to rearrange if you want to make things more efficient.
+
+### Lucid, the dataflow langauge
+
+http://plaice.web.cse.unsw.edu.au/~plaice/archive/WWW/1985/B-AP85-LucidDataflow.pdf 
+
+> We wanted to show that conventional, ‘mainstream’ programming could be done in a purely declarative language, one without assignment or goto statements. We felt then (and still do now) that real “structured programming” required first the elimination of both these features and that only then would program verification become a practical possibility
+
+> Lucid has more in common with school algebra than with BASIC or COBOL.
+
+> Imperative programmers think of the computer as executing the program by jumping around the text of the program, executing and re-executing the program’s assignment statements in the order specified by the program’s control structure. The programmer in an imperative language is concerned primarily with specifying the action which a machine is required to perform, rather than with the values (data) which the machine is required to produce.... It makes no sense to say that a machine has reached a certain textual point in the execution of a Lucid program—in fact the word “execution” itself is not really appropriate. A Lucid program is an expression, and its output is its value (as an expression). A machine which is running a Lucid program is therefore evaluating it, not executing it.
+
+> Whatever the current state of affairs we do not, however, admit that Lucid or the definitional approach is inherently strange or unsuitable for human/machine communication. In our opinion, programmers find the approach to be strange only because they have very little experience in using it. Is it really so ‘natural’ to think of a computation as a long, linearly ordered sequence of one-at-a-time changes to the values associated with some collection of variables? Students learning a language like FORTRAN often find it very difficult to grasp the fact that FORTRAN statements are commands. Those with a mathematical background are often totally confused by so called “statements” such as x = x + 1 which contradict everything they ever learned about the symbol =.
+
+> The question that should be asked is not which approach is stranger compared to which, but rather which approach is better. The decimal number system at first seemed very strange by comparison with Roman numerals, but was eventually adopted because it made calculation so much easier. The algebraic system of notation itself took many centuries before it gained acceptance.
+
+> It has been known for a long time that neither assignment nor control flow are truly necessary, that it is possible to write programs in a purely static, mathematical language. Some fifty years ago, Church showed that any computable numeric function could be expressed in the Lambda Calculus.
+
+> The weakness underlined by Dijkstra [regarding eliminating mutable variables] is not in inherent weakness; it is a weakness of a particular method of implementing a particular kind of nonprocedural language...Nevertheless they allow new styles of programming and new methods of implementation (by reduction machines, lazy evaluation, dataflow) which avoid the difficulties mentioned by Dijkstra, which make use of iteration as well as recursion and which allow many processors to cooperate in the evaluation of a single program. Nonprocedural languages may one day compete with FORTRAN in efficiency as well as elegance.
+
+> The Mystics acknowledge the basic problem (unsuitability of the von Neumann architecture) but want to solve the problem by ignoring it. The Mystics just do not want to know how their programs are run—or at least think that programmers should not know. Because the semantics of their languages can be given without reference to operational ideas, they think they can wash their hands of the whole problem. They say to the engineers, ‘Here’s the semantics of the language, go and implement it, you can use any method you want, you’re not stuck with von Neumann architecture’. The Mystics think that language design can be completely machine independent! ... They look down on concepts such as interaction as “low level” and “operational”. They believe programmers should turn their backs on all this confusing talk about things happening, data being input and output and systems changing their state. Their languages deal with abstract, eternal, unchanging pure and clean mathematical values. The concept of some particular thing happening at some particular time is alien to their whole way of thinking. They leave it to the lower orders (implementers) to worry about such trivial, distracting and menial details....The Mystics will argue that genuine “time” is an implementation concept and has no place in the semantics of a language, which must be “abstract”. This is true as long as timing is part of performance and not part of correctness. Nevertheless, it cannot be denied that there are many applications in which timing (relative or absolute) is part of the specification itself. For these problems, timing refers to ends as well as means, and reference to genuine time in the program is still abstract.
+
+> Lucid is a definitional language; the statements in a Lucid program are equations defining streams and filters, not commands for updating storage locations. Lucid is unusual in this sense, but not unique. The first definitional language, namely McCarthy’s LISP, was designed more than some twenty-five years ago, in 1960.
+
+
+## Todo
+
+* maybe re-read backus and iverson turing award lectures
 * re-read comments and finish with new ones
   * salon de refuge reviewers
-  * Mariano Guerra
-* read global variable considered harmful
-* programming with(out) goto
-* can programming be liberated, period?
-* https://wiki.haskell.org/Introduction
-* (again) dikstra and landin, and possibly backus 
-* https://hillelwayne.com/post/persuasive-examples/
