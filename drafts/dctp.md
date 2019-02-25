@@ -930,6 +930,161 @@ TODO good fix.
 
 Yes, great point if I inclue the tiramisu diagram.
 
+### Salon de Refuge Review 1
+
+> Overall evaluation: 0 (borderline paper)  
+> 
+> This paper has some interesting content, although it is also rather hard for this reader to digest. There is at least one clear "headline" signal -- that functional reactive programming (FRP) has been misunderstood by some -- wrapped a lot of text which is arguably rather noisy.
+> 
+> As a reader who is perhaps in a converse case to the intended audience -- I've read papers about FRP but have no familiarity with what the ReactJS community uses "FRP" to mean -- I found the text rather inaccessible, since it presumes familiarity with that and other systems (Redux at least). I think these really have to be explained, not just alluded to -- not simply to include readers like me, but to get the author's essential points across. You can only illustrate a misunderstanding if you state the contrast explicitly.  
+
+I agree that I should firm up with React and Redux is in a couple sentances, while also making it clear that an understanding of such technologies is a pre-req for this essay.
+
+> I wasn't clear on the relationship between "denotative", "denotational" and (the more common and apparently similar) "declarative". Do they all mean the same thing? I appreciate the expansion of Landin's definition of "denotative", but then to switch to "denotational" seems perverse, and explaining the relationship with the more common "declarative" seems more than warranted.
+
+Denotative and denotational are used to mean the same thing here. I could make this clear. Declarative is like functional in that it lacks a clear definition.
+
+> For my taste the piece is slightly over-written, in that the chatty tone gets in the way of exposition (worsening the signal-to-noise).
+
+Fair.
+
+> I think there is value in the reiteration and restatement of Conal Elliott's arguments here, which are very interesting -- particularly the criticism of monadic I/O. But as a counterpoint: is it really productive for humans to think in denotations all the time? Isn't it an essential cognitive tendency to find it easier to express oneself, from time to time, in terms of "doing" this and that? If so, how do we square this with the call to ever greater purity? Is it good value to restrict ourselves to squashing this tendency? What's the rationale for believing that?
+
+Great question! TODO argue against it a la goto considered harmful, spreadhseets, and how purity helps our tiny brains think big thoughts, because operational is too powerful and hard to think through.
+
+> Another counterpoint: I take the point that these ideas are more general than just programming UIs. But does all programming have a "time" element at all? I contend not. So what is the scope really? (Not having an answer is fine.)
+
+If you remove the time element you have regular non-reactive, batch based programming, which pure programming already has covered.
+
+### Salon de Refuge Review 2
+
+Overall evaluation: 1 (weak accept)
+
+> This position paper argues in favor of the "denotational" programming paradigm (introduced in early work on Functional Reactive Programming by Conal Elliott). It consists of two parts. The first part is a tutorial on classic functional reactive programming in the context of user interface programming and the second, more speculative part, argues that such approach to programming could (and should) be extended to other areas outside of user interface programming.  
+>  
+> Overall, I think this is a nice and provocative position paper that starts an interesting conversation and, as such, it is a good fit for Salon des Refusés. I really like the following aspects of the paper:  
+>  
+> * The FRP tutorial part is written from a perspective of someone who knows modern implementations of the idea (such as React & Redux) and I think this framing can be really valuable for modern programming audience.
+>  
+> * I like the positive and visionary attitude the paper follows. Unlike many other papers written criticizing the state of the art, it actually makes a concrete proposal of how things could be improved!
+>  
+> * A more specific point that I found interesting is the idea that the paradigm allows better visualization of what is happening during program execution - this is something I would be very interested in further exploring.
+
+TODO this is a great point. Python tutor / seymour is the best for operational but we can be more abstract with denotational designs, such as spreadsheets.
+
+> I think there are a couple of areas in which the paper could be improved. The following are, in my opinion, the most important areas for possible improvement:
+>  
+> * I would like to see a more detailed argument for why the "denotational" approach is better. I can find some ideas "in between the lines", but I think there should be a more explicit argument in the paper. One concrete point is the fact that you can visualize things more easily, but that seems to be just one aspect. 
+
+TODO great point. This must be explicitly argued for.
+
+> * The paper argues that "denotational" approach is good and it explains that "denotational" means that expressions denote mathematical objects. However, the paper does not actually explain any of those mathematical objects. If the aim of the paper is to argue that "denotational" is good (and a better word than, say, "declarative") then it needs to talk a bit about the mathematical objects - what are they, e.g. in the case of user interfaces? I would also welcome a speculation on what they might be in the other contexts, e.g. the mentioned HTTP communication.
+
+
+Great point. Can explain behaviors as functions and events as time-tupled lists.
+
+> * I would love to hear more about the visualization aspect - this is one aspect of the paper that I think can be really interesting. Why is it the case that visualizing "denotational" programs is easier? How could that generalize from the FRP example to a more general communication example?
+
+Yep, TODO as said above.
+
+> There are a couple of smaller points that are important for publishing the essay in the form of an academic paper:  
+>   
+> * The paper does not cover related work in a lot of detail and I think it needs to provide at least some level of overview. There is a range of FRP efforts - which of them are close to what the author is advocating? Which of them are going in a "wrong" direction (and why is that wrong)? 
+
+Great point. In particular Elm would be interesting here as Mariano Guerra mentioend.
+
+> * There are various comments and remarks throughout the paper that are not particularly well justified. I list many of them in the detailed comments section below. I think the paper needs to be a bit more careful about this - if you are making something that can look like a factual claim, please try to give some evidence.  
+>  
+> (Page numbers as in the included PDF document)  
+>  
+> 1 - You say "non-programmers could program arbitrarily complex user interfaces" - I find this somewhat confusing and paradoxical. I think the typical idea is that non-programmers should be able to do some partial tasks; doesn't the ability to build "arbitrarily complex" things make you a programmer?  
+
+That's an interesting question and part of the point of democratizing programming. Arbitrary complexity for everyone without having to put up with all that programmers usually do.
+
+> 1 - "how the state changed over time. Redux (…)" - can you explain what are you referring to when you talk about how state changed over time? Also, explain what Redux does - not all readers might know that.
+
+Yep, TODO as said above.
+
+> 2 - "couldn't make heads or tails of Conal" etc. - I think the personal history of the learning is useful for the essay, but you could get a lot more out of it if you tried reflecting on "why it was hard to understand" - that might be an interesting thing to understand!
+
+Great point! TODO
+
+> 2 - I don't think we can get away with keeping "assholes" in the final ACM published version ;-)
+
+Yep, TODO.
+
+> 2 - DCTP as the title is not particularly enlightening. A better title would be good.
+
+I think he mis-read the title...
+
+> 2 - "Elliott then watched others use this term to describe things totally opposed to his  original vision" - well, that's just how science works! See for example Bruno Latour's "Science in Action" book. I'm not sure this necessarily needs to be presented as a negative thing - it inspired lots of new research exploring various directions.
+
+Interesting point, but I think this is a rare perspective.
+
+> 3 - I find the textual representation of the denotational program in the code sample very ugly and a lot more confusing than the imperative one, actually! The diagram is quite nice though. I think the argument that "denotational is beautiful" is not substantiated well by the code sample.
+
+Well said.
+
+> 4 - you link to another article in "argue against the Elm/Redux architecture" - links is fine, but it would be good to keep your essay reasonably self-contained.
+
+Good point, also said in other feedback.
+
+> 4 - you say you want to use "denotational" instead of "functional" - I think this obliges you to say a bit more about what mathematical objects do expressions in the languages you are talking about "denote"
+
+Great point, as said above.
+
+> 5 - I think your way of modelling SVGs as Real * Real -> Color is fairly problematic - it makes it impossible to draw a line (because a line is so thin that it's never visible). I think seeing SVG as denoting a list of shapes would make more sense.
+
+That's silly. Who says you can't specify the width of a line? If that makes it more of an infinite rectangle, who cares? It's still perfectly mathematical.
+
+> 7 - "see him go" - why "him"?
+
+Yeah, "it" could work.
+
+> 8 - The code sample needs some explanation. What does it do? Why is this a good example?
+
+Yep.
+
+> 10 - You ignore the "liftNow(sample(…))" bit of the code sample - I think this little details is more important than it might seem to someone familiar with the system. The fact that many FRP systems need this sort of small very confusing things is, I think, reason why they often aren't very usable. I think you should at least say what this means and why it's needed.
+
+Maybe I could create a special version of scan that just does those things and then I'll just have to explain the yeild...
+
+> 11 - I think this code sample needs a bit more explanation. For someone not familiar with the paradigm, it's not really clear how this works (which I think, is not the authors fault, but a consequence of how unfamiliar patterns FRP sometimes requires). Also, I suspect not everybody will know what "function*" means
+
+Yep.
+
+> 12 - What mathematical object does, say, "mouse clicks" denote? I'm not sure it's much better than IO - the thing it denotes is something in human world! Not a mathematical object…
+
+This is a well-phrased misunderstanding. It denotes an infinite list of tuples.
+
+> 13 - For distributed programming, there is bunch of work on what mathematical objects this might denote such as ML5 (https://www.cs.cmu.edu/~rwh/papers/ml5/tgc.pdf). I think the paper should also mention some work on multi-tier programming such as HOP (https://dl.acm.org/citation.cfm?id=2240253) or Links (https://link.springer.com/chapter/10.1007/978-3-540-74792-5_12).
+
+Awesome links!
+
+### Salon de Refuge Review 3
+
+> Overall evaluation: 0 (borderline paper)  
+>  
+> This article outlines a perspective on the design of denotational programming systems. I'm sure other reviewers will have technically insightful opinions about the content. 
+> 
+> I would like to focus on the mode and style of the discourse, which whilst substantially different from an academic submission go without much commentary.  
+>  
+> Considering this work as an artefact, that might be embedded within a broader artefact - does the author find that it has an effect on the readership? It gives the impression of being taken from within a well practiced rhetorical strategy. It will no doubt be controversial - I would like the author to reflect on that controversy and their reasons for choosing this particular mode.  
+
+That's an interesting point.
+
+> It's neither a paper, nor literate programming, nor a clear blog post, but a kind of blogcast. Fascinating, intriguing and infuriating.  
+>  
+> It contrasts technical claims about monads with an assertion that we are 'freeeeeeeee!' [sic].  
+> 
+> It doesn't appear to conclude, but parts with an FAQ, frequently by whom, and in what context, the reader is left to wonder.
+
+Yeah I could put this into another, more traditional format.
+
+> TL;DR: I would be very interested to see this work at SdR, but only if the discursive style is as eclectic as the authorial style. That should provoke some interesting meta-thoughts.
+
+Huh?
+
 # Draft 2
 
 I am realizing the above draft is much too large in scope and loses people. I'd like to pick a smaller target for draft 2.
@@ -1210,6 +1365,11 @@ http://plaice.web.cse.unsw.edu.au/~plaice/archive/WWW/1985/B-AP85-LucidDataflow.
 
 ## Todo
 
+* re-read comments 
+* try draft 2 as explaining original frp to react people
+* read salon reviewer 2 distributed computing links
+  * https://link.springer.com/chapter/10.1007/978-3-540-74792-5_12
+  * https://dl.acm.org/citation.cfm?id=2240253
+  * https://www.cs.cmu.edu/~rwh/papers/ml5/tgc.pdf
 * maybe re-read backus and iverson turing award lectures
-* re-read comments and finish with new ones
-  * salon de refuge reviewers
+
