@@ -1095,6 +1095,8 @@ I am realizing the above draft is much too large in scope and loses people. I'd 
 
 Explaining original FRP could be the explicit goal of the paper a la http://worrydream.com/ScientificCommunicationAsSequentialArt/ for Conal's https://github.com/conal/talk-2015-essence-and-origins-of-frp/blob/master/README.md (or maybe https://github.com/conal/talk-2014-lambdajam-denotational-design or https://github.com/conal/talk-2015-more-elegant-frp)
 
+Simon's [Let's Reinvent FRP](http://vindum.io/blog/lets-reinvent-frp/) does this reasonably well, but makes the same "mistake" I did about going to canvas instead of HTML...
+
 ### What isn't considered harmful?
 
 The game of removing goto, control flow/statements, mutation... math seems to be OK. The game of adding back in, goto can be replace with X (dikjstra), mutation with recursion/HOF, control flow is often unnecessary and can be replaced with data flow.
@@ -1289,6 +1291,7 @@ I  really need to figure out how `Event` is `Future Reactive` from http://conal.
 * can programming be liberated, period? eh, not into this. mostly skimmed.
 * re-skimmed no sliver bullet
 * re-skimmed goto considred harmful
+* re-read all my feedback comments
 
 ### Programming Considered as a Human Activity
 
@@ -1362,14 +1365,15 @@ http://plaice.web.cse.unsw.edu.au/~plaice/archive/WWW/1985/B-AP85-LucidDataflow.
 
 > Lucid is a definitional language; the statements in a Lucid program are equations defining streams and filters, not commands for updating storage locations. Lucid is unusual in this sense, but not unique. The first definitional language, namely McCarthy’s LISP, was designed more than some twenty-five years ago, in 1960.
 
+### Multi-tier Functional Reactive Programming for the Web
+
+https://core.ac.uk/download/pdf/34606019.pdf
+
+Holy shit this is exactly the paper I needed. I just needed the keyword "multitier language." Funny no one pointed me to it before.
 
 ## Todo
 
-* re-read comments 
 * try draft 2 as explaining original frp to react people
-* read salon reviewer 2 distributed computing links
-  * https://link.springer.com/chapter/10.1007/978-3-540-74792-5_12
-  * https://dl.acm.org/citation.cfm?id=2240253
-  * https://www.cs.cmu.edu/~rwh/papers/ml5/tgc.pdf
 * maybe re-read backus and iverson turing award lectures
+
 
