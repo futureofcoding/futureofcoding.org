@@ -1115,6 +1115,71 @@ shielded from operational... (what about https://granule-project.github.io/resea
 
 Can we do with just functions at the bottom (no types and combinators) or do we need those for speed?
 
+### Web Programming Without Migranes
+
+I taught kids to code in Scratch, which was awesome, but eventually they wanted to make web apps.
+  
+So I built a blocks for JQuery. [http://cycle.thecodingspace.com/#fjweme](http://cycle.thecodingspace.com/#fjweme)
+
+JQuery. Great for simple things.
+
+Problems: Hard to keep everything in sync. Have to worry about all possible state paths. String identifiers.
+
+[https://jsbin.com/cimabug/edit?js,output](https://jsbin.com/cimabug/edit?js,output)
+
+I saw my 11-year-olds getting burned by mutable state everywhere, but try convincing 11-year-olds to follow code conventions. It’s much easier to bake those conventions into the language and not give them the rope to hang themselves.
+
+Enter reactive programming: ReactJS, VueJS, CycleJS.
+
+Describe the view as a pure function of state, where state changes over time. Automatically keeps view in sync with state. 
+
+So I built a blocks for React. [https://stevekrouse.com/cycle/index.html#count-the-clicks](https://stevekrouse.com/cycle/index.html#count-the-clicks)
+
+Problem: child elements have to update parent state. Example: editing todo items need to propagate changes to the whole list.
+
+Enter: Redux, The Elm Architecture.
+
+Store all app data in a single large object and emit actions from child nodes that update state.
+
+Problem: non-modular, loose coupling on strings
+
+Ultimately, the problem is loopy-ness between our state and view:
+
+- The JQuery solution is string identifiers (of HTML elements) and global mutation 
+- The Elm / Redux solution is also string identifiers (but of Action types) and simulated global mutation 
+  
+
+Why don’t we do recursion the FP way? 
+
+- No string identifiers 
+- No mutation 
+- State is a local as possible 
+  
+
+This requires
+
+- Recursive monads 
+- Complex higher-order flow types 
+- And there are no popular libraries for it 
+  
+[https://codesandbox.io/s/j7k1no7659](https://codesandbox.io/s/j7k1no7659)
+
+Never mind! String identifiers and simulated global mutable state are fine.
+
+Wait a minute. Can we make these cyclical, higher-order streams understandable by humans?
+  
+Visualizations?
+  
+[https://user-images.githubusercontent.com/2288939/52494957-9e906a80-2bcf-11e9-95bb-a4505688183c.png](https://user-images.githubusercontent.com/2288939/52494957-9e906a80-2bcf-11e9-95bb-a4505688183c.png) (I’ll want to improve this and make it about my simple todo list running example.)
+
+Ultimately I hope to make a non-textual editor for user interfaces: Scratch for web apps. (You could also say website builder, like Squarespace, weebly, Wix, etc, of arbitrary complexity.)
+
+#### Notes
+
+- [http://soft.vub.ac.be/~cfscholl/ProWeb17/ProWeb_2017_paper_5.pdf](http://soft.vub.ac.be/~cfscholl/ProWeb17/ProWeb_2017_paper_5.pdf) 
+- [https://web.archive.org/web/20180530055638/https://futurice.com/blog/reactive-mvc-and-the-virtual-dom](https://web.archive.org/web/20180530055638/https://futurice.com/blog/reactive-mvc-and-the-virtual-dom) 
+- [https://docs.google.com/presentation/d/1lKAwh7x1oQel88tJrW211R90k3cQZHSXyvaz3wBhmwM/edit#slide=id.p](https://docs.google.com/presentation/d/1lKAwh7x1oQel88tJrW211R90k3cQZHSXyvaz3wBhmwM/edit#slide=id.p)
+
 ### Multi-node DCTP (potential draft 2)
   
 Dikstra's 1968 Goto Considered Harmful argues that we can produce better code by replacing goto with structured commands, such as functions, if-statements, and loops. In this tradition, the functional programming community has continued to demonstrate how we can produce better programs without various side-effects, sometimes with the introduction of new language features. For example, many forms of mutable state can be expressed with recursion.  
