@@ -53,6 +53,10 @@ Discuss ways to better collaborate, improve this Slack, or resolve community iss
 
 Every 4 weeks, @donut will randomly pair everyone in this channel for 1-on-1 conversations. It&#39;s a good way to get to know others in the Slack.
 
+### #jobs
+
+Post if you are hiring or looking for work. Work related to the future of coding is preferred but all paid opportunities are allowed. Don't post more than once every couple of months about yourself or your company.
+
 ### Locations
 
 - #nyc
@@ -94,6 +98,10 @@ If you have an inspirational quote to share, [add it as a Loading Message](https
 This community was started by Irvin Hwang as a Google Group in mid-2017 for organizing NYC meetups, but was quickly turned into a Slack and taken over by Steve Krouse when Irvin got busy with his job.
 
 ## Changelog
+
+### March 1, 2019
+
+- Added #jobs channel
 
 ### Feb 16, 2019
 
