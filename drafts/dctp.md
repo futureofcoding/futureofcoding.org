@@ -2,9 +2,6 @@
 title: The Misunderstood Roots of FRP Can Save Programming
 ---
 
-* TOC
-{:toc}
-
 # The Misunderstood Roots of FRP Can Save Programming
 
 For many years I been searching for the perfect paradigm for programming user interfaces. Like many others, I fell in love with FRP with the rise of ReactJS and spent a few years searching for the perfect reactive model. Eventually, I found my way back to the original work on FRP by Conal Elliott. It took me almost a year to make sense of it. This essay attempts to make Conal's vision more understandable to less mathematically-oriented programmers, and also show how this perspective could be the foundation for a new era of programming, not just with user interfaces, but also multi-node computing, storage, machine learning, etc.
