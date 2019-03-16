@@ -31,7 +31,7 @@ Join the [Slack community](https://join.slack.com/t/futureprogramming/shared_inv
 
 <br>
 
-The podcast alternates between interviews with programming language experts and reflections on my own research journy. My research is focused on [democratizing programming](/about#mission). [Twitter](https://twitter.com/stevekrouse) is a great place to contact me, but email works too: steve at this domain.
+The podcast alternates between interviews with programming language experts and reflections on my own research journey. My research is focused on [democratizing programming](/about#mission). [Twitter](https://twitter.com/stevekrouse) is a great place to contact me, but email works too: steve at this domain.
 
 # Episodes
 
