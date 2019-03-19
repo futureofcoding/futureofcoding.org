@@ -291,6 +291,7 @@ DCTP extended the denotative approach to handle interactivity, such as mouse and
 ### Behaviors
 
 ![](https://camo.githubusercontent.com/9b8fca9342d56465fc9536efdf8b26e182958a2f/68747470733a2f2f7261776769742e636f6d2f66756e6b69612f686172656163746976652f6d61737465722f666967757265732f6265686176696f722e737667)
+
 _Graphic of Behaviors from the [Hareactive documentation](https://github.com/funkia/hareactive)_
 
 Behaviors denote continuous functions of time, such as:
@@ -370,7 +371,7 @@ Contrast this approach with a Redux counter. In Turbine, we put everything you n
 * It is modified below in reponse to the `'INCREMENT'` action.
 * It is also modified via the button's onclick event triggering the the `'INCREMENT'` action.
 
-```js
+```jsx
 const counterReducer = (state = 0, action) => {
   switch (action.type) {
     case 'INCREMENT':
@@ -447,7 +448,7 @@ const temp = loop(
 );
 ```
 
-![Edit Turbine Counter](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/m3640l222j?module=%2Fsrc%2Findex.js)
+[![Edit Turbine Counter](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/m3640l222j?module=%2Fsrc%2Findex.js)
 
 ## Visualizing Flows
 
