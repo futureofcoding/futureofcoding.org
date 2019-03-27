@@ -95,7 +95,9 @@ Two examples of denotative programming languages are spreadsheets and the denota
 Spreadsheets are a wonderful sweet spot of power and simplicity, enabling non-programmers to express complex logic. Part of their simplicity lies in their denotative characteristics:
 
 a) There are no statements, only nested expressions.
+
 b) Each expressions denotes a string, number or truth value.
+
 c) There's nothing else that can affect the value of a cell except its formula and the formulas of its children, and their children, and their children, and ...
 
 These limitations allow for a global view of a spreadsheet via the "trace precedents" function, which visualizes cell dependencies:
@@ -453,7 +455,7 @@ const temp = loop(
 ## Visualizing Flows
 
 Even I find the above code hard to read, despite having written it! While this could be seen as a downside of the denotative approach, I see it as a mismatch between the denotative approach and textual syntax.
-(key point here! Perhaps state your research goal: can we find a better representation than text that clarifies the denotation of the program?)
+
 
 There's been [interesting](https://github.com/cyclejs/cyclejs/tree/master/devtool) [work](http://rxmarbles.com/) [visualizing](https://rxviz.com/) [streams](https://rxfiddle.net/), which I hope to build on. Currently, I'm in the mockup phase, but I hope to build a developer tool experience that will automatically generate a live visualization.
 
