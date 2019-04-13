@@ -35,6 +35,8 @@ The podcast alternates between interviews with programming language experts and 
 
 # Episodes
 
+<!--<span class="date">2019 Apr 17 -</span> [#39 - Theoretical Foundations for Programmer Experience: Cyrus Omar](./episodes/039)-->
+
 <span class="date">2019 Apr 11 -</span> [#38 - The Case for Formal Methods: Hillel Wayne](./episodes/038)
 
 <span class="date">2019 Mar 02 -</span> [#37 - De-Nerding Programming: Jonathan Edwards](./episodes/037)
