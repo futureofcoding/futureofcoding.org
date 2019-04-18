@@ -119,6 +119,8 @@ The podcast alternates between interviews with programming language experts and 
 
 # Essays
 
+<span class="date">2019 Apr 02 -</span> [The Misunderstood Roots of FRP Can Save Programming](./essays/dctp)
+
 <span class="date">2018 Nov 06 -</span> [Live 2018 [Bootleg Edition]](./notes/live/2018)
 
 <span class="date">2018 Oct 02 -</span> [The "Next Big Thing" is a Room](https://phenomenalworld.org/metaresearch/the-next-big-thing-is-a-room)
