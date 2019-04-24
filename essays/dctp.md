@@ -4,8 +4,6 @@ title: The Misunderstood Roots of FRP Can Save Programming
 
 # The Misunderstood Roots of FRP Can Save Programming
 
-_This essay was presented at Salon de Refuge 2019, colocated with &lt;Programming&gt; 2019, in Genoa, Italy on April 2nd, under the title **Visual Denotative Programming**. The talk was not recorded but you can [watch a (rough) practice talk here](https://www.loom.com/share/936dd606f9d948e194cf39bc353b2816). The [slides can be found here](https://github.com/stevekrouse/futureofcoding.org/files/3085610/Visual.Denotative.Programming.pdf)._
-
 For many years I been searching for the perfect paradigm for programming user interfaces. Like many others, I fell in love with FRP with the rise of ReactJS and spent a few years searching for the perfect reactive model. Eventually, I found my way back to the original work on FRP by Conal Elliott. It took me almost a year to make sense of it. This essay attempts to make Conal's vision more understandable to less mathematically-oriented programmers, and also show how this perspective could be the foundation for a new era of programming, not just with user interfaces, but also multi-node computing, storage, machine learning, etc.
 
 This essay assumes familiarity with:
@@ -223,7 +221,7 @@ In most programming, time is discrete. The ticks of time can be counted one-by-o
 
 An animation is a graphic that changes over time. That is, it takes an `x` and `y` as before, but now it also inputs a `t` for time, and outputs a `Color` as before: `(x, y, t) -> Color`. But again, what kinds of numbers are `x`, `y` and `t`? If they are integers, we're in discrete space and time. Let's make them all reals, and enter continuous space and time.
 
-**Let's have our green circle drift off the screen to the right.** (You may have to refresh the page to see it go.)
+**Let's have our green circle drift off the screen to the right.**
 
 ```javascript
 // Example 3
@@ -232,17 +230,11 @@ const example3 = (x, y, t) => circle(10*t, 0, 50, green)(x, y)
 ```
 
 <svg height="300px" width="100%">
-  <circle id="ex3" cx="50%" cy="50%" r="50" fill="rgb(0, 255, 0)" />
+  <circle id="ex3" cx="70%" cy="50%" r="50" fill="rgb(0, 255, 0)" />
 </svg>
-<script>
-  var ex3X = 5000
-  setInterval(function() {
-    ex3.setAttribute('cx', `${ex3X++/100}%`)
-  }, 10)
-</script>
 [Example 3 GPU Code](https://jsbin.com/kayakim/edit?js,output)
 
-**Let's have it go faster.** (You may have to refresh the page to see it go.)
+**Let's have it go faster.** 
 
 ```javascript
 // Example 4
@@ -251,14 +243,8 @@ const example4 = (x, y, t) => circle(100*t, 0, 50, green)(x, y)
 ```
 
 <svg height="300px" width="100%">
-  <circle id="ex4" cx="50%" cy="50%" r="50" fill="rgb(0, 255, 0)" />
+  <circle id="ex4" cx="85%" cy="50%" r="50" fill="rgb(0, 255, 0)" />
 </svg>
-<script>
-  var ex4X = 500
-  setInterval(function() {
-    ex4.setAttribute('cx', `${ex4X++ / 10}%`)
-  }, 10)
-</script>
 [Example 4 GPU Code](https://jsbin.com/hahegon/edit?js,output)
 
 **How about moving in a circle?** Let's use some trig!
@@ -270,16 +256,8 @@ const example5 = (x, y, t) => circle(50*Math.cos(10*t), 50*Math.sin(-10*t), 50, 
 ```
 
 <svg height="300px" width="100%">
-  <circle id="ex5" cx="50%" cy="50%" r="50" fill="rgb(0, 255, 0)" />
+  <circle id="ex5" cx="70%" cy="70%" r="50" fill="rgb(0, 255, 0)" />
 </svg>
-<script>
-  var ex5T = 0
-  setInterval(function() {
-    ex5T++
-    ex5.setAttribute('cx', `calc(${50*Math.cos(ex5T/20)}px + 50%)`)
-    ex5.setAttribute('cy', `calc(${-50*Math.sin(-ex5T/20)}px + 50%)`)
-  }, 10)
-</script>
 [Example 5 GPU Code](https://jsbin.com/busemas/edit?js,output)
 
 ### Why program with continuous time?
@@ -342,7 +320,7 @@ The final difficulty with the following examples is the quirky way that the Turb
 
 ### A Turbine Counter
 
-<button onclick="ex1.innerText -= -1">Count!</button><span id="ex1" >0</span>
+<button>Count!</button><span id="ex1" >5</span>
 
 ```javascript
 const counter = function*() {
