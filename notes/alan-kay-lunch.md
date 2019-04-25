@@ -14,7 +14,7 @@ _Alan and I after our five hour lunch at the Ivy Cafe in London. Referring to my
 
 Before the meeting, I asked a few mutual friends for advice on the meeting. Universally, I was warned that he would do a lot of the talking. This proved to be the case. I later joked to my parents that I got to ask four questions, and each one took him an hour to answer.
 
-Most (if not all) of the drawing are Alan's. The text notes are mine. Notes #1 and #2 are what I was hoping to talk about, which we covered maybe 15% of. It was five hours ranging from electrical engineering, to architecture, to the meaning of the word science, to theater, to jazz, to visual art, to education, to researcher gossip, to why to go to grad school, and so, so much computer history. I was doing my best to jot down all interesting key words, even if just to remind myself of the flow of the conversation. 
+It was five hours ranging from electrical engineering, to architecture, to the meaning of the word science, to theater, to jazz, to visual art, to education, to researcher gossip, to why to go to grad school, and so, so much computer history. I was doing my best to jot down all interesting key words, even if just to remind myself of the flow of the conversation. 
 
 At no point in our conversation did Alan explicitly explain what his agenda was, or why he even took the time to meet with me. It seemed like he knew almost nothing about me, and wasn't particularly curious to learn. However, from bits and pieces he dropped about *his* mentors, I think I am able to piece together what our lunch was about for him.
 
