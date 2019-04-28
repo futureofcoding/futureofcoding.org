@@ -1,4 +1,3 @@
-
 ---
 title: Lunch with Alan Kay
 ---
