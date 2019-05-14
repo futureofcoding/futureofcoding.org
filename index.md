@@ -21,17 +21,25 @@
   }
 </style>
 
+<br>
+
+Are you looking for the _real_ computer revolution? Join the club!
+
 <br> 
 
 Future of Coding is a [community](/slack), [podcast](/episodes), and [research project](/log) organized by Steve Krouse. 
 
 <br>
 
-Join the [Slack community](https://join.slack.com/t/futureprogramming/shared_invite/enQtMjYyMTQyOTgzMzAxLWUyOWFlZWVmZDIwZWU0Yzg5YTVlOWIzNTE0OTZjYWQxYjI0MDNhOWUzMDE0MmNjNjExMDA1ZmMxYjI3OTYxZGI)! We share ideas, prototypes, opinions, and debate each other endlessly. We also organize meetups in NYC, London, Boston... and maybe your city next?! Learn more about our community [here](./slack-readme).
+Join our [Slack community](https://join.slack.com/t/futureprogramming/shared_invite/enQtMjYyMTQyOTgzMzAxLWUyOWFlZWVmZDIwZWU0Yzg5YTVlOWIzNTE0OTZjYWQxYjI0MDNhOWUzMDE0MmNjNjExMDA1ZmMxYjI3OTYxZGI)! We share ideas, prototypes, opinions, and debate each other endlessly. We also organize meetups in NYC, London, Boston, SF, Kitchener-Waterloo, Seattle... [Learn more about our community here](./slack-readme).
 
 <br>
 
 The podcast alternates between interviews with programming language experts and reflections on my own research journey. My research is focused on [democratizing programming](/about#mission). [Twitter](https://twitter.com/stevekrouse) is a great place to contact me, but email works too: steve at this domain.
+
+<br>
+
+If you're new to "reimagining computing", a good starting place is [Week 3 &amp; 4 of Chris Novello's _Computer Utopias_ curriculum](http://chrisnovello.com/teaching/risd/computer-utopias/).
 
 # Episodes
 

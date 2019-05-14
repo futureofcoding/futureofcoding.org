@@ -9,7 +9,7 @@ title: Slack README
 
 ## About
 
-The Slack is loosely connected to the Future of Coding podcast -- people hear about it there and sometimes discuss episodes -- but it&#39;s only one of many, many common touch points for the community, including Bret Victor, Douglas Engelbart, Alan Kay, Fred Brooks, HCI, HARC, Eve...
+The Slack is loosely connected to the Future of Coding podcast -- people hear about it there and sometimes discuss episodes -- but it&#39;s only one of many, many common touch points for the community, including Bret Victor, Douglas Engelbart, Alan Kay, Fred Brooks, HCI, HARC, Eve... For a fuller list of relevant people, topics, and links, check out [Chris Novello's _Computer Utopias_ curriculum](http://chrisnovello.com/teaching/risd/computer-utopias/) (particularly Week 3 &amp; 4).
 
 ## Purposes
 
