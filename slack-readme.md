@@ -69,6 +69,7 @@ Post if you are hiring or looking for work. Work related to the future of coding
 
 - #graphics
 - #music
+- #research-center
 
 ## Style Guide
 
@@ -126,6 +127,10 @@ This community was started by Irvin Hwang as a Google Group in mid-2017 for orga
 - Created #music channel
 - Changed the name of the Slack to Future of Coding and the URL to futureofcoding.slack.com
 - Created #music channel
+
+### May 18, 2019
+
+- Created #research-center channel to discuss the idea of an in-person research community, requested by David Broderick
 
 ### Proposed changes
 
