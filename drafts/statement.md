@@ -127,6 +127,8 @@ There is no *creating*. From the first valid expression you put together, it's m
         
 -------------------------
 
+## Questions
+
 Let's build a community chat app. Let's start as simply as possible:
 
 1. Displaying a single message `Message -> HTML`
