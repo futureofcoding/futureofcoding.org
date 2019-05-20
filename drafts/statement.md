@@ -103,3 +103,60 @@ Next, one could imagine a system where pieces of an interface could be replace w
 	- no definitions? just subexpresions via edit semantics, recurisvely?
 	- terms are just terms (no definition, they are themselves). you can then specify compute/storage/runtime to eval
 	- an evolving definition is a starting definition and then all the ways that future definitions might appear, maybe of same type or different (higher-kinds?)
+
+
+# Draft 1 Feedback (JE) and my responses
+
+>   This is a great vision statement! To turn it into a research proposal you need to drill down a level to problems and approaches. What are specific problems you need to solve to achieve your vision? 
+
+The vision is composability, so my approach is to build upon the successes of the FP community that augmented our ability to compose programs, such as managed memory, first-class functions, lazy evaluation, etc, along with its avoidance of mutable state and delicate handling of all side-effects. I will use the phrase denotative programming as a synonym for the original vision of FP, which prioritized this composability.
+
+> What  **new**  approaches do you want to propose to solving those problems? An approach is not a complete solution, it is an insight or general direction that could lead towards a solution, which hasn't been done before. Note that it is OK to not yet have approaches to all your problems - finding them is part of the research. But you need to show that you have at least one new take. That's hard! Writing this proposal should feel like you are pushing yourself to a higher level.  
+>
+>  One way to elucidate your problems and approaches is in comparison to others: why haven't we already attained your vision? What is missing from existing solutions? Why haven't the visionaries you cite (Engelbart, Kay) achieved it? Another thing that might help is to pick one problem as your first priority and drill deepest into that one.  
+
+Past approaches haven't sufficiently focused on composability, and had the successes of the FP community to build upon.
+
+>  Question: isn't malleability a subset of creativity? Focusing on the former suggests you are going for some sort of adaptation layer rather than the full ability to create from scratch. If you think indeed malleability is essential to your approach then explain why.    
+
+“If you wish to make an apple pie from scratch, you must first invent the universe.” ― Carl Sagan, Cosmos
+
+There is no *creating*. From the first valid expression you put together, it's modifying from there on out. At bottom there are primitives, but most often you are going to be creating by combining and customizing non-primitives, pre-exsiting parts created by the community. Why create from scratch when you can use and customize community-created pieces of functionality?
+
+>  You mention FRP almost in passing, yet it seems central to your thinking so far. If that is still the case you should make a fuller argument about how it is an approach to your problems.  
+        
+-------------------------
+
+Let's build a community chat app. Let's start as simply as possible:
+
+1. Displaying a single message `Message -> HTML`
+2. Displaying a list of messages, sorted by time sent `[Message] -> HTML` 
+3. An input box to draft a message, where the enter key sends it `HTML -> Event Message`
+
+A few perspectives to consider:
+
+## Distributed computing
+
+1. How do messages get sent from computer to computer? Do we imagine the algorithm from the perspective of one node or the whole system? Or both?
+
+1a. Here's a wacky idea: the program is a distributed system. Anyone who wants to become a node can allocate an amount of hardware (memory, network, cpu, keyboard, etc) to the program. We then use distributed systems theory to get all the properties we need for the program. In other words, the world is one big computer (distributed) with a bunch of scattered hardware (I/O) devices. The advantage of such a scheme is composability in the sense that a program is a horizonal slice. You can put it wherever you want and it will figure out the communication and how to leverage the hardware given it in various places.
+
+2. How do we model the amount of time it takes for a message to be received?
+
+2a. The simplest answer is: don't. You can get an event from a remote piece of hardware as an event. If you want local time as well for some reason, you can add that in to the event. (We can elucidate this by rendering both times in the message list.)
+
+## Variants
+
+3. What if one user wanted to customize something locally? What if they wanted to share the customization with another? What if the both further customized and wanted to merge?
+
+4. What if some or all participants wanted to modify the type of message to include the sender's name or other data model changes?
+
+5. Could there be a place users could browse through the styles of chat apps that could be applied to theirs? Could we do this even if much of the underlying architecture between apps is quite different?
+
+6. Could users import data model changes from other chat apps?
+
+7. Could a user separate the app into functioning pieces? For example, what if a user wanted to create a personal dashboard that included a window showing certain subset of message without the input box for sending messages? 
+
+## Immutability
+
+8. Can we edit code fully immutably? That is, without defining terms to as mutable mappings of strings to expressions? For example, can an expression allow for arbitrary or limited changes to itself?
