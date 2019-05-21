@@ -31,7 +31,7 @@ Future of Coding is a [community](/slack), [podcast](/episodes), and [research p
 
 <br>
 
-Join our [Slack community](https://join.slack.com/t/futureprogramming/shared_invite/enQtMjYyMTQyOTgzMzAxLWUyOWFlZWVmZDIwZWU0Yzg5YTVlOWIzNTE0OTZjYWQxYjI0MDNhOWUzMDE0MmNjNjExMDA1ZmMxYjI3OTYxZGI)! We share ideas, prototypes, opinions, and debate each other endlessly. We also organize meetups in NYC, London, Boston, SF, Kitchener-Waterloo, Seattle... [Learn more about our community here](./slack-readme).
+Join our [Slack community](https://join.slack.com/t/futureprogramming/shared_invite/enQtMjYyMTQyOTgzMzAxLWUyOWFlZWVmZDIwZWU0Yzg5YTVlOWIzNTE0OTZjYWQxYjI0MDNhOWUzMDE0MmNjNjExMDA1ZmMxYjI3OTYxZGI)! (The join link doesn't work on mobile.) We share ideas, prototypes, opinions, and debate each other endlessly. We also organize meetups in NYC, London, Boston, SF, Kitchener-Waterloo, Seattle... [Learn more about our community here](./slack-readme).
 
 <br>
 
