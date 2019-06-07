@@ -43,7 +43,7 @@ If you're new to "reimagining computing", a good starting place is [Week 3 &amp;
 
 # Episodes
 
-<!--<span class="date">2019 Apr 17 -</span> [#39 - Theoretical Foundations for Programmer Experience: Cyrus Omar](./episodes/039)-->
+<span class="date">2019 Jun 07 -</span> [#39 - Mathematical Foundations for the Activity of Programming: Cyrus Omar](./episodes/039)
 
 <span class="date">2019 Apr 11 -</span> [#38 - The Case for Formal Methods: Hillel Wayne](./episodes/038)
 
