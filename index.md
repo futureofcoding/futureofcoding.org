@@ -43,7 +43,7 @@ If you're new to "reimagining computing", a good starting place is [Week 3 &amp;
 
 # Episodes
 
-<span class="date">2019 Jun 13 -</span> [40 Joining Logic, Relational, and Functional Programming: Michael Arntzenius](./episodes/040)
+<span class="date">2019 Jun 13 -</span> [#40 Joining Logic, Relational, and Functional Programming: Michael Arntzenius](./episodes/040)
 
 <span class="date">2019 Jun 07 -</span> [#39 - Mathematical Foundations for the Activity of Programming: Cyrus Omar](./episodes/039)
 
