@@ -70,6 +70,8 @@ Post if you are hiring or looking for work. Work related to the future of coding
 - #graphics
 - #music
 - #research-center
+- #robust-computation
+- #category-theory
 
 ## Style Guide
 
@@ -99,6 +101,14 @@ If you have an inspirational quote to share, [add it as a Loading Message](https
 This community was started by Irvin Hwang as a Google Group in mid-2017 for organizing NYC meetups, but was quickly turned into a Slack and taken over by Steve Krouse when Irvin got busy with his job.
 
 ## Changelog
+
+### July 7, 2019
+
+- Added #robust-compute channel as per @curious_reader's request after a 60-message thread
+
+### June 13, 2019
+
+- Added #category-theory as per Stefan Lesser's request to foster a study group
 
 ### March 1, 2019
 
