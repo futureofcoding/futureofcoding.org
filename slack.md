@@ -2,4 +2,4 @@
 title: Future of Coding Slack
 ---
 
-<script>window.location.href = 'https://join.slack.com/t/futureofcoding/shared_invite/enQtNjY0ODY1NjE4Nzg2LWM4MWVlZWJjMjZlNDI5MGE3MDhlODNkN2QwNTY5NjdiMWMyN2Y3YjUyMGYwZjc1ZjFiOGI1NmE4OWNlZmExMzc'</script>
+<script>window.location.href = 'https://join.slack.com/t/futureofcoding/shared_invite/enQtNjk1NDc2MTkzNjE4LWFjYTY2NDU1ODI1MTI5M2MwYjZlZTk4OTU5NTM1YTRiMDEwODZhN2Y3OWNhN2VmZDU4YmJiZjlhYTFjYmJhZGQ'</script>
