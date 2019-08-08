@@ -20,6 +20,8 @@ title: Log
   }
   .commit > .files {
     margin-bottom: 5px;
+  }
+  .commit {
     overflow: scroll;
   }
   .hash {
