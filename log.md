@@ -20,6 +20,7 @@ title: Log
   }
   .commit > .files {
     margin-bottom: 5px;
+    overflow: scroll;
   }
   .hash {
     font-size: 15px;
