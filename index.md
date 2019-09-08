@@ -27,11 +27,11 @@ Are you looking for the _real_ computer revolution? Join the club!
 
 <br> 
 
-Future of Coding is a [community](/slack), [podcast](/episodes), and [research project](/log) organized by Steve Krouse. 
+Future of Coding is a [community](/community), [podcast](#episodes), and [research project](/log) organized by Steve Krouse. 
 
 <br>
 
-Join our [Slack community](https://join.slack.com/t/futureofcoding/shared_invite/enQtNjk1NDc2MTkzNjE4LWFjYTY2NDU1ODI1MTI5M2MwYjZlZTk4OTU5NTM1YTRiMDEwODZhN2Y3OWNhN2VmZDU4YmJiZjlhYTFjYmJhZGQ)! (The join link doesn't work on mobile.) We share ideas, prototypes, opinions, and debate each other endlessly. We also organize meetups in NYC, London, Boston, SF, Kitchener-Waterloo, Seattle... [Learn more about our community here](./slack-readme).
+Join our [Slack community](/community)! We share ideas, prototypes, opinions, and debate each other endlessly. We also organize meetups in NYC, London, Boston, SF, Kitchener-Waterloo, Seattle... [Learn more about our community here](./slack-readme).
 
 <br>
 

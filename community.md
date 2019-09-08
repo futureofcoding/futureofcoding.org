@@ -1,27 +1,14 @@
 ---
-title: Slack README
+title: Future of Coding Community
 ---
 
-<h1>Slack README</h1>
+<h1>Future of Coding Community</h1>
 
-* TOC
-{:toc}
-
-## About
-
-The Slack is loosely connected to the Future of Coding podcast -- people hear about it there and sometimes discuss episodes -- but it&#39;s only one of many, many common touch points for the community, including Bret Victor, Douglas Engelbart, Alan Kay, Fred Brooks, HCI, HARC, Eve... For a fuller list of relevant people, topics, and links, check out [Chris Novello's _Computer Utopias_ curriculum](http://chrisnovello.com/teaching/risd/computer-utopias/) (particularly Week 3 &amp; 4).
-
-## Purposes
-
-1. Sharing of ideas, debate, feedback, constructive criticism, and collaboration
-
-2. Encouragement, high fives
-
-3. Organizing IRL meetings and meetups
+The Future of Coding Slack is loosely connected to the Future of Coding podcast. People hear about it there and sometimes discuss episodes -- but it's only one of many common touch points for the community, including Bret Victor, Douglas Engelbart, Alan Kay, Fred Brooks, HCI, HARC, Eve... For a fuller list of relevant people, topics, and links, check out [Chris Novello's _Computer Utopias_ curriculum](http://chrisnovello.com/teaching/risd/computer-utopias/) (particularly Week 3 & 4) and [The New Media Reader](https://mitpress.mit.edu/books/new-media-reader).
 
 ## Getting Started
 
-You can [join the Slack here](http://futureofcoding.org/slack).
+On desktop, you can [join the Slack here](http://futureofcoding.org/slack-link). The link doesn't work on mobile for some reason.
 
 Upon joining the Slack, you get this automated message:
 
@@ -29,9 +16,22 @@ Upon joining the Slack, you get this automated message:
 
 So if you are reading this message, congrats on following the instructions!
 
-1. Introduce yourself in the #introductions channel (after reading the style guide)
+1. Introduce yourself in the #introductions channel (after reading the [style guide](https://futureofcoding.org/community#style-guide))
 2. Join the relevant channels
 3. Be kind and have fun!
+
+* TOC
+{:toc}
+
+## Purposes
+
+The purposes of the Future of Coding Slack are:
+
+1. Sharing of ideas, debate, feedback, constructive criticism, and collaboration
+
+2. Encouragement, high fives
+
+3. Organizing IRL meetings and meetups
 
 ## Channels
 
@@ -79,7 +79,7 @@ Post if you are hiring or looking for work. Work related to the future of coding
 
 This slack discusses nuanced topics, so we have a strong preference for organizing conversations by thread. If you want to respond to someone, respond in the thread of that message. Do not respond with another top-level message.
 
-When creating a top-level message, try to create it in a single message so that it&#39;s easier to thread off it. You can create newlines with shift-enter. It&#39;s helpful to draft longer messages in your personal channel @yourname channel.
+When creating a top-level message, try to create it in a single message so that it's easier to thread off it. You can create newlines with shift-enter. It's helpful to draft longer messages in your personal channel @yourname channel.
 
 ### Sharing your own work
 
@@ -102,6 +102,11 @@ This community was started by Irvin Hwang as a Google Group in mid-2017 for orga
 
 ## Changelog
 
+### Sept 8, 2019
+
+- Moved /slack to /slack-link
+- Redirect /slack and /slack-readme to /community
+
 ### July 7, 2019
 
 - Added #robust-compute channel as per @curious_reader's request after a 60-message thread
@@ -109,6 +114,10 @@ This community was started by Irvin Hwang as a Google Group in mid-2017 for orga
 ### June 13, 2019
 
 - Added #category-theory as per Stefan Lesser's request to foster a study group
+
+### May 18, 2019
+
+- Created #research-center channel to discuss the idea of an in-person research community, requested by David Broderick
 
 ### March 1, 2019
 
@@ -138,9 +147,6 @@ This community was started by Irvin Hwang as a Google Group in mid-2017 for orga
 - Changed the name of the Slack to Future of Coding and the URL to futureofcoding.slack.com
 - Created #music channel
 
-### May 18, 2019
-
-- Created #research-center channel to discuss the idea of an in-person research community, requested by David Broderick
 
 ### Proposed changes
 
@@ -156,6 +162,6 @@ Many of us also congretate on Twitter. You can check out [who I follow](http://t
 
 ### Others
 
-- [r/n](https://www.reddit.com/r/nosyntax/)[osyntax](https://www.reddit.com/r/nosyntax/)
+- [r/nosyntax](https://www.reddit.com/r/nosyntax/)
 - [r/futureofprogramming](https://www.reddit.com/r/futureofprogramming)
 - [nearthespeedoflight.com](http://discuss.nearthespeedoflight.com/)
