@@ -31,6 +31,10 @@ Future of Coding is a [community](/community), [podcast](#episodes), and [resear
 
 <br>
 
+🆕 [The Whole Code Cataslog](/catalog) (Sept, 2019) reviews 24 interesting programming-ish interfaces and experiments. Check it out for inspiration and ideas-to-steal.
+
+<br>
+
 Join our [Slack community](/community)! We share ideas, prototypes, opinions, and debate each other endlessly. We also organize meetups in NYC, London, Boston, SF, Kitchener-Waterloo, Seattle... [Learn more about our community here](./slack-readme).
 
 <br>
