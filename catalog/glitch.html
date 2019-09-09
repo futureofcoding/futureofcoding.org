@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Glitch - The Whole Code Catalog</title>
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Noto+Serif+JP&display=swap" rel="stylesheet">
+	<link href="shared.css" rel="stylesheet" type="text/css" />
+	<link href="article.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<article>
+		<div id="title" style=" cursor: pointer;" onclick="window.location.href='./'">
+			<div id="the">The</div>
+			<br>
+      <div id="wholecode">Whole Code</div>
+      <br>
+      <div id="catalog">Catalog</div>
+    </div>
+      <section>
+        <h1 id="glitch">Glitch</h1>
+        <em>Reviewed July 24, 2019</em>
+        <p>Glitch is a collaborative online IDE for creating NodeJS apps. It also features a community to explore and remix others' creations. There's no deploy button: the tool reloads itself every few keystrokes. It was founded by Fog Creek Software (Trello, StackOverflow) in 2017 and raised $30M. They company has a focus on diversity and inclusion, both on its internal team and Glitch's app community.</p>
+      </section>
+
+      <section>
+        <h2 id="productfeel">Product Feel</h2>
+        <ul>
+          <li>👍 Easy to get started and play around with community projects</li>
+          <li>👎 Hobbyist: toy version control, <a href=""http://help-center.glitch.me/help/restrictions/">toy deployment</a></li>
+          <li>👎 Lame: childish graphics, tutorials and videos</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="basicusage">Basic Usage</h2>
+        <iframe class="loom" src="https://www.loom.com/embed/5d5d9dfac29b46c287bdadcf452b30a0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <p>The above video produces <a href="https://glitch.com/edit/#!/stream-capybara">a simple webpage that counts the number of times its been loaded</a>. It demonstrates:</p>
+        <ul>
+          <li>automatic app reload every couple keystrokes</li>
+          <li>errors in the preview pane and inline</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h2 id="version-control">Visual Version Control</h2>
+        <p>Built on top of git, Glitch's visual version control tries to make it easier for beginners to rollback to earlier versions. They commit ("checkpoint") code every couple changes / minutes, but don't seem to handle forks. I found it confusing and would prefer either Google-docs-style revision history or Github-style branching diagram.
+        </p>
+        <img src="https://user-images.githubusercontent.com/2288939/61523885-8130b980-aa15-11e9-8f45-b85fdb3bf3bd.png">
+      </section>
+
+      <section>
+        <h2 id="get-help">Get Help</h2>
+        <p>You can highlight a piece of code and ask for help. In my experience this feature was more trouble than it was worth, possibly because they don't have a critical mass of people using it.</p>
+        <img src="https://user-images.githubusercontent.com/2288939/61523692-28612100-aa15-11e9-834c-a9ba33191798.png">
+      </section>
+
+      <section>
+        <h2 id="collab">Google-docs-style Collaboration</h2>
+        <p>I can imagine this would be amazing for hackathons or other forms of close collaboration on a small project. However, I worry about larger projects with 2+ people working on different parts at the same time.</p>
+      </section>
+
+      <section>
+        <h2 id="packages">Packages</h2>
+        <p>Easily search npm and add to package.json with one click:</p>
+        <img src="https://user-images.githubusercontent.com/2288939/61523522-d8825a00-aa14-11e9-976b-f1d4775c5478.png">
+      </section>
+
+      <section>
+        <h2 id="pricing">Pricing</h2>
+        <p>During its beta period, Glitch is free for all users and teams. They are in financial partnerships with tech company libraries, like Google's Tensorflow, to promote that library's use through starter projects on Glitch.</p>
+      </section>
+
+      <section>
+        <h2 id="wishes">Wishes</h2>
+        <ul>
+          <li>Run a service in production (projects sleep after 5 minutes, and are limited to 4,000 requests per hour)</li>
+          <li>Front-end hot reload</li>
+          <li>Step debugging (I couldn’t get it to work)</li>
+          <li>Have better database integration (it’s pretty self-service)</li>
+          <li>Other languages/frameworks than NodeJS</li>
+          <li>Read docs instead of watching the videos that were not to my taste</li>
+        </ul>
+        <p>Past wishes that were granted:</p>
+        <ul>
+          <li>Much faster performance on loading projects</li>
+          <li>See the web output, debugger, and console in the same page (not a seperate tabs)</li>
+          <li>Error messages inline in the text editor where they happen</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="further-reading">Further Reading</h2>
+        <ul>
+          <li><a href="https://techcrunch.com/2019/07/09/glitch-is-bringing-remix-culture-back-to-the-web-with-a-30-million-series-a-round/">Glitch is bringing remix culture back to the web with a $30 million Series A round</a></li>
+        </ul>      
+      </section>
+    </article>
+  </body>
+</html>

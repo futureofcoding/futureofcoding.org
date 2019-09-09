@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Eve - The Whole Code Catalog</title>
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Noto+Serif+JP&display=swap" rel="stylesheet">
+	<link href="shared.css" rel="stylesheet" type="text/css" />
+	<link href="article.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<article>
+		<div id="title" style=" cursor: pointer;" onclick="window.location.href='./'">
+			<div id="the">The</div>
+			<br>
+      <div id="wholecode">Whole Code</div>
+      <br>
+      <div id="catalog">Catalog</div>
+    </div>
+      <section>
+        <h1 id="eve">Eve</h1>
+        <em>Reviewed Aug 30, 2019</em>
+        <p>Eve was founded by Chris Granger and Rob Attorri in late 2013, building on the popularity of their <a href="http://lighttable.com/">LightTable</a> programming editor. In 2014, they raised $2.3M from Andreessen Horowitz and spent two years publicly blogging about their <a href="https://futureofcoding.org/essays/eve/">30+ iterations</a>, culminating in the publicly-released <a href="http://play.witheve.com">Eve Version 0.2</a>, reviewed below. It's a browser-based literate programming environment with a Datalog-inspired language. Eve shut down in early 2018 after failing to find an acquirer.</p>
+      </section>
+
+      <section>
+        <h2 id="productfeel">Product Feel</h2>
+        <ul>
+          <li>👍 Well-designed, thoughtful interface & API</li>
+          <li>👎 Alpha software</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="basicusage">Basic Usage</h2>
+        <iframe class="video" src="https://www.youtube.com/embed/TWAMr72VaaU?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>The above video adds a feature and fixes a bug with a mobile messaging application in Eve. To be fair, the video is much more compelling than the reality of v0.2 the product. Bugs abound and the documentation is lacking, so I doubt I'd personally be able to recreate even a tenth of what's shown in the video. The video demonstrates:</p>
+        <ul>
+          <li>using the inspector to find rendering code</li>
+          <li>adding a button to a component</li>
+          <li>using the literate coding editor to add text and a code block</li>
+          <li>removing a piece of HTML in response to a button click</li>
+          <li>reproducing user state by dragging in a file</li>
+          <li>create real-time app analytics data and charts</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="unified">Unified API</h2>
+        <p>In traditional programming, each layer of the stack uses slightly different data structures and abstractions for reading and writing:</p>
+        <img src="https://user-images.githubusercontent.com/2288939/64022145-7c3f4980-cb2d-11e9-9580-c83e5ed6d153.png">
+        <p>Eve unifies the entire programming stack into three simple operations upon records in various record-based "databases." Want to add something to the screen? Send a message to a Slack channel? Add data to the database? All of these would involve either <code>commit</code> or <code>bind</code> to add a record to the respective database. Want to search any of those places? It's <code>search</code>, whether to be for the browser memory, localstorage, a remote database, the DOM, or an external API.</p>
+        <img src="https://user-images.githubusercontent.com/2288939/64022150-7ea1a380-cb2d-11e9-8163-0429bbf7d1a2.png">
+        <p><em><a href="https://hackernoon.com/how-eve-unifies-your-entire-programming-stack-900ca80c58a7">Images by Liron Shapira</a></em></p>
+      </section>
+
+      <section>
+        <h2 id="TODO">Intelligent Inspector</h2>
+        <p>The Eve inspector shows what the browser devtools inspector could be with a more unified tech stack. When you click on a place in the UI, it can take you the various places in the code that could be relevant.</p>
+        <iframe class="video" src="https://www.youtube.com/embed/JJk9PTzz_8M?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section>
+        <h2 id="wishes">Wishes</h2>
+        <ul>
+          <li>Much, much fewer bugs</li>
+          <li>Better docs</li>
+          <li>More displayed live data of code execution</li>
+          <li>Autocomplete in the editor</li>
+          <li>Better messaging that nothing is changing due to the set-based nature of the language</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="further-reading">Further Reading</h2>
+        <ul>
+          <li><a href="http://witheve.com">Eve's Website</a></li>
+          <li><a href="https://incidentalcomplexity.com/">Eve's Blog</a></li>
+          <li><a href="https://www.chris-granger.com/2014/03/27/toward-a-better-programming/">Toward a better programming</a></li>
+          <li><a href="https://www.chris-granger.com/2015/01/26/coding-is-not-the-new-literacy/">Coding is not the new literacy</a></li>
+          <li><a href="https://www.chris-granger.com/2016/07/21/two-years-of-eve/">Two years of Eve</a></li>
+          <li><a href="https://groups.google.com/forum/#!topic/eve-talk/YFguOGkNrBo">Eve is winding down</a></li>
+          <li><a href="https://github.com/witheve/eve-experiments/blob/90a6c6bc4597572a29c72119fc7bb964426f8107/design/bibliography.md"></a></li>
+        </ul>      
+      </section>
+    </article>
+  </body>
+</html>

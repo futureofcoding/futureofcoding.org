@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Luna - The Whole Code Catalog</title>
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Noto+Serif+JP&display=swap" rel="stylesheet">
+	<link href="shared.css" rel="stylesheet" type="text/css" />
+	<link href="article.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<article>
+		<div id="title" style=" cursor: pointer;" onclick="window.location.href='./'">
+			<div id="the">The</div>
+			<br>
+      <div id="wholecode">Whole Code</div>
+      <br>
+      <div id="catalog">Catalog</div>
+    </div>
+      <section>
+        <h1 id="luna">Luna</h1>
+        <em>Reviewed July 18, 2019</em>
+        <p>Luna is a Haskell-inspired functional programming language, with both node-and-wire and textual representations. Despite its visual environment, Luna is targeting a technical user base, and expects its users to be fluent in its textual language as well. Luna was designed with data processing in mind, for industries such as "data science, machine learning, IoT,Bioinformatics, computer graphics or architecture. The Luna Electron app was released and open-source in Jan 2018.</p>
+        <iframe class="video" src="https://www.youtube.com/embed/uBFQbYZG2Ik?autoplay=1&controls=0&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section>
+        <h2 id="productfeel">Product Feel</h2>
+        <ul>
+          <li>👍 Intermediate results live-computed</li>
+          <li>👎 Cumbersome node editor. Not fluid.</li>
+          <li>👎 Confusing type errors</li>
+          <li>👎 Crashes more than any other app I've ever used.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="basicusage">Basic Usage</h2>
+        <iframe class="video" src="https://www.youtube.com/embed/aSiJeEp5ND4?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>The above video creates a Luna program that returns the host computer's  IP address. It demonstrates:</p>
+        <ul>
+          <li>adding and deleting nodes</li>
+          <li>hooking up the output of one node as the input to the next</li>
+          <li>live intermediate results at each node</li>
+          <li>searching for a node as you add it</li>
+          <li>hitting tab on a node to search for likely nodes to further process it</li>
+          <li>editing the text of the program (which updates the nodes)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="intermdiate">Strong visual metaphors for functions</h2>
+        <p>Inputs are to the left and output is to the right, in both the functions you’re using and defining. It feels like a fractal structure because every screen accepts inputs on the far-left and outs on the far-right, and in-between are function nodes that also accept their inputs on the left and outputs on the right.</p>
+        <img src="https://user-images.githubusercontent.com/2288939/61533952-8b12e680-aa2e-11e9-88a4-b9f2da62ea49.png">
+        <p>You can select a number of nodes and hit the f-key to abstract them into a function. Luna intelligently figures out what inputs and outputs there are to your function, and hooks them up correctly. Below is Luna program where we want to abstract the middle five nodes:</p>
+        <img src="https://user-images.githubusercontent.com/2288939/61533958-8e0dd700-aa2e-11e9-8c03-521d4d964b0b.png">
+        <p>Which then looks like this:</p>
+        <img src="https://user-images.githubusercontent.com/2288939/61533962-9239f480-aa2e-11e9-8140-3063f40c41aa.png">
+      </section>
+
+      <section>
+        <h2 id="expression-editor">Intermediate results</h2>
+        <p>Live-updated intermediate values is a very compelling feature. The following video shows a stream of numbers which create an animation of a growing circle. Both the stream of numbers and the circle update live. In the vide, I mouse over both nodes to show their type signatures.</p>
+        <iframe class="video" src="https://www.youtube.com/embed/GmnNPI9OMA4?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section>
+        <h2 id="expression-editor">Node expression editor</h2>
+        <p>Nodes in Luna can be arbitrary Luna expressions, which can be great for compactness. The following video demonstrates how their autocomplete pairs well with their dot-syntax which normally isn't found in functional languages. However, you may notice how selecting each autocomplete suggestion bounces me out of the textbox, and I have to scroll and double-click to resume typing.</p>
+        <iframe class="video" src="https://www.youtube.com/embed/br7Yl-DcjXA?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section>
+        <h2 id="wishes">Wishes</h2>
+        <ul>
+          <li>Recursion</li>
+          <li>Respond to interaction events, like keyboard or mouse events</li>
+          <li>The ability to export a standalone executable, like a webserver. Or be able to compile to another language and use as a library.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="further-reading">Further Reading</h2>
+        <ul>
+          <li><a href="https://luna-lang.gitbooks.io/docs/content/">Documentation</a></li>
+          <li><a href="https://github.com/luna/luna/tree/master/stdlib/Std/src">Standard Library</a></li>
+          <li><a href="https://medium.com/@luna_language/luna-the-future-of-computing-aaf4f76303ef">What is Luna?</a></li>
+          <li><a href="https://medium.com/@luna_language/luna-the-visual-way-to-create-software-c4db520d6d1e">Design Philosophy</a></li>
+        </ul>      
+      </section>
+    </article>
+  </body>
+</html>

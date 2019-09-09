@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Smalltalk - The Whole Code Catalog</title>
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Noto+Serif+JP&display=swap" rel="stylesheet">
+	<link href="shared.css" rel="stylesheet" type="text/css" />
+	<link href="article.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<article>
+		<div id="title" style=" cursor: pointer;" onclick="window.location.href='./'">
+			<div id="the">The</div>
+			<br>
+      <div id="wholecode">Whole Code</div>
+      <br>
+      <div id="catalog">Catalog</div>
+    </div>
+      <section>
+        <h1 id="smalltalk">Smalltalk</h1>
+        <em>Reviewed July 24th, 2019</em>
+        <p>Smalltalk is the legendary original OOP language and operating system, created by Alan Kay, Dan Ingalls, and Adele Goldberg at Xerox PARC in 1972. It has influenced almost all modern programming languages and operating systems. It's known for its holistic operating system that includes a code editor, runtime, package manager, debugger, file system, and pioneering graphical user interface, including overlapping windows. Below we examine a few features of modern reincarnations of Smalltalk, The Glamorous Toolkit and Lively Web.</p>
+      </section>
+
+      <section>
+        <h2 id="productfeel">Product Feel</h2>
+        <ul>
+          <li>👍 Superpowers if I can figure it out & invest the time (like emacs)</li>
+          <li>👍👎 It’s own world</li>
+          <li>👎 Raw, bulky, artificial, too much OOP (instance variables, packages, methods)</li>
+          <li>👎 Felt very lost until I got someone to pair with me</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="inspector">Inspector</h2>
+        <p>The Glamorous Toolkit is a Smalltalk environment built on top of the Pharo Smalltalk operating system. The main interface of GT is the Inspector, which blurs evaluating code and navigating dynamic structures. It allows multiple views, represented as tabs, for each object, so you can explore data in the most relevant representation. For example, in the following video, I view a file reference object as a traditional file system viewer, but later show its other lower-level representations as well. Every object has a meta tab view, which shows which messages it accepts. I use the meta tab to explore the available manipulations for an image in my filesystem, which I apply in a new inspector in an embedded window.</p>
+        <iframe class="video" src="https://www.youtube.com/embed/VVhDIXKGdUc?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section>
+        <h2 id="literate">Literate coding</h2>
+        <p>Documents in the Glamorous Toolkit are a mix between a templating language and a WYSIWYG document. All media elements have a text-based representation that's usually hidden until the cursor gets near and disappear when the cursor leaves. All embedded media are infinitely nestable, which means you can run a program inside a program inside some documentation inside a test case, etc.</p>
+        <iframe class="video" src="https://www.youtube.com/embed/k-g3a0lufVs?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section>
+        <h2 id="render-tree">Single render tree</h2>
+        <p>Contrasted with HTML multiple rendering methods (HTML vs canvas), the Glamorous Toolkit consists of a single render tree. This allows users to inspect any property of the entire system, including itself. Smalltalk thrives on all things meta. The following video shows turing the current window that the code is running in a dark pink.</p>
+        <iframe class="video" src="https://www.youtube.com/embed/-NM-fxHQ9Qo?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>The following video shows how runnable code windows can be embedded in arbitrary settings.</p>
+        <iframe class="video" src="https://www.youtube.com/embed/I35_Jk3JbR8?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section>
+        <h2 id="lively">Lively Web</h2>
+        <p>Lively Web is a Smalltalk environment for the web, featuring a direct manipulation WYSIWYG environment for building visual, dynamic layouts. All objects have a "halo menu" which allows you to change its properties, like size and color, as well as connecting it to other objects by dragging connections between them. In the following video, I create a counter button by dragging a connection between a button and a text object and editing the "converter" code between them. I then add a slider to the mix, where I at first have trouble getting it to properly get the rotation and scale of the window to change. One of my favorite features of this environment is that you can evaluate any highlighted text with a keyboard shortcut; the result is pasted next to the evaluated code, already highlighted to make for easy copying or deleting.</p>  
+        <iframe class="video" src="https://www.youtube.com/embed/iZK3LtknuDg?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section>
+        <h2 id="further-reading">Further Reading</h2>
+        <ul>
+          <li><a href="http://worrydream.com/EarlyHistoryOfSmalltalk/">The Early History Of Smalltalk</a></li>
+          <li><a href="https://futureofcoding.org/episodes/036">Future of Coding Podcast Episode 36 - Moldable Development: Tudor Girba</a></li>
+          <li><a href="https://lively-kernel.org/">Lively Kernel</a></li>
+        </ul>      
+      </section>
+    </article>
+  </body>
+</html>

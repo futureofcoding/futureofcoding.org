@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Wolfram Language - The Whole Code Catalog</title>
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Noto+Serif+JP&display=swap" rel="stylesheet">
+	<link href="shared.css" rel="stylesheet" type="text/css" />
+	<link href="article.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<article>
+		<div id="title" style=" cursor: pointer;" onclick="window.location.href='./'">
+			<div id="the">The</div>
+			<br>
+      <div id="wholecode">Whole Code</div>
+      <br>
+      <div id="catalog">Catalog</div>
+    </div>
+      <section>
+        <h1 id="Wolfram-Language">Wolfram Language</h1>
+        <em>Reviewed July 17, 2019</em>
+        <p>Wolfram Language, a <a href="http://community.wolfram.com/groups/-/m/t/1096129">confusing rebranding of Mathematia</a>, is programming language and notebook-based browser environment. It has 5,000 functions and data sources built into the language -- no imports required. It has broad applications in engineering ,sciences, mathematics, finance and education.</p>
+      </section>
+
+      <section>
+        <h2 id="productfeel">Product Feel</h2>
+        <ul>
+          <li>👎 Functions are “magical”: not extensible or debuggable</li>
+          <li>👍 Grows on you: gets better once you master the basics</li>
+          <li>👍 Enjoyable to write: concise & powerful, but hard to read</li>
+          <li>👍 Addicting: sometimes it unexpectedly does something cool</li>
+          <li>👍 It’s at its best when it has precisely the library you need</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="basicusage">Basic Usage</h2>
+        <p>The following video computes all of the words that are in both of Wolfram's built-in dictionaries for French and English:</p>
+        <iframe class="video" src="https://www.youtube.com/embed/Lp6PtFkIZII?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>The following photo demonstrates crawling the web two-hops deep. The first line shows how we can scrape a webpage for its links via <code>Import</code>. The next line shows how <code>NestList</code> repeatedly applies a function successively more times to an initial argument. The final lines construct two functions, <code>links</code> which gets the hyperlinks for an input link (<code>#</code> stands for the argument and <code>&</code> ends the function), and <code>mapLinks</code> which inputs a list and maps (<code>/@</code>) <code>links</code> over it and then flattens the resulting list of lists. Finally, we use <code>NestList</code> to apply <code>mapLinks</code> two-levels deep.</p>
+        <img src="https://user-images.githubusercontent.com/2288939/61389479-487bcd80-a8b9-11e9-8919-dbf939edd528.png">
+      </section>
+
+      <section>
+        <h2 id="documentation">Contextual Documentation</h2>
+        <p>Hovering over any Wolfram function brings up contextual documentation, which you can click on for further reading.</p>
+        <iframe class="video" src="https://www.youtube.com/embed/YfzNTnJse6Q?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section>
+        <h2 id="oauth">Embedded OAuth</h2>
+        <p>Evaluating certain expressions, such as <code>SocialMedia["Twitter"]</code>, automatically start OAuth flows to login to the third-party application from Wolfram to be able to pull data from that app. This makes it incredibly easy to use basic integrations. Unfortunately, they were limited in their actual usefulness, being able to only pull limited subsets of user data.</p>
+        <iframe class="video" src="https://www.youtube.com/embed/5fP98e5lOkU?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section>
+        <h2 id="rich">Rich content in expressions</h2>
+        <img src="https://user-images.githubusercontent.com/2288939/61390386-fcca2380-a8ba-11e9-86e5-4268146d9690.png">
+      </section>
+
+      <section>
+        <h2 id="http">Creating HTTP Endpoints</h2>
+        <p>The <code>CloudDeploy</code> function can turn certain Wolfram expressions into HTTP endpoints with live URLs. The following creates a static endpoint that returns a JSON object:</p>
+        <img src="https://user-images.githubusercontent.com/2288939/61393643-b2987080-a8c1-11e9-8079-9b724f79d1b3.png">
+        <p>The following creates an GIF from a table of images, and makes it available at a URL:</p>
+        <img src="https://user-images.githubusercontent.com/2288939/61393640-b2987080-a8c1-11e9-846f-45870cb31f2b.png">
+        <p>They have a file-system interface as well for organizing web page files. Below it is used with Wolfram's templating language to populate an HTML template with data from a Wolfram expression:</p>
+        <img src="https://user-images.githubusercontent.com/2288939/61393634-b0cead00-a8c1-11e9-9dbb-7302ebd99ce1.png">
+      </section>
+
+      <section>
+        <h2 id="pricing">Pricing</h2>
+        <img src="https://user-images.githubusercontent.com/2288939/61393069-79133580-a8c0-11e9-9256-b8e617c91db7.png">
+      </section>
+
+      <section>
+        <h2 id="comprehensive-docs">Comprehensive documentation</h2>
+        <img src="https://user-images.githubusercontent.com/2288939/61393221-d313fb00-a8c0-11e9-9701-cae2b7316141.png">
+      </section>
+
+      <section>
+        <h2 id="wishes">Wishes</h2>
+        <ul>
+          <li>Get a list of US presidents (could only get one at a time)</li>
+          <li>Use natural language input dynamically (get a picture of X animal)</li>
+          <li>Make an image animate at 30FPS</li>
+          <li>Catch an error</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="further-reading">Further Reading</h2>
+        <ul>
+          <li><a href="http://www.wolfram.com/language/fast-introduction-for-programmers/en/external-connections/">Fast Introduction for Programmers</a></li>
+          <li><a href="https://www.wolfram.com/programming-lab/explorations/">Programming Explorations</a></li>
+        </ul>      
+      </section>
+    </article>
+  </body>
+</html>

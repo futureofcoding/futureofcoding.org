@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Observable - The Whole Code Catalog</title>
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Noto+Serif+JP&display=swap" rel="stylesheet">
+	<link href="shared.css" rel="stylesheet" type="text/css" />
+	<link href="article.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<article>
+		<div id="title" style=" cursor: pointer;" onclick="window.location.href='./'">
+			<div id="the">The</div>
+			<br>
+      <div id="wholecode">Whole Code</div>
+      <br>
+      <div id="catalog">Catalog</div>
+    </div>
+      <section>
+        <h1 id="observablehq">Observable</h1>
+        <em>Reviewed June 25, 2019</em>
+        <p>Observable is a reactive, notebook-style, JavaScript<a href="https://observablehq.com/@observablehq/observables-not-javascript">-ish</a> programming environment for the web. It was founded in 2016 by JavaScript legends Mike Bostock (d3) and Jeremy Ashkenas (CoffeeScript, Backbone, Underscore). The tool is particularly useful for the interactive exploration of data. It is an alternative to other browser-based notebooks, such as Jupyter and Wolfram, and data exploration platforms, such as RStudio.</p>
+      </section>
+
+      <section>
+        <h2 id="productfeel">Product Feel</h2>
+        <ul>
+          <li>👍Modern, slick, magical, cutting-edge </li>
+          <li>👍Has “cool factor” that Medium used to have. I feel proud to write in it and to share it.</li>
+          <li>👎Rough around the edges, not broken-in yet.</li>
+        </ul>
+        </section>
+
+      <section>
+        <h2 id="basicusage">Basic Usage</h2>
+        <iframe class="video" src="https://www.youtube.com/embed/K3DKYXqo1so?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>The above video (6 min) produced <a href="https://beta.observablehq.com/d/f9644044dd7f3c6b">this doc</a> and demonstrates the following features:</p>
+        <ul>
+          <li>markdown</li>
+          <li>html</li>
+          <li>variables</li>
+          <li>reactivity</li>
+          <li>inputs</li>
+          <li><code>require()</code></li>
+          <li><code>yield()</code> to inspect intermediate results</li>
+          <li>data</li>
+          <li>object inspection</li>
+          <li>block of code</li>
+          <li>data visualization graph</li>
+          <li>animation</li>
+          <li>downloading CSV</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="reactivity">Reactivity</h2>
+        <p>It's eponymous feature is its reactivity: like a spreadsheet, cells in the document evaluate when dependencies update. </p>
+        <img src="https://cdn-images-1.medium.com/max/1200/1*fkkqWrbWXua8sMGlYqn-qA.gif"/>
+        <p>This contrasts the linear order of other code notebooks, such as Jupyter and Wolfram, which are non-reactive. Below I demonstrate how evaluation order can cause issues in Jupyter:</p>
+        <img src="https://user-images.githubusercontent.com/2288939/60139992-0cec5880-977e-11e9-8f9e-be88f0d24321.gif"/>
+
+        <p>This one feature is not to be underestimated. For one, it makes notebooks trivially reproducible -- no more worrying about evaluation order.</p>
+
+        <p>Paired with a slightly-modified JavaScript syntax, it also greatly reduces the complexity of asynchronous code by automatically <code>await</code>ing cells that return <code>Promise</code>s.</p>
+      </section>
+
+      <section>  
+        <h2 id="literateprogramming">Literate programming</h2>
+        <p>Markdown with JavaScript template literals is a very ergonomic way to combine text and data.</p>
+        <img src="https://user-images.githubusercontent.com/2288939/59631801-b8f6c980-9116-11e9-9be9-aba449c67056.png" alt="17KPxjy2j-L0zZUimrCrYCeN6CloWpcNhvaUR6YY" />
+      </section>
+
+      <section>
+        <h2 id="imports">Imports</h2>
+        <p>Easily require modules from npm and from other Observable notebooks.</p>
+        <img src="https://cdn-images-1.medium.com/max/1200/1*W_XKHy2oLRVEQlfICoo0hA.png">
+      </section>
+
+      <section>
+        <h2 id="portable">Portable</h2>
+        <ul>
+          <li>Share via link, 100% browser-based / client-side </li>
+          <li><a href="https://github.com/observablehq/runtime">Open runtime</a></li>
+          <li><a href="https://observablehq.com/@observablehq/downloading-and-embedding-notebooks">Embeddable</a></li>
+        </ul>
+        <img src="https://user-images.githubusercontent.com/2288939/60137389-bcbcc880-9774-11e9-9a50-d2426a58981f.png" />
+      </section>
+
+      <section>
+        <h2 id="wishes">Wishes</h2>
+        <ul>
+          <li>More cohesive documentation</li>
+          <li>Being able to search (ctrl-f) within a notebook for code and/or data</li>
+          <li>Undo (ctrl-z) support across all cells in a notebook</li>
+          <li>The ability to hide data </li>
+          <li>The ability to select multiple cells at once (to move or delete them)</li>
+          <li>More/better autocomplete suggestions, such as on <code>require()</code></li>
+          <li>More fluidly accomplish standard tasks (maybe through augmented standard library) to work with immutable values, dates, and data import and export</li>
+          <li>Better story around mutability and bidirectional reactivity</li>
+        </ul>
+        <p><strong>Past wishes that were granted:</strong></p>
+        <ul>
+          <li>Works well on half-width screen</li>
+          <li>Can move cells via dragging</li>
+          <li>It defaults to showing code (must explicitly hide) </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="pricing">Pricing</h2>
+        <p>They recently released a $9/month/user plan for teams.</p>
+      </section>
+
+      <section>
+        <h2 id="further reading">Further Reading</h2>
+        <ul>
+          <li><a href="https://medium.com/@mbostock/a-better-way-to-code-2b1d2876a3a0">A Better Way to Code</a> by Mike Bostock, ObservableHQ founder and creator of d3</li>
+        </ul>      
+      </section>
+    </article>
+  </body>
+</html>

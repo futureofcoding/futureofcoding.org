@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Lamdu - The Whole Code Catalog</title>
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Noto+Serif+JP&display=swap" rel="stylesheet">
+	<link href="shared.css" rel="stylesheet" type="text/css" />
+	<link href="article.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<article>
+		<div id="title" style=" cursor: pointer;" onclick="window.location.href='./'">
+			<div id="the">The</div>
+			<br>
+      <div id="wholecode">Whole Code</div>
+      <br>
+      <div id="catalog">Catalog</div>
+    </div>
+      <section>
+        <h1 id="lamdu">Lamdu</h1>
+        <em>Reviewed July 18, 2019</em>
+        <p>Lamdu is a Haskell-inspired projectional editor. It features live-evaluated subexpression annotations, localized type errors, and a focus on a fluid editing experience. It is an open-source project, actively developed since 2011.</p>
+      </section>
+
+      <section>
+        <h2 id="productfeel">Product Feel</h2>
+        <ul>
+          <li>👍 Comittment to showing all live intermediate values</li>
+          <li>👍 Fine-granularity ctrl-z is key to undo my constant mistakes</li>
+          <li>👍 One of the more usable structural editors</li>
+          <li>👎 Always getting into strange editing modes</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="basicusage">Basic Usage</h2>
+        <p>The following video creates a series of simple mathematical expressions in Lamdu.</p>
+        <iframe class="video" src="https://www.youtube.com/embed/3E2YRUyuEUA?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>It demonstrates:</p>
+        <ul>
+          <li>creating a definition</li>
+          <li>using the REPL</li>
+          <li>exploring the intermediate results via the subexpression annotations</li>
+          <li>filtering a list</li>
+          <li>converting a lazy list to an array to preview it</li>
+          <li>my struggle to get *2 to apply to an argument and not the result of the function</li>
+          <li>changing the display of a function to infix and OOP-style</li>
+          <li>filtering via a first class function</li>
+          <li>abstracting out an expression into a global variable</li>
+        </ul>
+        <br>
+        <p>The following video builds a simple HTTP server in Lamdu.</p>
+        <iframe class="video" src="https://www.youtube.com/embed/wYU_A2Y-E1g?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>It demonstrates:</p>
+        <ul>
+          <li>creating string values and their concatenation</li>
+          <li>my struggle getting the correct return type</li>
+          <li>exploring the definition of <code>httpOk200</code></li>
+          <li>browsing all the request data for past HTTP requests</li>
+          <li>automatic type conversion of a string into Text Bytes</li>
+        </ul>
+        <br>
+        <p>The following explores and modifies a large Lamdu project, a conference website server.</p>
+        <iframe class="video" src="https://www.youtube.com/embed/_ZXAw6ZaThY?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>It demonstrates:</p>
+        <ul>
+          <li>exploring from the top-level expression down many different definitions and sub-definitions</li>
+          <li>renaming an untitled <code>(empty)</code> expression</li>
+          <li>renaming a shadowed name (identified with numbered subscripts)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="live">Live data</h2>
+        <p>It's extremely rare to see live-evaluated subexpression annotations, particularly in non-visual languages. Some non-visual languages, put the results of whole lines off to the side, but Lamdu is one of the first to publish a working implementation of underlined evaluation of all intermediate subexpressions. This goals a long way towards making functional programming understandable for beginners. 
+        </p>
+        <img  style="max-width:500px" src="https://user-images.githubusercontent.com/2288939/62528697-2f6d9900-b835-11e9-9b58-688e9a55772a.png"></img>
+      </section>
+
+      <section>
+        <h2 id="keyboard">100% Keyboard</h2>
+        <p>Unlike many projectional editors, Lamdu is navigable without every touching the mouse. Everything (and I mean everything) can be done via keyboard.  It features a context-aware shortcut help menu to help you learn their hotkeys. However despite their attention-to-detail, I still found it quite difficult to use as you can see me fumbling in the above videos. Crafting a fluid projectional editor is still an unsolved problem but they have made significant strides.</p>
+        <img  style="max-width:300px" src="https://user-images.githubusercontent.com/2288939/62528952-98eda780-b835-11e9-9c89-e320975d5e7c.png"></img>
+      </section>
+
+      <section>
+        <h2 id="refactoring">Refactoring</h2>
+        <p>As demonstrated in the above videos, internally variables have ID’s, so changing their names is a superficial change. This means no merge conflicts on renaming, formatting, stylistic differences, or moving code. There are no files, folders or line numbers to worry about.</p>
+      </section>
+
+      <section>
+        <h2 id="named-params">Named Parameters</h2>
+        <p>Lamdu's function features named parameters, like keyword arguments in Python. They add clarity compared to their equivalents in Haskell, but also add clutter.</p>
+        <img style="max-width:400px" src="https://user-images.githubusercontent.com/2288939/61533374-007db780-aa2d-11e9-96de-4e081b47358a.png">
+      </section>
+
+
+      <section>
+        <h2 id="suggestions">Type suggestions</h2>
+        <p>Their type errors take advantage of information unavailable to traditional textual languages, such as the order in which you type an expression. This allows it to infers your intent. For example, if you type “Hello” first it guesses that the type error is with the <code>5</code>:</p>
+        <img style="max-width:250px" src="https://user-images.githubusercontent.com/2288939/61533375-007db780-aa2d-11e9-81d6-5ba182d34626.png">
+        <p>But if you added the <code>5</code> first, it would now see an error with your <code>"Hello"</code></p>
+        <img style="max-width:250px" src="https://user-images.githubusercontent.com/2288939/61533376-007db780-aa2d-11e9-8ce7-82b303f23876.png">
+      </section>
+
+      <section>
+        <h2 id="wishes">Wishes</h2>
+        <ul>
+          <li>Caching previous HTTP request runs to show live data when editing</li>
+          <li>Autocomplete suggestions to be WYSIWYG (instead of the star and green color to indicate where expressions and the cursor will go)</li>
+          <li></li>
+      </section>
+
+      <section>
+        <h2 id="further-reading">Further Reading</h2>
+        <ul>
+          <li><a href="https://www.lamdu.org/">Lamdu.org</a></li>
+          <li><a href="https://trello.com/b/wojIVshY/lamdu">Lamdu Roadmap</a></li>
+        </ul>      
+      </section>
+    </article>
+  </body>
+</html>

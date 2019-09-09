@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Zapier - The Whole Code Catalog</title>
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Noto+Serif+JP&display=swap" rel="stylesheet">
+	<link href="shared.css" rel="stylesheet" type="text/css" />
+	<link href="article.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<article>
+		<div id="title" style=" cursor: pointer;" onclick="window.location.href='./'">
+			<div id="the">The</div>
+			<br>
+      <div id="wholecode">Whole Code</div>
+      <br>
+      <div id="catalog">Catalog</div>
+    </div>
+      <section>
+        <h1 id="zapier">Zapier</h1>
+        <em>Reviewed July 25, 2019</em>
+        <p>Zapier is a workflow automation tool with 1500+ integrations to the most popular SaaS apps. It allows non-technical users, mostly individuals or small businesses, to automate workflows that would've otherwise been busywork. It was founded in 2011, raised $1.3M, achieved profitability and haven't raised funding since.</p>
+      </section>
+
+      <section>
+        <h2 id="productfeel">Product Feel</h2>
+        <ul>
+          <li>👍 An abundance of integrations</li>
+          <li>👍 Advanced built-ins like code and storage</li>
+          <li>👍 Quick feedback: live data, helpful input box, testing at each step</li>
+          <li>👎 Difficult to get a global view of complex logic</li>
+          <li>👎 Coding via mouse & dialog boxes</li>
+          <li>👎 Latency can feel a bit slow, unfluid</li>
+          <li>👎 Difficult to assimilate the ‘Zapier way of thinking’, know what’s possible: hacks & ad hoc workarounds for specific tasks</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="basicusage">Basic Usage</h2>
+        <iframe class="video" src="https://www.youtube.com/embed/C4ryI3tiIz8?t=13&controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>The above video from the Zapier tutorials creates a "zap" that is triggered from a Wufoo form, creates an event on a Google Calendar, and sends a message to Slack. It demonstrates:</p>
+        <ul>
+          <li>setting up a trigger from Wufoo</li>
+          <li>testing a 3rd party account connection</li>
+          <li>testing a trigger to provide sample data for future steps</li>
+          <li>adding an event to Google Calendar</li>
+          <li>use data from previous steps via the drop down menu</li>
+          <li>test creating an event in Google Calendar</li>
+          <li>adding a second step to a zap</li>
+          <li>test creating an event in Slack</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="built-ins">Solid built-ins</h2>
+        <p>Zapier makes many of the most common programming tasks easy with its built-in apps, a few of which will be highlighted below.</p>
+        <img style="max-width: 400px;" src="https://user-images.githubusercontent.com/2288939/61867023-96ef2480-aed6-11e9-87b4-a1cc9126cd93.png">
+      </section>
+
+      <section>
+        <h2>Formatter</h2>
+        <p>Rich in intuitive functionality, Zapier's Formatter could be an entire product on its own, meriting its own review.  It allows for a number of extremely common, but otherwise tedious, text manipulation tasks:</p>
+        <img style="max-width: 400px;" src="https://user-images.githubusercontent.com/2288939/61867024-99517e80-aed6-11e9-8d74-01cdaf5ea33b.png">
+        <p>The following video demonstrates truncating text, stripping HTML, and summing numbers via the formatter:</p>
+        <iframe class="video" src="https://www.youtube.com/embed/kARgjenb_00?start=43&controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+      <section>
+        <h2 id="conversions">Convenient Type Operations</h2>
+        <p>To make itself more usable by non-programmers, Zapier features a number of convenience operations. For example, you can easily manipulate dates with shorthands such as: <code>-45m</code>, <code>+7h</code>, <code>+10d -30s</code>, and <code>next friday at 7pm</code>. And booleans can be represented by any of the following: <code>yes</code>, <code>1</code>, <code>no</code>, <code>0</code>, <code>f</code>.</p>
+      </section>
+
+      <section>
+        <h2>Paths & Filters</h2>
+        <p>Paths and filters are Zapiers answer to conditional branching. Both of these features require a paid Zapier account. Paths allow users to branch execution based on a series of boolean tests. However, unlike traditional if-else branches, Zapier paths are non-exclusive, so control flow proceeds in every branch where a test succeeds. <a href="https://fast.wistia.com/embed/medias/1ncs55blv0?time=53">Here is a video</a> of setting up a Path in Zapier.</p>
+        <p>Filters are a simpler concept: they only allow a zap to proceed when a certain condition is met, as in the following photo:</p>
+        <img src="https://user-images.githubusercontent.com/2288939/61867046-a3737d00-aed6-11e9-8c55-7133b8a50a3f.png">
+      </section>
+
+      <section>
+        <h2>Email Parser</h2>
+        <p>The following video shows how to create a Parser Mailbox which allows you to forward email to a unique email address to be parsed and processed in a zap. It features a direct manipulation editor for specifying what data to parse. It's a useful meta-zap that you can use as a way to simulate zaps that Zapier doesn't: simply set your email account to auto-forward specific notifications emails from an unsupported SaaS app to an Zapier email parser mailbox.</p>
+        <iframe class="video" src="https://www.youtube.com/embed/vtBjUfX1VVE?t=151&controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section>
+        <h2>Code</h2>
+        <p>For extra control, Zapier features a built-in code app that allows users to run custom JavaScript (Node v8) and Python scripts inside zaps.  On the plus side, Zapier Code has quick and easy access to storage (provided by Zapier Store), but on the downside, there's no npm or pip to import libraries, and their "online IDE" is really just a textbox with only syntax highlighting. Free plans are allowed 1 second of evaluation and 128mb of RAM. Paid accounts get 10 seconds of evaluation and 256mb of RAM.</p>
+        <img src="https://user-images.githubusercontent.com/2288939/62870026-d314e880-bd10-11e9-8365-658b18cb7055.png">
+      </section>
+
+      <section>
+        <h2 id="search">Add a Search Step</h2>
+        <p>Zapier has a number of convenience features that facilitate complex logic. For example, some operations require searching for a resource before updating it, so Zapier has a specific button "Add a Search Step" to scaffold this interaction:</p>
+        <img src="https://user-images.githubusercontent.com/2288939/61867056-a79f9a80-aed6-11e9-8758-5a42ddce6ddd.png">
+        <p>Pressing "Add a Search Step" inserts a search step immediately before the action step so that the resultant data will appear in the available fields in that action step:</p>
+        <img src="https://user-images.githubusercontent.com/2288939/61874053-b8a4d780-aee7-11e9-8466-4e2c201f7aab.png">
+      </section>
+
+      <section>
+        <h2 id="integrations">Integrations</h2>
+        <p>The main selling point of Zapier is its plethora of integrations to popular services, such as GMail and Google Drive, Trello, Salesforce, etc. And for each service, Zapier features a number of triggers, actions, and searches. For example, Google Sheets can be triggered on a new or edited spreadsheet row, can create, update, or delete rows, and also can lookup rows in a sheet.</p>
+        <img src="https://user-images.githubusercontent.com/2288939/61867009-90f94380-aed6-11e9-9022-9e023a82db7c.png">
+      </section>
+
+      <section>
+        <h2 id="builder">Visual integration builder</h2>
+        <p>One of the reasons Zapier has so many integrations is because it makes it almost as easy for its integration partners to create them as it is for users to use them. Below are shown the three different tabs of creating a new action for an integration. First, the basic settings:</p>
+        <img src="https://user-images.githubusercontent.com/2288939/61867061-aa01f480-aed6-11e9-9773-b0b68a1c9982.png">
+        <p>Designing the setup page:</p>
+        <img src="https://user-images.githubusercontent.com/2288939/61867077-b2f2c600-aed6-11e9-8f12-c59c2dda86b5.png">
+        <p>Configuring the HTTP request to be made to the API:</p>
+        <img style="max-width: 600px;" src="https://user-images.githubusercontent.com/2288939/61867087-b5edb680-aed6-11e9-84b3-2cc02ee10179.png">
+        <p>Explaining the schema of the API's returned data to Zapier so it can populate the available fields in the dropdown to users:</p>
+        <img src="https://user-images.githubusercontent.com/2288939/61867095-b8501080-aed6-11e9-909a-f6cf7393e328.png">
+      </section>
+
+      <section>
+        <h2 id="pricing">Pricing</h2>
+        <p>Zapier's free account allows for 5 running zaps. Accounts can be purchased with a max number of running zaps of 20, 50, and 125 at a monthly rate of $1/zap (no matter how many zaps are used that month). Team accounts are $250/month and allow unlimited zaps.</p>
+      </section>
+
+      <section>
+        <h2 id="wishes">Wishes</h2>
+        <ul>
+          <li>A less <a href="https://zapier.com/help/debugging/">complex</a> debugging process</li>
+          <li>More complex control flow</li>
+          <li>Two-way sync <a href="https://www.piesync.com/blog/piesync-vs-zapier/">a la Pie Sync</a></li>
+        </ul>
+      </section>
+    </article>
+  </body>
+</html>

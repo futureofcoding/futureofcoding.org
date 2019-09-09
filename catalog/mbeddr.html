@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>mbeddr - The Whole Code Catalog</title>
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Noto+Serif+JP&display=swap" rel="stylesheet">
+	<link href="shared.css" rel="stylesheet" type="text/css" />
+	<link href="article.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<article>
+		<div id="title" style=" cursor: pointer;" onclick="window.location.href='./'">
+			<div id="the">The</div>
+			<br>
+      <div id="wholecode">Whole Code</div>
+      <br>
+      <div id="catalog">Catalog</div>
+    </div>
+      <section>
+        <h1 id="mbeddr">mbeddr</h1>
+        <em>Reviewed July 25, 2019</em>
+        <p>mbeddr is a projectional editor and IDE for embedded programming in C. Its best known for its focus on text-editing feel. It also features mixed direct manipulation interfaces, state machines, units, requirements, varients, and more. It is built with and can be extended via JetBrains MPS. It is one of the oldest and most-developed projectional editors, documented in <a href="http://www.voelter.de/publications">a number of academic papers</a> on its many innovative design choices.</p>
+      </section>
+
+      <section>
+        <h2 id="productfeel">Product Feel</h2>
+        <img src="https://user-images.githubusercontent.com/2288939/61534474-fdd09180-aa2f-11e9-9acc-01b0fdda9f1a.png">
+        <ul>
+          <li>👍 Editing is mostly fluid, with a ~3 hour learning curve</li>
+          <li>👍 Interesting, innovative features..</li>
+          <li>👎 It doesn’t feel cohesive. Interesting experiments tacked on.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="basic">Basic Usage</h2>
+        <iframe class="video" src="https://www.youtube.com/embed/IdH6asoRbpI?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>The above video shows editing a few mathematical expressions in mbeddr. It demonstrates:</p>
+        <ul>
+          <li>creating a new variable name via referencing it</li>
+          <li>fluidly changing expressions like it's text-editing</li>
+          <li>wrapping an expression in parenthesis (after failing to get it to group properly without them) for use in a ternary expression</li>
+          <li>context-aware copy-and-paste, which gives appropriate out-of-scope errors</li>
+          <li>renaming taking effect everywhere</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="freeformish">Freeform-ish editing</h2>
+        <p>The mbeddr text-like editing experience is so good that you forget you're editing an AST. In other words, there are a lot of tree manipulations happening under the hood as you edit the code as text. The following video is narrated by one of the creators of mbeddr, and shows him adding and removing keyword arguments in arbitrary orders (not outside-in only like traditional projectional editors). This allows even the simple pleasure of typing mathematical expressions linearly, a rarity for projectional editors, such as automatically rebalancing its AST to maintain the expected order of operations of math expressions. In order to allow you to parenthesize an expression naturally, it has an "unbalanced parenthesis" node in its AST, which allows you to place a left-parenthesis first and then later navigate over to place the right-parenthesis, just like you would in text!
+        </p>
+        <iframe class="video" src="https://www.youtube.com/embed/QxXHtp90Fcs?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section>
+        <h2 id="mixed">Mixed notational interfaces</h2>
+        <p>
+          mbeddr includes a number of rich-text and visual components and notations, such as math equations, tables, and flowcharts. They allow for both mouse-based direct manipulation and keyboard navigation. They even allow users to build their own notational interfaces to extend the tool.
+        </p>
+        <img src="https://user-images.githubusercontent.com/2288939/61534487-04f79f80-aa30-11e9-8d79-6de9f4acbd36.png">
+        <img src="https://user-images.githubusercontent.com/2288939/61534495-0a54ea00-aa30-11e9-9602-9f99795c7cd6.png">
+      </section>
+
+      <section>
+        <h2 id="decision">Decision tables</h2>
+        <p>In the following video I create a visual decision table by typing <code>decta</code> and navigate it by keyboard to fill it in. I then use the context menu to create a vertically-aligned fraction, which I copy and paste into the decision table. I even put a decision table inside the decision table.
+        </p>
+        <iframe class="video" src="https://www.youtube.com/embed/UOUBDfsQHLQ?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>I wasn't able to get it to work, but apparently (as in <a href="https://www.youtube.com/watch?v=Pe34U9QuhXA">this video</a> and the following photo) decision tables can automatically verified as long as the equations are linear.</p>
+        <img src="https://user-images.githubusercontent.com/2288939/61534498-0de87100-aa30-11e9-8cbf-cca83ae0501c.png">
+      </section>
+
+      <section>
+        <h2 id="state-machines">State machines</h2>
+        <p>State machines are fully supported in mbeddr with both a textual and graphical representation. Clicking a node in the graphical state machine highlights the relevant code. State machines are also automatically verifiable with a built-in model checker, highlighting unhandled or impossible states or transitions.
+        </p>
+        <iframe class="video" src="https://www.youtube.com/embed/aJ8d7ISFat4?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section>
+        <h2 id="units">Units</h2>
+        <p>mbeddr supports unit type annotations, which are a lightway way to prevent a whole class of logical bugs. In the following video, I manipulate the units of various number types, demonstrating that compound units such as <code>mph</code> can be built out of expressions of their component types dividing a <code>m</code> by an <code>h</code>. I also show how we can explicitly convert from <code>kph</code> to <code>mph</code>.</p>
+        <iframe class="video" src="https://www.youtube.com/embed/iW26_So7lTM?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section>
+        <h2 id="requirements">Requirements</h2>
+        <p>Keep track of product requirements directly within the mbeddr IDE, linked directly to relevant expressions in the code. It allows for searching for implementation expressions in the code by requirements, and showing/hiding requirements throughout the code. The requirements themselves can embed arbitrary mbedder expressions, which can be referenced in the code, allowing a product manager to express logic in a decision table, for example, that could then be embedded right into the code.</p>
+        <iframe class="video" src="https://www.youtube.com/embed/scvLpux7dMM?t=114&controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+      
+      <section>
+        <h2 id="variants">Variants</h2>
+        <p>Variants are useful for pre-processing programs to be compiled in a variety of ways. They are like macros or feature flags. mbeddr supports them with a specialized, colorized UI, and static checking to prevent  incompatible flag combinations.
+        </p>
+        <img style="max-width: 400px" src="https://user-images.githubusercontent.com/2288939/61534502-10e36180-aa30-11e9-9dd7-235cab021261.png">
+      </section>
+
+      <section>
+        <h2 id="further-reading">Further Reading</h2>
+        <ul>
+          <li><a href="http://mbeddr.com/">mbeddr Website</a></li>
+          <li><a href="http://www.voelter.de/publications">Academic Papers about mbeddr</a></li>
+          <li><a href="http://www.voelter.de/data/pub/projectionalEditing-sle2014.pdf">Study on Projectional Editing in mbeddr</a></li>
+          <li><a href="http://mbeddr.com/screencasts.html">mbeddr Screencasts</a></li>
+        </ul>      
+      </section>
+    </article>
+  </body>
+</html>

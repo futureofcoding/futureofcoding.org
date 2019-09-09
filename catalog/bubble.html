@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Bubble - The Whole Code Catalog</title>
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Noto+Serif+JP&display=swap" rel="stylesheet">
+	<link href="shared.css" rel="stylesheet" type="text/css" />
+	<link href="article.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<article>
+		<div id="title" style=" cursor: pointer;" onclick="window.location.href='./'">
+			<div id="the">The</div>
+			<br>
+      <div id="wholecode">Whole Code</div>
+      <br>
+      <div id="catalog">Catalog</div>
+    </div>
+      <section>
+        <h1 id="bubble">Bubble</h1>
+        <em>Reviewed July 17, 2019</em>
+        <p>Bubble is a visual, no-code web app builder. The company's vision is to become the default for app creation. It features a WYSIWYG UI editor, the ability to create workflows in response to events, an integrated database, ~700 of 3rd-party plugins and a <a href="https://forum.bubble.is/">very active user forum</a>. It was founded in 2012 and bootstrapped to $115,000 MRR over seven years. Much of their early revenue came from one very large customer, but as of 2017 they had ~100k users (286,999 as of July 2019), ~10% paying.  In early 2019, Bubble raised its first round of $6.25M.</p>
+
+      </section>
+
+      <section>
+        <h2 id="productfeel">Product Feel</h2>
+        <img src="https://user-images.githubusercontent.com/2288939/61382520-3b58e180-a8ad-11e9-8298-093b28632593.gif"><img>
+        <ul>
+          <li>👍 WYSIWYG editor is standard, slightly clunky</li>
+          <li>👍 Adding dynamic data is shockingly easy</li>
+          <li>👍 It&rsquo;s straightforward to create basic data tables</li>
+          <li>👎 Building anything slightly complicated feels like stringing together a series of hacks. (They even call them &ldquo;hacks&rdquo; in their <a href="https://blog.bubble.is/the-keyboard-shortcuts-hack-2217c29872da">blog posts</a>.) There is usually a way to approximate your desired effect, but you have to learn it by via asking in the Bubble Forum.</li>
+            👍 Yet, most of what users want seem possible
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="basicusage">Basic Usage</h2>
+        <iframe class="video" src="https://www.youtube.com/embed/23gort9b2PA?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>The above video creates a simple web app that display a random GIF of a dog. It demonstrates:</p>
+        <ul>
+          <li>adding an image to the page</li>
+          <li>using the WYSIWYG editor</li>
+          <li>inserting dynamic data into a field</li>
+          <li>using an API call to GIPHY</li>
+          <li>type error detection in field shown via red text</li>
+          <li>autocomplete for selecting a random item from a list</li>
+          <li>autocomplete for selecting the URL property from an item</li>
+          <li>previewing a webpage</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="dyanmic-editor">Dynamic Editor</h2>
+        <p>One of Bubble's best features is its editor for adding what they call "dynamic data" into your web app. There is an "Insert Dynamic Data" button anywhere you could put a static value. Clicking on it results in a list of options to choose from. Once you select an option, it allows you to select "More" next to the resulting piece of data to see the possible operations you can perform on it, such as numerical calculations, string operations, or obtaining properties of an object. As a structured editor, there are no syntax errors possible, but it allows for arbitrarily-complex expressions. In the following video I construct a (nonsensical) expression by fluidly clicking on suggested autocompletions:</p>
+        <iframe class="video" src="https://www.youtube.com/embed/0Fz75KEf7n4?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section>  
+        <h2 id="workflows">Workflows</h2>
+        <p>The Workflow tab is where Bubble creators organize the event-driven logic of their app. Events are organized by their triggers, a "when ..." statement. In the following video, I explore (but don't modify) a few of the workflows for a todo list application. Notice how many clicks it takes to read through these flows, as contrasted with typical textual code.</p>
+        <iframe class="video" src="https://www.youtube.com/embed/-NdzAVVWHjU?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section>
+        <h2 id="inspector">Inspector</h2>
+        <p>Bubble comes with its own custom inspector built-in, which allows its creators to debug and inspect their applications in the Bubble terms in which they created it, not by inspecting the compiled HTML. In the following video I inspect the intermediate values that produce a dynamic GIF:</p>
+        <iframe class="video" src="https://www.youtube.com/embed/xM50FLmN6AQ?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section>
+        <h2 id="plugins">Plugins</h2>
+        <p>The Bubble Plugin marketplace has 686 plugins, some free and some paid.</p>
+        <img src="https://user-images.githubusercontent.com/2288939/61382718-95f23d80-a8ad-11e9-8a4b-70529387f616.gif">
+      </section>
+
+      <section>
+        <h2 id="agencies">Integrates with agencies</h2>
+        <p>They have a special interface for agencies to build out an app initially with an eventual transfer to a customer.</p>
+      </section>
+
+      <section>
+        <h2 id="pricing">Pricing</h2>
+        <ul>
+          <li>Hobby - Free</li>
+          <li>Personal - $14/month</li>
+          <li>Professional - $62/month</li>
+          <li>Team - $165 / month</li>
+          <li>Production - $445 / month</li>
+          <li>Additional capacity is $20 / unit / month</li>
+        </ul>
+        <img src="https://user-images.githubusercontent.com/2288939/61382088-5ecf5c80-a8ac-11e9-8b41-fce13096413b.png"></img>
+      </section>
+
+      <section>
+        <h2 id="wishes">Wishes</h2>
+        <ul>
+          <li>Auto-refresh preview page instead of "You will not be able to use the app until you refresh."</li>
+          <li>Detect a keydown event and check which key was pressed</li>
+          <li>Detect doubleclick events</li>
+          <li>Save a list of objects to local memory</li>
+          <li>Save to localstorage</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="further-reading">Further Reading</h2>
+        <ul>
+          <li><a href="https://forum.bubble.is/">Forum</a></li>
+          <li><a href="https://bubble.is/documentation">Learning Center</a></li>
+          <li><a href="https://www.indiehackers.com/interview/creating-a-100-000-mo-business-that-helps-people-learn-to-code-c5e87bdbf9">Indie Hackers: Creating a $100,000/mo Business That Helps People Learn to Code</a></li>
+        </ul>      
+      </section>
+    </article>
+  </body>
+</html>

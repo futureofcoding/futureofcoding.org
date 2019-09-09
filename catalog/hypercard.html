@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>HyperCard - The Whole Code Catalog</title>
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Noto+Serif+JP&display=swap" rel="stylesheet">
+	<link href="shared.css" rel="stylesheet" type="text/css" />
+	<link href="article.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<article>
+		<div id="title" style=" cursor: pointer;" onclick="window.location.href='./'">
+			<div id="the">The</div>
+			<br>
+      <div id="wholecode">Whole Code</div>
+      <br>
+      <div id="catalog">Catalog</div>
+    </div>
+      <section>
+        <h1 id="hypercard">HyperCard</h1>
+        <em>Reviewed Sept 6, 2019</em>
+        <p>HyperCard is a direct manipulation, WYSIWYG graphical programming environment. It's scripting language, HyperTalk, is object-oriented, event-driven, and has English-like syntax. Inspired by SmallTalk, HyperCard is a medium that blurs the line between creating and using  computer programs. Created by Bill Atkinson (after an LSD trip) and distributed free with every Mac until 1998, HyperCard kindled a love for programming in a generation. The first successful hypermedia system, it directly inspired HTTP, JavaScript, and wikis.</p>
+      </section>
+
+      <section>
+        <h2 id="productfeel">Product Feel</h2>
+        <ul>
+          <li>👍 Direct-manipulation WYSIWYG editor feels like PowerPoint</li>
+          <li>👍 Event-based, OOP, script editor feels like MIT Scratch</li>
+          <li>👎 Hard to learn (couldn't find good docs)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="basicusage">Basic Usage</h2>
+        <iframe class="loom" src="https://www.loom.com/embed/6c57bdb7e4d0488eb2f9f8949b028ef8" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <p>The above video (8 min) creates a simple todo list application in ViperCard, a modern re-implementation of HyperCard for the web. It demonstrates:</p>
+        <ul>
+          <li>creating a read-only text field</li>
+          <li>moving elements around with the direct manipulation WYSIWYG editor</li>
+          <li>creating an editable text input</li>
+          <li>creating a button</li>
+          <li>appending the value of one text field to another</li>
+          <li>event handling, string concatenation, if-statements, key-press detection in HyperTalk</li>
+        </ul>
+        <p><em>Note: <a href="https://www.vipercard.net">vipercard.net</a> is down at the time of  writing. I was able to get it mostly working by following <a href="https://github.com/moltenform/vipercard/blob/f7851632a0019d5b2b2d93e86221cc07f850dbeb/vipercard/vipercard/building.md">the build instructions</a> on <a href="https://github.com/moltenform/vipercard/tree/be5de19d3bcef76d110a8b8f1644397fceb7a313">this version</a> of the codebase. This is still the quickest way to get up and running with something like HyperCard that I found.</em></p>
+      </section>
+
+      <section>
+        <h2 id="levels">User Levels</h2>
+        <p>HyperCard users can move fluidly between browsing, typing, painting, authoring, and scripting a program. Hypercard saves all changes automatically, so lower-power levels are useful for when you don't want to mess up a friend's stack.</p>
+        <img src="https://user-images.githubusercontent.com/2288939/64436470-67fdce00-d092-11e9-971d-26f4a693d445.png">
+      </section>
+
+      <section>
+        <h2 id="syntax">English-like syntax</h2>
+        <p>Trying to bring programming to "the rest of us", HyperTalk is renowned for its English-like syntax. A common example of HyperTalk's readability is line: <code>put the first word of the third line of field "hello" into field "goodbye"</code>. The numbers <code>1</code> and <code>2</code> can also be referenced with <code>one</code> and <code>two</code> or <code>first</code> and <code>second</code>.</p>
+      </section>
+
+      <section>
+        <h2 id="further-reading">Further Reading</h2>
+        <ul>
+          <li><a href="https://en.wikipedia.org/wiki/HyperCard">HyperCard on Wikipedia</a></li>
+          <li><a href="https://www.theregister.co.uk/2018/03/27/mac_fans_eyes_mist_over_someones_recreating_hypercard/">Mac fans' eyes mist over: Someone's re-created HyperCard (ViperCard)</a></li>
+          <li><a href="http://www.loper-os.org/?p=568">Why Hypercard Had to Die</a></li>
+          <li><a href="http://www.bbc.com/future/story/20190722-the-apple-software-that-inspired-the-internet">The Forgotten Software That Inspired Our Modern World</a></li>
+          <li><a href="http://www.memoryhole.net/~kyle/newwebsite/Curriculum_Vitae_files/hypertalk.pdf">HyperTalk: The Language for the Rest of Us</a>
+        </ul>      
+      </section>
+    </article>
+  </body>
+</html>  

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Spreadsheets - The Whole Code Catalog</title>
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Noto+Serif+JP&display=swap" rel="stylesheet">
+	<link href="shared.css" rel="stylesheet" type="text/css" />
+	<link href="article.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<article>
+		<div id="title" style=" cursor: pointer;" onclick="window.location.href='./'">
+			<div id="the">The</div>
+			<br>
+      <div id="wholecode">Whole Code</div>
+      <br>
+      <div id="catalog">Catalog</div>
+    </div>
+      <section>
+        <h1 id="spreadsheets">Spreadsheets</h1>
+        <em>Reviewed Aug 12, 2019</em>
+        <p>Spreadsheets are the most widely used "programming" system in the world. While early spreadsheet pioneers, such as VisiCalc and Lotus 1-2-3, no longer exist, many of their early innovations still do in Microsoft Excel, Google Sheets, and Airtable. We review many of the powerful programming-like features of spreadsheets, and point out a few interesting spreadsheet-inspired experiments.</p>
+      </section>
+
+      <section>
+        <h2 id="productfeel">Product Feel</h2>
+        <ul>
+          <li>👍 Fluid, intuitive, easy to learn</li>
+          <li>👍 Grid layout is a simple data structure</li>
+          <li>👍 Live data updates: no control flow, no running</li>
+          <li>👍👎 Shows data and hides formulas</li>
+          <li>👎 Limited abstraction and re-usability</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="referencing">Referencing</h2>
+        <p>Spreadsheets offer a variety of ways to reference cells from afar, such as by column and row, via labels, and via lookups. Cell references even work between sheets, and are always kept in sync and reactive to changes. In the following video, I demonstrate a variety of less-well-known referencing techniques, including labels and array formulas. At the end of the video, I show how errors are localized to cells (allowing non-erroneous cells to still work) and propagate to any cells that reference erroneous cells downstream.</p>
+        <iframe class="video" src="https://www.youtube.com/embed/jVGZ_LNYOh0?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section>
+        <h2 id="live">Live data intermediates</h2>
+        <p>Where traditional coding tools show the formulas and hide the data, spreadsheets show the data and hide the formulas. This makes it much easier for people to follow the flow of a program. The following photo demonstrates a string-vectorizing algorithm (<a href="http://glench.github.io/fuzzyset.js/ui/">borrowed from here</a>) where each step of the algorithm is visualized with real data. (For clarity, the formulas for each step are pasted above it.) Note the use of a SQL-like query expression at the bottom-left.</p>
+        <img src="https://user-images.githubusercontent.com/2288939/62871800-0c9b2300-bd14-11e9-831d-255f0bdf7935.png">
+      </section>
+
+      <section>
+        <h2 id="trace">Trace Precedents</h2>
+        <p>Many spreadsheets, including Microsoft Excel shown below, have a "trace precedents" feature that visualizes how a given cell is related to other cells.</p>
+        <img src="https://user-images.githubusercontent.com/2288939/62871798-0c028c80-bd14-11e9-81a3-3fda4dddd635.png">
+      </section>
+        
+      <section>
+        <h2 id="forms3">Forms/3</h2>
+        <p>Forms/3 is a visual programming environment built to explore the boundaries of the spreadsheet paradigm.</p>
+
+        <h3>Interactive Graphics</h3>
+        <p>In Forms/3, graphics can be made interactive  to mouse events and their values can be referenced and via other cells, such as in the temperature converter application below:</p>
+        <img src="https://user-images.githubusercontent.com/2288939/62871796-0c028c80-bd14-11e9-8855-365556b74223.png">
+
+        <h3>Testing built-in</h3>
+        <p>There is a specific interface in Forms/3 for "unit tests" that turn red when failing. It also tracks the percentage of test coverage for spreadsheet cells; below it shows 37% coverage.</p>
+        <img src="https://user-images.githubusercontent.com/2288939/62871795-0b69f600-bd14-11e9-9220-dce3072562c2.jpeg">
+
+        <h3>Recursion</h3>
+        <p>Forms/3 offers scaffolding for creating recursive programs. When it detects a loop in a formula, it infers your intent to create a recursive structure. For example, below the Fibonacci sequence is constructed in this way:</p>
+        <img src="https://user-images.githubusercontent.com/2288939/62871793-0b69f600-bd14-11e9-8fb2-7ecd17620b91.png">
+
+      </section>
+
+      <section>
+        <h2 id="lotus">Lotus Improv</h2>
+        <p>A blast from the past, Lotus Improv was Lotus's attempt to reimagine the spreadsheet to be much more structured and powerful. Despite failing in the marketplace, it had many features that are still not found in any modern spreadsheet.</p>
+        <iframe class="video" src="https://www.youtube.com/embed/dsYsZmhnXR4?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section>
+        <h2 id="apparatus">Apparatus</h2>
+        <p>Apparatus is a spreadsheet-like graphics programming environment for creating interactive diagrams. Shapes can be added and edited directly via a WYSIWYG editor, and their properties can be computed as reactive formulas, a la a spreadsheet. It is an example demonstration of how spreadsheet-style reactivity can be applied in a visual domain. One of its killer features it its intuitive recursion: simply drag the current element from the left elements palette inside itself.</p>
+        <iframe class="vimeo" src="https://player.vimeo.com/video/140304675" width="420" height="263" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+      </section>
+
+      <section>
+        <h2 id="flowsheets">Flowsheets</h2>
+        <p>Flowsheets is a compelling exploration of extending the spreadsheet interface to handle scripting tasks. It allows for importing Python libraries, shows both code and data, references data via labels instead of locations, has better abstractions for dealing with collections of data, and renders HTML.</p>
+        <iframe class="video" src="https://www.youtube.com/embed/y1Ca5czOY7Q?start=31&controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section>
+        <h2 id="pane">Pane</h2>
+        <p>Pane is a live functional programming environment that is optimized to show data and all intermediate values. It plays on the common node-and-wire environment, but switches the paradigm around with the nodes as data and the wires as functions. Like in spreadsheets, it is reactive, priorities showing concrete data, and makes higher-level abstractions intuitive through mouse-based operations.</p>
+        <iframe class="video" src="https://www.youtube.com/embed/fIEcXAHy6bU?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section>
+        <h2 id="further-reading">Further Reading</h2>
+        <ul>
+          <li><a href="https://pdfs.semanticscholar.org/e2b5/2b331a87762ae7f3e0cfeff8a7669281891b.pdf">Spreadsheet Programming Survey</a></li>
+          <li><a href="https://www.cambridge.org/core/journals/journal-of-functional-programming/article/forms3-a-firstorder-visual-language-to-explore-the-boundaries-of-the-spreadsheet-paradigm/66F1ACF22742EA28DD52608A5122E70F">Forms/3</a></li>
+          <li><a href="https://tinyletter.com/Flowsheets/letters/flowsheets-v2-and-welcome-to-tinyletter">Flowsheets</a></li>
+          <li><a href="http://aprt.us/">Apparatus</a></li>
+          <li><a href="https://www.felienne.com/archives/tag/spreadsheets">Felienne on Spreadsheets</a></li>
+        </ul>      
+      </section>
+    </article>
+  </body>
+</html>

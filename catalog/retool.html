@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Retool - The Whole Code Catalog</title>
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Noto+Serif+JP&display=swap" rel="stylesheet">
+	<link href="shared.css" rel="stylesheet" type="text/css" />
+	<link href="article.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<article>
+		<div id="title" style=" cursor: pointer;" onclick="window.location.href='./'">
+			<div id="the">The</div>
+			<br>
+      <div id="wholecode">Whole Code</div>
+      <br>
+      <div id="catalog">Catalog</div>
+    </div>
+      <section>
+        <h1 id="retool">Retool</h1>
+        <em>Reviewed July 24, 2019</em>
+        <p>Retool is a platform for programmers to rapidly create internal tools via reusable user-interface components paired with custom queries. It is used to build interfaces for the customer support team, mechanical turk workers (such as tagging data for ML), and augmenting Google Sheets data. It's WYSIWYG drag-and-drop UI editor is simple yet powerful when paired with the ability to tie inputs and events to queries and API requests.</p>
+      </section>
+
+      <section>
+        <h2 id="productfeel">Product Feel</h2>
+        <ul>
+          <li>👍 Thin UI layer on top of datastores</li>
+          <li>👍 Access to underlying JavaScript & data everywhere</li>
+          <li>👎 Lots of clicking and forms instead of keyboard</li>
+          <li>👎 Design feels ad hoc - random where you find various features</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="basicusage">Basic Usage</h2>
+        <iframe class="loom" src="https://www.loom.com/embed/912cdb0d3ca245ef8fdfb61561338666" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <p>The above video creates an interface to search for customers, activate and deactivate their accounts, and view their orders. It demonstrates:</p>
+        <ul>
+          <li>deleting a UI element</li>
+          <li>dragging elements onto the page</li>
+          <li>tying a UI table element to a query</li>
+          <li>tying the text of a input box to a query</li>
+          <li>adding and customizing a button</li>
+          <li>tying a button click event to a query</li>
+          <li>referencing the currently selected row in a table in a query</li>
+          <li>using JavScript expressions inside properties</li>
+          <li>triggering another query after one finishes</li>
+          <li>building a multipurpose button via ternary expressions in its text,color, and query attributes</li>
+          <li>creating a table based on the currently selected row in another table</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="js">JavaScript everywhere</h2>
+        <p>Embedding a JavaScript expression into any property is as simple as typing <code>{{}}</code>. By default the Moment and Lodash libraries are  built-in and accessible within any JS expression, and you can add other libraries or JS functions in the Settings page:</p>
+        <img style="max-width: 400px" src="https://user-images.githubusercontent.com/2288939/61804488-44f5c280-ae34-11e9-82be-45739b55d6ea.png">
+      </section>
+
+      <section>
+        <h2 id="property">Property Browser</h2>
+        <p>Explore the values of all variables in scope via the property browser on the left-side of the screen. In the following video, I create a temporary piece of state that increases each time a button is clicked. I then put the value of this state in the text of the button itself, followed by other variables I find by exploring the property browser. Updates to the UI are made automatically, a la React.</p>
+        <iframe class="loom" src="https://www.loom.com/embed/a45ae64d0bf640649bc32366c42b9b9f" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </section>
+
+      <section>
+        <h2 id="integrations">Integrations</h2>
+        <p>They have built-in integrations to query a number of common data sources:</p>
+        <img src="https://user-images.githubusercontent.com/2288939/61804498-4921e000-ae34-11e9-82a2-863d10c00b3e.png">
+        <p>An integration is set up via a simple form:</p>
+        <img src="https://user-images.githubusercontent.com/2288939/61804507-4c1cd080-ae34-11e9-88a3-310c3b2c6013.png">
+      </section>
+
+      <section>
+        <h2 id="releases">Releases</h2>
+        <p>While the product doesn't automatically save versions, it does allow for snapshots and "rollbacks" to previous versions. I was disappointed that they didn't allow forking of past versions.</p>
+        <img style="max-width: 400px;" src="https://user-images.githubusercontent.com/2288939/61804515-4e7f2a80-ae34-11e9-844e-bd1c136deece.png">
+      </section>
+
+      <section>
+        <h2 id="pricing">Pricing</h2>
+        <img src="https://user-images.githubusercontent.com/2288939/61804522-5212b180-ae34-11e9-8027-84af158252aa.png">
+      </section>
+
+      <section>
+        <h2 id="wishes">Wishes</h2>
+        <ul> 
+          <li>Cancel running queries</li>
+          <li>Less confusing layout (four-pane layout was confusing)</li>
+          <li>Delete keypress doesn’t work to delete components</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="further-reading">Further Reading</h2>
+        <ul>
+          <li><a href="https://tryretool.com/blog/">Retool Blog</a></li>
+          <li><a href="https://docs.tryretool.com/docs">Retool Docs</a></li>
+          <li><a href="https://docs.tryretool.com/reference">Retool Reference</a></li>
+          <li><a href="https://news.ycombinator.com/item?id=17725966">Show HN: Retool</a></li>
+          <li><a href="https://news.ycombinator.com/item?id=17729872">HN Comment</a> about how 70% of customers are on-prem</li>
+          <li><a href="https://www.producthunt.com/posts/retool-2">Retool on Product Hunt</a></li>
+        </ul>      
+      </section>
+    </article>
+  </body>
+</html>

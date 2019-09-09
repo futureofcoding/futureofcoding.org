@@ -1,0 +1,36 @@
+article {
+  padding: 1rem 0rem; 
+}
+
+/* Title  */
+
+#title {
+  font-size: 50px;
+  margin: auto;
+  margin-left: -45px;
+}
+
+#the {
+  margin-left: 65px;
+}
+
+#wholecode {
+  margin-left: 45px;
+}
+
+#catalog {
+  margin-left: 170px;
+} 
+
+#reviewsAndTags {
+  margin: -1.5em -.5em;
+  max-width: 1200px;
+}
+
+#acknowledgements {
+  color: grey;
+  font-size: 0.8em;
+}
+
+
+

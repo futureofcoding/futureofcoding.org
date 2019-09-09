@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Parabola - The Whole Code Catalog</title>
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Noto+Serif+JP&display=swap" rel="stylesheet">
+	<link href="shared.css" rel="stylesheet" type="text/css" />
+	<link href="article.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<article>
+		<div id="title" style=" cursor: pointer;" onclick="window.location.href='./'">
+			<div id="the">The</div>
+			<br>
+      <div id="wholecode">Whole Code</div>
+      <br>
+      <div id="catalog">Catalog</div>
+    </div>
+      <section>
+        <h1 id="parabola">Parabola</h1>
+        <em>Reviewed July 24, 2019</em>
+        <p>Parabola is a node-and-wire programming environment for non-technical users. It enables businesses to perform ETL-type operations to and from their SaaS apps (Salesforce, Clearbit, Stripe, MailChimp, etc). It allows for joining across SaaS data sources and then re-exporting back to those apps. It’s like Excel, but for millions of rows, and with some Zaper-like cloud powers. It was founded in 2015 and raised $2.2M in May 2018.</p>
+      </section>
+
+      <section>
+        <h2 id="productfeel">Product Feel</h2>
+        <ul>
+          <li>👍 Slick-looking interface</li>
+          <li>👍 Some surprisingly smart transformations</li> 
+          <li>👍 A few good API integrations</li>
+          <li>👎 Unreadable: hides the data and shows generic nodes</li>
+          <li>👎 Not fluid: lots of clunky dialogue boxes</li>
+          <li>👎 Inelegant: series of hacks that are impossible to figure out without help. (But with help, it’s surprisingly powerful.)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="basicusage">Basic Usage</h2>
+        <iframe class="video" src="https://www.youtube.com/embed/aZBWtyUgShU?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>The above video creates a Parabola program that pulls in and cleans data from Google analytics. It demonstrates :</p>
+        <ul>
+          <li>adding nodes and wires</li>
+          <li>authenticating to Google analytics</li>
+          <li>drop-downs for property values</li>
+          <li>their custom, readable syntax for dates</li>
+          <li>intermediate results preview</li>
+          <li>filtering rows</li>
+          <li>find and replace in text</li>
+          <li>merging duplicate rows</li>
+          <li>splitting a column into two</li>
+          <li>computing a new column as a mathematical expression of other columns</li>
+          <li>deleting columns</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="table">Table model</h2>
+        <p>Like in SQL, in Parabola, everything is a table. The uniformity is both clean and also rigid. For example, you have to convert JSON blobs to tables as well. As the documentation below warns, it creates columns even for nested attributes. For example, <code>{name: {"first": "John", "last": "Smith"}}</code> would create two columns: <code>name.first</code> and <code>name.second</code>.</p>
+        <img src="https://user-images.githubusercontent.com/2288939/61800140-bcbfef00-ae2c-11e9-9710-549cb1759b2c.png">
+      </section>
+
+      <section>
+        <h2 id="flipper">Smart Table Flipper</h2>
+        <p>I was really impressed by the existence of this block; it's the type of non-obvious but super useful functionality that is only earned through customer feedback. I've written the code to do exactly this by hand many times. It's main use-case is with object stores, like Firebase. It turns a large object to an array of rows. However, I never would’ve found this block unless the very helpful customer success guy mentioned it.</p>
+        <img src="https://user-images.githubusercontent.com/2288939/61800141-bd588580-ae2c-11e9-8617-25cca60f468e.png">
+      </section>
+
+      <section>
+        <h2 id="date">Smart Date Formatter</h2>
+        <p>I was pleasantly surprised when their date formatter was able to correctly guess the date format in my data without me specifying an example format. Wouldn't that be amazing to have in all date libraries?</p>
+        <img src="https://user-images.githubusercontent.com/2288939/61800142-bd588580-ae2c-11e9-8ac4-f5c524b58dc3.png">
+      </section>
+
+      <section>
+        <h2 id="hides">Hides Data</h2>
+        <p>Like most node-and-wire tools, Parabola visualizes the control flow but hides the data. You have to click on each node individually to see the current state at that point. This also means you can't see the data of multiple nodes at the same time.</p>
+        <img src="https://user-images.githubusercontent.com/2288939/61800145-bdf11c00-ae2c-11e9-9d1b-c339f466e40d.png">
+        <p>I prefer an older version of the product which visualizes the data:</p>
+        <img src="https://user-images.githubusercontent.com/2288939/61800144-bd588580-ae2c-11e9-8e0a-0e867abe0d2f.png">
+      </section>
+
+      <section>
+        <h2 id="pricing">Pricing</h2>
+        <img src="https://user-images.githubusercontent.com/2288939/61800146-bdf11c00-ae2c-11e9-846e-4aca0efb31ad.png">
+      </section>
+
+      <section>
+        <h2 id="wishes">Wishes</h2>
+        <ul>
+          <li>Delete, cancel, or modify running API import - this was very annoying</li>
+          <li>Filter based on a nested data structure</li>
+          <li>Cache large data sets so they don’t have to reload on page reload</li>
+          <li>Be faster on nested JSON data</li>
+          <li>Chart my data on a graph</li>
+          <li>Copy and paste data in (need to upload a file)</li>
+          <li>Upload .json file (needed to convert to CSV)</li>
+          <li>Change the label of nodes for clarification</li>
+          <li>Double click to zoom</li>
+          <li>Select data text for copy and paste (you couldn’t select)</li>
+          <li>Not have to wait for nodes to load before connecting them to other nodes</li>
+        </ul>
+      </section>
+    </article>
+  </body>
+</html>

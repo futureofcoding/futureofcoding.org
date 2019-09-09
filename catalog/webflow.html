@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Webflow - The Whole Code Catalog</title>
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Noto+Serif+JP&display=swap" rel="stylesheet">
+	<link href="shared.css" rel="stylesheet" type="text/css" />
+	<link href="article.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<article>
+		<div id="title" style=" cursor: pointer;" onclick="window.location.href='./'">
+			<div id="the">The</div>
+			<br>
+      <div id="wholecode">Whole Code</div>
+      <br>
+      <div id="catalog">Catalog</div>
+    </div>
+      <section>
+        <h1 id="webflow">Webflow</h1>
+        <em>Reviewed July 24, 2019</em>
+        <p>Webflow is a no-code website creator, featuring 100% visual design tools, animated interactions, a fully customizable CMS, hosting and deployment, and ecommerce functionality. It's used by freelancers and agencies, in-house marketing teams, business owners, and for prototyping. What stands it apart from other website creators (Wordpress, Squarespace, etc) is that it's CSS is fully customizable via a direct manipulation editor, akin to Photoshop. It was started in 2012 and raised an unusually large Series A of $72M in August 2019.</p>
+      </section>
+
+      <section>
+        <h2 id="productfeel">Product Feel</h2>
+        <ul>
+          <li>👍 Web-native concepts: "learn to speak developer"</li>
+          <li>👍 Fast, lively (single page app with fast rendering)</li>
+          <li>👍 Pro-tool a la Final Cut or Photoshop</li>
+          <li>👎 A bit bloated (more Photoshop than Sketch)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="basicusage">Basic Usage</h2>
+        <iframe class="loom" src="https://www.loom.com/embed/07c5e1954c15438bbd65c46ef021135a" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <p>In the above video, I create and narrate the beginnings of a basic webpage, including a navbar and call to action text and button. It demonstrates:</p>
+        <ul>
+          <li>adding elements (image, navbar, section, container, columns) to the page via dragging</li>
+          <li>editing margin on all sides by holding down shift</li>
+          <li>selecting elements via the page and by the tree hierarchy on the right-panel</li>
+          <li>editing color, font and size attributes</li>
+          <li>centering via trial-and-error</li>
+          <li>viewing the page on different device sizes</li>
+          <li>messing with the large variety of background color options</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="cms">CMS Collections</h2>
+        <p>Webflow's CMS (content management system) is just about as customizable as its WYSIWYG visual editor. It features a simple UI to create a schema for collections, be them products, blog posts, or a totally custom entity, and add string, text, boolean, color, etc attributes. The magic happens when you add CMS content to the page, where you can continue to leverage the fully customizability of the WYSIWYG editor. The following video demonstrates creating a new collection, adding dummy content, adding a custom boolean and color attributes, and displaying the content in the editor, where we edit it into a number of custom visual configurations, such as paginated and filtered.</p>
+        <iframe class="loom" src="https://www.loom.com/embed/a8e64fd7ae3242298be7d038c2a5f85f" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </section>
+
+      <section>
+        <h2 id="ecommerce">Ecommerce</h2>
+        <p>The Webflow Ecommerce functionality builds on top of the CMS editor to allow products, shopping carts, and purchases. In the following video, I create a t-shirt product with size and color varivariantsents, and then customize its product page. All facets of Webflow Ecommerce are visually customizable, including the look-and-feel of the products page, shopping cart, the checkout page, and the confirmation emails sent to customers.</p>
+        <iframe class="loom" src="https://www.loom.com/embed/d620bcd62d9d4035886b26607465e77a" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <p>Setting up a Webflow store is significantly more involved than just a regular website, but they have a handy setup guide that walks you through the steps:</p>
+        <img src="https://user-images.githubusercontent.com/2288939/62859240-799ec080-bcf4-11e9-8cce-c42eac409b7c.png">
+      </section>
+
+      <section>
+        <h2 id="interactions">Interactions</h2>
+        <p>While the Webflow's editor allows for the full range of CSS animations, it also features a series of pre-built Powerpoint-like animations, such as "spin-in" and "wiggle". Custom animations are built by interpolating attributes established at keyframes. In the following video, I demonstrate some built-in animations as well as building a custom bounce and shrink animation. Animations can be triggered on mouse or scroll events, such as clicks or mouse movements.</p>
+        <iframe class="loom" src="https://www.loom.com/embed/42f21eef4a9647d8aa4616849fcd83f4" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </section>
+
+      <section>
+        <h2 id="backups">Backups</h2>
+        <p>Webflow is constantly autosaving user work, and creates a snapshot every 20th autosave. But you can also manually create and label a snapshot. You can then preview and restore previous versions from the backups page. If you want to just regain a single element from a previous version, you can copy and paste single elements from previous versions into the current version. Below is a video from the Webflow tutorials that shows how it works:</p>
+        <iframe class="video" src="https://www.youtube.com/embed/vRSyTmE55M8?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section>
+        <h2 id="pricing">Pricing</h2>
+        <p>The pricing has three tiers for basic websites ($12, $16, and $36 per month) and three tiers for Ecommerce ($29, $74, $212 per month). Agency pricing is $35 per login.</p>
+      </section>
+
+      <section>
+        <h2 id="wishes">Wishes</h2>
+        <ul>
+          <li>User authentication/accounts</li>
+          <li>More direct manipulation, such as resizing directly</li>
+          <li>Graying out pro-features on free accounts (instead of simply removing them)</li>
+          <li>Less clicking and submenus</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="further-reading">Further Reading</h2>
+        <ul>
+          <li><a href="https://futureofcoding.org/episodes/035">Future of Coding Episode 35 - Democratizing Web Design: Vlad Magdalin</a></li>
+          <li><a href="https://university.webflow.com/">Great videos</a> with a dry humor teach the basics of HTML in terms designers are familiar with.</li>
+          <li><a href="https://www.forbes.com/sites/alexkonrad/2019/08/07/webflow-went-from-near-bankruptcy-to-72-million-series-a/#1e442dfb10af">No-Code Website Builder Webflow Went From Near Bankruptcy To A $72 Million Series A Funding Round</a></li>
+        </ul>      
+      </section>
+    </article>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Codeflow - The Whole Code Catalog</title>
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Noto+Serif+JP&display=swap" rel="stylesheet">
+	<link href="shared.css" rel="stylesheet" type="text/css" />
+	<link href="article.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<article>
+		<div id="title" style=" cursor: pointer;" onclick="window.location.href='./'">
+			<div id="the">The</div>
+			<br>
+      <div id="wholecode">Whole Code</div>
+      <br>
+      <div id="catalog">Catalog</div>
+    </div>
+      <section>
+        <h1 id="codeflow">Codeflow</h1>
+        <em>Reviewed July 18, 2019</em>
+        <p>Codeflow is an open-source, node-and-wire IDE built on top of NodeJS. The product was inspired by one of the founder's experiences with "business process workflow" software. He saw companies like <a href="https://www.tibco.com/">Tibco</a>, a visual backend editor a la Zapier but for enterprise, make millions of dollars just for the license, let alone $100k per server. Founded in 2013, Codeflow bootstraps by using the tool in their consulting work.</p>
+      </section>
+
+      <section>
+        <h2 id="productfeel">Product Feel</h2>
+        <img src="https://user-images.githubusercontent.com/2288939/61445356-8aeeea00-a94d-11e9-9f98-cb055bbc6401.gif" style="max-width: 500px;">
+        <ul>
+          <li>👍Slick Electron app: solid logo, colors, little details</li>
+          <li>👍Close to production-ready: few glitches and many libraries</li>
+          <li>👎Feels similar to text-based NodeJS</li>
+          <li>👎Java-inspired (“isInterface”, “annotationSchema”, “inherits”)</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="basicusage">Basic Usage</h2>
+        <iframe class="video" src="https://www.youtube.com/embed/tuGHSP4csgo?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>The above video demonstrates:</p>
+        <ul>
+          <li>creating an HTTP server</li>
+          <li>creating two route patterns via conditionals</li>
+          <li>accessing query params via the structured editor</li>
+          <li>text concatenation via the structured editor</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="asynchronous">Asynchronous flow</h2>
+        <p>Nodes-and-wires are for asynchronous or side-effectful computations, but with a synchronous-like arrow-based interface, avoiding “callback hell.” The inside of nodes are for pure, functional, and synchronous expressions. Most node-and-wire languages suffer from information overload, but this model hides much inside nodes, keeping the node-and-wire interface as a high-level overview of the asynchronous and side-effectful code.</p>
+        <p>You can join asynchronous computations like so:</p>
+        <img src="https://user-images.githubusercontent.com/2288939/61446701-e15d2800-a94f-11e9-9d17-5044bdcb8066.gif">
+        <p>And handle asynchronous errors like so:</p>
+        <img src="https://user-images.githubusercontent.com/2288939/61446700-e0c49180-a94f-11e9-9395-de374a0aae02.gif">
+      </section>
+
+      <section>
+        <h2 id="structured-editor">Fluid Structured Editor</h2>
+        <p>The structured editor has a unique tree menu for searching for functions:</p>
+        <img src="https://user-images.githubusercontent.com/2288939/61446699-e0c49180-a94f-11e9-803e-62a98abd4ee6.png">
+        <p>Once you select a function, it pulls up its documentation with examples inline:</p>
+        <img src="https://user-images.githubusercontent.com/2288939/61446698-e0c49180-a94f-11e9-81a0-2ac5643854dc.png">
+        <p>The structured editor is limited to prefix notation a la LISP. Even arithmetic operations are prefix in Codeflow, but these are compiled to infix JavaScript under the hood for performance. Because everything is prefix, "surround with function" covers all possible ways to extend an expression:</p>
+        <iframe class="video" src="https://www.youtube.com/embed/_ZzJ8pDE4po?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>You can drag & drop and delete expressions:</p>
+        <iframe class="video" src="https://www.youtube.com/embed/xdC66uYGLT8?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>The following video demonstrates adding parameters, accessor properties, and detecting and a type error:</p>
+        <iframe class="video" src="https://www.youtube.com/embed/WsMXdb6L6oE?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section>
+        <h2 id="debugger">Debugger</h2>
+        <p>It’s a bit clunky, but it definitely beats console.log’s everywhere.</p>
+        <img src="https://user-images.githubusercontent.com/2288939/61446696-e0c49180-a94f-11e9-8017-de120e42d83d.gif">
+        <p>However step-debugging isn't as necessary because it saves every HTTP request and intermediate value since the start of the server in debug mode.</p>
+        <img src="https://user-images.githubusercontent.com/2288939/61446694-e02bfb00-a94f-11e9-900c-2a57442905aa.png">
+      </section>
+
+      <section>
+        <h2 id="api">API Creator</h2>
+        <p>It automatically generates Swagger documentation.</p>
+        <img src="https://user-images.githubusercontent.com/2288939/61446693-e02bfb00-a94f-11e9-8cb5-d65548c20efd.png">
+      </section>
+
+      <section>
+        <h2 id="schema">Schema Creator</h2>
+        <p>The tool features a special structured editor for constructing schemas for objects.</p>
+        <img src="https://user-images.githubusercontent.com/2288939/61446692-e02bfb00-a94f-11e9-8865-c361af8572a3.gif">
+      </section>
+
+      <section>
+        <h2 id="pricing">Pricing</h2>
+        <p>Codeflow is free and open-source.</p>
+      </section>
+
+      <section>
+        <h2 id="wishes">Wishes</h2>
+        <ul>
+          <li>Import npm libraries without building a Codeflow wrapper</li>
+          <li>Automatic hosting and deployment</li>
+          <li>Edit via web browser</li>
+          <li>Not have to worry about files and just live in their node-and-wire world</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="further-reading">Further Reading</h2>
+        <ul>
+          <li><a href="http://codeflow.co/docs/">Codeflow Documentation</a></li>
+          <li><a href="http://codeflow.co/download">Download Codeflow</a></li>
+        </ul>      
+      </section>
+    </article>
+  </body>
+</html>

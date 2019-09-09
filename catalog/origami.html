@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Origami - The Whole Code Catalog</title>
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Noto+Serif+JP&display=swap" rel="stylesheet">
+	<link href="shared.css" rel="stylesheet" type="text/css" />
+	<link href="article.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<article>
+		<div id="title" style=" cursor: pointer;" onclick="window.location.href='./'">
+			<div id="the">The</div>
+			<br>
+      <div id="wholecode">Whole Code</div>
+      <br>
+      <div id="catalog">Catalog</div>
+    </div>
+      <section>
+        <h1 id="origami">Origami Studio</h1>
+        <em>Reviewed July 24, 2019</em>
+        <p>Origami Studio is a free Mac app for design prototyping created by Facebook. It's main purpose is for designers to prototype small, interactive, and animative app-interactions that will eventually be handed off to developers to be rebuilt into code. It was originally embedded within Apple's Quartz Composer, but was broken out as its own standalone tool. Built by and for designers, Origami is both aesthetically pleasing and functionally intuitive.
+        </p>
+      </section>
+      <section>
+
+        <h2 id="productfeel">Product Feel</h2>
+        <ul>
+          <li>👍 Feels very powerful, like a programming language</li>
+          <li>👍 Beautiful interface, gorgeous design</li>
+          <li>👍 Very intuitive to write in</li>
+          <li>👍 Familiar for designers (layers and groups) & imports from Sketch</li>
+          <li>👎 Gets cluttered quickly, and then difficult to read</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="basicusage">Basic Usage</h2>
+        <iframe class="video" src="https://www.youtube.com/embed/lf8ZcgbnM9g?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>The above video creates a mobile app prototype of a circle that follows the user's finger. It demonstrates:</p>
+        <ul>
+          <li>adding a circle layer</li>
+          <li>adding the mouse "patch" (or node)</li>
+          <li>attaching the "point unpack" patch to an output port via searching</li>
+          <li>attaching the x and y outputs to the x and y of the circle layer</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="search">Add patches</h2>
+        <p>Click on background and hit shift-enter to start searching:</p>
+        <iframe class="video" src="https://www.youtube.com/embed/QizyjhmZoPM?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section>
+        <h2 id="live">Live intermediate values</h2>
+        <p>As you interact with the live prototype, you can watch <b>all intermediate values updating live</b>. This is how all programming should be.</p>
+        <iframe class="video" src="https://www.youtube.com/embed/LrpVtkaM_UU?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section>
+        <h2 id="hot">Hot-Reloaded Preview</h2>
+        <p>You can make a large number of changes to your prototype's logic without triggering a total refresh. It's so convenient to be able to examine changes instantly without having to re-build temporary state by hand each time.</p>
+        <iframe class="video" src="https://www.youtube.com/embed/ODC5FR2tlWw?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section>
+        <h2 id="loop">Implicit looping</h2>
+        <p>Loops, one of the most confusing concepts for non-programmers, is made totally intuitive in Origami. You merely attach the index output port of a loop patch into any property of a layer to duplicate the layer. Instead of looping as a control-flow mechanism ("repeat these lines of code"), it allows for looping over objects. Another way to think of it: functional programming's <code>map</code> made intuitive. In the following video we create a number of circles and spread them out visually by attaching the index port (multiplied by some factor) to the x and y properties of the circle layer.</p>
+        <iframe class="video" src="https://www.youtube.com/embed/k4nNKWWyMF8?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section>
+        <h2 id="components">Components</h2>
+        <p>Abstraction is accomplished through components, which are a group of layers that behave like a single layer. Components can accept inputs, which allow users of the component to modify those properties without worrying about the details. Editing a component takes place on a seperate screen where the inputs are source patches. In the following video we modify the default iOS button switch component to take an extra height argument and hook it up properly. We then attach the time patch to the height argument to show how seamlessly arguments can be used.</p>
+        <iframe class="video" src="https://www.youtube.com/embed/FPDwRocbCQM?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section>
+        <h2 id="math">Math expression node</h2>
+        <p>One of the common complaints of node-and-wire frameworks is that it can take dozens of nodes for a simple mathematical expression. Clearly a more compact notation is preferred. Origami neatly solves this issue with a "Math Expression" node, which can evaluate any JavaScript math expression. It automatically detects variable names and converts them into inputs. In the following video we create such a node and demonstrate its workings by editing the node input values manually.</p>
+        <iframe class="video" src="https://www.youtube.com/embed/CygnipCO2-c?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section>
+        <h2 id="library">Small, but expressive library</h2>
+        <p>The library wasn't large, but it felt like they’ve <b>thought of everything</b>. Whenever I needed something, they almost always had a block for it. This is partly because some of their blocks are quite general and powerful, and partly due to excellent attention-to-detail. There’s no Stackoverflow for Origami Studio, and I didn’t mind at all. (Read that last sentence over again and realize that it doesn't apply to any other programming language. Only spreadsheets.)</p>
+        <img style="max-width:500px;" src="https://user-images.githubusercontent.com/2288939/61799104-c3e5fd80-ae2a-11e9-8ec9-dbb5e5d63ea3.png">
+      </section>
+
+      <section>
+        <h2 id="wishes">Wishes</h2>
+        <ul>
+          <li>Direct manipulation of shapes (moving them, changing their size)</li>
+          <li>Clicking on a shapes revealing the layer</li>
+          <li>Better support for using and creating variables (broadcasting).</li>
+          <li>Array manipulation</li>
+          <li>Custom JS patches</li>
+          <li>More complicated centralized state, that can be affected from multiple inputs</li>
+          <li>Scrub backwards and forwards through time</li>
+          <li>See how values change on a timeline (not just the current value), like here:
+          <img style="max-width:300px;" src="https://user-images.githubusercontent.com/2288939/61799115-c7798480-ae2a-11e9-9b2b-7daef36df07d.png"></li>
+          <li>Stack overflow-type forum (instead of Facebook group)</li>
+          <li>Export to code</li>
+          <li>Use it via web browser </li>
+        </ul>
+      </section>
+    </article>
+  </body>
+</html>

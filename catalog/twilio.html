@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Twilio Studio - The Whole Code Catalog</title>
+	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Noto+Serif+JP&display=swap" rel="stylesheet">
+	<link href="shared.css" rel="stylesheet" type="text/css" />
+	<link href="article.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<article>
+		<div id="title" style=" cursor: pointer;" onclick="window.location.href='./'">
+			<div id="the">The</div>
+			<br>
+      <div id="wholecode">Whole Code</div>
+      <br>
+      <div id="catalog">Catalog</div>
+    </div>
+      <section>
+        <h1 id="twillio">Twilio Studio</h1>
+        <em>Reviewed July 24, 2019</em>
+        <p>Twilio Studio is a node-and-wire workflow builder for phone and text related applications, such as IVR (Interactive Voice Response), chatbots, SMS surveys, and lead distribution via call routing.</p>
+      </section>
+
+      <section>
+        <h2 id="productfeel">Product Feel</h2>
+          <img src="https://user-images.githubusercontent.com/2288939/61813100-4085d580-ae45-11e9-952b-6db830eb4a5d.png">
+          <li>👍 Intuitive, slick</li>
+          <li>👎 Simplistic, not fully programmatic</li>
+          <li>👎 Slow (loading pages and deploying services)</li>
+          <li>👎 Glitchy: starts and stops working randomly</li>
+      </section>
+
+      <section>
+        <h2 id="basicusage">Basic Usage</h2>
+        <iframe class="video" src="https://www.youtube.com/embed/TSaI1q-QiN0?controls=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>The above video (19 min; it's just debugging after min 12) creates a "guess the number" text-message game. It demonstrates:</p>
+        <ul>
+          <li>adding and removing nodes from the screen</li>
+          <li>sending text messages in response to text messages</li>
+          <li>creating and referencing a JS function</li>
+          <li>requiring a library from npm</li>
+          <li>using liquid templating syntax in a node's value with solid autocomplete</li>
+          <li>creating a looping pattern</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="intuitive">Intuitive interface</h2>
+        <p>The interface is aesthetically pleasing, and has good attention-to-detail. For example, the colors are hints at functionality:  green for calls, red for triggers, orange for messages, grey for failures. Node-and-wire frameworks best visualize control flow (as opposed to data transformations) which is ideal for a series of texts or phone responses. Splits are easy to understand and follow, and loops are as simple as dragging a wire up the graph to a previous node. It's interesting to note that they've entirely abstracted over the asynchronous nature of the phone service, presenting what seems like a simple step-by-step flow.</p>
+      </section>
+
+      <section>
+        <h2 id="liquid">Liquid Templating</h2>
+        <p>Liquid Templating was a pleasant surprise, as it was familiar to me. It's simple and powerful. I was quite impressed by the power and convenience of their autocomplete menu for variable names.</p>
+      </section>
+
+      <section>
+        <h2 id="functions">JavaScript Functions</h2>
+        <p>As seen in the above video, full JS functions can be created from within the online JS and easily referenced in the node-and-wire editor. They even allow you to import from npm!</p>
+      </section>
+
+      <section>
+        <h2 id="debugging">Logs & Debugger</h2>
+        <p>When an error is hit anywhere during execution, a debugger bug lights up orange. One very helpful resource was the log page, where the input and output values of every single node that was reached in every execution are stored. The formatting of the data wasn't ideal, but it was all there! No log statements necessary (for the node-and-wire editor; the JS editor still requires them occasionally).</p>
+      </section>
+
+      <section>
+        <h2 id="pricing">Revision History</h2>
+        <p>Every single change, including superficial ones, are stored as separate revisions.</p>
+        <img src="https://user-images.githubusercontent.com/2288939/61813107-424f9900-ae45-11e9-8875-533347ac8b36.png">
+      </section>
+
+      <section>
+        <h2 id="wishes">Wishes</h2>
+        <ul>
+          <li>Pass values functionally instead of all values as global, not passed in. This duplicates code.</li>
+          <li>Work well in half-screen</li>
+          <li>Autocomplete on liquid template functions</li>
+          <li>Test executions from the web browser (without sending texts from a phone)</li>
+          <li>See live values in widgets from past executions without having to go to the separate log page</li>
+        </ul>
+      </section>
+    </article>
+  </body>
+</html>
