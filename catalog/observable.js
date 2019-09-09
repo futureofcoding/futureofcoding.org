@@ -10,7 +10,7 @@ _.sortBy([
   { 'title': 'Observable', tags: ['notebook', 'reactive', 'front-end', 'data science'], slug: 'observable'},
   { 'title': 'Bubble', tags: ['front-end', 'back-end', 'nocode', 'WYSIWYG', 'direct manipulation', 'database', 'structured editor', 'spreadsheet', 'integrations'], slug: 'bubble'},
   { 'title': 'Coda', tags: ['notebook', 'database', 'nocode', 'direct manipulation', 'WYSIWYG', 'spreadsheet', 'integrations'], slug: 'coda'},
-  { 'title': 'Webflow', tags: ['WYSIWYG', 'front-end', 'direct manipulation'], slug: 'webflow'},
+  { 'title': 'Webflow', tags: ['WYSIWYG', 'front-end', 'direct manipulation', 'nocode'], slug: 'webflow'},
   { 'title': 'mbeddr', tags: ['structured editor'], slug: 'mbeddr'},
   { 'title': 'Retool', tags: ['WYSIWYG', 'reactive', 'integrations'], slug: 'retool'},
   { 'title': 'Lamdu', tags: ['structured editor', 'functional programming'], slug: 'lamdu'},
