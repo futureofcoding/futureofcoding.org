@@ -8,7 +8,6 @@ _.sortBy([
   { 'title': 'Eve', tags: ['notebook', 'reactive'], slug: 'eve'},
   { 'title': 'Glitch', tags: ['back-end'], slug: 'glitch'},
   { 'title': 'Observable', tags: ['notebook', 'reactive', 'front-end', 'data science'], slug: 'observable'},
-  { 'title': 'Dark', tags: ['back-end', 'structured editor', 'functional programming', 'database'], slug: 'dark'},
   { 'title': 'Bubble', tags: ['front-end', 'back-end', 'nocode', 'WYSIWYG', 'direct manipulation', 'database', 'structured editor', 'spreadsheet', 'integrations'], slug: 'bubble'},
   { 'title': 'Coda', tags: ['notebook', 'database', 'nocode', 'direct manipulation', 'WYSIWYG', 'spreadsheet', 'integrations'], slug: 'coda'},
   { 'title': 'Webflow', tags: ['WYSIWYG', 'front-end', 'direct manipulation'], slug: 'webflow'},
