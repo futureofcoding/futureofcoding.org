@@ -4,9 +4,9 @@ title: About
 
 <h1>About</h1>
 
-Future of Coding is a [community](/slack), [podcast](/episodes), and [research project](/log) organized by Steve Krouse. 
+Future of Coding is a [community](/community), [podcast](/#episodes), and [research project](/log) organized by Steve Krouse. 
 
-The community lives on Slack: you can [join here](/slack) and [learn more here](slack-readme). The podcast alternates between interviews with programming language experts and reflections on my own research journey. My research is focused on building an open-source programming language. 
+The community lives on Slack: you can [learn more and join here](/community). The podcast alternates between interviews with programming language experts and reflections on my own research journey. My research is focused on building an open-source programming language. 
 
 This work is funded by [repl.it](https://repl.it) and my generous patrons. If you find this work valuable, [please consider supporting](https://patreon.com/stevekrouse).
 
