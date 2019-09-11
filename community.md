@@ -4,11 +4,15 @@ title: Future of Coding Community
 
 <h1>Future of Coding Community</h1>
 
-The Future of Coding Slack is loosely connected to the Future of Coding podcast. People hear about it there and sometimes discuss episodes -- but it's only one of many common touch points for the community, including Bret Victor, Douglas Engelbart, Alan Kay, Fred Brooks, HCI, HARC, Eve... For a fuller list of relevant people, topics, and links, check out [Chris Novello's _Computer Utopias_ curriculum](http://chrisnovello.com/teaching/risd/computer-utopias/) (particularly Week 3 & 4) and [The New Media Reader](https://mitpress.mit.edu/books/new-media-reader).
+Are you looking for the _real_ computer revolution? Join the club!
+
+While we all share the same basic assumption that programming can be improved, that’s about all we agree on. There’s the Bret Victor Fan club, the Jonathan Edwards school of thought, the Haskellers, the Smalltakers, and the compile-to-JavaScripters. Some of us are ride-or-die for direct manipulation, while others believe we’ll be stuck with text forever, and yet others try to placate both sides with projectional editors. Some believe in message-passing, others in the actor model, and others yet in various flavors of functional programming. And don’t even get me started on the divide between the interpreters vs the compilers, static vs dynamic typing. The debates are fierce and heated and wonderful.
+
+The Future of Coding Community is loosely connected to the Future of Coding podcast. People hear about it there and sometimes discuss episodes -- but it's only one of many common touch points for the community, including Bret Victor, Douglas Engelbart, Alan Kay, Fred Brooks, HCI, HARC, Eve... For a fuller list of relevant people, topics, and links, check out [Chris Novello's _Computer Utopias_ curriculum](http://chrisnovello.com/teaching/risd/computer-utopias/) (particularly Week 3 & 4) and [The New Media Reader](https://mitpress.mit.edu/books/new-media-reader).
 
 ## Getting Started
 
-On desktop, you can [join the Slack here](http://futureofcoding.org/slack-link). The link doesn't work on mobile for some reason.
+On desktop, you can [join the Slack community here](http://futureofcoding.org/slack-link). The link doesn't work on mobile for some reason.
 
 Upon joining the Slack, you get this automated message:
 
