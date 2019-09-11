@@ -31,7 +31,7 @@ Future of Coding is a [community](/community), [podcast](#episodes), and [resear
 
 <br>
 
-🆕 [The Whole Code Cataslog](/catalog) (Sept, 2019) reviews 24 interesting programming-ish interfaces and experiments. Check it out for inspiration and ideas-to-steal.
+🆕 [The Whole Code Catalog](/catalog) (Sept, 2019) reviews 24 interesting programming-ish interfaces and experiments. Check it out for inspiration and ideas-to-steal.
 
 <br>
 
