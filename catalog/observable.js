@@ -15,7 +15,7 @@ _.sortBy([
   { 'title': 'Retool', tags: ['WYSIWYG', 'reactive', 'integrations'], slug: 'retool'},
   { 'title': 'Lamdu', tags: ['structured editor', 'functional programming'], slug: 'lamdu'},
   { 'title': 'Hazel', tags: ['structured editor', 'functional programming'], slug: 'hazel'},
-  { 'title': 'Zeit Now', tags: ['back-end', 'integrations'], slug: 'zeit'},
+  { 'title': 'ZEIT Now', tags: ['front-end', 'integrations'], slug: 'zeit'},
   { 'title': 'Smalltalk', tags: ['notebook', 'data science', 'direct manipulation', 'WYSIWYG'], slug: 'smalltalk'},
   { 'title': 'Twilio Studio', tags: ['node-and-wire', 'integrations'], slug: 'twilio'},
   { 'title': 'Luna', tags: ['structured editor', 'functional programming', 'node-and-wire'], slug: 'luna'},
