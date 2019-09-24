@@ -47,6 +47,8 @@ If you're new to "reimagining computing", a good starting place is [Week 3 &amp;
 
 # Episodes
 
+<span class="date">2019 Sep 24 -</span> [#43 - Unveiling Dark: Ellen Chisa & Paul Biggar](./episodes/043)
+
 <span class="date">2019 Aug 15 -</span> [#42 - Blurring the Line Between User and Programmer: Lane Shackleton](./episodes/042)
 
 <span class="date">2019 Jul 26 -</span> [#41 - The Aesthetics of Programming Tools: Jack Rusher](./episodes/041)
