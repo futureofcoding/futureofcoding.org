@@ -8,7 +8,7 @@ Are you looking for the _real_ computer revolution? Join the club!
 
 While we all share the same basic assumption that programming can be improved, that’s about all we agree on. There’s the Bret Victor Fan club, the Jonathan Edwards school of thought, the Haskellers, the Smalltakers, and the compile-to-JavaScripters. Some of us are ride-or-die for direct manipulation, while others believe we’ll be stuck with text forever, and yet others try to placate both sides with projectional editors. Some believe in message-passing, others in the actor model, and others yet in various flavors of functional programming. And don’t even get me started on the divide between the interpreters vs the compilers, static vs dynamic typing. The debates are fierce and heated and wonderful.
 
-The Future of Coding Community is loosely connected to the Future of Coding podcast. People hear about it there and sometimes discuss episodes — but it's only one of many common touch points for the community, including Bret Victor, Douglas Engelbart, Alan Kay, Fred Brooks, HCI, HARC, Eve... For a fuller list of relevant people, topics, and links, check out [Chris Novello's _Computer Utopias_ curriculum](http://chrisnovello.com/teaching/risd/computer-utopias/) (particularly Week 3 & 4) and [The New Media Reader](https://mitpress.mit.edu/books/new-media-reader).
+The Future of Coding Community is loosely connected to the Future of Coding [podcast](https://futureofcoding.org/#episodes). People hear about it there and sometimes discuss episodes — but it's only one of many common touch points for the community, including Bret Victor, Douglas Engelbart, Alan Kay, Fred Brooks, HCI, HARC, Eve... For a fuller list of relevant people, topics, and links, check out [Chris Novello's _Computer Utopias_ curriculum](http://chrisnovello.com/teaching/risd/computer-utopias/) (particularly Week 3 & 4) and [The New Media Reader](https://mitpress.mit.edu/books/new-media-reader).
 
 ## Getting Started
 
@@ -32,9 +32,7 @@ So if you are reading this message, congrats on following the instructions!
 The purposes of the Future of Coding Slack are:
 
 1. Sharing of ideas, debate, feedback, constructive criticism, and collaboration
-
 2. Encouragement, high fives
-
 3. Organizing IRL meetings and meetups
 
 ## Channels
@@ -45,11 +43,11 @@ Tell us about your background, how you got into these topics, and why you joined
 
 ### #general
 
-- Share interesting links you've found and want to spark a discussion over
-- Ask questions or /poll the crowd
+Share interesting links you've found and want to spark a discussion over. Ask questions, or `/poll` the crowd.
 
 ### #feedback
-- Share your own projects for high fives or feedback (after reading the [etiquette for sharing your own work](#sharing-your-own-work))
+
+Share your own projects for high fives or feedback (after reading the [etiquette for sharing your own work](#sharing-your-own-work))
 
 ### #meta
 
@@ -65,37 +63,40 @@ Post if you are hiring or looking for work. Work related to the future of coding
 
 ### Locations
 
-- #nyc
-- #london
 - #boston
 - #kitchener-waterloo
+- #london
+- #nyc
 - #sf
 
 ### Topics
 
+- #category-theory
 - #graphics
 - #music
 - #research-center
 - #robust-computation
-- #category-theory
 
 ## Style Guide
 
 ### Threading
 
-This slack discusses nuanced topics, so we have a strong preference for organizing conversations by thread. If you want to respond to someone, respond in the thread of that message. Do not respond with another top-level message.
+This slack discusses nuanced topics, so we have a strong preference for organizing conversations by thread. If you want to respond to someone, please respond in the thread of that message, and not with another top-level message.
 
-When creating a top-level message, try to create it in a single message so that it's easier to thread off it. You can create newlines with shift-enter. It's helpful to draft longer messages in your personal channel @yourname channel.
+- On desktop, hover over the message and in the little floating toolbar that appears, click "Start a thread" or "Reply to thread".
+- On mobile, simply tap the message to open the thread view.
+
+When you have something to share, try to post it as a single message (rather than posting several messages in quick succession) so that it's easier to start a thread of replies. You can create newlines with `shift-enter`. It's helpful to draft longer messages in your text editor of choice, and then paste them into Slack when you're ready to post.
 
 ### Sharing your own work
 
-When sharing your own work, start the post with "\*Show FoC:\*"
+When sharing your own work, it's a good convention to start the post with "\*Show FoC:\*".
 
 If you're asking for feedback, start the post with "\*Feedback request:\*" and specify the both the goal/motivation for the project (to avoid the [XY Problem](https://en.wikipedia.org/wiki/XY_problem)) and for the kind of feedback you want:
 
 - advice on a specific issue
 - advice on overall strategy
-- nitpicking spellcheck
+- copy-editing, spelling, grammar
 - high fives
 
 ## Loading Messages
@@ -107,6 +108,9 @@ If you have an inspirational quote to share, [add it as a Loading Message](https
 This community was started by Irvin Hwang as a Google Group in mid-2017 for organizing NYC meetups, but was quickly turned into a Slack and taken over by Steve Krouse when Irvin got busy with his job.
 
 ## Changelog
+
+### Oct 15, 2019
+- Added #feedback channel
 
 ### Sept 8, 2019
 
