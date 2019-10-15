@@ -47,7 +47,9 @@ Tell us about your background, how you got into these topics, and why you joined
 
 - Share interesting links you&#39;ve found and want to spark a discussion over
 - Ask questions or /poll the crowd
-- Share your own projects for high fives or feedback (after reading the etiquette for sharing your own work)
+
+### #feedback
+- Share your own projects for high fives or feedback (after reading the [etiquette for sharing your own work](#sharing-your-own-work))
 
 ### #meta
 
