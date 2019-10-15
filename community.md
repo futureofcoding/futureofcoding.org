@@ -8,7 +8,7 @@ Are you looking for the _real_ computer revolution? Join the club!
 
 While we all share the same basic assumption that programming can be improved, that’s about all we agree on. There’s the Bret Victor Fan club, the Jonathan Edwards school of thought, the Haskellers, the Smalltakers, and the compile-to-JavaScripters. Some of us are ride-or-die for direct manipulation, while others believe we’ll be stuck with text forever, and yet others try to placate both sides with projectional editors. Some believe in message-passing, others in the actor model, and others yet in various flavors of functional programming. And don’t even get me started on the divide between the interpreters vs the compilers, static vs dynamic typing. The debates are fierce and heated and wonderful.
 
-The Future of Coding Community is loosely connected to the Future of Coding podcast. People hear about it there and sometimes discuss episodes -- but it's only one of many common touch points for the community, including Bret Victor, Douglas Engelbart, Alan Kay, Fred Brooks, HCI, HARC, Eve... For a fuller list of relevant people, topics, and links, check out [Chris Novello's _Computer Utopias_ curriculum](http://chrisnovello.com/teaching/risd/computer-utopias/) (particularly Week 3 & 4) and [The New Media Reader](https://mitpress.mit.edu/books/new-media-reader).
+The Future of Coding Community is loosely connected to the Future of Coding podcast. People hear about it there and sometimes discuss episodes — but it's only one of many common touch points for the community, including Bret Victor, Douglas Engelbart, Alan Kay, Fred Brooks, HCI, HARC, Eve... For a fuller list of relevant people, topics, and links, check out [Chris Novello's _Computer Utopias_ curriculum](http://chrisnovello.com/teaching/risd/computer-utopias/) (particularly Week 3 & 4) and [The New Media Reader](https://mitpress.mit.edu/books/new-media-reader).
 
 ## Getting Started
 
@@ -45,7 +45,7 @@ Tell us about your background, how you got into these topics, and why you joined
 
 ### #general
 
-- Share interesting links you&#39;ve found and want to spark a discussion over
+- Share interesting links you've found and want to spark a discussion over
 - Ask questions or /poll the crowd
 
 ### #feedback
@@ -57,7 +57,7 @@ Discuss ways to better collaborate, improve this Slack, or resolve community iss
 
 ### #1-on-1s
 
-Every 4 weeks, @donut will randomly pair everyone in this channel for 1-on-1 conversations. It&#39;s a good way to get to know others in the Slack.
+Every 4 weeks, @donut will randomly pair everyone in this channel for 1-on-1 conversations. It's a good way to get to know others in the Slack.
 
 ### #jobs
 
@@ -89,9 +89,9 @@ When creating a top-level message, try to create it in a single message so that 
 
 ### Sharing your own work
 
-When sharing your own work, start the post with &quot;\*Show FoC:\*&quot;
+When sharing your own work, start the post with "\*Show FoC:\*"
 
-If you&#39;re asking for feedback, start the post with &quot;\*Feedback request:\*&quot; and specify the both the goal/motivation for the project (to avoid the [XY Problem](https://en.wikipedia.org/wiki/XY_problem)) and for the kind of feedback you want:
+If you're asking for feedback, start the post with "\*Feedback request:\*" and specify the both the goal/motivation for the project (to avoid the [XY Problem](https://en.wikipedia.org/wiki/XY_problem)) and for the kind of feedback you want:
 
 - advice on a specific issue
 - advice on overall strategy
@@ -148,7 +148,7 @@ This community was started by Irvin Hwang as a Google Group in mid-2017 for orga
 
 ### Dec 21, 2018
 
-- Moved &quot;Background&quot; section much lower (h/t Denis Semenov)
+- Moved "Background" section much lower (h/t Denis Semenov)
 - Created #music channel
 - Changed the name of the Slack to Future of Coding and the URL to futureofcoding.slack.com
 - Created #music channel
@@ -164,7 +164,7 @@ This community was started by Irvin Hwang as a Google Group in mid-2017 for orga
 
 ### Twitter
 
-Many of us also congretate on Twitter. You can check out [who I follow](http://twitter.com/stevekrouse/following) and [what I like](http://twitter.com/stevekrouse/likes) as a good place to join the conversation.
+Many of us also congregate on Twitter. You can check out [who I follow](http://twitter.com/stevekrouse/following) and [what I like](http://twitter.com/stevekrouse/likes) as a good place to join the conversation.
 
 ### Others
 
