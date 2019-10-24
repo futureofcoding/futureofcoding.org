@@ -24,6 +24,9 @@ So if you are reading this message, congrats on following the instructions!
 2. Join the relevant channels
 3. Be kind and have fun!
 
+| :warning: This is a public, archived Slack, so treat it as a public record. For example, it is publicly accessible [here](https://observablehq.com/@stevekrouse/future-of-coding-slack-search) now and maybe in other places in the future, including indexable on Google. |
+| --- |
+
 * TOC
 {:toc}
 
