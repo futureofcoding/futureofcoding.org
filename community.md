@@ -12,7 +12,7 @@ The Future of Coding Community is loosely connected to the Future of Coding [pod
 
 ## Getting Started
 
-On desktop, you can [join the Slack community here](http://futureofcoding.org/slack-link). The link doesn't work on mobile for some reason.
+On desktop, you can [join the Slack community here](https://join.slack.com/t/futureofcoding/shared_invite/enQtNjk1NDc2MTkzNjE4LWFjYTY2NDU1ODI1MTI5M2MwYjZlZTk4OTU5NTM1YTRiMDEwODZhN2Y3OWNhN2VmZDU4YmJiZjlhYTFjYmJhZGQ). The link doesn't work on mobile for some reason.
 
 Upon joining the Slack, you get this automated message:
 
@@ -24,8 +24,8 @@ So if you are reading this message, congrats on following the instructions!
 2. Join the relevant channels
 3. Be kind and have fun!
 
-| :warning: This is a public, archived Slack, so treat it as a public record. For example, it is publicly accessible [here](https://observablehq.com/@stevekrouse/future-of-coding-slack-search) now and maybe in other places in the future, including indexable on Google. |
-| --- |
+| ⚠️ This is a public, archived Slack, so treat it as a public record. For example, it is publicly accessible [here now](https://observablehq.com/@stevekrouse/future-of-coding-slack-search) and maybe in other places in the future, including indexable on Google. |
+
 
 * TOC
 {:toc}
