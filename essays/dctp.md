@@ -526,7 +526,7 @@ Newfound computational capabilities will likely always be initially expressed no
 
 In exchange for our patience, we get elegance and simplicity. The denotative confines of the spreadsheet has enabled tens of millions of non-programmers to model complex numerical systems. Denotative programming, extended to handle time-varying values, events, and distributed computing, has the promise to similarly democratize all other aspects of computation, such as user interfaces, web and mobile applications, robotics, and machine learning.
 
-The denotative community can be viewed as a small subset of the functional programming community. It's mathematical roots scares of potential supporters. Efforts to democratize the denotative approach, such as this essay and flow visualizations, help gain this movement supporters. The more people who see the value in this approach, the more effort will be put behind bringing denotative interfaces to modern technologies, and the sooner the denotative approach can be applied to a computational problem near you.
+The denotative community can be viewed as a small subset of the functional programming community. It's mathematical roots scares off potential supporters. Efforts to democratize the denotative approach, such as this essay and flow visualizations, help gain this movement supporters. The more people who see the value in this approach, the more effort will be put behind bringing denotative interfaces to modern technologies, and the sooner the denotative approach can be applied to a computational problem near you.
 
 ## Further resources
 
