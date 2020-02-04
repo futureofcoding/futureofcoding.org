@@ -1,3 +1,9 @@
+# Podcast
+
+Subscribe in your podcast player of choice by searching for "Future of Coding", or via [RSS](http://www.omnycontent.com/d/playlist/c4157e60-c7f8-470d-b13f-a7b30040df73/564f493f-af32-4c48-862f-a7b300e4df49/ac317852-8807-44b8-8eff-a7b300e4df52/podcast.rss) \| [iTunes](https://itunes.apple.com/us/podcast/future-of-coding/id1265527976) \| [Google Play](https://playmusic.app.goo.gl/?ibi=com.google.PlayMusic&isi=691797987&ius=googleplaymusic&link=https://play.google.com/music/m/Iixe67yd4fwfgmw3xb7g6lru2gu?t%3DFuture_of_Coding%26pcampaignid%3DMKT-na-all-co-pr-mu-pod-16) \| [Stitcher](https://www.stitcher.com/podcast/future-of-coding)
+
+## Episodes
+
 <span class="date">2020 Feb 03 -</span> [#44 - Making Your Own Tools: Devine Lu Linvega](/episodes/044)
 
 <span class="date">2019 Sep 24 -</span> [#43 - Unveiling Dark: Ellen Chisa & Paul Biggar](/episodes/043)
