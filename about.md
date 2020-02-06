@@ -4,11 +4,9 @@ title: About
 
 <h1>About</h1>
 
-Future of Coding is a [community](/community), [podcast](/#episodes), and [research project](/log) organized by Steve Krouse. 
+Future of Coding is a [community](/community), [podcast](/episodes), and [research project](/log) organized by Steve Krouse.
 
 The community lives on Slack: you can [learn more and join here](/community). The podcast alternates between interviews with programming language experts and reflections on my own research journey. My research is focused on building an open-source programming language. 
-
-This work is funded by [repl.it](https://repl.it) and my generous patrons. If you find this work valuable, [please consider supporting](https://patreon.com/stevekrouse).
 
 ## Me
 
@@ -16,15 +14,15 @@ This work is funded by [repl.it](https://repl.it) and my generous patrons. If yo
 
 Hi, my name is Steve Krouse. When I meet people, I like to begin with life stories. Context is important. Here's mine - as it relates to this project:
 
-As a kid, I was particularly "bad at math." However, as I was a computer nerd, I started going to a wonderful after-school computer science program, [IMACS](https://imacs.org). Through learning LOGO, Scheme, Java, and Haskell in middle school and high school at IMACS's self-paced environment, I became a computational, mathematical, and introspective thinker. I became very good at school, especially mathematics and physics. 
+As a kid, I was particularly "bad at math." However, as I was a computer nerd, I started going to a wonderful after-school computer science program, [IMACS](https://imacs.org). Through learning LOGO, Scheme, Java, and Haskell in middle school and high school at IMACS's self-paced environment, I became a computational, mathematical, and introspective thinker. I became very good at school, especially mathematics and physics.
 
-I went to the University of Pennsylvania for college. After taking most of the CS classes at Penn, I left without graduating in early 2014, and went to work at [Looker](https://looker.com). I left Looker at the end of 2014. 
+I went to the University of Pennsylvania for college. After taking most of the CS classes at Penn, I left without graduating in early 2014, and went to work at [Looker](https://looker.com). I left Looker at the end of 2014.
 
 While at college and Looker, I was deeply influenced by Bret Victor and Seymour Papert. Ever since my experience of transforming from a self-identified stupid person to a smart person in middle school, I was curious about how it happened and if similar changes could be nurtured in others. Reading Papert in college, I learned that my own transformation was was no accident - Papert intentionally set out to create mathematical thinkers from math-haters with LOGO, and he accomplished his goal in me.
 
 With these thoughts in mind, in July 2015 I co-founded [The Coding Space](https://thecodingspace.com), where we taught kids to code in a self-paced environment similar in spirit to IMACS. I created [a Scratch-based curriculum](https://coding.space), as well as [WoofJS](https://woofjs.com), a JavaScript framework and online IDE to transition kids from Scratch to JS.
 
-In mid-2017, I left The Coding Space to work on programming languages full time. 
+In mid-2017, I left The Coding Space to work on programming languages full time.
 
 At first, I thought I'd have the whole thing solved in just a matter of months, all by myself. I was wrong. While I did make some interesting prototypes, I spent a lot of time retracing the steps of those that came before me. I learned the hard way that I need to read my history.
 
@@ -39,11 +37,11 @@ My framing for this project has gone through a number of turbulent stages (Bret-
 
 ## Mission
 
-The mission of this project is to *enable all people [[1](#1)] to modify the software they use in the course of using it*. 
+The mission of this project is to *enable all people [[1](#1)] to modify the software they use in the course of using it*.
 
 This mission would cause the following changes, in order of increasing importance:
 
-1. All software will be co-created by decentralized communities, rather than centralized groups or companies. 
+1. All software will be co-created by decentralized communities, rather than centralized groups or companies.
 2. Through the power of crowd-sourcing, the quality of all software will become much higher than existing software.
 3. All software will be much more composible, interoperable with other pieces of software.
 4. All software will be arbitrarily customizable, allowing for bespoke, tailored experiences.
@@ -96,4 +94,3 @@ Changing a definition only produces a new definition but you are given the optio
 If/when this platform is built, the first app I'll build in it is a build-your-own-email-app kit. Everyone's email workflow is specific and it's a huge part of how we all run our lives. Being able to customize things to exactly how we'd like them would be a superpower. For myself, I'd like to be able to combine my email app with features of task management applications, such as re-ordering items and nesting items within other items. Part of the inspiration for this "killer app" is that Google Inbox, my preferred email client, is being shut down in a few months. The economics of building a consumer quality app only allows for lowest-common-denominator experiences. The only way to maintain sustainable personalized experiences is with a crowd-sourced development platform. I imagine we'd want to leverage Gmail's API to do this.
 
 <a name="1">[1]</a> - "All people" is a strong phrase. Apparently 77% of Wikipedia is written by 1% of editors - and that's not even counting users. The difference with software is that people will want to customize it for themselves, while Wikipedia is for a general audience, so there's less motivation to edit it.
-
