@@ -8,17 +8,13 @@ Are you looking for the _real_ computer revolution? Join the club!
 
 While we all share the same basic assumption that programming can be improved, that’s about all we agree on. There’s the Bret Victor Fan club, the Jonathan Edwards school of thought, the Haskellers, the Smalltakers, and the compile-to-JavaScripters. Some of us are ride-or-die for direct manipulation, while others believe we’ll be stuck with text forever, and yet others try to placate both sides with projectional editors. Some believe in message-passing, others in the actor model, and others yet in various flavors of functional programming. And don’t even get me started on the divide between the interpreters vs the compilers, static vs dynamic typing. The debates are fierce and heated and wonderful.
 
-The Future of Coding Community is loosely connected to the Future of Coding [podcast](https://futureofcoding.org/#episodes). People hear about it there and sometimes discuss episodes — but it's only one of many common touch points for the community, including Bret Victor, Douglas Engelbart, Alan Kay, Fred Brooks, HCI, HARC, Eve... For a fuller list of relevant people, topics, and links, check out [Chris Novello's _Computer Utopias_ curriculum](http://chrisnovello.com/teaching/risd/computer-utopias/) (particularly Week 3 & 4) and [The New Media Reader](https://mitpress.mit.edu/books/new-media-reader).
+The Future of Coding Community is loosely connected to the Future of Coding [podcast](https://futureofcoding.org/episodes). People hear about it there and sometimes discuss episodes — but it's only one of many common touch points for the community, including Bret Victor, Douglas Engelbart, Alan Kay, Fred Brooks, HCI, HARC, Eve... For a fuller list of relevant people, topics, and links, check out [Chris Novello's _Computer Utopias_ curriculum](http://chrisnovello.com/teaching/risd/computer-utopias/) (particularly Week 3 & 4) and [The New Media Reader](https://mitpress.mit.edu/books/new-media-reader).
+
+## Join
+
+On desktop, you can [join the Slack community here](https://join.slack.com/t/futureofcoding/shared_invite/enQtNjk1NDc2MTkzNjE4LWFjYTY2NDU1ODI1MTI5M2MwYjZlZTk4OTU5NTM1YTRiMDEwODZhN2Y3OWNhN2VmZDU4YmJiZjlhYTFjYmJhZGQ). The link might not work on mobile for some reason.
 
 ## Getting Started
-
-On desktop, you can [join the Slack community here](https://join.slack.com/t/futureofcoding/shared_invite/enQtNjk1NDc2MTkzNjE4LWFjYTY2NDU1ODI1MTI5M2MwYjZlZTk4OTU5NTM1YTRiMDEwODZhN2Y3OWNhN2VmZDU4YmJiZjlhYTFjYmJhZGQ). The link doesn't work on mobile for some reason.
-
-Upon joining the Slack, you get this automated message:
-
-👋 welcome welcome @new\_user\_name! Head over to the Future of Coding Slack README for a 5 minute intro futureofcoding.org/slack-readme
-
-So if you are reading this message, congrats on following the instructions!
 
 1. Introduce yourself in the #introductions channel (after reading the [style guide](https://futureofcoding.org/community#style-guide))
 2. Join the relevant channels
@@ -108,7 +104,7 @@ If you have an inspirational quote to share, [add it as a Loading Message](https
 
 ## Origin Story
 
-This community was started by Irvin Hwang as a Google Group in mid-2017 for organizing NYC meetups, but was quickly turned into a Slack and taken over by Steve Krouse when Irvin got busy with his job.
+This community was started by Irvin Hwang as a Google Group in mid-2017 for organizing NYC meetups, but was quickly turned into a Slack and taken over by Steve Krouse when Irvin got busy with his job, and then passed to Ivan Reese when Steve got busy with his life.
 
 ## Changelog
 
