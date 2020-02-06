@@ -20,6 +20,12 @@ nav > a {
   font-size: 20px;
 }
 
+@media (max-width: 875px) {
+  nav .foc.title {
+    display: block;
+  }
+}
+
 .patreon {
   width: 100px;
   vertical-align: middle;
