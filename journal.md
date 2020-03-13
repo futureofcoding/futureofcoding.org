@@ -8,7 +8,7 @@ This jornal is stream-of-consciousness style so apologies in advance if it's dif
 
 ### October 18, 2017
 
-This journal is now officially deprecated! If you'd like to continue following my progress, you can do so by following the commit log at futureofcoding.org/log. 
+This journal is now officially deprecated! If you'd like to continue following my progress, you can do so by following the commit log at futureofcoding.org/log.
 
 ### October 5, 2017 9:15am
 
@@ -29,7 +29,7 @@ I spent the bulk of my research time yesterday [writing the Streamsheets writeup
 
 I had a few fun conversations yesterday, including a reply from @r0ml who agreed to come on the podcast, a [Future of Programming meetup](https://docs.google.com/document/d/1xXeKyR6SzwYMW9ZgHZXoIZsatkYlDL17yp4B5MreRMQ/edit), and also an email from Niko Autio (who I hope to chat with soon and helped spur on the Structured Editor writing below) who was sent to me via Andre Stalz (who I will hopefully find time to chat with this coming Monday to kick off my "master planning").
 
-#### Structural Editors 
+#### Structural Editors
 
 Given all the recent Structural Editor (also known as "projectional editor") conversations I've been having, I think now is a good time to write about those, leaving Thursday (as tomorrow I have jury duty, which I make up for by working a double research shift on Friday) to continue the Elm Flappy Bird.
 
@@ -37,11 +37,11 @@ Given all the recent Structural Editor (also known as "projectional editor") con
 
 > Inside every cynical person, there is a disappointed idealist. - George Carlin
 
-You may remember that I starting building my own structured editor for JavaScript called Rose, which can you read about at [the end of this post](https://medium.com/@stevekrouse/rose-983dc5e0908f) and [the beginnning of this post](https://medium.com/@stevekrouse/rose-project-april-2017-32af31b078b1), but ended this prototype fairly early. You may also remember [my review of Lamdu](http://futureofcoding.org/journal#july-25-2017-226pm), in which I was both impressed by what this could become but disappointed about its current state. 
+You may remember that I starting building my own structured editor for JavaScript called Rose, which can you read about at [the end of this post](https://medium.com/@stevekrouse/rose-983dc5e0908f) and [the beginnning of this post](https://medium.com/@stevekrouse/rose-project-april-2017-32af31b078b1), but ended this prototype fairly early. You may also remember [my review of Lamdu](http://futureofcoding.org/journal#july-25-2017-226pm), in which I was both impressed by what this could become but disappointed about its current state.
 
 You may recall [my conversation with Lloyd Tabb](http://futureofcoding.org/episodes/7-lookers-lloyd-tab-on-growing-languages-through-deprecation.html) where he explains his disillusionment with structured editors because of his failure to build one in the 80s, and his current insistance that text will always win as the interface for programming.
 
-Last night at the Future of Programming meetup, there was a discussion about how excited we all have been at various times about structured editors, but [as you can read in the notes](https://docs.google.com/document/d/1xXeKyR6SzwYMW9ZgHZXoIZsatkYlDL17yp4B5MreRMQ/edit), have been disappointed each time. 
+Last night at the Future of Programming meetup, there was a discussion about how excited we all have been at various times about structured editors, but [as you can read in the notes](https://docs.google.com/document/d/1xXeKyR6SzwYMW9ZgHZXoIZsatkYlDL17yp4B5MreRMQ/edit), have been disappointed each time.
 
 I've recently become friends with Aaron Kent of Isomorf and am quite impressed by their structured editor! However as a "pro user" their tool would still slow me down over text-based editing. (Although it might be faster for a new programmer, but I'm not sure.)
 
@@ -53,11 +53,11 @@ This is not to say that some of us don't think it's possible to succeed here. (O
 
 I, for one, am not skeptical of it at all. Despite all this negativity, I think it's not only possible to succeed in a non-text-based editor (here I'm using a more general term than "structured editor" to include other editor types like block-based or node-based) but probable. I say this from my experience successfully using MIT's Scratch myself and with students, from my decade of experience using dozens of programming languages, from my experience building on top of Google Blockly and trying to build a structured editor for JavaScript referenced above, and from my experience trying out many such editors over the past year, many of which while leaving a lot to be desired, hint at how amazing they could become with just a bit more development.
 
-After seeing the negative feedback on structured editors from the meeting last night, Yair of Lamdu quickly shot back a few notes about how they plan to address each of the comments brought up, such as where to put comments and changes regarding operator precendence. 
+After seeing the negative feedback on structured editors from the meeting last night, Yair of Lamdu quickly shot back a few notes about how they plan to address each of the comments brought up, such as where to put comments and changes regarding operator precendence.
 
-I agree with his optimism. While text-based editing does have a signicant tooling advatange because it's been the dominant platform for the last 60 years, I think there's no reason that we can enumerate all of the use-cases and issues that people have with structured-editors and tackle them one at a time until the quality of structured editors outpaces the quality of text-based editors, even for "pro users" that have all the emacs shortcuts memorized. 
+I agree with his optimism. While text-based editing does have a signicant tooling advatange because it's been the dominant platform for the last 60 years, I think there's no reason that we can enumerate all of the use-cases and issues that people have with structured-editors and tackle them one at a time until the quality of structured editors outpaces the quality of text-based editors, even for "pro users" that have all the emacs shortcuts memorized.
 
-One caveat to this, of course, is that in order to build a tool to such a level of quality, you need its developers to stick with it for years and years. Given that there as of yet (aside from LightTable and Eve) been little money for such projects could be an obsticle. However not a insurmountable one, as shown by how the Lamdu developers have made signicant, sustained progress in their free time over the past few years while keeping up with full time jobs. Others in this space are persuing VC funding like Eve did. And then there are researchers who are supported by grants or non profits. 
+One caveat to this, of course, is that in order to build a tool to such a level of quality, you need its developers to stick with it for years and years. Given that there as of yet (aside from LightTable and Eve) been little money for such projects could be an obsticle. However not a insurmountable one, as shown by how the Lamdu developers have made signicant, sustained progress in their free time over the past few years while keeping up with full time jobs. Others in this space are persuing VC funding like Eve did. And then there are researchers who are supported by grants or non profits.
 
 ##### Niko Autio's Microeditor
 
@@ -69,7 +69,7 @@ There are a few really solid insights here:
 2. You can create many "microeditors" that give you very specific interfaces to this underlying data structure ("I want view THAT piece of data as table and THAT as diagram.") In this way you can have your cake and eat it too.
 3. If you break up each microeditor small enough and build the underlying platform well enough, you could get the open source community to contribute to their development. Potentially you could bootstrap things and build the tool in the tool.
 
-You know... this idea isn't all that crazy. You could combine an existing browser code editor like CodeMirror with exisiting JSON and XML editors and table viewers to get started... I imagine the real trouble with this project will be that it's trying to solve every problem for everyone all at once and won't get good at anyone's specific problem anytime soon. That is, the trouble here is focusing on a use-case to optimize for. 
+You know... this idea isn't all that crazy. You could combine an existing browser code editor like CodeMirror with exisiting JSON and XML editors and table viewers to get started... I imagine the real trouble with this project will be that it's trying to solve every problem for everyone all at once and won't get good at anyone's specific problem anytime soon. That is, the trouble here is focusing on a use-case to optimize for.
 
 ##### [Ville Vanninen's Foolproof HTML](https://pumpula.net/foolproof-html/)
 
@@ -77,7 +77,7 @@ I think I've seen this before, but was sent it again by Niko last night. In part
 
 ![image](https://user-images.githubusercontent.com/2288939/31139520-d34c69be-a83f-11e7-81be-5f168a641eaa.png)
 
-Very neat project! 
+Very neat project!
 
 1. First they start by removing syntax that humans don't need (but computers like) to get something similar to Jade (or other compile-to-HTML languages)
 2. Don't let humans make syntax errors
@@ -93,7 +93,7 @@ At this point, I know about a lot of these things, so I created [a Github issue 
 
 In a recent talk, Paul Chiusano of Unison explained that while structured editors (like those he himself worked on in the past) will make programming better, they're not currently the highest leverage thing you can do to improve programming. His thought experiment: "would you rather a brain-to-text interface to x86 assembly or a emacs-interface to Haskell?" Most people would prefer Haskell, he says (and I agree), which explains why he's now working on creating better mathmatical abstractions for distributed computing as opposed to more fluent interfaces to existing languages.
 
-In a similar vein, my current thesis is that slapping a structured editor interface on top of our current programming language paradigms will only improve things marginally, and that's after investing a lot of work into them over a period of years (which is why I stopped working on my structured editor Rose). The real leverage is in enabling better paragigms *through* more intuative interfaces, such as enabling stream programming through a spreadsheet interface, like my StreamSheets project I talk about throughout this journal (ctl-F to find it). 
+In a similar vein, my current thesis is that slapping a structured editor interface on top of our current programming language paradigms will only improve things marginally, and that's after investing a lot of work into them over a period of years (which is why I stopped working on my structured editor Rose). The real leverage is in enabling better paragigms *through* more intuative interfaces, such as enabling stream programming through a spreadsheet interface, like my StreamSheets project I talk about throughout this journal (ctl-F to find it).
 
 However, the old programming languages and paradigms will stick around for a while, so more power to the people trying to make structured editing work! In particular, I'm excited to watch Isomorf  iterate on their interface as they get people using it to solve real-world problems.
 
@@ -114,8 +114,8 @@ update msg model =
       addPipe model = { model |
         pipes = {x = 250, yOffset = 0}::model.pipes
       }
-      jumpBird model = { model | 
-        bird = { y = model.bird.y, ySpeed = 10 } 
+      jumpBird model = { model |
+        bird = { y = model.bird.y, ySpeed = 10 }
       }
     in
       case msg of
@@ -191,7 +191,7 @@ Thoughts on CycleJS thus far:
 
 3. This took sooo long! Obviously the code now is beautiful and I have total control over what happens every second. However, it's a bummer it takes so much longer to write code so beautiful. And thus: my current project to create a layer of abstraction on top of it makes a lot of sense.
 
-4. This is the bleeding edge of reactive programming! No joke - in the course of developing this app, Andre pushed a new version of Onionify that makes it easier to work with dynamic lists. I realized it earlier this morning when things weren't working and I saw "	Update all examples for makeCollection API	- 2 days ago" as the most recent commit message on most of the codebase. 
+4. This is the bleeding edge of reactive programming! No joke - in the course of developing this app, Andre pushed a new version of Onionify that makes it easier to work with dynamic lists. I realized it earlier this morning when things weren't working and I saw "	Update all examples for makeCollection API	- 2 days ago" as the most recent commit message on most of the codebase.
 
 5. However while the `makeCollection` API does indeed seem cleaner, I wonder how I'm now supposed to [sharing data between components](https://github.com/staltz/cycle-onionify#how-to-share-data-among-components-or-compute-derived-data). I was able to push the `gameOver` state into my `Bird` component by creating a lens that contained both the bird and the `gameOver` data. However, I'm not totally sure what the idomatic way to accomplish this with `makeCollection` is. The best I came up with is by [pushing the shared state (`gameOver` and `score`) into each induvidual list component](https://gist.github.com/stevekrouse/fe7a9aaa881df66793b48786158a3756#file-cyclejs-flappy-bird-js-L158). This pattern also works for setting shared state from within a component: [the child component just updates the state in itself](https://gist.github.com/stevekrouse/fe7a9aaa881df66793b48786158a3756#file-cyclejs-flappy-bird-js-L91) and [the parent setter scans the children to pull the new state when it occurs](https://gist.github.com/stevekrouse/fe7a9aaa881df66793b48786158a3756#file-cyclejs-flappy-bird-js-L162). TODO ask andre about this...
 
@@ -209,7 +209,7 @@ Thoughts on CycleJS thus far:
 
 I spent another 90 minutes on the [CycleJS Flappy Bird](https://www.webpackbin.com/bins/-KueLaY-sIBrTzaW18U4). It's coming along! This morning I pushed `gameOver` state into the `Bird` and `Pipes` components, even allowing the `Bird` to set `gameOver: true` when it goes out of bounds, which simplified the code a lot. I also switched the order of the reducers, bringing the `Bird` reducer to the front which helped an issue that was tripping me up. I then added `canvas` sinks to all of the components and then combined them in the `main()` function. I still have another few hours remaining on this project (the never ending flappy bird!) to 1) create `Pipe` components underneath the `Pipes` component and 2) detect Pipe collections and setting `gameOver: true`.
 
-I have set aside the remaining hour of my research for today to organize myself around my logisitcally tasks, like organizing the Future of Programming meetup on Monday, putting the final touches on next week's podcast episode, etc, etc. 
+I have set aside the remaining hour of my research for today to organize myself around my logisitcally tasks, like organizing the Future of Programming meetup on Monday, putting the final touches on next week's podcast episode, etc, etc.
 
 ### September 25, 2017 8:50am
 
@@ -279,7 +279,7 @@ I'm going to spend most of the day, starting in the morning, continuing my Cycle
 The main decision I have to make this morning is whether or not to attend the Recurse Center for six weeks starting Monday 9/25 through Thursday 11/2. The main arguments to go are:
 
 * I've wanted to go for years now
-* They are an inspiration for The Coding Space, so I bet I could learn a lot from them to apply to my business 
+* They are an inspiration for The Coding Space, so I bet I could learn a lot from them to apply to my business
 * I'll meet a lot of amazing people
 * I'll become part of the Recurse Center network, including getting access to Zulip
 * Being apart of their network will allow me to scale the Future Programming Slack community better (as many of our current and probably future members will be there)
@@ -376,11 +376,11 @@ So I haven't yet yeard back from Alan Kay, but I did hear back from Andre Stalz 
 #### Research Recap #5
 
 * Apologize for no episode last week, working on getting two interviews out the door (Pete and Paul), and should be soon.
-* [Analysis of traffic after launch](http://futureofcoding.org/journal#analytics-after-yesterdays-launch) and now (below) 
+* [Analysis of traffic after launch](http://futureofcoding.org/journal#analytics-after-yesterdays-launch) and now (below)
 * [Peak from Jaime Brandon](http://futureofcoding.org/journal#thoughts-on-peak)
 * [New Schedule](http://futureofcoding.org/journal#reflections-on-my-schedule-9317)
 * Call with [Jaime Brandon](http://futureofcoding.org/notes/jaime-brandon-call-9-5-17)
-* Call with [Dan Scanlon](http://futureofcoding.org/notes/dan-scanlon-call-9-5-17) 
+* Call with [Dan Scanlon](http://futureofcoding.org/notes/dan-scanlon-call-9-5-17)
 * While waiting for Andre, [Alan Kay Deep Dive](http://futureofcoding.org/journal#alan-kay-deep-dive-recap)
 * [Optimal computer use strategies](http://futureofcoding.org/journal#overlapping-windows-considered-too-expressive-and-other-optimal-computer-use-strategies)
 * [LogicHub](http://futureofcoding.org/journal#logichub-1)
@@ -402,7 +402,7 @@ There are two obvious directions to take moving forward:
 
 1) begin prototyping a visualization of CycleJS data as tabular spreadsheets
 
-2) continue the deep dive on Bret Victor 
+2) continue the deep dive on Bret Victor
 
 Before I compare and contrast these options, let me meditate on any more options...
 
@@ -414,7 +414,7 @@ Before I compare and contrast these options, let me meditate on any more options
 
 Reflecting on all of these options (and yes, (5) is not an option but explaining a lack of one), I see that (1) is where my heart is at, and I can justify it logically as well with this principle:
 
-As long as I can see where I can make progress on a prototype that has interesting open questions, I should make that progress so that when I get blocked, I can reach out to people for help as soon as possible, and spend the time waiting on various other research paths. To put it another way, I should always have a prototype that I'm working on, and my other research are merely ways to inspire other prototypes during the times that I'm stuck on my main prototype. 
+As long as I can see where I can make progress on a prototype that has interesting open questions, I should make that progress so that when I get blocked, I can reach out to people for help as soon as possible, and spend the time waiting on various other research paths. To put it another way, I should always have a prototype that I'm working on, and my other research are merely ways to inspire other prototypes during the times that I'm stuck on my main prototype.
 
 
 #### Begin prototyping a visualization of CycleJS data as tabular spreadsheets
@@ -429,7 +429,7 @@ Sweet, I'm pumped!
 
 Good morning! So I spent the last hour or so writing Alan Kay a much too long and too epic email. Now I'd like to move on to my Bret Victor Deep Dive. Before I begin, I'd like to share a laugh with everyone with this link to Bret's hit single [Caltech Girl](http://worrydream.com/media/caltech_girl.html). [HOLY SHIT I JUST FOUND THIS GOLD](https://www.youtube.com/watch?v=00vMnIECCbo)
 
-Unfortunately, the link to his earliest website at CalTech seems to be broken: http://sites.ugcs.caltech.edu/~bret/alternate/. I wasn't able to find it on waybackmachine either, so if anyone has access to an archived version of this, please let me know at steve at futureofcoding.org :)
+Unfortunately, the link to his earliest website at CalTech seems to be broken: http://sites.ugcs.caltech.edu/~bret/alternate/. I wasn't able to find it on waybackmachine either, so if anyone has access to an archived version of this, please [let me know](https://twitter.com/stevekrouse).
 
 While they are fun, Bret's websites' interactivity does make it a bit harder to exhaustively and systematically explore. Let's start with http://worrydream.com/ugcs...
 
@@ -441,7 +441,7 @@ Success! Not only did I stick to schedule (despite a 45 minute break to talk wit
 
 #### Alan Kay Deep Dive Recap
 
-While I have been highly influnced by the work of Alan Kay over the past decade -- through Bret Victor, object-oriented programming, let alone GUIs -- I didn't watch more than a handful of his videos and hadn't read any of his papers. Thus given that I had a free week of research I decided to remidy this sittuation and read almost every paper I could find online with his name listed as an author, and watch a handful of his videos (not nearly as many as he's given). I am quite excited by what I have learned! 
+While I have been highly influnced by the work of Alan Kay over the past decade -- through Bret Victor, object-oriented programming, let alone GUIs -- I didn't watch more than a handful of his videos and hadn't read any of his papers. Thus given that I had a free week of research I decided to remidy this sittuation and read almost every paper I could find online with his name listed as an author, and watch a handful of his videos (not nearly as many as he's given). I am quite excited by what I have learned!
 
 I am able to see more clearly now the progression ideas through my idols, from Piaget to Papert to Kay to Resnick and Victor, as well as how the ideas of Montessori, McLuhan, and Postman relate to this beautiful worldview.
 
@@ -454,20 +454,20 @@ Ok, I am now out of excuses, it's time to send him an email!
 
 ### September 6, 2017 10:55am
 
-This morning was quite productive! I started research just a 15 minutes late (making my morning coffee and writing in my private journal took longer than expected) so I tacked on some more time to the end of today's research. I got [a decent bit done](https://github.com/stevekrouse/futureofcoding.org/commit/31cb36531e9fa145dfb65832af0cdfb90c39258f), mostly around the STEPS project (which I've decided to only read the final report of unless in reading it I decide to read the progress reports), more specifically the KScript language. 
+This morning was quite productive! I started research just a 15 minutes late (making my morning coffee and writing in my private journal took longer than expected) so I tacked on some more time to the end of today's research. I got [a decent bit done](https://github.com/stevekrouse/futureofcoding.org/commit/31cb36531e9fa145dfb65832af0cdfb90c39258f), mostly around the STEPS project (which I've decided to only read the final report of unless in reading it I decide to read the progress reports), more specifically the KScript language.
 I was blown away by the KScript paper! It's so similar in goals and methods to StreamSheets! I think there's a ton I can learn from that paper (and those it references) that I don't yet notice because I am still to early in this project so I'm sure I'll return to it. I also bet there's a lot I can learn from the paper's authors here too!
 
 Thinking about interface design, metaphors, and GUIs, got me thinking about the way in which I use a computer, which I am quite proud of, and inspired me to drone on about it below. Upon re-reading it, I can't help but roll my eyes at my know-it-all tone, yet I don't want to spend the time to re-write it without this tone, so you'll have to make do.
 
 #### Overlapping windows considered too expressive (and other optimal computer use strategies)
 
-As a comptuer user since the age of three, I have had ample opportunity over the last twenty years to develop better computer usage patterns. One of the most effective I've found is to never have any minimized windows, overlapping windows, or windows totally hidden behind other windows. 
+As a comptuer user since the age of three, I have had ample opportunity over the last twenty years to develop better computer usage patterns. One of the most effective I've found is to never have any minimized windows, overlapping windows, or windows totally hidden behind other windows.
 
-Instead, I make liberal user of tabs and split-screen. My default view is two windows, side-by-side, each taking up half of the screen. On a chromebook, this is easy to set up with the alt-[ and alt-] shortcuts built in. 
+Instead, I make liberal user of tabs and split-screen. My default view is two windows, side-by-side, each taking up half of the screen. On a chromebook, this is easy to set up with the alt-[ and alt-] shortcuts built in.
 
 On the left window, I pin a number of tabs to apps that I want open throughout the day for constant use, Spotify, Inbox, Calendar, and Slack. This "pin" makes it harder for me to accidentally close the tab and makes the tab seem more "fundamental" than a regular tab which is more ephemeral. The left window usually only has one non-pinned tab on it, which represents the main task I'm working on. For example, this tab is currently open to Cloud9, and online IDE, where I am typing this very journal entry. A moment ago, this tab was still on Cloud9, but in the /links.html file so I could take notes on a paper I was reading in the right tab. Similarly, if I am writing software, I will have my code in the left window and the preview output for the code in the right window. If I need to google things to debug my code, that will also be in the right window. In some occasions, I want one window to be full screen, in which case I put all my tabs onto my left window and hit ctl-+.
 
-I try to do things in logical chunks. This means not leaving any task in a "dirty state" such that if you threw my computer into a river I wouldn't be upset at any lost work or effort. One common mistake I see people make is having more than a handful (like 5) tabs open for long periods of time. This is a problem for two reasons 1) if you comptuer or web browser crashes you lose all of those tabs which represent of list of links you want to look at, and 2) it makes your desktop more cluttered which can make your thinking more cluttered, and make it difficult to find what you need, similar to having a mess in your room that you do not clean up. Thus I copy the URLs of the tabs I'm not currently working on to an appropriate list or bookmarks folder and then close that tab. Another common mistake is to not save every logical change directly to a cloud service. Having a chromebook makes making this mistake harder but still possible. This is similar but less true for Dropbox on a Mac or PC because there are so many ways to save things to disk, and so much disk storage. 
+I try to do things in logical chunks. This means not leaving any task in a "dirty state" such that if you threw my computer into a river I wouldn't be upset at any lost work or effort. One common mistake I see people make is having more than a handful (like 5) tabs open for long periods of time. This is a problem for two reasons 1) if you comptuer or web browser crashes you lose all of those tabs which represent of list of links you want to look at, and 2) it makes your desktop more cluttered which can make your thinking more cluttered, and make it difficult to find what you need, similar to having a mess in your room that you do not clean up. Thus I copy the URLs of the tabs I'm not currently working on to an appropriate list or bookmarks folder and then close that tab. Another common mistake is to not save every logical change directly to a cloud service. Having a chromebook makes making this mistake harder but still possible. This is similar but less true for Dropbox on a Mac or PC because there are so many ways to save things to disk, and so much disk storage.
 
 Occasially, it can be be helpful to have more than two windows on the screen at the same time. I used to run into this when developing code before cloud9, where you needed a third window for the terminal (in addition to the code editor and code preview). (However, cloud9 combines the terminal and code windows so I can make do with two windows.) However, at no point is it useful to have windows overlapping each other. Given that I can resize the boundaries of windows, and zoom in and out on their contents, I can always get a view of the things I want in a window without obscuring the contents of another window. Side by side is more than enough. Thus not only is overlapping windows not helpful, it is harmful because it allows the user to put their windows in a disorganized fashion (like a messy bedrooom). It also allows the user to not realize that certain windows are still open but not visible, which is draining computing resources and even worse could hold work in an unsaved state which could then be lost. (There is a special case where you'd like to do some proccessing on data in one minimized window while you work on other applications in visible windows. However, I think the "correct" way to handle this case is upload the task to some web service for proccessing, close the window, and then have that service email you a link to the finished product when it's done.)
 
@@ -490,7 +490,7 @@ I'm very proud to report that on day #1 of my new schedule, I mostly stayed on p
 
 I worked from 7:30am-10am at which point a friend called and we caught up for 30ish minutes, which leaves me with another 30 minutes of research to do.
 
-As far as the research today goes, I had a lot less fun with Alan's work than I did last time. I wonder if that has more to do with my mood than the content of his writing. My guess as to why I'm less excited about his work is 1) he talks a lot about the implementation details of Smalltalk which feel less relevant today, 2) he spends a lot of time talking about ideas in object oriented programming which don't hit home for me. 
+As far as the research today goes, I had a lot less fun with Alan's work than I did last time. I wonder if that has more to do with my mood than the content of his writing. My guess as to why I'm less excited about his work is 1) he talks a lot about the implementation details of Smalltalk which feel less relevant today, 2) he spends a lot of time talking about ideas in object oriented programming which don't hit home for me.
 
 Anyways, here's what I accomplished this morning: https://github.com/stevekrouse/futureofcoding.org/commit/d391cf4dd862a0e26c7133a580fd5dc911134296 & https://github.com/stevekrouse/futureofcoding.org/commit/9976e7c46d85a09c1c5c4776e3673b8aac44152a
 
@@ -532,7 +532,7 @@ On the downside, this means that I won't email Alan today or tomorrow, which I w
 
 Yes, I know. I've been delinquient here. Breaking my word about when and how much time I will spend here. On Wednesday I was busy with other work things. However, many of those things could've waited until next week. I just would've felt less "on top of things" but I need to become more comfortable pushing off urgent and unimportant things for less-urgent but more important things. Again, this morning I was feeling "behind" on reviewing WoofJS pull requests so I spent 4 hours this morning catching up. I was only planning to spend an hour or two but I figured that I might as well finish up while I was on it. However, now with the clarity of a few hours I can see that that's an illusion because the more work I do on pull requests (and email) the more work that boomerangs back to me. If I just left it, it would've waited a few days until I got to it next week. I will try to do this more in the future. It's a constant struggle of mindfulness and fighting the "staying on top of my shit" urge that I've built into my workflow and which has allowed me to accomplish so much up till now. As a researcher, this skill is working against me. I don't have any plans tomorrow so I hope to do an hour or two of research tomorrow to make up for the lost time. \
 
-Yes, I acknolwedge that this is all articifical scarcity and urgency around my research, but as I'm just starting as a researcher in earnest I think it's important to establish good habits. Potentially, I will find over time that in order to build a regular research practice that I need to have a more established schedule where I do research at the same time each week, possible before the sun comes up, and before I check email, etc. 
+Yes, I acknolwedge that this is all articifical scarcity and urgency around my research, but as I'm just starting as a researcher in earnest I think it's important to establish good habits. Potentially, I will find over time that in order to build a regular research practice that I need to have a more established schedule where I do research at the same time each week, possible before the sun comes up, and before I check email, etc.
 
 One final thing to note is that I'm still working on optimizing my sleep schedule so I go to bed earlier which would allow me to wake up earlier. I have a lot of work to do here because I waste a lot of time watching TV and reading and other stuff and night because I'm not able to fall asleep without it. One thing that I suspect might be contributing to this is that whenever I plan to wake up early and get to work, I get so excited about what I'm going to do the next day that I can't fall asleep. It's only when I convince myself that I won't be up until 9 or 10am that I am finally less excited enough to actually fall alseep.
 
@@ -582,7 +582,7 @@ I had 62 episode downloads yesterday! I have almost 100 downloads in total!
 
 Looks like I have 51 total podcast subscribers which is neat!
 
-I had ~150 people on my website yesterday. About 62 make it onto my journal. 
+I had ~150 people on my website yesterday. About 62 make it onto my journal.
 
 This is fun.
 
@@ -598,7 +598,7 @@ Andre replied already! He is busy preparing for a bunch of conferences so might 
   * https://github.com/stevekrouse/futureofcoding.org/commit/52a0d72bc49f2d56eebcfcdaae440467008f1cd2
   * https://github.com/stevekrouse/futureofcoding.org/commit/cd83671ac0a4d68818c40815c9f5202ec078aafc
 * Conal Elliott
-  * https://github.com/stevekrouse/futureofcoding.org/commit/52a0d72bc49f2d56eebcfcdaae440467008f1cd2 
+  * https://github.com/stevekrouse/futureofcoding.org/commit/52a0d72bc49f2d56eebcfcdaae440467008f1cd2
 * Eve
   * http://futureofcoding.org/journal#my-first-full-day-with-eve
 * Imp + Jamie
@@ -606,11 +606,11 @@ Andre replied already! He is busy preparing for a bunch of conferences so might 
   * Finding a time to chat soon. Think I may have found a kindred spirit and friend.
 * StreamSheets
   * http://futureofcoding.org/journal#august-28-2017-228pm
-  * Waiting on Andre 
+  * Waiting on Andre
 * Plan for next two weeks
   * tomorrow morning I'm sharing the pocast and website widely
   * I have 6 days in the next cycle (Weds, Fri, Mon, Weds, Fri, Mon) unless something comes up. If Andre gets back to me, I might spend more time on StreamSheets. If not, I'll work on other research and pick up Streamsheets after we chat in two weeks.
-  * Two really fun interviews 
+  * Two really fun interviews
     * Paul Chiusano from Unison
     * Pete Hunt from ReactJS and now Smyte
 
@@ -618,11 +618,11 @@ Andre replied already! He is busy preparing for a bunch of conferences so might 
 
 I made [some decent progress on StreamSheets this morning](https://rawcdn.githack.com/stevekrouse/futureofcoding.org/d44e9b61d5b044c3daa3ae8b4b0690a09e1fa55d/prototypes/streamsheets/index.html). It's now simply a table that populates with event information when you do things with your mouse over the "preview div" on the left of the page.
 
-I'm feeling a little daunted by all of the things that need to happen to build this prototype from a UI perspective. Given that so much of what I'm doing is conjectural, I worry that committing to a design and building it might take too long. I'm looking for a hack of some sort that will allow me to get a sense of what a working version of this *could* look like. 
+I'm feeling a little daunted by all of the things that need to happen to build this prototype from a UI perspective. Given that so much of what I'm doing is conjectural, I worry that committing to a design and building it might take too long. I'm looking for a hack of some sort that will allow me to get a sense of what a working version of this *could* look like.
 
 From one perspective, that's what CycleJS is. A working version of this with no UI. All text. When I realized this, I went and watched [See the data flowing through your app](https://www.youtube.com/watch?v=R-GzJgEccEQ) which was a really impressive demo of the CycleJS devtools to get a sense of how your code works from a understanding and debugging perspective. However, it's not from an creation perspective, which is what I'm trying to do. But it seems like Andre might have this idea as well, given [this slide The Past, Present, and Future of CycleJS talk at CycleConf in 2017](https://staltz.com/cycleconf17/#/step-56) which says:
 
-##### Dataflow tools scenario 
+##### Dataflow tools scenario
 * Cycle.js DevTool as an IDE
 * Push-pull FRP
 * What would be a better host language?
@@ -634,7 +634,7 @@ Sounds like my next step is talking to Andre, potentially through Codementor. I 
 2. Ask him to help run me through how the CycleJS chrome extension builds its graph so I can use CycleJS as my compile target. Could it be a one-to-one mapping?
 3. Hear his ideas for "Cycle.js DevTool as an IDE"
 
-Great. I'll shoot him an email now. 
+Great. I'll shoot him an email now.
 
 ### August 25, 2017 7:57pm
 
@@ -653,7 +653,7 @@ On Tuesday morning at 10am, I plan to publish this podcast and website broadly v
 
 Wednesday is totally reserved for research so that's probably StreamSheets.
 
-Thursday I will set aside for work on refactoring the WoofJS database ([#352](https://github.com/stevekrouse/WoofJS/issues/352), [#390](https://github.com/stevekrouse/WoofJS/issues/390)). However, if I don't get it done (or screw things up badly) I may have to continue working on this on Friday. 
+Thursday I will set aside for work on refactoring the WoofJS database ([#352](https://github.com/stevekrouse/WoofJS/issues/352), [#390](https://github.com/stevekrouse/WoofJS/issues/390)). However, if I don't get it done (or screw things up badly) I may have to continue working on this on Friday.
 
 If all goes well on Thursday, Friday is back on StreamSheets.
 
@@ -677,7 +677,7 @@ All this shouldn't take more than an hour-ish, which leaves me plenty of time to
 
 #### My first full day with Eve
 
-The Eve Quickstart Tutorial is super buggy! I find that I have to really mess with different blocks of code (by editing them by adding random whitespace) to get things to run properly. It's unclear when things aren't working becuase I'm doing it wrong and when things are just broken are their end. 
+The Eve Quickstart Tutorial is super buggy! I find that I have to really mess with different blocks of code (by editing them by adding random whitespace) to get things to run properly. It's unclear when things aren't working becuase I'm doing it wrong and when things are just broken are their end.
 
 Looks like you can only use Eve version 0.2 on their play.witheve.com site. This is a bummer because it's pretty buggy and their documentation for 0.2 is pretty weak. However, as I learned with Lamdu (and Elm and Haskell and others), it can take a day (or more) to get a non-web-based tool up and running. So for now at least I will stick to v0.2 online. Potentially I'll come back when they release v0.4 [which it sounds like they're skipping to](http://incidentalcomplexity.com/2017/08/14/July/).
 
@@ -692,10 +692,10 @@ I spent approximately 4 hours on this single attempt at getting a counter button
 
 The things that slowed me down that *are* their "fault":
 
-1. Implicit databases in search is very confusing. Where is it searching when you don't specify?! 
+1. Implicit databases in search is very confusing. Where is it searching when you don't specify?!
 2. It's also annoying that it doesn't automatically pull in all the joins I ask for even if I don't search in that database. Seems like something their engine could infer.
 3. Not having any error messages is insane! The only way to survive this is to do constant sanity checks every change I make. Even then, it's really slow going and easy to miss things.
-4. Their interface is super buggy! I had to constantly save and refresh the page to get things to work. If it were any buggier, it'd be unusable. 
+4. Their interface is super buggy! I had to constantly save and refresh the page to get things to work. If it were any buggier, it'd be unusable.
 5. Not having the version of Eve that I'm using in the URL (or somewhere on the page) was very fustrating. Took me a while to figure that out which prevented me from using the appropriate docs.
 6. It's unclear how control flow works between blocks. For example, for every search term do I need a new block of code?
 7. The difference between bind and commit was not clear. I spent much of my time trying to use commit to add things to the page but it wouldn't add more than 1 of the same kind, which seems like how I'd expect bind to behave.
@@ -704,14 +704,14 @@ The things that slowed me down that *are* their "fault":
 On the positive side, things that I liked:
 
 1. I liked that (almost) everything has uniform record syntax. The syntax was relatively easy for me to pick up. However, I don't know if that will be the case for everyone. Why not just use a lisp syntax? (Turns out there's a clojure library that's similar: https://groups.google.com/forum/#!topic/eve-talk/b-IN4pLF45A)
-2. I liked that the core data structure is a record 
+2. I liked that the core data structure is a record
 3. I liked how the API simplifies everything to either searching or adding (commiting or binding) to a database, and anything, including the page, is just a database. (Personally, I wouldn't have two seperate ways to add to a database but just one, "add". If you want a "bind" sort of behavior, you should have to somehow specify that manually. I should think more on this, but it might be tricky given that I don't really understand the difference between the two.)
 
 I found this quote while reading the Eve Google Group:
 
 > In Excel, they show the data and hide the formulas. In programming, they show the formulas and hide the data. In Eve, we show both.
 
-I really love that quote and vision for a programming language that's as concrete as a spreadsheets but has the powerful abstractions of programming langauges. Unfortunately, Eve does not live up to this vision in its current implementation. It's much closer to Python than Excel. 
+I really love that quote and vision for a programming language that's as concrete as a spreadsheets but has the powerful abstractions of programming langauges. Unfortunately, Eve does not live up to this vision in its current implementation. It's much closer to Python than Excel.
 
 I think my vision for Streams as Spreadsheets could fufill this vision. To that end, I think there's a lot about the Eve architecture that I could mimic or at least learn from for when I think through how to design this prototype.
 
@@ -771,7 +771,7 @@ And it's time for another research recap!!! Before I get to that, I have a few h
 
 #### Research Recap #3
 
-* While I was planning to do more research into other peoples' work, everything changed when I got a call from Paul Chiusano from Unison about a "writers' workshop" in Boston with my kinda people. 
+* While I was planning to do more research into other peoples' work, everything changed when I got a call from Paul Chiusano from Unison about a "writers' workshop" in Boston with my kinda people.
 
 * WoofJS Workflow https://docs.google.com/document/d/1gt4SDLgCSeKa_h1seWtriPFsve8aYHzdhuADWas2j0c/edit
   * Kids lose the forest for the trees
@@ -793,7 +793,7 @@ And it's time for another research recap!!! Before I get to that, I have a few h
   * Expressions of Change
   * Imp
   * Eve
-  
+
 * Also, I'm obsessed with my spreadsheets+streams idea: StreamSheets
 
 * Other notes
@@ -802,9 +802,9 @@ And it's time for another research recap!!! Before I get to that, I have a few h
 
 ### August 11 2017 11:09am
 
-Sadly, because I allowed today to get filled with various other tasks and meetings, I don't have time for research today. For example, I have four interviews for part-time teachers at The Coding Space this afternoon. 
+Sadly, because I allowed today to get filled with various other tasks and meetings, I don't have time for research today. For example, I have four interviews for part-time teachers at The Coding Space this afternoon.
 
-However, I will say that I've been spending a ton of my time thinking about my "streams as spreadsheets" idea and really think there's some potential here. In particular, I love how concrete it makes everything. You never have to imagine how the streams flow into streams which flow into data which flow into HTML elements. Everything is always inspectable and concrete, even asynchronous things, in their own streams. My next steps are to outline how I'd build TodoMVC and a Chat App in it. 
+However, I will say that I've been spending a ton of my time thinking about my "streams as spreadsheets" idea and really think there's some potential here. In particular, I love how concrete it makes everything. You never have to imagine how the streams flow into streams which flow into data which flow into HTML elements. Everything is always inspectable and concrete, even asynchronous things, in their own streams. My next steps are to outline how I'd build TodoMVC and a Chat App in it.
 
 ### August 9 2017 5:19pm
 
@@ -828,27 +828,27 @@ I don't plan to have time to do much research tomorrow but I plan on spending Fr
 
 ### August 4 2017 6:12pm
 
-I spent 3ish hours yesterday and 3ish hours this morning building out the WoofJS Workflow. It still has a long way to go but it was enough for me to get a sense of how it works and take a decent screenshot for the summary I sent to the other participants in the workshop on Monday. 
+I spent 3ish hours yesterday and 3ish hours this morning building out the WoofJS Workflow. It still has a long way to go but it was enough for me to get a sense of how it works and take a decent screenshot for the summary I sent to the other participants in the workshop on Monday.
 
 #### WoofJS Workflow Summary
 
-There are many ways for a new programmer to get “stuck” while learning to code, and require the help of a more experienced programmer to get them “unstuck.” For example, it’s virtually impossible for a new programmer to spot a missing closing-bracket. That’s why a block-based coding platform like Scratch is so wonderful. By eliminating syntax errors, it allows new programmers to spend more time learning, being productive, and enjoying coding. One way to optimize a programming environment is minimizing the time learners are stuck. 
+There are many ways for a new programmer to get “stuck” while learning to code, and require the help of a more experienced programmer to get them “unstuck.” For example, it’s virtually impossible for a new programmer to spot a missing closing-bracket. That’s why a block-based coding platform like Scratch is so wonderful. By eliminating syntax errors, it allows new programmers to spend more time learning, being productive, and enjoying coding. One way to optimize a programming environment is minimizing the time learners are stuck.
 
 In this vein, I’d like to discuss a problem that my students encounter while coding in WoofJS, and a prototype that I’m working on to solve it that I call “WoofJS Workflow”. For reference, these students are aged 8-14, and attend classes at my after school program, The Coding Space. We built WoofJS (woofjs.com) to be “the next step after Scratch” for our more advanced students. It’s a JavaScript framework and IDE for students to make games and animations. For each block in Scratch, there’s an equivalent JavaScript command in Woof that does the same thing. In this way, WoofJS is an alternative to ProcessingJS.
 
 ![image](https://user-images.githubusercontent.com/2288939/28989068-1c0c4210-7941-11e7-99b0-371f948224da.png)
 
-As simple as it sounds, I’ve found that the most common way students get stuck is when they lose track of what they’re working on. Thus when any student asks for help, we first ask, “What are you trying to accomplish here?” More often than not, the student will have entirely forgotten what she’s trying to do, and respond with a shoulder shrug. 
+As simple as it sounds, I’ve found that the most common way students get stuck is when they lose track of what they’re working on. Thus when any student asks for help, we first ask, “What are you trying to accomplish here?” More often than not, the student will have entirely forgotten what she’s trying to do, and respond with a shoulder shrug.
 
 If the student is working through one of our guided tutorials, which have numbered steps, we can then follow up with, “What number step are you on?” and then, “Could you read it aloud?” Sometimes, simply re-focusing the student’s attention on the problem at hand allows her to solve her issue herself with no further teacher input. But even if the student needs more guidance, the conversation is much more productive now that teacher and student are aligned on the goal.
 
 However, when students are working on creative projects of their own devising, there is no numbered list of steps for them to refer back to. While I’m constantly begging students to write their steps out for themselves on paper, it’s a losing struggle that almost never happens. Many creative student projects never see the light of day because students get stuck, frustrated, and quit, going back to our guided projects.
 
-While staying on task is vital to many constructive endeavors, it’s particularly difficult in programming because our tasks have subtasks with subtasks with subtasks with subtasks. When a student gets stuck on a subtask 3 levels deep, they often lose sight of the larger picture and what they’re even trying to accomplish in the first place. Luckily, programming has a technique for dealing with breaking down problems into subproblems - top-down programming. 
+While staying on task is vital to many constructive endeavors, it’s particularly difficult in programming because our tasks have subtasks with subtasks with subtasks with subtasks. When a student gets stuck on a subtask 3 levels deep, they often lose sight of the larger picture and what they’re even trying to accomplish in the first place. Luckily, programming has a technique for dealing with breaking down problems into subproblems - top-down programming.
 The Solution
-While top-down programming is indisputably a core programming competency, our tooling doesn’t lend itself well to it, which is why we often resort to whiteboards, pieces of paper, or github issues. What would it look like to integrate a top-down programming assistant into an IDE? 
+While top-down programming is indisputably a core programming competency, our tooling doesn’t lend itself well to it, which is why we often resort to whiteboards, pieces of paper, or github issues. What would it look like to integrate a top-down programming assistant into an IDE?
 
-I think it would look like a nested To Do list right at the top of the screen. That way, what the student is working on now is always top of mind. Even better, the breadcrumb trail explaining how what they’re working on now plays in the larger picture is also right there. 
+I think it would look like a nested To Do list right at the top of the screen. That way, what the student is working on now is always top of mind. Even better, the breadcrumb trail explaining how what they’re working on now plays in the larger picture is also right there.
 
 ![image](https://user-images.githubusercontent.com/2288939/28989060-11fb6fa8-7941-11e7-803c-83a9999cac52.png)
 (This photo represents a rough prototype-in-progress. Many of the features I discuss below aren’t implemented yet.)
@@ -908,7 +908,7 @@ Like last Friday, I spent a while (maybe 45 minutes this time) in the shower tak
 
 ##### Permissioning
 
-* Anyone can create sub-branches. 
+* Anyone can create sub-branches.
 * Up to the owner of the parent branch whether or not to merge.
 * Can hide all non-owner branches
 * Need to be formally added as a collaborater for real time editing
@@ -932,7 +932,7 @@ Like last Friday, I spent a while (maybe 45 minutes this time) in the shower tak
 
 ##### Worried about timing
 
-I'll have to make sure to write out my presentation and time it so I can make sure I take no longer than 20 min. It's fun to gloat over all of my wonderful features but many of them will be obvious and I won't need to mention them. Also will need to figure out how much context I should give about myself, my other research, The Coding Space, and WoofJS. 
+I'll have to make sure to write out my presentation and time it so I can make sure I take no longer than 20 min. It's fun to gloat over all of my wonderful features but many of them will be obvious and I won't need to mention them. Also will need to figure out how much context I should give about myself, my other research, The Coding Space, and WoofJS.
 
 ### July 31 2017 2:02pm
 
@@ -942,10 +942,10 @@ So I read through my notes over the past two weeks and was struck by the fact of
 
 I want to make my schedule clear on this research recap:
 
-* Two days full research every week. 
-* One day Coding Space. 
-* One day Woof. 
-* One day Research / Podcast tasks. 
+* Two days full research every week.
+* One day Coding Space.
+* One day Woof.
+* One day Research / Podcast tasks.
 
 On my calendar, this week it looks like:
 
@@ -959,7 +959,7 @@ So there's not much time for real research. Potentially I will scale back on som
 
 #### Purpose of this project
 
-The purpose of this project as I see it now is bringing the future of programming nearer. Things don't happen by themselves. People need to make them happen and that's what I'm trying to do here. I used to think this meant building it myself but I have a much broader perspective now. I can nurture the community, introduce people, inspire people, help people with their projects, etc. I do hope that this research project results in a product that I can dedicate a portion of my life towards building. But I'd be thrilled if someone else figured it out first. I'd try to help them, and if they don't need my help, I can go work on other projects. 
+The purpose of this project as I see it now is bringing the future of programming nearer. Things don't happen by themselves. People need to make them happen and that's what I'm trying to do here. I used to think this meant building it myself but I have a much broader perspective now. I can nurture the community, introduce people, inspire people, help people with their projects, etc. I do hope that this research project results in a product that I can dedicate a portion of my life towards building. But I'd be thrilled if someone else figured it out first. I'd try to help them, and if they don't need my help, I can go work on other projects.
 
 #### Research was much more tangible helpful than I would've thought
 
@@ -992,15 +992,15 @@ Part of why I've been so productive is that this structure helps me focus. Focus
 
 #### Alan Kay's relentless problem-focus
 
-Whilw I intellectually know that you should build a product to solve a problem, in the moment I often lose sight of that. I am a technologist. I like building things for their own sakes, similar to how an artist makes art for its own sake. 
+Whilw I intellectually know that you should build a product to solve a problem, in the moment I often lose sight of that. I am a technologist. I like building things for their own sakes, similar to how an artist makes art for its own sake.
 
 However, when I'm trying to build towards the future of programming, there is no place for "solutionism". I think of solutionism as looking around at the tools in your toolbelt and the lego pieces on the floor and asking, "what can I do with these?" This methodology becomes quite dangerous when you then convince yourself that somebody would find that thing useful. That's the perfect recipe to build a product that solves a problem that nobody has, or "acheiving failure", as Eric Reis says.
 
-In his YC Startup School talks, Alan Kay did a great job disabusing me of these tendencies (for now, it's a constant struggle for someone like me). The way he put it was that you should build towards the problem, inventing whatever you need to in order to make a good solution. Need to build a custom programmign language? Need to build an operating system from scratch? Go for it. This was a great kick in the butt for me because I've shyed away from most ambitious prototype ideas that would require more than a few weeks to hack together. While this is a decent technique to avoid getting bogged down in the technical details of a bad prototype, it also precludes me from stumbling into a truly breakthrough idea, whose sub components don't even exsist yet, because that's how breakthrough it is. If the answer to this question is just recombining pieces that are already out there, someone would've solve it by now. 
+In his YC Startup School talks, Alan Kay did a great job disabusing me of these tendencies (for now, it's a constant struggle for someone like me). The way he put it was that you should build towards the problem, inventing whatever you need to in order to make a good solution. Need to build a custom programmign language? Need to build an operating system from scratch? Go for it. This was a great kick in the butt for me because I've shyed away from most ambitious prototype ideas that would require more than a few weeks to hack together. While this is a decent technique to avoid getting bogged down in the technical details of a bad prototype, it also precludes me from stumbling into a truly breakthrough idea, whose sub components don't even exsist yet, because that's how breakthrough it is. If the answer to this question is just recombining pieces that are already out there, someone would've solve it by now.
 
 One key sub-skill that I need to get better at here is recording problems that I don't see immediate solutions to. As an innovator, I often willfully ignore ideas whose solutions seem too far out, which is probably a good practice for people to have to work to make a buck every day. However, given that I'm in my own personal R&D department, it's my job to think about those big problems so I need to retrain myself to write down all big problems, *especially* the ones I have no clue about how to solve.
 
-#### Excited about "Streams as Spreadsheets" 
+#### Excited about "Streams as Spreadsheets"
 
 On Friday I fleshed out an idea that I'm really excited about: streams as spreadsheets. Here's how I got there. As I was trying to understand the Lamdu codebase, I realized how even with my decades of programming and Haskell experience, I was unable after hours of trying to even get the bareset glipse about how it all works together. I think it would take another dozen painful hours to get to a good place with it. (Of course if someone on the team walked me through it a bit or they had more documentation explaining how the code worked, that'd help.) To be clear, the Lamdu guys seem brilliant and I'm sure their code is really clean and easy to understand. That's the point: even in the best case, representing a software program as a series of folders containing plaintext does not lend itself well to comprehendablility.
 
@@ -1012,7 +1012,7 @@ I have other thoughts below about how this could work so I won't repeat them her
 
 * http://futureofcoding.org/journal#streams-as-spreadsheets
 * http://futureofcoding.org/journal#streams-as-spreadsheets-2
- 
+
 I will say, however, that I want to resist the strong pull towards beginning to build this in code. I have noticed in the past, in myself and others, that when I'm working on building a thing, I get a bit of tunnel vision and actively avoid researching other products. I feel a sense of dread when I hear about another, similar product, as I see all of my hard work and beautiful code going to waste. So I want to make it through at least another 2-week research cycle before jumping into a prototype, but I'm thinking that I might need another two or three of these research cycles before I feel like I have a good sense of what's out there and confident that spending the next few weeks or months working on a speficif protoype is the best use of that time.
 
 Ok, so that's a quick review of what's on my mind now. After lunch, I'll continue to review my research from the last two weeks here, and then record it all in podcast form :)
@@ -1021,11 +1021,11 @@ Ok, so that's a quick review of what's on my mind now. After lunch, I'll continu
 
 #### Shower thoughts
 
-I had a tough time focusing on other ideas this afternoon, so I took a shower to be disconnected from distracting technology and could focus and brainstorm. The cornerstone of this technique is [a waterproof notepad](https://www.amazon.com/Aqua-Notes-Water-Proof-Note/dp/B01AS5I0ZS). Worth its weight in gold. 
+I had a tough time focusing on other ideas this afternoon, so I took a shower to be disconnected from distracting technology and could focus and brainstorm. The cornerstone of this technique is [a waterproof notepad](https://www.amazon.com/Aqua-Notes-Water-Proof-Note/dp/B01AS5I0ZS). Worth its weight in gold.
 
 ![image](https://user-images.githubusercontent.com/2288939/28737030-b88c46b2-73ba-11e7-86fb-ed5deb70943c.png)
 
-### Workflowy Git 
+### Workflowy Git
 
 One of the hardest things about programming is keeping track of what you're trying to accomplish. This is harder in programming than most disciples because programming has problems with subproblems that have subproblems that have subproblems. Fortunately programming also has a slew of mental techniques for dealing with this challenge.
 
@@ -1109,10 +1109,10 @@ While I still LOVE the ultimate goal of enabling end-users of a product to pop i
 I came up with a few interesting insights:
 
 1. Creating streams by example - events populate the spreadsheet as you interact with the page. You can select different fields to create your query.
-2. SQL ideas are relevant here. Filtering is like "where". Picking columns is "select". Aggregation is like "group by". 
+2. SQL ideas are relevant here. Filtering is like "where". Picking columns is "select". Aggregation is like "group by".
 3. Map is just adding a column! That's a fucking coup. I freaked out when I realized this idea.
 4. We can start with text as the formula programming language, even ending in HTML or JSX at the end, to start here. Because while syntax and type error and runtime errors suck, Excel programmers to them all the time.
-5. The ability to put a sheet inside the cell/column of another sheet (streams of streams) is very powerful computationally, for example it'd make it easy to "clear all completed todos". However, this may be too complicated in the way my CycleJS mario game was. 
+5. The ability to put a sheet inside the cell/column of another sheet (streams of streams) is very powerful computationally, for example it'd make it easy to "clear all completed todos". However, this may be too complicated in the way my CycleJS mario game was.
 
 From a protoyping on the computer perspective...
 
@@ -1126,7 +1126,7 @@ From a protoyping on the computer perspective...
 
 I found some really interesting links after googling "streams as spreadsheets", including this one women who's obessed with giving talks about implementing algorithms in spreadsheets. TODO add these to /links. TODO move Imp to the top of the reaserch list.
 
-While this idea is probably too wacky (simple but not easy), there are lots of amazing benefits here by combinging a few powerfully simple abstractions: spreadsheets, SQL, reactivity, functional programming, unidirectional dataflow, immutability, state as a reducer of all events, programming by example. 
+While this idea is probably too wacky (simple but not easy), there are lots of amazing benefits here by combinging a few powerfully simple abstractions: spreadsheets, SQL, reactivity, functional programming, unidirectional dataflow, immutability, state as a reducer of all events, programming by example.
 
 While it seems less "simple", probably the next direction to take this idea is to make it more like the "correct" way to do CycleJS with less cleverness and more of an Elm-like approach. (My mario vs the correct mario.)
 
@@ -1166,7 +1166,7 @@ So I tried to accomplish https://projecteuler.net/problem=7. First I tried the d
 
 What I love about Lamdu:
 
-* immediate evaluation 
+* immediate evaluation
 
 * evaluation of recursive function that you can scroll through
 
@@ -1200,10 +1200,10 @@ So what I don't like about Lamdu:
 
 * Why don't Streams have a built-in `length` method? Given that there is a `sum` method that operates on Streams, I don't see any reason why there can't be one.
 
-* Ultimately the biggest issue I have with Lamdu is really more an issue with Haskell-like languages (Elm, Unison) in general. They are really, really hard to parse. I find it incredibly difficult to follow what's going on. Possibly this would get better the more time I spend with these langauges but I've already spent hundreds of hours so I don't think a langauge that requires thousands of hours to get proficient at reading it is what we're going for here. 
+* Ultimately the biggest issue I have with Lamdu is really more an issue with Haskell-like languages (Elm, Unison) in general. They are really, really hard to parse. I find it incredibly difficult to follow what's going on. Possibly this would get better the more time I spend with these langauges but I've already spent hundreds of hours so I don't think a langauge that requires thousands of hours to get proficient at reading it is what we're going for here.
 
   The benefits gained from functional programming (no runtime errors, more declarative/abstract code) are invaluable. The question for me is: how to we take these benefits and make them less costly? One idea that I think about a lot is [types as shapes](https://medium.com/@stevekrouse/types-are-shapes-d6af1e83192f), but I am doubtful of how well this idea scales. It requires more research. More generally, visual metaphors could be helpful here somehow, because functional/reactive programming is super easy for people in the context of spreadsheets, which is part of the idea behind [aprt.us](http://aprt.us/).
-  
+
 * Ok, to be honest, my biggest issue with Lamdu is that it's a desktop application that I have to install from source to get to play with it. I have to plan my whole day around switching to the Ubuntu side of my comptuer to play with it. Unison also has a non-web backend, partly Haskell and partly Scala I think, although inital demos were done on the front end in Elm. I think Luna-lang is also a native app, but I'm not sure of that. What langauge to build something like this in isn't a clear one for me. Watching Unison and Eve both start with Elm and then move off it has been interesting to see. I think Eve moved to vanilla JS for speed reasons, which probably will be where I end up too.
 
 * I found the Lamdu code really hard to parse through and find anything interesting or even understandable. Haskell is tough. Maybe if I get these guys on my podcast, I'll have them walk us through their code.
@@ -1257,7 +1257,7 @@ So I ended up creating futureofcoding.org/links yesterday (instead of /products)
 
 I'd say one of the bigger ideas I got from Alan is that we should be problem-focused and not solution-focused, to the point of ignoring the tools we currently have entirely and building them from scratch if need be. I definitely fall into the trap of "what can I make with these tools" all the time. The solutionism trap. I feel myself caught up in a related problem a lot where I am optimizing for integrating with existing tech, which will definitly hold you back in the long term but seems neccesary for adoption in the short term...
 
-Ok, so I have from now (2pm) to 4:30 to do some research. I hope to quickly get through the papers and talks that I have on my list and make it to Lamdu today. 
+Ok, so I have from now (2pm) to 4:30 to do some research. I hope to quickly get through the papers and talks that I have on my list and make it to Lamdu today.
 
 
 ### July 17, 2017 12:38pm
@@ -1295,14 +1295,14 @@ So that was fun! I talked for almost an hour about my past research and thought-
 
 I'm back! So a few things on my mind.
 
-Firstly, organizing my thoughts on what to research next from yesterday. Another one to add to the list: 
+Firstly, organizing my thoughts on what to research next from yesterday. Another one to add to the list:
 
 10. Thinking about how Woof, or the next step after Woof, could be the starting point for Rose. Use my students as my target user and build for them.
 
 Secondly, I think it would be good for my audience to hear about my past research so they have context before I go off explaining my new research. Potentially reviewing past research could even be a good way for me to decide what to research next. Ok, so at first I thought this would be a recap in one episode but now I'm realizing it might span multiple episodes. Here are the topics to discuss:
 
 - Scratch, how it's amazing (types as shapes, cloud based, no syntax errors, no documentation, no runtime errors, good abstractions like forever's running once per render loop, audio and image editors, social network, allow kids to make what they want)
-- I was inspired to build blocks for JQuery, Cycle version 1. No HTML, No CSS. You would do everything imperitively. It would compile to JS directly. Stopped working on it when I found Code.org App Lap. 
+- I was inspired to build blocks for JQuery, Cycle version 1. No HTML, No CSS. You would do everything imperitively. It would compile to JS directly. Stopped working on it when I found Code.org App Lap.
 - Took a break to work on the business and Woof which I'll discuss later.
 - Came back to build blocks for VueJS, which is very similar to ReactJS. Much more declarative.
   - build TodoMVC
@@ -1313,7 +1313,7 @@ Secondly, I think it would be good for my audience to hear about my past researc
   - used with students, went to hackathons
     - harder to learn than I thought it would be (the abstractions could be clearer, but hard to do that within blockly)
     - error messages were a killer
-    - the fact that you could import into it or export from it was bad considering it couldn't be self contained 
+    - the fact that you could import into it or export from it was bad considering it couldn't be self contained
 - Rebranded as Rose
   - worked on Prune, projectional editing in JS because importable and exportable
     - providing users will all possible semantic edits is tricky
@@ -1334,7 +1334,7 @@ Secondly, I think it would be good for my audience to hear about my past researc
   - full integreated IDE
   - open source and free, so hit me up on github if you'd like to contribute
 
-- directions for going in next (below) 
+- directions for going in next (below)
 
 Ok, so that is a lot of content. Obviously. Especially if I want to drill into each of these topics. Let's estimate how much time each topics will take.
 
@@ -1370,7 +1370,7 @@ Here are some ideas, in no particular order, but numbered so I can refer to them
 3. Finish building my Elm Spelling Bee App
 5. Reach out to Luna Lang to get access
 6. Spend more time with Lambdu
-7. Organize [links of other resources in this space](https://docs.google.com/document/d/1TtfMqBBRGnwisCx42nuXa4Y5VF3EizpZxFQBivJWhhE/edit) 
+7. Organize [links of other resources in this space](https://docs.google.com/document/d/1TtfMqBBRGnwisCx42nuXa4Y5VF3EizpZxFQBivJWhhE/edit)
 8. Re read rose blogs
 9. Prune with text as ui
 
@@ -1378,7 +1378,7 @@ Clearly, I should start with (8) because it will help me come up with other thin
 
 
   <script>
-  
+
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -1400,5 +1400,5 @@ Clearly, I should start with (8) because it will help me come up with other thin
         var element = all[i];
         element.innerHTML = urlify(element.innerHTML);
    }
-  
+
   </script>

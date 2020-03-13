@@ -1,18 +1,10 @@
 # [futureofcoding.org](http://futureofcoding.org)
 
-Welcome to the Future of Coding.
+This is the repo for the Future of Coding website.
 
-If you find any typos or have any suggestions, feel free to edit anything and send me a pull request.
+The website is a mix of personal logs and projects by Steve Krouse, episode pages for the Future of Coding podcast, and some pages about the Future of Coding community. Steve has turned over the website to community ownership, so things are in flux while we decided what should go where. Still, if you see any typos or have any suggestions, issues and PRs are welcome.
 
-You can also take a look at [the issues](https://github.com/stevekrouse/futureofcoding.org/issues) to see the other things in my todo list. I'd appreciate your feedback on any of those items. Or if you have anything to add there, feel free to create a new issue and I'll comment on it to let you know if I'm going to get it done. 
-
-Feel free to shoot me an email as well. I'm steve at futureofcoding.org.
-
-* [To Do](https://github.com/stevekrouse/futureofcoding.org/projects/3) is my pipeline of tasks
-* [To Research](https://github.com/stevekrouse/futureofcoding.org/projects/2) is my pipeline of links and topics
-* [My podcast pipeline](https://github.com/stevekrouse/futureofcoding.org/projects/1) is where I organize my guests
-
-I keep a number of ["virtual webpages"](https://github.com/stevekrouse/futureofcoding.org/issues?q=is%3Aopen+is%3Aissue+label%3A%22virtual+webpage%22) when a GitHub issue is a better format for them than a regular webpage for some reason.
+Steve also kept a number of ["virtual webpages"](https://github.com/stevekrouse/futureofcoding.org/issues?q=is%3Aopen+is%3Aissue+label%3A%22virtual+webpage%22) when a GitHub issue is a better format for them than a regular webpage. These might be of interest if you are following along with his research work.
 
 ## Developing notes
 
@@ -37,7 +29,7 @@ Then put the following into `.git/info/sparse-checkout`:
 *.json
 ```
 
-And then run 
+And then run
 
 
 ```bash
@@ -60,14 +52,14 @@ if [ "$previousMessage" != "updated git log" ]
 then
     git2json > _data/git-log.json
     echo 'fileName' > _data/files.csv && find . -regextype posix-egrep -regex ".*\.(md|html)$"  -not -path "./_site/*" >> _data/files.csv
-    
+
     # https://stackoverflow.com/questions/16993082/why-doesnt-git-recognize-that-my-file-has-been-changed-therefore-git-add-not-w
     git rm --cached _data/files.csv
     git reset _data/files.csv
-    
+
     git add _data/git-log.json
     git add _data/files.csv
-    git commit -m "updated git log" 
+    git commit -m "updated git log"
 fi
 
 exit 1
@@ -84,9 +76,7 @@ function empty_message {
 }
 
 function journal {
-  empty_message & 
+  empty_message &
   git commit --allow-empty --cleanup=verbatim
 }
 ```
-
-
