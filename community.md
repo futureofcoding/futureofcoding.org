@@ -6,7 +6,7 @@ title: Future of Coding Community
 
 _Are you looking for [the **real** computer revolution](https://www.youtube.com/watch?v=aYT2se94eU0)? Join the club!_
 
-You can join the [Future of Coding Slack community right here](https://join.slack.com/t/futureofcoding/shared_invite/zt-8vhwkhg2-rKZkVYJRKTwLbumJWVNaSw). If this link doesn't work on your mobile device, try it on a computer. Our community is open to any topic related to the evolution of computing, we have moderators and a [Code of Conduct](https://github.com/futureofcoding/code-of-conduct), and you are heartily encouraged to share your personal projects.
+You can join the [Future of Coding Slack community right here](https://join.slack.com/t/futureofcoding/shared_invite/zt-8vhwkhg2-rKZkVYJRKTwLbumJWVNaSw). If this link doesn't work on your mobile device, try it on a computer. Our community is open to any topic related to the evolution of computing, we have moderators and a [Code of Conduct](https://github.com/futureofcoding/code-of-conduct), and you are heartily encouraged to share your personal projects. We also have a [Matrix bridge](#matrix-bridge).
 
 While we all share the same basic assumption that programming can be improved, that’s about all we agree on. There’s the [Bret Victor](http://worrydream.com) Fan club, the [Jonathan Edwards](https://alarmingdevelopment.org) school of thought, the Haskellers, the Smalltakers, and the compile-to-JavaScripters. Some of us are wild about direct manipulation, others believe we’ll be stuck with text forever, and yet others try to bring both together with projectional editors. Some believe in message-passing, others in the actor model, and others yet in various flavors of functional programming. And don’t even get me started on the divide between the interpreters vs the compilers, static vs dynamic typing. The debates are deep and wonderful, with an eye to half-forgotten history and a head filled with dreams of what could someday be.
 
@@ -81,3 +81,13 @@ This community was started by Irvin Hwang as a Google Group in mid-2017 for orga
 
 - [r/nosyntax](https://www.reddit.com/r/nosyntax/)
 - [r/futureofprogramming](https://www.reddit.com/r/futureofprogramming)
+
+## Matrix Bridge
+Our 4 most popular channels are bridged to Matrix rooms. They should be accessible in any Matrix client using the following aliases:
+
+* #_slack_futureofcoding_general:matrix.org
+* #_slack_futureofcoding_feedback:matrix.org
+* #_slack_futureofcoding_introductions:matrix.org
+* #_slack_futureofcoding_random:matrix.org
+
+You can also search for "Future of Coding" in a Matrix client to find them. Thanks to [J. Ryan Stinnett](https://twitter.com/jryans) for facilitating these.
