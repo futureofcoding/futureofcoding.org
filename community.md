@@ -85,9 +85,9 @@ This community was started by Irvin Hwang as a Google Group in mid-2017 for orga
 ## Matrix Bridge
 Our 4 most popular channels are bridged to Matrix rooms. They should be accessible in any Matrix client using the following aliases:
 
-* #_slack_futureofcoding_general:matrix.org
-* #_slack_futureofcoding_feedback:matrix.org
-* #_slack_futureofcoding_introductions:matrix.org
-* #_slack_futureofcoding_random:matrix.org
+* [#_slack_futureofcoding_general:matrix.org](https://matrix.to/#/#_slack_futureofcoding_general:matrix.org)
+* [#_slack_futureofcoding_feedback:matrix.org](https://matrix.to/#/#_slack_futureofcoding_feedback:matrix.org)
+* [#_slack_futureofcoding_introductions:matrix.org](https://matrix.to/#/#_slack_futureofcoding_introductions:matrix.org)
+* [#_slack_futureofcoding_random:matrix.org](https://matrix.to/#/#_slack_futureofcoding_random:matrix.org)
 
 You can also search for "Future of Coding" in a Matrix client to find them. Thanks to [J. Ryan Stinnett](https://twitter.com/jryans) for facilitating these.
