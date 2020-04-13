@@ -18,11 +18,14 @@ If you're on a recent Mac OS, you can press Command-Shift-5 to bring up a screen
 
 If you use Linux or Windows, you can to use [OBS](https://obsproject.com) to record your videos.
 
-Regardless of how you record your video, it's worth compressing them before posting them to the Slack, since we have some members (like me) who have snail-powered internet. Whether you use OBS, [HandBrake](https://handbrake.fr), or ffmpeg, here are the settings I recommend as a starting point:
+When your video is ready, you can either upload it to YouTube or Vimeo or your host of choice and share the link, or just upload the video directly to Slack. If you're going to upload to Slack you must manually compress your video, since we have some members (like me) who have snail-powered internet. Whether you use OBS, [HandBrake](https://handbrake.fr), or ffmpeg, here are the settings I recommend as a starting point:
 
 * Format: MP4
 * Encoder: H264
 * FPS: Same as Source (or 60 or 30)
 * Constant Quality, RF 20
+* Audio: Mono, AAC, 160kbps
+
+**40mb** is the largest one of these videos should be.
 
 Reminder that these videos, like everything shared to the Slack, are public and will likely end up in the [newsletter](https://tinyletter.com/marianoguerra/archive).
