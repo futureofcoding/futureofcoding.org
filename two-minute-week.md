@@ -14,17 +14,17 @@ You can post at any day/time, just limit yourself to one post a week. The video 
 
 Use a stopwatch (or a stopwatch app) to time yourself while you record.
 
-If you're on a recent Mac OS, you can press Command-Shift-5 to bring up a screen recording overlay. Choose the "Record Selection Portion" mode, select the region of the screen you want to capture, pick your mic input from the Options menu, and hit Record. When done, click the stop button in the menu bar. Open your recording in QuickTime, and press ⌘T to trim the start and end.
+If you're on a recent Mac OS, you can press Command-Shift-5 to bring up a screen recording overlay. Choose the "Record Selected Portion" mode, select the region of the screen you want to capture, pick your mic input from the Options menu, and hit Record. When done, click the stop button in the menu bar. Open your recording in QuickTime, and press ⌘T to trim the start and end.
 
 If you use Linux or Windows, you can to use [OBS](https://obsproject.com) to record your videos.
 
 When your video is ready, you can either upload it to YouTube or Vimeo or your host of choice and share the link, or just upload the video directly to Slack. If you're going to upload to Slack you must manually compress your video, since we have some members (like me) who have snail-powered internet. Whether you use OBS, [HandBrake](https://handbrake.fr), or ffmpeg, here are the settings I recommend as a starting point:
 
-* Format: MP4
-* Encoder: H264
-* FPS: Same as Source (or 60 or 30)
-* Constant Quality, RF 20
-* Audio: Mono, AAC, 160kbps
+* Format: `MP4`
+* Encoder: `H.264`
+* FPS: `Same as Source` (or `60` or `30`)
+* Quality: either `Constant Quality, RF 20` or `Bit rate: 1500 kbps`
+* Audio: Mono, `AAC`, `160 kbps`
 
 **40mb** is the largest one of these videos should be.
 
