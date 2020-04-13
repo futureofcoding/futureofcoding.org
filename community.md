@@ -39,11 +39,11 @@ Share interesting links you've found and want to spark a discussion over. Ask qu
 
 ### #feedback
 
-Share your own projects for high fives or feedback (after reading the [etiquette for sharing your own work](#sharing-your-own-work))
+Share your own projects, blog posts, or detailed concepts. We'll give them constructive feedback.
 
-### #meta
+### #two-minute-week
 
-Discuss ways to better collaborate, improve this Slack, or resolve community issues. This is place to propose the creation of new channels.
+Once each week, post a 2-minute (max) video explaining your most recent progress on your project. [Learn More](/two-minute-week)
 
 ### #1-on-1s
 
@@ -52,6 +52,11 @@ Every 4 weeks, @donut will randomly pair everyone in this channel for 1-on-1 con
 ### #jobs
 
 Post if you are hiring or looking for work. Work related to the future of coding is preferred but all paid opportunities are allowed. Don't post more than once every couple of months about yourself or your company.
+
+### #meta
+
+Discuss ways to better collaborate, improve this Slack, or resolve community issues. This is place to propose the creation of new channels.
+
 
 ### Locations
 
