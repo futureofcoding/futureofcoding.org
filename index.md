@@ -8,7 +8,7 @@
 
 ### Community
 
-The hub of our discussions is [our Slack community](/community). We share ideas, prototypes, weekly videos, inspirational links, and debate each other endlessly, with a friendly tone and a [code of conduct](https://github.com/futureofcoding/code-of-conduct). We also organize meetups and events in cities around the world and online. You are heartily encouraged to join.
+The hub of our discussions is [our Slack community](/community). We share ideas, prototypes, weekly videos, inspirational links, and discuss in depth, with a friendly tone and a [code of conduct](https://github.com/futureofcoding/code-of-conduct). We also organize meetups and events in cities around the world and online. You are heartily encouraged to join.
 
 <br>
 
@@ -34,7 +34,7 @@ One of our special projects is the [Whole Code Catalog](/catalog), a collection 
 
 The community was originally founded by [Steve Krouse](https://stevekrouse.com), and you can read a lot more about his ideas and research [here](/about). The current steward of the community is [Ivan Reese](https://ivanish.ca).
 
-If you'd like to read up a bit on the ideas our community was formed around, [Chris Novello's _Computer Utopias_ curriculum](http://chrisnovello.com/teaching/risd/computer-utopias/) (particularly Week 3 & 4) and [The New Media Reader](https://mitpress.mit.edu/books/new-media-reader) are fantastic resources.
+If you'd like to read up a bit on the ideas our community was formed around, [Chris Novello's _Computer Utopias_ curriculum](http://chrisnovello.com/teaching/risd/computer-utopias/) (particularly Week 3 & 4) and [The New Media Reader](https://mitpress.mit.edu/books/new-media-reader) are fantastic resources. Fancy a video? This [Alan Kay](https://www.youtube.com/watch?v=aYT2se94eU0) talk is foundational.
 
 On GitHub, you can find and contribute to [this website](https://github.com/stevekrouse/futureofcoding.org) and a handful of [community resources](https://github.com/futureofcoding).
 
