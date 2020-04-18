@@ -32,7 +32,7 @@ One of our special projects is the [Whole Code Catalog](/catalog), a collection 
 
 ### About
 
-The community was originally founded by [Steve Krouse](https://stevekrouse.com), and you can read a lot more about his ideas and research [here](/about). [Ivan Reese](https://ivanish.ca) is the current steward of the community.
+The community was originally founded by [Steve Krouse](https://stevekrouse.com), and you can read a lot more about his ideas and research [here](/about). The current steward of the community is [Ivan Reese](https://ivanish.ca).
 
 If you'd like to read up a bit on the ideas our community was formed around, [Chris Novello's _Computer Utopias_ curriculum](http://chrisnovello.com/teaching/risd/computer-utopias/) (particularly Week 3 & 4) and [The New Media Reader](https://mitpress.mit.edu/books/new-media-reader) are fantastic resources.
 
