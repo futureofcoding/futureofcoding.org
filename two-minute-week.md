@@ -10,6 +10,9 @@ You should do it too!
 
 You can post at any time, just limit yourself to one post a week. The video doesn't need to show a working demo. You could instead show a static mockup, or a whiteboard sketch, or just webcam your face. You can use these videos to give the audience some context for your work, but that's not strictly necessary. The point is to force yourself to externalize and articulate where you're at in your thinking / working, concentrated down into a 2-minute recap.
 
+If you want to make a longer video, to give more context for your project or go into greater depth, share it in #feedback or #general instead of this channel.
+
+
 ### Recording Tips
 
 Here are some tips that'll help you make a compelling two minute demo.
