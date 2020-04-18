@@ -1,8 +1,8 @@
 ---
-title: Future of Coding Community
+title: Community
 ---
 
-# Future of Coding Community
+# Community
 
 _Are you looking for [the **real** computer revolution](https://www.youtube.com/watch?v=aYT2se94eU0)? Join the club!_
 

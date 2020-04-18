@@ -2,11 +2,11 @@
 title: About
 ---
 
-<h1>About</h1>
+# About
 
-Future of Coding is a [community](/community), [podcast](/episodes), and [research project](/log) organized by Steve Krouse.
+This community was originally started by [Steve Krouse](https://stevekrouse.com). From 2017 to 2019, Steve maintained an open-ended [log](/log) of his research as an experiment in radical transparency. For a summary of his research goals, check the [about page](/about). In the fall of 2019, he created [The Whole Code Catalog](/catalog). It includes detailed reviews of 24 programming-ish interfaces and experiments. Check it out for inspiration and ideas-to-steal. Finally, Steve has also published a number of [Essays & Papers](/essays-papers) that you may find interesting.
 
-The community lives on Slack: you can [learn more and join here](/community). The podcast alternates between interviews with programming language experts and reflections on my own research journey. My research is focused on building an open-source programming language. 
+At the end of 2019, Steve decided to focus more on his research work and other interests, and passed the stewardship of the community and podcast hosting duties to Ivan Reese ([Website](https://ivanish.ca) • [Twitter](https://twitter.com/spiralganglion)).
 
 ## Me
 
