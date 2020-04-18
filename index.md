@@ -1,3 +1,8 @@
+---
+title: Welcome
+---
+
+
 <br>
 
 > Are you looking for the _real_ computer revolution? Join the club!
