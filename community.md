@@ -28,7 +28,7 @@ Once each week, post a 2-minute (max) video explaining your most recent progress
 Share your own projects, blog posts, or detailed concepts. We'll give them constructive feedback.
 
 ### #meta
-Discuss ways to better collaborate, improve this Slack, or resolve community issues. This is place to propose the creation of new channels.
+Discuss ways to better collaborate, improve this Slack, or resolve community issues.
 
 ### #1-on-1s
 Every 4 weeks, @donut will randomly pair everyone in this channel for 1-on-1 conversations. It's a good way to get to know others in the Slack.
@@ -42,6 +42,8 @@ Have something cool to share that doesn't quite feel on-topic? Our random channe
 <br>
 
 There are a handful of other channels, focussed on meetups and subject-specific discussion. When you first arrive, be sure to check them out and join the ones that fit your interests.
+
+Note that we likely aren't going to add any new subject-specific channels, as they tend to all become ghost towns. But if you have an idea for a fun kind of activity we could do together in a new channel — something like #two-minute-week — propose it in #meta!
 
 <br>
 
