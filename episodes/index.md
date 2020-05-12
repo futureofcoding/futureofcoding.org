@@ -22,9 +22,9 @@ Subscribe in your podcast player by searching for **Future of Coding**, or via [
 
 ## Episodes
 
-<span class="date">2020 Apr 25 -</span> [#46 - 2020 Community Survey](/episodes/046)
+<span class="date">2020 May 12 -</span> [#47 - Max/MSP & Pure Data: Miller Puckette](/episodes/047)
 
-<span class="date">2020 Mar 01 -</span> [#45 - Orca: Devine Lu Linvega](/episodes/045)
+<span class="date">2020 Apr 25 -</span> [#46 - 2020 Community Survey](/episodes/046)
 
 <span class="date">2020 Mar 01 -</span> [#45 - Orca: Devine Lu Linvega](/episodes/045)
 
