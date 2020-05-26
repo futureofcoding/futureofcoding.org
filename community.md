@@ -65,4 +65,6 @@ Our 4 most popular channels are bridged to Matrix rooms. They should be accessib
 * [#_slack_futureofcoding_introductions:matrix.org](https://matrix.to/#/#_slack_futureofcoding_introductions:matrix.org)
 * [#_slack_futureofcoding_random:matrix.org](https://matrix.to/#/#_slack_futureofcoding_random:matrix.org)
 
-You can also search for "Future of Coding" in a Matrix client to find them. Thanks to [J. Ryan Stinnett](https://twitter.com/jryans) for facilitating these.
+You can also search for "Future of Coding" in a Matrix client to find them. Thanks to [J. Ryan Stinnett](https://twitter.com/jryans) for facilitating these, and for suggesting the following etiquette:
+
+When responding to someone, be sure to use your Matrix client's "reply" feature, rather than (say) block-quoting manually in Markdown or something. Exact steps will differ per client. For Riot Web, you hover on the message to reply to, an action bar appears on the top right of the message, and you can pick "reply" (the curved arrow icon) from there and type your reply. For Riot iOS and Android, you long press on the message to reply to, and then you can choose "reply" from the menu and type your reply.
