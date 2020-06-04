@@ -21,10 +21,7 @@ jailed: false
 theme: jekyll-theme-primer
 gfm_quirks: paragraph_end
 title: Future of Coding
-description: Are you looking for the real computer revolution? Join the club! Future of Coding is a community, podcast, and research project organized by Steve Krouse.
-twitter:
-  username: stevekrouse
-  card: summary
+description: Are you looking for the real computer revolution? Join the club! Future of Coding is a podcast and community of toolmakers, researchers, and creators working together to reimagine computing.
 logo: https://user-images.githubusercontent.com/2288939/57971688-1b7a6f80-7989-11e9-8866-330f00db1db9.jpg
 defaults:
   - scope:
