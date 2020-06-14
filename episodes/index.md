@@ -25,7 +25,7 @@ Subscribe in your podcast player by searching for **Future of Coding**, or via [
 
 ## Episodes
 
-<span class="date">2020 Jun 14</span> [48 • Jennifer Jacobs • Para & Dynamic Brushes](/episodes/047)
+<span class="date">2020 Jun 14</span> [48 • Jennifer Jacobs • Para & Dynamic Brushes](/episodes/048)
 
 <span class="date">2020 May 12</span> [47 • Miller Puckette • Max/MSP & Pure Data](/episodes/047)
 
