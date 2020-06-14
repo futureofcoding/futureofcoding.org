@@ -3,8 +3,16 @@ title: Podcast
 ---
 
 <style>
+  .date {
+    font-family: monospace;
+    margin-right: 1.5em;
+    color: #444;
+    text-transform: uppercase;
+  }
+
   @media (max-width: 767px) {
-    .date { display: none; }
+    display: block;
+    margin: 1.5em 0 0;
   }
 </style>
 
