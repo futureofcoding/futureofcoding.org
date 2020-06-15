@@ -9,7 +9,7 @@ We share and discuss ideas, prototypes, weekly demo videos, and inspirational li
 
 You can join the [Future of Coding Slack community right here](https://join.slack.com/t/futureofcoding/shared_invite/zt-8vhwkhg2-rKZkVYJRKTwLbumJWVNaSw). If this link doesn't work on your mobile device, try it on a computer. Our community is open to any topic related to the evolution of computing. We also have a [Matrix bridge](#matrix-bridge).
 
-This is a public, archived Slack, so treat it as a public record. For example, it is publicly accessible [here now](https://observablehq.com/@stevekrouse/future-of-coding-slack-search) and maybe in other places in the future.
+You can browse the conversation archives using the nice [FoC History](https://marianoguerra.github.io/future-of-coding-weekly/history/) tool (h/t to [Mariano Guerra](https://marianoguerra.github.io)) and search it using this [Observable notebook](https://observablehq.com/@stevekrouse/future-of-coding-slack-search).
 
 <br>
 
