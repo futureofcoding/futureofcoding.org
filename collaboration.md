@@ -5,7 +5,7 @@ title: Collaboration
 
 # Collaboration
 
-One of the goals of the Future of Coding is to foster collaboration. Many of us are working on projects to bring about some futuristic computing as we envision it. Others don't have a project of their own but would like to contribute. There are even people independently working on projects for the community itself. This page will collect resources to help all these people come together and combine efforts.
+One of the goals of the Future of Coding is to foster collaboration. Many of us are working on projects to bring about some vision of futuristic computing. Others don't have a project of their own but would still like to contribute. There are even a few folks independently working on projects for the community itself. The resources on this page will help all our members combine their efforts.
 
 Table of Contents
 * [Projects Seeking Contributions](#projects-seeking-contributions)
@@ -18,15 +18,23 @@ Table of Contents
 
 ### Projects Seeking Contributions
 
-Are you working on a project that represents your vision of the future of computing? Do you want contributes from our community members? [Get in touch](/contact), and we will list it here. Please provide the name of your project, a link to any relevant pages, and what sorts of contribution you would appreciate.
+Are you working on a project that represents your vision for the future of computing? Do you want contributions from our community members? [Get in touch](/contact), and we will list it here. Please provide the name of your project, a link to any relevant pages, and what sorts of contribution you would appreciate.
+
+* [Future of Coding Website](http://github.com/stevekrouse/futureofcoding.org) — Yes, the website itself is a project that welcomes contributions. If you'd like to add information, fix errors, or make improvements (especially to the visual design), talk to @ivanreese in the Slack or open a PR.
+
+<br>
 
 ### Contributors Seeking Projects
 
 If you'd like to contribute to a project, [get in touch](/contact) and we will list you here. Please provide your name, any relevant links, and what skills you have to offer.
 
+<br>
+
 ### [Community Github Organization](https://www.github.com/futureofcoding)
 
 There is a Future of Coding Github organization. If you would like to host your FoC project under the community banner, or if you are working on a project for the community itself, you are welcome to use this organization. [Get in touch](/contact) to ask for an invite.
+
+<br>
 
 ### [Project Comparison](https://docs.google.com/spreadsheets/d/12sTu7RT-s_QlAupY1v-3DfI1Mm9NEX5YMWWTDAKHLfc)
 
@@ -36,13 +44,13 @@ This is a spreadsheet listing Future of Coding projects in and around the commun
 
 ## Community Initiatives
 
-There are a handful of projects by and for the community that members are currently working on, and many more that could be undertaken. They are collected here for reference.
+There are a handful of ongoing projects by and for the community, and many more that could be undertaken. They are collected here for reference. If you have an initiative you'd like to undertake on behalf of the community, [just say so](/contact) and we'll support it however we can.
 
 #### [Newsletter](https://tinyletter.com/marianoguerra/) & [History Search](https://history.futureofcoding.org)
 
-Local hero [Mariano Guerra](https://twitter.com/warianoguerra) (of [Instadeq](https://instadeq.com) fame) publishes a weekly newsletter for the community, collecting links and discussions from the Slack. Given that Slack isn't especially good for permalinks, he also built a history search tool.
+Local hero [Mariano Guerra](https://twitter.com/warianoguerra) (of [Instadeq](https://instadeq.com) fame) publishes a weekly newsletter for the community, collecting links and discussions from the Slack. Given that Slack isn't especially good for permalinks, he also built a cool history search tool.
 
-The history search tool is on Github, if you'd like to [contribute](https://github.com/marianoguerra/future-of-coding-weekly/tree/gh-pages/search).
+The history search tool is [on Github](https://github.com/marianoguerra/future-of-coding-weekly/tree/gh-pages/search). I'm not positive, but I believe contributions are welcome.
 
 #### Events
 
