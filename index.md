@@ -31,6 +31,12 @@ Want to follow the ongoing work and interesting finds of the community, without 
 
 <br>
 
+### Collaboration
+
+Our members are working together to bring about a futuristic vision of computing, and you can help — or get help with your own futuristic project. Our [collaboration](/collaboration) page collects projects that are on-the-go in our community, and resources to help folks combine their efforts.
+
+<br>
+
 ### Catalog
 
 One of our special projects is the [Whole Code Catalog](/catalog), a collection of detailed reviews of 24 programming-ish interfaces and experiments.
@@ -43,6 +49,8 @@ The community was originally founded by [Steve Krouse](https://stevekrouse.com),
 
 If you'd like to read up a bit on the ideas our community was formed around, [Chris Novello's _Computer Utopias_ curriculum](http://chrisnovello.com/teaching/risd/computer-utopias/) (particularly Week 3 & 4) and [The New Media Reader](https://mitpress.mit.edu/books/new-media-reader) are fantastic resources. Fancy a video? This [Alan Kay](https://www.youtube.com/watch?v=aYT2se94eU0) talk is foundational.
 
-On GitHub, you can find and contribute to [this website](https://github.com/stevekrouse/futureofcoding.org) and a handful of [community resources](https://github.com/futureofcoding).
+### Contact
+
+Head to our [contact](/contact) page to get in touch. Spotted an error? You can open a PR for this website [on Github](https://github.com/stevekrouse/futureofcoding.org).
 
 See you in the future!

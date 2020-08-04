@@ -30,13 +30,17 @@ If you'd like to contribute to a project, [get in touch](/contact) and we will l
 
 <br>
 
-### [Community Github Organization](https://www.github.com/futureofcoding)
+### Community Github Organization
+
+[**https://www.github.com/futureofcoding**](https://www.github.com/futureofcoding)
 
 There is a Future of Coding Github organization. If you would like to host your FoC project under the community banner, or if you are working on a project for the community itself, you are welcome to use this organization. [Get in touch](/contact) to ask for an invite.
 
 <br>
 
-### [Project Comparison](https://docs.google.com/spreadsheets/d/12sTu7RT-s_QlAupY1v-3DfI1Mm9NEX5YMWWTDAKHLfc)
+### Project Comparison
+
+[**Google Sheet**](https://docs.google.com/spreadsheets/d/12sTu7RT-s_QlAupY1v-3DfI1Mm9NEX5YMWWTDAKHLfc)
 
 This is a spreadsheet listing Future of Coding projects in and around the community. It's not an exhaustive listing, but it does provide an interesting starting point to see who here is working on what, plus a few projects elsewhere that might be of interest to our members. If you're looking for a project to contribute to, this is one place to explore your options. If you are working on a project, you may edit the spreadsheet to add your project (please stick to the existing format).
 
@@ -46,7 +50,10 @@ This is a spreadsheet listing Future of Coding projects in and around the commun
 
 There are a handful of ongoing projects by and for the community, and many more that could be undertaken. They are collected here for reference. If you have an initiative you'd like to undertake on behalf of the community, [just say so](/contact) and we'll support it however we can.
 
-#### [Newsletter](https://tinyletter.com/marianoguerra/) & [History Search](https://history.futureofcoding.org)
+#### Weekly Newsletter & Tools
+
+* [**Newsletter Signup**](https://tinyletter.com/marianoguerra/)
+* [**History Search Tool**](https://history.futureofcoding.org)
 
 Local hero [Mariano Guerra](https://twitter.com/warianoguerra) (of [Instadeq](https://instadeq.com) fame) publishes a weekly newsletter for the community, collecting links and discussions from the Slack. Given that Slack isn't especially good for permalinks, he also built a cool history search tool.
 
