@@ -53,7 +53,7 @@ There are a handful of ongoing projects by and for the community, and many more 
 #### Weekly Newsletter & Tools
 
 * [**Newsletter Signup**](https://tinyletter.com/marianoguerra/)
-* [**History Search Tool**](https://history.futureofcoding.org)
+* [**History Search Tool**](http://history.futureofcoding.org)
 
 Local hero [Mariano Guerra](https://twitter.com/warianoguerra) (of [Instadeq](https://instadeq.com) fame) publishes a weekly newsletter for the community, collecting links and discussions from the Slack. Given that Slack isn't especially good for permalinks, he also built a cool history search tool.
 
