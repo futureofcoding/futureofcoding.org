@@ -49,6 +49,8 @@ The community was originally founded by [Steve Krouse](https://stevekrouse.com),
 
 If you'd like to read up a bit on the ideas our community was formed around, [Chris Novello's _Computer Utopias_ curriculum](http://chrisnovello.com/teaching/risd/computer-utopias/) (particularly Week 3 & 4) and [The New Media Reader](https://mitpress.mit.edu/books/new-media-reader) are fantastic resources. Fancy a video? This [Alan Kay](https://www.youtube.com/watch?v=aYT2se94eU0) talk is foundational.
 
+<br>
+
 ### Contact
 
 Head to our [contact](/contact) page to get in touch. Spotted an error? You can open a PR for this website [on Github](https://github.com/stevekrouse/futureofcoding.org).
