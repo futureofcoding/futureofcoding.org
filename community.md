@@ -8,6 +8,22 @@ We share and discuss ideas, prototypes, weekly demo videos, and inspirational li
 
 Before joining the community, please familiarize yourself with the [member handbook](/member-handbook).
 
-You can join the [Future of Coding Slack community right here](https://join.slack.com/t/futureofcoding/shared_invite/zt-8vhwkhg2-rKZkVYJRKTwLbumJWVNaSw). If this link doesn't work on your mobile device, try it on a computer. Our community is open to any topic related to furthering the evolution of computing. We also have a [Matrix bridge](#matrix-bridge).
+### Slack
 
+You can join the [Future of Coding Slack community right here](https://join.slack.com/t/futureofcoding/shared_invite/zt-8vhwkhg2-rKZkVYJRKTwLbumJWVNaSw). If this link doesn't work on your mobile device, try it on a computer. Our community is open to any topic related to furthering the evolution of computing.
+
+### History Search
 You can explore the archives of our Slack using this [History Search](http://history.futureofcoding.org) tool (h/t to [Mariano Guerra](https://marianoguerra.github.io)).
+
+
+### Matrix Bridge
+Our 4 most popular channels are bridged to Matrix rooms. They should be accessible in any Matrix client using the following aliases:
+
+* [#_slack_futureofcoding_general:matrix.org](https://matrix.to/#/#_slack_futureofcoding_general:matrix.org)
+* [#_slack_futureofcoding_feedback:matrix.org](https://matrix.to/#/#_slack_futureofcoding_feedback:matrix.org)
+* [#_slack_futureofcoding_introductions:matrix.org](https://matrix.to/#/#_slack_futureofcoding_introductions:matrix.org)
+* [#_slack_futureofcoding_random:matrix.org](https://matrix.to/#/#_slack_futureofcoding_random:matrix.org)
+
+You can also search for "Future of Coding" in a Matrix client to find them. Thanks to [J. Ryan Stinnett](https://twitter.com/jryans) for facilitating these, and for suggesting the following etiquette:
+
+When responding to someone, be sure to use your Matrix client's "reply" feature, rather than (say) block-quoting manually in Markdown or something. Exact steps will differ per client. For Riot Web, you hover on the message to reply to, an action bar appears on the top right of the message, and you can pick "reply" (the curved arrow icon) from there and type your reply. For Riot iOS and Android, you long press on the message to reply to, and then you can choose "reply" from the menu and type your reply.

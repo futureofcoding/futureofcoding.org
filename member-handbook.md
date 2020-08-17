@@ -11,6 +11,7 @@ You'll learn our preferred ways to structure discussions, what channels we have 
 
 Note: This guide is currently a work-in-progress under active development (as of August 17th, 2020). Watch for nails!
 
+<br>
 
 ## How We Slack
 
@@ -22,6 +23,7 @@ When you want to respond to someone's post, always use threaded replies. On desk
 
 Please try to keep thread replies on-topic with respect to the original post. If you want to fork a discussion off in a new direction — say, if you feel a tangent coming on — by all means start a new top-level post that includes a link back to whatever message sparked your digression.
 
+<br>
 
 ## Channels
 
@@ -63,17 +65,3 @@ Post if you are hiring or looking for work. Work related to the future of coding
 <br>
 
 There are a handful of other channels, focussed on meetups and subject-specific discussion. When you first arrive, be sure to check them out and join the ones that fit your interests.
-
-<br>
-
-## Matrix Bridge
-Our 4 most popular channels are bridged to Matrix rooms. They should be accessible in any Matrix client using the following aliases:
-
-* [#_slack_futureofcoding_general:matrix.org](https://matrix.to/#/#_slack_futureofcoding_general:matrix.org)
-* [#_slack_futureofcoding_feedback:matrix.org](https://matrix.to/#/#_slack_futureofcoding_feedback:matrix.org)
-* [#_slack_futureofcoding_introductions:matrix.org](https://matrix.to/#/#_slack_futureofcoding_introductions:matrix.org)
-* [#_slack_futureofcoding_random:matrix.org](https://matrix.to/#/#_slack_futureofcoding_random:matrix.org)
-
-You can also search for "Future of Coding" in a Matrix client to find them. Thanks to [J. Ryan Stinnett](https://twitter.com/jryans) for facilitating these, and for suggesting the following etiquette:
-
-When responding to someone, be sure to use your Matrix client's "reply" feature, rather than (say) block-quoting manually in Markdown or something. Exact steps will differ per client. For Riot Web, you hover on the message to reply to, an action bar appears on the top right of the message, and you can pick "reply" (the curved arrow icon) from there and type your reply. For Riot iOS and Android, you long press on the message to reply to, and then you can choose "reply" from the menu and type your reply.
