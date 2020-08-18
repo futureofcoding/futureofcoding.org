@@ -19,11 +19,11 @@ You can explore the archives of our Slack using this [History Search](http://his
 ### Matrix Bridge
 Our 4 most popular channels are bridged to Matrix rooms. They should be accessible in any Matrix client using the following aliases:
 
-* [#_slack_futureofcoding_general:matrix.org](https://matrix.to/#/#_slack_futureofcoding_general:matrix.org)
-* [#_slack_futureofcoding_feedback:matrix.org](https://matrix.to/#/#_slack_futureofcoding_feedback:matrix.org)
-* [#_slack_futureofcoding_introductions:matrix.org](https://matrix.to/#/#_slack_futureofcoding_introductions:matrix.org)
-* [#_slack_futureofcoding_random:matrix.org](https://matrix.to/#/#_slack_futureofcoding_random:matrix.org)
+* [#_slack_futureofcoding_introduce-yourself:matrix.org](https://matrix.to/#/#_slack_futureofcoding_introduce-yourself:matrix.org)
+* [#_slack_futureofcoding_thinking-together:matrix.org](https://matrix.to/#/#_slack_futureofcoding_thinking-together:matrix.org)
+* [#_slack_futureofcoding_linking-together:matrix.org](https://matrix.to/#/#_slack_futureofcoding_linking-together:matrix.org)
+* [#_slack_futureofcoding_share-your-work:matrix.org](https://matrix.to/#/#_slack_futureofcoding_share-your-work:matrix.org)
 
 You can also search for "Future of Coding" in a Matrix client to find them. Thanks to [J. Ryan Stinnett](https://twitter.com/jryans) for facilitating these, and for suggesting the following etiquette:
 
-When responding to someone, be sure to use your Matrix client's "reply" feature, rather than (say) block-quoting manually in Markdown or something. Exact steps will differ per client. For Riot Web, you hover on the message to reply to, an action bar appears on the top right of the message, and you can pick "reply" (the curved arrow icon) from there and type your reply. For Riot iOS and Android, you long press on the message to reply to, and then you can choose "reply" from the menu and type your reply.
+When responding to someone, be sure to use your Matrix client's "reply" feature, rather than (say) block-quoting manually in Markdown or something. Exact steps will differ per client. For Element on the web, you hover on the message to reply to, an action bar appears on the top right of the message, and you can pick "reply" (the curved arrow icon) from there and type your reply. For the Element apps on iOS and Android, you long press on the message to reply to, and then you can choose "reply" from the menu and type your reply.
