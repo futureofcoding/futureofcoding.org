@@ -9,7 +9,7 @@ This handbook is your guide to the cultural norms of our community.
 
 You'll learn our preferred ways to structure discussions, what channels we have and how we use them, a few points of etiquette, and some extra options for power users.
 
-Note: This guide is currently a work-in-progress under active development (as of August 17th, 2020). Watch for nails!
+Note: This guide is currently a work-in-progress under active development (as of August 31st, 2020). Watch for nails!
 
 <br>
 
