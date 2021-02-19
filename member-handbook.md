@@ -67,6 +67,8 @@ Once each week, post a 2-minute (max) video explaining your most recent progress
 ### #random-encounters
 This channel gives community members a fun way to connect and get to know one another. Every so often, you'll be paired up with one other random person in this channel, via our friendly neighbourhood @donut bot. You and your pair can schedule a video call, or just chat via DMs. These pairings should happen about once per month on average, though the schedule will fluctuate a bit.
 
+To organize calls, you may wish to use this [handy time zone converter](https://savvytime.com/converter/cest-to-bst-edt).
+
 ### #administrivia
 This is the channel for discussion about the community itself. If you'd like to propose a new channel, report a violation of the code of conduct, ask a question about how we do things, or start a new community initiative, this is the place. If you'd like to discuss something sensitive, please DM @ivanreese (the community admin).
 
