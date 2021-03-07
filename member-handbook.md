@@ -54,7 +54,7 @@ If you're going to add some commentary about your link, please include that as p
 Links about history are welcome here, since any view of history incorporates a sense of how things have evolved, which is one of the most powerful ways to understand how things will continue evolving. But, links mostly about the programming / world of the present should go to the next channel...
 
 ### #present-company
-The home for discussions about the present world — how we do programming today, how the world as it exists influences us, and generally any thoughts or questions about the here and now. If you'd like help with your homework, this is the place to ask. If you wrote a new blog post about how to use `react-thingamabob` or JSON or Elm, this is the place to share it.
+The home for discussions about the present world — how we do programming today, how the world as it exists influences us, and generally any thoughts or questions about the here and now. If you'd like help with your homework, this is the place to ask. If you wrote a new blog post about how to use `react-thingamabob` or JSON or Elm, this is the place to share it. This is the de facto #random channel — but let's not indulge in mapcat memes and Java jokes, okay?
 
 Reflections on how the current world might influence the future can go in #thinking-together — really, any thoughts about the future go there, even if they draw on the present or history.
 
