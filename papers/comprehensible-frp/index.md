@@ -8,7 +8,7 @@ This paper was accpeted to the [REBLS Workshop](https://2018.splashcon.org/track
 
 * [PDF](./comprehensible-frp.pdf)
 * [Slides](./slides)
-* [LaTeX](https://github.com/stevekrouse/futureofcoding.org/tree/master/papers/comprehensible-frp/LaTeX)
+* [LaTeX](https://github.com/futureofcoding/futureofcoding.org/tree/master/papers/comprehensible-frp/LaTeX)
 * [REBLS feeback](./feedback)
 * [Talk feedback](./talk-feedback)
 

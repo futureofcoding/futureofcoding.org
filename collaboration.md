@@ -20,7 +20,7 @@ Table of Contents
 
 Are you working on a project that represents your vision for the future of computing? Do you want contributions from our community members? [Get in touch](/contact), and we will list it here. Please provide the name of your project, a link to any relevant pages, and what sorts of contribution you would appreciate.
 
-* [Future of Coding Website](http://github.com/stevekrouse/futureofcoding.org) — Yes, the website itself is a project that welcomes contributions. If you'd like to add information, fix errors, or make improvements (especially to the visual design), talk to @ivanreese in the Slack or open a PR.
+* [Future of Coding Website](http://github.com/futureofcoding/futureofcoding.org) — Yes, the website itself is a project that welcomes contributions. If you'd like to add information, fix errors, or make improvements (especially to the visual design), talk to @ivanreese in the Slack or open a PR.
 
 <br>
 

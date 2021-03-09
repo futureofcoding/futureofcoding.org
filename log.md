@@ -52,7 +52,7 @@ The data for this page is pulled from the commit message history for this reposi
         {% assign date = commit.committer.date | date: "%m/%d/%y %a %l:%M %p" %}
         {% assign message = commit.message | remove_first: first_line %}
         <div class="commit">
-          <a class="hash" href="https://github.com/stevekrouse/futureofcoding.org/commit/{{ commit.commit }}"><h2 class="header">
+          <a class="hash" href="https://github.com/futureofcoding/futureofcoding.org/commit/{{ commit.commit }}"><h2 class="header">
             {{ first_line | remove: "#" | replace: "<li>", "li" }}
           </h2></a>
           <div class="date">{{ date }}</div>
@@ -61,7 +61,7 @@ The data for this page is pulled from the commit message history for this reposi
               {% for change in commit.changes %}
                 {% if change[2] != '_data/git-log.json' %}
                  <div class="file">
-                    <a target="_blank" class="changes" href="https://github.com/stevekrouse/futureofcoding.org/blob/{{commit.commit}}/{{change[2]}}">
+                    <a target="_blank" class="changes" href="https://github.com/futureofcoding/futureofcoding.org/blob/{{commit.commit}}/{{change[2]}}">
                       <span class="additions">{{change[0]}} additions</span> &
                       <span class="deletions">{{change[1]}} deletions</span>
                     </a>

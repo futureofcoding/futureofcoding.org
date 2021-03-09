@@ -43,7 +43,7 @@ title: Essays & Papers
 
 <span class="date">2018 Apr 02 -</span> [A Visual History of Eve](/essays/eve)
 
-<span class="date">2017 Aug 09 -</span> [Top-down programming assistant (WoofJS Workflow)](https://github.com/stevekrouse/futureofcoding.org/files/1248895/Top-down.programming.assistant.pdf)
+<span class="date">2017 Aug 09 -</span> [Top-down programming assistant (WoofJS Workflow)](https://github.com/futureofcoding/futureofcoding.org/files/1248895/Top-down.programming.assistant.pdf)
 
 <span class="date">2017 May 09 -</span> [The Rose Project (April 2017)](https://medium.com/@stevekrouse/rose-project-april-2017-32af31b078b1)
 

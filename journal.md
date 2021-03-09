@@ -12,7 +12,7 @@ This journal is now officially deprecated! If you'd like to continue following m
 
 ### October 5, 2017 9:15am
 
-So as it turns out, I had plenty of productive time on my hands yesterday to do research here while at jury duty. However, possibly because I wasn't expecting to work, I didn't default to continuing on Elm Flappy Bird like I was planning to. Instead I began [strategizing for this project](https://github.com/stevekrouse/futureofcoding.org/issues/51) which I wasn't planning to do until next week but I'm really happy I got started already! I had [some more thoughts in this vein this morning](https://github.com/stevekrouse/futureofcoding.org/issues/53).
+So as it turns out, I had plenty of productive time on my hands yesterday to do research here while at jury duty. However, possibly because I wasn't expecting to work, I didn't default to continuing on Elm Flappy Bird like I was planning to. Instead I began [strategizing for this project](https://github.com/futureofcoding/futureofcoding.org/issues/51) which I wasn't planning to do until next week but I'm really happy I got started already! I had [some more thoughts in this vein this morning](https://github.com/futureofcoding/futureofcoding.org/issues/53).
 
 #### Death knoll of this journal
 
@@ -20,7 +20,7 @@ If you go and read those thoughts, you will see that despite my love for this ve
 
 #### Streamsheets write-up
 
-I spent the bulk of my research time yesterday [writing the Streamsheets writeup](https://github.com/stevekrouse/futureofcoding.org/issues/54), which was very fun and productive. I got over 2,000 words in! It was in response to a request from the Future of Programming community:
+I spent the bulk of my research time yesterday [writing the Streamsheets writeup](https://github.com/futureofcoding/futureofcoding.org/issues/54), which was very fun and productive. I got over 2,000 words in! It was in response to a request from the Future of Programming community:
 
 ![screenshot 2017-10-05 at 9 19 20 am](https://user-images.githubusercontent.com/2288939/31229342-58dd5fe2-a9ae-11e7-86fc-ad2c4107aec0.png)
 
@@ -87,7 +87,7 @@ At the end of the day, it's not all that different than a good IDE and Jade. The
 
 ##### All the structural editors
 
-At this point, I know about a lot of these things, so I created [a Github issue where we can start a list for them](https://github.com/stevekrouse/futureofcoding.org/issues/52)...
+At this point, I know about a lot of these things, so I created [a Github issue where we can start a list for them](https://github.com/futureofcoding/futureofcoding.org/issues/52)...
 
 ##### Not the highest priority
 
@@ -316,13 +316,13 @@ I spent some of the research time today [getting the API side of this app workin
 
 ### September 19, 2017 7:34am
 
-I [accomplished 2b from yesterday](https://github.com/stevekrouse/futureofcoding.org/commit/3e3f2b81f1cf9dd809bae2357983754b4b897cce), but I just [created an issue for 2a to do later](https://github.com/stevekrouse/futureofcoding.org/issues/45). As far as more top-level links to organize my research, [here are my thoughts on that](https://github.com/stevekrouse/futureofcoding.org/issues/32).
+I [accomplished 2b from yesterday](https://github.com/futureofcoding/futureofcoding.org/commit/3e3f2b81f1cf9dd809bae2357983754b4b897cce), but I just [created an issue for 2a to do later](https://github.com/futureofcoding/futureofcoding.org/issues/45). As far as more top-level links to organize my research, [here are my thoughts on that](https://github.com/futureofcoding/futureofcoding.org/issues/32).
 
-So let's jump into CycleJS! What shall I build? I want to build something useful. How about [this embedable widget thing](https://github.com/stevekrouse/futureofcoding.org/issues/28)?
+So let's jump into CycleJS! What shall I build? I want to build something useful. How about [this embedable widget thing](https://github.com/futureofcoding/futureofcoding.org/issues/28)?
 
 ### September 18, 2017 11:25am
 
-So this wasn't the most productive morning I've ever had, but [I did enjoy the links I reviewed and found some good stuff](https://github.com/stevekrouse/futureofcoding.org/commit/f987a210e92c54ebeda8daa166872443014e3f00).
+So this wasn't the most productive morning I've ever had, but [I did enjoy the links I reviewed and found some good stuff](https://github.com/futureofcoding/futureofcoding.org/commit/f987a210e92c54ebeda8daa166872443014e3f00).
 
 However, I am feeling overwhelmed for a few reasons:
 
@@ -342,7 +342,7 @@ However, through this writing I feel more settled about continuing to go deeper 
 
 #### CycleJS deep dive!
 
-I'm having a lot of fun today reviewing [the links Andre Staltz gave me in this call](./notes/andre-staltz-call-9-11-17.md). [You can see some notes here](https://github.com/stevekrouse/futureofcoding.org/commit/336815f64b5b0b4f0aeeb7be35b50824acd43653).
+I'm having a lot of fun today reviewing [the links Andre Staltz gave me in this call](./notes/andre-staltz-call-9-11-17.md). [You can see some notes here](https://github.com/futureofcoding/futureofcoding.org/commit/336815f64b5b0b4f0aeeb7be35b50824acd43653).
 
 Need to continue with this next week. I'm both excited by how much I'm into CycleJS (and Eve and STEPS) because it feels like we're all onto something big here. But I'm also a little skeptical because maybe it's all just fads... Either way, I'll keep pulling on these threads to find out.
 
@@ -436,7 +436,7 @@ While they are fun, Bret's websites' interactivity does make it a bit harder to 
 
 ### September 7, 2017 11:40am
 
-Success! Not only did I stick to schedule (despite a 45 minute break to talk with mom), but I also mark today as the end of my Alan Kay Deep Dive Experience. [Here is the final commit.](https://github.com/stevekrouse/futureofcoding.org/commit/3c61d3a143f71c72400a3f23ce086ef904fbaa06)
+Success! Not only did I stick to schedule (despite a 45 minute break to talk with mom), but I also mark today as the end of my Alan Kay Deep Dive Experience. [Here is the final commit.](https://github.com/futureofcoding/futureofcoding.org/commit/3c61d3a143f71c72400a3f23ce086ef904fbaa06)
 
 
 #### Alan Kay Deep Dive Recap
@@ -454,7 +454,7 @@ Ok, I am now out of excuses, it's time to send him an email!
 
 ### September 6, 2017 10:55am
 
-This morning was quite productive! I started research just a 15 minutes late (making my morning coffee and writing in my private journal took longer than expected) so I tacked on some more time to the end of today's research. I got [a decent bit done](https://github.com/stevekrouse/futureofcoding.org/commit/31cb36531e9fa145dfb65832af0cdfb90c39258f), mostly around the STEPS project (which I've decided to only read the final report of unless in reading it I decide to read the progress reports), more specifically the KScript language.
+This morning was quite productive! I started research just a 15 minutes late (making my morning coffee and writing in my private journal took longer than expected) so I tacked on some more time to the end of today's research. I got [a decent bit done](https://github.com/futureofcoding/futureofcoding.org/commit/31cb36531e9fa145dfb65832af0cdfb90c39258f), mostly around the STEPS project (which I've decided to only read the final report of unless in reading it I decide to read the progress reports), more specifically the KScript language.
 I was blown away by the KScript paper! It's so similar in goals and methods to StreamSheets! I think there's a ton I can learn from that paper (and those it references) that I don't yet notice because I am still to early in this project so I'm sure I'll return to it. I also bet there's a lot I can learn from the paper's authors here too!
 
 Thinking about interface design, metaphors, and GUIs, got me thinking about the way in which I use a computer, which I am quite proud of, and inspired me to drone on about it below. Upon re-reading it, I can't help but roll my eyes at my know-it-all tone, yet I don't want to spend the time to re-write it without this tone, so you'll have to make do.
@@ -476,7 +476,7 @@ Given that a goal is to complete tasks in logical chunks, one may inquire how th
 
 ### September 5, 2017 9:11am
 
-I got much more sleep last night, which makes sense given that I barley made it through the day even with TWO glasses of cold-brew, so I feel much better this morning and, no suprise, [feel much better about the reading I did today](https://github.com/stevekrouse/futureofcoding.org/commit/c43a1fe747c5608eb5da91c0d629a7a86a20244c).
+I got much more sleep last night, which makes sense given that I barley made it through the day even with TWO glasses of cold-brew, so I feel much better this morning and, no suprise, [feel much better about the reading I did today](https://github.com/futureofcoding/futureofcoding.org/commit/c43a1fe747c5608eb5da91c0d629a7a86a20244c).
 
 Given that I only did 60ish minutes of research this morning, when I planned to do 90, I added 30 minutes to my research block tomorrow morning.
 
@@ -492,7 +492,7 @@ I worked from 7:30am-10am at which point a friend called and we caught up for 30
 
 As far as the research today goes, I had a lot less fun with Alan's work than I did last time. I wonder if that has more to do with my mood than the content of his writing. My guess as to why I'm less excited about his work is 1) he talks a lot about the implementation details of Smalltalk which feel less relevant today, 2) he spends a lot of time talking about ideas in object oriented programming which don't hit home for me.
 
-Anyways, here's what I accomplished this morning: https://github.com/stevekrouse/futureofcoding.org/commit/d391cf4dd862a0e26c7133a580fd5dc911134296 & https://github.com/stevekrouse/futureofcoding.org/commit/9976e7c46d85a09c1c5c4776e3673b8aac44152a
+Anyways, here's what I accomplished this morning: https://github.com/futureofcoding/futureofcoding.org/commit/d391cf4dd862a0e26c7133a580fd5dc911134296 & https://github.com/futureofcoding/futureofcoding.org/commit/9976e7c46d85a09c1c5c4776e3673b8aac44152a
 
 I'm feeling a little overwhelemed so I may start skimming his work if I continue to have low interest. I'm going to continue for another 30 minutes and then stop for the day, picking up where I leave off tomorrow.
 
@@ -516,7 +516,7 @@ I wonder what Alan Kay, Bret Victor, et al will think of this schedule, and what
 
 #### Alan Kay Deep Dive #1
 
-Here are my notes from this first session: https://github.com/stevekrouse/futureofcoding.org/commit/3851f3f22bb2fe32c849a91a6f369c3f0e19c456
+Here are my notes from this first session: https://github.com/futureofcoding/futureofcoding.org/commit/3851f3f22bb2fe32c849a91a6f369c3f0e19c456
 
 I ended up working for about 3 hours of solid reading and notes which I'm proud of. I took a three 10-15 minute breaks to stretch in between. I had fun the entire time. I feel like a fool for not doing this earlier. This stuff is exactly what I need to be reading right now. It's blowing my mind how much Alan Kay represents what I'm trying to become, almost more than Bret or Mitch because he invented Smalltalk which is probably the closest to my dream that's ever been attempted, both in the spirit of its design and the shift in software paradigm that it represents. I am really excited to continue in the Alan Kay deep dive tomorrow and maybe into next week. And then proceed with the Bret Victor deep dive.
 
@@ -595,10 +595,10 @@ Andre replied already! He is busy preparing for a bunch of conferences so might 
 * I followed through on my plan to review links from Paul, Jonathan Edwards' blog, Imp, Eve, and other links.
 * I did lose a day or two of research, which given that I only get 5ish days for research each week, is a lot. I still made great progress. Thanks to Sophie at the coding space for taking over for me so I could get back to research.
 * Jonathan Edwards
-  * https://github.com/stevekrouse/futureofcoding.org/commit/52a0d72bc49f2d56eebcfcdaae440467008f1cd2
-  * https://github.com/stevekrouse/futureofcoding.org/commit/cd83671ac0a4d68818c40815c9f5202ec078aafc
+  * https://github.com/futureofcoding/futureofcoding.org/commit/52a0d72bc49f2d56eebcfcdaae440467008f1cd2
+  * https://github.com/futureofcoding/futureofcoding.org/commit/cd83671ac0a4d68818c40815c9f5202ec078aafc
 * Conal Elliott
-  * https://github.com/stevekrouse/futureofcoding.org/commit/52a0d72bc49f2d56eebcfcdaae440467008f1cd2
+  * https://github.com/futureofcoding/futureofcoding.org/commit/52a0d72bc49f2d56eebcfcdaae440467008f1cd2
 * Eve
   * http://futureofcoding.org/journal#my-first-full-day-with-eve
 * Imp + Jamie
@@ -616,7 +616,7 @@ Andre replied already! He is busy preparing for a bunch of conferences so might 
 
 ### August 28, 2017 2:28pm
 
-I made [some decent progress on StreamSheets this morning](https://rawcdn.githack.com/stevekrouse/futureofcoding.org/d44e9b61d5b044c3daa3ae8b4b0690a09e1fa55d/prototypes/streamsheets/index.html). It's now simply a table that populates with event information when you do things with your mouse over the "preview div" on the left of the page.
+I made [some decent progress on StreamSheets this morning](https://rawcdn.githack.com/futureofcoding/futureofcoding.org/d44e9b61d5b044c3daa3ae8b4b0690a09e1fa55d/prototypes/streamsheets/index.html). It's now simply a table that populates with event information when you do things with your mouse over the "preview div" on the left of the page.
 
 I'm feeling a little daunted by all of the things that need to happen to build this prototype from a UI perspective. Given that so much of what I'm doing is conjectural, I worry that committing to a design and building it might take too long. I'm looking for a hack of some sort that will allow me to get a sense of what a working version of this *could* look like.
 
@@ -649,7 +649,7 @@ Despite going off-plan, I was still able to skim my way through the resources I 
 
 In terms of next week, I have a bi-weekly research recap on Monday. Given that I missed a few days of research because of my other job over the past two weeks, I would like to sneak in as much time as possible doing productive work before then, so I'll try to get started on developing StreamSheets in the morning and then do my recap writeup and recordning in the afternoon.
 
-On Tuesday morning at 10am, I plan to publish this podcast and website broadly via all the social channels I have available to me ([#25](https://github.com/stevekrouse/futureofcoding.org/issues/25)). Tuesday afternoon is set aside for emails and other random tasks but if I have time, I'll continue working on StreamSheets.
+On Tuesday morning at 10am, I plan to publish this podcast and website broadly via all the social channels I have available to me ([#25](https://github.com/futureofcoding/futureofcoding.org/issues/25)). Tuesday afternoon is set aside for emails and other random tasks but if I have time, I'll continue working on StreamSheets.
 
 Wednesday is totally reserved for research so that's probably StreamSheets.
 
@@ -659,7 +659,7 @@ If all goes well on Thursday, Friday is back on StreamSheets.
 
 ### August 25, 2017 12:16pm
 
-I did a [deep dive into Imp](https://github.com/stevekrouse/futureofcoding.org/commit/c1b7e0677a6a2ccbd456e3b260b54a07eda3df0a) this morning which took about 2 hours. He has a great collection of relevant papers, of which I've read a few and plan to read about a dozen in total. I also shot him an email so hopefully we can become friends.
+I did a [deep dive into Imp](https://github.com/futureofcoding/futureofcoding.org/commit/c1b7e0677a6a2ccbd456e3b260b54a07eda3df0a) this morning which took about 2 hours. He has a great collection of relevant papers, of which I've read a few and plan to read about a dozen in total. I also shot him an email so hopefully we can become friends.
 
 Let's think about the rest of the day. I'm about to go on a 2-hour run-lunch-grocceries break, so I'll be back at the computer around 3pm, which gives me another 3ish hours of work.
 
@@ -757,7 +757,7 @@ Great! This might be a little ambitious, but I can do any overflow on Friday. Th
 
 ### August 14 2017 6:00pm
 
-I made [a decent amount of progress](https://github.com/stevekrouse/futureofcoding.org/commit/52a0d72bc49f2d56eebcfcdaae440467008f1cd2) but also got pulled into a research hole, looking into Conal Elliot's work. It's interesting to see how he differs from Jonathan Edwards, who is the other hole I tried to explore today but failed. I saved his remaining 50 blog posts in a bookmark folder for easy access on Wednesday. Then I'll take a look at Imp and Eve.
+I made [a decent amount of progress](https://github.com/futureofcoding/futureofcoding.org/commit/52a0d72bc49f2d56eebcfcdaae440467008f1cd2) but also got pulled into a research hole, looking into Conal Elliot's work. It's interesting to see how he differs from Jonathan Edwards, who is the other hole I tried to explore today but failed. I saved his remaining 50 blog posts in a bookmark folder for easy access on Wednesday. Then I'll take a look at Imp and Eve.
 
 I'm feeling like this research is doing great things from my brain, and I'm excited to model out my StreamSheets idea according to Conal Elliot's denotational design paradigm, and pair it with the requirements I know I need about metaprogramming and undo-ability and composability from Jonathan Edwards, Expressions of Change, etc.
 
@@ -1238,7 +1238,7 @@ Other tasks I want to work on today:
 
 ### July 20, 2017 9:41am
 
-Yesterday ended up being a particularly productive research session, but I didn't have time to recap it. Here's a pretty solid picture of my progress: https://github.com/stevekrouse/futureofcoding.org/commit/4670a33f503a621f606de0338df1c21d161967fe#diff-424069113a08a4256349764ee38dbbbf
+Yesterday ended up being a particularly productive research session, but I didn't have time to recap it. Here's a pretty solid picture of my progress: https://github.com/futureofcoding/futureofcoding.org/commit/4670a33f503a621f606de0338df1c21d161967fe#diff-424069113a08a4256349764ee38dbbbf
 
 The most exciting part was falling in love with Lamdu, even while I failed to get it to install or run. I have a sinking feeling that it's not going to be compatible with cloud9 so I need to talk to them about that.
 

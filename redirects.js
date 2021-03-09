@@ -1,11 +1,11 @@
 (() => {
 
-  // futureofcoding.org/issues -> https://github.com/stevekrouse/futureofcoding.org/issues
-  // futureofcoding.org/issues/3 -> https://github.com/stevekrouse/futureofcoding.org/issues/3
+  // futureofcoding.org/issues -> https://github.com/futureofcoding/futureofcoding.org/issues
+  // futureofcoding.org/issues/3 -> https://github.com/futureofcoding/futureofcoding.org/issues/3
   const path = window.location.pathname.split("/").slice(1); // get rid of the leading ""
   if (path.length > 0) {
     if (path[0] == "issues") {
-      window.location.replace("https://github.com/stevekrouse/futureofcoding.org/" + path.join("/"));
+      window.location.replace("https://github.com/futureofcoding/futureofcoding.org/" + path.join("/"));
       return;
     }
   }

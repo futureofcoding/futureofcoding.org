@@ -17,11 +17,11 @@ Speaking of work, creating this Future of Coding plan has proved difficult. I pr
 
 I think it's important to explain how I arrived at my ideas. Let me show you my steps. You can even see the eraser marks.
 
-### 1. [/about](https://github.com/stevekrouse/futureofcoding.org/blob/16321d65a0381b78a1aa049d4666aadac9db8319/about.md)
+### 1. [/about](https://github.com/futureofcoding/futureofcoding.org/blob/16321d65a0381b78a1aa049d4666aadac9db8319/about.md)
 
 My first draft did a good job of justifying the path I was currently on. I articulated my goal of making "programming as intuative as Facebook", and my strategy of getting there by building "a functional reactive Scratch." The next steps, according to this plan, are FRP research, working on my design principles, and starting to prototype!
 
-### 2. [/plan v1](https://github.com/stevekrouse/futureofcoding.org/blob/4d37f65a04b418772687da1645d1da8d01a4fc30/plan.md)
+### 2. [/plan v1](https://github.com/futureofcoding/futureofcoding.org/blob/4d37f65a04b418772687da1645d1da8d01a4fc30/plan.md)
 
 Where the last version was justifying, this next version was inquiring. It was directly inspired by [Chris Granger's SPLASH 2017 keynote](https://www.youtube.com/watch?v=a_o-ZzgpiK8), which I highly recommend. It refocused my attention on the end-user. What do *they* want to do with coding?
 
@@ -39,7 +39,7 @@ In it, I also created the follow chart to help organize my dozen ideas on how to
     * OC stands for Open Collective. 
     * FoC Ppl stands for "Future of Coding people", other people working on future of programming tools
 
-### 3. [/plan v2](https://github.com/stevekrouse/futureofcoding.org/blob/7385f741463a6cc23b90c724afb2322860e99dbe/plan.md)
+### 3. [/plan v2](https://github.com/futureofcoding/futureofcoding.org/blob/7385f741463a6cc23b90c724afb2322860e99dbe/plan.md)
 
 I showed the above table to Dan Shipper last week. He was really excited about #5: doing research, creating prototypes, writing essays, and recording podcasts for the Future of Coding community. It does seem like a good match for me: allowing me to focus on my favorite activities, and get to skip dealing with the logistics of revenue, customers, and employees. This path makes sense as long as I don't care about money (beyond basic sustainability) or having control.
 
@@ -53,7 +53,7 @@ The open questions from this plan are:
 
 4. Will I enjoy being a full time "researcher", instead of an entrepreneur?
 
-### 4. [/plan v3](https://github.com/stevekrouse/futureofcoding.org/blob/fcb70a6ebb26033a3dcb308929ca277145f286b8/plan.md)
+### 4. [/plan v3](https://github.com/futureofcoding/futureofcoding.org/blob/fcb70a6ebb26033a3dcb308929ca277145f286b8/plan.md)
 
 In this version of the plan I started keeping this running tab of past versions of the plan. (Something that the [unbreakable-links library](https://github.com/stevekrouse/unbreakable-links) may one day do for each of my files automatically.)
 
@@ -67,7 +67,7 @@ Then I need to do research on FRP or a blockly competitor.
 
 And also think about sustainability.
 
-### 5. [/plan v4](https://github.com/stevekrouse/futureofcoding.org/blob/825e4615a2fcfcde88623d8f1cfd9cece25ac9a7/plan.md)
+### 5. [/plan v4](https://github.com/futureofcoding/futureofcoding.org/blob/825e4615a2fcfcde88623d8f1cfd9cece25ac9a7/plan.md)
 
 Bret Victor's Inventing on Pricinple was the main influence for this version of the plan. It imports social activism's notion of a cause or crusade into engineering. The main features of this plan are:
 

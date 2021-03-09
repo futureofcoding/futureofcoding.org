@@ -53,6 +53,6 @@ If you'd like to read up a bit on the ideas our community was formed around, [Ch
 
 ### Contact
 
-Head to our [contact](/contact) page to get in touch. Spotted an error? You can open a PR for this website [on Github](https://github.com/stevekrouse/futureofcoding.org).
+Head to our [contact](/contact) page to get in touch. Spotted an error? You can open a PR for this website [on Github](https://github.com/futureofcoding/futureofcoding.org).
 
 See you in the future!

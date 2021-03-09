@@ -4,7 +4,7 @@ This is the repo for the Future of Coding website.
 
 The website is a mix of personal logs and projects by Steve Krouse, episode pages for the Future of Coding podcast, and some pages about the Future of Coding community. Steve has turned over the website to community ownership, so things are in flux while we decided what should go where. Still, if you see any typos or have any suggestions, issues and PRs are welcome.
 
-Steve also kept a number of ["virtual webpages"](https://github.com/stevekrouse/futureofcoding.org/issues?q=is%3Aopen+is%3Aissue+label%3A%22virtual+webpage%22) when a GitHub issue is a better format for them than a regular webpage. These might be of interest if you are following along with his research work.
+Steve also kept a number of ["virtual webpages"](https://github.com/futureofcoding/futureofcoding.org/issues?q=is%3Aopen+is%3Aissue+label%3A%22virtual+webpage%22) when a GitHub issue is a better format for them than a regular webpage. These might be of interest if you are following along with his research work.
 
 ## Developing notes
 
