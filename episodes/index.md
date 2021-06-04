@@ -25,6 +25,8 @@ Listen in your podcast player by searching for **Future of Coding**, or via [App
 
 ## Episodes
 
+<span class="date">2021 Jun 03</span> [50 • Mary Rose Cook • Isla & Code Lauren](/episodes/050)
+
 <span class="date">2021 Mar 09</span> [49 • Ravi Chugh • Sketch-n-Sketch](/episodes/049)
 
 <span class="date">2020 Jun 14</span> [48 • Jennifer Jacobs • Para & Dynamic Brushes](/episodes/048)
