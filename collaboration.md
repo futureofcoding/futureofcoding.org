@@ -22,6 +22,8 @@ Are you working on a project that represents your vision for the future of compu
 
 * [Future of Coding Website](http://github.com/futureofcoding/futureofcoding.org) — Yes, the website itself is a project that welcomes contributions. If you'd like to add information, fix errors, or make improvements (especially to the visual design), talk to @ivanreese in the Slack or open a PR.
 
+* The [Mu](https://github.com/akkartik/mu) computer is a software stack for x86 computers that tries to explain itself and its internals to anybody using it. Try it out and get in touch with [Kartik](http://akkartik.name/contact) if you'd like to contribute. There's an infinite number of ways to contribute since I don't know much about most subjects a computer needs. First of all, I'm looking for people to try it out and ask me questions. I'm also interested in project ideas that may be doable on it; there's a _lot_ it can't do at the moment. I'd also appreciate expertise with implementing traditional OS features (e.g. interrupts, a mouse driver), getting it running on real hardware (it only runs on Qemu at the moment), or porting it to new platforms (RISC-V? ARM? Vector instructions?). My primary focus is explaining features to non-experts through an implementation, and I'd love to collaborate with experts to record what they know that they wish outsiders knew about their area.
+
 <br>
 
 ### Contributors Seeking Projects
