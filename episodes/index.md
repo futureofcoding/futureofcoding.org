@@ -3,19 +3,9 @@ title: Podcast
 ---
 
 <style>
-  .date {
-    font-family: monospace;
-    margin-right: 1.5em;
-    color: #444;
-    text-transform: uppercase;
-  }
-
-  @media (max-width: 767px) {
-    display: block;
-    margin: 1.5em 0 0;
-  }
+  .date { font-family: monospace; margin-right: 1.5em; color: #444; text-transform: uppercase; }
+  @media (max-width: 767px) { display: block; margin: 1.5em 0 0; }
 </style>
-
 
 # Podcast
 
@@ -24,6 +14,8 @@ Listen in your podcast player by searching for **Future of Coding**, or via [App
 <br>
 
 ## Episodes
+
+<span class="date">2021 Jul 20</span> [51 • Toby Schachman • Cuttle, Apparatus, and Recursive Drawing](/episodes/051)
 
 <span class="date">2021 Jun 03</span> [50 • Mary Rose Cook • Isla & Code Lauren](/episodes/050)
 
