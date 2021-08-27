@@ -15,6 +15,8 @@ Listen in your podcast player by searching for **Future of Coding**, or via [App
 
 ## Episodes
 
+<span class="date">2021 Aug 27</span> [52 • Amjad Masad • Replit](/episodes/052)
+
 <span class="date">2021 Jul 20</span> [51 • Toby Schachman • Cuttle, Apparatus, and Recursive Drawing](/episodes/051)
 
 <span class="date">2021 Jun 03</span> [50 • Mary Rose Cook • Isla & Code Lauren](/episodes/050)
