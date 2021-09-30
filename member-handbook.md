@@ -12,7 +12,7 @@ You'll learn our preferred way to structure discussions, and the various channel
 
 ## How We Slack
 
-We treat Slack like a message board, not like a chat.
+We treat Slack like a message board, not like a chat. Some of our channels are archived in a public record, and we often refer back to old discussions. This gave rise to a particular style of posting and responding that we try to adhere to.
 
 #### Posting
 To start a discussion, act as though you're creating a forum post or blog post. Prepare what you want to say in its entirety, including any links, and then submit it all in a single message. In other words, don't send multiple messages in a row.
