@@ -27,6 +27,8 @@ When you want to respond to someone's post, always use threaded replies.
 
 Please try to keep thread replies on-topic with respect to the original post. If you want to fork a discussion off in a new direction — say, if you feel a tangent coming on — by all means start a new top-level post that includes a link back to whatever message sparked your digression.
 
+You can use the :thread-please: reaction emoji to signal that something should probably be its own thread.
+
 #### Link Previews
 When you post a message that includes links, those links will often generate rich previews that appear under your message. If you link to a video, the preview will allow the video to be watched right within Slack. This is nice! But often, these previews don't add anything of substance, and they eat up a lot of scroll height. In this case, please delete these rich previews (which, AFAIK, can only be done using the Slack web or desktop clients, not the mobile app). Community moderators will remove these previews too, if they aren't adding much value.
 
