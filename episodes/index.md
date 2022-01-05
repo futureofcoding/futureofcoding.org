@@ -15,6 +15,8 @@ Listen in your podcast player by searching for **Future of Coding**, or via [App
 
 ## Episodes
 
+<span class="date">2022 Jan 05</span> [54 • Ella Hoeppner • Vlojure](/episodes/054)
+
 <span class="date">2021 Nov 07</span> [53 • Scott Anderson • End-user Programming in VR](/episodes/053)
 
 <span class="date">2021 Aug 27</span> [52 • Amjad Masad • Replit](/episodes/052)
