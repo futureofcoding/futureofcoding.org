@@ -15,7 +15,7 @@ Listen in your podcast player by searching for **Future of Coding**, or via [App
 
 ## Episodes
 
-<span class="date">2022-04-12</span> [55 • Man-Computer Symbiosis](/episodes/055)
+<span class="date">2022-04-12</span> [55 • Man-Computer Symbiosis by J.C.R. Licklider](/episodes/055)
 
 <span class="date">2022-01-05</span> [54 • Ella Hoeppner • Vlojure](/episodes/054)
 
