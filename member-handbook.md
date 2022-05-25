@@ -8,6 +8,8 @@ This handbook is your guide to the cultural norms of our community.
 
 You'll learn our preferred way to structure discussions, and the various channels we have and how we use them.
 
+Be sure to also take a look at our main [community](/community) page, and our [code of conduct](https://github.com/futureofcoding/code-of-conduct).
+
 <br>
 
 ## How We Slack
@@ -87,8 +89,10 @@ There are a handful of channels that are focussed on specific topics. You should
 
 ### Location-Specific Channels
 Finally, we have a number of channels for organizing meetups or other activities around the world.
+
 * #in-alberta
 * #in-boston
+* #in-germany
 * #in-london
 * #in-nyc
 * #in-ontario

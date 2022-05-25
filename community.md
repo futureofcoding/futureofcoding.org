@@ -15,6 +15,7 @@ You can join the [Future of Coding Slack community right here](https://join.slac
 ### History Search
 You can explore the archives of our Slack using this [History Search](http://history.futureofcoding.org) tool (h/t to [Mariano Guerra](https://marianoguerra.github.io)).
 
+We're also getting set up on [Linen](https://linen.futureofcoding.org/c/thinking-together/1), a new service that lets you explore and search our discussion history.
 
 ### Matrix Bridge
 Our 4 most popular channels are bridged to Matrix rooms. They should be accessible in any Matrix client using the following aliases:
