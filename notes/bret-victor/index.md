@@ -107,7 +107,7 @@ Beautiful. Yet unclear what problem it solves for whom.
 
 ## _May 2013_ - [Drawing Dynamic Visualizations](https://vimeo.com/66085662) 
 
-Beautiful. Reminds me both of JoyJS and Aprt.us and [Programming with Comics](http://whynotfireworks.com/programming-with-comics/). Crazy how many tools this man inspires!
+Beautiful. Reminds me both of JoyJS and Aprt.us and [Programming with Comics](https://nearthespeedoflight.com/programming-with-comics/). Crazy how many tools this man inspires!
 
 ### [Additional Notes on "Drawing Dynamic Visualizations"](http://worrydream.com/DrawingDynamicVisualizationsTalkAddendum/)
 
