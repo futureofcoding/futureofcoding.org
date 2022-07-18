@@ -12,10 +12,16 @@ Before joining the community, please familiarize yourself with the [member handb
 
 You can join the [Future of Coding Slack community right here](https://join.slack.com/t/futureofcoding/shared_invite/zt-8vhwkhg2-rKZkVYJRKTwLbumJWVNaSw). If this link doesn't work on your mobile device, try it on a computer. Our community is open to any topic related to furthering the evolution of computing.
 
-### History Search
-You can explore the archives of our Slack using this [History Search](http://history.futureofcoding.org) tool (h/t to [Mariano Guerra](https://marianoguerra.github.io)).
+### Archives
+You can explore the history of our Slack in various ways, all of them a bit rough around the edges but super useful:
 
-We're also getting set up on [Linen](https://linen.futureofcoding.org/c/thinking-together/1), a new service that lets you explore and search our discussion history.
+* [Linen](https://linen.futureofcoding.org/c/thinking-together/1), a service for browsing and searching Slack archives.
+    * This tool is the closest to looking/feeling similar to Slack itself.
+* Mariano's [History Search](http://history.futureofcoding.org), created by community member [Mariano Guerra](https://marianoguerra.github.io)), gives you a quick way to search for messages.
+    * Click the date on a message to view it in context.
+    * Runs entirely in the browser, so give it a second to load results.
+* Kartik's [Archives](http://akkartik.name/archives/foc/), created by community member [Kartik Agaram](http://akkartik.name) with index pages that load the full history of any channel all on one page.
+    * There's also a quick way to pull up the #introduce-yourself for any member. Just use [this bookmarklet](http://akkartik.name/archives/foc/share-your-work/1650304069.425419.html), or format a link like this: [http://akkartik.name/archives/foc/introduce-yourself/Kartik-Agaram.html](http://akkartik.name/archives/foc/introduce-yourself/Kartik-Agaram.html)
 
 ### Matrix Bridge
 Our 4 most popular channels are bridged to Matrix rooms. They should be accessible in any Matrix client using the following aliases:
