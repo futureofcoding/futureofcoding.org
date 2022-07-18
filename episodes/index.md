@@ -15,6 +15,8 @@ Listen in your podcast player by searching for **Future of Coding**, or via [App
 
 ## Episodes
 
+<span class="date">2022-07-18</span> [57 • Personal Dynamic Media by Alan Kay & Adele Goldberg](/episodes/057)
+
 <span class="date">2022-06-05</span> [56 • Augmenting Human Intellect by Doug Engelbart](/episodes/056)
 
 <span class="date">2022-04-12</span> [55 • Man-Computer Symbiosis by J.C.R. Licklider](/episodes/055)
