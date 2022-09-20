@@ -15,6 +15,8 @@ Listen in your podcast player by searching for **Future of Coding**, or via [App
 
 ## Episodes
 
+<span class="date">2022-09-20</span> [58 • Structure of a Programming Language Revolution by Richard P. Gabriel](/episodes/058)
+
 <span class="date">2022-07-18</span> [57 • Personal Dynamic Media by Alan Kay & Adele Goldberg](/episodes/057)
 
 <span class="date">2022-06-05</span> [56 • Augmenting Human Intellect by Doug Engelbart](/episodes/056)
