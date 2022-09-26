@@ -43,7 +43,9 @@ Each of our channels has a specific purpose, but it's common that a discussion c
 ### #introduce-yourself
 When you first join the community, please make a post here. You can tell us about your background, your interests, how you got into computer futurism, how you found the Slack — anything that'll help us get to know you as a new member of the community. Feel free to share past project URLs, and tag other members you know.
 
-Please, no links to startups or companies, unless the link points to something deeply technical, philosophical, or otherwise interesting for us to talk about.
+Don't use this channel to talk about a startup or company. We want to learn about you as a person. If all your Future of Coding-relevant work happens to be taking place within a startup, talk about the nature of the work, not the name and nature of the startup. Rather than linking to the startup homepage, link to a blog post or technical document that describes something interesting about what you're working on.
+
+Our community moderators are very sensitive to posts in this channel that feel even slightly like spam. The mods may delete your post and message you about it. They'll encourage you to post again, and help you rewrite your introduction to be more appropriate for our audience.
 
 ### #thinking-together
 If you have thoughts or questions about the future of computing, post them here. This is the place to discuss your own ideas, yearnings, and excitement.
