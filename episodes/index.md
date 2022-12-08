@@ -15,7 +15,7 @@ Listen in your podcast player by searching for **Future of Coding**, or via [App
 
 ## Episodes
 
-<span class="date">2022-10-29</span> [59 • Worse is Better by Richard P. Gabriel](/episodes/059)
+<span class="date">2022-12-08</span> [60 • Magic Ink by Bret Victor](/episodes/060)
 
 <span class="date">2022-09-20</span> [58 • Structure of a Programming Language Revolution by Richard P. Gabriel](/episodes/058)
 
