@@ -16,7 +16,7 @@ The hub of our discussions is [our Slack community](/community). We share ideas,
 
 We have a podcast, too. It's grown and changed quite a bit over the years. Nowadays, [Jimmy Miller](https://twitter.com/jimmyhmiller) and [Ivan Reese](https://twitter.com/spiralganglion) are analyzing notable and notorious works from across the history of our field, with frequent diversions into the absurd. Check out the [episode archive](/episodes). Listen in your podcast player by searching for **Future of Coding**, or via [Apple Podcasts](https://podcasts.apple.com/podcast/future-of-coding/id1265527976) \| [Overcast](https://overcast.fm/itunes1265527976) \| [Google Podcasts](https://podcasts.google.com/?feed=aHR0cHM6Ly93d3cub21ueWNvbnRlbnQuY29tL2QvcGxheWxpc3QvYzQxNTdlNjAtYzdmOC00NzBkLWIxM2YtYTdiMzAwNDBkZjczLzU2NGY0OTNmLWFmMzItNGM0OC04NjJmLWE3YjMwMGU0ZGY0OS9hYzMxNzg1Mi04ODA3LTQ0YjgtOGVmZi1hN2IzMDBlNGRmNTIvcG9kY2FzdC5yc3M) \| [RSS](https://omny.fm/shows/future-of-coding/playlists/podcast.rss)
 
-The most recent episode is: <span class="date">2022-12-08</span> [60 • Magic Ink by Bret Victor](/episodes/060)
+The most recent episode is: [60 • Magic Ink by Bret Victor](/episodes/060)
 
 
 <br>
