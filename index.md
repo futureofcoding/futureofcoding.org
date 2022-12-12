@@ -52,3 +52,6 @@ If you'd like to read up a bit on the ideas our community was formed around, [Ch
 Head to our [contact](/contact) page to get in touch. Spotted an error? You can open a PR for this website [on Github](https://github.com/futureofcoding/futureofcoding.org).
 
 See you in the future!
+
+<!-- Anyone involved in the community who would like to verify their Mastodon link, let me know and I'll add you here! -->
+<a rel="nofollow me" href="https://mastodon.social/@spiralganglion"></a>
