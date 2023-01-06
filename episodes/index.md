@@ -15,6 +15,8 @@ Listen in your podcast player by searching for **Future of Coding**, or via [App
 
 ## Episodes
 
+<span class="date">2023-01-06</span> [61 • Programming as Theory Building by Peter Naur](/episodes/061)
+
 <span class="date">2022-12-08</span> [60 • Magic Ink by Bret Victor](/episodes/060)
 
 <span class="date">2022-10-29</span> [59 • Worse is Better by Richard P. Gabriel](/episodes/059)
