@@ -15,7 +15,7 @@ Listen in your podcast player by searching for **Future of Coding**, or via [App
 
 ## Episodes
 
-<span class="date">2022-12-08</span> [60 • Magic Ink by Bret Victor](/episodes/060)
+<span class="date">2022-12-08</span> [60 • Magic Ink by Bret Victor](/episodes/060)
 
 <span class="date">2022-10-29</span> [59 • Worse is Better by Richard P. Gabriel](/episodes/059)
 
@@ -41,23 +41,23 @@ Listen in your podcast player by searching for **Future of Coding**, or via [App
 
 <span class="date">2020-06-14</span> [48 • Jennifer Jacobs • Para & Dynamic Brushes](/episodes/048)
 
-<span class="date">2020-05-12</span> [47 • Miller Puckette • Max/MSP & Pure Data](/episodes/047)
+<span class="date">2020-05-12</span> [47 • Miller Puckette • Max/MSP & Pure Data](/episodes/047)
 
 <span class="date">2020-04-25</span> [46 • 2020 Community Survey](/episodes/046)
 
 <span class="date">2020-03-01</span> [45 • Devine Lu Linvega • Orca](/episodes/045)
 
-<span class="date">2020-02-03</span> [44 • Devine Lu Linvega • Making Your Own Tools](/episodes/044)
+<span class="date">2020-02-03</span> [44 • Devine Lu Linvega • Making Your Own Tools](/episodes/044)
 
-<span class="date">2019-09-24</span> [43 • Ellen Chisa & Paul Biggar • Unveiling Dark](/episodes/043)
+<span class="date">2019-09-24</span> [43 • Ellen Chisa & Paul Biggar • Unveiling Dark](/episodes/043)
 
 <span class="date">2019-08-15</span> [42 • Lane Shackleton • Blurring the Line Between User and Programmer](/episodes/042)
 
-<span class="date">2019-07-26</span> [41 • Jack Rusher • The Aesthetics of Programming Tools](/episodes/041)
+<span class="date">2019-07-26</span> [41 • Jack Rusher • The Aesthetics of Programming Tools](/episodes/041)
 
-<span class="date">2019-06-13</span> [40 • Michael Arntzenius • Joining Logic, Relational, and Functional Programming](/episodes/040)
+<span class="date">2019-06-13</span> [40 • Michael Arntzenius • Joining Logic, Relational, and Functional Programming](/episodes/040)
 
-<span class="date">2019-06-07</span> [39 • Cyrus Omar • Mathematical Foundations for the Activity of Programming](/episodes/039)
+<span class="date">2019-06-07</span> [39 • Cyrus Omar • Mathematical Foundations for the Activity of Programming](/episodes/039)
 
 <span class="date">2019-04-11</span> [38 • Hillel Wayne • The Case for Formal Methods](/episodes/038)
 
@@ -105,7 +105,7 @@ Listen in your podcast player by searching for **Future of Coding**, or via [App
 
 <span class="date">2017-11-06</span> [16 • Research Recap 8 • Life & Work Planning](/episodes/016)
 
-<span class="date">2017-10-17</span> [15 • Scott Mueller • Raising Genius](/episodes/015)
+<span class="date">2017-10-17</span> [15 • Scott Mueller • Raising Genius](/episodes/015)
 
 <span class="date">2017-10-09</span> [14 • Research Recap 7 • Master Planning](/episodes/014)
 
