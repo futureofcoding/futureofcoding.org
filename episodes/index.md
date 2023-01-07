@@ -13,7 +13,8 @@ Listen in your podcast player by searching for **Future of Coding**, or via [App
 
 <br>
 
-## Episodes
+#### Playful explorations of the rich past and exciting future that we're all building with our silly little computers.
+**Hosted by Jimmy Miller and Ivan Reese.**
 
 <span class="date">2023-01-06</span> [61 • Programming as Theory Building by Peter Naur](/episodes/061)
 
@@ -28,6 +29,11 @@ Listen in your podcast player by searching for **Future of Coding**, or via [App
 <span class="date">2022-06-05</span> [56 • Augmenting Human Intellect by Doug Engelbart](/episodes/056)
 
 <span class="date">2022-04-12</span> [55 • Man-Computer Symbiosis by J.C.R. Licklider](/episodes/055)
+
+<hr>
+
+#### Interviews with toolmakers, researchers, computational artists, educators, and engineers, all with compelling viewpoints on what the future of computing could be.
+**Hosted by Ivan Reese**
 
 <span class="date">2022-01-05</span> [54 • Ella Hoeppner • Vlojure](/episodes/054)
 
@@ -51,11 +57,16 @@ Listen in your podcast player by searching for **Future of Coding**, or via [App
 
 <span class="date">2020-02-03</span> [44 • Devine Lu Linvega • Making Your Own Tools](/episodes/044)
 
+<hr>
+
+#### The podcast alternates between interviews with programming language experts and reflections on my own research journey.
+**Hosted by Steve Krouse**
+
 <span class="date">2019-09-24</span> [43 • Ellen Chisa & Paul Biggar • Unveiling Dark](/episodes/043)
 
 <span class="date">2019-08-15</span> [42 • Lane Shackleton • Blurring the Line Between User and Programmer](/episodes/042)
 
-<span class="date">2019-07-26</span> [41 • Jack Rusher • The Aesthetics of Programming Tools](/episodes/041)
+<span class="date">2019-07-26</span> [41 • Jack Rusher • The Aesthetics of Programming Tools](/episodes/041) <span>(Guest-hosted by Ivan Reese)</span>
 
 <span class="date">2019-06-13</span> [40 • Michael Arntzenius • Joining Logic, Relational, and Functional Programming](/episodes/040)
 
