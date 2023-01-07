@@ -12,7 +12,7 @@ Listen in your podcast player by searching for **Future of Coding**, or via [App
 
 <br>
 
-**Hosted by Jimmy Miller and Ivan Reese.**<br>
+**Hosted by Jimmy Miller and Ivan Reese**<br>
 _Playful explorations of the rich past and exciting future that we're all building with our silly little computers._
 
 <span class="date">2023-01-06</span> [61 • Programming as Theory Building by Peter Naur](/episodes/061)
@@ -32,7 +32,7 @@ _Playful explorations of the rich past and exciting future that we're all buildi
 <hr>
 
 **Hosted by Ivan Reese**<br>
-_Interviews with toolmakers, researchers, computational artists, educators, and engineers, all with compelling viewpoints on what the future of computing could be._
+_Interviews with toolmakers, researchers, and artists, all with compelling viewpoints on the future of computing._
 
 <span class="date">2022-01-05</span> [54 • Ella Hoeppner • Vlojure](/episodes/054)
 
@@ -59,7 +59,7 @@ _Interviews with toolmakers, researchers, computational artists, educators, and 
 <hr>
 
 **Hosted by Steve Krouse**<br>
-_The podcast alternates between interviews with programming language experts and reflections on my own research journey._
+_Interviews with programming language experts and reflections on Steve's own research journey._
 
 <span class="date">2019-09-24</span> [43 • Ellen Chisa & Paul Biggar • Unveiling Dark](/episodes/043)
 
