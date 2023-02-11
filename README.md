@@ -6,6 +6,14 @@ The website is a mix of personal logs and projects by Steve Krouse, episode page
 
 Steve also kept a number of ["virtual webpages"](https://github.com/futureofcoding/futureofcoding.org/issues?q=is%3Aopen+is%3Aissue+label%3A%22virtual+webpage%22) when a GitHub issue is a better format for them than a regular webpage. These might be of interest if you are following along with his research work.
 
+## Admin stuff
+
+The `futureofcoding.org` domain is registered and DNS'd with Hover. Ivan is the only person who has access to the account (TODO: should probably be shared, to reduce bus factor).
+
+Mariano runs the `history.`, `links.`, `newsletter.`, and `search.` subdomains. Currently that stuff is hosted on a Digital Ocean server. I should probably see if he wants to document some of the details here.
+
+The podcast is hosted on OmnyStudio. Don't love that, will probably move it elsewhere.
+
 ## Developing notes
 
 ### Remove large media files locally
