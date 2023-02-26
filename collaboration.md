@@ -52,26 +52,18 @@ This is a spreadsheet listing Future of Coding projects in and around the commun
 
 There are a handful of ongoing projects by and for the community, and many more that could be undertaken. They are collected here for reference. If you have an initiative you'd like to undertake on behalf of the community, [just say so](/contact) and we'll support it however we can.
 
-#### Weekly Newsletter & Tools
+#### Tools
 
-* [**Newsletter Signup**](https://tinyletter.com/marianoguerra/)
-* [**History Search Tool**](http://history.futureofcoding.org)
+If you take a look at the [community](/community) page, you'll see a handful of tools and integrations created by community members. If you feel like creating something similar, that'd be most welcome!
 
-Local hero [Mariano Guerra](https://twitter.com/warianoguerra) (of [Instadeq](https://instadeq.com) fame) publishes a weekly newsletter for the community, collecting links and discussions from the Slack. Given that Slack isn't especially good for permalinks, he also built a cool history search tool.
-
-The history search tool is [on Github](https://github.com/marianoguerra/future-of-coding-weekly/tree/gh-pages/search). I'm not positive, but I believe contributions are welcome.
 
 #### Events
 
-There have been a small [handful](https://youtu.be/JXgZJosmme4) of [virtual](https://youtu.be/XdSE0-HemWQ) and in-person events under the community banner. We've workshopped format ideas for new events, but haven't yet found something with strong resonance. If someone here is interested in organizing a virtual meetup, conference, demo day, or other avenue for coming-together, the banner is yours to [take up](/contact).
+There have been a growing [handful](https://youtu.be/JXgZJosmme4) of [virtual](https://youtu.be/XdSE0-HemWQ) and in-person events under the community banner. We've workshopped format ideas for new events, but haven't yet found something with strong resonance. If someone here is interested in organizing a virtual meetup, conference, demo day, or other avenue for coming-together, the banner is yours to [take up](/contact).
 
 #### Knowledgebase
 
-We need a wiki or zettelkasten, a place to organize the links and projects and ideas amassed during our Slack discussions. We need a place to house curations — of slices of the history of computing, of speculative futures, of people working to bring it about.
-
-There's a small group within community designing a "metazettel". They're working in private, to keep the amount of noise around their project to a minimum. The hope is that they'll create something that we will be able to use, and since it comes from within the community, we'll be able to mold it to suit our needs.
-
-If that project doesn't pan out, we'll set up an existing wiki or similar collaborative knowledge system at the start of 2021.
+We'd love to have a communal wiki or zettelkasten, a place to organize the links and projects and ideas amassed during our Slack discussions. We need a place to house curations — of slices of the history of computing, of speculative futures, of people working to bring it about.
 
 #### Cultural Anthropology
 

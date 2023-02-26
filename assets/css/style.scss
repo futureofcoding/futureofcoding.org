@@ -3,14 +3,14 @@
 
 @import "{{ site.theme }}";
 
-$foc-green: #00c784;
+$foc-green: #0C8;
 
 .foc {
   color: $foc-green;
 }
 
-.title {
-  font-size: 35px;
+nav {
+  margin-bottom: 24px;
 }
 
 nav > a {
@@ -20,8 +20,23 @@ nav > a {
   font-size: 20px;
 }
 
-@media (max-width: 875px) {
-  nav .foc.title {
+.foc.title {
+  display: block;
+  background: $foc-green;
+  margin-bottom: 16px;
+  padding: 0;
+}
+
+.foc.title img {
+  width: 320px;
+  // aspect-ratio: 4 / 1;
+}
+
+@media (max-width: 1012px) {
+  .foc.title {
     display: block;
+    margin-top: -32px!important;
+    margin-left: -16px;
+    width: 100vw;
   }
 }

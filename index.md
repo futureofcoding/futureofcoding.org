@@ -8,13 +8,13 @@ title: Welcome
 
 ### Community
 
-The hub of our discussions is [our Slack community](/community). We share ideas, prototypes, weekly videos, and inspirational links, with a friendly tone and an inclusive [code of conduct](https://github.com/futureofcoding/code-of-conduct). We also organize meetups and events in cities around the world and online. You are heartily encouraged to join.
+We share ideas, prototypes, weekly videos, and inspirational links, with a friendly tone and an inclusive [code of conduct](https://github.com/futureofcoding/code-of-conduct). We also organize meetups and events in cities around the world and online. You are heartily encouraged to [join](/community).
 
 <br>
 
 ### Podcast
 
-We have a podcast, too. It's grown and changed quite a bit over the years. Nowadays, [Jimmy Miller](https://twitter.com/jimmyhmiller) and [Ivan Reese](https://twitter.com/spiralganglion) are analyzing notable and notorious works from across the history of our field, with frequent diversions into the absurd. Check out the [episode archive](/episodes). Listen in your podcast player by searching for **Future of Coding**, or via [Apple Podcasts](https://podcasts.apple.com/podcast/future-of-coding/id1265527976) \| [Overcast](https://overcast.fm/itunes1265527976) \| [Google Podcasts](https://podcasts.google.com/?feed=aHR0cHM6Ly93d3cub21ueWNvbnRlbnQuY29tL2QvcGxheWxpc3QvYzQxNTdlNjAtYzdmOC00NzBkLWIxM2YtYTdiMzAwNDBkZjczLzU2NGY0OTNmLWFmMzItNGM0OC04NjJmLWE3YjMwMGU0ZGY0OS9hYzMxNzg1Mi04ODA3LTQ0YjgtOGVmZi1hN2IzMDBlNGRmNTIvcG9kY2FzdC5yc3M) \| [RSS](https://omny.fm/shows/future-of-coding/playlists/podcast.rss)
+We have a [podcast](/episodes), too. It's grown and changed quite a bit over the years. Presently, [Jimmy Miller](https://twitter.com/jimmyhmiller) and [Ivan Reese](https://twitter.com/spiralganglion) are analyzing notable and notorious works from across the history of our field, with frequent diversions into the absurd. Listen in your podcast player by searching for **Future of Coding**, or via [Apple Podcasts](https://podcasts.apple.com/podcast/future-of-coding/id1265527976) \| [Overcast](https://overcast.fm/itunes1265527976) \| [Google Podcasts](https://podcasts.google.com/?feed=aHR0cHM6Ly93d3cub21ueWNvbnRlbnQuY29tL2QvcGxheWxpc3QvYzQxNTdlNjAtYzdmOC00NzBkLWIxM2YtYTdiMzAwNDBkZjczLzU2NGY0OTNmLWFmMzItNGM0OC04NjJmLWE3YjMwMGU0ZGY0OS9hYzMxNzg1Mi04ODA3LTQ0YjgtOGVmZi1hN2IzMDBlNGRmNTIvcG9kY2FzdC5yc3M) \| [RSS](https://omny.fm/shows/future-of-coding/playlists/podcast.rss)
 
 The most recent episode is: [62 • No Silver Bullet by Fred Brooks](/episodes/062)
 
@@ -23,7 +23,7 @@ The most recent episode is: [62 • No Silver Bullet by Fred Brooks](/episodes/0
 
 ### Newsletter
 
-Want to follow the ongoing work and interesting finds of the community, without being tied to Slack? We have a [weekly newsletter](https://tinyletter.com/marianoguerra/archive) that allows you to follow along from the comfort of your inbox. It features popular links shared by community members, the most interesting discussions, updates on our projects and research, and other highlights.
+Want to follow the ongoing work and interesting finds of the community, without being tied to Slack? We have a [weekly newsletter](https://newsletter.futureofcoding.org/) that allows you to follow along from the comfort of your inbox. It features popular links shared by community members, the most interesting discussions, updates on our projects and research, and other highlights.
 
 <br>
 

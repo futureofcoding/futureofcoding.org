@@ -10,7 +10,7 @@ Steve also kept a number of ["virtual webpages"](https://github.com/futureofcodi
 
 The `futureofcoding.org` domain is registered and DNS'd with Hover. Ivan is the only person who has access to the account (TODO: should probably be shared, to reduce bus factor).
 
-Mariano runs the `history.`, `links.`, `newsletter.`, and `search.` subdomains. Currently that stuff is hosted on a Digital Ocean server. I should probably see if he wants to document some of the details here.
+Mariano runs the `history.`, `links.`, `newsletter.`, `search.`, and `people.` subdomains. Currently that stuff is hosted on a Digital Ocean server. I should probably see if he wants to document some of the details here.
 
 The podcast is hosted on OmnyStudio. Don't love that, will probably move it elsewhere.
 
