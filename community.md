@@ -10,7 +10,7 @@ We share and discuss ideas, prototypes, and inspirational links, with a friendly
 
 Before joining the community, please familiarize yourself with the [member handbook](/member-handbook). We have our own cultural norms, and this handbook will help you feel at home.
 
-Skimmed the handbook? Great! You're ready to [join the Future of Coding Slack community](https://join.slack.com/t/futureofcoding/shared_invite/zt-8vhwkhg2-rKZkVYJRKTwLbumJWVNaSw). (If this link doesn't work, email [admin@futureofcoding.org](mailto:admin@futureofcoding.org?subject=The%20link%20to%20join%20the%20Slack%20didn%27t%20work) for help.)
+Skimmed the handbook? Great! You're ready to [join the Future of Coding Slack community](https://join.slack.com/t/futureofcoding/shared_invite/zt-1uaany0o1-jI5r~TLXn2tfEy8uF2i3bA). (If this link doesn't work, email [admin@futureofcoding.org](mailto:admin@futureofcoding.org?subject=The%20Slack%20invite%20link%20has%20expired) and we'll set up a new one.)
 
 <br>
 
