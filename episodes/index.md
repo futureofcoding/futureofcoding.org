@@ -15,6 +15,8 @@ Listen in your podcast player by searching for **Future of Coding**, or via [App
 **Hosted by Jimmy Miller and Ivan Reese**<br>
 _Playful explorations of the rich past and exciting future that we're all building with our silly little computers._
 
+<span class="date">2023-05-31</span> [65 • Interpreting the Rule(s) of Code by Laurence Diver](/episodes/065)
+
 <span class="date">2023-05-31</span> [64 • INTERCAL by Donald Woods & James Lyon](/episodes/064)
 
 <span class="date">2023-04-01</span> [63 • Out of the Tar Pit by Ben Moseley & Peter Marks](/episodes/063)
