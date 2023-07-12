@@ -20,8 +20,6 @@ Table of Contents
 
 Are you working on a project that represents your vision for the future of computing? Do you want contributions from our community members? [Get in touch](/contact), and we will list it here. Please provide the name of your project, a link to any relevant pages, and what sorts of contribution you would appreciate.
 
-* [Teliva](https://github.com/akkartik/teliva) is an experiment in [end-user programming](https://futureofcoding.org/episodes/033.html), a platform for little text-mode apps that can be edited right from within the platform. The [goal](http://akkartik.name/about): to be able to use an open-source program, get an idea for a simple tweak, open it up, orient yourself, and make the change you visualized -- all in a single afternoon. It's still highly experimental, and welcomes contributions of all kinds from all skill levels. In the spirit of end-user programming, try it out for yourself, suggest apps you'd want to use. The process of building and using apps will naturally give you a better sense of where best to contribute.
-
 * [Future of Coding Website](http://github.com/futureofcoding/futureofcoding.org) — Yes, the website itself is a project that welcomes contributions. If you'd like to add information, fix errors, or make improvements (especially to the visual design), talk to @ivanreese in the Slack or open a PR.
 
 <br>
