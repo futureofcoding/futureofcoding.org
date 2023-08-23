@@ -10,12 +10,16 @@ title: Podcast
 
 Listen in your podcast player by searching for **Future of Coding**, or via [Apple Podcasts](https://podcasts.apple.com/podcast/future-of-coding/id1265527976) \| [Overcast](https://overcast.fm/itunes1265527976) \| [Google Podcasts](https://podcasts.google.com/?feed=aHR0cHM6Ly93d3cub21ueWNvbnRlbnQuY29tL2QvcGxheWxpc3QvYzQxNTdlNjAtYzdmOC00NzBkLWIxM2YtYTdiMzAwNDBkZjczLzU2NGY0OTNmLWFmMzItNGM0OC04NjJmLWE3YjMwMGU0ZGY0OS9hYzMxNzg1Mi04ODA3LTQ0YjgtOGVmZi1hN2IzMDBlNGRmNTIvcG9kY2FzdC5yc3M) \| [RSS](https://omny.fm/shows/future-of-coding/playlists/podcast.rss)
 
+[Support the show](https://www.patreon.com/futureofcoding) to enjoy our bonus episodes and the warmth of your own heart.
+
 <br>
 
 **Hosted by Jimmy Miller and Ivan Reese**<br>
 _Playful explorations of the rich past and exciting future that we're all building with our silly little computers._
 
-<span class="date">2023-05-31</span> [65 • Interpreting the Rule(s) of Code by Laurence Diver](/episodes/065)
+<span class="date">2023-08-22</span> [66 • A Small Matter of Programming by Bonnie Nardi](/episodes/066)
+
+<span class="date">2023-07-03</span> [65 • Interpreting the Rule(s) of Code by Laurence Diver](/episodes/065)
 
 <span class="date">2023-05-31</span> [64 • INTERCAL by Donald Woods & James Lyon](/episodes/064)
 
