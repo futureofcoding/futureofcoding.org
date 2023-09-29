@@ -16,7 +16,7 @@ We share ideas, prototypes, weekly videos, and inspirational links, with a frien
 
 We have a [podcast](/episodes), too. It's grown and changed quite a bit over the years. Presently, [Jimmy Miller](https://twitter.com/jimmyhmiller) and [Ivan Reese](https://twitter.com/spiralganglion) are analyzing notable and notorious works from across the history of our field, with one eye on philosophy and frequent diversions into the absurd. Listen in your podcast player by searching for **Future of Coding**, or via [Apple Podcasts](https://podcasts.apple.com/podcast/future-of-coding/id1265527976) \| [Overcast](https://overcast.fm/itunes1265527976) \| [Google Podcasts](https://podcasts.google.com/?feed=aHR0cHM6Ly93d3cub21ueWNvbnRlbnQuY29tL2QvcGxheWxpc3QvYzQxNTdlNjAtYzdmOC00NzBkLWIxM2YtYTdiMzAwNDBkZjczLzU2NGY0OTNmLWFmMzItNGM0OC04NjJmLWE3YjMwMGU0ZGY0OS9hYzMxNzg1Mi04ODA3LTQ0YjgtOGVmZi1hN2IzMDBlNGRmNTIvcG9kY2FzdC5yc3M) \| [RSS](https://omny.fm/shows/future-of-coding/playlists/podcast.rss) and if you feel so inclined, [become a supporter](https://www.patreon.com/futureofcoding) to access bonus content and warm fuzzy feelings.
 
-The most recent episode is: [66 • A Small Matter of Programming by Bonnie Nardi](/episodes/066)
+The most recent episode is: [67 • Considered Harmful](/episodes/067)
 
 <br>
 

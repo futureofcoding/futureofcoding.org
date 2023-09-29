@@ -17,6 +17,8 @@ Listen in your podcast player by searching for **Future of Coding**, or via [App
 **Hosted by Jimmy Miller and Ivan Reese**<br>
 _Playful explorations of the rich past and exciting future that we're all building with our silly little computers._
 
+<span class="date">2023-09-29</span> [67 • Considered Harmful](/episodes/067)
+
 <span class="date">2023-08-22</span> [66 • A Small Matter of Programming by Bonnie Nardi](/episodes/066)
 
 <span class="date">2023-07-03</span> [65 • Interpreting the Rule(s) of Code by Laurence Diver](/episodes/065)
