@@ -1,9 +1,9 @@
 ---
 ---
 
-@import '{{ site.theme }}';
+@import "{{ site.theme }}";
 
-$foc-green: #0c8;
+$foc-green: #0C8;
 
 // Used "foc" as the first half since the light and dark colors were derived from foc-green; hsl(160, 100%, 40%).
 // Should they be renamed, not to look like the "official" light and dark colors?
