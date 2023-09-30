@@ -4,6 +4,7 @@ title: Podcast
 
 <style>
   .date { font-family: monospace; margin-right: 1.5em; color: #444; text-transform: uppercase; }
+  @media (prefers-color-scheme: dark) {.date {color: #98B2A9 }}
 </style>
 
 # Podcast
