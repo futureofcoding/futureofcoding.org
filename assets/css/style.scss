@@ -1,9 +1,9 @@
 ---
 ---
 
-@import "{{ site.theme }}";
+@import '{{ site.theme }}';
 
-$foc-green: #0C8;
+$foc-green: #0c8;
 
 // Used "foc" as the first half since the light and dark colors were derived from foc-green; hsl(160, 100%, 40%).
 // Should they be renamed, not to look like the "official" light and dark colors?
@@ -15,39 +15,41 @@ body {
   color: $foc-dark;
 }
 
-.foc {
-  color: $foc-green;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin-bottom: 3em;
 }
 
 nav {
-  margin-bottom: 24px;
+  display: grid;
+  gap: 1em;
+  font-weight: 600;
 }
 
 nav > a {
-  display: inline-block;
-  color: $gray-500;
-  padding-right: 10px;
-  font-size: 20px;
+  color: inherit;
 }
 
 .foc.title {
   display: block;
-  background: $foc-green;
-  margin-bottom: 16px;
+  margin-left: -36px; //line up F with outside border. Edit svg instead?
   padding: 0;
 }
 
-.foc.title img {
-  width: 320px;
+.foc.title > img {
+  width: min(600px, 98vw);
   // aspect-ratio: 4 / 1;
+  background-color: transparent;
 }
 
 @media (max-width: 1012px) {
   .foc.title {
-    display: block;
     margin-top: -32px!important;
-    margin-left: -16px;
-    width: 100vw;
+    // width: 98vw; //stops the scroll bar showing up. Moved to width: min() l44
   }
 }
 
@@ -56,11 +58,9 @@ nav > a {
     background: $foc-dark;
     color: $foc-light;
   }
-  nav > a {
-    color: $gray-400;
-  }
-  h1, h2 {
-    border-bottom: 1px solid hsla(160, 3%, 100%, 0.32)!important; //sorry, need to move this somewhere it doesn't need important
+  h1,
+  h2 {
+    border-bottom: 1px solid hsla(160, 3%, 100%, 0.32) !important; //sorry, need to move this somewhere it doesn't need important
   }
   a {
     color: $foc-green;
