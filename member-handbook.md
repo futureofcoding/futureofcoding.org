@@ -33,8 +33,10 @@ Please try to keep thread replies on-topic with respect to the original post. If
 
 You can use the :thread-please: reaction emoji to signal that something should probably be its own thread.
 
-#### Link Previews
-When you post a message that includes a link, Slack will often generate a rich preview that appears under your message. If you link to a video, the preview will allow the video to be watched right within Slack. This is nice! But often, these previews don't add anything of substance, and they eat up a lot of scroll height. In this case, please remove the rich preview (which, AFAIK, can only be done using the Slack web or desktop clients, not the mobile app). Admins will also remove these previews from time to time.
+#### Links & Previews
+When sharing a link, please write an explanation of the thing you're linking to, and attach the link to some part of that text. In other words, we shouldn't see "http://blah.blah/blah" in your message. Handy tip: if you have a URL copied to your clipboard, you can select some text and then paste. Instead of replacing the selected text, Slack will turn that text into a clickable hyperlink using the URL you copied.
+
+Slack will often generate a rich preview that appears under your message. If you link to a video, the preview will allow the video to be watched right within Slack. This is nice! But often, these previews don't add anything of substance, and they eat up a lot of scroll height. In this case, please remove the rich preview (which, AFAIK, can only be done using the Slack web or desktop clients, not the mobile app). Note that Admins will also remove these previews as needed.
 
 #### Slack Apps
 Unsolicited requests to add Slack Apps will be ignored. If you'd like to install an app, please start a discussion about it in `#administrivia` or DM `@ivanreese`. Describe in detail how the app will benefit the community at large, and how it aligns with the goals and vibe of the community. A request from an active member for an app that addresses a longtime pain felt by many is more likely to be approved. A request from a new member or an app that addresses a personal inconvenience is not.
