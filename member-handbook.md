@@ -116,13 +116,14 @@ There are a handful of channels that are focussed on specific topics. You should
 Finally, we have a number of channels for organizing meetups or other activities around the world.
 
 - #in-alberta
-- #in-atl
+- #in-atlanta
 - #in-boston
 - #in-germany
 - #in-israel
 - #in-london
-- #in-nyc
+- #in-new-york
 - #in-ontario
+- #in-philadelphia
+- #in-san-francisco
 - #in-seattle
-- #in-sf
-- #in-socal
+- #in-southern-california
