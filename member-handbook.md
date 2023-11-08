@@ -119,6 +119,7 @@ Finally, we have a number of channels for organizing meetups or other activities
 - #in-atlanta
 - #in-boston
 - #in-germany
+- #in-india
 - #in-israel
 - #in-london
 - #in-new-york
