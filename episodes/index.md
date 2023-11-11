@@ -53,7 +53,7 @@ _Interviews with toolmakers, researchers, and artists, all with compelling viewp
 
 <span class="date">2021-11-07</span> [53 • Scott Anderson • End-user Programming in VR](/episodes/053)
 
-<span class="date">2021-08-27</span> [52 • Amjad Masad • Replit](/episodes/052)
+<span class="date">2021-08-27</span> [52 • Amjad Masad • Replit](/episodes/052) <span>(Interviewed by Steve Krouse)</span>
 
 <span class="date">2021-07-20</span> [51 • Toby Schachman • Cuttle, Apparatus, and Recursive Drawing](/episodes/051)
 
@@ -61,7 +61,7 @@ _Interviews with toolmakers, researchers, and artists, all with compelling viewp
 
 <span class="date">2021-03-09</span> [49 • Ravi Chugh • Sketch-n-Sketch](/episodes/049)
 
-<span class="date">2020-06-14</span> [48 • Jennifer Jacobs • Para & Dynamic Brushes](/episodes/048)
+<span class="date">2020-06-14</span> [48 • Jennifer Jacobs • Para & Dynamic Brushes](/episodes/048) <span>(Interviewed by Steve Krouse)</span>
 
 <span class="date">2020-05-12</span> [47 • Miller Puckette • Max/MSP & Pure Data](/episodes/047)
 
@@ -80,7 +80,7 @@ _Interviews with programming language experts and reflections on Steve's own res
 
 <span class="date">2019-08-15</span> [42 • Lane Shackleton • Blurring the Line Between User and Programmer](/episodes/042)
 
-<span class="date">2019-07-26</span> [41 • Jack Rusher • The Aesthetics of Programming Tools](/episodes/041) <span>(Guest-hosted by Ivan Reese)</span>
+<span class="date">2019-07-26</span> [41 • Jack Rusher • The Aesthetics of Programming Tools](/episodes/041) <span>(Interviewed by Ivan Reese)</span>
 
 <span class="date">2019-06-13</span> [40 • Michael Arntzenius • Joining Logic, Relational, and Functional Programming](/episodes/040)
 
