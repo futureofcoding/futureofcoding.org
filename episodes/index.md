@@ -18,6 +18,8 @@ Listen in your podcast player by searching for **Future of Coding**, or via [App
 **Hosted by Jimmy Miller and Ivan Reese and nobody else**<br>
 _Playful explorations of the rich past and exciting future that we're all building with our silly little computers._
 
+<span class="date">2023-12-28</span> [69 • Myths & Mythconceptions by Mary Shaw](/episodes/069)
+
 <span class="date">2023-11-18</span> [68 • Propositions as Types by Philip Wadler](/episodes/068)
 
 <span class="date">2023-09-29</span> [67 • Considered Harmful](/episodes/067)
