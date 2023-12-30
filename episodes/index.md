@@ -15,10 +15,13 @@ Listen in your podcast player by searching for **Future of Coding**, or via [App
 
 <br>
 
-**Hosted by Jimmy Miller and Ivan Reese and nobody else**<br>
-_Playful explorations of the rich past and exciting future that we're all building with our silly little computers._
+**Hosted by Jimmy Miller, Ivan Reese, and Lu Wilson**<br>
+_An imaginative, ruminative romp through the land of poisoned sand._
 
 <span class="date">2023-12-28</span> [69 • Myths & Mythconceptions by Mary Shaw](/episodes/069)
+
+**Hosted by Jimmy Miller and Ivan Reese**<br>
+_Playful explorations of the rich past and exciting future that we're all building with our silly little computers._
 
 <span class="date">2023-11-18</span> [68 • Propositions as Types by Philip Wadler](/episodes/068)
 
@@ -28,7 +31,7 @@ _Playful explorations of the rich past and exciting future that we're all buildi
 
 <span class="date">2023-07-03</span> [65 • Interpreting the Rule(s) of Code by Laurence Diver](/episodes/065)
 
-<span class="date">2023-05-31</span> [64 • INTERCAL by Donald Woods & James Lyon](/episodes/064)
+<span class="date">2023-05-31</span> [64 • INTERCAL by Donald Woods & James Lyon](/episodes/064) <span>(A wild Lu Wilson appears, but it's a secret, shh)</span>
 
 <span class="date">2023-04-01</span> [63 • Out of the Tar Pit by Ben Moseley & Peter Marks](/episodes/063)
 
