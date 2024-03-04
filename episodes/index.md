@@ -18,6 +18,8 @@ Listen in your podcast player by searching for **Future of Coding**, or via [App
 **Hosted by Jimmy Miller, Ivan Reese, and Lu Wilson**<br>
 _An imaginative, ruminative romp through the land of poisoned sand._
 
+<span class="date">2024-03-03</span> [70 • Beyond Efficiency by Dave Ackley](/episodes/070)
+
 <span class="date">2023-12-28</span> [69 • Myths & Mythconceptions by Mary Shaw](/episodes/069)
 
 **Hosted by Jimmy Miller and Ivan Reese**<br>
