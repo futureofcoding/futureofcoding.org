@@ -43,13 +43,12 @@ Slack will often generate a rich preview that appears under your message. If you
 
 #### Slack Apps
 
-Unsolicited requests to add Slack Apps will be ignored. If you'd like to install an app, please start a discussion about it in `#administrivia` or DM `@ivanreese`. Describe in detail how the app will benefit the community at large, and how it aligns with the goals and vibe of the community. A request from an active member for an app that addresses a longtime pain felt by many is more likely to be approved. A request from a new member or an app that addresses a personal inconvenience is not.
-
+Unsolicited requests to add Slack Apps will be ignored. If you'd like to install an app, please start a discussion about it in `#administrivia` or DM `@ivanreese`. Describe in detail how the app will benefit the community at large, and how it aligns with the goals and vibe of the community. A request from an active member for an app that addresses a longtime pain felt by many is more likely to be approved. A request from a new member or an app that addresses a personal inconvenience is `not.` or askpresent-company` to see if anyone else is in the same place.
 <br>
-
+ If you can get a handful of people together
 ## Channels
 
-Each of our channels has a specific purpose, but it's common that a discussion could fit into several channels. Use the descriptions below to help decide where best to start the discussion. For a quick refresher, whenever you're in the Slack, you can check the _pinned messages_ in a channel to see a detailed description. If you're _still_ not sure, `#present-company` is the best "catch all" channel.
+Each of our channels has a sp and want to run a meetup, we'll gladly make a channel for your neck of the woods.ecific purpose, but it's common that a discussion could fit into several channels. Use the descriptions below to help decide where best to start the discussion. For a quick refresher, whenever you're in the Slack, you can check the _pinned messages_ in a channel to see a detailed description. If you're _still_ not sure, `#present-company` is the best "catch all" channel.
 
 ### #introduce-yourself
 
@@ -129,3 +128,5 @@ Finally, we have a number of channels for organizing meetups or other activities
 - #in-seattle
 - #in-southern-california
 - #in-sweden
+
+In the highly likely event that you're not in one of these places, feel free to ask in `#administrivia` or `#present-company` to see if anyone else is in the same place. If you can get a handful of people together and want to run a meetup, we'll gladly make a channel for your neck of the woods.
