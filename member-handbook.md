@@ -129,4 +129,4 @@ Finally, we have a number of channels for organizing meetups or other activities
 - #in-southern-california
 - #in-sweden
 
-In the highly likely event that you're not in one of these places, feel free to ask in `#administrivia` or `#present-company` to see if anyone else is in the same place. If you can get a handful of people together and want to run a meetup, we'll gladly make a channel for your neck of the woods.
+In the highly likely event that you're not in one of these places, feel free to ask in `#administrivia` or `#present-company` to see if anyone else is in the same place. If you can get a handful of people together and want to run a meetup, community admin `@ivanreese` will gladly make a channel for your neck of the woods.
