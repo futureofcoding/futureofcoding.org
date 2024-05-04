@@ -128,3 +128,4 @@ Finally, we have a number of channels for organizing meetups or other activities
 - #in-san-francisco
 - #in-seattle
 - #in-southern-california
+- #in-sweden
