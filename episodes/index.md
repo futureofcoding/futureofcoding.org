@@ -15,7 +15,7 @@ Listen in your podcast player by searching for **Future of Coding**, or via [App
 
 <br>
 
-**Hosted by Ivan Reese, Jimmy Miller, and Lu Wilson**<br> _An imaginative, ruminative romp through the land of poisoned sand._
+**Hosted by [Ivan Reese](https://ivanish.ca), [Jimmy Miller](https://jimmyhmiller.github.io/), and [Lu Wilson](https://todepond.com)**<br> _A romp through the field of computer programming, grapling with our history and wondering what should come next. A mix of deeply technical talk, philosophy, art, dark lore, and good takes._
 
 <span class="date">2024-06-19</span> [72 • Pygmalion by David C. Smith](/episodes/072)
 
@@ -27,7 +27,7 @@ Listen in your podcast player by searching for **Future of Coding**, or via [App
 
 <hr>
 
-**Hosted by Ivan Reese and Jimmy Miller**<br> _Playful explorations of the rich past and exciting future that we're all building with our silly little computers._
+**Hosted by [Ivan Reese](https://ivanish.ca) and [Jimmy Miller](https://jimmyhmiller.github.io/)**<br> _Close readings of influential works in computer science, with frequent diversions into the absurd._
 
 <span class="date">2023-11-18</span> [68 • Propositions as Types by Philip Wadler](/episodes/068)
 
@@ -59,7 +59,7 @@ Listen in your podcast player by searching for **Future of Coding**, or via [App
 
 <hr>
 
-**Hosted by Ivan Reese**<br> _Interviews with toolmakers, researchers, and artists, all with compelling viewpoints on the future of computing._
+**Hosted by [Ivan Reese](https://ivanish.ca)**<br> _Interviews with toolmakers, researchers, and artists, all with compelling viewpoints on the future of computing._
 
 <span class="date">2022-01-05</span> [54 • Ella Hoeppner • Vlojure](/episodes/054)
 
@@ -85,7 +85,7 @@ Listen in your podcast player by searching for **Future of Coding**, or via [App
 
 <hr>
 
-**Hosted by Steve Krouse**<br> _Interviews with programming language experts and reflections on Steve's own research journey._
+**Hosted by [Steve Krouse](https://stevekrouse.com)**<br> _Interviews with programming experts and reflections on Steve's own research journey._
 
 <span class="date">2019-09-24</span> [43 • Ellen Chisa & Paul Biggar • Unveiling Dark](/episodes/043)
 
