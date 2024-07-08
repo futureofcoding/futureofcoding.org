@@ -15,7 +15,7 @@ Listen in your podcast player by searching for **Future of Coding**, or via [App
 
 <br>
 
-**Hosted by Jimmy Miller, Ivan Reese, and Lu Wilson**<br> _An imaginative, ruminative romp through the land of poisoned sand._
+**Hosted by Ivan Reese, Jimmy Miller, and Lu Wilson**<br> _An imaginative, ruminative romp through the land of poisoned sand._
 
 <span class="date">2024-06-19</span> [72 • Pygmalion by David C. Smith](/episodes/072)
 
@@ -25,7 +25,9 @@ Listen in your podcast player by searching for **Future of Coding**, or via [App
 
 <span class="date">2023-12-28</span> [69 • Myths & Mythconceptions by Mary Shaw](/episodes/069)
 
-**Hosted by Jimmy Miller and Ivan Reese**<br> _Playful explorations of the rich past and exciting future that we're all building with our silly little computers._
+<hr>
+
+**Hosted by Ivan Reese and Jimmy Miller**<br> _Playful explorations of the rich past and exciting future that we're all building with our silly little computers._
 
 <span class="date">2023-11-18</span> [68 • Propositions as Types by Philip Wadler](/episodes/068)
 
