@@ -17,6 +17,8 @@ Listen in your podcast player by searching for **Future of Coding**, or via [App
 
 **Hosted by [Ivan Reese](https://ivanish.ca), [Jimmy Miller](https://jimmyhmiller.github.io/), and [Lu Wilson](https://todepond.com)**<br> _A romp through the field of computer programming, grapling with our history and wondering what should come next. A mix of deeply technical talk, philosophy, art, dark lore, and good takes._
 
+<span class="date">2024-08-25</span> [73 • Moving Beyond Syntax: Lessons from 20 Years of Blocks Programming in AgentSheets by Alexander Repenning](/episodes/073)
+
 <span class="date">2024-06-19</span> [72 • Pygmalion by David C. Smith](/episodes/072)
 
 <span class="date">2024-04-20</span> [71 • Elephant in the Room](/episodes/071)
