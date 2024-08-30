@@ -20,7 +20,7 @@ As a kid, I was particularly "bad at math." However, as I was a computer nerd, I
 
 I went to the University of Pennsylvania for college. After taking most of the CS classes at Penn, I left without graduating in early 2014, and went to work at [Looker](https://looker.com). I left Looker at the end of 2014.
 
-While at college and Looker, I was deeply influenced by Bret Victor and Seymour Papert. Ever since my experience of transforming from a self-identified stupid person to a smart person in middle school, I was curious about how it happened and if similar changes could be nurtured in others. Reading Papert in college, I learned that my own transformation was was no accident - Papert intentionally set out to create mathematical thinkers from math-haters with LOGO, and he accomplished his goal in me.
+While at college and Looker, I was deeply influenced by Bret Victor and Seymour Papert. Ever since my experience of transforming from a self-identified stupid person to a smart person in middle school, I was curious about how it happened and if similar changes could be nurtured in others. Reading Papert in college, I learned that my own transformation was no accident - Papert intentionally set out to create mathematical thinkers from math-haters with LOGO, and he accomplished his goal in me.
 
 With these thoughts in mind, in July 2015 I co-founded [The Coding Space](https://thecodingspace.com), where we taught kids to code in a self-paced environment similar in spirit to IMACS. I created [a Scratch-based curriculum](https://coding.space), as well as [WoofJS](https://woofjs.com), a JavaScript framework and online IDE to transition kids from Scratch to JS.
 
