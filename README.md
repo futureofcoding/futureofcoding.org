@@ -47,7 +47,7 @@ git read-tree -mu HEAD
 
 ### Add _data/git-log.json changes
 
-This is how I generage [futureofcoding.org/log](futureofcoding.org/log).
+This is how I generate [futureofcoding.org/log](futureofcoding.org/log).
 
 First, `pip install git2json` as explained [here](https://github.com/tarmstrong/git2json#installation).
 
