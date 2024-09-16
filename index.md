@@ -20,6 +20,12 @@ The most recent episode is: [73 • Moving Beyond Syntax: Lessons from 20 Years 
 
 <br>
 
+### Wiki
+
+Just launched — we now have a [wiki](https://wiki.futureofcoding.org) that anyone can edit. It's a place to organize the links and projects and ideas amassed during our Slack discussions. The project is still very (very) young, so please share your desires and frustrations on the Slack in #present-company.
+
+<br>
+
 ### Newsletter
 
 Want to follow the ongoing work and interesting finds of the community, without being tied to Slack? We have a [weekly newsletter](https://newsletter.futureofcoding.org/) that allows you to follow along from the comfort of your inbox. It features popular links shared by community members, the most interesting discussions, updates on our projects and research, and other highlights.
