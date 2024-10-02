@@ -8,13 +8,20 @@ title: Welcome
 
 ### Community
 
-We share ideas, prototypes, weekly videos, and inspirational links, with a friendly tone and an inclusive [code of conduct](https://github.com/futureofcoding/code-of-conduct). We also organize meetups and events in cities around the world and online. You are heartily encouraged to [join](/community).
+We share ideas, prototypes, weekly videos, and inspirational links, with a friendly tone and an inclusive [code of conduct](https://github.com/futureofcoding/code-of-conduct). You are heartily encouraged to [join](/community).
+
+
+<br>
+
+### Meetups
+
+Our members organize meetups and events in cities around the world and online. The [London](https://lu.ma/foclondon) meetup is especially popular and deserves sepcial mention. 
 
 <br>
 
 ### Podcast
 
-We have a [podcast](/episodes), too. It's grown and changed quite a bit over the years. Presently, hosts [Ivan Reese](https://ivanish.ca), [Jimmy Miller](https://jimmyhmiller.github.io/), and [Lu Wilson](https://todepond.com) share notable and notorious works from across the history of our field, with one eye on philosophy and frequent diversions into the absurd. Listen in your podcast player by searching for **Future of Coding**, or via [Apple Podcasts](https://podcasts.apple.com/podcast/future-of-coding/id1265527976) \| [Overcast](https://overcast.fm/itunes1265527976) \| [RSS](https://omny.fm/shows/future-of-coding/playlists/podcast.rss) and if you feel so inclined, [become a supporter](https://www.patreon.com/futureofcoding) to access bonus content and warm fuzzy feelings.
+There's a [podcast](/episodes), too. It's grown and changed quite a bit over the years. Presently, hosts [Ivan Reese](https://ivanish.ca), [Jimmy Miller](https://jimmyhmiller.github.io/), and [Lu Wilson](https://todepond.com) share notable and notorious works from across the history of our field, with one eye on philosophy and frequent diversions into the absurd. Listen in your podcast player by searching for **Future of Coding**, or via [Apple Podcasts](https://podcasts.apple.com/podcast/future-of-coding/id1265527976) \| [Overcast](https://overcast.fm/itunes1265527976) \| [RSS](https://omny.fm/shows/future-of-coding/playlists/podcast.rss) and if you feel so inclined, [become a supporter](https://www.patreon.com/futureofcoding) to access bonus content and warm fuzzy feelings.
 
 The most recent episode is: [73 • Moving Beyond Syntax: Lessons from 20 Years of Blocks Programming in AgentSheets by Alexander Repenning](/episodes/073)
 
