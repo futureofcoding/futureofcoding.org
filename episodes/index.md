@@ -15,7 +15,9 @@ Listen in your podcast player by searching for **Future of Coding**, or via [App
 
 <br>
 
-**Hosted by [Ivan Reese](https://ivanish.ca), [Jimmy Miller](https://jimmyhmiller.github.io/), and [Lu Wilson](https://todepond.com)**<br> _A romp through the field of computer programming, grapling with our history and wondering what should come next. A mix of deeply technical talk, philosophy, art, dark lore, and good takes._
+**Hosted by [Ivan Reese](https://ivanish.ca), [Jimmy Miller](https://jimmyhmiller.github.io/), and [Lu Wilson](https://todepond.com)**<br> _A romp through the field of computer programming, grappling with our history and wondering what should come next. A mix of deeply technical talk, philosophy, art, dark lore, and good takes._
+
+<span class="date">2025-01-04</span> [74 • Is the Whole Universe a Computer™?](/episodes/074)
 
 <span class="date">2024-08-25</span> [73 • Moving Beyond Syntax: Lessons from 20 Years of Blocks Programming in AgentSheets by Alexander Repenning](/episodes/073)
 
