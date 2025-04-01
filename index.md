@@ -2,7 +2,9 @@
 title: Welcome
 ---
 
-**Future of Coding** is an online community with a welcoming, cooperative, and revolutionary spirit. We are unified in the belief that the common practice of programming is tragically less humane than it could be. There's a world of possibilities that get more beautiful the further away from the norm you go. We're here to explore this world together, to discuss ideas about theory and practice, and to champion and support our members' research and development efforts to _reimagine computing_.
+**Feelings of Computering** is an online community with a welcoming, cooperative, and revolutionary spirit. We are unified in the belief that the computer is tragically less humane than it could be. There's a world of possibilities that get more beautiful the further away from the norm you go. We're here to explore this world together, to discuss ideas about theory and practice, and to champion and support our members' research and development efforts to _reimagine the computer_.
+
+(Editor's note: the original name of this community was "Future of Coding", but that name is bad so we [changed it](/the-name).)
 
 <br>
 
@@ -21,7 +23,7 @@ Our members organize meetups and events in cities around the world and online. T
 
 ### Podcast
 
-There's a [podcast](/episodes), too. It's grown and changed quite a bit over the years. Presently, hosts [Ivan Reese](https://ivanish.ca), [Jimmy Miller](https://jimmyhmiller.github.io/), and [Lu Wilson](https://todepond.com) share notable and notorious works from across the history of our field, with one eye on philosophy and frequent diversions into the absurd. Listen in your podcast player by searching for **Future of Coding**, or via [Apple Podcasts](https://podcasts.apple.com/podcast/future-of-coding/id1265527976) \| [Overcast](https://overcast.fm/itunes1265527976) \| [RSS](https://omny.fm/shows/future-of-coding/playlists/podcast.rss) and if you feel so inclined, [become a supporter](https://www.patreon.com/futureofcoding) to access bonus content and warm fuzzy feelings.
+There's a [podcast](/episodes), too. It's grown and changed quite a bit over the years. Presently, hosts [Ivan Reese](https://ivanish.ca), [Jimmy Miller](https://jimmyhmiller.github.io/), and [Lu Wilson](https://todepond.com) share notable and notorious works from across the history of our field, with one eye on philosophy and frequent diversions into the absurd. Listen in your podcast player by searching for the old name **Future of Coding**, or via [Apple Podcasts](https://podcasts.apple.com/podcast/future-of-coding/id1265527976) \| [Overcast](https://overcast.fm/itunes1265527976) \| [RSS](https://omny.fm/shows/future-of-coding/playlists/podcast.rss) and if you feel so inclined, [become a supporter](https://www.patreon.com/futureofcoding) to access bonus content and warm fuzzy feelings.
 
 The most recent episode is: [75 • A Case for Feminism in Programming Language Design by Felienne Hermans](/episodes/075)
 

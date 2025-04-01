@@ -26,7 +26,7 @@ He smirked, having ensnared me in his Socratic trap, "Then it's not really a pro
 
 Eyeroll. Paul Chiusano has a great response to people like Dave:
 
-> There are a couple unspoken assumptions here that don’t hold up to scrutiny—one is that abstraction is in general not to be trusted. We can blame Spolsky for infecting our industry with that meme. A little reflection on the history of software reveals abstraction as the primary means by which humans make increasingly complex software possible and comprehensible. Hence why we’ve moved away from assembly language in favor of high-level languages. Blanket mistrust of abstraction, to the point where we should actively avoid including means of abstraction in software technology, is absurd. 
+> There are a couple unspoken assumptions here that don’t hold up to scrutiny—one is that abstraction is in general not to be trusted. We can blame Spolsky for infecting our industry with that meme. A little reflection on the history of software reveals abstraction as the primary means by which humans make increasingly complex software possible and comprehensible. Hence why we’ve moved away from assembly language in favor of high-level languages. Blanket mistrust of abstraction, to the point where we should actively avoid including means of abstraction in software technology, is absurd.
 
 (From [http://pchiusano.github.io/2014-07-02/css-is-unnecessary.html](http://pchiusano.github.io/2014-07-02/css-is-unnecessary.html))
 
@@ -38,17 +38,17 @@ People like Dave have always been the majority. “Abstractions are leaky and fo
 
 Here's why. When I first got into the ideas of Bret Victor, I was at college. I quickly realized I was surrounded by people like Dave, and I (reasonably) concluded that I was one of the only people in the world to believe programming improvable. The same was true when I lived and worked in Silicon Valley, most programmers were like Dave. [The first episode of my podcast](http://futureofcoding.org/episodes/1-welcome.html) epitomizes how I felt:
 
-> The vast majority of programmers don’t think about these things. They see the tools they use as a given. They don’t waste much time wondering if or how things could be better. Things are the way they are. The vast majority of programmings accept the status quo, work within it, and go home. 
+> The vast majority of programmers don’t think about these things. They see the tools they use as a given. They don’t waste much time wondering if or how things could be better. Things are the way they are. The vast majority of programmings accept the status quo, work within it, and go home.
 >
-> This podcast is not for such people. 
-> 
+> This podcast is not for such people.
+>
 > This podcast is for the dissatisfied, the complainers, the whiners, for the programmers that obstinately refuse to settle for the crappy excuse that we call programming today in 2017.
 >
-> This podcast is for the small minority of programmers that know things can be better. And not incrementally better, but drastically better. 
+> This podcast is for the small minority of programmers that know things can be better. And not incrementally better, but drastically better.
 
 But here’s the thing. While I am in a minority in relative terms, say 0.1% of programmers, there are plenty of us in absolute terms. We feel entirely alone in the physical world where we’re all spread out, but there are more than enough of us to form a community online.
 
-In the last year since my above rant, I've found my people, the community of "whiners" I’ve been looking for. And I talk with these lovely people a lot. Almost every day on Twitter and email. I’ve interviewed 17 people for my podcast, and chatten with dozens via Google Hangouts across many different countries and time zones. The Future of Programming slack group has ~80 members. And my [Future of Coding twitter list](https://twitter.com/stevekrouse/lists/future-of-coding) is up to 168. (And there are many more out there - just think about all the people at SPLASH, POPL, Strangeloop, and \<Programming\>!)
+In the last year since my above rant, I've found my people, the community of "whiners" I’ve been looking for. And I talk with these lovely people a lot. Almost every day on Twitter and email. I’ve interviewed 17 people for my podcast, and chatted with dozens via Google Hangouts across many different countries and time zones. The Future of Programming slack group has ~80 members. And my [Future of Coding twitter list](https://twitter.com/stevekrouse/lists/future-of-coding) is up to 168. (And there are many more out there - just think about all the people at SPLASH, POPL, Strangeloop, and \<Programming\>!)
 
 While we all share the same basic assumptions about how programming can be improved, that's not to say we agree on everything - quite the contrary. There's the BV Fan club, the Jonathan Edwards school of thought, the Haskellers, the Smalltakers, and the compile-to-JavaScripters. Some of us are ride-or-die for direct manipulation, while others believe we'll be stuck with text forever, and yet others try to placate both sides with projectional editors. Some believe in message-passing, others in the actor model, and others yet in various flavors of functional programming. And don’t even get me started on the divide between the interpreters vs the compilers. The debates are fierce and heated and wonderful. I've found my people and we have a lot to say to each other.
 
