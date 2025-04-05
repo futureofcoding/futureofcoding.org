@@ -4,7 +4,7 @@ title: Journal
 
 # Future of Coding Research Journal
 
-This jornal is stream-of-consciousness style so apologies in advance if it's difficult to read. You should know that I don't have spellcheck and I'm a terrible speller. Most importantly, you should know that I add new entries at the top of the page, so you'll have to scroll to the bottom if you want to start from the beginning.
+This journal is stream-of-consciousness style so apologies in advance if it's difficult to read. You should know that I don't have spellcheck and I'm a terrible speller. Most importantly, you should know that I add new entries at the top of the page, so you'll have to scroll to the bottom if you want to start from the beginning.
 
 ### October 18, 2017
 
@@ -16,7 +16,7 @@ So as it turns out, I had plenty of productive time on my hands yesterday to do 
 
 #### Death knoll of this journal
 
-If you go and read those thoughts, you will see that despite my love for this very journal, I acknowledge that while it serves me in some ways, a better organizational structure will serve this proejct better, so this will probably be one of the last entries. I am taking great pains (as you can read above) to ensure that no links to this journal will be broken, so no need to worry about that!
+If you go and read those thoughts, you will see that despite my love for this very journal, I acknowledge that while it serves me in some ways, a better organizational structure will serve this project better, so this will probably be one of the last entries. I am taking great pains (as you can read above) to ensure that no links to this journal will be broken, so no need to worry about that!
 
 #### Streamsheets write-up
 
@@ -33,19 +33,19 @@ I had a few fun conversations yesterday, including a reply from @r0ml who agreed
 
 Given all the recent Structural Editor (also known as "projectional editor") conversations I've been having, I think now is a good time to write about those, leaving Thursday (as tomorrow I have jury duty, which I make up for by working a double research shift on Friday) to continue the Elm Flappy Bird.
 
-##### Fustrations with Structural Editors
+##### Frustrations with Structural Editors
 
 > Inside every cynical person, there is a disappointed idealist. - George Carlin
 
-You may remember that I starting building my own structured editor for JavaScript called Rose, which can you read about at [the end of this post](https://medium.com/@stevekrouse/rose-983dc5e0908f) and [the beginnning of this post](https://medium.com/@stevekrouse/rose-project-april-2017-32af31b078b1), but ended this prototype fairly early. You may also remember [my review of Lamdu](http://futureofcoding.org/journal#july-25-2017-226pm), in which I was both impressed by what this could become but disappointed about its current state.
+You may remember that I started building my own structured editor for JavaScript called Rose, which can you read about at [the end of this post](https://medium.com/@stevekrouse/rose-983dc5e0908f) and [the beginning of this post](https://medium.com/@stevekrouse/rose-project-april-2017-32af31b078b1), but ended this prototype fairly early. You may also remember [my review of Lamdu](http://futureofcoding.org/journal#july-25-2017-226pm), in which I was both impressed by what this could become but disappointed about its current state.
 
-You may recall [my conversation with Lloyd Tabb](http://futureofcoding.org/episodes/7-lookers-lloyd-tab-on-growing-languages-through-deprecation.html) where he explains his disillusionment with structured editors because of his failure to build one in the 80s, and his current insistance that text will always win as the interface for programming.
+You may recall [my conversation with Lloyd Tabb](http://futureofcoding.org/episodes/7-lookers-lloyd-tab-on-growing-languages-through-deprecation.html) where he explains his disillusionment with structured editors because of his failure to build one in the 80s, and his current insistence that text will always win as the interface for programming.
 
 Last night at the Future of Programming meetup, there was a discussion about how excited we all have been at various times about structured editors, but [as you can read in the notes](https://docs.google.com/document/d/1xXeKyR6SzwYMW9ZgHZXoIZsatkYlDL17yp4B5MreRMQ/edit), have been disappointed each time.
 
 I've recently become friends with Aaron Kent of Isomorf and am quite impressed by their structured editor! However as a "pro user" their tool would still slow me down over text-based editing. (Although it might be faster for a new programmer, but I'm not sure.)
 
-What's crazy about all this negativity towards structured editors is that its coming from people that desperately want to be positive about it. All the negativity comes from dashed hopes.
+What's crazy about all this negativity towards structured editors is that it's coming from people that desperately want to be positive about it. All the negativity comes from dashed hopes.
 
 This is not to say that some of us don't think it's possible to succeed here. (Ok, some of us do think it's impossible to succeed here. But those that do think this often think it because they spent months or years of their life trying and failing to succeed here.) But some of us are just skeptical of that possibility.
 
@@ -53,11 +53,11 @@ This is not to say that some of us don't think it's possible to succeed here. (O
 
 I, for one, am not skeptical of it at all. Despite all this negativity, I think it's not only possible to succeed in a non-text-based editor (here I'm using a more general term than "structured editor" to include other editor types like block-based or node-based) but probable. I say this from my experience successfully using MIT's Scratch myself and with students, from my decade of experience using dozens of programming languages, from my experience building on top of Google Blockly and trying to build a structured editor for JavaScript referenced above, and from my experience trying out many such editors over the past year, many of which while leaving a lot to be desired, hint at how amazing they could become with just a bit more development.
 
-After seeing the negative feedback on structured editors from the meeting last night, Yair of Lamdu quickly shot back a few notes about how they plan to address each of the comments brought up, such as where to put comments and changes regarding operator precendence.
+After seeing the negative feedback on structured editors from the meeting last night, Yair of Lamdu quickly shot back a few notes about how they plan to address each of the comments brought up, such as where to put comments and changes regarding operator precedence.
 
-I agree with his optimism. While text-based editing does have a signicant tooling advatange because it's been the dominant platform for the last 60 years, I think there's no reason that we can enumerate all of the use-cases and issues that people have with structured-editors and tackle them one at a time until the quality of structured editors outpaces the quality of text-based editors, even for "pro users" that have all the emacs shortcuts memorized.
+I agree with his optimism. While text-based editing does have a significant tooling advantage because it's been the dominant platform for the last 60 years, I think there's no reason that we can enumerate all of the use cases and issues that people have with structured-editors and tackle them one at a time until the quality of structured editors outpaces the quality of text-based editors, even for "pro users" that have all the emacs shortcuts memorized.
 
-One caveat to this, of course, is that in order to build a tool to such a level of quality, you need its developers to stick with it for years and years. Given that there as of yet (aside from LightTable and Eve) been little money for such projects could be an obsticle. However not a insurmountable one, as shown by how the Lamdu developers have made signicant, sustained progress in their free time over the past few years while keeping up with full time jobs. Others in this space are persuing VC funding like Eve did. And then there are researchers who are supported by grants or non profits.
+One caveat to this, of course, is that in order to build a tool to such a level of quality, you need its developers to stick with it for years and years. Given that there as of yet (aside from LightTable and Eve) been little money for such projects could be an obstacle. However not an insurmountable one, as shown by how the Lamdu developers have made significant, sustained progress in their free time over the past few years while keeping up with full time jobs. Others in this space are pursuing VC funding like Eve did. And then there are researchers who are supported by grants or non profits.
 
 ##### Niko Autio's Microeditor
 
@@ -69,7 +69,7 @@ There are a few really solid insights here:
 2. You can create many "microeditors" that give you very specific interfaces to this underlying data structure ("I want view THAT piece of data as table and THAT as diagram.") In this way you can have your cake and eat it too.
 3. If you break up each microeditor small enough and build the underlying platform well enough, you could get the open source community to contribute to their development. Potentially you could bootstrap things and build the tool in the tool.
 
-You know... this idea isn't all that crazy. You could combine an existing browser code editor like CodeMirror with exisiting JSON and XML editors and table viewers to get started... I imagine the real trouble with this project will be that it's trying to solve every problem for everyone all at once and won't get good at anyone's specific problem anytime soon. That is, the trouble here is focusing on a use-case to optimize for.
+You know... this idea isn't all that crazy. You could combine an existing browser code editor like CodeMirror with existing JSON and XML editors and table viewers to get started... I imagine the real trouble with this project will be that it's trying to solve every problem for everyone all at once and won't get good at anyone's specific problem anytime soon. That is, the trouble here is focusing on a use-case to optimize for.
 
 ##### [Ville Vanninen's Foolproof HTML](https://pumpula.net/foolproof-html/)
 
@@ -91,11 +91,11 @@ At this point, I know about a lot of these things, so I created [a Github issue 
 
 ##### Not the highest priority
 
-In a recent talk, Paul Chiusano of Unison explained that while structured editors (like those he himself worked on in the past) will make programming better, they're not currently the highest leverage thing you can do to improve programming. His thought experiment: "would you rather a brain-to-text interface to x86 assembly or a emacs-interface to Haskell?" Most people would prefer Haskell, he says (and I agree), which explains why he's now working on creating better mathmatical abstractions for distributed computing as opposed to more fluent interfaces to existing languages.
+In a recent talk, Paul Chiusano of Unison explained that while structured editors (like those he himself worked on in the past) will make programming better, they're not currently the highest leverage thing you can do to improve programming. His thought experiment: "would you rather a brain-to-text interface to x86 assembly or an emacs-interface to Haskell?" Most people would prefer Haskell, he says (and I agree), which explains why he's now working on creating better mathematical abstractions for distributed computing as opposed to more fluent interfaces to existing languages.
 
-In a similar vein, my current thesis is that slapping a structured editor interface on top of our current programming language paradigms will only improve things marginally, and that's after investing a lot of work into them over a period of years (which is why I stopped working on my structured editor Rose). The real leverage is in enabling better paragigms *through* more intuative interfaces, such as enabling stream programming through a spreadsheet interface, like my StreamSheets project I talk about throughout this journal (ctl-F to find it).
+In a similar vein, my current thesis is that slapping a structured editor interface on top of our current programming language paradigms will only improve things marginally, and that's after investing a lot of work into them over a period of years (which is why I stopped working on my structured editor Rose). The real leverage is in enabling better paradigms *through* more intuitive interfaces, such as enabling stream programming through a spreadsheet interface, like my StreamSheets project I talk about throughout this journal (ctl-F to find it).
 
-However, the old programming languages and paradigms will stick around for a while, so more power to the people trying to make structured editing work! In particular, I'm excited to watch Isomorf  iterate on their interface as they get people using it to solve real-world problems.
+However, the old programming languages and paradigms will stick around for a while, so more power to the people trying to make structured editing work! In particular, I'm excited to watch Isomorf iterate on their interface as they get people using it to solve real-world problems.
 
 ### October 2, 2017 8:53am
 
@@ -127,7 +127,7 @@ update msg model =
         Jump -> jumpBird model
 ```
 
-However while it is very nice to have good type errors, there are a lot of confusing type errors too, particularly when I leave out type annotations or parenthesis. I spend a good deal of time this morning not realizing I needed parenthesis around the if-expressions above. I hope to finish this up in the next day or two!
+However while it is very nice to have good type errors, there are a lot of confusing type errors too, particularly when I leave out type annotations or parenthesis. I spent a good deal of time this morning not realizing I needed parenthesis around the if-expressions above. I hope to finish this up in the next day or two!
 
 I got a reply from Nick Johnstone this morning, and I'm really excited to chat with him soon!
 
@@ -147,13 +147,13 @@ Andre Staltz's reply to [my bullet (5) below](http://futureofcoding.org/journal#
 >
 > So it's still possible to "share data between components" in the case of collection items.
 
-#### Juan-benet-insired Master Plan
+#### Juan-benet-inspired Master Plan
 
-Three years ago, a friend forwarded me an email written Juan Benet (of IPFS and FileCoin) where he muses on the important things to focus and work on. At the time, I thought it was somewhat interesting but mostly just random and didn't pay it much heed. However, my new friend Andreas (@curious_reader on Twitter) that I spoke to on Friday sugggested I listened to a YC podcast he wa on and it blew my brain: everything he set out to acheive three years ago has either been achieve or will be acheived. Even more fascinating, the same things he was talking about acheiving then are what he's talking about acheiving now. This really shook me to the bone: articulating your ambitious, seemingly-impossible aims and truly standing for them, and then having them morph into reality -- that's powerful. Part of why this affects me so is that I spoke with Juan on the phone for like an hour two years ago when he was working alone on a crazy project without any money to support himself -- and I wasn't at all interested in this project, which has since gone on to earn unicorn status in record time for a startup, just a few years! (Yes, it's through an ICO which are super bubbly now but in his case I don't think its entirely unwarrented.)
+Three years ago, a friend forwarded me an email written Juan Benet (of IPFS and FileCoin) where he muses on the important things to focus and work on. At the time, I thought it was somewhat interesting but mostly just random and didn't pay it much heed. However, my new friend Andreas (@curious_reader on Twitter) that I spoke to on Friday suggested I listened to a YC podcast he was on and it blew my brain: everything he set out to achieve three years ago has either been achieved or will be achieved. Even more fascinating, the same things he was talking about achieving then are what he's talking about achieving now. This really shook me to the bone: articulating your ambitious, seemingly-impossible aims and truly standing for them, and then having them morph into reality -- that's powerful. Part of why this affects me so is that I spoke with Juan on the phone for like an hour two years ago when he was working alone on a crazy project without any money to support himself -- and I wasn't at all interested in this project, which has since gone on to earn unicorn status in record time for a startup, just a few years! (Yes, it's through an ICO which are super bubbly now but in his case I don't think it's entirely unwarranted.)
 
-Relatedly, I recently decided I was ready to meet someone to seriously date, so I wrote down a list of what I'm looking for in a partner and just a few weeks later I found someone amazing and we're seriously dating! (This also happened to a friend of mine last year!) So basically I am in rapture for the power of articulating, preferably on paper, what you're looking for. (To clarify, I do not believe in the cosmic power of "the secret" whereby I am bending reality to my wishes. On the contrary, I think the reasons this articulation technqiue works are clear: 1) it helps you articulate to yourself what you're looking for, 2) it helps you articulate to others what you're looking for so they can help you find it, 3) it makes it easier to optimize your strategy towards acheiving your goal through reflection.
+Relatedly, I recently decided I was ready to meet someone to seriously date, so I wrote down a list of what I'm looking for in a partner and just a few weeks later I found someone amazing and we're seriously dating! (This also happened to a friend of mine last year!) So basically I am in rapture for the power of articulating, preferably on paper, what you're looking for. (To clarify, I do not believe in the cosmic power of "the secret" whereby I am bending reality to my wishes. On the contrary, I think the reasons this articulation technique works are clear: 1) it helps you articulate to yourself what you're looking for, 2) it helps you articulate to others what you're looking for so they can help you find it, 3) it makes it easier to optimize your strategy towards achieving your goal through reflection.
 
-So I spent 90 minutes on Saturday starting the [about page](./about) of this website, which I think could serve as the "master plan" for this project. (I'm stealing the phrase "master plan" from Elon Musk.) However, I realized that while I did spent a significant amount of time on it, I didn't come close to finishing. Planning takes time. I can't just squeeze it in during the weekend. I need to allocate a significant period of time to reflecting on my goals and strategy, come up with new ideas, get feedback on these ideas, and articulate my new plan of attack. Thus, I will finish this two-week research cycle by wrapping up my Reactive programming deep dive, and spend the entire next two-week cycle working on my Master Plan!
+So I spent 90 minutes on Saturday starting the [about page](./about) of this website, which I think could serve as the "master plan" for this project. (I'm stealing the phrase "master plan" from Elon Musk.) However, I realized that while I did spend a significant amount of time on it, I didn't come close to finishing. Planning takes time. I can't just squeeze it in during the weekend. I need to allocate a significant period of time to reflecting on my goals and strategy, come up with new ideas, get feedback on these ideas, and articulate my new plan of attack. Thus, I will finish this two-week research cycle by wrapping up my Reactive programming deep dive, and spend the entire next two-week cycle working on my Master Plan!
 
 ### Septempber 29, 2017 12:06pm
 
@@ -165,7 +165,7 @@ Speaking of talking to cool people and twitter, there's been some fun activity o
 
 1. I tweeted out the Atlantic article about the future of coding and [Chris Granger retweeted it](https://twitter.com/stevekrouse/status/913096302606548992)!
 
-2. I finally did get a few emails back from Alan Kay. He's too busy to mentor me now because he's writing a book (very exciting!) but he reccomended I check out what Bret Victor's up to (lol).
+2. I finally did get a few emails back from Alan Kay. He's too busy to mentor me now because he's writing a book (very exciting!) but he recommended I check out what Bret Victor's up to (lol).
 
 3. I sent an email to Nick Johnstone this morning. I hope we become friends!
 
@@ -181,7 +181,7 @@ I have a hack day at The Coding Space today. Anyone who wants to improve their c
 
 ### September 27, 2017 12:26pm
 
-Today was a productive morning! I finally finished my CycleJS flappy bird! Here [the newer version](https://www.webpackbin.com/bins/-Kv2cnlUINlDvUjJ5RzP) (I forked [the previous version](https://www.webpackbin.com/bins/-KueLaY-sIBrTzaW18U4)). I also went ahead and [created a gist for this code as well](https://gist.github.com/stevekrouse/fe7a9aaa881df66793b48786158a3756) in case (god forbid) my new favorite service webpackbin goes out of exsistance one day -- that's definitely one thing I am learning to avoid from reading decade-old blogs of others'.
+Today was a productive morning! I finally finished my CycleJS flappy bird! Here [the newer version](https://www.webpackbin.com/bins/-Kv2cnlUINlDvUjJ5RzP) (I forked [the previous version](https://www.webpackbin.com/bins/-KueLaY-sIBrTzaW18U4)). I also went ahead and [created a gist for this code as well](https://gist.github.com/stevekrouse/fe7a9aaa881df66793b48786158a3756) in case (god forbid) my new favorite service webpackbin goes out of exsistence one day -- that's definitely one thing I am learning to avoid from reading decade-old blogs of others'.
 
 Thoughts on CycleJS thus far:
 
@@ -193,7 +193,7 @@ Thoughts on CycleJS thus far:
 
 4. This is the bleeding edge of reactive programming! No joke - in the course of developing this app, Andre pushed a new version of Onionify that makes it easier to work with dynamic lists. I realized it earlier this morning when things weren't working and I saw "	Update all examples for makeCollection API	- 2 days ago" as the most recent commit message on most of the codebase.
 
-5. However while the `makeCollection` API does indeed seem cleaner, I wonder how I'm now supposed to [sharing data between components](https://github.com/staltz/cycle-onionify#how-to-share-data-among-components-or-compute-derived-data). I was able to push the `gameOver` state into my `Bird` component by creating a lens that contained both the bird and the `gameOver` data. However, I'm not totally sure what the idomatic way to accomplish this with `makeCollection` is. The best I came up with is by [pushing the shared state (`gameOver` and `score`) into each induvidual list component](https://gist.github.com/stevekrouse/fe7a9aaa881df66793b48786158a3756#file-cyclejs-flappy-bird-js-L158). This pattern also works for setting shared state from within a component: [the child component just updates the state in itself](https://gist.github.com/stevekrouse/fe7a9aaa881df66793b48786158a3756#file-cyclejs-flappy-bird-js-L91) and [the parent setter scans the children to pull the new state when it occurs](https://gist.github.com/stevekrouse/fe7a9aaa881df66793b48786158a3756#file-cyclejs-flappy-bird-js-L162). TODO ask andre about this...
+5. However while the `makeCollection` API does indeed seem cleaner, I wonder how I'm now supposed to [sharing data between components](https://github.com/staltz/cycle-onionify#how-to-share-data-among-components-or-compute-derived-data). I was able to push the `gameOver` state into my `Bird` component by creating a lens that contained both the bird and the `gameOver` data. However, I'm not totally sure what the idiomatic way to accomplish this with `makeCollection` is. The best I came up with is by [pushing the shared state (`gameOver` and `score`) into each individual list component](https://gist.github.com/stevekrouse/fe7a9aaa881df66793b48786158a3756#file-cyclejs-flappy-bird-js-L158). This pattern also works for setting shared state from within a component: [the child component just updates the state in itself](https://gist.github.com/stevekrouse/fe7a9aaa881df66793b48786158a3756#file-cyclejs-flappy-bird-js-L91) and [the parent setter scans the children to pull the new state when it occurs](https://gist.github.com/stevekrouse/fe7a9aaa881df66793b48786158a3756#file-cyclejs-flappy-bird-js-L162). TODO ask Andre about this...
 
 6. TODO - I also really want to play with the CycleJS devtools so I'll look into that soon...
 
@@ -203,7 +203,7 @@ Thoughts on CycleJS thus far:
 
 9. Tomorrow I want to start work on building the same exact app but in Elm, potentially using the McMaster university SVG library. Hopefully this doesn't also take me about a dozens hours!
 
-10. I feeling pulled towards creating a "reactive woofjs" at this point. Having just talked to Christopher Anand of McMaster University and Emmanuel Schnazer from Bootstrap (and Pyret), and spending so much time making flappy bird games on the canvas, wishing I had 1) a proper x-y axis with 0, 0 in the center, 2) a Scratch-like sprite abstraction (which would make it easier to check if things are colliding and would make it so that I don't have to redraw blue every time), and 3) most importantly, I could possibly abstract over some boilerplate code that seems to be inherent in all CycleJS and Elm (not sure about Pyret) projects. This project is definitely a digression but not neccesarily a distraction. I think it could be a fun way to learn more about reactive programming through building a simplier abstraction over it than the one I ultimately want to build.
+10. I feel pulled towards creating a "reactive woofjs" at this point. Having just talked to Christopher Anand of McMaster University and Emmanuel Schanzer from Bootstrap (and Pyret), and spending so much time making flappy bird games on the canvas, wishing I had 1) a proper x-y axis with 0, 0 in the center, 2) a Scratch-like sprite abstraction (which would make it easier to check if things are colliding and would make it so that I don't have to redraw blue every time), and 3) most importantly, I could possibly abstract over some boilerplate code that seems to be inherent in all CycleJS and Elm (not sure about Pyret) projects. This project is definitely a digression but not necessarily a distraction. I think it could be a fun way to learn more about reactive programming by building a simpler abstraction over it than the one I ultimately want to build.
 
 ### September 26, 2017 11:53am
 
