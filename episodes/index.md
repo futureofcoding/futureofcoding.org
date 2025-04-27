@@ -15,7 +15,9 @@ Listen in your podcast player by searching for **Future of Coding**, or via [App
 
 <br>
 
-**Hosted by [Ivan Reese](https://ivanish.ca), [Jimmy Miller](https://jimmyhmiller.github.io/), and [Lu Wilson](https://todepond.com)**<br> _A romp through the field of computer programming, grappling with our history and wondering what should come next. A mix of deeply technical talk, philosophy, art, dark lore, and good takes._
+**Hosted by [Ivan Reese](https://ivanish.ca), [Jimmy Miller](https://jimmyhmiller.github.io/), and [Lu Wilson](https://todepond.com)**<br> _An evocative romp through the field of computing, grappling with our past and present and wondering what should come next. A melange of technical weeds, philosophy, theatrics, obscurities, and reckoning._
+
+<span class="date">2025-04-26</span> [76 • Computing Machinery and Intelligence by Alan Turing (feat. Felienne Hermans)](/episodes/076)
 
 <span class="date">2025-02-16</span> [75 • A Case for Feminism in Programming Language Design by Felienne Hermans](/episodes/075)
 
