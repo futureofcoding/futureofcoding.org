@@ -15,7 +15,9 @@ Listen in your podcast player by searching for **Future of Coding**, or via [App
 
 <br>
 
-**Hosted by [Ivan Reese](https://ivanish.ca), [Jimmy Miller](https://jimmyhmiller.github.io/), and [Lu Wilson](https://todepond.com)**<br> _An evocative romp through the field of computing, grappling with our past and present and wondering what should come next. A melange of technical weeds, philosophy, theatrics, obscurities, and reckoning._
+**Hosted by [Ivan Reese](https://ivanish.ca), [Jimmy Miller](https://jimmyhmiller.github.io/), and [Lu Wilson](https://todepond.com)**<br> _A curious romp through the field of computing, grappling with our past and present, wondering what should come next. A melange of technical weeds, philosophy, theatrics, obscurities, and reckoning._
+
+<span class="date">2025-07-20</span> [77 • As We May Think by Vannevar Bush](/episodes/077)
 
 <span class="date">2025-04-26</span> [76 • Computing Machinery and Intelligence by Alan Turing (feat. Felienne Hermans)](/episodes/076)
 
@@ -35,7 +37,7 @@ Listen in your podcast player by searching for **Future of Coding**, or via [App
 
 <hr>
 
-**Hosted by [Ivan Reese](https://ivanish.ca) and [Jimmy Miller](https://jimmyhmiller.github.io/)**<br> _Close readings of influential works in computer science, with frequent diversions into the absurd._
+**Hosted by [Ivan Reese](https://ivanish.ca) and [Jimmy Miller](https://jimmyhmiller.github.io/)**<br> _Close readings of influential works in computer science, with frequent diversions into the absurd. Let's dive in!_
 
 <span class="date">2023-11-18</span> [68 • Propositions as Types by Philip Wadler](/episodes/068)
 
