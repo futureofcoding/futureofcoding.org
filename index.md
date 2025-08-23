@@ -2,7 +2,12 @@
 title: Welcome
 ---
 
-**Future of Coding** is an online community with a welcoming, cooperative, and revolutionary spirit. We are unified in the belief that the computer is tragically less humane than it could be. There's a world of possibilities that get more beautiful the further away from the norm you go. We're here to explore this world together, to discuss ideas about theory and practice, and to champion and support our members' research and development efforts to _reimagine the computer_.
+**Feeling of Computing** is an online community with a welcoming, cooperative, and revolutionary spirit. We are unified in the belief that the computer is tragically less humane than it could be. There's a world of possibilities that get more beautiful the further away from the norm you go. We're here to explore this world together, to discuss ideas about theory and practice, and to champion and support our members' research and development efforts to _reimagine the computer_.
+
+<br>
+
+## 🚧 We're Renovating
+> The community is getting a new name! The original, still widely known name was **Future of Coding**. The new name is **Feeling of Computing**. Read about [the motivation](https://futureofcoding.org/the-name). You'll still see the old name basically everywhere — apologies for the confusion. Bear with us.
 
 <br>
 
@@ -21,7 +26,7 @@ Our members organize meetups and events in cities around the world and online. T
 
 ### Podcast
 
-There's a [podcast](/episodes), too. It's grown and changed quite a bit over the years. Presently, hosts [Ivan Reese](https://ivanish.ca), [Jimmy Miller](https://jimmyhmiller.github.io/), and [Lu Wilson](https://todepond.com) share notable and notorious works from across the history of our field, with one eye on philosophy and frequent diversions into the absurd. Listen in your podcast player by searching for the old name **Future of Coding**, or via [Apple Podcasts](https://podcasts.apple.com/podcast/future-of-coding/id1265527976) \| [Overcast](https://overcast.fm/itunes1265527976) \| [RSS](https://omny.fm/shows/future-of-coding/playlists/podcast.rss) and if you feel so inclined, [become a supporter](https://www.patreon.com/futureofcoding) to access bonus content and warm fuzzy feelings.
+There's a [podcast](/episodes), too. It's grown and changed quite a bit over the years. Presently, hosts [Ivan Reese](https://ivanish.ca), [Jimmy Miller](https://jimmyhmiller.github.io/), and [Lu Wilson](https://todepond.com) share notable and notorious works from across the history of our field, with one eye on philosophy and frequent diversions into the absurd. Listen in your podcast player by searching for the old name **Feeling of Computing**, or via [Apple Podcasts](https://podcasts.apple.com/podcast/future-of-coding/id1265527976) \| [Overcast](https://overcast.fm/itunes1265527976) \| [RSS](https://omny.fm/shows/future-of-coding/playlists/podcast.rss) and if you feel so inclined, [become a supporter](https://www.patreon.com/futureofcoding) to access bonus content and warm fuzzy feelings.
 
 The most recent episode is: [77 • As We May Think by Vannevar Bush](/episodes/077)
 
