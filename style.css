@@ -1,0 +1,53 @@
+body {
+    background-color: #f0f0f0; /* Light grey background */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+#gameCanvas {
+    border: 1px solid black;
+    display: block;
+    margin: 20px auto; /* Centering the canvas */
+    background-color: #fff; /* White background for the canvas */
+}
+
+#score {
+    display: flex;
+    justify-content: space-around;
+    width: 800px; /* Same width as canvas for alignment */
+    margin: 10px auto;
+    font-size: 1.2em;
+}
+
+#player-score, #opponent-score {
+    color: #333;
+    padding: 10px;
+    background-color: #e7e7e7;
+    border-radius: 5px;
+}
+
+#instructions {
+    width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: left;
+}
+
+#instructions h2 {
+    text-align: center;
+    color: #333;
+}
+
+#instructions p {
+    color: #555;
+    line-height: 1.6;
+}
