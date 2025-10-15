@@ -1,75 +1,28 @@
 ---
-title: Welcome
+title: Future of Coding Research Archive
 ---
 
-**Feeling of Computing** is an online community with a welcoming, cooperative, and revolutionary spirit. We are unified in the belief that the computer is tragically less humane than it could be. There's a world of possibilities that get more beautiful the further away from the norm you go. We're here to explore this world together, to discuss ideas about theory and practice, and to champion and support our members' research and development efforts to _reimagine the computer_.
+# Future of Coding Research Archive
 
-<br>
+This is an archive of research notes by [Steve Krouse](https://stevekrouse.com) circa 2017-2019, around the time that he founded the Future of Coding slack community and podcast. In late 2019, Steve stepped away from the community to put his research ideas into practice. He founded the startups Compose, Zaplib, and most recently [Val Town](https://www.val.town). The community and podcast have grown and changed too, and are now known as the [Feeling of Computing](https://feelingof.com).
 
-## 🚧 We're Renovating
-> The community is getting a new name! The original, still widely known name was **Future of Coding**. The new name is **Feeling of Computing**. Read about [the motivation](https://futureofcoding.org/the-name). You'll still see the old name basically everywhere — apologies for the confusion. Bear with us.
+This archive is a work-in-progress, with minimal navigation. To see the full collection of notes, explore the [repository](https://github.com/futureofcoding/futureofcoding.org).
 
-<br>
+* [About](about)
+* [Whole Code Catalog](catalog/)
+* [Ideas](ideas)
+* [Journal](journal)
+* [Links](links)
+* [Log](log)
+* [Notes](notes)
+* [Plan](plan)
+* [Principles](principles)
+* [Reflections](reflections)
 
-### Community
+### Essays & Papers
 
-We share ideas, prototypes, weekly videos, and inspirational links, with a friendly tone and an inclusive [code of conduct](https://github.com/futureofcoding/code-of-conduct). You are heartily encouraged to [join](/community).
-
-
-<br>
-
-### Meetups
-
-Our members organize meetups and events in cities around the world and online. The [London](https://lu.ma/foclondon) meetup is especially popular and deserves special mention, but you can also [host your own meetup or join our monthly virtual meetup](/meetups).
-
-<br>
-
-### Podcast
-
-There's a [podcast](/episodes), too. It's grown and changed quite a bit over the years. Presently, hosts [Ivan Reese](https://ivanish.ca), [Jimmy Miller](https://jimmyhmiller.github.io/), and [Lu Wilson](https://todepond.com) share notable and notorious works from across the history of our field, with one eye on philosophy and frequent diversions into the absurd. Listen in your podcast player by searching for the old name **Future of Coding**, or via [Apple Podcasts](https://podcasts.apple.com/podcast/future-of-coding/id1265527976) \| [Overcast](https://overcast.fm/itunes1265527976) \| [RSS](https://omny.fm/shows/future-of-coding/playlists/podcast.rss) and if you feel so inclined, [become a supporter](https://www.patreon.com/futureofcoding) to access bonus content and warm fuzzy feelings.
-
-The most recent episode is: [77 • As We May Think by Vannevar Bush](/episodes/077)
-
-<br>
-
-### Wiki
-
-Just launched — we now have a [wiki](https://wiki.futureofcoding.org) that anyone can edit. It's a place to organize the links and projects and ideas amassed during our Slack discussions. The project is still very (very) young, so please share your desires and frustrations on the Slack in #present-company.
-
-<br>
-
-### Newsletter
-
-Want to follow the ongoing work and interesting finds of the community, without being tied to Slack? We have a [weekly newsletter](https://newsletter.futureofcoding.org/) that allows you to follow along from the comfort of your inbox. It features popular links shared by community members, the most interesting discussions, updates on our projects and research, and other highlights.
-
-<br>
-
-### Collaboration
-
-Our members are working together to bring about a futuristic vision of computing, and you can help — or get help with your own futuristic project. Our [collaboration](/collaboration) page collects projects that are on-the-go in our community, and resources to help folks combine their efforts.
-
-<br>
-
-### Catalog
-
-One of our special projects is the [Whole Code Catalog](/catalog), a collection of detailed reviews of 24 programming-ish interfaces and experiments.
-
-<br>
-
-### About
-
-The community was originally founded by [Steve Krouse](https://stevekrouse.com), and you can read a lot more about his ideas and research [here](/about). The current steward of the community is [Ivan Reese](https://ivanish.ca). Thanks to Kartik, Mariano, Jimmy, Lu, and Ibro for their help.
-
-If you'd like to read up a bit on the ideas our community was formed around, [Chris Novello's _Computer Utopias_ curriculum](http://chrisnovello.com/teaching/risd/computer-utopias/) (particularly Week 3 & 4) and [The New Media Reader](https://mitpress.mit.edu/books/new-media-reader) are fantastic resources. Fancy a video? This [Alan Kay](https://www.youtube.com/watch?v=aYT2se94eU0) talk is foundational.
-
-<br>
-
-### Contact
-
-Head to our [contact](/contact) page to get in touch. Spotted an error? You can open a PR for this website [on Github](https://github.com/futureofcoding/futureofcoding.org).
-
-See you in the future!
-
-<!-- Anyone involved in the community who would like to verify their Mastodon link, let me know and I'll add you here! -->
-
-<a rel="nofollow me" href="https://mastodon.social/@spiralganglion"></a>
+- **2019 Apr 02** — [The Misunderstood Roots of FRP Can Save Programming](essays/dctp)
+- **2018 Nov 06** — [Live 2018 [Bootleg Edition]](notes/live/2018)
+- **2018 Aug 17** — [Explicitly Comprehensible Functional Reactive Programmings (REBLS ‘18)](papers/comprehensible-frp)
+- **2018 Jul 04** — [Abstractions are leaky, and for sissies](essays/sissies)
+- **2018 Apr 02** — [A Visual History of Eve](essays/eve)

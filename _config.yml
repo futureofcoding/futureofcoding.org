@@ -10,7 +10,8 @@ plugins:
   - jekyll-readme-index
   - jekyll-default-layout
   - jekyll-titles-from-headings
-url: "https://futureofcoding.org"
+url: "https://futureofcoding.github.io"
+baseurl: "/futureofcoding.org"
 github: [metadata]
 encoding: UTF-8
 kramdown:
@@ -22,9 +23,3 @@ theme: jekyll-theme-primer
 gfm_quirks: paragraph_end
 title: Future of Coding
 description: Are you looking for the real computer revolution? Join the club! Future of Coding is a podcast and community of toolmakers, researchers, and creators working together to reimagine computing.
-logo: https://futureofcoding.org/assets/glitch-logo.png
-defaults:
-  - scope:
-      path: ""
-    values:
-      image: https://futureofcoding.org/assets/glitch-logo.png

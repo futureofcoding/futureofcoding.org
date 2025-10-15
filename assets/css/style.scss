@@ -5,14 +5,9 @@
 
 $foc-green: #0C8;
 
-// Used "foc" as the first half since the light and dark colors were derived from foc-green; hsl(160, 100%, 40%).
-// Should they be renamed, not to look like the "official" light and dark colors?
-$foc-light: hsl(160, 29%, 97%);
-$foc-dark: hsl(160, 85%, 5%);
-
 body {
-  background: $foc-light;
-  color: $foc-dark;
+  background: hsl(160, 29%, 97%);
+  color: hsl(160, 85%, 5%);
 }
 
 header {
@@ -20,7 +15,6 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-
   margin-bottom: 3em;
 }
 
@@ -50,19 +44,5 @@ nav > a {
   .foc.title {
     margin-top: -32px!important;
     // width: 98vw; //stops the scroll bar showing up. Moved to width: min() l44
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background: $foc-dark;
-    color: $foc-light;
-  }
-  h1,
-  h2 {
-    border-bottom: 1px solid hsla(160, 3%, 100%, 0.32) !important; //sorry, need to move this somewhere it doesn't need important
-  }
-  a {
-    color: $foc-green;
   }
 }
