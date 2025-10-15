@@ -14,14 +14,13 @@ This archive is a work-in-progress, with minimal navigation. To see the full col
 * [Log](log)
 * [Plan](plan)
 * [Principles](principles)
-* [Reflections](reflections)
 
 ### Essays & Papers
-* _2019 Apr 02_ * [The Misunderstood Roots of FRP Can Save Programming](essays/dctp)
-* _2018 Nov 06_ * [Live 2018 [Bootleg Edition]](notes/live/2018)
-* _2018 Aug 17_ * [Explicitly Comprehensible Functional Reactive Programmings (REBLS ‘18)](papers/comprehensible-frp)
-* _2018 Jul 04_ * [Abstractions are leaky, and for sissies](essays/sissies)
-* _2018 Apr 02_ * [A Visual History of Eve](essays/eve)
+* _2019 Apr 02_ — [The Misunderstood Roots of FRP Can Save Programming](essays/dctp)
+* _2018 Nov 06_ — [Live 2018 [Bootleg Edition]](notes/live/2018)
+* _2018 Aug 17_ — [Explicitly Comprehensible Functional Reactive Programmings (REBLS ‘18)](papers/comprehensible-frp)
+* _2018 Jul 04_ — [Abstractions are leaky, and for sissies](essays/sissies)
+* _2018 Apr 02_ — [A Visual History of Eve](essays/eve)
 
 ### Notes
 * [Lunch with Alan Kay](notes/alan-kay-lunch)
