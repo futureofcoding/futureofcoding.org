@@ -1,8 +1,6 @@
-This is an archive of the old Future of Coding community website. When the community was renamed to [Feeling of Computing](https://github.com/feelingofcomputing), the website was rebuilt from scratch.
+This is a [browsable](https://futureofcoding.github.io/futureofcoding.org/) archive of the old Future of Coding website, with Steve's research notes circa 2017-2019.
 
----
-
-This repo has been saved because it contains various research notes by Steve Krouse, such as these ["virtual webpages"](https://github.com/futureofcoding/futureofcoding.org/issues?q=is%3Aopen+is%3Aissue+label%3A%22virtual+webpage%22) made from Github issues.
+This repo contains various ["virtual webpages"](https://github.com/futureofcoding/futureofcoding.org/issues?q=is%3Aopen+is%3Aissue+label%3A%22virtual+webpage%22) made from Github issues.
 
 ## Developing notes
 

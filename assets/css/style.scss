@@ -3,46 +3,12 @@
 
 @import "{{ site.theme }}";
 
-$foc-green: #0C8;
-
 body {
-  background: hsl(160, 29%, 97%);
-  color: hsl(160, 85%, 5%);
+  background: #fff;
+  color: #24292e;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 3em;
-}
-
-nav {
-  display: grid;
-  gap: 1em;
-  font-weight: 600;
-}
-
-nav > a {
-  color: inherit;
-}
-
-.foc.title {
-  display: block;
-  margin-left: -36px; //line up F with outside border. Edit svg instead?
-  padding: 0;
-}
-
-.foc.title > img {
-  width: min(600px, 98vw);
-  // aspect-ratio: 4 / 1;
-  background-color: transparent;
-}
-
-@media (max-width: 1012px) {
-  .foc.title {
-    margin-top: -32px!important;
-    // width: 98vw; //stops the scroll bar showing up. Moved to width: min() l44
-  }
+  font-size: 2em;
+  margin-bottom: 1em;
 }

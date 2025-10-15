@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% seo %}
-    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+    <link rel="stylesheet" href='{{ "/assets/css/style.css" | relative_url }}'>
   </head>
   <body>
     <div class="container-lg px-3 my-5 markdown-body">
-      <header>
-        <a href="/" class="foc title">Future of Coding Research Archive</a>
-      </header>
+      <header><a href='{{"/" | relative_url }}'>Future of Coding Research Archive</a></header>
       {{ content }}
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
